@@ -1,25 +1,11 @@
 import React from 'react';
 import { Accordion, Card, Button, ListGroup } from 'react-bootstrap';
+import Explanation from './Explanation';
 
 class Explanations extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            highlighted: -1
-        }
-    }
-
-
-    highlight(i) {
-        this.props.highlight(i);
-
-        this.setState({ highlighted: i })
-    }
-
 
     render() {
         const { simpleDeductions, deductions } = this.props;
-        console.log(deductions);
         return (
             <Card className="mt-3" >
 
@@ -36,20 +22,14 @@ class Explanations extends React.Component {
                                 {
                                     simpleDeductions.map((deduction, i) => {
 
-                                        const itemStyle =
-                                            this.state.highlighted === i ?
-                                                { backgroundColor: "cornsilk" } : null
-                                        return <ListGroup.Item
-                                            style={itemStyle}
+                                        return <Explanation
+                                            highlighted={i === this.props.highlighted}
+                                            decision={deduction.decision}
+                                            reason={deduction.reason}
+                                            index={i}
                                             key={i}
-                                            onMouseOver={() => this.highlight(i)}>
-                                            {deduction.decision}
-                                            <br />
-                                            {deduction.reason}
-                                        </ListGroup.Item>
-                                    }
-
-                                    )
+                                            highlight={() => this.props.highlight(i)} />
+                                    })
                                 }
                             </ListGroup>
                         </Accordion.Collapse>

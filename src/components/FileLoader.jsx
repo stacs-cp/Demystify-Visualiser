@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Row, Col } from 'react-bootstrap'
+import { Card, Row } from 'react-bootstrap'
 class FileLoader extends React.Component {
     showFile = async (e) => {
         e.preventDefault()
