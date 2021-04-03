@@ -44,7 +44,7 @@ class DemystifyViewer extends React.Component {
 
         {this.state.inputObject.length !== 0 &&
           <Row className="mb-4">
-            <Col xs={9}>
+            <Col xs={12} md={8} lg={8} xl={6}>
               <Board
                 highlight={this.highlightExplanation.bind(this)} 
                 key={this.state.highlightedLiterals} 
