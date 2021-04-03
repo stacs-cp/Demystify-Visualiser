@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Card, Row, Col, Form } from 'react-bootstrap';
+import { Button, Card, Form } from 'react-bootstrap';
 
 class NavSwitcher extends React.Component {
     state = {
