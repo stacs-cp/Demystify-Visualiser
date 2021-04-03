@@ -3,7 +3,7 @@ import NavSwitcher from './NavSwitcher';
 import Board from './Board';
 import FileLoader from './FileLoader';
 
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Card } from 'react-bootstrap';
 import Explanations from './Explanations';
 
 class DemystifyViewer extends React.Component {
@@ -14,7 +14,7 @@ class DemystifyViewer extends React.Component {
       inputObject: [],
       currentStep: 0,
       highlightedLiterals: -1,
-      highlightedExplanation: -1,
+      highlightedExplanations: [],
     }
   }
 
@@ -23,7 +23,8 @@ class DemystifyViewer extends React.Component {
   }
 
   highlightExplanation(val) {
-    this.setState((prev) => { return {highlightedExplanation: prev.highlightedExplanation === val ? -1 : val}});
+
+    this.setState((prev) => { return {highlightedExplanations: JSON.stringify(prev.highlightedExplanations)==JSON.stringify(val) ? [] : val}});
   }
 
   setInput(obj) {
@@ -50,11 +51,18 @@ class DemystifyViewer extends React.Component {
                 highlighted={this.state.highlightedLiterals} 
                 rows={this.state.inputObject[this.state.currentStep].puzzleState.matrices[0].rows} /></Col>
             <Col>
+              {this.state.inputObject[this.state.currentStep].skippedDeductions && 
+                <Card className="mt-3">
+                  <Card.Body>
+                    <small>Skipped some obvious deductions.</small>
+                  </Card.Body>
+                </Card>
+                }
               <Explanations 
                 highlight={this.highlightLiteral.bind(this)} 
                 simpleDeductions={this.state.inputObject[this.state.currentStep].simpleDeductions} 
                 deductions={this.state.inputObject[this.state.currentStep].deductions}
-                highlighted={this.state.highlightedExplanation} /></Col>
+                highlighted={this.state.highlightedExplanations} /></Col>
           </Row>
 
         }

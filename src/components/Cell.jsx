@@ -11,8 +11,8 @@ class Cell extends React.Component {
     }
     
 
-    highlight(i) {
-       this.props.highlight(i);
+    highlight(exp) {
+       this.props.highlight(exp);
     }
 
     componentDidUpdate(prevProps) {
@@ -39,8 +39,8 @@ class Cell extends React.Component {
                                         key={i}
                                         value={literal.value} 
                                         status={literal.status}
-                                        highlighted={literal.explanation === this.state.highlighted.toString()}
-                                        highlightExplanation={() => this.highlight(parseInt(literal.explanation))}
+                                        highlighted={literal.explanations.includes(this.state.highlighted.toString())}
+                                        highlightExplanation={() => this.highlight(literal.explanations)}
                                     />
                                 
 
