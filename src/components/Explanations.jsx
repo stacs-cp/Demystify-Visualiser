@@ -18,12 +18,12 @@ class Explanations extends React.Component {
                             </Accordion.Toggle>
                         </Card.Header>
                         <Accordion.Collapse eventKey="0">
-                            <ListGroup style={{ maxHeight: "75vh", overflowY: "scroll" }}>
+                            <ListGroup style={{ maxHeight: "65vh", overflowY: "scroll" }}>
                                 {
                                     simpleDeductions.map((deduction, i) => {
 
                                         return <Explanation
-                                            highlighted={i === this.props.highlighted}
+                                            highlighted={this.props.highlighted.includes(i.toString())}
                                             decision={deduction.decision}
                                             reason={deduction.reason}
                                             index={i}
