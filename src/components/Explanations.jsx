@@ -18,7 +18,7 @@ class Explanations extends React.Component {
                             </Accordion.Toggle>
                         </Card.Header>
                         <Accordion.Collapse eventKey="0">
-                            <ListGroup style={{ maxHeight: "65vh", overflowY: "scroll" }}>
+                            <ListGroup style={{ maxHeight: "60vh", overflowY: "scroll" }}>
                                 {
                                     simpleDeductions.map((deduction, i) => {
 
@@ -38,17 +38,21 @@ class Explanations extends React.Component {
                     <React.Fragment>
                         <Card.Header>
                             <h5>Made the following deduction:</h5>
+
                         </Card.Header>
                         <Card.Body>
+                            <div className="mb-3">
+                                <b >{deductions.decision}</b>
+                            </div>
+
                             <ListGroup style={{ maxHeight: "75vh", overflowY: "scroll" }}>
-                                <ListGroup.Item
-                                    style={{ backgroundColor: "cornsilk" }}
-                                    key={0}
-                                    onMouseOver={() => this.highlight(0)}>
-                                    {deductions.decision}
-                                    <br />
-                                    {deductions.reason.map((reason) => (<p>{reason}</p>))}
-                                </ListGroup.Item>
+                                {deductions.reason.map((reason, i) =>
+                                    <Explanation
+                                        highlighted={this.props.highlighted.includes(i.toString())}
+                                        reason={reason}
+                                        index={i}
+                                        key={i}
+                                        highlight={() => this.props.highlight(i)} />)}
 
 
                             </ListGroup>
