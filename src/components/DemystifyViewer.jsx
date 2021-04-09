@@ -1,6 +1,7 @@
 import React from 'react';
 import NavSwitcher from './NavSwitcher';
 import Board from './Board';
+import TentsBoard from './PuzzleBoards/TentsBoard';
 import FileLoader from './FileLoader';
 
 import { Container, Row, Col, Card } from 'react-bootstrap';
@@ -15,6 +16,7 @@ class DemystifyViewer extends React.Component {
       currentStep: 0,
       highlightedLiterals: -1,
       highlightedExplanations: [],
+      type: "",
     }
   }
 
@@ -28,7 +30,7 @@ class DemystifyViewer extends React.Component {
   }
 
   setInput(obj) {
-    this.setState({ inputObject: obj })
+    this.setState({ inputObject: obj.steps, type: obj.name, params: obj.params })
   }
 
   setCurrentStep(step) {
@@ -45,7 +47,8 @@ class DemystifyViewer extends React.Component {
         {this.state.inputObject.length !== 0 &&
           <Row className="mb-4">
             <Col xs={12} md={8} lg={8} xl={6}>
-              <Board
+              <TentsBoard
+                params={this.state.params}
                 highlight={this.highlightExplanation.bind(this)} 
                 key={this.state.highlightedLiterals} 
                 highlighted={this.state.highlightedLiterals} 

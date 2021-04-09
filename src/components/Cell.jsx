@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Row } from 'react-bootstrap';
 import Literal from './Literal';
+import SquareCol from './SquareCol';
 
 class Cell extends React.Component {
     constructor(props) {
@@ -21,18 +22,9 @@ class Cell extends React.Component {
         }
     }
     render() {
-        const { cellContent } = this.props;
+        const { cellContent, row, column } = this.props;
         return (
-            <div
-                style={{
-                    outline: "1px solid",
-                    marginTop: "1px",
-                    marginLeft: "1px",
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center"
-                }}
-            >
+            <SquareCol>
                 {cellContent.cellRows.length === 1 &&
                     cellContent.cellRows[0].cellValues.length === 1 ?
                     <h1 style={{ fontSize: "3vw" }}>{cellContent.cellRows[0].cellValues[0].value}</h1>
@@ -57,12 +49,7 @@ class Cell extends React.Component {
 
                     </Container>
                 }
-                <div style={{
-                    display: "block",
-                    paddingBottom: "100%"
-                }}></div>
-            </div >
-
+            </SquareCol>
         )
     }
 }
