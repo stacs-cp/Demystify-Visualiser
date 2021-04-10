@@ -11,20 +11,20 @@ class Board extends React.Component {
                     <Row className="p-0 m-0 flex-direction-row justify-content-center">
 
                         <Col xs={1} className="m-0 p-0" />
-                        {this.props.colsums && <Col className="m-0 p-0" />}
+                        {this.props.rowsums && <Col className="m-0 p-0" />}
                         {this.props.rows[0].cells.map((cell, i) =>
                             <Col key={i} className="m-0 p-0">
                                 <small className="text-muted">{i + 1}</small>
                             </Col>)}
                     </Row>
 
-                    {this.props.rowsums &&
+                    {this.props.colsums &&
                         <Row className="p-0 m-0 align-items-center flex-direction-row justify-content-center">
                             <Col xs={1} className="m-0 p-0">
 
                             </Col>
                             <SquareCol />
-                            {this.props.rowsums.map((sum, j) =>
+                            {this.props.colsums.map((sum, j) =>
                                 <SquareCol>
                                         <h3 style={{ fontSize: "3vw", color: "gray" }}>{sum}</h3>
                                 </SquareCol>)}
@@ -38,13 +38,26 @@ class Board extends React.Component {
                                 <small className="text-muted">{i + 1}</small>
                             </Col>
 
-                            {this.props.colsums &&
+                            {this.props.rowsums &&
                                 <SquareCol>
-                                        <h3 style={{ fontSize: "3vw", color: "gray" }}>{this.props.colsums[i]}</h3>
+                                        <h3 style={{ fontSize: "3vw", color: "gray" }}>{this.props.rowsums[i]}</h3>
                                 </SquareCol>}
                             {row.cells.map((cell, j) =>
                                 <Col key={j} className="m-0 p-0">
-                                    <Cell row={i} column={j} highlighted={this.props.highlighted} cellContent={cell} highlight={this.props.highlight}></Cell>
+                                    <Cell 
+                                        row={i} 
+                                        column={j} 
+                                        highlighted={this.props.highlighted} 
+                                        cellContent={cell} 
+                                        highlight={this.props.highlight}
+                                        literalBackgrounds={this.props.literalBackgrounds}
+                                        cellBorders={this.props.cellBorders ? this.props.cellBorders[i][j] : null}
+                                        cellInnerBorders={this.props.cellInnerBorders ? this.props.cellInnerBorders[i][j] : null}
+                                        literalSize={this.props.literalSize}
+                                        cornerNumber={this.props.cornerNumbers ? this.props.cornerNumbers[i][j] : null}
+                                        />
+
+                                        
                                 </Col>)}
 
                         </Row>)}
