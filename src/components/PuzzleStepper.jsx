@@ -1,6 +1,6 @@
 import React from 'react';
 import NavSwitcher from './NavSwitcher';
-import Board from './Board';
+import Board from './Board/Board';
 import ExplanationList from "./Explanations/ExplanationList";
 
 import { Row, Col, Card } from 'react-bootstrap';
@@ -10,6 +10,7 @@ import BinairoBoard from './PuzzleBoards/BinairoBoard';
 import KillerBoard from './PuzzleBoards/KillerBoard';
 import KakuroBoard from './PuzzleBoards/KakuroBoard';
 import StarBattleBoard from './PuzzleBoards/StarBattleBoard';
+import FutoshikiBoard from './PuzzleBoards/FutoshikiBoard';
 
 class PuzzleStepper extends React.Component {
     constructor(props) {
@@ -49,6 +50,8 @@ class PuzzleStepper extends React.Component {
                 return <StarBattleBoard {...boardProps}/>
             case "kakuro.eprime":
                 return <KakuroBoard {...boardProps}/>
+            case "nfutoshiki.eprime":
+                return <FutoshikiBoard {...boardProps}/>
             default:
                 return <Board {...boardProps}/>
         }

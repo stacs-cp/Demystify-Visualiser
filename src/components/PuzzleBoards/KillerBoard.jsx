@@ -1,5 +1,5 @@
 import React from 'react';
-import Board from '../Board';
+import Board from '../Board/Board';
 
 class KillerBoard extends React.Component {
     constructor(props) {
@@ -63,10 +63,10 @@ class KillerBoard extends React.Component {
             cornerNumbers[i] = []
             for(let j = 0; j < 9; j++) {
                 if(grid[i][j] === currentHint + 1) {
-                    cornerNumbers[i].push({value: hints[currentHint], pos: {top: "0%", left: "0%"}})
+                    cornerNumbers[i].push({value: hints[currentHint], style: {top: "0%", left: "0%"}})
                     currentHint++
                 } else 
-                    cornerNumbers[i].push({value: null, pos: {top: "0%", left: "0%"}})
+                    cornerNumbers[i].push({value: null, style: {top: "0%", left: "0%"}})
             }
         }
 
