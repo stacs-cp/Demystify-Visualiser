@@ -1,7 +1,7 @@
 import React from 'react';
 import NavSwitcher from './NavSwitcher';
 import Board from './Board';
-import Explanations from "./Explanations";
+import ExplanationList from "./Explanations/ExplanationList";
 
 import { Row, Col, Card } from 'react-bootstrap';
 
@@ -76,7 +76,7 @@ class PuzzleStepper extends React.Component {
                                 </Card.Body>
                             </Card>
                         }
-                        <Explanations
+                        <ExplanationList
                             highlight={this.highlightLiteral.bind(this)}
                             simpleDeductions={this.state.inputObject[this.state.currentStep].simpleDeductions}
                             deductions={this.state.inputObject[this.state.currentStep].deductions}

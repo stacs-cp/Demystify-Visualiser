@@ -53,8 +53,10 @@ class Board extends React.Component {
                                         literalBackgrounds={this.props.literalBackgrounds}
                                         cellBorders={this.props.cellBorders ? this.props.cellBorders[i][j] : null}
                                         cellInnerBorders={this.props.cellInnerBorders ? this.props.cellInnerBorders[i][j] : null}
+                                        cellBackground={this.props.cellBackgrounds ? this.props.cellBackgrounds[i][j] : null}
                                         literalSize={this.props.literalSize}
                                         cornerNumber={this.props.cornerNumbers ? this.props.cornerNumbers[i][j] : null}
+                                        hiddenLiterals={this.props.hiddenLiterals}
                                         />
 
                                         

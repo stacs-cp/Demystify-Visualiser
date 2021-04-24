@@ -24,6 +24,8 @@ class TentsBoard extends React.Component {
         return backgrounds;
     }
 
+    
+
     getCellBorders() {
         let borders = []
 

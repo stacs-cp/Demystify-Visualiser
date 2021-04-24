@@ -24,7 +24,6 @@ class SquareCol extends React.Component {
                 >   
                     {this.props.cornerNumber && <div style={{
                         position: "absolute",
-                        ...this.props.cornerNumber.pos,
                         fontWeight: "bolder",
                         color: "white",
                         backgroundColor: "#0275d8",
@@ -33,7 +32,8 @@ class SquareCol extends React.Component {
                         fontSize: "0.8vw",
                         paddingRight: "1px",
                         paddingLeft: "1px",
-                        zIndex: "2"
+                        zIndex: "2",
+                        ...this.props.cornerNumber.pos,
                     }}>
                         {this.props.cornerNumber.value}
                     </div>}
