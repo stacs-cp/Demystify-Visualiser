@@ -10,3 +10,6 @@ This is a react-based tool that provides a visualisation of the human understand
 4. Run `npm install`
 5. Run `npm start`
 
+## Basic Usage
+
+Currently the visualiser takes a JSON input file 

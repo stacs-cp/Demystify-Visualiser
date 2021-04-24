@@ -17,7 +17,6 @@ class Literal extends React.Component {
     componentDidUpdate(prevProps) {
         if(prevProps.highlighted !== this.props.highlighted) {
             this.setState({highlighted: this.props.highlighted});
-            console.log("here")
         }
     }
 

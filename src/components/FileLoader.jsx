@@ -1,14 +1,21 @@
 import React from 'react';
 import { Card, Row } from 'react-bootstrap'
 class FileLoader extends React.Component {
-    showFile = async (e) => {
+    readFile = async (e) => {
         e.preventDefault()
+
+
         const reader = new FileReader()
         reader.onload = async (e) => {
-            const text = (e.target.result)
-            this.props.setInput(JSON.parse(text));
+            try {
+                const text = (e.target.result)
+                this.props.setInput(JSON.parse(text));
+            } catch {
+                this.props.setError();
+            }
         };
         reader.readAsText(e.target.files[0])
+
     }
 
     render() {
@@ -16,7 +23,7 @@ class FileLoader extends React.Component {
             <Card className="mt-3 p-4">
                 <Row className="d-flex justify-content-center">
                     <p className="mx-4">  Load Demystify output from JSON file:</p>
-                    <input type="file" onChange={(e) => this.showFile(e)} />
+                    <input type="file" onChange={(e) => this.readFile(e)} />
                 </Row>
 
             </Card>

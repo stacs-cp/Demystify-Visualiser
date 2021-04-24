@@ -1,4 +1,3 @@
-import './App.css';
 import DemystifyViewer from './components/DemystifyViewer'
 function App() {
   return (

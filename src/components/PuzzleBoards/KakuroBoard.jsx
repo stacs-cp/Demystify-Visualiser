@@ -1,5 +1,5 @@
 import React from 'react';
-import Board from '../Board';
+import Board from '../Board/Board';
 
 class StarBattleBoard extends React.Component {
     constructor(props) {
@@ -44,8 +44,6 @@ class StarBattleBoard extends React.Component {
                 
             }
         }
-
-        console.log(backgrounds)
         /*return borders;
             {"0": "linear-gradient(to bottom left, white, white 49%, lightgray 49%, lightgray 51%, lightblue 51%, lightblue)"}*/
         
@@ -67,13 +65,13 @@ class StarBattleBoard extends React.Component {
             cornerNumbers[i] = []
             for(let j = 0; j < y; j++) {
                 if(rowsums[i][j] !== 0) {
-                    cornerNumbers[i].push({value: rowsums[i][j], pos: {top: "20%", right: "20%", ...extraStyle}})
+                    cornerNumbers[i].push({value: rowsums[i][j], style: {top: "20%", right: "20%", ...extraStyle}})
                     currentHint++
                 } else if(i > 0 && colsums[i-1][j] !== 0) {
-                    cornerNumbers[i].push({value: colsums[i-1][j], pos: {top: "-30%", left: "20%", ...extraStyle}})
+                    cornerNumbers[i].push({value: colsums[i-1][j], style: {top: "-30%", left: "20%", ...extraStyle}})
                     currentHint++
                 } else 
-                    cornerNumbers[i].push({value: null,  pos: {top: "-30%", left: "20%", ...extraStyle}})
+                    cornerNumbers[i].push({value: null,  style: {top: "-30%", left: "20%", ...extraStyle}})
 
             
             }
