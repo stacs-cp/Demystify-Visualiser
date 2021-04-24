@@ -2,7 +2,7 @@ import React from 'react';
 import { Accordion, Card, Button, ListGroup } from 'react-bootstrap';
 import Explanation from './Explanation';
 
-class Explanations extends React.Component {
+class ExplanationList extends React.Component {
 
     render() {
         const { simpleDeductions, deductions } = this.props;
@@ -66,4 +66,4 @@ class Explanations extends React.Component {
     }
 }
 
-export default Explanations;
+export default ExplanationList;
