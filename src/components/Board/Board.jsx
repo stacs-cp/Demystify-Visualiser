@@ -11,8 +11,12 @@ class Board extends React.Component {
 
     render() {
         const {
+            // Required Props 
             highlighted, 
-            highlight, 
+            highlight,
+            rows,
+
+            //Optional Props, for custom styling
             literalBackgrounds,
             cellBorders,
             cellInnerBorders,
@@ -25,7 +29,7 @@ class Board extends React.Component {
             hiddenLiterals,
             rowsums,
             colsums,
-            rows
+            
         } = this.props;
         
         return (
