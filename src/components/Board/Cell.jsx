@@ -9,36 +9,25 @@ class Cell extends React.Component {
         super(props);
         this.state = {
             highlighted: this.props.highlighted,
-            isSingelton: false,
-            singletonValue: 0
         }
     }
 
-    componentDidMount() {
+    isSingleton() {
         const cellRows = this.props.cellContent.cellRows;
-        
-        this.setState({
-            isSingleton: cellRows.length === 1 &&
-                cellRows[0].cellValues.length === 1,
 
-            singletonValue: cellRows[0].cellValues[0].value
-        })
+        return cellRows.length === 1 &&
+                cellRows[0].cellValues.length === 1
     }
+
+    getSingletonValue() {
+        const cellRows = this.props.cellContent.cellRows;
+        return cellRows[0].cellValues[0].value
+    }
+
 
     componentDidUpdate(prevProps) {
         if (prevProps.highlighted !== this.props.highlighted) {
             this.setState({ highlighted: this.props.highlighted });
-        }
-
-        const cellRows = this.props.cellContent.cellRows;
-
-        if (prevProps.cellContent.cellRows.length !== cellRows.length) {
-            this.setState({
-                isSingleton: cellRows.length === 1 &&
-                    cellRows[0].cellValues.length === 1,
-
-                singletonValue: cellRows[0].cellValues[0].value
-            })
         }
     }
 
@@ -48,7 +37,8 @@ class Cell extends React.Component {
 
     chooseBackground() {
         const { literalBackgrounds, cellBackground } = this.props;
-        const { isSingleton, singletonValue } = this.state;
+        const isSingleton = this.isSingleton();
+        const singletonValue = this.getSingletonValue();
 
         if (literalBackgrounds && isSingleton) {
             return literalBackgrounds[singletonValue.toString()]
@@ -85,10 +75,10 @@ class Cell extends React.Component {
             bottomLabel,
             literalSize } = this.props;
 
-        const {
-            highlighted,
-            isSingleton,
-            singletonValue } = this.state;
+        const {highlighted} = this.state;
+
+        const isSingleton = this.isSingleton();
+        const singletonValue = this.getSingletonValue();
 
         return (
             <SquareCol

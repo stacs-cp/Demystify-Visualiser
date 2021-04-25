@@ -12,15 +12,21 @@ class DemystifyViewer extends React.Component {
     params: {},
     error: false,
   }
+  
   setInput(obj) {
-    this.setState({ inputObject: obj.steps, type: obj.name, params: obj.params })
+    this.setState({ inputObject: obj.steps, type: obj.name, params: obj.params },
+      () => !(this.state.inputObject && this.state.type && this.state.params)  
+      && this.setError())
 
-    !(this.state.inputObject && this.state.type && this.state.params)  
-      && this.setError();
+    
   }
 
   setError() {
     this.setState({error: true});
+  }
+
+  conponentDidUpdate(prevProps, prevState) {
+    if(prevState.error) this.setState({error: false});
   }
 
   render = () => {
@@ -29,6 +35,7 @@ class DemystifyViewer extends React.Component {
       <Container fluid style={{textAlign: "center"}}>
         {(this.state.inputObject.length === 0 || this.state.error) ?
           <React.Fragment>
+            <h1 className="mt-3">Demystify Visualiser</h1>
             <FileLoader setInput={this.setInput.bind(this)} setError={this.setError.bind(this)} />
             {this.state.error && 
               <Alert variant="warning" className="mt-3 p-4 text-center">
