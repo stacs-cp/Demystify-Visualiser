@@ -46,3 +46,7 @@ The currently supported `Board` props are as follows:
 - **colsums:** An array representing an additional row to be displayed at the top of the grid (useful for puzzles with column sums). See [`TentsBoard.jsx`](./src/components/PuzzleBoards/TentsBoard.jsx) for an example.
 - **rowsums:** An array representing an additional column to be displayed at the left of the grid (useful for puzzles with row sums). See [`TentsBoard.jsx`](./src/components/PuzzleBoards/TentsBoard.jsx) for an example.
 
+## Deploying to a server
+
+A simple method of deploying (using the npm serve package) is demonstrated via the `nginx.conf` file and the `boot.sh` deployment script. 
+
