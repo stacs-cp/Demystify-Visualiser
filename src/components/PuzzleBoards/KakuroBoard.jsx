@@ -1,7 +1,7 @@
 import React from 'react';
 import Board from '../Board/Board';
 
-class StarBattleBoard extends React.Component {
+class KakuroBoard extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -93,4 +93,4 @@ class StarBattleBoard extends React.Component {
     }
 }
 
-export default StarBattleBoard;
+export default KakuroBoard;

@@ -1,6 +1,9 @@
 import React from 'react';
 import {Row} from 'react-bootstrap';
 
+/**
+ * Saves typing out the bootstrap class name multiple times.
+ */
 class SquareRow extends React.Component {
     render() {
         return (
