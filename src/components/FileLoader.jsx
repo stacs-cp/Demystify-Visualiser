@@ -9,6 +9,9 @@ let killersudoku = require('../json_inputs/killersudoku.json');
 let starbattle = require('../json_inputs/starbattle.json');
 let tents = require('../json_inputs/tents.json');
 
+/**
+ * Load a JSON input from the user's filesystem or preloaded examples.
+ */
 class FileLoader extends React.Component {
 
     // Read a JSON file on the user's filesystem
@@ -28,7 +31,7 @@ class FileLoader extends React.Component {
     }
 
     chooseExample(e) {
-        // Harcoded for now.
+        // Hardcoded for now.
         switch(e) {
             case "1":
                 this.props.setInput(binairo)
@@ -56,11 +59,13 @@ class FileLoader extends React.Component {
             <Card className="mt-3 pt-3">
                 <ListGroup variant="flush">
                     <ListGroup.Item>
+                        {/* Basic file selection. */}
                         <Row className="d-flex justify-content-center">
                             <p className="mx-4">  Load Demystify output from JSON file:</p>
                             <input type="file" onChange={(e) => this.readFile(e)} />
                         </Row>
                     </ListGroup.Item>
+
                     <ListGroup.Item>
                         <Row className="d-flex justify-content-center">
                             <p className="mx-4 pt-2">Or choose a preloaded example:</p>
@@ -68,7 +73,8 @@ class FileLoader extends React.Component {
                                 <Dropdown.Toggle variant="success" id="dropdown-basic">
                                     Examples
                                 </Dropdown.Toggle>
-
+                                
+                                {/* Again, hardcoded options should be fetched from somewhere in future.*/}
                                 <Dropdown.Menu>
                                     <Dropdown.Item eventKey="1">
                                         Binairo

@@ -3,8 +3,13 @@ import { Card, Container, Row, Col } from 'react-bootstrap'
 import Cell from './Cell';
 import SquareCol from './SquareCol';
 import SquareRow from './SquareRow';
+
+/**
+ * Generic puzzle board component. 
+ */
 class Board extends React.Component {
 
+    // Return item at index, if the array prop is defined. 
     getIndex(arr, row, column) {
         return arr ? arr[row][column] : null;
     }
@@ -16,7 +21,7 @@ class Board extends React.Component {
             highlight,
             rows,
 
-            //Optional Props, for custom styling
+            //Optional Props, for custom styling (see README)
             literalBackgrounds,
             cellBorders,
             cellInnerBorders,
@@ -35,10 +40,10 @@ class Board extends React.Component {
         return (
             <Card className="mt-3 p-4">
                 <Container fluid style={{ minWidth: "400px", padding: "0px"}}>
-                
+                    {/*'Thin' row to display column indices.*/}
                     <SquareRow>
                         <Col xs={1} className="m-0 p-0" />
-                        {rowsums && <Col className="m-0 p-0" />}
+                        {rowsums && <Col className="m-0 p-0" /> /* small corner cell*/}
                         {rows[0].cells.map((cell, i) =>
                             <Col key={i} className="m-0 p-0">
                                 <small className="text-muted">{i + 1}</small>
@@ -46,6 +51,7 @@ class Board extends React.Component {
                     </SquareRow>
 
                     {colsums &&
+                        // Extra row for column sums if necessary.
                         <SquareRow>
                             <Col xs={1} className="m-0 p-0" />
                             <SquareCol />
@@ -58,26 +64,34 @@ class Board extends React.Component {
                         </SquareRow>}
 
                     {rows.map((row, i) =>
-
                         <SquareRow key={i}>
+                            {/* 'Thin' column for column indices */}
                             <Col xs={1} key={i} className="m-0 p-0">
                                 <small className="text-muted">{i + 1}</small>
                             </Col>
 
                             {rowsums &&
+                                // Extra column for row sums if ncessary.
                                 <SquareCol>
                                     <h3 style={{ fontSize: "3vw", color: "gray" }}>
                                         {rowsums[i]}
                                     </h3>
                                 </SquareCol>}
                             {row.cells.map((cell, j) =>
-                                    <Cell 
+                                    // Main rows of puzzle
+                                    <Cell
+                                        cellContent={cell} 
                                         row={i} 
                                         column={j} 
+
+                                        // Whether this cell is currently highlighted
                                         highlighted={highlighted} 
-                                        cellContent={cell} 
+                                        
+                                        /* Function to highlight explanation when this cell
+                                            is moused over */
                                         highlight={highlight}
                                         
+                                        // Styling 
                                         cellBorders={this.getIndex(cellBorders, i, j)}
                                         cellInnerBorders={this.getIndex(cellInnerBorders, i, j)}
                                         cellBackground={this.getIndex(cellBackgrounds, i, j)}

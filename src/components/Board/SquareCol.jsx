@@ -1,13 +1,17 @@
 import React from 'react';
 import {Col} from 'react-bootstrap';
 
+/**
+ * A Square cell container, with optional extra styling.
+ */
 class SquareCol extends React.Component {
     
     render() {
+
         const borders = this.props.borders ? this.props.borders :
         {
             border: "2px solid lightgray",
-            marginBottom: "-2px",
+            marginBottom: "-2px", // Deal with "doubled" borders.
             marginLeft: "-2px"
         }
 
@@ -26,7 +30,8 @@ class SquareCol extends React.Component {
                         backgroundSize:"100% 100%",
                     }}
                 >   
-                    {this.props.cornerNumber && <div style={{
+                    { // Small optional number to overlay on the cell.
+                    this.props.cornerNumber && <div style={{
                         position: "absolute",
                         fontWeight: "bolder",
                         color: "white",
@@ -42,7 +47,8 @@ class SquareCol extends React.Component {
                         {this.props.cornerNumber.value}
                     </div>}
 
-                    {this.props.rightLabel && <div style={{
+                    { // Optional label between this cell and next on the right.
+                    this.props.rightLabel && <div style={{
                         position: "absolute",
                         top: "35%",
                         right: "-5%",
@@ -51,7 +57,8 @@ class SquareCol extends React.Component {
                         {this.props.rightLabel}
                     </div>}
 
-                    {this.props.bottomLabel && <div style={{
+                    { // Optional label between this cell and the next below.
+                    this.props.bottomLabel && <div style={{
                         position: "absolute",
                         bottom: "-15%",
                         right: "42%",
@@ -68,7 +75,10 @@ class SquareCol extends React.Component {
                         justifyContent: "center",
                         alignItems: "center",
                     }}>
-                        {this.props.children}
+                        {this.props.children /* Main cell content */} 
+                        
+                        {/*This div ensure the cell is always square
+                            CSS trick: https://stackoverflow.com/a/28985475/12309539*/}
                         <div style={{
                         display: "block",
                         paddingBottom: "100%"

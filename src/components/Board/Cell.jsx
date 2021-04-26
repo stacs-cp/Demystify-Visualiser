@@ -4,6 +4,10 @@ import Literal from './Literal';
 import SquareCol from './SquareCol';
 import SquareRow from './SquareRow';
 
+/**
+ * Cell component, where a cell is itself a grid of possible values.
+ * (1 x 1) grid if the value becomes or is known.
+ */
 class Cell extends React.Component {
     constructor(props) {
         super(props);
@@ -12,6 +16,7 @@ class Cell extends React.Component {
         }
     }
 
+    // Whether the cell grid is 1x1 i.e. the value is known.
     isSingleton() {
         const cellRows = this.props.cellContent.cellRows;
 
@@ -19,22 +24,26 @@ class Cell extends React.Component {
                 cellRows[0].cellValues.length === 1
     }
 
+    // Get the first value of the cell grid.
     getSingletonValue() {
         const cellRows = this.props.cellContent.cellRows;
         return cellRows[0].cellValues[0].value
     }
 
-
+    // Check whether the cell should be highlighted
     componentDidUpdate(prevProps) {
         if (prevProps.highlighted !== this.props.highlighted) {
             this.setState({ highlighted: this.props.highlighted });
         }
     }
 
+    // Call the parent highlight function
     highlight(exp) {
         this.props.highlight(exp);
     }
 
+    /* Choose the cell background, either by reading a mapping for a singleton,
+        or taking the indexed cellBackground. */
     chooseBackground() {
         const { literalBackgrounds, cellBackground } = this.props;
         const isSingleton = this.isSingleton();
@@ -49,6 +58,7 @@ class Cell extends React.Component {
         }
     }
 
+    /* Known cells should be 3 times larger. */
     getFontSize(scale) {
         const { literalSize } = this.props;
         if (literalSize) {
@@ -59,6 +69,7 @@ class Cell extends React.Component {
         }
     }
 
+    /* Check if a singleton value should be hidden */
     isHidden(value) {
         const { hiddenLiterals } = this.props;
         return hiddenLiterals && hiddenLiterals.includes(value);
@@ -92,20 +103,23 @@ class Cell extends React.Component {
                 bottomLabel={bottomLabel}>
 
                 {isSingleton ?
+                    // Display a single value if it is known and not hidden.
                     (
                         (!this.isHidden(singletonValue)) &&
                         <h1 style={{ fontSize: this.getFontSize(3) }}>
                             {singletonValue}
                         </h1>
                     ) :
+                    // Otherwise display a grid of possibilities
                     <Container fluid className="p-0 align-items-center">
                         {cellContent.cellRows.map((row, i) =>
                             <SquareRow key={i} style={{ fontSize: this.getFontSize(1) }}>
                                 {row.cellValues.map((literal, i) =>
+                                    // Possibilities are positive/negative literals.
                                     <Literal
                                         key={i}
                                         value={literal.value}
-                                        status={literal.status}
+                                        status={literal.status} // positive / negative
                                         highlighted={literal.explanations.includes(highlighted.toString())}
                                         highlightExplanation={() => this.highlight(literal.explanations)}
                                     />
