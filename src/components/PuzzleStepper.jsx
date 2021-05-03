@@ -22,6 +22,7 @@ class PuzzleStepper extends React.Component {
             currentStep: 0,
             highlightedLiterals: -1,
             highlightedExplanations: [],
+            currentAlternative: 0,
             type: this.props.type,
             params: this.props.params,
             inputObject: this.props.inputObject
@@ -45,7 +46,11 @@ class PuzzleStepper extends React.Component {
 
     // Passed to the NavSwitcher.
     setCurrentStep(step) {
-        this.setState({ currentStep: step });
+        this.setState({ currentStep: step, currentAlternative: 0});
+    }
+
+    setAlternative(number) {
+        this.setState({currentAlternative: number})
     }
 
     // Choose a board if we have defined one for this puzzle type.
@@ -69,17 +74,21 @@ class PuzzleStepper extends React.Component {
         }
     }
     render() {
+        const stepData = this.state.currentAlternative ==  0 ?
+            this.state.inputObject[this.state.currentStep]
+            : this.state.inputObject[this.state.currentStep].otherChoices[this.state.currentAlternative - 1]
+
         // Core required board props. 
         const boardProps = {
             params: this.state.params,
             highlight: this.highlightExplanation.bind(this),
             key: this.state.highlightedLiterals,
             highlighted: this.state.highlightedLiterals, 
-            rows: this.state.inputObject[this.state.currentStep].puzzleState.matrices[0].rows
+            rows: stepData.puzzleState.matrices[0].rows
         }
         return (
             <React.Fragment>
-                <NavSwitcher setCurrentStep={this.setCurrentStep.bind(this)} maxSteps={this.state.inputObject.length - 1} />
+                <NavSwitcher className="mt-3 p-3" stepName={"step"} setCurrentStep={this.setCurrentStep.bind(this)} maxSteps={this.state.inputObject.length - 1} />
                 <Row className="mb-4">
                     {/*The main board: adjust width based on screen size */}
                     <Col xs={12} md={8} lg={8} xl={6}>
@@ -88,7 +97,7 @@ class PuzzleStepper extends React.Component {
 
                     {/*The explanations */}
                     <Col>
-                        {this.state.inputObject[this.state.currentStep].skippedDeductions &&
+                        {stepData.skippedDeductions &&
                             <Card className="mt-3">
                                 <Card.Body>
                                     <small>Skipped some obvious deductions.</small>
@@ -98,10 +107,14 @@ class PuzzleStepper extends React.Component {
                         }
                         <ExplanationList
                             highlight={this.highlightLiteral.bind(this)}
-                            simpleDeductions={this.state.inputObject[this.state.currentStep].simpleDeductions}
-                            deductions={this.state.inputObject[this.state.currentStep].deductions}
-                            highlighted={this.state.highlightedExplanations} />
-                        {/* TODO: add a way to see alternative deductions / follow different paths. */}
+                            simpleDeductions={stepData.simpleDeductions}
+                            deductions={stepData.deductions}
+                            highlighted={this.state.highlightedExplanations} 
+                            otherChoices={this.state.inputObject[this.state.currentStep].otherChoices}
+                            smallestMUSSize={this.state.inputObject[this.state.currentStep].smallestMUSSize}
+                            setAlternative={this.setAlternative.bind(this)}
+                            />
+                        
                     </Col>
                 </Row>
             </React.Fragment>
