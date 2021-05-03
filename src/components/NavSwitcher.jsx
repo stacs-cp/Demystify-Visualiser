@@ -29,21 +29,21 @@ class NavSwitcher extends React.Component {
 
     render() {
         return (
-            <Card className="mt-3 p-3">
+            <Card className={this.props.className}>
 
                 <Form inline onSubmit={e => e.preventDefault()} className="d-flex justify-content-between">
                     <Button variant="primary" onClick={this.lastStep.bind(this)}>
-                        Last Step
+                        Last {this.props.stepName}
                     </Button>
 
                     {/* Steps are indexed from 0 in JSON but display starting from 1 to the user. */}
                     <Form.Group>
-                        <Form.Label className="w-70 mr-2">Current Step:</Form.Label>
+                        <Form.Label className="w-70 mr-2">Current {this.props.stepName}:</Form.Label>
                         <Form.Label className="w-70 mr-2">{this.state.currentStep + 1}</Form.Label>
                     </Form.Group>
 
                     <Button variant="primary" onClick={this.nextStep.bind(this)}>
-                        Next Step
+                        Next {this.props.stepName}
                     </Button>
 
                 </Form>
