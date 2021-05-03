@@ -1,6 +1,9 @@
 import React from 'react';
 import { ListGroup } from 'react-bootstrap';
 
+/**
+ * A single explanation/reason that can be highlighted on mouse over.
+ */
 class Explanation extends React.Component {
     constructor(props) {
         super(props);
@@ -14,14 +17,13 @@ class Explanation extends React.Component {
         this.props.highlight();
     }
 
-    deHighlight() {
+    deHighlight() { //...unhighlight? dishighlight?
         this.setState({highlighted: false});
         this.props.highlight();
     }
 
     componentDidUpdate(prevProps) {
-        if(prevProps.highlighted !== this.props.highlighted) {
-            
+        if(prevProps.highlighted !== this.props.highlighted) { 
             this.setState({highlighted: this.props.highlighted});
         }
     }
@@ -30,6 +32,7 @@ class Explanation extends React.Component {
         const itemStyle =
             this.state.highlighted ?
                 { backgroundColor: "cornsilk" } : null
+                
         const {decision, reason, index} = this.props
 
         return <ListGroup.Item

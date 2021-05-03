@@ -3,6 +3,9 @@ import { Accordion, Card, Button, ListGroup } from 'react-bootstrap';
 import NavSwitcher from '../NavSwitcher';
 import Explanation from './Explanation';
 
+/**
+ * A sidebar that displays the deductions made on a given step, along with the explanations for that deduction.
+ */
 class ExplanationList extends React.Component {
 
     render() {
@@ -11,7 +14,8 @@ class ExplanationList extends React.Component {
             <React.Fragment>
                 <Card className="mt-3" >
 
-                    {simpleDeductions ?
+                    { /*For simple deductions (just one reason), display a collapsible list */
+                        simpleDeductions ?
                         <Accordion defaultActiveKey="1">
                             <Card.Header>
                                 <h5>Made {simpleDeductions.length} simple deductions.</h5>
@@ -37,6 +41,8 @@ class ExplanationList extends React.Component {
                             </Accordion.Collapse>
                         </Accordion>
                         : deductions &&
+                        /* Otherwise we have an "interesting" deductions, 
+                            so display the deductions with a list of reasons */
                         <React.Fragment>
                             <Card.Header>
                                 <h5>Made the following deduction:</h5>
@@ -61,7 +67,9 @@ class ExplanationList extends React.Component {
                     }
                 </Card>
 
-                {otherChoices && <Card className="mt-3">
+                {/*If there are other choices, display a NavSwitcher to step through the alternatives */
+                otherChoices && 
+                    <Card className="mt-3">
                     <Card.Header>
                         <b>Found {otherChoices.length + 1} choices in total for this step:</b>
                     </Card.Header>
@@ -78,7 +86,9 @@ class ExplanationList extends React.Component {
                             currentStep={this.props.currentAlternative}
                             />
                         <div>
-                            <small className="text-muted">(Note: different MUSs may result in deductions that look identical)</small>
+                            <small className="text-muted">
+                                (Note: different MUSs may result in deductions that look identical)
+                            </small>
                         </div>
 
                     </Card.Body>
