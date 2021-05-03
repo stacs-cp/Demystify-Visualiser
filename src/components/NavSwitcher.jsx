@@ -6,7 +6,7 @@ import { Button, Card, Form } from 'react-bootstrap';
  */
 class NavSwitcher extends React.Component {
     state = {
-        currentStep: 0,
+        currentStep: this.props.currentStep,
     }
 
     // Advance

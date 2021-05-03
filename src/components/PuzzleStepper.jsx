@@ -88,7 +88,13 @@ class PuzzleStepper extends React.Component {
         }
         return (
             <React.Fragment>
-                <NavSwitcher className="mt-3 p-3" stepName={"step"} setCurrentStep={this.setCurrentStep.bind(this)} maxSteps={this.state.inputObject.length - 1} />
+                <NavSwitcher 
+                    className="mt-3 p-3" 
+                    stepName={"step"} 
+                    setCurrentStep={this.setCurrentStep.bind(this)} 
+                    maxSteps={this.state.inputObject.length - 1} 
+                    currentStep={this.state.currentStep}/>
+
                 <Row className="mb-4">
                     {/*The main board: adjust width based on screen size */}
                     <Col xs={12} md={8} lg={8} xl={6}>
@@ -103,7 +109,6 @@ class PuzzleStepper extends React.Component {
                                     <small>Skipped some obvious deductions.</small>
                                 </Card.Body>
                             </Card>
-                            // TODO: add a way to see skipped deductions
                         }
                         <ExplanationList
                             highlight={this.highlightLiteral.bind(this)}
@@ -113,7 +118,9 @@ class PuzzleStepper extends React.Component {
                             otherChoices={this.state.inputObject[this.state.currentStep].otherChoices}
                             smallestMUSSize={this.state.inputObject[this.state.currentStep].smallestMUSSize}
                             setAlternative={this.setAlternative.bind(this)}
+                            currentAlternative={this.state.currentAlternative}
                             />
+                        
                         
                     </Col>
                 </Row>

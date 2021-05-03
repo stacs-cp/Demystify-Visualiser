@@ -68,8 +68,19 @@ class ExplanationList extends React.Component {
                     <Card.Body>
                         <div className="mb-3">
                             See the alternative deductions with MUS size {smallestMUSSize}:
+                            
                         </div>
-                        <NavSwitcher stepName={"alternative"} className="p-3" setCurrentStep={this.props.setAlternative} maxSteps={otherChoices.length}/>
+                        <NavSwitcher 
+                            stepName={"alternative"} 
+                            className="p-3" 
+                            setCurrentStep={this.props.setAlternative} 
+                            maxSteps={otherChoices.length}
+                            currentStep={this.props.currentAlternative}
+                            />
+                        <div>
+                            <small className="text-muted">(Note: different MUSs may result in deductions that look identical)</small>
+                        </div>
+
                     </Card.Body>
 
                 </Card>}
