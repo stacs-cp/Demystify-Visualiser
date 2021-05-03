@@ -2,7 +2,7 @@ import React from 'react';
 import { Button, Card, Form } from 'react-bootstrap';
 
 /**
- * A top navigation bar to advance or deadvance the steps of the solution.
+ * A navigation bar to advance or deadvance steps.
  */
 class NavSwitcher extends React.Component {
     state = {

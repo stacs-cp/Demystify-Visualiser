@@ -44,11 +44,12 @@ class PuzzleStepper extends React.Component {
                         [] : val } });
     }
 
-    // Passed to the NavSwitcher.
+    // Passed to the NavSwitcher for overall steps
     setCurrentStep(step) {
         this.setState({ currentStep: step, currentAlternative: 0});
     }
 
+    // Passed to the NavSwitcher for switching between alternatives.
     setAlternative(number) {
         this.setState({currentAlternative: number})
     }
@@ -101,7 +102,7 @@ class PuzzleStepper extends React.Component {
                         {this.chooseBoard(boardProps)} 
                     </Col>
 
-                    {/*The explanations */}
+                    {/*The explanations*/}
                     <Col>
                         {stepData.skippedDeductions &&
                             <Card className="mt-3">
@@ -110,11 +111,17 @@ class PuzzleStepper extends React.Component {
                                 </Card.Body>
                             </Card>
                         }
+
                         <ExplanationList
                             highlight={this.highlightLiteral.bind(this)}
+
+                            /* Only one of simpleDeductions or deductions should be defined. */
                             simpleDeductions={stepData.simpleDeductions}
                             deductions={stepData.deductions}
+
                             highlighted={this.state.highlightedExplanations} 
+
+                            /* Props for displaying alternatives */
                             otherChoices={this.state.inputObject[this.state.currentStep].otherChoices}
                             smallestMUSSize={this.state.inputObject[this.state.currentStep].smallestMUSSize}
                             setAlternative={this.setAlternative.bind(this)}
