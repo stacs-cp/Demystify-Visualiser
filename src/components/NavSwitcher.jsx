@@ -27,6 +27,13 @@ class NavSwitcher extends React.Component {
         }
     }
 
+    // Ensure current step is kept up to date.
+    componentDidUpdate(prevProps) {
+        if (prevProps.currentStep !== this.props.currentStep) {
+            this.setState({ currentStep: this.props.currentStep });
+        }
+    }
+
     render() {
         return (
             <Card className={this.props.className}>
