@@ -6,7 +6,7 @@ This is a react-based tool that provides a visualisation of the human understand
 
 1. Ensure you have [Node >= 10.16 and npm >= 5.6](https://nodejs.org/en/) installed.
 2. Clone the repository.
-3. Navigate to the `demystify-visualiser` folder. 
+3. Navigate to the `demystify-visualiser/client` folder. 
 4. Run `npm install`
 5. Run `npm start`
 
