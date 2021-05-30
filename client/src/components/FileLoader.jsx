@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Row, ListGroup, ListGroupItem, Dropdown } from 'react-bootstrap'
+import { Card, Row, ListGroup, Dropdown } from 'react-bootstrap'
 
 /* In future, put these behind a backend endpoint.*/
 let binairo = require('../json_inputs/binairo.json');
@@ -50,6 +50,8 @@ class FileLoader extends React.Component {
                 break;
             case "6":
                 this.props.setInput(tents)
+                break;
+            default:
                 break;
         }
     }

@@ -40,7 +40,7 @@ class PuzzleStepper extends React.Component {
         this.setState((prev) => 
             { return { 
                 highlightedExplanations:
-                    JSON.stringify(prev.highlightedExplanations) == JSON.stringify(val) ? 
+                    JSON.stringify(prev.highlightedExplanations)===JSON.stringify(val) ? 
                         [] : val } });
     }
 
@@ -75,7 +75,7 @@ class PuzzleStepper extends React.Component {
         }
     }
     render() {
-        const stepData = this.state.currentAlternative ==  0 ?
+        const stepData = this.state.currentAlternative=== 0 ?
             this.state.inputObject[this.state.currentStep]
             : this.state.inputObject[this.state.currentStep].otherChoices[this.state.currentAlternative - 1]
 

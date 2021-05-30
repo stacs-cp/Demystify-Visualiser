@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Container, Row, Col } from 'react-bootstrap'
+import { Card, Container, Col } from 'react-bootstrap'
 import Cell from './Cell';
 import SquareCol from './SquareCol';
 import SquareRow from './SquareRow';

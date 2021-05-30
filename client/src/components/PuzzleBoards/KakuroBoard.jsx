@@ -23,17 +23,17 @@ class KakuroBoard extends React.Component {
         for(let i = 0; i < this.state.x; i++) {
             backgrounds[i] = []
             for(let j = 0; j < this.state.y; j++) {
-                if(rowsums[i][j] != 0) {
-                    if(colsums[i][j] != 0) {
+                if(rowsums[i][j]!==0) {
+                    if(colsums[i][j]!==0) {
                         backgrounds[i].push(this.getDiagonalGradient("white", "white"))
                     } else {
                         backgrounds[i].push(this.getDiagonalGradient("white", "lightblue"))
                     }
                 } else {
-                    if(colsums[i][j] != 0) {
+                    if(colsums[i][j]!==0) {
                         backgrounds[i].push(this.getDiagonalGradient("lightblue", "white"))
                     } else {
-                        if(blanks[i][j] == 0) {
+                        if(blanks[i][j]===0) {
                             backgrounds[i].push("linear-gradient(lightblue, lightblue)")
                         } else {
                             backgrounds[i].push("none")
@@ -54,7 +54,6 @@ class KakuroBoard extends React.Component {
     getCornerNumbers() {
         let cornerNumbers = []
         const {rowsums, colsums, x, y} = this.state;
-        let currentHint = 0;
         const extraStyle = {
             fontWeight: "bolder",
             color: "gray",
@@ -66,10 +65,8 @@ class KakuroBoard extends React.Component {
             for(let j = 0; j < y; j++) {
                 if(rowsums[i][j] !== 0) {
                     cornerNumbers[i].push({value: rowsums[i][j], style: {top: "20%", right: "20%", ...extraStyle}})
-                    currentHint++
                 } else if(i > 0 && colsums[i-1][j] !== 0) {
                     cornerNumbers[i].push({value: colsums[i-1][j], style: {top: "-30%", left: "20%", ...extraStyle}})
-                    currentHint++
                 } else 
                     cornerNumbers[i].push({value: null,  style: {top: "-30%", left: "20%", ...extraStyle}})
 
