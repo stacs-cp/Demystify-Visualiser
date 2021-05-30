@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 import Literal from './Literal';
 import SquareCol from './SquareCol';
 import SquareRow from './SquareRow';

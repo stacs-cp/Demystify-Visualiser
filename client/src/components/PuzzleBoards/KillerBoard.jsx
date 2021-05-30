@@ -18,10 +18,10 @@ class KillerBoard extends React.Component {
             for(let j = 0; j < 9; j++) {
                 borders[i].push(
                     {
-                        borderTop: i%3 == 0 ? "2px solid black" : "2px solid lightgray",
-                        borderBottom: i == 8 ? "2px solid black" : "2px solid lightgray",
-                        borderLeft: j%3 == 0 ? "2px solid black" : "2px solid lightgray",
-                        borderRight: j == 8 ? "2px solid black" : "2px solid lightgray",
+                        borderTop: i%3===0 ? "2px solid black" : "2px solid lightgray",
+                        borderBottom: i===8 ? "2px solid black" : "2px solid lightgray",
+                        borderLeft: j%3===0 ? "2px solid black" : "2px solid lightgray",
+                        borderRight: j===8 ? "2px solid black" : "2px solid lightgray",
                         marginLeft: "-2px",
                         marginBottom: "-2px",
                     }
@@ -41,10 +41,10 @@ class KillerBoard extends React.Component {
                 borders[i].push(
                     {
                         borderTop: 
-                            i == 0 || grid[i-1][j] !== grid[i][j] ? "2px dashed black" : "2px dashed white",
-                        borderBottom: i == 8 || grid[i+1][j] !== grid[i][j] ? "2px dashed black" : "2px dashed white",
-                        borderLeft: j == 0 || grid[i][j-1] !== grid[i][j] ? "2px dashed black" : "2px dashed white",
-                        borderRight: j == 8 || grid[i][j+1] !== grid[i][j] ? "2px dashed black" : "2px dashed white",
+                            i===0 || grid[i-1][j] !== grid[i][j] ? "2px dashed black" : "2px dashed white",
+                        borderBottom: i===8 || grid[i+1][j] !== grid[i][j] ? "2px dashed black" : "2px dashed white",
+                        borderLeft: j===0 || grid[i][j-1] !== grid[i][j] ? "2px dashed black" : "2px dashed white",
+                        borderRight: j===8 || grid[i][j+1] !== grid[i][j] ? "2px dashed black" : "2px dashed white",
                         margin: "3px",
                     }
                 )

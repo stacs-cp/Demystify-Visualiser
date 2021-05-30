@@ -34,10 +34,10 @@ class TentsBoard extends React.Component {
             for(let j = 0; j < 9; j++) {
                 borders[i].push(
                     {
-                        borderTop: i == 0 ? "2px solid black" : "2px solid lightgray",
-                        borderBottom: i == this.state.x - 1 ? "2px solid black" : "2px solid lightgray",
-                        borderLeft: j == 0 ? "2px solid black" : "2px solid lightgray",
-                        borderRight: j == this.state.y - 1 ? "2px solid black" : "2px solid lightgray",
+                        borderTop: i===0 ? "2px solid black" : "2px solid lightgray",
+                        borderBottom: i===this.state.x - 1 ? "2px solid black" : "2px solid lightgray",
+                        borderLeft: j===0 ? "2px solid black" : "2px solid lightgray",
+                        borderRight: j===this.state.y - 1 ? "2px solid black" : "2px solid lightgray",
                         marginLeft: "-2px",
                         marginBottom: "-2px",
                     }

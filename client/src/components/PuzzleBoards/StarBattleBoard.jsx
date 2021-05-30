@@ -19,10 +19,10 @@ class KakuroBoard extends React.Component {
                 borders[i].push(
                     {
                         borderTop: 
-                            i == 0 || grid[i-1][j] !== grid[i][j] ? "2px solid black" : "2px solid lightgray",
-                        borderBottom: i == gridSize - 1 || grid[i+1][j] !== grid[i][j] ? "2px solid black" : "2px solid lightgray",
-                        borderLeft: j == 0 || grid[i][j-1] !== grid[i][j] ? "2px solid black" : "2px solid lightgray",
-                        borderRight: j == gridSize - 1 || grid[i][j+1] !== grid[i][j] ? "2px solid black" : "2px solid lightgray",
+                            i===0 || grid[i-1][j] !== grid[i][j] ? "2px solid black" : "2px solid lightgray",
+                        borderBottom: i===gridSize - 1 || grid[i+1][j] !== grid[i][j] ? "2px solid black" : "2px solid lightgray",
+                        borderLeft: j===0 || grid[i][j-1] !== grid[i][j] ? "2px solid black" : "2px solid lightgray",
+                        borderRight: j===gridSize - 1 || grid[i][j+1] !== grid[i][j] ? "2px solid black" : "2px solid lightgray",
                         marginLeft: "-2px",
                         marginBottom: "-2px"
                     }
