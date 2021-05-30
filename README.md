@@ -1,6 +1,6 @@
 # Demystify-Visualiser
 
-This is a react-based tool that provides a visualisation of the human understandable solutions to "pen and paper" puzzles produced by the "Demystify" solver. 
+This is a react-based tool that provides a visualisation of the human understandable solutions to "pen and paper" puzzles produced by the "Demystify" solver. Originally written by Matthew McIlree (https://github.com/mmcilree) as part of an Undergraduate Research Assistant Scheme project 2021. 
 
 ## How to Run
 
