@@ -9,7 +9,7 @@ app.use(express.json());
 
 app.use(express.static(path.join(__dirname, "..", "client", "build")));
 app.use(express.static("../client/public"));
-const examplesFolder = __dirname + "/examples"
+const examplesFolder = "./examples"
 
 app.get("/examples",
     async (inRequest: Request, inResponse: Response) => {
@@ -24,26 +24,23 @@ app.get("/examples",
                 })
             
         } catch (inError) {
-            inResponse.send(inError);
+            inResponse.status(400).send(inError.message);
         }
     }
 );
 
 app.get("/examples/:name",
     async (inRequest: Request, inResponse: Response) => {
-        console.log("GET /examples (2) " + inRequest.params.name);
-
+        const name = inRequest.params.name.replace(/\W/g, '');
+        console.log("GET /examples (2) " + name);
         try {
-            fs.readFile(examplesFolder + "/" + inRequest.params.name, "utf8", (err, data) => {
-                if (err) {
-                    console.error(err)
-                    return
-                  }
-                  inResponse.json(JSON.parse(data));
-            });
+            const data = fs.readFileSync(examplesFolder + "/" + name + ".json", "utf8");
+            inResponse.json(JSON.parse(data))
         } catch (inError) {
-            inResponse.send(inError);
+            inResponse.status(400).send(inError.message)
         }
+        
+        
     }
 );
 

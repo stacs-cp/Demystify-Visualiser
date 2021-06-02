@@ -46,7 +46,7 @@ var app = express_1.default();
 app.use(express_1.default.json());
 app.use(express_1.default.static(path_1.default.join(__dirname, "..", "client", "build")));
 app.use(express_1.default.static("../client/public"));
-var examplesFolder = __dirname + "/examples";
+var examplesFolder = "./examples";
 app.get("/examples", function (inRequest, inResponse) { return __awaiter(void 0, void 0, void 0, function () {
     return __generator(this, function (_a) {
         console.log("GET /examples (1)");
@@ -60,25 +60,22 @@ app.get("/examples", function (inRequest, inResponse) { return __awaiter(void 0,
             });
         }
         catch (inError) {
-            inResponse.send(inError);
+            inResponse.status(400).send(inError.message);
         }
         return [2 /*return*/];
     });
 }); });
 app.get("/examples/:name", function (inRequest, inResponse) { return __awaiter(void 0, void 0, void 0, function () {
+    var name, data;
     return __generator(this, function (_a) {
-        console.log("GET /examples (2) " + inRequest.params.name);
+        name = inRequest.params.name.replace(/\W/g, '');
+        console.log("GET /examples (2) " + name);
         try {
-            fs.readFile(examplesFolder + "/" + inRequest.params.name, "utf8", function (err, data) {
-                if (err) {
-                    console.error(err);
-                    return;
-                }
-                inResponse.json(JSON.parse(data));
-            });
+            data = fs.readFileSync(examplesFolder + "/" + name + ".json", "utf8");
+            inResponse.json(JSON.parse(data));
         }
         catch (inError) {
-            inResponse.send(inError);
+            inResponse.status(400).send(inError.message);
         }
         return [2 /*return*/];
     });
