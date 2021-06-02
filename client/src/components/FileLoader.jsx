@@ -1,19 +1,24 @@
 import React from 'react';
-import { Card, Row, ListGroup, Dropdown } from 'react-bootstrap'
-
-/* In future, put these behind a backend endpoint.*/
-let binairo = require('../json_inputs/binairo.json');
-let futoshiki = require('../json_inputs/futoshiki.json');
-let kakuro = require('../json_inputs/kakuro.json');
-let killersudoku = require('../json_inputs/killersudoku.json');
-let starbattle = require('../json_inputs/starbattle.json');
-let tents = require('../json_inputs/tents.json');
+import { Card, Row, ListGroup, Dropdown, Alert, Spinner } from 'react-bootstrap'
+import * as API from "../API";
 
 /**
  * Load a JSON input from the user's filesystem or preloaded examples.
  */
 class FileLoader extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            isLoading: true,
+            examples: []
+        };
+    }
 
+    componentDidMount() {
+        API.getExamples()
+        .then(res => this.setState({examples: res}, 
+            () => this.setState({isLoading: false})));
+    }
     // Read a JSON file on the user's filesystem
     readFile = async (e) => {
         e.preventDefault()
@@ -30,30 +35,26 @@ class FileLoader extends React.Component {
 
     }
 
-    chooseExample(e) {
-        // Hardcoded for now.
-        switch(e) {
-            case "1":
-                this.props.setInput(binairo)
-                break;
-            case "2":
-                this.props.setInput(futoshiki)
-                break;
-            case "3":
-                this.props.setInput(kakuro)
-                break;
-            case "4":
-                this.props.setInput(killersudoku)
-                break;
-            case "5":
-                this.props.setInput(starbattle)
-                break;
-            case "6":
-                this.props.setInput(tents)
-                break;
-            default:
-                break;
+    async getExamples() {
+        const examples = await API.getExamples();
+        
+        try {
+            const items = examples.map(name => 
+            <Dropdown.Item>
+                {name}
+            </Dropdown.Item>);
+            return items;
+        } catch {
+            return (
+            <Alert className="m-0" variant="warning">
+                Error fetching examples.
+            </Alert>)
         }
+    }
+
+    async chooseExample(name) {
+        const example = await API.getExampleData(name);
+        this.props.setInput(example);
     }
 
     render() {
@@ -78,24 +79,15 @@ class FileLoader extends React.Component {
                                 
                                 {/* Again, hardcoded options should be fetched from somewhere in future.*/}
                                 <Dropdown.Menu>
-                                    <Dropdown.Item eventKey="1">
-                                        Binairo
-                                    </Dropdown.Item>
-                                    <Dropdown.Item eventKey="2">
-                                        Futoshiki
-                                    </Dropdown.Item>
-                                    <Dropdown.Item eventKey="3">
-                                        Kakuro
-                                    </Dropdown.Item>
-                                    <Dropdown.Item eventKey="4">
-                                        Killer Sudoku
-                                    </Dropdown.Item>
-                                    <Dropdown.Item eventKey="5">
-                                        Star Battle
-                                    </Dropdown.Item>
-                                    <Dropdown.Item eventKey="6">
-                                        Tents and Trees
-                                    </Dropdown.Item>
+                                    {this.state.isLoading ? 
+                                        <div className="d-flex justify-content-center">
+                                            <Spinner animation="border" />
+                                        </div>
+                                        :
+                                        this.state.examples.map((name) => 
+                                            <Dropdown.Item key={name} eventKey={name} onClick={() => this.chooseExample(name)}>
+                                                {name}
+                                            </Dropdown.Item>)}
                                 </Dropdown.Menu>
                             </Dropdown>
                         </Row>
