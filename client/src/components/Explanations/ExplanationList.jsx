@@ -79,7 +79,7 @@ class ExplanationList extends React.Component {
                             
                         </div>
                         <NavSwitcher 
-                            stepName={"alternative"} 
+                            stepName={"Alt"} 
                             className="p-3" 
                             setCurrentStep={this.props.setAlternative} 
                             maxSteps={otherChoices.length}

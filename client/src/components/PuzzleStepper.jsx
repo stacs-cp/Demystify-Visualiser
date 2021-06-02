@@ -98,7 +98,7 @@ class PuzzleStepper extends React.Component {
 
                 <Row className="mb-4">
                     {/*The main board: adjust width based on screen size */}
-                    <Col xs={12} md={8} lg={8} xl={6}>
+                    <Col xs={12} md={8} lg={8} xl={8}>
                         {this.chooseBoard(boardProps)} 
                     </Col>
 
