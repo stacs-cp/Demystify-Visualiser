@@ -106,7 +106,7 @@ class Cell extends React.Component {
                     // Display a single value if it is known and not hidden.
                     (
                         (!this.isHidden(singletonValue)) &&
-                        <h1 style={{ fontSize: this.getFontSize(3) }}>
+                        <h1 style={{ fontSize: this.getFontSize(2) }}>
                             {singletonValue}
                         </h1>
                     ) :
