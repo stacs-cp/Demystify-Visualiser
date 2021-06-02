@@ -38,8 +38,8 @@ class Board extends React.Component {
         } = this.props;
         
         return (
-            <Card className="mt-3 p-4">
-                <Container fluid style={{ minWidth: "400px", padding: "0px"}}>
+            <Card className="mt-3 p-5">
+                <Container fluid style={{minWidth: "400px", padding: "0px"}}>
                     {/*'Thin' row to display column indices.*/}
                     <SquareRow>
                         <Col xs={1} className="m-0 p-0" />

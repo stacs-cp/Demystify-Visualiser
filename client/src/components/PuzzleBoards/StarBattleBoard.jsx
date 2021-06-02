@@ -49,7 +49,6 @@ class KakuroBoard extends React.Component {
                 rowsums={this.state.rowsums}
                 cellBorders={this.getCellBorders()}
                 literalBackgrounds={this.getBackgrounds()}
-                literalSize={this.getLiteralSize()}
                 />)
     }
 }
