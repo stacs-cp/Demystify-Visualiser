@@ -20,7 +20,7 @@ app.get("/examples",
                     console.error(err)
                     return
                   }
-                inResponse.json(files);
+                inResponse.json(files.map((f: String) => f.slice(0, -5)));
                 })
             
         } catch (inError) {

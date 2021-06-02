@@ -56,7 +56,7 @@ app.get("/examples", function (inRequest, inResponse) { return __awaiter(void 0,
                     console.error(err);
                     return;
                 }
-                inResponse.json(files);
+                inResponse.json(files.map(function (f) { return f.slice(0, -5); }));
             });
         }
         catch (inError) {
