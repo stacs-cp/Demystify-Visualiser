@@ -11,6 +11,7 @@ import KillerBoard from './PuzzleBoards/KillerBoard';
 import KakuroBoard from './PuzzleBoards/KakuroBoard';
 import StarBattleBoard from './PuzzleBoards/StarBattleBoard';
 import FutoshikiBoard from './PuzzleBoards/FutoshikiBoard';
+import ThermometerBoard from './PuzzleBoards/ThermometerBoard';
 
 /**
  * Main puzzle visualiser with a board on the left and explanations on the right.
@@ -69,7 +70,8 @@ class PuzzleStepper extends React.Component {
                 return <KakuroBoard {...boardProps}/>
             case "nfutoshiki.eprime":
                 return <FutoshikiBoard {...boardProps}/>
-            // ...Add more cases here
+            case "thermometer.eprime":
+                return <ThermometerBoard {...boardProps}/>
             default:
                 return <Board {...boardProps}/>
         }
