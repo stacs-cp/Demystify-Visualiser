@@ -39,11 +39,6 @@ class KakuroBoard extends React.Component {
         return backgrounds;
     }
 
-    getLiteralSize() {
-        let size = 1
-        return size;
-    }
-
     render() {
         return (<Board
                 highlight={this.props.highlight} 
