@@ -1,25 +1,22 @@
 import React from 'react';
 import Board from '../Board/Board';
 
-class TentsBoard extends React.Component {
+class KakurasuBoard extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            x: this.props.params.x,
-            y: this.props.params.y,
-            colsums: this.props.params.colsums,
-            rowsums: this.props.params.rowsums,
-            treecount: this.props.params.treecount
+            size: this.props.params.dims,
+            colsums: this.props.params.col_sums,
+            rowsums: this.props.params.row_sums,
         }
     }
 
     getBackgrounds() {
         let backgrounds = {};
 
-        for(let i = 1; i <= this.state.treecount; i++) {
-            backgrounds["-" + i.toString()] = "url(/images/tree.png)"
-            backgrounds[i.toString()] = "url(/images/tent.png)"
-        }
+        
+        backgrounds["0"] = "linear-gradient(lightblue, lightblue)"
+        backgrounds["1"] = "linear-gradient(lightblue, lightblue)"
         
         return backgrounds;
     }
@@ -29,9 +26,9 @@ class TentsBoard extends React.Component {
     getCellBorders() {
         let borders = []
 
-        for(let i = 0; i < this.state.x; i++) {
+        for(let i = 0; i < this.state.size; i++) {
             borders[i] = []
-            for(let j = 0; j < this.state.y; j++) {
+            for(let j = 0; j < this.state.size; j++) {
                 borders[i].push(
                     {
                         borderTop: i===0 ? "2px solid black" : "2px solid lightgray",
@@ -64,4 +61,4 @@ class TentsBoard extends React.Component {
     }
 }
 
-export default TentsBoard;
+export default KakurasuBoard;
