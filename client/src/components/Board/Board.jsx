@@ -33,7 +33,9 @@ class Board extends React.Component {
             bottomLabels,
             hiddenLiterals,
             rowsums,
+            endrowsums,
             colsums,
+            endcolsums
             
         } = this.props;
         
@@ -48,6 +50,7 @@ class Board extends React.Component {
                             <Col key={i} className="m-0 p-0">
                                 <small className="text-muted">{i + 1}</small>
                             </Col>)}
+                        {endrowsums && <Col className="m-0 p-0" /> /* small corner cell*/}
                     </SquareRow>
 
                     {colsums &&
@@ -61,6 +64,7 @@ class Board extends React.Component {
                                         {sum}
                                     </h3>
                                 </SquareCol>)}
+                            {endrowsums && <SquareCol />}
                         </SquareRow>}
 
                     {rows.map((row, i) =>
@@ -104,7 +108,28 @@ class Board extends React.Component {
                                         hiddenLiterals={hiddenLiterals}
                                         />      
                                 )}
+                            {endrowsums &&
+                                // Extra column for end row sums if ncessary.
+                                <SquareCol>
+                                    <h3 style={{ fontSize: "3vw", color: "gray" }}>
+                                        {endrowsums[i]}
+                                    </h3>
+                                </SquareCol>}
                         </SquareRow>)}
+
+                        {endcolsums &&
+                        // Extra row for end column sums if necessary.
+                        <SquareRow>
+                            <Col xs={1} className="m-0 p-0" />
+                            <SquareCol />
+                            {endcolsums.map((sum, j) =>
+                                <SquareCol>
+                                    <h3 style={{ fontSize: "3vw", color: "gray" }}>
+                                        {sum}
+                                    </h3>
+                                </SquareCol>)}
+                            {endrowsums && <SquareCol />}
+                        </SquareRow>}
                 </Container>
             </Card>
         )
