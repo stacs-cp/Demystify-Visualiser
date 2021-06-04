@@ -2,7 +2,7 @@
   "name": "demystify-visualiser",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://localhost:5000/",
+  "homepage": ".",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.5",
