@@ -9,7 +9,7 @@ const app: Express = express();
 app.use(express.json());
 
 app.use(config.baseUrl, express.static(path.join(__dirname, "..", "client", "build")));
-app.use(config.baseUrl, express.static("../client/public"));
+app.use(config.baseUrl, express.static(path.join(__dirname, "..", "client", "public")));
 
 
 var indexRouter = express.Router();
@@ -49,4 +49,4 @@ indexRouter.get("/examples/:name",
 );
 
 app.use(config.baseUrl, indexRouter);
-app.listen(5000, () => console.log('Server Started'));
+app.listen(config.port, () => console.log('Server Started'));
