@@ -34,7 +34,7 @@ class KakuroBoard extends React.Component {
     }
 
     getBackgrounds() {
-        let backgrounds = {"1": "url(/images/star.png)"}
+        let backgrounds = {"1": "url(images/star.png)"}
         
         return backgrounds;
     }

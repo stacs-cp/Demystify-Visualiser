@@ -17,8 +17,8 @@ class TentsBoard extends React.Component {
         let backgrounds = {};
 
         for(let i = 1; i <= this.state.treecount; i++) {
-            backgrounds["-" + i.toString()] = "url(/images/tree.png)"
-            backgrounds[i.toString()] = "url(/images/tent.png)"
+            backgrounds["-" + i.toString()] = "url(images/tree.png)"
+            backgrounds[i.toString()] = "url(images/tent.png)"
         }
         
         return backgrounds;
