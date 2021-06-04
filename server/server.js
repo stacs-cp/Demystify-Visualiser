@@ -46,7 +46,7 @@ var config = require("./config.js");
 var app = express_1.default();
 app.use(express_1.default.json());
 app.use(config.baseUrl, express_1.default.static(path_1.default.join(__dirname, "..", "client", "build")));
-app.use(config.baseUrl, express_1.default.static("../client/public"));
+app.use(config.baseUrl, express_1.default.static(path_1.default.join(__dirname, "..", "client", "public")));
 var indexRouter = express_1.default.Router();
 var examplesFolder = "./examples";
 indexRouter.get("/examples", function (inRequest, inResponse) { return __awaiter(void 0, void 0, void 0, function () {
@@ -83,4 +83,4 @@ indexRouter.get("/examples/:name", function (inRequest, inResponse) { return __a
     });
 }); });
 app.use(config.baseUrl, indexRouter);
-app.listen(5000, function () { return console.log('Server Started'); });
+app.listen(config.port, function () { return console.log('Server Started'); });
