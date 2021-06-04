@@ -2,16 +2,20 @@ import path from "path";
 import express,
 { Express, NextFunction, Request, Response } from "express";
 const fs = require("fs");
+const config = require("./config.js")
 
 const app: Express = express();
 
 app.use(express.json());
 
-app.use(express.static(path.join(__dirname, "..", "client", "build")));
-app.use(express.static("../client/public"));
-const examplesFolder = "./examples"
+app.use(config.baseUrl, express.static(path.join(__dirname, "..", "client", "build")));
+app.use(config.baseUrl, express.static("../client/public"));
 
-app.get("/examples",
+
+var indexRouter = express.Router();
+
+const examplesFolder = "./examples"
+indexRouter.get("/examples",
     async (inRequest: Request, inResponse: Response) => {
         console.log("GET /examples (1)");
         try {
@@ -29,7 +33,7 @@ app.get("/examples",
     }
 );
 
-app.get("/examples/:name",
+indexRouter.get("/examples/:name",
     async (inRequest: Request, inResponse: Response) => {
         const name = inRequest.params.name.replace(/\W/g, '');
         console.log("GET /examples (2) " + name);
@@ -44,4 +48,5 @@ app.get("/examples/:name",
     }
 );
 
+app.use(config.baseUrl, indexRouter);
 app.listen(5000, () => console.log('Server Started'));

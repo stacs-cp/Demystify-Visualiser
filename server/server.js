@@ -42,12 +42,14 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var path_1 = __importDefault(require("path"));
 var express_1 = __importDefault(require("express"));
 var fs = require("fs");
+var config = require("./config.js");
 var app = express_1.default();
 app.use(express_1.default.json());
-app.use(express_1.default.static(path_1.default.join(__dirname, "..", "client", "build")));
-app.use(express_1.default.static("../client/public"));
+app.use(config.baseUrl, express_1.default.static(path_1.default.join(__dirname, "..", "client", "build")));
+app.use(config.baseUrl, express_1.default.static("../client/public"));
+var indexRouter = express_1.default.Router();
 var examplesFolder = "./examples";
-app.get("/examples", function (inRequest, inResponse) { return __awaiter(void 0, void 0, void 0, function () {
+indexRouter.get("/examples", function (inRequest, inResponse) { return __awaiter(void 0, void 0, void 0, function () {
     return __generator(this, function (_a) {
         console.log("GET /examples (1)");
         try {
@@ -65,7 +67,7 @@ app.get("/examples", function (inRequest, inResponse) { return __awaiter(void 0,
         return [2 /*return*/];
     });
 }); });
-app.get("/examples/:name", function (inRequest, inResponse) { return __awaiter(void 0, void 0, void 0, function () {
+indexRouter.get("/examples/:name", function (inRequest, inResponse) { return __awaiter(void 0, void 0, void 0, function () {
     var name, data;
     return __generator(this, function (_a) {
         name = inRequest.params.name.replace(/\W/g, '');
@@ -80,4 +82,5 @@ app.get("/examples/:name", function (inRequest, inResponse) { return __awaiter(v
         return [2 /*return*/];
     });
 }); });
+app.use(config.baseUrl, indexRouter);
 app.listen(5000, function () { return console.log('Server Started'); });
