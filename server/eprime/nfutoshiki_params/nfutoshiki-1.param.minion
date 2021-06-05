@@ -1,0 +1,124 @@
+MINION 3
+**VARIABLES**
+DISCRETE field_00001_00001 #
+{1..5}
+DISCRETE field_00001_00002 #
+{1..5}
+DISCRETE field_00001_00003 #
+{1..5}
+DISCRETE field_00001_00004 #
+{1..5}
+DISCRETE field_00001_00005 #
+{1..5}
+DISCRETE field_00002_00001 #
+{1..5}
+DISCRETE field_00002_00002 #
+{1..5}
+DISCRETE field_00002_00003 #
+{1..5}
+DISCRETE field_00002_00004 #
+{1..5}
+DISCRETE field_00002_00005 #
+{1..5}
+DISCRETE field_00003_00001 #
+{1..5}
+DISCRETE field_00003_00002 #
+{1..5}
+DISCRETE field_00003_00003 #
+{1..5}
+DISCRETE field_00003_00004 #
+{1..5}
+DISCRETE field_00003_00005 #
+{1..5}
+DISCRETE field_00004_00001 #
+{1..5}
+DISCRETE field_00004_00002 #
+{1..5}
+DISCRETE field_00004_00003 #
+{1..5}
+DISCRETE field_00004_00004 #
+{1..5}
+DISCRETE field_00004_00005 #
+{1..5}
+DISCRETE field_00005_00001 #
+{1..5}
+DISCRETE field_00005_00002 #
+{1..5}
+DISCRETE field_00005_00003 #
+{1..5}
+DISCRETE field_00005_00004 #
+{1..5}
+DISCRETE field_00005_00005 #
+{1..5}
+BOOL row_alldiff_00001 #
+BOOL row_alldiff_00002 #
+BOOL row_alldiff_00003 #
+BOOL row_alldiff_00004 #
+BOOL row_alldiff_00005 #
+BOOL col_alldiff_00001 #
+BOOL col_alldiff_00002 #
+BOOL col_alldiff_00003 #
+BOOL col_alldiff_00004 #
+BOOL col_alldiff_00005 #
+BOOL less_than_00000 #
+BOOL less_than_00001 #
+BOOL less_than_00002 #
+BOOL less_than_00003 #
+BOOL less_than_00004 #
+BOOL less_than_00005 #
+BOOL less_than_00006 #
+BOOL less_than_00007 #
+BOOL less_than_00008 #
+BOOL less_than_00009 #
+BOOL less_than_00010 #
+**TUPLELIST**
+values 5 5
+0 0 3 2 0 
+0 0 0 0 0 
+0 0 0 0 0 
+0 0 0 0 0 
+0 0 0 0 0 
+**VARIABLES**
+ALIAS values[5,5]=[[0, 0, 3, 2, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0]]
+**TUPLELIST**
+lt 11 4
+1 2 1 1 
+1 4 1 5 
+2 3 1 3 
+3 3 2 3 
+3 4 2 4 
+2 5 3 5 
+3 2 4 2 
+4 4 4 3 
+5 2 5 1 
+5 4 5 3 
+5 5 4 5 
+**VARIABLES**
+ALIAS lt[11,4]=[[1, 2, 1, 1], [1, 4, 1, 5], [2, 3, 1, 3], [3, 3, 2, 3], [3, 4, 2, 4], [2, 5, 3, 5], [3, 2, 4, 2], [4, 4, 4, 3], [5, 2, 5, 1], [5, 4, 5, 3], [5, 5, 4, 5]]
+**SEARCH**
+PRINT[[field_00001_00001],[field_00001_00002],[field_00001_00003],[field_00001_00004],[field_00001_00005],[field_00002_00001],[field_00002_00002],[field_00002_00003],[field_00002_00004],[field_00002_00005],[field_00003_00001],[field_00003_00002],[field_00003_00003],[field_00003_00004],[field_00003_00005],[field_00004_00001],[field_00004_00002],[field_00004_00003],[field_00004_00004],[field_00004_00005],[field_00005_00001],[field_00005_00002],[field_00005_00003],[field_00005_00004],[field_00005_00005],[row_alldiff_00001],[row_alldiff_00002],[row_alldiff_00003],[row_alldiff_00004],[row_alldiff_00005],[col_alldiff_00001],[col_alldiff_00002],[col_alldiff_00003],[col_alldiff_00004],[col_alldiff_00005],[less_than_00000],[less_than_00001],[less_than_00002],[less_than_00003],[less_than_00004],[less_than_00005],[less_than_00006],[less_than_00007],[less_than_00008],[less_than_00009],[less_than_00010]]
+**CONSTRAINTS**
+reifyimply(gacalldiff([field_00001_00001, field_00001_00002, field_00001_00003, field_00001_00004, field_00001_00005]), row_alldiff_00001)
+reifyimply(gacalldiff([field_00002_00001, field_00002_00002, field_00002_00003, field_00002_00004, field_00002_00005]), row_alldiff_00002)
+reifyimply(gacalldiff([field_00003_00001, field_00003_00002, field_00003_00003, field_00003_00004, field_00003_00005]), row_alldiff_00003)
+reifyimply(gacalldiff([field_00004_00001, field_00004_00002, field_00004_00003, field_00004_00004, field_00004_00005]), row_alldiff_00004)
+reifyimply(gacalldiff([field_00005_00001, field_00005_00002, field_00005_00003, field_00005_00004, field_00005_00005]), row_alldiff_00005)
+reifyimply(gacalldiff([field_00003_00001, field_00004_00001, field_00005_00001, field_00001_00001, field_00002_00001]), col_alldiff_00001)
+reifyimply(gacalldiff([field_00003_00002, field_00004_00002, field_00005_00002, field_00001_00002, field_00002_00002]), col_alldiff_00002)
+reifyimply(gacalldiff([field_00003_00003, field_00004_00003, field_00005_00003, field_00001_00003, field_00002_00003]), col_alldiff_00003)
+reifyimply(gacalldiff([field_00003_00004, field_00004_00004, field_00005_00004, field_00001_00004, field_00002_00004]), col_alldiff_00004)
+reifyimply(gacalldiff([field_00003_00005, field_00004_00005, field_00005_00005, field_00001_00005, field_00002_00005]), col_alldiff_00005)
+reifyimply(ineq(field_00001_00002, field_00001_00001, -1), less_than_00000)
+reifyimply(ineq(field_00001_00004, field_00001_00005, -1), less_than_00001)
+reifyimply(ineq(field_00002_00003, field_00001_00003, -1), less_than_00002)
+reifyimply(ineq(field_00003_00003, field_00002_00003, -1), less_than_00003)
+reifyimply(ineq(field_00003_00004, field_00002_00004, -1), less_than_00004)
+reifyimply(ineq(field_00002_00005, field_00003_00005, -1), less_than_00005)
+reifyimply(ineq(field_00003_00002, field_00004_00002, -1), less_than_00006)
+reifyimply(ineq(field_00004_00004, field_00004_00003, -1), less_than_00007)
+reifyimply(ineq(field_00005_00002, field_00005_00001, -1), less_than_00008)
+reifyimply(ineq(field_00005_00004, field_00005_00003, -1), less_than_00009)
+reifyimply(ineq(field_00005_00005, field_00004_00005, -1), less_than_00010)
+w-literal(field_00001_00003,3)
+w-literal(field_00001_00004,2)
+**EOF**
