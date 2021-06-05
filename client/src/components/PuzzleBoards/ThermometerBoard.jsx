@@ -25,7 +25,7 @@ class ThermometerBoard extends React.Component {
                 const west = j > 0 ? Math.floor(grid[i][j-1] / 10) : null
                 const east = j < ysize - 1 ? Math.floor(grid[i][j+1] / 10) : null
 
-                if(grid[i][j] % 10 == 1) {
+                if(grid[i][j] % 10 === 1) {
                     console.log(thermNum)
                     if(north === thermNum) {
                         backgrounds[i].push("url(images/themHeadN.png")

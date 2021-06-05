@@ -1,9 +1,8 @@
 import React from 'react';
 
-import FileLoader from './FileLoader';
-
 import { Container, Alert } from 'react-bootstrap';
 import PuzzleStepper from './PuzzleStepper';
+import MainMenu from './MainMenu';
 
 /**
  * Currently the main content component for this application.
@@ -17,7 +16,7 @@ class DemystifyViewer extends React.Component {
   }
   
   // Load the steps, the type of puzzle, and the params (configuration) of the puzzle
-  setInput(obj) {
+  setJSONInput(obj) {
     this.setState({ inputObject: obj.steps, type: obj.name, params: obj.params },
       () => !(this.state.inputObject && this.state.type && this.state.params)  
       && this.setError()) 
@@ -33,22 +32,13 @@ class DemystifyViewer extends React.Component {
   }
 
   render = () => {
+    const jsonMessage = "Load Demystify output from JSON file:"
     return (
       <Container fluid style={{textAlign: "center"}}>
         
-        {/*If the puzzle has not been correctly loaded, display the initial screen*/
+        {/*If the puzzle has not been correctly loaded, display the main menu*/
           (this.state.inputObject.length === 0 || this.state.error) ?
-          <React.Fragment>
-            <h1 className="mt-3">Demystify Visualiser</h1>
-            
-            <FileLoader setInput={this.setInput.bind(this)} setError={this.setError.bind(this)} />
-            
-            {this.state.error && 
-              <Alert variant="warning" className="mt-3 p-4 text-center">
-                Could not read the input file (ensure it is a JSON file produced by Demystify).
-              </Alert> }
-          </React.Fragment>
-          
+            <MainMenu setInput={this.setJSONInput.bind(this)} />
           :
           /*Otherwise display the main puzzle visualiser*/
           <PuzzleStepper

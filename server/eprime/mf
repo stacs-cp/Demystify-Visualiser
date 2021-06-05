@@ -1,0 +1,3 @@
+#!/bin/bash
+cp -r ../../../demystify/eprime/"$1"/* ./"$2"/
+
