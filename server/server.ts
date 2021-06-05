@@ -42,11 +42,16 @@ indexRouter.get("/examples/:name",
             inResponse.json(JSON.parse(data))
         } catch (inError) {
             inResponse.status(400).send(inError.message)
-        }
-        
-        
+        }  
     }
 );
+
+indexRouter.post("/run", 
+    async (inRequest: Request, inResponse: Response) => {
+        console.log('Got body:', inRequest.body);
+        inResponse.sendStatus(200);
+    }
+)
 
 app.use(config.baseUrl, indexRouter);
 app.listen(config.port, () => console.log('Server Started'));
