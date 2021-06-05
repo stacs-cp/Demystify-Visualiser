@@ -10,5 +10,13 @@ async function getExampleData(exampleName) {
     return response.data;
 }
 
-export { getExamples, getExampleData};
+async function runDemystifyOnInput(eprime, param) {
+    const response = await axios.post("run", {
+        eprime: eprime,
+        param: param
+    })
+    return
+}
+
+export { getExamples, getExampleData, runDemystifyOnInput};
 

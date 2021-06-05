@@ -82,5 +82,12 @@ indexRouter.get("/examples/:name", function (inRequest, inResponse) { return __a
         return [2 /*return*/];
     });
 }); });
+indexRouter.post("/run", function (inRequest, inResponse) { return __awaiter(void 0, void 0, void 0, function () {
+    return __generator(this, function (_a) {
+        console.log('Got body:', inRequest.body);
+        inResponse.sendStatus(200);
+        return [2 /*return*/];
+    });
+}); });
 app.use(config.baseUrl, indexRouter);
 app.listen(config.port, function () { return console.log('Server Started'); });
