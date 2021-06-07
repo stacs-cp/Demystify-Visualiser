@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Container, Alert } from 'react-bootstrap';
+import { Container} from 'react-bootstrap';
 import PuzzleStepper from './PuzzleStepper';
 import MainMenu from './MainMenu';
 
@@ -32,7 +32,6 @@ class DemystifyViewer extends React.Component {
   }
 
   render = () => {
-    const jsonMessage = "Load Demystify output from JSON file:"
     return (
       <Container fluid style={{textAlign: "center"}}>
         

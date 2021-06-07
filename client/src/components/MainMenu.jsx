@@ -36,8 +36,15 @@ class MainMenu extends React.Component {
 
         this.setState({isRunning: true});
         const {eprimename, eprime, paramname, param} = this.state;
-        const result = await API.runDemystifyOnInput(eprimename, eprime, paramname, param);
-        this.props.setInput(result);
+
+        try {
+            const result = await API.runDemystifyOnInput(eprimename, eprime, paramname, param);
+            this.props.setInput(result);
+        } catch(err) {
+            this.setError(
+                "There was a problem running Demystify on the server. (Currently most things are too long).");
+            this.setState({isRunning: false});
+        }
     }
 
     setError(message) {
@@ -161,7 +168,6 @@ class MainMenu extends React.Component {
                                 
                         </ListGroup.Item>
                     </ListGroup>
-                    {console.log(this.state.error.length)}
                 </Card>
                 {this.state.error.length > 0 &&
                         <Alert variant="warning" className="mt-3 p-4 w-75 text-center">

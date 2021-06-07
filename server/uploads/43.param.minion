@@ -1,0 +1,1245 @@
+MINION 3
+**VARIABLES**
+BOOL grid_00001_00001 #
+BOOL grid_00001_00002 #
+BOOL grid_00001_00003 #
+BOOL grid_00001_00004 #
+BOOL grid_00001_00005 #
+BOOL grid_00001_00006 #
+BOOL grid_00001_00007 #
+BOOL grid_00001_00008 #
+BOOL grid_00001_00009 #
+BOOL grid_00001_00010 #
+BOOL grid_00002_00001 #
+BOOL grid_00002_00002 #
+BOOL grid_00002_00003 #
+BOOL grid_00002_00004 #
+BOOL grid_00002_00005 #
+BOOL grid_00002_00006 #
+BOOL grid_00002_00007 #
+BOOL grid_00002_00008 #
+BOOL grid_00002_00009 #
+BOOL grid_00002_00010 #
+BOOL grid_00003_00001 #
+BOOL grid_00003_00002 #
+BOOL grid_00003_00003 #
+BOOL grid_00003_00004 #
+BOOL grid_00003_00005 #
+BOOL grid_00003_00006 #
+BOOL grid_00003_00007 #
+BOOL grid_00003_00008 #
+BOOL grid_00003_00009 #
+BOOL grid_00003_00010 #
+BOOL grid_00004_00001 #
+BOOL grid_00004_00002 #
+BOOL grid_00004_00003 #
+BOOL grid_00004_00004 #
+BOOL grid_00004_00005 #
+BOOL grid_00004_00006 #
+BOOL grid_00004_00007 #
+BOOL grid_00004_00008 #
+BOOL grid_00004_00009 #
+BOOL grid_00004_00010 #
+BOOL grid_00005_00001 #
+BOOL grid_00005_00002 #
+BOOL grid_00005_00003 #
+BOOL grid_00005_00004 #
+BOOL grid_00005_00005 #
+BOOL grid_00005_00006 #
+BOOL grid_00005_00007 #
+BOOL grid_00005_00008 #
+BOOL grid_00005_00009 #
+BOOL grid_00005_00010 #
+BOOL grid_00006_00001 #
+BOOL grid_00006_00002 #
+BOOL grid_00006_00003 #
+BOOL grid_00006_00004 #
+BOOL grid_00006_00005 #
+BOOL grid_00006_00006 #
+BOOL grid_00006_00007 #
+BOOL grid_00006_00008 #
+BOOL grid_00006_00009 #
+BOOL grid_00006_00010 #
+BOOL grid_00007_00001 #
+BOOL grid_00007_00002 #
+BOOL grid_00007_00003 #
+BOOL grid_00007_00004 #
+BOOL grid_00007_00005 #
+BOOL grid_00007_00006 #
+BOOL grid_00007_00007 #
+BOOL grid_00007_00008 #
+BOOL grid_00007_00009 #
+BOOL grid_00007_00010 #
+BOOL grid_00008_00001 #
+BOOL grid_00008_00002 #
+BOOL grid_00008_00003 #
+BOOL grid_00008_00004 #
+BOOL grid_00008_00005 #
+BOOL grid_00008_00006 #
+BOOL grid_00008_00007 #
+BOOL grid_00008_00008 #
+BOOL grid_00008_00009 #
+BOOL grid_00008_00010 #
+BOOL grid_00009_00001 #
+BOOL grid_00009_00002 #
+BOOL grid_00009_00003 #
+BOOL grid_00009_00004 #
+BOOL grid_00009_00005 #
+BOOL grid_00009_00006 #
+BOOL grid_00009_00007 #
+BOOL grid_00009_00008 #
+BOOL grid_00009_00009 #
+BOOL grid_00009_00010 #
+BOOL grid_00010_00001 #
+BOOL grid_00010_00002 #
+BOOL grid_00010_00003 #
+BOOL grid_00010_00004 #
+BOOL grid_00010_00005 #
+BOOL grid_00010_00006 #
+BOOL grid_00010_00007 #
+BOOL grid_00010_00008 #
+BOOL grid_00010_00009 #
+BOOL grid_00010_00010 #
+BOOL rowwhite_00001 #
+BOOL rowwhite_00002 #
+BOOL rowwhite_00003 #
+BOOL rowwhite_00004 #
+BOOL rowwhite_00005 #
+BOOL rowwhite_00006 #
+BOOL rowwhite_00007 #
+BOOL rowwhite_00008 #
+BOOL rowwhite_00009 #
+BOOL rowwhite_00010 #
+BOOL rowblack_00001 #
+BOOL rowblack_00002 #
+BOOL rowblack_00003 #
+BOOL rowblack_00004 #
+BOOL rowblack_00005 #
+BOOL rowblack_00006 #
+BOOL rowblack_00007 #
+BOOL rowblack_00008 #
+BOOL rowblack_00009 #
+BOOL rowblack_00010 #
+BOOL colwhite_00001 #
+BOOL colwhite_00002 #
+BOOL colwhite_00003 #
+BOOL colwhite_00004 #
+BOOL colwhite_00005 #
+BOOL colwhite_00006 #
+BOOL colwhite_00007 #
+BOOL colwhite_00008 #
+BOOL colwhite_00009 #
+BOOL colwhite_00010 #
+BOOL colblack_00001 #
+BOOL colblack_00002 #
+BOOL colblack_00003 #
+BOOL colblack_00004 #
+BOOL colblack_00005 #
+BOOL colblack_00006 #
+BOOL colblack_00007 #
+BOOL colblack_00008 #
+BOOL colblack_00009 #
+BOOL colblack_00010 #
+BOOL rowmatchwhite_00001_00001 #
+BOOL rowmatchwhite_00001_00002 #
+BOOL rowmatchwhite_00001_00003 #
+BOOL rowmatchwhite_00001_00004 #
+BOOL rowmatchwhite_00001_00005 #
+BOOL rowmatchwhite_00001_00006 #
+BOOL rowmatchwhite_00001_00007 #
+BOOL rowmatchwhite_00001_00008 #
+BOOL rowmatchwhite_00002_00001 #
+BOOL rowmatchwhite_00002_00002 #
+BOOL rowmatchwhite_00002_00003 #
+BOOL rowmatchwhite_00002_00004 #
+BOOL rowmatchwhite_00002_00005 #
+BOOL rowmatchwhite_00002_00006 #
+BOOL rowmatchwhite_00002_00007 #
+BOOL rowmatchwhite_00002_00008 #
+BOOL rowmatchwhite_00003_00001 #
+BOOL rowmatchwhite_00003_00002 #
+BOOL rowmatchwhite_00003_00003 #
+BOOL rowmatchwhite_00003_00004 #
+BOOL rowmatchwhite_00003_00005 #
+BOOL rowmatchwhite_00003_00006 #
+BOOL rowmatchwhite_00003_00007 #
+BOOL rowmatchwhite_00003_00008 #
+BOOL rowmatchwhite_00004_00001 #
+BOOL rowmatchwhite_00004_00002 #
+BOOL rowmatchwhite_00004_00003 #
+BOOL rowmatchwhite_00004_00004 #
+BOOL rowmatchwhite_00004_00005 #
+BOOL rowmatchwhite_00004_00006 #
+BOOL rowmatchwhite_00004_00007 #
+BOOL rowmatchwhite_00004_00008 #
+BOOL rowmatchwhite_00005_00001 #
+BOOL rowmatchwhite_00005_00002 #
+BOOL rowmatchwhite_00005_00003 #
+BOOL rowmatchwhite_00005_00004 #
+BOOL rowmatchwhite_00005_00005 #
+BOOL rowmatchwhite_00005_00006 #
+BOOL rowmatchwhite_00005_00007 #
+BOOL rowmatchwhite_00005_00008 #
+BOOL rowmatchwhite_00006_00001 #
+BOOL rowmatchwhite_00006_00002 #
+BOOL rowmatchwhite_00006_00003 #
+BOOL rowmatchwhite_00006_00004 #
+BOOL rowmatchwhite_00006_00005 #
+BOOL rowmatchwhite_00006_00006 #
+BOOL rowmatchwhite_00006_00007 #
+BOOL rowmatchwhite_00006_00008 #
+BOOL rowmatchwhite_00007_00001 #
+BOOL rowmatchwhite_00007_00002 #
+BOOL rowmatchwhite_00007_00003 #
+BOOL rowmatchwhite_00007_00004 #
+BOOL rowmatchwhite_00007_00005 #
+BOOL rowmatchwhite_00007_00006 #
+BOOL rowmatchwhite_00007_00007 #
+BOOL rowmatchwhite_00007_00008 #
+BOOL rowmatchwhite_00008_00001 #
+BOOL rowmatchwhite_00008_00002 #
+BOOL rowmatchwhite_00008_00003 #
+BOOL rowmatchwhite_00008_00004 #
+BOOL rowmatchwhite_00008_00005 #
+BOOL rowmatchwhite_00008_00006 #
+BOOL rowmatchwhite_00008_00007 #
+BOOL rowmatchwhite_00008_00008 #
+BOOL rowmatchwhite_00009_00001 #
+BOOL rowmatchwhite_00009_00002 #
+BOOL rowmatchwhite_00009_00003 #
+BOOL rowmatchwhite_00009_00004 #
+BOOL rowmatchwhite_00009_00005 #
+BOOL rowmatchwhite_00009_00006 #
+BOOL rowmatchwhite_00009_00007 #
+BOOL rowmatchwhite_00009_00008 #
+BOOL rowmatchwhite_00010_00001 #
+BOOL rowmatchwhite_00010_00002 #
+BOOL rowmatchwhite_00010_00003 #
+BOOL rowmatchwhite_00010_00004 #
+BOOL rowmatchwhite_00010_00005 #
+BOOL rowmatchwhite_00010_00006 #
+BOOL rowmatchwhite_00010_00007 #
+BOOL rowmatchwhite_00010_00008 #
+BOOL rowmatchblack_00001_00001 #
+BOOL rowmatchblack_00001_00002 #
+BOOL rowmatchblack_00001_00003 #
+BOOL rowmatchblack_00001_00004 #
+BOOL rowmatchblack_00001_00005 #
+BOOL rowmatchblack_00001_00006 #
+BOOL rowmatchblack_00001_00007 #
+BOOL rowmatchblack_00001_00008 #
+BOOL rowmatchblack_00002_00001 #
+BOOL rowmatchblack_00002_00002 #
+BOOL rowmatchblack_00002_00003 #
+BOOL rowmatchblack_00002_00004 #
+BOOL rowmatchblack_00002_00005 #
+BOOL rowmatchblack_00002_00006 #
+BOOL rowmatchblack_00002_00007 #
+BOOL rowmatchblack_00002_00008 #
+BOOL rowmatchblack_00003_00001 #
+BOOL rowmatchblack_00003_00002 #
+BOOL rowmatchblack_00003_00003 #
+BOOL rowmatchblack_00003_00004 #
+BOOL rowmatchblack_00003_00005 #
+BOOL rowmatchblack_00003_00006 #
+BOOL rowmatchblack_00003_00007 #
+BOOL rowmatchblack_00003_00008 #
+BOOL rowmatchblack_00004_00001 #
+BOOL rowmatchblack_00004_00002 #
+BOOL rowmatchblack_00004_00003 #
+BOOL rowmatchblack_00004_00004 #
+BOOL rowmatchblack_00004_00005 #
+BOOL rowmatchblack_00004_00006 #
+BOOL rowmatchblack_00004_00007 #
+BOOL rowmatchblack_00004_00008 #
+BOOL rowmatchblack_00005_00001 #
+BOOL rowmatchblack_00005_00002 #
+BOOL rowmatchblack_00005_00003 #
+BOOL rowmatchblack_00005_00004 #
+BOOL rowmatchblack_00005_00005 #
+BOOL rowmatchblack_00005_00006 #
+BOOL rowmatchblack_00005_00007 #
+BOOL rowmatchblack_00005_00008 #
+BOOL rowmatchblack_00006_00001 #
+BOOL rowmatchblack_00006_00002 #
+BOOL rowmatchblack_00006_00003 #
+BOOL rowmatchblack_00006_00004 #
+BOOL rowmatchblack_00006_00005 #
+BOOL rowmatchblack_00006_00006 #
+BOOL rowmatchblack_00006_00007 #
+BOOL rowmatchblack_00006_00008 #
+BOOL rowmatchblack_00007_00001 #
+BOOL rowmatchblack_00007_00002 #
+BOOL rowmatchblack_00007_00003 #
+BOOL rowmatchblack_00007_00004 #
+BOOL rowmatchblack_00007_00005 #
+BOOL rowmatchblack_00007_00006 #
+BOOL rowmatchblack_00007_00007 #
+BOOL rowmatchblack_00007_00008 #
+BOOL rowmatchblack_00008_00001 #
+BOOL rowmatchblack_00008_00002 #
+BOOL rowmatchblack_00008_00003 #
+BOOL rowmatchblack_00008_00004 #
+BOOL rowmatchblack_00008_00005 #
+BOOL rowmatchblack_00008_00006 #
+BOOL rowmatchblack_00008_00007 #
+BOOL rowmatchblack_00008_00008 #
+BOOL rowmatchblack_00009_00001 #
+BOOL rowmatchblack_00009_00002 #
+BOOL rowmatchblack_00009_00003 #
+BOOL rowmatchblack_00009_00004 #
+BOOL rowmatchblack_00009_00005 #
+BOOL rowmatchblack_00009_00006 #
+BOOL rowmatchblack_00009_00007 #
+BOOL rowmatchblack_00009_00008 #
+BOOL rowmatchblack_00010_00001 #
+BOOL rowmatchblack_00010_00002 #
+BOOL rowmatchblack_00010_00003 #
+BOOL rowmatchblack_00010_00004 #
+BOOL rowmatchblack_00010_00005 #
+BOOL rowmatchblack_00010_00006 #
+BOOL rowmatchblack_00010_00007 #
+BOOL rowmatchblack_00010_00008 #
+BOOL colmatchwhite_00001_00001 #
+BOOL colmatchwhite_00001_00002 #
+BOOL colmatchwhite_00001_00003 #
+BOOL colmatchwhite_00001_00004 #
+BOOL colmatchwhite_00001_00005 #
+BOOL colmatchwhite_00001_00006 #
+BOOL colmatchwhite_00001_00007 #
+BOOL colmatchwhite_00001_00008 #
+BOOL colmatchwhite_00002_00001 #
+BOOL colmatchwhite_00002_00002 #
+BOOL colmatchwhite_00002_00003 #
+BOOL colmatchwhite_00002_00004 #
+BOOL colmatchwhite_00002_00005 #
+BOOL colmatchwhite_00002_00006 #
+BOOL colmatchwhite_00002_00007 #
+BOOL colmatchwhite_00002_00008 #
+BOOL colmatchwhite_00003_00001 #
+BOOL colmatchwhite_00003_00002 #
+BOOL colmatchwhite_00003_00003 #
+BOOL colmatchwhite_00003_00004 #
+BOOL colmatchwhite_00003_00005 #
+BOOL colmatchwhite_00003_00006 #
+BOOL colmatchwhite_00003_00007 #
+BOOL colmatchwhite_00003_00008 #
+BOOL colmatchwhite_00004_00001 #
+BOOL colmatchwhite_00004_00002 #
+BOOL colmatchwhite_00004_00003 #
+BOOL colmatchwhite_00004_00004 #
+BOOL colmatchwhite_00004_00005 #
+BOOL colmatchwhite_00004_00006 #
+BOOL colmatchwhite_00004_00007 #
+BOOL colmatchwhite_00004_00008 #
+BOOL colmatchwhite_00005_00001 #
+BOOL colmatchwhite_00005_00002 #
+BOOL colmatchwhite_00005_00003 #
+BOOL colmatchwhite_00005_00004 #
+BOOL colmatchwhite_00005_00005 #
+BOOL colmatchwhite_00005_00006 #
+BOOL colmatchwhite_00005_00007 #
+BOOL colmatchwhite_00005_00008 #
+BOOL colmatchwhite_00006_00001 #
+BOOL colmatchwhite_00006_00002 #
+BOOL colmatchwhite_00006_00003 #
+BOOL colmatchwhite_00006_00004 #
+BOOL colmatchwhite_00006_00005 #
+BOOL colmatchwhite_00006_00006 #
+BOOL colmatchwhite_00006_00007 #
+BOOL colmatchwhite_00006_00008 #
+BOOL colmatchwhite_00007_00001 #
+BOOL colmatchwhite_00007_00002 #
+BOOL colmatchwhite_00007_00003 #
+BOOL colmatchwhite_00007_00004 #
+BOOL colmatchwhite_00007_00005 #
+BOOL colmatchwhite_00007_00006 #
+BOOL colmatchwhite_00007_00007 #
+BOOL colmatchwhite_00007_00008 #
+BOOL colmatchwhite_00008_00001 #
+BOOL colmatchwhite_00008_00002 #
+BOOL colmatchwhite_00008_00003 #
+BOOL colmatchwhite_00008_00004 #
+BOOL colmatchwhite_00008_00005 #
+BOOL colmatchwhite_00008_00006 #
+BOOL colmatchwhite_00008_00007 #
+BOOL colmatchwhite_00008_00008 #
+BOOL colmatchwhite_00009_00001 #
+BOOL colmatchwhite_00009_00002 #
+BOOL colmatchwhite_00009_00003 #
+BOOL colmatchwhite_00009_00004 #
+BOOL colmatchwhite_00009_00005 #
+BOOL colmatchwhite_00009_00006 #
+BOOL colmatchwhite_00009_00007 #
+BOOL colmatchwhite_00009_00008 #
+BOOL colmatchwhite_00010_00001 #
+BOOL colmatchwhite_00010_00002 #
+BOOL colmatchwhite_00010_00003 #
+BOOL colmatchwhite_00010_00004 #
+BOOL colmatchwhite_00010_00005 #
+BOOL colmatchwhite_00010_00006 #
+BOOL colmatchwhite_00010_00007 #
+BOOL colmatchwhite_00010_00008 #
+BOOL colmatchblack_00001_00001 #
+BOOL colmatchblack_00001_00002 #
+BOOL colmatchblack_00001_00003 #
+BOOL colmatchblack_00001_00004 #
+BOOL colmatchblack_00001_00005 #
+BOOL colmatchblack_00001_00006 #
+BOOL colmatchblack_00001_00007 #
+BOOL colmatchblack_00001_00008 #
+BOOL colmatchblack_00002_00001 #
+BOOL colmatchblack_00002_00002 #
+BOOL colmatchblack_00002_00003 #
+BOOL colmatchblack_00002_00004 #
+BOOL colmatchblack_00002_00005 #
+BOOL colmatchblack_00002_00006 #
+BOOL colmatchblack_00002_00007 #
+BOOL colmatchblack_00002_00008 #
+BOOL colmatchblack_00003_00001 #
+BOOL colmatchblack_00003_00002 #
+BOOL colmatchblack_00003_00003 #
+BOOL colmatchblack_00003_00004 #
+BOOL colmatchblack_00003_00005 #
+BOOL colmatchblack_00003_00006 #
+BOOL colmatchblack_00003_00007 #
+BOOL colmatchblack_00003_00008 #
+BOOL colmatchblack_00004_00001 #
+BOOL colmatchblack_00004_00002 #
+BOOL colmatchblack_00004_00003 #
+BOOL colmatchblack_00004_00004 #
+BOOL colmatchblack_00004_00005 #
+BOOL colmatchblack_00004_00006 #
+BOOL colmatchblack_00004_00007 #
+BOOL colmatchblack_00004_00008 #
+BOOL colmatchblack_00005_00001 #
+BOOL colmatchblack_00005_00002 #
+BOOL colmatchblack_00005_00003 #
+BOOL colmatchblack_00005_00004 #
+BOOL colmatchblack_00005_00005 #
+BOOL colmatchblack_00005_00006 #
+BOOL colmatchblack_00005_00007 #
+BOOL colmatchblack_00005_00008 #
+BOOL colmatchblack_00006_00001 #
+BOOL colmatchblack_00006_00002 #
+BOOL colmatchblack_00006_00003 #
+BOOL colmatchblack_00006_00004 #
+BOOL colmatchblack_00006_00005 #
+BOOL colmatchblack_00006_00006 #
+BOOL colmatchblack_00006_00007 #
+BOOL colmatchblack_00006_00008 #
+BOOL colmatchblack_00007_00001 #
+BOOL colmatchblack_00007_00002 #
+BOOL colmatchblack_00007_00003 #
+BOOL colmatchblack_00007_00004 #
+BOOL colmatchblack_00007_00005 #
+BOOL colmatchblack_00007_00006 #
+BOOL colmatchblack_00007_00007 #
+BOOL colmatchblack_00007_00008 #
+BOOL colmatchblack_00008_00001 #
+BOOL colmatchblack_00008_00002 #
+BOOL colmatchblack_00008_00003 #
+BOOL colmatchblack_00008_00004 #
+BOOL colmatchblack_00008_00005 #
+BOOL colmatchblack_00008_00006 #
+BOOL colmatchblack_00008_00007 #
+BOOL colmatchblack_00008_00008 #
+BOOL colmatchblack_00009_00001 #
+BOOL colmatchblack_00009_00002 #
+BOOL colmatchblack_00009_00003 #
+BOOL colmatchblack_00009_00004 #
+BOOL colmatchblack_00009_00005 #
+BOOL colmatchblack_00009_00006 #
+BOOL colmatchblack_00009_00007 #
+BOOL colmatchblack_00009_00008 #
+BOOL colmatchblack_00010_00001 #
+BOOL colmatchblack_00010_00002 #
+BOOL colmatchblack_00010_00003 #
+BOOL colmatchblack_00010_00004 #
+BOOL colmatchblack_00010_00005 #
+BOOL colmatchblack_00010_00006 #
+BOOL colmatchblack_00010_00007 #
+BOOL colmatchblack_00010_00008 #
+BOOL alldiffrow_00001_00001 #
+BOOL alldiffrow_00001_00002 #
+BOOL alldiffrow_00001_00003 #
+BOOL alldiffrow_00001_00004 #
+BOOL alldiffrow_00001_00005 #
+BOOL alldiffrow_00001_00006 #
+BOOL alldiffrow_00001_00007 #
+BOOL alldiffrow_00001_00008 #
+BOOL alldiffrow_00001_00009 #
+BOOL alldiffrow_00001_00010 #
+BOOL alldiffrow_00002_00001 #
+BOOL alldiffrow_00002_00002 #
+BOOL alldiffrow_00002_00003 #
+BOOL alldiffrow_00002_00004 #
+BOOL alldiffrow_00002_00005 #
+BOOL alldiffrow_00002_00006 #
+BOOL alldiffrow_00002_00007 #
+BOOL alldiffrow_00002_00008 #
+BOOL alldiffrow_00002_00009 #
+BOOL alldiffrow_00002_00010 #
+BOOL alldiffrow_00003_00001 #
+BOOL alldiffrow_00003_00002 #
+BOOL alldiffrow_00003_00003 #
+BOOL alldiffrow_00003_00004 #
+BOOL alldiffrow_00003_00005 #
+BOOL alldiffrow_00003_00006 #
+BOOL alldiffrow_00003_00007 #
+BOOL alldiffrow_00003_00008 #
+BOOL alldiffrow_00003_00009 #
+BOOL alldiffrow_00003_00010 #
+BOOL alldiffrow_00004_00001 #
+BOOL alldiffrow_00004_00002 #
+BOOL alldiffrow_00004_00003 #
+BOOL alldiffrow_00004_00004 #
+BOOL alldiffrow_00004_00005 #
+BOOL alldiffrow_00004_00006 #
+BOOL alldiffrow_00004_00007 #
+BOOL alldiffrow_00004_00008 #
+BOOL alldiffrow_00004_00009 #
+BOOL alldiffrow_00004_00010 #
+BOOL alldiffrow_00005_00001 #
+BOOL alldiffrow_00005_00002 #
+BOOL alldiffrow_00005_00003 #
+BOOL alldiffrow_00005_00004 #
+BOOL alldiffrow_00005_00005 #
+BOOL alldiffrow_00005_00006 #
+BOOL alldiffrow_00005_00007 #
+BOOL alldiffrow_00005_00008 #
+BOOL alldiffrow_00005_00009 #
+BOOL alldiffrow_00005_00010 #
+BOOL alldiffrow_00006_00001 #
+BOOL alldiffrow_00006_00002 #
+BOOL alldiffrow_00006_00003 #
+BOOL alldiffrow_00006_00004 #
+BOOL alldiffrow_00006_00005 #
+BOOL alldiffrow_00006_00006 #
+BOOL alldiffrow_00006_00007 #
+BOOL alldiffrow_00006_00008 #
+BOOL alldiffrow_00006_00009 #
+BOOL alldiffrow_00006_00010 #
+BOOL alldiffrow_00007_00001 #
+BOOL alldiffrow_00007_00002 #
+BOOL alldiffrow_00007_00003 #
+BOOL alldiffrow_00007_00004 #
+BOOL alldiffrow_00007_00005 #
+BOOL alldiffrow_00007_00006 #
+BOOL alldiffrow_00007_00007 #
+BOOL alldiffrow_00007_00008 #
+BOOL alldiffrow_00007_00009 #
+BOOL alldiffrow_00007_00010 #
+BOOL alldiffrow_00008_00001 #
+BOOL alldiffrow_00008_00002 #
+BOOL alldiffrow_00008_00003 #
+BOOL alldiffrow_00008_00004 #
+BOOL alldiffrow_00008_00005 #
+BOOL alldiffrow_00008_00006 #
+BOOL alldiffrow_00008_00007 #
+BOOL alldiffrow_00008_00008 #
+BOOL alldiffrow_00008_00009 #
+BOOL alldiffrow_00008_00010 #
+BOOL alldiffrow_00009_00001 #
+BOOL alldiffrow_00009_00002 #
+BOOL alldiffrow_00009_00003 #
+BOOL alldiffrow_00009_00004 #
+BOOL alldiffrow_00009_00005 #
+BOOL alldiffrow_00009_00006 #
+BOOL alldiffrow_00009_00007 #
+BOOL alldiffrow_00009_00008 #
+BOOL alldiffrow_00009_00009 #
+BOOL alldiffrow_00009_00010 #
+BOOL alldiffrow_00010_00001 #
+BOOL alldiffrow_00010_00002 #
+BOOL alldiffrow_00010_00003 #
+BOOL alldiffrow_00010_00004 #
+BOOL alldiffrow_00010_00005 #
+BOOL alldiffrow_00010_00006 #
+BOOL alldiffrow_00010_00007 #
+BOOL alldiffrow_00010_00008 #
+BOOL alldiffrow_00010_00009 #
+BOOL alldiffrow_00010_00010 #
+BOOL alldiffcol_00001_00001 #
+BOOL alldiffcol_00001_00002 #
+BOOL alldiffcol_00001_00003 #
+BOOL alldiffcol_00001_00004 #
+BOOL alldiffcol_00001_00005 #
+BOOL alldiffcol_00001_00006 #
+BOOL alldiffcol_00001_00007 #
+BOOL alldiffcol_00001_00008 #
+BOOL alldiffcol_00001_00009 #
+BOOL alldiffcol_00001_00010 #
+BOOL alldiffcol_00002_00001 #
+BOOL alldiffcol_00002_00002 #
+BOOL alldiffcol_00002_00003 #
+BOOL alldiffcol_00002_00004 #
+BOOL alldiffcol_00002_00005 #
+BOOL alldiffcol_00002_00006 #
+BOOL alldiffcol_00002_00007 #
+BOOL alldiffcol_00002_00008 #
+BOOL alldiffcol_00002_00009 #
+BOOL alldiffcol_00002_00010 #
+BOOL alldiffcol_00003_00001 #
+BOOL alldiffcol_00003_00002 #
+BOOL alldiffcol_00003_00003 #
+BOOL alldiffcol_00003_00004 #
+BOOL alldiffcol_00003_00005 #
+BOOL alldiffcol_00003_00006 #
+BOOL alldiffcol_00003_00007 #
+BOOL alldiffcol_00003_00008 #
+BOOL alldiffcol_00003_00009 #
+BOOL alldiffcol_00003_00010 #
+BOOL alldiffcol_00004_00001 #
+BOOL alldiffcol_00004_00002 #
+BOOL alldiffcol_00004_00003 #
+BOOL alldiffcol_00004_00004 #
+BOOL alldiffcol_00004_00005 #
+BOOL alldiffcol_00004_00006 #
+BOOL alldiffcol_00004_00007 #
+BOOL alldiffcol_00004_00008 #
+BOOL alldiffcol_00004_00009 #
+BOOL alldiffcol_00004_00010 #
+BOOL alldiffcol_00005_00001 #
+BOOL alldiffcol_00005_00002 #
+BOOL alldiffcol_00005_00003 #
+BOOL alldiffcol_00005_00004 #
+BOOL alldiffcol_00005_00005 #
+BOOL alldiffcol_00005_00006 #
+BOOL alldiffcol_00005_00007 #
+BOOL alldiffcol_00005_00008 #
+BOOL alldiffcol_00005_00009 #
+BOOL alldiffcol_00005_00010 #
+BOOL alldiffcol_00006_00001 #
+BOOL alldiffcol_00006_00002 #
+BOOL alldiffcol_00006_00003 #
+BOOL alldiffcol_00006_00004 #
+BOOL alldiffcol_00006_00005 #
+BOOL alldiffcol_00006_00006 #
+BOOL alldiffcol_00006_00007 #
+BOOL alldiffcol_00006_00008 #
+BOOL alldiffcol_00006_00009 #
+BOOL alldiffcol_00006_00010 #
+BOOL alldiffcol_00007_00001 #
+BOOL alldiffcol_00007_00002 #
+BOOL alldiffcol_00007_00003 #
+BOOL alldiffcol_00007_00004 #
+BOOL alldiffcol_00007_00005 #
+BOOL alldiffcol_00007_00006 #
+BOOL alldiffcol_00007_00007 #
+BOOL alldiffcol_00007_00008 #
+BOOL alldiffcol_00007_00009 #
+BOOL alldiffcol_00007_00010 #
+BOOL alldiffcol_00008_00001 #
+BOOL alldiffcol_00008_00002 #
+BOOL alldiffcol_00008_00003 #
+BOOL alldiffcol_00008_00004 #
+BOOL alldiffcol_00008_00005 #
+BOOL alldiffcol_00008_00006 #
+BOOL alldiffcol_00008_00007 #
+BOOL alldiffcol_00008_00008 #
+BOOL alldiffcol_00008_00009 #
+BOOL alldiffcol_00008_00010 #
+BOOL alldiffcol_00009_00001 #
+BOOL alldiffcol_00009_00002 #
+BOOL alldiffcol_00009_00003 #
+BOOL alldiffcol_00009_00004 #
+BOOL alldiffcol_00009_00005 #
+BOOL alldiffcol_00009_00006 #
+BOOL alldiffcol_00009_00007 #
+BOOL alldiffcol_00009_00008 #
+BOOL alldiffcol_00009_00009 #
+BOOL alldiffcol_00009_00010 #
+BOOL alldiffcol_00010_00001 #
+BOOL alldiffcol_00010_00002 #
+BOOL alldiffcol_00010_00003 #
+BOOL alldiffcol_00010_00004 #
+BOOL alldiffcol_00010_00005 #
+BOOL alldiffcol_00010_00006 #
+BOOL alldiffcol_00010_00007 #
+BOOL alldiffcol_00010_00008 #
+BOOL alldiffcol_00010_00009 #
+BOOL alldiffcol_00010_00010 #
+**TUPLELIST**
+initial 10 10
+2 2 2 2 0 2 2 2 1 2 
+2 2 0 2 2 2 2 2 2 2 
+2 2 2 1 2 1 2 2 2 2 
+2 2 2 2 2 2 2 2 2 1 
+0 1 2 2 2 2 1 1 2 2 
+2 2 0 1 2 0 2 2 2 0 
+2 2 2 2 2 2 2 1 2 2 
+0 2 1 2 0 2 2 2 2 2 
+2 2 2 2 0 2 0 2 0 2 
+0 1 2 2 2 2 0 2 2 0 
+**VARIABLES**
+ALIAS initial[10,10]=[[2, 2, 2, 2, 0, 2, 2, 2, 1, 2], [2, 2, 0, 2, 2, 2, 2, 2, 2, 2], [2, 2, 2, 1, 2, 1, 2, 2, 2, 2], [2, 2, 2, 2, 2, 2, 2, 2, 2, 1], [0, 1, 2, 2, 2, 2, 1, 1, 2, 2], [2, 2, 0, 1, 2, 0, 2, 2, 2, 0], [2, 2, 2, 2, 2, 2, 2, 1, 2, 2], [0, 2, 1, 2, 0, 2, 2, 2, 2, 2], [2, 2, 2, 2, 0, 2, 0, 2, 0, 2], [0, 1, 2, 2, 2, 2, 0, 2, 2, 0]]
+**SEARCH**
+PRINT[[grid_00001_00001],[grid_00001_00002],[grid_00001_00003],[grid_00001_00004],[grid_00001_00005],[grid_00001_00006],[grid_00001_00007],[grid_00001_00008],[grid_00001_00009],[grid_00001_00010],[grid_00002_00001],[grid_00002_00002],[grid_00002_00003],[grid_00002_00004],[grid_00002_00005],[grid_00002_00006],[grid_00002_00007],[grid_00002_00008],[grid_00002_00009],[grid_00002_00010],[grid_00003_00001],[grid_00003_00002],[grid_00003_00003],[grid_00003_00004],[grid_00003_00005],[grid_00003_00006],[grid_00003_00007],[grid_00003_00008],[grid_00003_00009],[grid_00003_00010],[grid_00004_00001],[grid_00004_00002],[grid_00004_00003],[grid_00004_00004],[grid_00004_00005],[grid_00004_00006],[grid_00004_00007],[grid_00004_00008],[grid_00004_00009],[grid_00004_00010],[grid_00005_00001],[grid_00005_00002],[grid_00005_00003],[grid_00005_00004],[grid_00005_00005],[grid_00005_00006],[grid_00005_00007],[grid_00005_00008],[grid_00005_00009],[grid_00005_00010],[grid_00006_00001],[grid_00006_00002],[grid_00006_00003],[grid_00006_00004],[grid_00006_00005],[grid_00006_00006],[grid_00006_00007],[grid_00006_00008],[grid_00006_00009],[grid_00006_00010],[grid_00007_00001],[grid_00007_00002],[grid_00007_00003],[grid_00007_00004],[grid_00007_00005],[grid_00007_00006],[grid_00007_00007],[grid_00007_00008],[grid_00007_00009],[grid_00007_00010],[grid_00008_00001],[grid_00008_00002],[grid_00008_00003],[grid_00008_00004],[grid_00008_00005],[grid_00008_00006],[grid_00008_00007],[grid_00008_00008],[grid_00008_00009],[grid_00008_00010],[grid_00009_00001],[grid_00009_00002],[grid_00009_00003],[grid_00009_00004],[grid_00009_00005],[grid_00009_00006],[grid_00009_00007],[grid_00009_00008],[grid_00009_00009],[grid_00009_00010],[grid_00010_00001],[grid_00010_00002],[grid_00010_00003],[grid_00010_00004],[grid_00010_00005],[grid_00010_00006],[grid_00010_00007],[grid_00010_00008],[grid_00010_00009],[grid_00010_00010],[rowwhite_00001],[rowwhite_00002],[rowwhite_00003],[rowwhite_00004],[rowwhite_00005],[rowwhite_00006],[rowwhite_00007],[rowwhite_00008],[rowwhite_00009],[rowwhite_00010],[rowblack_00001],[rowblack_00002],[rowblack_00003],[rowblack_00004],[rowblack_00005],[rowblack_00006],[rowblack_00007],[rowblack_00008],[rowblack_00009],[rowblack_00010],[colwhite_00001],[colwhite_00002],[colwhite_00003],[colwhite_00004],[colwhite_00005],[colwhite_00006],[colwhite_00007],[colwhite_00008],[colwhite_00009],[colwhite_00010],[colblack_00001],[colblack_00002],[colblack_00003],[colblack_00004],[colblack_00005],[colblack_00006],[colblack_00007],[colblack_00008],[colblack_00009],[colblack_00010],[rowmatchwhite_00001_00001],[rowmatchwhite_00001_00002],[rowmatchwhite_00001_00003],[rowmatchwhite_00001_00004],[rowmatchwhite_00001_00005],[rowmatchwhite_00001_00006],[rowmatchwhite_00001_00007],[rowmatchwhite_00001_00008],[rowmatchwhite_00002_00001],[rowmatchwhite_00002_00002],[rowmatchwhite_00002_00003],[rowmatchwhite_00002_00004],[rowmatchwhite_00002_00005],[rowmatchwhite_00002_00006],[rowmatchwhite_00002_00007],[rowmatchwhite_00002_00008],[rowmatchwhite_00003_00001],[rowmatchwhite_00003_00002],[rowmatchwhite_00003_00003],[rowmatchwhite_00003_00004],[rowmatchwhite_00003_00005],[rowmatchwhite_00003_00006],[rowmatchwhite_00003_00007],[rowmatchwhite_00003_00008],[rowmatchwhite_00004_00001],[rowmatchwhite_00004_00002],[rowmatchwhite_00004_00003],[rowmatchwhite_00004_00004],[rowmatchwhite_00004_00005],[rowmatchwhite_00004_00006],[rowmatchwhite_00004_00007],[rowmatchwhite_00004_00008],[rowmatchwhite_00005_00001],[rowmatchwhite_00005_00002],[rowmatchwhite_00005_00003],[rowmatchwhite_00005_00004],[rowmatchwhite_00005_00005],[rowmatchwhite_00005_00006],[rowmatchwhite_00005_00007],[rowmatchwhite_00005_00008],[rowmatchwhite_00006_00001],[rowmatchwhite_00006_00002],[rowmatchwhite_00006_00003],[rowmatchwhite_00006_00004],[rowmatchwhite_00006_00005],[rowmatchwhite_00006_00006],[rowmatchwhite_00006_00007],[rowmatchwhite_00006_00008],[rowmatchwhite_00007_00001],[rowmatchwhite_00007_00002],[rowmatchwhite_00007_00003],[rowmatchwhite_00007_00004],[rowmatchwhite_00007_00005],[rowmatchwhite_00007_00006],[rowmatchwhite_00007_00007],[rowmatchwhite_00007_00008],[rowmatchwhite_00008_00001],[rowmatchwhite_00008_00002],[rowmatchwhite_00008_00003],[rowmatchwhite_00008_00004],[rowmatchwhite_00008_00005],[rowmatchwhite_00008_00006],[rowmatchwhite_00008_00007],[rowmatchwhite_00008_00008],[rowmatchwhite_00009_00001],[rowmatchwhite_00009_00002],[rowmatchwhite_00009_00003],[rowmatchwhite_00009_00004],[rowmatchwhite_00009_00005],[rowmatchwhite_00009_00006],[rowmatchwhite_00009_00007],[rowmatchwhite_00009_00008],[rowmatchwhite_00010_00001],[rowmatchwhite_00010_00002],[rowmatchwhite_00010_00003],[rowmatchwhite_00010_00004],[rowmatchwhite_00010_00005],[rowmatchwhite_00010_00006],[rowmatchwhite_00010_00007],[rowmatchwhite_00010_00008],[rowmatchblack_00001_00001],[rowmatchblack_00001_00002],[rowmatchblack_00001_00003],[rowmatchblack_00001_00004],[rowmatchblack_00001_00005],[rowmatchblack_00001_00006],[rowmatchblack_00001_00007],[rowmatchblack_00001_00008],[rowmatchblack_00002_00001],[rowmatchblack_00002_00002],[rowmatchblack_00002_00003],[rowmatchblack_00002_00004],[rowmatchblack_00002_00005],[rowmatchblack_00002_00006],[rowmatchblack_00002_00007],[rowmatchblack_00002_00008],[rowmatchblack_00003_00001],[rowmatchblack_00003_00002],[rowmatchblack_00003_00003],[rowmatchblack_00003_00004],[rowmatchblack_00003_00005],[rowmatchblack_00003_00006],[rowmatchblack_00003_00007],[rowmatchblack_00003_00008],[rowmatchblack_00004_00001],[rowmatchblack_00004_00002],[rowmatchblack_00004_00003],[rowmatchblack_00004_00004],[rowmatchblack_00004_00005],[rowmatchblack_00004_00006],[rowmatchblack_00004_00007],[rowmatchblack_00004_00008],[rowmatchblack_00005_00001],[rowmatchblack_00005_00002],[rowmatchblack_00005_00003],[rowmatchblack_00005_00004],[rowmatchblack_00005_00005],[rowmatchblack_00005_00006],[rowmatchblack_00005_00007],[rowmatchblack_00005_00008],[rowmatchblack_00006_00001],[rowmatchblack_00006_00002],[rowmatchblack_00006_00003],[rowmatchblack_00006_00004],[rowmatchblack_00006_00005],[rowmatchblack_00006_00006],[rowmatchblack_00006_00007],[rowmatchblack_00006_00008],[rowmatchblack_00007_00001],[rowmatchblack_00007_00002],[rowmatchblack_00007_00003],[rowmatchblack_00007_00004],[rowmatchblack_00007_00005],[rowmatchblack_00007_00006],[rowmatchblack_00007_00007],[rowmatchblack_00007_00008],[rowmatchblack_00008_00001],[rowmatchblack_00008_00002],[rowmatchblack_00008_00003],[rowmatchblack_00008_00004],[rowmatchblack_00008_00005],[rowmatchblack_00008_00006],[rowmatchblack_00008_00007],[rowmatchblack_00008_00008],[rowmatchblack_00009_00001],[rowmatchblack_00009_00002],[rowmatchblack_00009_00003],[rowmatchblack_00009_00004],[rowmatchblack_00009_00005],[rowmatchblack_00009_00006],[rowmatchblack_00009_00007],[rowmatchblack_00009_00008],[rowmatchblack_00010_00001],[rowmatchblack_00010_00002],[rowmatchblack_00010_00003],[rowmatchblack_00010_00004],[rowmatchblack_00010_00005],[rowmatchblack_00010_00006],[rowmatchblack_00010_00007],[rowmatchblack_00010_00008],[colmatchwhite_00001_00001],[colmatchwhite_00001_00002],[colmatchwhite_00001_00003],[colmatchwhite_00001_00004],[colmatchwhite_00001_00005],[colmatchwhite_00001_00006],[colmatchwhite_00001_00007],[colmatchwhite_00001_00008],[colmatchwhite_00002_00001],[colmatchwhite_00002_00002],[colmatchwhite_00002_00003],[colmatchwhite_00002_00004],[colmatchwhite_00002_00005],[colmatchwhite_00002_00006],[colmatchwhite_00002_00007],[colmatchwhite_00002_00008],[colmatchwhite_00003_00001],[colmatchwhite_00003_00002],[colmatchwhite_00003_00003],[colmatchwhite_00003_00004],[colmatchwhite_00003_00005],[colmatchwhite_00003_00006],[colmatchwhite_00003_00007],[colmatchwhite_00003_00008],[colmatchwhite_00004_00001],[colmatchwhite_00004_00002],[colmatchwhite_00004_00003],[colmatchwhite_00004_00004],[colmatchwhite_00004_00005],[colmatchwhite_00004_00006],[colmatchwhite_00004_00007],[colmatchwhite_00004_00008],[colmatchwhite_00005_00001],[colmatchwhite_00005_00002],[colmatchwhite_00005_00003],[colmatchwhite_00005_00004],[colmatchwhite_00005_00005],[colmatchwhite_00005_00006],[colmatchwhite_00005_00007],[colmatchwhite_00005_00008],[colmatchwhite_00006_00001],[colmatchwhite_00006_00002],[colmatchwhite_00006_00003],[colmatchwhite_00006_00004],[colmatchwhite_00006_00005],[colmatchwhite_00006_00006],[colmatchwhite_00006_00007],[colmatchwhite_00006_00008],[colmatchwhite_00007_00001],[colmatchwhite_00007_00002],[colmatchwhite_00007_00003],[colmatchwhite_00007_00004],[colmatchwhite_00007_00005],[colmatchwhite_00007_00006],[colmatchwhite_00007_00007],[colmatchwhite_00007_00008],[colmatchwhite_00008_00001],[colmatchwhite_00008_00002],[colmatchwhite_00008_00003],[colmatchwhite_00008_00004],[colmatchwhite_00008_00005],[colmatchwhite_00008_00006],[colmatchwhite_00008_00007],[colmatchwhite_00008_00008],[colmatchwhite_00009_00001],[colmatchwhite_00009_00002],[colmatchwhite_00009_00003],[colmatchwhite_00009_00004],[colmatchwhite_00009_00005],[colmatchwhite_00009_00006],[colmatchwhite_00009_00007],[colmatchwhite_00009_00008],[colmatchwhite_00010_00001],[colmatchwhite_00010_00002],[colmatchwhite_00010_00003],[colmatchwhite_00010_00004],[colmatchwhite_00010_00005],[colmatchwhite_00010_00006],[colmatchwhite_00010_00007],[colmatchwhite_00010_00008],[colmatchblack_00001_00001],[colmatchblack_00001_00002],[colmatchblack_00001_00003],[colmatchblack_00001_00004],[colmatchblack_00001_00005],[colmatchblack_00001_00006],[colmatchblack_00001_00007],[colmatchblack_00001_00008],[colmatchblack_00002_00001],[colmatchblack_00002_00002],[colmatchblack_00002_00003],[colmatchblack_00002_00004],[colmatchblack_00002_00005],[colmatchblack_00002_00006],[colmatchblack_00002_00007],[colmatchblack_00002_00008],[colmatchblack_00003_00001],[colmatchblack_00003_00002],[colmatchblack_00003_00003],[colmatchblack_00003_00004],[colmatchblack_00003_00005],[colmatchblack_00003_00006],[colmatchblack_00003_00007],[colmatchblack_00003_00008],[colmatchblack_00004_00001],[colmatchblack_00004_00002],[colmatchblack_00004_00003],[colmatchblack_00004_00004],[colmatchblack_00004_00005],[colmatchblack_00004_00006],[colmatchblack_00004_00007],[colmatchblack_00004_00008],[colmatchblack_00005_00001],[colmatchblack_00005_00002],[colmatchblack_00005_00003],[colmatchblack_00005_00004],[colmatchblack_00005_00005],[colmatchblack_00005_00006],[colmatchblack_00005_00007],[colmatchblack_00005_00008],[colmatchblack_00006_00001],[colmatchblack_00006_00002],[colmatchblack_00006_00003],[colmatchblack_00006_00004],[colmatchblack_00006_00005],[colmatchblack_00006_00006],[colmatchblack_00006_00007],[colmatchblack_00006_00008],[colmatchblack_00007_00001],[colmatchblack_00007_00002],[colmatchblack_00007_00003],[colmatchblack_00007_00004],[colmatchblack_00007_00005],[colmatchblack_00007_00006],[colmatchblack_00007_00007],[colmatchblack_00007_00008],[colmatchblack_00008_00001],[colmatchblack_00008_00002],[colmatchblack_00008_00003],[colmatchblack_00008_00004],[colmatchblack_00008_00005],[colmatchblack_00008_00006],[colmatchblack_00008_00007],[colmatchblack_00008_00008],[colmatchblack_00009_00001],[colmatchblack_00009_00002],[colmatchblack_00009_00003],[colmatchblack_00009_00004],[colmatchblack_00009_00005],[colmatchblack_00009_00006],[colmatchblack_00009_00007],[colmatchblack_00009_00008],[colmatchblack_00010_00001],[colmatchblack_00010_00002],[colmatchblack_00010_00003],[colmatchblack_00010_00004],[colmatchblack_00010_00005],[colmatchblack_00010_00006],[colmatchblack_00010_00007],[colmatchblack_00010_00008],[alldiffrow_00001_00001],[alldiffrow_00001_00002],[alldiffrow_00001_00003],[alldiffrow_00001_00004],[alldiffrow_00001_00005],[alldiffrow_00001_00006],[alldiffrow_00001_00007],[alldiffrow_00001_00008],[alldiffrow_00001_00009],[alldiffrow_00001_00010],[alldiffrow_00002_00001],[alldiffrow_00002_00002],[alldiffrow_00002_00003],[alldiffrow_00002_00004],[alldiffrow_00002_00005],[alldiffrow_00002_00006],[alldiffrow_00002_00007],[alldiffrow_00002_00008],[alldiffrow_00002_00009],[alldiffrow_00002_00010],[alldiffrow_00003_00001],[alldiffrow_00003_00002],[alldiffrow_00003_00003],[alldiffrow_00003_00004],[alldiffrow_00003_00005],[alldiffrow_00003_00006],[alldiffrow_00003_00007],[alldiffrow_00003_00008],[alldiffrow_00003_00009],[alldiffrow_00003_00010],[alldiffrow_00004_00001],[alldiffrow_00004_00002],[alldiffrow_00004_00003],[alldiffrow_00004_00004],[alldiffrow_00004_00005],[alldiffrow_00004_00006],[alldiffrow_00004_00007],[alldiffrow_00004_00008],[alldiffrow_00004_00009],[alldiffrow_00004_00010],[alldiffrow_00005_00001],[alldiffrow_00005_00002],[alldiffrow_00005_00003],[alldiffrow_00005_00004],[alldiffrow_00005_00005],[alldiffrow_00005_00006],[alldiffrow_00005_00007],[alldiffrow_00005_00008],[alldiffrow_00005_00009],[alldiffrow_00005_00010],[alldiffrow_00006_00001],[alldiffrow_00006_00002],[alldiffrow_00006_00003],[alldiffrow_00006_00004],[alldiffrow_00006_00005],[alldiffrow_00006_00006],[alldiffrow_00006_00007],[alldiffrow_00006_00008],[alldiffrow_00006_00009],[alldiffrow_00006_00010],[alldiffrow_00007_00001],[alldiffrow_00007_00002],[alldiffrow_00007_00003],[alldiffrow_00007_00004],[alldiffrow_00007_00005],[alldiffrow_00007_00006],[alldiffrow_00007_00007],[alldiffrow_00007_00008],[alldiffrow_00007_00009],[alldiffrow_00007_00010],[alldiffrow_00008_00001],[alldiffrow_00008_00002],[alldiffrow_00008_00003],[alldiffrow_00008_00004],[alldiffrow_00008_00005],[alldiffrow_00008_00006],[alldiffrow_00008_00007],[alldiffrow_00008_00008],[alldiffrow_00008_00009],[alldiffrow_00008_00010],[alldiffrow_00009_00001],[alldiffrow_00009_00002],[alldiffrow_00009_00003],[alldiffrow_00009_00004],[alldiffrow_00009_00005],[alldiffrow_00009_00006],[alldiffrow_00009_00007],[alldiffrow_00009_00008],[alldiffrow_00009_00009],[alldiffrow_00009_00010],[alldiffrow_00010_00001],[alldiffrow_00010_00002],[alldiffrow_00010_00003],[alldiffrow_00010_00004],[alldiffrow_00010_00005],[alldiffrow_00010_00006],[alldiffrow_00010_00007],[alldiffrow_00010_00008],[alldiffrow_00010_00009],[alldiffrow_00010_00010],[alldiffcol_00001_00001],[alldiffcol_00001_00002],[alldiffcol_00001_00003],[alldiffcol_00001_00004],[alldiffcol_00001_00005],[alldiffcol_00001_00006],[alldiffcol_00001_00007],[alldiffcol_00001_00008],[alldiffcol_00001_00009],[alldiffcol_00001_00010],[alldiffcol_00002_00001],[alldiffcol_00002_00002],[alldiffcol_00002_00003],[alldiffcol_00002_00004],[alldiffcol_00002_00005],[alldiffcol_00002_00006],[alldiffcol_00002_00007],[alldiffcol_00002_00008],[alldiffcol_00002_00009],[alldiffcol_00002_00010],[alldiffcol_00003_00001],[alldiffcol_00003_00002],[alldiffcol_00003_00003],[alldiffcol_00003_00004],[alldiffcol_00003_00005],[alldiffcol_00003_00006],[alldiffcol_00003_00007],[alldiffcol_00003_00008],[alldiffcol_00003_00009],[alldiffcol_00003_00010],[alldiffcol_00004_00001],[alldiffcol_00004_00002],[alldiffcol_00004_00003],[alldiffcol_00004_00004],[alldiffcol_00004_00005],[alldiffcol_00004_00006],[alldiffcol_00004_00007],[alldiffcol_00004_00008],[alldiffcol_00004_00009],[alldiffcol_00004_00010],[alldiffcol_00005_00001],[alldiffcol_00005_00002],[alldiffcol_00005_00003],[alldiffcol_00005_00004],[alldiffcol_00005_00005],[alldiffcol_00005_00006],[alldiffcol_00005_00007],[alldiffcol_00005_00008],[alldiffcol_00005_00009],[alldiffcol_00005_00010],[alldiffcol_00006_00001],[alldiffcol_00006_00002],[alldiffcol_00006_00003],[alldiffcol_00006_00004],[alldiffcol_00006_00005],[alldiffcol_00006_00006],[alldiffcol_00006_00007],[alldiffcol_00006_00008],[alldiffcol_00006_00009],[alldiffcol_00006_00010],[alldiffcol_00007_00001],[alldiffcol_00007_00002],[alldiffcol_00007_00003],[alldiffcol_00007_00004],[alldiffcol_00007_00005],[alldiffcol_00007_00006],[alldiffcol_00007_00007],[alldiffcol_00007_00008],[alldiffcol_00007_00009],[alldiffcol_00007_00010],[alldiffcol_00008_00001],[alldiffcol_00008_00002],[alldiffcol_00008_00003],[alldiffcol_00008_00004],[alldiffcol_00008_00005],[alldiffcol_00008_00006],[alldiffcol_00008_00007],[alldiffcol_00008_00008],[alldiffcol_00008_00009],[alldiffcol_00008_00010],[alldiffcol_00009_00001],[alldiffcol_00009_00002],[alldiffcol_00009_00003],[alldiffcol_00009_00004],[alldiffcol_00009_00005],[alldiffcol_00009_00006],[alldiffcol_00009_00007],[alldiffcol_00009_00008],[alldiffcol_00009_00009],[alldiffcol_00009_00010],[alldiffcol_00010_00001],[alldiffcol_00010_00002],[alldiffcol_00010_00003],[alldiffcol_00010_00004],[alldiffcol_00010_00005],[alldiffcol_00010_00006],[alldiffcol_00010_00007],[alldiffcol_00010_00008],[alldiffcol_00010_00009],[alldiffcol_00010_00010]]
+**CONSTRAINTS**
+w-literal(grid_00002_00003,0)
+w-literal(grid_00004_00010,1)
+w-literal(grid_00007_00008,1)
+w-literal(grid_00001_00005,0)
+w-literal(grid_00001_00009,1)
+w-literal(grid_00003_00004,1)
+w-literal(grid_00003_00006,1)
+w-literal(grid_00005_00001,0)
+w-literal(grid_00005_00002,1)
+w-literal(grid_00005_00007,1)
+w-literal(grid_00005_00008,1)
+w-literal(grid_00006_00003,0)
+w-literal(grid_00006_00004,1)
+w-literal(grid_00006_00006,0)
+w-literal(grid_00006_00010,0)
+w-literal(grid_00008_00001,0)
+w-literal(grid_00008_00003,1)
+w-literal(grid_00008_00005,0)
+w-literal(grid_00009_00005,0)
+w-literal(grid_00009_00007,0)
+w-literal(grid_00009_00009,0)
+w-literal(grid_00010_00001,0)
+w-literal(grid_00010_00002,1)
+w-literal(grid_00010_00007,0)
+w-literal(grid_00010_00010,0)
+reifyimply(sumgeq([grid_00001_00001,grid_00001_00002,grid_00001_00003,grid_00001_00004,grid_00001_00005,grid_00001_00006,grid_00001_00007,grid_00001_00008,grid_00001_00009,grid_00001_00010],5), rowwhite_00001)
+reifyimply(sumgeq([grid_00002_00001,grid_00002_00002,grid_00002_00003,grid_00002_00004,grid_00002_00005,grid_00002_00006,grid_00002_00007,grid_00002_00008,grid_00002_00009,grid_00002_00010],5), rowwhite_00002)
+reifyimply(sumgeq([grid_00003_00001,grid_00003_00002,grid_00003_00003,grid_00003_00004,grid_00003_00005,grid_00003_00006,grid_00003_00007,grid_00003_00008,grid_00003_00009,grid_00003_00010],5), rowwhite_00003)
+reifyimply(sumgeq([grid_00004_00001,grid_00004_00002,grid_00004_00003,grid_00004_00004,grid_00004_00005,grid_00004_00006,grid_00004_00007,grid_00004_00008,grid_00004_00009,grid_00004_00010],5), rowwhite_00004)
+reifyimply(sumgeq([grid_00005_00001,grid_00005_00002,grid_00005_00003,grid_00005_00004,grid_00005_00005,grid_00005_00006,grid_00005_00007,grid_00005_00008,grid_00005_00009,grid_00005_00010],5), rowwhite_00005)
+reifyimply(sumgeq([grid_00006_00001,grid_00006_00002,grid_00006_00003,grid_00006_00004,grid_00006_00005,grid_00006_00006,grid_00006_00007,grid_00006_00008,grid_00006_00009,grid_00006_00010],5), rowwhite_00006)
+reifyimply(sumgeq([grid_00007_00001,grid_00007_00002,grid_00007_00003,grid_00007_00004,grid_00007_00005,grid_00007_00006,grid_00007_00007,grid_00007_00008,grid_00007_00009,grid_00007_00010],5), rowwhite_00007)
+reifyimply(sumgeq([grid_00008_00001,grid_00008_00002,grid_00008_00003,grid_00008_00004,grid_00008_00005,grid_00008_00006,grid_00008_00007,grid_00008_00008,grid_00008_00009,grid_00008_00010],5), rowwhite_00008)
+reifyimply(sumgeq([grid_00009_00001,grid_00009_00002,grid_00009_00003,grid_00009_00004,grid_00009_00005,grid_00009_00006,grid_00009_00007,grid_00009_00008,grid_00009_00009,grid_00009_00010],5), rowwhite_00009)
+reifyimply(sumgeq([grid_00010_00001,grid_00010_00002,grid_00010_00003,grid_00010_00004,grid_00010_00005,grid_00010_00006,grid_00010_00007,grid_00010_00008,grid_00010_00009,grid_00010_00010],5), rowwhite_00010)
+reifyimply(sumgeq([!grid_00001_00001,!grid_00001_00002,!grid_00001_00003,!grid_00001_00004,!grid_00001_00005,!grid_00001_00006,!grid_00001_00007,!grid_00001_00008,!grid_00001_00009,!grid_00001_00010],5), rowblack_00001)
+reifyimply(sumgeq([!grid_00002_00001,!grid_00002_00002,!grid_00002_00003,!grid_00002_00004,!grid_00002_00005,!grid_00002_00006,!grid_00002_00007,!grid_00002_00008,!grid_00002_00009,!grid_00002_00010],5), rowblack_00002)
+reifyimply(sumgeq([!grid_00003_00001,!grid_00003_00002,!grid_00003_00003,!grid_00003_00004,!grid_00003_00005,!grid_00003_00006,!grid_00003_00007,!grid_00003_00008,!grid_00003_00009,!grid_00003_00010],5), rowblack_00003)
+reifyimply(sumgeq([!grid_00004_00001,!grid_00004_00002,!grid_00004_00003,!grid_00004_00004,!grid_00004_00005,!grid_00004_00006,!grid_00004_00007,!grid_00004_00008,!grid_00004_00009,!grid_00004_00010],5), rowblack_00004)
+reifyimply(sumgeq([!grid_00005_00001,!grid_00005_00002,!grid_00005_00003,!grid_00005_00004,!grid_00005_00005,!grid_00005_00006,!grid_00005_00007,!grid_00005_00008,!grid_00005_00009,!grid_00005_00010],5), rowblack_00005)
+reifyimply(sumgeq([!grid_00006_00001,!grid_00006_00002,!grid_00006_00003,!grid_00006_00004,!grid_00006_00005,!grid_00006_00006,!grid_00006_00007,!grid_00006_00008,!grid_00006_00009,!grid_00006_00010],5), rowblack_00006)
+reifyimply(sumgeq([!grid_00007_00001,!grid_00007_00002,!grid_00007_00003,!grid_00007_00004,!grid_00007_00005,!grid_00007_00006,!grid_00007_00007,!grid_00007_00008,!grid_00007_00009,!grid_00007_00010],5), rowblack_00007)
+reifyimply(sumgeq([!grid_00008_00001,!grid_00008_00002,!grid_00008_00003,!grid_00008_00004,!grid_00008_00005,!grid_00008_00006,!grid_00008_00007,!grid_00008_00008,!grid_00008_00009,!grid_00008_00010],5), rowblack_00008)
+reifyimply(sumgeq([!grid_00009_00001,!grid_00009_00002,!grid_00009_00003,!grid_00009_00004,!grid_00009_00005,!grid_00009_00006,!grid_00009_00007,!grid_00009_00008,!grid_00009_00009,!grid_00009_00010],5), rowblack_00009)
+reifyimply(sumgeq([!grid_00010_00001,!grid_00010_00002,!grid_00010_00003,!grid_00010_00004,!grid_00010_00005,!grid_00010_00006,!grid_00010_00007,!grid_00010_00008,!grid_00010_00009,!grid_00010_00010],5), rowblack_00010)
+reifyimply(sumgeq([grid_00003_00001,grid_00008_00001,grid_00004_00001,grid_00009_00001,grid_00005_00001,grid_00001_00001,grid_00006_00001,grid_00010_00001,grid_00002_00001,grid_00007_00001],5), colwhite_00001)
+reifyimply(sumgeq([grid_00003_00002,grid_00008_00002,grid_00004_00002,grid_00009_00002,grid_00005_00002,grid_00001_00002,grid_00006_00002,grid_00010_00002,grid_00002_00002,grid_00007_00002],5), colwhite_00002)
+reifyimply(sumgeq([grid_00003_00003,grid_00008_00003,grid_00004_00003,grid_00009_00003,grid_00005_00003,grid_00001_00003,grid_00006_00003,grid_00010_00003,grid_00002_00003,grid_00007_00003],5), colwhite_00003)
+reifyimply(sumgeq([grid_00003_00004,grid_00008_00004,grid_00004_00004,grid_00009_00004,grid_00005_00004,grid_00001_00004,grid_00006_00004,grid_00010_00004,grid_00002_00004,grid_00007_00004],5), colwhite_00004)
+reifyimply(sumgeq([grid_00003_00005,grid_00008_00005,grid_00004_00005,grid_00009_00005,grid_00005_00005,grid_00001_00005,grid_00006_00005,grid_00010_00005,grid_00002_00005,grid_00007_00005],5), colwhite_00005)
+reifyimply(sumgeq([grid_00003_00006,grid_00008_00006,grid_00004_00006,grid_00009_00006,grid_00005_00006,grid_00001_00006,grid_00006_00006,grid_00010_00006,grid_00002_00006,grid_00007_00006],5), colwhite_00006)
+reifyimply(sumgeq([grid_00003_00007,grid_00008_00007,grid_00004_00007,grid_00009_00007,grid_00005_00007,grid_00001_00007,grid_00006_00007,grid_00010_00007,grid_00002_00007,grid_00007_00007],5), colwhite_00007)
+reifyimply(sumgeq([grid_00003_00008,grid_00008_00008,grid_00004_00008,grid_00009_00008,grid_00005_00008,grid_00001_00008,grid_00006_00008,grid_00010_00008,grid_00002_00008,grid_00007_00008],5), colwhite_00008)
+reifyimply(sumgeq([grid_00003_00009,grid_00008_00009,grid_00004_00009,grid_00009_00009,grid_00005_00009,grid_00001_00009,grid_00006_00009,grid_00010_00009,grid_00002_00009,grid_00007_00009],5), colwhite_00009)
+reifyimply(sumgeq([grid_00003_00010,grid_00008_00010,grid_00004_00010,grid_00009_00010,grid_00005_00010,grid_00001_00010,grid_00006_00010,grid_00010_00010,grid_00002_00010,grid_00007_00010],5), colwhite_00010)
+reifyimply(sumgeq([!grid_00010_00001,!grid_00002_00001,!grid_00007_00001,!grid_00003_00001,!grid_00008_00001,!grid_00004_00001,!grid_00009_00001,!grid_00005_00001,!grid_00001_00001,!grid_00006_00001],5), colblack_00001)
+reifyimply(sumgeq([!grid_00010_00002,!grid_00002_00002,!grid_00007_00002,!grid_00003_00002,!grid_00008_00002,!grid_00004_00002,!grid_00009_00002,!grid_00005_00002,!grid_00001_00002,!grid_00006_00002],5), colblack_00002)
+reifyimply(sumgeq([!grid_00010_00003,!grid_00002_00003,!grid_00007_00003,!grid_00003_00003,!grid_00008_00003,!grid_00004_00003,!grid_00009_00003,!grid_00005_00003,!grid_00001_00003,!grid_00006_00003],5), colblack_00003)
+reifyimply(sumgeq([!grid_00010_00004,!grid_00002_00004,!grid_00007_00004,!grid_00003_00004,!grid_00008_00004,!grid_00004_00004,!grid_00009_00004,!grid_00005_00004,!grid_00001_00004,!grid_00006_00004],5), colblack_00004)
+reifyimply(sumgeq([!grid_00010_00005,!grid_00002_00005,!grid_00007_00005,!grid_00003_00005,!grid_00008_00005,!grid_00004_00005,!grid_00009_00005,!grid_00005_00005,!grid_00001_00005,!grid_00006_00005],5), colblack_00005)
+reifyimply(sumgeq([!grid_00010_00006,!grid_00002_00006,!grid_00007_00006,!grid_00003_00006,!grid_00008_00006,!grid_00004_00006,!grid_00009_00006,!grid_00005_00006,!grid_00001_00006,!grid_00006_00006],5), colblack_00006)
+reifyimply(sumgeq([!grid_00010_00007,!grid_00002_00007,!grid_00007_00007,!grid_00003_00007,!grid_00008_00007,!grid_00004_00007,!grid_00009_00007,!grid_00005_00007,!grid_00001_00007,!grid_00006_00007],5), colblack_00007)
+reifyimply(sumgeq([!grid_00010_00008,!grid_00002_00008,!grid_00007_00008,!grid_00003_00008,!grid_00008_00008,!grid_00004_00008,!grid_00009_00008,!grid_00005_00008,!grid_00001_00008,!grid_00006_00008],5), colblack_00008)
+reifyimply(sumgeq([!grid_00010_00009,!grid_00002_00009,!grid_00007_00009,!grid_00003_00009,!grid_00008_00009,!grid_00004_00009,!grid_00009_00009,!grid_00005_00009,!grid_00001_00009,!grid_00006_00009],5), colblack_00009)
+reifyimply(sumgeq([!grid_00010_00010,!grid_00002_00010,!grid_00007_00010,!grid_00003_00010,!grid_00008_00010,!grid_00004_00010,!grid_00009_00010,!grid_00005_00010,!grid_00001_00010,!grid_00006_00010],5), colblack_00010)
+watched-or({w-literal(rowmatchwhite_00001_00001,0),w-literal(grid_00001_00001,0),w-literal(grid_00001_00002,0),w-literal(grid_00001_00003,0)})
+watched-or({w-literal(rowmatchwhite_00001_00002,0),w-literal(grid_00001_00002,0),w-literal(grid_00001_00003,0),w-literal(grid_00001_00004,0)})
+watched-or({w-literal(rowmatchwhite_00001_00003,0),w-literal(grid_00001_00003,0),w-literal(grid_00001_00004,0),w-literal(grid_00001_00005,0)})
+watched-or({w-literal(rowmatchwhite_00001_00004,0),w-literal(grid_00001_00004,0),w-literal(grid_00001_00005,0),w-literal(grid_00001_00006,0)})
+watched-or({w-literal(rowmatchwhite_00001_00005,0),w-literal(grid_00001_00005,0),w-literal(grid_00001_00006,0),w-literal(grid_00001_00007,0)})
+watched-or({w-literal(rowmatchwhite_00001_00006,0),w-literal(grid_00001_00006,0),w-literal(grid_00001_00007,0),w-literal(grid_00001_00008,0)})
+watched-or({w-literal(rowmatchwhite_00001_00007,0),w-literal(grid_00001_00007,0),w-literal(grid_00001_00008,0),w-literal(grid_00001_00009,0)})
+watched-or({w-literal(rowmatchwhite_00001_00008,0),w-literal(grid_00001_00008,0),w-literal(grid_00001_00009,0),w-literal(grid_00001_00010,0)})
+watched-or({w-literal(rowmatchwhite_00002_00001,0),w-literal(grid_00002_00001,0),w-literal(grid_00002_00002,0),w-literal(grid_00002_00003,0)})
+watched-or({w-literal(rowmatchwhite_00002_00002,0),w-literal(grid_00002_00002,0),w-literal(grid_00002_00003,0),w-literal(grid_00002_00004,0)})
+watched-or({w-literal(rowmatchwhite_00002_00003,0),w-literal(grid_00002_00003,0),w-literal(grid_00002_00004,0),w-literal(grid_00002_00005,0)})
+watched-or({w-literal(rowmatchwhite_00002_00004,0),w-literal(grid_00002_00004,0),w-literal(grid_00002_00005,0),w-literal(grid_00002_00006,0)})
+watched-or({w-literal(rowmatchwhite_00002_00005,0),w-literal(grid_00002_00005,0),w-literal(grid_00002_00006,0),w-literal(grid_00002_00007,0)})
+watched-or({w-literal(rowmatchwhite_00002_00006,0),w-literal(grid_00002_00006,0),w-literal(grid_00002_00007,0),w-literal(grid_00002_00008,0)})
+watched-or({w-literal(rowmatchwhite_00002_00007,0),w-literal(grid_00002_00007,0),w-literal(grid_00002_00008,0),w-literal(grid_00002_00009,0)})
+watched-or({w-literal(rowmatchwhite_00002_00008,0),w-literal(grid_00002_00008,0),w-literal(grid_00002_00009,0),w-literal(grid_00002_00010,0)})
+watched-or({w-literal(rowmatchwhite_00003_00001,0),w-literal(grid_00003_00001,0),w-literal(grid_00003_00002,0),w-literal(grid_00003_00003,0)})
+watched-or({w-literal(rowmatchwhite_00003_00002,0),w-literal(grid_00003_00002,0),w-literal(grid_00003_00003,0),w-literal(grid_00003_00004,0)})
+watched-or({w-literal(rowmatchwhite_00003_00003,0),w-literal(grid_00003_00003,0),w-literal(grid_00003_00004,0),w-literal(grid_00003_00005,0)})
+watched-or({w-literal(rowmatchwhite_00003_00004,0),w-literal(grid_00003_00004,0),w-literal(grid_00003_00005,0),w-literal(grid_00003_00006,0)})
+watched-or({w-literal(rowmatchwhite_00003_00005,0),w-literal(grid_00003_00005,0),w-literal(grid_00003_00006,0),w-literal(grid_00003_00007,0)})
+watched-or({w-literal(rowmatchwhite_00003_00006,0),w-literal(grid_00003_00006,0),w-literal(grid_00003_00007,0),w-literal(grid_00003_00008,0)})
+watched-or({w-literal(rowmatchwhite_00003_00007,0),w-literal(grid_00003_00007,0),w-literal(grid_00003_00008,0),w-literal(grid_00003_00009,0)})
+watched-or({w-literal(rowmatchwhite_00003_00008,0),w-literal(grid_00003_00008,0),w-literal(grid_00003_00009,0),w-literal(grid_00003_00010,0)})
+watched-or({w-literal(rowmatchwhite_00004_00001,0),w-literal(grid_00004_00001,0),w-literal(grid_00004_00002,0),w-literal(grid_00004_00003,0)})
+watched-or({w-literal(rowmatchwhite_00004_00002,0),w-literal(grid_00004_00002,0),w-literal(grid_00004_00003,0),w-literal(grid_00004_00004,0)})
+watched-or({w-literal(rowmatchwhite_00004_00003,0),w-literal(grid_00004_00003,0),w-literal(grid_00004_00004,0),w-literal(grid_00004_00005,0)})
+watched-or({w-literal(rowmatchwhite_00004_00004,0),w-literal(grid_00004_00004,0),w-literal(grid_00004_00005,0),w-literal(grid_00004_00006,0)})
+watched-or({w-literal(rowmatchwhite_00004_00005,0),w-literal(grid_00004_00005,0),w-literal(grid_00004_00006,0),w-literal(grid_00004_00007,0)})
+watched-or({w-literal(rowmatchwhite_00004_00006,0),w-literal(grid_00004_00006,0),w-literal(grid_00004_00007,0),w-literal(grid_00004_00008,0)})
+watched-or({w-literal(rowmatchwhite_00004_00007,0),w-literal(grid_00004_00007,0),w-literal(grid_00004_00008,0),w-literal(grid_00004_00009,0)})
+watched-or({w-literal(rowmatchwhite_00004_00008,0),w-literal(grid_00004_00008,0),w-literal(grid_00004_00009,0),w-literal(grid_00004_00010,0)})
+watched-or({w-literal(rowmatchwhite_00005_00001,0),w-literal(grid_00005_00001,0),w-literal(grid_00005_00002,0),w-literal(grid_00005_00003,0)})
+watched-or({w-literal(rowmatchwhite_00005_00002,0),w-literal(grid_00005_00002,0),w-literal(grid_00005_00003,0),w-literal(grid_00005_00004,0)})
+watched-or({w-literal(rowmatchwhite_00005_00003,0),w-literal(grid_00005_00003,0),w-literal(grid_00005_00004,0),w-literal(grid_00005_00005,0)})
+watched-or({w-literal(rowmatchwhite_00005_00004,0),w-literal(grid_00005_00004,0),w-literal(grid_00005_00005,0),w-literal(grid_00005_00006,0)})
+watched-or({w-literal(rowmatchwhite_00005_00005,0),w-literal(grid_00005_00005,0),w-literal(grid_00005_00006,0),w-literal(grid_00005_00007,0)})
+watched-or({w-literal(rowmatchwhite_00005_00006,0),w-literal(grid_00005_00006,0),w-literal(grid_00005_00007,0),w-literal(grid_00005_00008,0)})
+watched-or({w-literal(rowmatchwhite_00005_00007,0),w-literal(grid_00005_00007,0),w-literal(grid_00005_00008,0),w-literal(grid_00005_00009,0)})
+watched-or({w-literal(rowmatchwhite_00005_00008,0),w-literal(grid_00005_00008,0),w-literal(grid_00005_00009,0),w-literal(grid_00005_00010,0)})
+watched-or({w-literal(rowmatchwhite_00006_00001,0),w-literal(grid_00006_00001,0),w-literal(grid_00006_00002,0),w-literal(grid_00006_00003,0)})
+watched-or({w-literal(rowmatchwhite_00006_00002,0),w-literal(grid_00006_00002,0),w-literal(grid_00006_00003,0),w-literal(grid_00006_00004,0)})
+watched-or({w-literal(rowmatchwhite_00006_00003,0),w-literal(grid_00006_00003,0),w-literal(grid_00006_00004,0),w-literal(grid_00006_00005,0)})
+watched-or({w-literal(rowmatchwhite_00006_00004,0),w-literal(grid_00006_00004,0),w-literal(grid_00006_00005,0),w-literal(grid_00006_00006,0)})
+watched-or({w-literal(rowmatchwhite_00006_00005,0),w-literal(grid_00006_00005,0),w-literal(grid_00006_00006,0),w-literal(grid_00006_00007,0)})
+watched-or({w-literal(rowmatchwhite_00006_00006,0),w-literal(grid_00006_00006,0),w-literal(grid_00006_00007,0),w-literal(grid_00006_00008,0)})
+watched-or({w-literal(rowmatchwhite_00006_00007,0),w-literal(grid_00006_00007,0),w-literal(grid_00006_00008,0),w-literal(grid_00006_00009,0)})
+watched-or({w-literal(rowmatchwhite_00006_00008,0),w-literal(grid_00006_00008,0),w-literal(grid_00006_00009,0),w-literal(grid_00006_00010,0)})
+watched-or({w-literal(rowmatchwhite_00007_00001,0),w-literal(grid_00007_00001,0),w-literal(grid_00007_00002,0),w-literal(grid_00007_00003,0)})
+watched-or({w-literal(rowmatchwhite_00007_00002,0),w-literal(grid_00007_00002,0),w-literal(grid_00007_00003,0),w-literal(grid_00007_00004,0)})
+watched-or({w-literal(rowmatchwhite_00007_00003,0),w-literal(grid_00007_00003,0),w-literal(grid_00007_00004,0),w-literal(grid_00007_00005,0)})
+watched-or({w-literal(rowmatchwhite_00007_00004,0),w-literal(grid_00007_00004,0),w-literal(grid_00007_00005,0),w-literal(grid_00007_00006,0)})
+watched-or({w-literal(rowmatchwhite_00007_00005,0),w-literal(grid_00007_00005,0),w-literal(grid_00007_00006,0),w-literal(grid_00007_00007,0)})
+watched-or({w-literal(rowmatchwhite_00007_00006,0),w-literal(grid_00007_00006,0),w-literal(grid_00007_00007,0),w-literal(grid_00007_00008,0)})
+watched-or({w-literal(rowmatchwhite_00007_00007,0),w-literal(grid_00007_00007,0),w-literal(grid_00007_00008,0),w-literal(grid_00007_00009,0)})
+watched-or({w-literal(rowmatchwhite_00007_00008,0),w-literal(grid_00007_00008,0),w-literal(grid_00007_00009,0),w-literal(grid_00007_00010,0)})
+watched-or({w-literal(rowmatchwhite_00008_00001,0),w-literal(grid_00008_00001,0),w-literal(grid_00008_00002,0),w-literal(grid_00008_00003,0)})
+watched-or({w-literal(rowmatchwhite_00008_00002,0),w-literal(grid_00008_00002,0),w-literal(grid_00008_00003,0),w-literal(grid_00008_00004,0)})
+watched-or({w-literal(rowmatchwhite_00008_00003,0),w-literal(grid_00008_00003,0),w-literal(grid_00008_00004,0),w-literal(grid_00008_00005,0)})
+watched-or({w-literal(rowmatchwhite_00008_00004,0),w-literal(grid_00008_00004,0),w-literal(grid_00008_00005,0),w-literal(grid_00008_00006,0)})
+watched-or({w-literal(rowmatchwhite_00008_00005,0),w-literal(grid_00008_00005,0),w-literal(grid_00008_00006,0),w-literal(grid_00008_00007,0)})
+watched-or({w-literal(rowmatchwhite_00008_00006,0),w-literal(grid_00008_00006,0),w-literal(grid_00008_00007,0),w-literal(grid_00008_00008,0)})
+watched-or({w-literal(rowmatchwhite_00008_00007,0),w-literal(grid_00008_00007,0),w-literal(grid_00008_00008,0),w-literal(grid_00008_00009,0)})
+watched-or({w-literal(rowmatchwhite_00008_00008,0),w-literal(grid_00008_00008,0),w-literal(grid_00008_00009,0),w-literal(grid_00008_00010,0)})
+watched-or({w-literal(rowmatchwhite_00009_00001,0),w-literal(grid_00009_00001,0),w-literal(grid_00009_00002,0),w-literal(grid_00009_00003,0)})
+watched-or({w-literal(rowmatchwhite_00009_00002,0),w-literal(grid_00009_00002,0),w-literal(grid_00009_00003,0),w-literal(grid_00009_00004,0)})
+watched-or({w-literal(rowmatchwhite_00009_00003,0),w-literal(grid_00009_00003,0),w-literal(grid_00009_00004,0),w-literal(grid_00009_00005,0)})
+watched-or({w-literal(rowmatchwhite_00009_00004,0),w-literal(grid_00009_00004,0),w-literal(grid_00009_00005,0),w-literal(grid_00009_00006,0)})
+watched-or({w-literal(rowmatchwhite_00009_00005,0),w-literal(grid_00009_00005,0),w-literal(grid_00009_00006,0),w-literal(grid_00009_00007,0)})
+watched-or({w-literal(rowmatchwhite_00009_00006,0),w-literal(grid_00009_00006,0),w-literal(grid_00009_00007,0),w-literal(grid_00009_00008,0)})
+watched-or({w-literal(rowmatchwhite_00009_00007,0),w-literal(grid_00009_00007,0),w-literal(grid_00009_00008,0),w-literal(grid_00009_00009,0)})
+watched-or({w-literal(rowmatchwhite_00009_00008,0),w-literal(grid_00009_00008,0),w-literal(grid_00009_00009,0),w-literal(grid_00009_00010,0)})
+watched-or({w-literal(rowmatchwhite_00010_00001,0),w-literal(grid_00010_00001,0),w-literal(grid_00010_00002,0),w-literal(grid_00010_00003,0)})
+watched-or({w-literal(rowmatchwhite_00010_00002,0),w-literal(grid_00010_00002,0),w-literal(grid_00010_00003,0),w-literal(grid_00010_00004,0)})
+watched-or({w-literal(rowmatchwhite_00010_00003,0),w-literal(grid_00010_00003,0),w-literal(grid_00010_00004,0),w-literal(grid_00010_00005,0)})
+watched-or({w-literal(rowmatchwhite_00010_00004,0),w-literal(grid_00010_00004,0),w-literal(grid_00010_00005,0),w-literal(grid_00010_00006,0)})
+watched-or({w-literal(rowmatchwhite_00010_00005,0),w-literal(grid_00010_00005,0),w-literal(grid_00010_00006,0),w-literal(grid_00010_00007,0)})
+watched-or({w-literal(rowmatchwhite_00010_00006,0),w-literal(grid_00010_00006,0),w-literal(grid_00010_00007,0),w-literal(grid_00010_00008,0)})
+watched-or({w-literal(rowmatchwhite_00010_00007,0),w-literal(grid_00010_00007,0),w-literal(grid_00010_00008,0),w-literal(grid_00010_00009,0)})
+watched-or({w-literal(rowmatchwhite_00010_00008,0),w-literal(grid_00010_00008,0),w-literal(grid_00010_00009,0),w-literal(grid_00010_00010,0)})
+watched-or({w-literal(rowmatchblack_00001_00001,0),w-literal(grid_00001_00001,1),w-literal(grid_00001_00002,1),w-literal(grid_00001_00003,1)})
+watched-or({w-literal(rowmatchblack_00001_00002,0),w-literal(grid_00001_00002,1),w-literal(grid_00001_00003,1),w-literal(grid_00001_00004,1)})
+watched-or({w-literal(rowmatchblack_00001_00003,0),w-literal(grid_00001_00003,1),w-literal(grid_00001_00004,1),w-literal(grid_00001_00005,1)})
+watched-or({w-literal(rowmatchblack_00001_00004,0),w-literal(grid_00001_00004,1),w-literal(grid_00001_00005,1),w-literal(grid_00001_00006,1)})
+watched-or({w-literal(rowmatchblack_00001_00005,0),w-literal(grid_00001_00005,1),w-literal(grid_00001_00006,1),w-literal(grid_00001_00007,1)})
+watched-or({w-literal(rowmatchblack_00001_00006,0),w-literal(grid_00001_00006,1),w-literal(grid_00001_00007,1),w-literal(grid_00001_00008,1)})
+watched-or({w-literal(rowmatchblack_00001_00007,0),w-literal(grid_00001_00007,1),w-literal(grid_00001_00008,1),w-literal(grid_00001_00009,1)})
+watched-or({w-literal(rowmatchblack_00001_00008,0),w-literal(grid_00001_00008,1),w-literal(grid_00001_00009,1),w-literal(grid_00001_00010,1)})
+watched-or({w-literal(rowmatchblack_00002_00001,0),w-literal(grid_00002_00001,1),w-literal(grid_00002_00002,1),w-literal(grid_00002_00003,1)})
+watched-or({w-literal(rowmatchblack_00002_00002,0),w-literal(grid_00002_00002,1),w-literal(grid_00002_00003,1),w-literal(grid_00002_00004,1)})
+watched-or({w-literal(rowmatchblack_00002_00003,0),w-literal(grid_00002_00003,1),w-literal(grid_00002_00004,1),w-literal(grid_00002_00005,1)})
+watched-or({w-literal(rowmatchblack_00002_00004,0),w-literal(grid_00002_00004,1),w-literal(grid_00002_00005,1),w-literal(grid_00002_00006,1)})
+watched-or({w-literal(rowmatchblack_00002_00005,0),w-literal(grid_00002_00005,1),w-literal(grid_00002_00006,1),w-literal(grid_00002_00007,1)})
+watched-or({w-literal(rowmatchblack_00002_00006,0),w-literal(grid_00002_00006,1),w-literal(grid_00002_00007,1),w-literal(grid_00002_00008,1)})
+watched-or({w-literal(rowmatchblack_00002_00007,0),w-literal(grid_00002_00007,1),w-literal(grid_00002_00008,1),w-literal(grid_00002_00009,1)})
+watched-or({w-literal(rowmatchblack_00002_00008,0),w-literal(grid_00002_00008,1),w-literal(grid_00002_00009,1),w-literal(grid_00002_00010,1)})
+watched-or({w-literal(grid_00003_00001,1),w-literal(grid_00003_00002,1),w-literal(grid_00003_00003,1),w-literal(rowmatchblack_00003_00001,0)})
+watched-or({w-literal(grid_00003_00002,1),w-literal(grid_00003_00003,1),w-literal(grid_00003_00004,1),w-literal(rowmatchblack_00003_00002,0)})
+watched-or({w-literal(grid_00003_00003,1),w-literal(grid_00003_00004,1),w-literal(grid_00003_00005,1),w-literal(rowmatchblack_00003_00003,0)})
+watched-or({w-literal(grid_00003_00004,1),w-literal(grid_00003_00005,1),w-literal(grid_00003_00006,1),w-literal(rowmatchblack_00003_00004,0)})
+watched-or({w-literal(grid_00003_00005,1),w-literal(grid_00003_00006,1),w-literal(grid_00003_00007,1),w-literal(rowmatchblack_00003_00005,0)})
+watched-or({w-literal(grid_00003_00006,1),w-literal(grid_00003_00007,1),w-literal(grid_00003_00008,1),w-literal(rowmatchblack_00003_00006,0)})
+watched-or({w-literal(grid_00003_00007,1),w-literal(grid_00003_00008,1),w-literal(grid_00003_00009,1),w-literal(rowmatchblack_00003_00007,0)})
+watched-or({w-literal(grid_00003_00008,1),w-literal(grid_00003_00009,1),w-literal(grid_00003_00010,1),w-literal(rowmatchblack_00003_00008,0)})
+watched-or({w-literal(rowmatchblack_00004_00001,0),w-literal(grid_00004_00001,1),w-literal(grid_00004_00002,1),w-literal(grid_00004_00003,1)})
+watched-or({w-literal(rowmatchblack_00004_00002,0),w-literal(grid_00004_00002,1),w-literal(grid_00004_00003,1),w-literal(grid_00004_00004,1)})
+watched-or({w-literal(rowmatchblack_00004_00003,0),w-literal(grid_00004_00003,1),w-literal(grid_00004_00004,1),w-literal(grid_00004_00005,1)})
+watched-or({w-literal(rowmatchblack_00004_00004,0),w-literal(grid_00004_00004,1),w-literal(grid_00004_00005,1),w-literal(grid_00004_00006,1)})
+watched-or({w-literal(rowmatchblack_00004_00005,0),w-literal(grid_00004_00005,1),w-literal(grid_00004_00006,1),w-literal(grid_00004_00007,1)})
+watched-or({w-literal(rowmatchblack_00004_00006,0),w-literal(grid_00004_00006,1),w-literal(grid_00004_00007,1),w-literal(grid_00004_00008,1)})
+watched-or({w-literal(rowmatchblack_00004_00007,0),w-literal(grid_00004_00007,1),w-literal(grid_00004_00008,1),w-literal(grid_00004_00009,1)})
+watched-or({w-literal(rowmatchblack_00004_00008,0),w-literal(grid_00004_00008,1),w-literal(grid_00004_00009,1),w-literal(grid_00004_00010,1)})
+watched-or({w-literal(rowmatchblack_00005_00001,0),w-literal(grid_00005_00001,1),w-literal(grid_00005_00002,1),w-literal(grid_00005_00003,1)})
+watched-or({w-literal(rowmatchblack_00005_00002,0),w-literal(grid_00005_00002,1),w-literal(grid_00005_00003,1),w-literal(grid_00005_00004,1)})
+watched-or({w-literal(rowmatchblack_00005_00003,0),w-literal(grid_00005_00003,1),w-literal(grid_00005_00004,1),w-literal(grid_00005_00005,1)})
+watched-or({w-literal(rowmatchblack_00005_00004,0),w-literal(grid_00005_00004,1),w-literal(grid_00005_00005,1),w-literal(grid_00005_00006,1)})
+watched-or({w-literal(rowmatchblack_00005_00005,0),w-literal(grid_00005_00005,1),w-literal(grid_00005_00006,1),w-literal(grid_00005_00007,1)})
+watched-or({w-literal(rowmatchblack_00005_00006,0),w-literal(grid_00005_00006,1),w-literal(grid_00005_00007,1),w-literal(grid_00005_00008,1)})
+watched-or({w-literal(rowmatchblack_00005_00007,0),w-literal(grid_00005_00007,1),w-literal(grid_00005_00008,1),w-literal(grid_00005_00009,1)})
+watched-or({w-literal(rowmatchblack_00005_00008,0),w-literal(grid_00005_00008,1),w-literal(grid_00005_00009,1),w-literal(grid_00005_00010,1)})
+watched-or({w-literal(rowmatchblack_00006_00001,0),w-literal(grid_00006_00001,1),w-literal(grid_00006_00002,1),w-literal(grid_00006_00003,1)})
+watched-or({w-literal(rowmatchblack_00006_00002,0),w-literal(grid_00006_00002,1),w-literal(grid_00006_00003,1),w-literal(grid_00006_00004,1)})
+watched-or({w-literal(rowmatchblack_00006_00003,0),w-literal(grid_00006_00003,1),w-literal(grid_00006_00004,1),w-literal(grid_00006_00005,1)})
+watched-or({w-literal(rowmatchblack_00006_00004,0),w-literal(grid_00006_00004,1),w-literal(grid_00006_00005,1),w-literal(grid_00006_00006,1)})
+watched-or({w-literal(rowmatchblack_00006_00005,0),w-literal(grid_00006_00005,1),w-literal(grid_00006_00006,1),w-literal(grid_00006_00007,1)})
+watched-or({w-literal(rowmatchblack_00006_00006,0),w-literal(grid_00006_00006,1),w-literal(grid_00006_00007,1),w-literal(grid_00006_00008,1)})
+watched-or({w-literal(rowmatchblack_00006_00007,0),w-literal(grid_00006_00007,1),w-literal(grid_00006_00008,1),w-literal(grid_00006_00009,1)})
+watched-or({w-literal(rowmatchblack_00006_00008,0),w-literal(grid_00006_00008,1),w-literal(grid_00006_00009,1),w-literal(grid_00006_00010,1)})
+watched-or({w-literal(rowmatchblack_00007_00001,0),w-literal(grid_00007_00001,1),w-literal(grid_00007_00002,1),w-literal(grid_00007_00003,1)})
+watched-or({w-literal(rowmatchblack_00007_00002,0),w-literal(grid_00007_00002,1),w-literal(grid_00007_00003,1),w-literal(grid_00007_00004,1)})
+watched-or({w-literal(rowmatchblack_00007_00003,0),w-literal(grid_00007_00003,1),w-literal(grid_00007_00004,1),w-literal(grid_00007_00005,1)})
+watched-or({w-literal(rowmatchblack_00007_00004,0),w-literal(grid_00007_00004,1),w-literal(grid_00007_00005,1),w-literal(grid_00007_00006,1)})
+watched-or({w-literal(rowmatchblack_00007_00005,0),w-literal(grid_00007_00005,1),w-literal(grid_00007_00006,1),w-literal(grid_00007_00007,1)})
+watched-or({w-literal(rowmatchblack_00007_00006,0),w-literal(grid_00007_00006,1),w-literal(grid_00007_00007,1),w-literal(grid_00007_00008,1)})
+watched-or({w-literal(rowmatchblack_00007_00007,0),w-literal(grid_00007_00007,1),w-literal(grid_00007_00008,1),w-literal(grid_00007_00009,1)})
+watched-or({w-literal(rowmatchblack_00007_00008,0),w-literal(grid_00007_00008,1),w-literal(grid_00007_00009,1),w-literal(grid_00007_00010,1)})
+watched-or({w-literal(grid_00008_00001,1),w-literal(grid_00008_00002,1),w-literal(grid_00008_00003,1),w-literal(rowmatchblack_00008_00001,0)})
+watched-or({w-literal(grid_00008_00002,1),w-literal(grid_00008_00003,1),w-literal(grid_00008_00004,1),w-literal(rowmatchblack_00008_00002,0)})
+watched-or({w-literal(grid_00008_00003,1),w-literal(grid_00008_00004,1),w-literal(grid_00008_00005,1),w-literal(rowmatchblack_00008_00003,0)})
+watched-or({w-literal(grid_00008_00004,1),w-literal(grid_00008_00005,1),w-literal(grid_00008_00006,1),w-literal(rowmatchblack_00008_00004,0)})
+watched-or({w-literal(grid_00008_00005,1),w-literal(grid_00008_00006,1),w-literal(grid_00008_00007,1),w-literal(rowmatchblack_00008_00005,0)})
+watched-or({w-literal(grid_00008_00006,1),w-literal(grid_00008_00007,1),w-literal(grid_00008_00008,1),w-literal(rowmatchblack_00008_00006,0)})
+watched-or({w-literal(grid_00008_00007,1),w-literal(grid_00008_00008,1),w-literal(grid_00008_00009,1),w-literal(rowmatchblack_00008_00007,0)})
+watched-or({w-literal(grid_00008_00008,1),w-literal(grid_00008_00009,1),w-literal(grid_00008_00010,1),w-literal(rowmatchblack_00008_00008,0)})
+watched-or({w-literal(rowmatchblack_00009_00001,0),w-literal(grid_00009_00001,1),w-literal(grid_00009_00002,1),w-literal(grid_00009_00003,1)})
+watched-or({w-literal(rowmatchblack_00009_00002,0),w-literal(grid_00009_00002,1),w-literal(grid_00009_00003,1),w-literal(grid_00009_00004,1)})
+watched-or({w-literal(rowmatchblack_00009_00003,0),w-literal(grid_00009_00003,1),w-literal(grid_00009_00004,1),w-literal(grid_00009_00005,1)})
+watched-or({w-literal(rowmatchblack_00009_00004,0),w-literal(grid_00009_00004,1),w-literal(grid_00009_00005,1),w-literal(grid_00009_00006,1)})
+watched-or({w-literal(rowmatchblack_00009_00005,0),w-literal(grid_00009_00005,1),w-literal(grid_00009_00006,1),w-literal(grid_00009_00007,1)})
+watched-or({w-literal(rowmatchblack_00009_00006,0),w-literal(grid_00009_00006,1),w-literal(grid_00009_00007,1),w-literal(grid_00009_00008,1)})
+watched-or({w-literal(rowmatchblack_00009_00007,0),w-literal(grid_00009_00007,1),w-literal(grid_00009_00008,1),w-literal(grid_00009_00009,1)})
+watched-or({w-literal(rowmatchblack_00009_00008,0),w-literal(grid_00009_00008,1),w-literal(grid_00009_00009,1),w-literal(grid_00009_00010,1)})
+watched-or({w-literal(rowmatchblack_00010_00001,0),w-literal(grid_00010_00001,1),w-literal(grid_00010_00002,1),w-literal(grid_00010_00003,1)})
+watched-or({w-literal(rowmatchblack_00010_00002,0),w-literal(grid_00010_00002,1),w-literal(grid_00010_00003,1),w-literal(grid_00010_00004,1)})
+watched-or({w-literal(rowmatchblack_00010_00003,0),w-literal(grid_00010_00003,1),w-literal(grid_00010_00004,1),w-literal(grid_00010_00005,1)})
+watched-or({w-literal(rowmatchblack_00010_00004,0),w-literal(grid_00010_00004,1),w-literal(grid_00010_00005,1),w-literal(grid_00010_00006,1)})
+watched-or({w-literal(rowmatchblack_00010_00005,0),w-literal(grid_00010_00005,1),w-literal(grid_00010_00006,1),w-literal(grid_00010_00007,1)})
+watched-or({w-literal(rowmatchblack_00010_00006,0),w-literal(grid_00010_00006,1),w-literal(grid_00010_00007,1),w-literal(grid_00010_00008,1)})
+watched-or({w-literal(rowmatchblack_00010_00007,0),w-literal(grid_00010_00007,1),w-literal(grid_00010_00008,1),w-literal(grid_00010_00009,1)})
+watched-or({w-literal(rowmatchblack_00010_00008,0),w-literal(grid_00010_00008,1),w-literal(grid_00010_00009,1),w-literal(grid_00010_00010,1)})
+watched-or({w-literal(grid_00002_00001,0),w-literal(grid_00003_00001,0),w-literal(colmatchwhite_00001_00001,0),w-literal(grid_00001_00001,0)})
+watched-or({w-literal(grid_00002_00001,0),w-literal(grid_00003_00001,0),w-literal(grid_00004_00001,0),w-literal(colmatchwhite_00001_00002,0)})
+watched-or({w-literal(grid_00003_00001,0),w-literal(grid_00004_00001,0),w-literal(grid_00005_00001,0),w-literal(colmatchwhite_00001_00003,0)})
+watched-or({w-literal(grid_00004_00001,0),w-literal(grid_00005_00001,0),w-literal(colmatchwhite_00001_00004,0),w-literal(grid_00006_00001,0)})
+watched-or({w-literal(grid_00007_00001,0),w-literal(grid_00005_00001,0),w-literal(colmatchwhite_00001_00005,0),w-literal(grid_00006_00001,0)})
+watched-or({w-literal(grid_00007_00001,0),w-literal(grid_00008_00001,0),w-literal(colmatchwhite_00001_00006,0),w-literal(grid_00006_00001,0)})
+watched-or({w-literal(grid_00007_00001,0),w-literal(grid_00008_00001,0),w-literal(grid_00009_00001,0),w-literal(colmatchwhite_00001_00007,0)})
+watched-or({w-literal(grid_00010_00001,0),w-literal(grid_00008_00001,0),w-literal(grid_00009_00001,0),w-literal(colmatchwhite_00001_00008,0)})
+watched-or({w-literal(colmatchwhite_00002_00001,0),w-literal(grid_00002_00002,0),w-literal(grid_00003_00002,0),w-literal(grid_00001_00002,0)})
+watched-or({w-literal(colmatchwhite_00002_00002,0),w-literal(grid_00002_00002,0),w-literal(grid_00003_00002,0),w-literal(grid_00004_00002,0)})
+watched-or({w-literal(colmatchwhite_00002_00003,0),w-literal(grid_00003_00002,0),w-literal(grid_00004_00002,0),w-literal(grid_00005_00002,0)})
+watched-or({w-literal(colmatchwhite_00002_00004,0),w-literal(grid_00004_00002,0),w-literal(grid_00005_00002,0),w-literal(grid_00006_00002,0)})
+watched-or({w-literal(colmatchwhite_00002_00005,0),w-literal(grid_00007_00002,0),w-literal(grid_00005_00002,0),w-literal(grid_00006_00002,0)})
+watched-or({w-literal(colmatchwhite_00002_00006,0),w-literal(grid_00007_00002,0),w-literal(grid_00008_00002,0),w-literal(grid_00006_00002,0)})
+watched-or({w-literal(colmatchwhite_00002_00007,0),w-literal(grid_00007_00002,0),w-literal(grid_00008_00002,0),w-literal(grid_00009_00002,0)})
+watched-or({w-literal(colmatchwhite_00002_00008,0),w-literal(grid_00010_00002,0),w-literal(grid_00008_00002,0),w-literal(grid_00009_00002,0)})
+watched-or({w-literal(grid_00002_00003,0),w-literal(colmatchwhite_00003_00001,0),w-literal(grid_00003_00003,0),w-literal(grid_00001_00003,0)})
+watched-or({w-literal(grid_00002_00003,0),w-literal(colmatchwhite_00003_00002,0),w-literal(grid_00003_00003,0),w-literal(grid_00004_00003,0)})
+watched-or({w-literal(colmatchwhite_00003_00003,0),w-literal(grid_00003_00003,0),w-literal(grid_00004_00003,0),w-literal(grid_00005_00003,0)})
+watched-or({w-literal(colmatchwhite_00003_00004,0),w-literal(grid_00004_00003,0),w-literal(grid_00005_00003,0),w-literal(grid_00006_00003,0)})
+watched-or({w-literal(grid_00007_00003,0),w-literal(colmatchwhite_00003_00005,0),w-literal(grid_00005_00003,0),w-literal(grid_00006_00003,0)})
+watched-or({w-literal(grid_00007_00003,0),w-literal(colmatchwhite_00003_00006,0),w-literal(grid_00008_00003,0),w-literal(grid_00006_00003,0)})
+watched-or({w-literal(grid_00007_00003,0),w-literal(colmatchwhite_00003_00007,0),w-literal(grid_00008_00003,0),w-literal(grid_00009_00003,0)})
+watched-or({w-literal(grid_00010_00003,0),w-literal(colmatchwhite_00003_00008,0),w-literal(grid_00008_00003,0),w-literal(grid_00009_00003,0)})
+watched-or({w-literal(grid_00002_00004,0),w-literal(grid_00003_00004,0),w-literal(colmatchwhite_00004_00001,0),w-literal(grid_00001_00004,0)})
+watched-or({w-literal(grid_00002_00004,0),w-literal(grid_00003_00004,0),w-literal(colmatchwhite_00004_00002,0),w-literal(grid_00004_00004,0)})
+watched-or({w-literal(grid_00003_00004,0),w-literal(colmatchwhite_00004_00003,0),w-literal(grid_00004_00004,0),w-literal(grid_00005_00004,0)})
+watched-or({w-literal(colmatchwhite_00004_00004,0),w-literal(grid_00004_00004,0),w-literal(grid_00005_00004,0),w-literal(grid_00006_00004,0)})
+watched-or({w-literal(grid_00007_00004,0),w-literal(colmatchwhite_00004_00005,0),w-literal(grid_00005_00004,0),w-literal(grid_00006_00004,0)})
+watched-or({w-literal(grid_00007_00004,0),w-literal(grid_00008_00004,0),w-literal(colmatchwhite_00004_00006,0),w-literal(grid_00006_00004,0)})
+watched-or({w-literal(grid_00007_00004,0),w-literal(grid_00008_00004,0),w-literal(colmatchwhite_00004_00007,0),w-literal(grid_00009_00004,0)})
+watched-or({w-literal(grid_00010_00004,0),w-literal(grid_00008_00004,0),w-literal(colmatchwhite_00004_00008,0),w-literal(grid_00009_00004,0)})
+watched-or({w-literal(grid_00002_00005,0),w-literal(grid_00003_00005,0),w-literal(colmatchwhite_00005_00001,0),w-literal(grid_00001_00005,0)})
+watched-or({w-literal(grid_00002_00005,0),w-literal(grid_00003_00005,0),w-literal(grid_00004_00005,0),w-literal(colmatchwhite_00005_00002,0)})
+watched-or({w-literal(grid_00003_00005,0),w-literal(grid_00004_00005,0),w-literal(colmatchwhite_00005_00003,0),w-literal(grid_00005_00005,0)})
+watched-or({w-literal(grid_00004_00005,0),w-literal(colmatchwhite_00005_00004,0),w-literal(grid_00005_00005,0),w-literal(grid_00006_00005,0)})
+watched-or({w-literal(grid_00007_00005,0),w-literal(colmatchwhite_00005_00005,0),w-literal(grid_00005_00005,0),w-literal(grid_00006_00005,0)})
+watched-or({w-literal(grid_00007_00005,0),w-literal(grid_00008_00005,0),w-literal(colmatchwhite_00005_00006,0),w-literal(grid_00006_00005,0)})
+watched-or({w-literal(grid_00007_00005,0),w-literal(grid_00008_00005,0),w-literal(grid_00009_00005,0),w-literal(colmatchwhite_00005_00007,0)})
+watched-or({w-literal(grid_00010_00005,0),w-literal(grid_00008_00005,0),w-literal(grid_00009_00005,0),w-literal(colmatchwhite_00005_00008,0)})
+watched-or({w-literal(grid_00002_00006,0),w-literal(grid_00003_00006,0),w-literal(colmatchwhite_00006_00001,0),w-literal(grid_00001_00006,0)})
+watched-or({w-literal(grid_00002_00006,0),w-literal(grid_00003_00006,0),w-literal(grid_00004_00006,0),w-literal(colmatchwhite_00006_00002,0)})
+watched-or({w-literal(grid_00003_00006,0),w-literal(grid_00004_00006,0),w-literal(grid_00005_00006,0),w-literal(colmatchwhite_00006_00003,0)})
+watched-or({w-literal(grid_00004_00006,0),w-literal(grid_00005_00006,0),w-literal(colmatchwhite_00006_00004,0),w-literal(grid_00006_00006,0)})
+watched-or({w-literal(grid_00007_00006,0),w-literal(grid_00005_00006,0),w-literal(colmatchwhite_00006_00005,0),w-literal(grid_00006_00006,0)})
+watched-or({w-literal(grid_00007_00006,0),w-literal(grid_00008_00006,0),w-literal(colmatchwhite_00006_00006,0),w-literal(grid_00006_00006,0)})
+watched-or({w-literal(grid_00007_00006,0),w-literal(grid_00008_00006,0),w-literal(grid_00009_00006,0),w-literal(colmatchwhite_00006_00007,0)})
+watched-or({w-literal(grid_00010_00006,0),w-literal(grid_00008_00006,0),w-literal(grid_00009_00006,0),w-literal(colmatchwhite_00006_00008,0)})
+watched-or({w-literal(colmatchwhite_00007_00001,0),w-literal(grid_00002_00007,0),w-literal(grid_00003_00007,0),w-literal(grid_00001_00007,0)})
+watched-or({w-literal(colmatchwhite_00007_00002,0),w-literal(grid_00002_00007,0),w-literal(grid_00003_00007,0),w-literal(grid_00004_00007,0)})
+watched-or({w-literal(colmatchwhite_00007_00003,0),w-literal(grid_00003_00007,0),w-literal(grid_00004_00007,0),w-literal(grid_00005_00007,0)})
+watched-or({w-literal(colmatchwhite_00007_00004,0),w-literal(grid_00004_00007,0),w-literal(grid_00005_00007,0),w-literal(grid_00006_00007,0)})
+watched-or({w-literal(colmatchwhite_00007_00005,0),w-literal(grid_00007_00007,0),w-literal(grid_00005_00007,0),w-literal(grid_00006_00007,0)})
+watched-or({w-literal(colmatchwhite_00007_00006,0),w-literal(grid_00007_00007,0),w-literal(grid_00008_00007,0),w-literal(grid_00006_00007,0)})
+watched-or({w-literal(colmatchwhite_00007_00007,0),w-literal(grid_00007_00007,0),w-literal(grid_00008_00007,0),w-literal(grid_00009_00007,0)})
+watched-or({w-literal(colmatchwhite_00007_00008,0),w-literal(grid_00010_00007,0),w-literal(grid_00008_00007,0),w-literal(grid_00009_00007,0)})
+watched-or({w-literal(grid_00002_00008,0),w-literal(colmatchwhite_00008_00001,0),w-literal(grid_00003_00008,0),w-literal(grid_00001_00008,0)})
+watched-or({w-literal(grid_00002_00008,0),w-literal(colmatchwhite_00008_00002,0),w-literal(grid_00003_00008,0),w-literal(grid_00004_00008,0)})
+watched-or({w-literal(colmatchwhite_00008_00003,0),w-literal(grid_00003_00008,0),w-literal(grid_00004_00008,0),w-literal(grid_00005_00008,0)})
+watched-or({w-literal(colmatchwhite_00008_00004,0),w-literal(grid_00004_00008,0),w-literal(grid_00005_00008,0),w-literal(grid_00006_00008,0)})
+watched-or({w-literal(grid_00007_00008,0),w-literal(colmatchwhite_00008_00005,0),w-literal(grid_00005_00008,0),w-literal(grid_00006_00008,0)})
+watched-or({w-literal(grid_00007_00008,0),w-literal(colmatchwhite_00008_00006,0),w-literal(grid_00008_00008,0),w-literal(grid_00006_00008,0)})
+watched-or({w-literal(grid_00007_00008,0),w-literal(colmatchwhite_00008_00007,0),w-literal(grid_00008_00008,0),w-literal(grid_00009_00008,0)})
+watched-or({w-literal(grid_00010_00008,0),w-literal(colmatchwhite_00008_00008,0),w-literal(grid_00008_00008,0),w-literal(grid_00009_00008,0)})
+watched-or({w-literal(grid_00002_00009,0),w-literal(grid_00003_00009,0),w-literal(colmatchwhite_00009_00001,0),w-literal(grid_00001_00009,0)})
+watched-or({w-literal(grid_00002_00009,0),w-literal(grid_00003_00009,0),w-literal(colmatchwhite_00009_00002,0),w-literal(grid_00004_00009,0)})
+watched-or({w-literal(grid_00003_00009,0),w-literal(colmatchwhite_00009_00003,0),w-literal(grid_00004_00009,0),w-literal(grid_00005_00009,0)})
+watched-or({w-literal(colmatchwhite_00009_00004,0),w-literal(grid_00004_00009,0),w-literal(grid_00005_00009,0),w-literal(grid_00006_00009,0)})
+watched-or({w-literal(grid_00007_00009,0),w-literal(colmatchwhite_00009_00005,0),w-literal(grid_00005_00009,0),w-literal(grid_00006_00009,0)})
+watched-or({w-literal(grid_00007_00009,0),w-literal(grid_00008_00009,0),w-literal(colmatchwhite_00009_00006,0),w-literal(grid_00006_00009,0)})
+watched-or({w-literal(grid_00007_00009,0),w-literal(grid_00008_00009,0),w-literal(colmatchwhite_00009_00007,0),w-literal(grid_00009_00009,0)})
+watched-or({w-literal(grid_00010_00009,0),w-literal(grid_00008_00009,0),w-literal(colmatchwhite_00009_00008,0),w-literal(grid_00009_00009,0)})
+watched-or({w-literal(colmatchwhite_00010_00001,0),w-literal(grid_00002_00010,0),w-literal(grid_00003_00010,0),w-literal(grid_00001_00010,0)})
+watched-or({w-literal(colmatchwhite_00010_00002,0),w-literal(grid_00002_00010,0),w-literal(grid_00003_00010,0),w-literal(grid_00004_00010,0)})
+watched-or({w-literal(colmatchwhite_00010_00003,0),w-literal(grid_00003_00010,0),w-literal(grid_00004_00010,0),w-literal(grid_00005_00010,0)})
+watched-or({w-literal(colmatchwhite_00010_00004,0),w-literal(grid_00004_00010,0),w-literal(grid_00005_00010,0),w-literal(grid_00006_00010,0)})
+watched-or({w-literal(colmatchwhite_00010_00005,0),w-literal(grid_00007_00010,0),w-literal(grid_00005_00010,0),w-literal(grid_00006_00010,0)})
+watched-or({w-literal(colmatchwhite_00010_00006,0),w-literal(grid_00007_00010,0),w-literal(grid_00008_00010,0),w-literal(grid_00006_00010,0)})
+watched-or({w-literal(colmatchwhite_00010_00007,0),w-literal(grid_00007_00010,0),w-literal(grid_00008_00010,0),w-literal(grid_00009_00010,0)})
+watched-or({w-literal(colmatchwhite_00010_00008,0),w-literal(grid_00010_00010,0),w-literal(grid_00008_00010,0),w-literal(grid_00009_00010,0)})
+watched-or({w-literal(grid_00003_00001,1),w-literal(colmatchblack_00001_00001,0),w-literal(grid_00001_00001,1),w-literal(grid_00002_00001,1)})
+watched-or({w-literal(grid_00003_00001,1),w-literal(grid_00004_00001,1),w-literal(colmatchblack_00001_00002,0),w-literal(grid_00002_00001,1)})
+watched-or({w-literal(grid_00003_00001,1),w-literal(grid_00004_00001,1),w-literal(grid_00005_00001,1),w-literal(colmatchblack_00001_00003,0)})
+watched-or({w-literal(grid_00004_00001,1),w-literal(grid_00005_00001,1),w-literal(colmatchblack_00001_00004,0),w-literal(grid_00006_00001,1)})
+watched-or({w-literal(grid_00005_00001,1),w-literal(colmatchblack_00001_00005,0),w-literal(grid_00006_00001,1),w-literal(grid_00007_00001,1)})
+watched-or({w-literal(grid_00008_00001,1),w-literal(colmatchblack_00001_00006,0),w-literal(grid_00006_00001,1),w-literal(grid_00007_00001,1)})
+watched-or({w-literal(grid_00008_00001,1),w-literal(grid_00009_00001,1),w-literal(colmatchblack_00001_00007,0),w-literal(grid_00007_00001,1)})
+watched-or({w-literal(grid_00008_00001,1),w-literal(grid_00009_00001,1),w-literal(colmatchblack_00001_00008,0),w-literal(grid_00010_00001,1)})
+watched-or({w-literal(grid_00003_00002,1),w-literal(grid_00001_00002,1),w-literal(colmatchblack_00002_00001,0),w-literal(grid_00002_00002,1)})
+watched-or({w-literal(grid_00003_00002,1),w-literal(grid_00004_00002,1),w-literal(colmatchblack_00002_00002,0),w-literal(grid_00002_00002,1)})
+watched-or({w-literal(grid_00003_00002,1),w-literal(grid_00004_00002,1),w-literal(grid_00005_00002,1),w-literal(colmatchblack_00002_00003,0)})
+watched-or({w-literal(grid_00004_00002,1),w-literal(grid_00005_00002,1),w-literal(grid_00006_00002,1),w-literal(colmatchblack_00002_00004,0)})
+watched-or({w-literal(grid_00005_00002,1),w-literal(grid_00006_00002,1),w-literal(colmatchblack_00002_00005,0),w-literal(grid_00007_00002,1)})
+watched-or({w-literal(grid_00008_00002,1),w-literal(grid_00006_00002,1),w-literal(colmatchblack_00002_00006,0),w-literal(grid_00007_00002,1)})
+watched-or({w-literal(grid_00008_00002,1),w-literal(grid_00009_00002,1),w-literal(colmatchblack_00002_00007,0),w-literal(grid_00007_00002,1)})
+watched-or({w-literal(grid_00008_00002,1),w-literal(grid_00009_00002,1),w-literal(colmatchblack_00002_00008,0),w-literal(grid_00010_00002,1)})
+watched-or({w-literal(grid_00003_00003,1),w-literal(grid_00001_00003,1),w-literal(grid_00002_00003,1),w-literal(colmatchblack_00003_00001,0)})
+watched-or({w-literal(grid_00003_00003,1),w-literal(grid_00004_00003,1),w-literal(grid_00002_00003,1),w-literal(colmatchblack_00003_00002,0)})
+watched-or({w-literal(grid_00003_00003,1),w-literal(grid_00004_00003,1),w-literal(grid_00005_00003,1),w-literal(colmatchblack_00003_00003,0)})
+watched-or({w-literal(grid_00004_00003,1),w-literal(grid_00005_00003,1),w-literal(grid_00006_00003,1),w-literal(colmatchblack_00003_00004,0)})
+watched-or({w-literal(grid_00005_00003,1),w-literal(grid_00006_00003,1),w-literal(grid_00007_00003,1),w-literal(colmatchblack_00003_00005,0)})
+watched-or({w-literal(grid_00008_00003,1),w-literal(grid_00006_00003,1),w-literal(grid_00007_00003,1),w-literal(colmatchblack_00003_00006,0)})
+watched-or({w-literal(grid_00008_00003,1),w-literal(grid_00009_00003,1),w-literal(grid_00007_00003,1),w-literal(colmatchblack_00003_00007,0)})
+watched-or({w-literal(grid_00008_00003,1),w-literal(grid_00009_00003,1),w-literal(grid_00010_00003,1),w-literal(colmatchblack_00003_00008,0)})
+watched-or({w-literal(grid_00003_00004,1),w-literal(colmatchblack_00004_00001,0),w-literal(grid_00001_00004,1),w-literal(grid_00002_00004,1)})
+watched-or({w-literal(grid_00003_00004,1),w-literal(colmatchblack_00004_00002,0),w-literal(grid_00004_00004,1),w-literal(grid_00002_00004,1)})
+watched-or({w-literal(grid_00003_00004,1),w-literal(colmatchblack_00004_00003,0),w-literal(grid_00004_00004,1),w-literal(grid_00005_00004,1)})
+watched-or({w-literal(colmatchblack_00004_00004,0),w-literal(grid_00004_00004,1),w-literal(grid_00005_00004,1),w-literal(grid_00006_00004,1)})
+watched-or({w-literal(colmatchblack_00004_00005,0),w-literal(grid_00005_00004,1),w-literal(grid_00006_00004,1),w-literal(grid_00007_00004,1)})
+watched-or({w-literal(grid_00008_00004,1),w-literal(colmatchblack_00004_00006,0),w-literal(grid_00006_00004,1),w-literal(grid_00007_00004,1)})
+watched-or({w-literal(grid_00008_00004,1),w-literal(colmatchblack_00004_00007,0),w-literal(grid_00009_00004,1),w-literal(grid_00007_00004,1)})
+watched-or({w-literal(grid_00008_00004,1),w-literal(colmatchblack_00004_00008,0),w-literal(grid_00009_00004,1),w-literal(grid_00010_00004,1)})
+watched-or({w-literal(grid_00003_00005,1),w-literal(colmatchblack_00005_00001,0),w-literal(grid_00001_00005,1),w-literal(grid_00002_00005,1)})
+watched-or({w-literal(grid_00003_00005,1),w-literal(grid_00004_00005,1),w-literal(colmatchblack_00005_00002,0),w-literal(grid_00002_00005,1)})
+watched-or({w-literal(grid_00003_00005,1),w-literal(grid_00004_00005,1),w-literal(colmatchblack_00005_00003,0),w-literal(grid_00005_00005,1)})
+watched-or({w-literal(grid_00004_00005,1),w-literal(colmatchblack_00005_00004,0),w-literal(grid_00005_00005,1),w-literal(grid_00006_00005,1)})
+watched-or({w-literal(colmatchblack_00005_00005,0),w-literal(grid_00005_00005,1),w-literal(grid_00006_00005,1),w-literal(grid_00007_00005,1)})
+watched-or({w-literal(grid_00008_00005,1),w-literal(colmatchblack_00005_00006,0),w-literal(grid_00006_00005,1),w-literal(grid_00007_00005,1)})
+watched-or({w-literal(grid_00008_00005,1),w-literal(grid_00009_00005,1),w-literal(colmatchblack_00005_00007,0),w-literal(grid_00007_00005,1)})
+watched-or({w-literal(grid_00008_00005,1),w-literal(grid_00009_00005,1),w-literal(colmatchblack_00005_00008,0),w-literal(grid_00010_00005,1)})
+watched-or({w-literal(grid_00003_00006,1),w-literal(colmatchblack_00006_00001,0),w-literal(grid_00001_00006,1),w-literal(grid_00002_00006,1)})
+watched-or({w-literal(grid_00003_00006,1),w-literal(grid_00004_00006,1),w-literal(colmatchblack_00006_00002,0),w-literal(grid_00002_00006,1)})
+watched-or({w-literal(grid_00003_00006,1),w-literal(grid_00004_00006,1),w-literal(grid_00005_00006,1),w-literal(colmatchblack_00006_00003,0)})
+watched-or({w-literal(grid_00004_00006,1),w-literal(grid_00005_00006,1),w-literal(colmatchblack_00006_00004,0),w-literal(grid_00006_00006,1)})
+watched-or({w-literal(grid_00005_00006,1),w-literal(colmatchblack_00006_00005,0),w-literal(grid_00006_00006,1),w-literal(grid_00007_00006,1)})
+watched-or({w-literal(grid_00008_00006,1),w-literal(colmatchblack_00006_00006,0),w-literal(grid_00006_00006,1),w-literal(grid_00007_00006,1)})
+watched-or({w-literal(grid_00008_00006,1),w-literal(grid_00009_00006,1),w-literal(colmatchblack_00006_00007,0),w-literal(grid_00007_00006,1)})
+watched-or({w-literal(grid_00008_00006,1),w-literal(grid_00009_00006,1),w-literal(colmatchblack_00006_00008,0),w-literal(grid_00010_00006,1)})
+watched-or({w-literal(grid_00003_00007,1),w-literal(grid_00001_00007,1),w-literal(colmatchblack_00007_00001,0),w-literal(grid_00002_00007,1)})
+watched-or({w-literal(grid_00003_00007,1),w-literal(grid_00004_00007,1),w-literal(colmatchblack_00007_00002,0),w-literal(grid_00002_00007,1)})
+watched-or({w-literal(grid_00003_00007,1),w-literal(grid_00004_00007,1),w-literal(grid_00005_00007,1),w-literal(colmatchblack_00007_00003,0)})
+watched-or({w-literal(grid_00004_00007,1),w-literal(grid_00005_00007,1),w-literal(grid_00006_00007,1),w-literal(colmatchblack_00007_00004,0)})
+watched-or({w-literal(grid_00005_00007,1),w-literal(grid_00006_00007,1),w-literal(colmatchblack_00007_00005,0),w-literal(grid_00007_00007,1)})
+watched-or({w-literal(grid_00008_00007,1),w-literal(grid_00006_00007,1),w-literal(colmatchblack_00007_00006,0),w-literal(grid_00007_00007,1)})
+watched-or({w-literal(grid_00008_00007,1),w-literal(grid_00009_00007,1),w-literal(colmatchblack_00007_00007,0),w-literal(grid_00007_00007,1)})
+watched-or({w-literal(grid_00008_00007,1),w-literal(grid_00009_00007,1),w-literal(colmatchblack_00007_00008,0),w-literal(grid_00010_00007,1)})
+watched-or({w-literal(colmatchblack_00008_00001,0),w-literal(grid_00003_00008,1),w-literal(grid_00001_00008,1),w-literal(grid_00002_00008,1)})
+watched-or({w-literal(colmatchblack_00008_00002,0),w-literal(grid_00003_00008,1),w-literal(grid_00004_00008,1),w-literal(grid_00002_00008,1)})
+watched-or({w-literal(colmatchblack_00008_00003,0),w-literal(grid_00003_00008,1),w-literal(grid_00004_00008,1),w-literal(grid_00005_00008,1)})
+watched-or({w-literal(colmatchblack_00008_00004,0),w-literal(grid_00004_00008,1),w-literal(grid_00005_00008,1),w-literal(grid_00006_00008,1)})
+watched-or({w-literal(colmatchblack_00008_00005,0),w-literal(grid_00005_00008,1),w-literal(grid_00006_00008,1),w-literal(grid_00007_00008,1)})
+watched-or({w-literal(colmatchblack_00008_00006,0),w-literal(grid_00008_00008,1),w-literal(grid_00006_00008,1),w-literal(grid_00007_00008,1)})
+watched-or({w-literal(colmatchblack_00008_00007,0),w-literal(grid_00008_00008,1),w-literal(grid_00009_00008,1),w-literal(grid_00007_00008,1)})
+watched-or({w-literal(colmatchblack_00008_00008,0),w-literal(grid_00008_00008,1),w-literal(grid_00009_00008,1),w-literal(grid_00010_00008,1)})
+watched-or({w-literal(grid_00003_00009,1),w-literal(colmatchblack_00009_00001,0),w-literal(grid_00001_00009,1),w-literal(grid_00002_00009,1)})
+watched-or({w-literal(grid_00003_00009,1),w-literal(colmatchblack_00009_00002,0),w-literal(grid_00004_00009,1),w-literal(grid_00002_00009,1)})
+watched-or({w-literal(grid_00003_00009,1),w-literal(colmatchblack_00009_00003,0),w-literal(grid_00004_00009,1),w-literal(grid_00005_00009,1)})
+watched-or({w-literal(colmatchblack_00009_00004,0),w-literal(grid_00004_00009,1),w-literal(grid_00005_00009,1),w-literal(grid_00006_00009,1)})
+watched-or({w-literal(colmatchblack_00009_00005,0),w-literal(grid_00005_00009,1),w-literal(grid_00006_00009,1),w-literal(grid_00007_00009,1)})
+watched-or({w-literal(grid_00008_00009,1),w-literal(colmatchblack_00009_00006,0),w-literal(grid_00006_00009,1),w-literal(grid_00007_00009,1)})
+watched-or({w-literal(grid_00008_00009,1),w-literal(colmatchblack_00009_00007,0),w-literal(grid_00009_00009,1),w-literal(grid_00007_00009,1)})
+watched-or({w-literal(grid_00008_00009,1),w-literal(colmatchblack_00009_00008,0),w-literal(grid_00009_00009,1),w-literal(grid_00010_00009,1)})
+watched-or({w-literal(grid_00003_00010,1),w-literal(grid_00001_00010,1),w-literal(colmatchblack_00010_00001,0),w-literal(grid_00002_00010,1)})
+watched-or({w-literal(grid_00003_00010,1),w-literal(grid_00004_00010,1),w-literal(colmatchblack_00010_00002,0),w-literal(grid_00002_00010,1)})
+watched-or({w-literal(grid_00003_00010,1),w-literal(grid_00004_00010,1),w-literal(grid_00005_00010,1),w-literal(colmatchblack_00010_00003,0)})
+watched-or({w-literal(grid_00004_00010,1),w-literal(grid_00005_00010,1),w-literal(grid_00006_00010,1),w-literal(colmatchblack_00010_00004,0)})
+watched-or({w-literal(grid_00005_00010,1),w-literal(grid_00006_00010,1),w-literal(colmatchblack_00010_00005,0),w-literal(grid_00007_00010,1)})
+watched-or({w-literal(grid_00008_00010,1),w-literal(grid_00006_00010,1),w-literal(colmatchblack_00010_00006,0),w-literal(grid_00007_00010,1)})
+watched-or({w-literal(grid_00008_00010,1),w-literal(grid_00009_00010,1),w-literal(colmatchblack_00010_00007,0),w-literal(grid_00007_00010,1)})
+watched-or({w-literal(grid_00008_00010,1),w-literal(grid_00009_00010,1),w-literal(colmatchblack_00010_00008,0),w-literal(grid_00010_00010,1)})
+watched-or({w-literal(alldiffrow_00001_00002,0),diseq(grid_00001_00001,grid_00002_00001),diseq(grid_00001_00002,grid_00002_00002),diseq(grid_00001_00003,grid_00002_00003),diseq(grid_00001_00004,grid_00002_00004),diseq(grid_00001_00005,grid_00002_00005),diseq(grid_00001_00006,grid_00002_00006),diseq(grid_00001_00007,grid_00002_00007),diseq(grid_00001_00008,grid_00002_00008),diseq(grid_00001_00009,grid_00002_00009),diseq(grid_00001_00010,grid_00002_00010)})
+watched-or({w-literal(alldiffrow_00001_00003,0),diseq(grid_00003_00001,grid_00001_00001),diseq(grid_00003_00002,grid_00001_00002),diseq(grid_00003_00003,grid_00001_00003),diseq(grid_00003_00004,grid_00001_00004),diseq(grid_00003_00005,grid_00001_00005),diseq(grid_00003_00006,grid_00001_00006),diseq(grid_00003_00007,grid_00001_00007),diseq(grid_00003_00008,grid_00001_00008),diseq(grid_00003_00009,grid_00001_00009),diseq(grid_00003_00010,grid_00001_00010)})
+watched-or({w-literal(alldiffrow_00001_00004,0),diseq(grid_00004_00001,grid_00001_00001),diseq(grid_00004_00002,grid_00001_00002),diseq(grid_00004_00003,grid_00001_00003),diseq(grid_00004_00004,grid_00001_00004),diseq(grid_00004_00005,grid_00001_00005),diseq(grid_00004_00006,grid_00001_00006),diseq(grid_00004_00007,grid_00001_00007),diseq(grid_00004_00008,grid_00001_00008),diseq(grid_00004_00009,grid_00001_00009),diseq(grid_00004_00010,grid_00001_00010)})
+watched-or({diseq(grid_00005_00001,grid_00001_00001),diseq(grid_00005_00002,grid_00001_00002),diseq(grid_00005_00003,grid_00001_00003),diseq(grid_00005_00004,grid_00001_00004),diseq(grid_00005_00005,grid_00001_00005),diseq(grid_00005_00006,grid_00001_00006),diseq(grid_00005_00007,grid_00001_00007),diseq(grid_00005_00008,grid_00001_00008),diseq(grid_00005_00009,grid_00001_00009),diseq(grid_00005_00010,grid_00001_00010),w-literal(alldiffrow_00001_00005,0)})
+watched-or({w-literal(alldiffrow_00001_00006,0),diseq(grid_00001_00001,grid_00006_00001),diseq(grid_00001_00002,grid_00006_00002),diseq(grid_00001_00003,grid_00006_00003),diseq(grid_00001_00004,grid_00006_00004),diseq(grid_00001_00005,grid_00006_00005),diseq(grid_00001_00006,grid_00006_00006),diseq(grid_00001_00007,grid_00006_00007),diseq(grid_00001_00008,grid_00006_00008),diseq(grid_00001_00009,grid_00006_00009),diseq(grid_00001_00010,grid_00006_00010)})
+watched-or({w-literal(alldiffrow_00001_00007,0),diseq(grid_00001_00001,grid_00007_00001),diseq(grid_00001_00002,grid_00007_00002),diseq(grid_00001_00003,grid_00007_00003),diseq(grid_00001_00004,grid_00007_00004),diseq(grid_00001_00005,grid_00007_00005),diseq(grid_00001_00006,grid_00007_00006),diseq(grid_00001_00007,grid_00007_00007),diseq(grid_00001_00008,grid_00007_00008),diseq(grid_00001_00009,grid_00007_00009),diseq(grid_00001_00010,grid_00007_00010)})
+watched-or({w-literal(alldiffrow_00001_00008,0),diseq(grid_00008_00001,grid_00001_00001),diseq(grid_00008_00002,grid_00001_00002),diseq(grid_00008_00003,grid_00001_00003),diseq(grid_00008_00004,grid_00001_00004),diseq(grid_00008_00005,grid_00001_00005),diseq(grid_00008_00006,grid_00001_00006),diseq(grid_00008_00007,grid_00001_00007),diseq(grid_00008_00008,grid_00001_00008),diseq(grid_00008_00009,grid_00001_00009),diseq(grid_00008_00010,grid_00001_00010)})
+watched-or({w-literal(alldiffrow_00001_00009,0),diseq(grid_00009_00001,grid_00001_00001),diseq(grid_00009_00002,grid_00001_00002),diseq(grid_00009_00003,grid_00001_00003),diseq(grid_00009_00004,grid_00001_00004),diseq(grid_00009_00005,grid_00001_00005),diseq(grid_00009_00006,grid_00001_00006),diseq(grid_00009_00007,grid_00001_00007),diseq(grid_00009_00008,grid_00001_00008),diseq(grid_00009_00009,grid_00001_00009),diseq(grid_00009_00010,grid_00001_00010)})
+watched-or({w-literal(alldiffrow_00001_00010,0),diseq(grid_00001_00001,grid_00010_00001),diseq(grid_00001_00002,grid_00010_00002),diseq(grid_00001_00003,grid_00010_00003),diseq(grid_00001_00004,grid_00010_00004),diseq(grid_00001_00005,grid_00010_00005),diseq(grid_00001_00006,grid_00010_00006),diseq(grid_00001_00007,grid_00010_00007),diseq(grid_00001_00008,grid_00010_00008),diseq(grid_00001_00009,grid_00010_00009),diseq(grid_00001_00010,grid_00010_00010)})
+watched-or({w-literal(alldiffrow_00002_00001,0),diseq(grid_00001_00001,grid_00002_00001),diseq(grid_00001_00002,grid_00002_00002),diseq(grid_00001_00003,grid_00002_00003),diseq(grid_00001_00004,grid_00002_00004),diseq(grid_00001_00005,grid_00002_00005),diseq(grid_00001_00006,grid_00002_00006),diseq(grid_00001_00007,grid_00002_00007),diseq(grid_00001_00008,grid_00002_00008),diseq(grid_00001_00009,grid_00002_00009),diseq(grid_00001_00010,grid_00002_00010)})
+watched-or({w-literal(alldiffrow_00002_00003,0),diseq(grid_00003_00001,grid_00002_00001),diseq(grid_00003_00002,grid_00002_00002),diseq(grid_00003_00003,grid_00002_00003),diseq(grid_00003_00004,grid_00002_00004),diseq(grid_00003_00005,grid_00002_00005),diseq(grid_00003_00006,grid_00002_00006),diseq(grid_00003_00007,grid_00002_00007),diseq(grid_00003_00008,grid_00002_00008),diseq(grid_00003_00009,grid_00002_00009),diseq(grid_00003_00010,grid_00002_00010)})
+watched-or({w-literal(alldiffrow_00002_00004,0),diseq(grid_00004_00001,grid_00002_00001),diseq(grid_00004_00002,grid_00002_00002),diseq(grid_00004_00003,grid_00002_00003),diseq(grid_00004_00004,grid_00002_00004),diseq(grid_00004_00005,grid_00002_00005),diseq(grid_00004_00006,grid_00002_00006),diseq(grid_00004_00007,grid_00002_00007),diseq(grid_00004_00008,grid_00002_00008),diseq(grid_00004_00009,grid_00002_00009),diseq(grid_00004_00010,grid_00002_00010)})
+watched-or({diseq(grid_00005_00001,grid_00002_00001),diseq(grid_00005_00002,grid_00002_00002),diseq(grid_00005_00003,grid_00002_00003),diseq(grid_00005_00004,grid_00002_00004),diseq(grid_00005_00005,grid_00002_00005),diseq(grid_00005_00006,grid_00002_00006),diseq(grid_00005_00007,grid_00002_00007),diseq(grid_00005_00008,grid_00002_00008),diseq(grid_00005_00009,grid_00002_00009),diseq(grid_00005_00010,grid_00002_00010),w-literal(alldiffrow_00002_00005,0)})
+watched-or({w-literal(alldiffrow_00002_00006,0),diseq(grid_00006_00001,grid_00002_00001),diseq(grid_00006_00002,grid_00002_00002),diseq(grid_00006_00003,grid_00002_00003),diseq(grid_00006_00004,grid_00002_00004),diseq(grid_00006_00005,grid_00002_00005),diseq(grid_00006_00006,grid_00002_00006),diseq(grid_00006_00007,grid_00002_00007),diseq(grid_00006_00008,grid_00002_00008),diseq(grid_00006_00009,grid_00002_00009),diseq(grid_00006_00010,grid_00002_00010)})
+watched-or({diseq(grid_00002_00001,grid_00007_00001),diseq(grid_00002_00002,grid_00007_00002),diseq(grid_00002_00003,grid_00007_00003),diseq(grid_00002_00004,grid_00007_00004),diseq(grid_00002_00005,grid_00007_00005),diseq(grid_00002_00006,grid_00007_00006),diseq(grid_00002_00007,grid_00007_00007),diseq(grid_00002_00008,grid_00007_00008),diseq(grid_00002_00009,grid_00007_00009),diseq(grid_00002_00010,grid_00007_00010),w-literal(alldiffrow_00002_00007,0)})
+watched-or({w-literal(alldiffrow_00002_00008,0),diseq(grid_00008_00001,grid_00002_00001),diseq(grid_00008_00002,grid_00002_00002),diseq(grid_00008_00003,grid_00002_00003),diseq(grid_00008_00004,grid_00002_00004),diseq(grid_00008_00005,grid_00002_00005),diseq(grid_00008_00006,grid_00002_00006),diseq(grid_00008_00007,grid_00002_00007),diseq(grid_00008_00008,grid_00002_00008),diseq(grid_00008_00009,grid_00002_00009),diseq(grid_00008_00010,grid_00002_00010)})
+watched-or({w-literal(alldiffrow_00002_00009,0),diseq(grid_00009_00001,grid_00002_00001),diseq(grid_00009_00002,grid_00002_00002),diseq(grid_00009_00003,grid_00002_00003),diseq(grid_00009_00004,grid_00002_00004),diseq(grid_00009_00005,grid_00002_00005),diseq(grid_00009_00006,grid_00002_00006),diseq(grid_00009_00007,grid_00002_00007),diseq(grid_00009_00008,grid_00002_00008),diseq(grid_00009_00009,grid_00002_00009),diseq(grid_00009_00010,grid_00002_00010)})
+watched-or({w-literal(alldiffrow_00002_00010,0),diseq(grid_00010_00001,grid_00002_00001),diseq(grid_00010_00002,grid_00002_00002),diseq(grid_00010_00003,grid_00002_00003),diseq(grid_00010_00004,grid_00002_00004),diseq(grid_00010_00005,grid_00002_00005),diseq(grid_00010_00006,grid_00002_00006),diseq(grid_00010_00007,grid_00002_00007),diseq(grid_00010_00008,grid_00002_00008),diseq(grid_00010_00009,grid_00002_00009),diseq(grid_00010_00010,grid_00002_00010)})
+watched-or({diseq(grid_00003_00001,grid_00001_00001),diseq(grid_00003_00002,grid_00001_00002),diseq(grid_00003_00003,grid_00001_00003),diseq(grid_00003_00004,grid_00001_00004),diseq(grid_00003_00005,grid_00001_00005),diseq(grid_00003_00006,grid_00001_00006),diseq(grid_00003_00007,grid_00001_00007),diseq(grid_00003_00008,grid_00001_00008),diseq(grid_00003_00009,grid_00001_00009),diseq(grid_00003_00010,grid_00001_00010),w-literal(alldiffrow_00003_00001,0)})
+watched-or({diseq(grid_00003_00001,grid_00002_00001),diseq(grid_00003_00002,grid_00002_00002),diseq(grid_00003_00003,grid_00002_00003),diseq(grid_00003_00004,grid_00002_00004),diseq(grid_00003_00005,grid_00002_00005),diseq(grid_00003_00006,grid_00002_00006),diseq(grid_00003_00007,grid_00002_00007),diseq(grid_00003_00008,grid_00002_00008),diseq(grid_00003_00009,grid_00002_00009),diseq(grid_00003_00010,grid_00002_00010),w-literal(alldiffrow_00003_00002,0)})
+watched-or({w-literal(alldiffrow_00003_00004,0),diseq(grid_00003_00001,grid_00004_00001),diseq(grid_00003_00002,grid_00004_00002),diseq(grid_00003_00003,grid_00004_00003),diseq(grid_00003_00004,grid_00004_00004),diseq(grid_00003_00005,grid_00004_00005),diseq(grid_00003_00006,grid_00004_00006),diseq(grid_00003_00007,grid_00004_00007),diseq(grid_00003_00008,grid_00004_00008),diseq(grid_00003_00009,grid_00004_00009),diseq(grid_00003_00010,grid_00004_00010)})
+watched-or({diseq(grid_00003_00001,grid_00005_00001),diseq(grid_00003_00002,grid_00005_00002),diseq(grid_00003_00003,grid_00005_00003),diseq(grid_00003_00004,grid_00005_00004),diseq(grid_00003_00005,grid_00005_00005),diseq(grid_00003_00006,grid_00005_00006),diseq(grid_00003_00007,grid_00005_00007),diseq(grid_00003_00008,grid_00005_00008),diseq(grid_00003_00009,grid_00005_00009),diseq(grid_00003_00010,grid_00005_00010),w-literal(alldiffrow_00003_00005,0)})
+watched-or({diseq(grid_00003_00001,grid_00006_00001),diseq(grid_00003_00002,grid_00006_00002),diseq(grid_00003_00003,grid_00006_00003),diseq(grid_00003_00004,grid_00006_00004),diseq(grid_00003_00005,grid_00006_00005),diseq(grid_00003_00006,grid_00006_00006),diseq(grid_00003_00007,grid_00006_00007),diseq(grid_00003_00008,grid_00006_00008),diseq(grid_00003_00009,grid_00006_00009),diseq(grid_00003_00010,grid_00006_00010),w-literal(alldiffrow_00003_00006,0)})
+watched-or({diseq(grid_00003_00001,grid_00007_00001),diseq(grid_00003_00002,grid_00007_00002),diseq(grid_00003_00003,grid_00007_00003),diseq(grid_00003_00004,grid_00007_00004),diseq(grid_00003_00005,grid_00007_00005),diseq(grid_00003_00006,grid_00007_00006),diseq(grid_00003_00007,grid_00007_00007),diseq(grid_00003_00008,grid_00007_00008),diseq(grid_00003_00009,grid_00007_00009),diseq(grid_00003_00010,grid_00007_00010),w-literal(alldiffrow_00003_00007,0)})
+watched-or({w-literal(alldiffrow_00003_00008,0),diseq(grid_00003_00001,grid_00008_00001),diseq(grid_00003_00002,grid_00008_00002),diseq(grid_00003_00003,grid_00008_00003),diseq(grid_00003_00004,grid_00008_00004),diseq(grid_00003_00005,grid_00008_00005),diseq(grid_00003_00006,grid_00008_00006),diseq(grid_00003_00007,grid_00008_00007),diseq(grid_00003_00008,grid_00008_00008),diseq(grid_00003_00009,grid_00008_00009),diseq(grid_00003_00010,grid_00008_00010)})
+watched-or({w-literal(alldiffrow_00003_00009,0),diseq(grid_00003_00001,grid_00009_00001),diseq(grid_00003_00002,grid_00009_00002),diseq(grid_00003_00003,grid_00009_00003),diseq(grid_00003_00004,grid_00009_00004),diseq(grid_00003_00005,grid_00009_00005),diseq(grid_00003_00006,grid_00009_00006),diseq(grid_00003_00007,grid_00009_00007),diseq(grid_00003_00008,grid_00009_00008),diseq(grid_00003_00009,grid_00009_00009),diseq(grid_00003_00010,grid_00009_00010)})
+watched-or({diseq(grid_00003_00001,grid_00010_00001),diseq(grid_00003_00002,grid_00010_00002),diseq(grid_00003_00003,grid_00010_00003),diseq(grid_00003_00004,grid_00010_00004),diseq(grid_00003_00005,grid_00010_00005),diseq(grid_00003_00006,grid_00010_00006),diseq(grid_00003_00007,grid_00010_00007),diseq(grid_00003_00008,grid_00010_00008),diseq(grid_00003_00009,grid_00010_00009),diseq(grid_00003_00010,grid_00010_00010),w-literal(alldiffrow_00003_00010,0)})
+watched-or({diseq(grid_00004_00001,grid_00001_00001),diseq(grid_00004_00002,grid_00001_00002),diseq(grid_00004_00003,grid_00001_00003),diseq(grid_00004_00004,grid_00001_00004),diseq(grid_00004_00005,grid_00001_00005),diseq(grid_00004_00006,grid_00001_00006),diseq(grid_00004_00007,grid_00001_00007),diseq(grid_00004_00008,grid_00001_00008),diseq(grid_00004_00009,grid_00001_00009),diseq(grid_00004_00010,grid_00001_00010),w-literal(alldiffrow_00004_00001,0)})
+watched-or({w-literal(alldiffrow_00004_00002,0),diseq(grid_00004_00001,grid_00002_00001),diseq(grid_00004_00002,grid_00002_00002),diseq(grid_00004_00003,grid_00002_00003),diseq(grid_00004_00004,grid_00002_00004),diseq(grid_00004_00005,grid_00002_00005),diseq(grid_00004_00006,grid_00002_00006),diseq(grid_00004_00007,grid_00002_00007),diseq(grid_00004_00008,grid_00002_00008),diseq(grid_00004_00009,grid_00002_00009),diseq(grid_00004_00010,grid_00002_00010)})
+watched-or({w-literal(alldiffrow_00004_00003,0),diseq(grid_00003_00001,grid_00004_00001),diseq(grid_00003_00002,grid_00004_00002),diseq(grid_00003_00003,grid_00004_00003),diseq(grid_00003_00004,grid_00004_00004),diseq(grid_00003_00005,grid_00004_00005),diseq(grid_00003_00006,grid_00004_00006),diseq(grid_00003_00007,grid_00004_00007),diseq(grid_00003_00008,grid_00004_00008),diseq(grid_00003_00009,grid_00004_00009),diseq(grid_00003_00010,grid_00004_00010)})
+watched-or({diseq(grid_00004_00001,grid_00005_00001),diseq(grid_00004_00002,grid_00005_00002),diseq(grid_00004_00003,grid_00005_00003),diseq(grid_00004_00004,grid_00005_00004),diseq(grid_00004_00005,grid_00005_00005),diseq(grid_00004_00006,grid_00005_00006),diseq(grid_00004_00007,grid_00005_00007),diseq(grid_00004_00008,grid_00005_00008),diseq(grid_00004_00009,grid_00005_00009),diseq(grid_00004_00010,grid_00005_00010),w-literal(alldiffrow_00004_00005,0)})
+watched-or({diseq(grid_00004_00001,grid_00006_00001),diseq(grid_00004_00002,grid_00006_00002),diseq(grid_00004_00003,grid_00006_00003),diseq(grid_00004_00004,grid_00006_00004),diseq(grid_00004_00005,grid_00006_00005),diseq(grid_00004_00006,grid_00006_00006),diseq(grid_00004_00007,grid_00006_00007),diseq(grid_00004_00008,grid_00006_00008),diseq(grid_00004_00009,grid_00006_00009),diseq(grid_00004_00010,grid_00006_00010),w-literal(alldiffrow_00004_00006,0)})
+watched-or({w-literal(alldiffrow_00004_00007,0),diseq(grid_00004_00001,grid_00007_00001),diseq(grid_00004_00002,grid_00007_00002),diseq(grid_00004_00003,grid_00007_00003),diseq(grid_00004_00004,grid_00007_00004),diseq(grid_00004_00005,grid_00007_00005),diseq(grid_00004_00006,grid_00007_00006),diseq(grid_00004_00007,grid_00007_00007),diseq(grid_00004_00008,grid_00007_00008),diseq(grid_00004_00009,grid_00007_00009),diseq(grid_00004_00010,grid_00007_00010)})
+watched-or({w-literal(alldiffrow_00004_00008,0),diseq(grid_00008_00001,grid_00004_00001),diseq(grid_00008_00002,grid_00004_00002),diseq(grid_00008_00003,grid_00004_00003),diseq(grid_00008_00004,grid_00004_00004),diseq(grid_00008_00005,grid_00004_00005),diseq(grid_00008_00006,grid_00004_00006),diseq(grid_00008_00007,grid_00004_00007),diseq(grid_00008_00008,grid_00004_00008),diseq(grid_00008_00009,grid_00004_00009),diseq(grid_00008_00010,grid_00004_00010)})
+watched-or({diseq(grid_00004_00001,grid_00009_00001),diseq(grid_00004_00002,grid_00009_00002),diseq(grid_00004_00003,grid_00009_00003),diseq(grid_00004_00004,grid_00009_00004),diseq(grid_00004_00005,grid_00009_00005),diseq(grid_00004_00006,grid_00009_00006),diseq(grid_00004_00007,grid_00009_00007),diseq(grid_00004_00008,grid_00009_00008),diseq(grid_00004_00009,grid_00009_00009),diseq(grid_00004_00010,grid_00009_00010),w-literal(alldiffrow_00004_00009,0)})
+watched-or({w-literal(alldiffrow_00004_00010,0),diseq(grid_00004_00001,grid_00010_00001),diseq(grid_00004_00002,grid_00010_00002),diseq(grid_00004_00003,grid_00010_00003),diseq(grid_00004_00004,grid_00010_00004),diseq(grid_00004_00005,grid_00010_00005),diseq(grid_00004_00006,grid_00010_00006),diseq(grid_00004_00007,grid_00010_00007),diseq(grid_00004_00008,grid_00010_00008),diseq(grid_00004_00009,grid_00010_00009),diseq(grid_00004_00010,grid_00010_00010)})
+watched-or({diseq(grid_00005_00001,grid_00001_00001),diseq(grid_00005_00002,grid_00001_00002),diseq(grid_00005_00003,grid_00001_00003),diseq(grid_00005_00004,grid_00001_00004),diseq(grid_00005_00005,grid_00001_00005),diseq(grid_00005_00006,grid_00001_00006),diseq(grid_00005_00007,grid_00001_00007),diseq(grid_00005_00008,grid_00001_00008),diseq(grid_00005_00009,grid_00001_00009),diseq(grid_00005_00010,grid_00001_00010),w-literal(alldiffrow_00005_00001,0)})
+watched-or({diseq(grid_00005_00001,grid_00002_00001),diseq(grid_00005_00002,grid_00002_00002),diseq(grid_00005_00003,grid_00002_00003),diseq(grid_00005_00004,grid_00002_00004),diseq(grid_00005_00005,grid_00002_00005),diseq(grid_00005_00006,grid_00002_00006),diseq(grid_00005_00007,grid_00002_00007),diseq(grid_00005_00008,grid_00002_00008),diseq(grid_00005_00009,grid_00002_00009),diseq(grid_00005_00010,grid_00002_00010),w-literal(alldiffrow_00005_00002,0)})
+watched-or({diseq(grid_00003_00001,grid_00005_00001),diseq(grid_00003_00002,grid_00005_00002),diseq(grid_00003_00003,grid_00005_00003),diseq(grid_00003_00004,grid_00005_00004),diseq(grid_00003_00005,grid_00005_00005),diseq(grid_00003_00006,grid_00005_00006),diseq(grid_00003_00007,grid_00005_00007),diseq(grid_00003_00008,grid_00005_00008),diseq(grid_00003_00009,grid_00005_00009),diseq(grid_00003_00010,grid_00005_00010),w-literal(alldiffrow_00005_00003,0)})
+watched-or({diseq(grid_00004_00001,grid_00005_00001),diseq(grid_00004_00002,grid_00005_00002),diseq(grid_00004_00003,grid_00005_00003),diseq(grid_00004_00004,grid_00005_00004),diseq(grid_00004_00005,grid_00005_00005),diseq(grid_00004_00006,grid_00005_00006),diseq(grid_00004_00007,grid_00005_00007),diseq(grid_00004_00008,grid_00005_00008),diseq(grid_00004_00009,grid_00005_00009),diseq(grid_00004_00010,grid_00005_00010),w-literal(alldiffrow_00005_00004,0)})
+watched-or({diseq(grid_00005_00001,grid_00006_00001),diseq(grid_00005_00002,grid_00006_00002),diseq(grid_00005_00003,grid_00006_00003),diseq(grid_00005_00004,grid_00006_00004),diseq(grid_00005_00005,grid_00006_00005),diseq(grid_00005_00006,grid_00006_00006),diseq(grid_00005_00007,grid_00006_00007),diseq(grid_00005_00008,grid_00006_00008),diseq(grid_00005_00009,grid_00006_00009),diseq(grid_00005_00010,grid_00006_00010),w-literal(alldiffrow_00005_00006,0)})
+watched-or({diseq(grid_00005_00001,grid_00007_00001),diseq(grid_00005_00002,grid_00007_00002),diseq(grid_00005_00003,grid_00007_00003),diseq(grid_00005_00004,grid_00007_00004),diseq(grid_00005_00005,grid_00007_00005),diseq(grid_00005_00006,grid_00007_00006),diseq(grid_00005_00007,grid_00007_00007),diseq(grid_00005_00008,grid_00007_00008),diseq(grid_00005_00009,grid_00007_00009),diseq(grid_00005_00010,grid_00007_00010),w-literal(alldiffrow_00005_00007,0)})
+watched-or({diseq(grid_00008_00001,grid_00005_00001),diseq(grid_00008_00002,grid_00005_00002),diseq(grid_00008_00003,grid_00005_00003),diseq(grid_00008_00004,grid_00005_00004),diseq(grid_00008_00005,grid_00005_00005),diseq(grid_00008_00006,grid_00005_00006),diseq(grid_00008_00007,grid_00005_00007),diseq(grid_00008_00008,grid_00005_00008),diseq(grid_00008_00009,grid_00005_00009),diseq(grid_00008_00010,grid_00005_00010),w-literal(alldiffrow_00005_00008,0)})
+watched-or({diseq(grid_00009_00001,grid_00005_00001),diseq(grid_00009_00002,grid_00005_00002),diseq(grid_00009_00003,grid_00005_00003),diseq(grid_00009_00004,grid_00005_00004),diseq(grid_00009_00005,grid_00005_00005),diseq(grid_00009_00006,grid_00005_00006),diseq(grid_00009_00007,grid_00005_00007),diseq(grid_00009_00008,grid_00005_00008),diseq(grid_00009_00009,grid_00005_00009),diseq(grid_00009_00010,grid_00005_00010),w-literal(alldiffrow_00005_00009,0)})
+watched-or({diseq(grid_00005_00001,grid_00010_00001),diseq(grid_00005_00002,grid_00010_00002),diseq(grid_00005_00003,grid_00010_00003),diseq(grid_00005_00004,grid_00010_00004),diseq(grid_00005_00005,grid_00010_00005),diseq(grid_00005_00006,grid_00010_00006),diseq(grid_00005_00007,grid_00010_00007),diseq(grid_00005_00008,grid_00010_00008),diseq(grid_00005_00009,grid_00010_00009),diseq(grid_00005_00010,grid_00010_00010),w-literal(alldiffrow_00005_00010,0)})
+watched-or({w-literal(alldiffrow_00006_00001,0),diseq(grid_00001_00001,grid_00006_00001),diseq(grid_00001_00002,grid_00006_00002),diseq(grid_00001_00003,grid_00006_00003),diseq(grid_00001_00004,grid_00006_00004),diseq(grid_00001_00005,grid_00006_00005),diseq(grid_00001_00006,grid_00006_00006),diseq(grid_00001_00007,grid_00006_00007),diseq(grid_00001_00008,grid_00006_00008),diseq(grid_00001_00009,grid_00006_00009),diseq(grid_00001_00010,grid_00006_00010)})
+watched-or({w-literal(alldiffrow_00006_00002,0),diseq(grid_00006_00001,grid_00002_00001),diseq(grid_00006_00002,grid_00002_00002),diseq(grid_00006_00003,grid_00002_00003),diseq(grid_00006_00004,grid_00002_00004),diseq(grid_00006_00005,grid_00002_00005),diseq(grid_00006_00006,grid_00002_00006),diseq(grid_00006_00007,grid_00002_00007),diseq(grid_00006_00008,grid_00002_00008),diseq(grid_00006_00009,grid_00002_00009),diseq(grid_00006_00010,grid_00002_00010)})
+watched-or({w-literal(alldiffrow_00006_00003,0),diseq(grid_00003_00001,grid_00006_00001),diseq(grid_00003_00002,grid_00006_00002),diseq(grid_00003_00003,grid_00006_00003),diseq(grid_00003_00004,grid_00006_00004),diseq(grid_00003_00005,grid_00006_00005),diseq(grid_00003_00006,grid_00006_00006),diseq(grid_00003_00007,grid_00006_00007),diseq(grid_00003_00008,grid_00006_00008),diseq(grid_00003_00009,grid_00006_00009),diseq(grid_00003_00010,grid_00006_00010)})
+watched-or({w-literal(alldiffrow_00006_00004,0),diseq(grid_00004_00001,grid_00006_00001),diseq(grid_00004_00002,grid_00006_00002),diseq(grid_00004_00003,grid_00006_00003),diseq(grid_00004_00004,grid_00006_00004),diseq(grid_00004_00005,grid_00006_00005),diseq(grid_00004_00006,grid_00006_00006),diseq(grid_00004_00007,grid_00006_00007),diseq(grid_00004_00008,grid_00006_00008),diseq(grid_00004_00009,grid_00006_00009),diseq(grid_00004_00010,grid_00006_00010)})
+watched-or({diseq(grid_00005_00001,grid_00006_00001),diseq(grid_00005_00002,grid_00006_00002),diseq(grid_00005_00003,grid_00006_00003),diseq(grid_00005_00004,grid_00006_00004),diseq(grid_00005_00005,grid_00006_00005),diseq(grid_00005_00006,grid_00006_00006),diseq(grid_00005_00007,grid_00006_00007),diseq(grid_00005_00008,grid_00006_00008),diseq(grid_00005_00009,grid_00006_00009),diseq(grid_00005_00010,grid_00006_00010),w-literal(alldiffrow_00006_00005,0)})
+watched-or({w-literal(alldiffrow_00006_00007,0),diseq(grid_00006_00001,grid_00007_00001),diseq(grid_00006_00002,grid_00007_00002),diseq(grid_00006_00003,grid_00007_00003),diseq(grid_00006_00004,grid_00007_00004),diseq(grid_00006_00005,grid_00007_00005),diseq(grid_00006_00006,grid_00007_00006),diseq(grid_00006_00007,grid_00007_00007),diseq(grid_00006_00008,grid_00007_00008),diseq(grid_00006_00009,grid_00007_00009),diseq(grid_00006_00010,grid_00007_00010)})
+watched-or({w-literal(alldiffrow_00006_00008,0),diseq(grid_00008_00001,grid_00006_00001),diseq(grid_00008_00002,grid_00006_00002),diseq(grid_00008_00003,grid_00006_00003),diseq(grid_00008_00004,grid_00006_00004),diseq(grid_00008_00005,grid_00006_00005),diseq(grid_00008_00006,grid_00006_00006),diseq(grid_00008_00007,grid_00006_00007),diseq(grid_00008_00008,grid_00006_00008),diseq(grid_00008_00009,grid_00006_00009),diseq(grid_00008_00010,grid_00006_00010)})
+watched-or({w-literal(alldiffrow_00006_00009,0),diseq(grid_00009_00001,grid_00006_00001),diseq(grid_00009_00002,grid_00006_00002),diseq(grid_00009_00003,grid_00006_00003),diseq(grid_00009_00004,grid_00006_00004),diseq(grid_00009_00005,grid_00006_00005),diseq(grid_00009_00006,grid_00006_00006),diseq(grid_00009_00007,grid_00006_00007),diseq(grid_00009_00008,grid_00006_00008),diseq(grid_00009_00009,grid_00006_00009),diseq(grid_00009_00010,grid_00006_00010)})
+watched-or({w-literal(alldiffrow_00006_00010,0),diseq(grid_00006_00001,grid_00010_00001),diseq(grid_00006_00002,grid_00010_00002),diseq(grid_00006_00003,grid_00010_00003),diseq(grid_00006_00004,grid_00010_00004),diseq(grid_00006_00005,grid_00010_00005),diseq(grid_00006_00006,grid_00010_00006),diseq(grid_00006_00007,grid_00010_00007),diseq(grid_00006_00008,grid_00010_00008),diseq(grid_00006_00009,grid_00010_00009),diseq(grid_00006_00010,grid_00010_00010)})
+watched-or({w-literal(alldiffrow_00007_00001,0),diseq(grid_00001_00001,grid_00007_00001),diseq(grid_00001_00002,grid_00007_00002),diseq(grid_00001_00003,grid_00007_00003),diseq(grid_00001_00004,grid_00007_00004),diseq(grid_00001_00005,grid_00007_00005),diseq(grid_00001_00006,grid_00007_00006),diseq(grid_00001_00007,grid_00007_00007),diseq(grid_00001_00008,grid_00007_00008),diseq(grid_00001_00009,grid_00007_00009),diseq(grid_00001_00010,grid_00007_00010)})
+watched-or({diseq(grid_00002_00001,grid_00007_00001),diseq(grid_00002_00002,grid_00007_00002),diseq(grid_00002_00003,grid_00007_00003),diseq(grid_00002_00004,grid_00007_00004),diseq(grid_00002_00005,grid_00007_00005),diseq(grid_00002_00006,grid_00007_00006),diseq(grid_00002_00007,grid_00007_00007),diseq(grid_00002_00008,grid_00007_00008),diseq(grid_00002_00009,grid_00007_00009),diseq(grid_00002_00010,grid_00007_00010),w-literal(alldiffrow_00007_00002,0)})
+watched-or({w-literal(alldiffrow_00007_00003,0),diseq(grid_00003_00001,grid_00007_00001),diseq(grid_00003_00002,grid_00007_00002),diseq(grid_00003_00003,grid_00007_00003),diseq(grid_00003_00004,grid_00007_00004),diseq(grid_00003_00005,grid_00007_00005),diseq(grid_00003_00006,grid_00007_00006),diseq(grid_00003_00007,grid_00007_00007),diseq(grid_00003_00008,grid_00007_00008),diseq(grid_00003_00009,grid_00007_00009),diseq(grid_00003_00010,grid_00007_00010)})
+watched-or({w-literal(alldiffrow_00007_00004,0),diseq(grid_00004_00001,grid_00007_00001),diseq(grid_00004_00002,grid_00007_00002),diseq(grid_00004_00003,grid_00007_00003),diseq(grid_00004_00004,grid_00007_00004),diseq(grid_00004_00005,grid_00007_00005),diseq(grid_00004_00006,grid_00007_00006),diseq(grid_00004_00007,grid_00007_00007),diseq(grid_00004_00008,grid_00007_00008),diseq(grid_00004_00009,grid_00007_00009),diseq(grid_00004_00010,grid_00007_00010)})
+watched-or({diseq(grid_00005_00001,grid_00007_00001),diseq(grid_00005_00002,grid_00007_00002),diseq(grid_00005_00003,grid_00007_00003),diseq(grid_00005_00004,grid_00007_00004),diseq(grid_00005_00005,grid_00007_00005),diseq(grid_00005_00006,grid_00007_00006),diseq(grid_00005_00007,grid_00007_00007),diseq(grid_00005_00008,grid_00007_00008),diseq(grid_00005_00009,grid_00007_00009),diseq(grid_00005_00010,grid_00007_00010),w-literal(alldiffrow_00007_00005,0)})
+watched-or({w-literal(alldiffrow_00007_00006,0),diseq(grid_00006_00001,grid_00007_00001),diseq(grid_00006_00002,grid_00007_00002),diseq(grid_00006_00003,grid_00007_00003),diseq(grid_00006_00004,grid_00007_00004),diseq(grid_00006_00005,grid_00007_00005),diseq(grid_00006_00006,grid_00007_00006),diseq(grid_00006_00007,grid_00007_00007),diseq(grid_00006_00008,grid_00007_00008),diseq(grid_00006_00009,grid_00007_00009),diseq(grid_00006_00010,grid_00007_00010)})
+watched-or({w-literal(alldiffrow_00007_00008,0),diseq(grid_00008_00001,grid_00007_00001),diseq(grid_00008_00002,grid_00007_00002),diseq(grid_00008_00003,grid_00007_00003),diseq(grid_00008_00004,grid_00007_00004),diseq(grid_00008_00005,grid_00007_00005),diseq(grid_00008_00006,grid_00007_00006),diseq(grid_00008_00007,grid_00007_00007),diseq(grid_00008_00008,grid_00007_00008),diseq(grid_00008_00009,grid_00007_00009),diseq(grid_00008_00010,grid_00007_00010)})
+watched-or({w-literal(alldiffrow_00007_00009,0),diseq(grid_00009_00001,grid_00007_00001),diseq(grid_00009_00002,grid_00007_00002),diseq(grid_00009_00003,grid_00007_00003),diseq(grid_00009_00004,grid_00007_00004),diseq(grid_00009_00005,grid_00007_00005),diseq(grid_00009_00006,grid_00007_00006),diseq(grid_00009_00007,grid_00007_00007),diseq(grid_00009_00008,grid_00007_00008),diseq(grid_00009_00009,grid_00007_00009),diseq(grid_00009_00010,grid_00007_00010)})
+watched-or({w-literal(alldiffrow_00007_00010,0),diseq(grid_00010_00001,grid_00007_00001),diseq(grid_00010_00002,grid_00007_00002),diseq(grid_00010_00003,grid_00007_00003),diseq(grid_00010_00004,grid_00007_00004),diseq(grid_00010_00005,grid_00007_00005),diseq(grid_00010_00006,grid_00007_00006),diseq(grid_00010_00007,grid_00007_00007),diseq(grid_00010_00008,grid_00007_00008),diseq(grid_00010_00009,grid_00007_00009),diseq(grid_00010_00010,grid_00007_00010)})
+watched-or({diseq(grid_00008_00001,grid_00001_00001),diseq(grid_00008_00002,grid_00001_00002),diseq(grid_00008_00003,grid_00001_00003),diseq(grid_00008_00004,grid_00001_00004),diseq(grid_00008_00005,grid_00001_00005),diseq(grid_00008_00006,grid_00001_00006),diseq(grid_00008_00007,grid_00001_00007),diseq(grid_00008_00008,grid_00001_00008),diseq(grid_00008_00009,grid_00001_00009),diseq(grid_00008_00010,grid_00001_00010),w-literal(alldiffrow_00008_00001,0)})
+watched-or({diseq(grid_00008_00001,grid_00002_00001),diseq(grid_00008_00002,grid_00002_00002),diseq(grid_00008_00003,grid_00002_00003),diseq(grid_00008_00004,grid_00002_00004),diseq(grid_00008_00005,grid_00002_00005),diseq(grid_00008_00006,grid_00002_00006),diseq(grid_00008_00007,grid_00002_00007),diseq(grid_00008_00008,grid_00002_00008),diseq(grid_00008_00009,grid_00002_00009),diseq(grid_00008_00010,grid_00002_00010),w-literal(alldiffrow_00008_00002,0)})
+watched-or({w-literal(alldiffrow_00008_00003,0),diseq(grid_00003_00001,grid_00008_00001),diseq(grid_00003_00002,grid_00008_00002),diseq(grid_00003_00003,grid_00008_00003),diseq(grid_00003_00004,grid_00008_00004),diseq(grid_00003_00005,grid_00008_00005),diseq(grid_00003_00006,grid_00008_00006),diseq(grid_00003_00007,grid_00008_00007),diseq(grid_00003_00008,grid_00008_00008),diseq(grid_00003_00009,grid_00008_00009),diseq(grid_00003_00010,grid_00008_00010)})
+watched-or({w-literal(alldiffrow_00008_00004,0),diseq(grid_00008_00001,grid_00004_00001),diseq(grid_00008_00002,grid_00004_00002),diseq(grid_00008_00003,grid_00004_00003),diseq(grid_00008_00004,grid_00004_00004),diseq(grid_00008_00005,grid_00004_00005),diseq(grid_00008_00006,grid_00004_00006),diseq(grid_00008_00007,grid_00004_00007),diseq(grid_00008_00008,grid_00004_00008),diseq(grid_00008_00009,grid_00004_00009),diseq(grid_00008_00010,grid_00004_00010)})
+watched-or({diseq(grid_00008_00001,grid_00005_00001),diseq(grid_00008_00002,grid_00005_00002),diseq(grid_00008_00003,grid_00005_00003),diseq(grid_00008_00004,grid_00005_00004),diseq(grid_00008_00005,grid_00005_00005),diseq(grid_00008_00006,grid_00005_00006),diseq(grid_00008_00007,grid_00005_00007),diseq(grid_00008_00008,grid_00005_00008),diseq(grid_00008_00009,grid_00005_00009),diseq(grid_00008_00010,grid_00005_00010),w-literal(alldiffrow_00008_00005,0)})
+watched-or({diseq(grid_00008_00001,grid_00006_00001),diseq(grid_00008_00002,grid_00006_00002),diseq(grid_00008_00003,grid_00006_00003),diseq(grid_00008_00004,grid_00006_00004),diseq(grid_00008_00005,grid_00006_00005),diseq(grid_00008_00006,grid_00006_00006),diseq(grid_00008_00007,grid_00006_00007),diseq(grid_00008_00008,grid_00006_00008),diseq(grid_00008_00009,grid_00006_00009),diseq(grid_00008_00010,grid_00006_00010),w-literal(alldiffrow_00008_00006,0)})
+watched-or({diseq(grid_00008_00001,grid_00007_00001),diseq(grid_00008_00002,grid_00007_00002),diseq(grid_00008_00003,grid_00007_00003),diseq(grid_00008_00004,grid_00007_00004),diseq(grid_00008_00005,grid_00007_00005),diseq(grid_00008_00006,grid_00007_00006),diseq(grid_00008_00007,grid_00007_00007),diseq(grid_00008_00008,grid_00007_00008),diseq(grid_00008_00009,grid_00007_00009),diseq(grid_00008_00010,grid_00007_00010),w-literal(alldiffrow_00008_00007,0)})
+watched-or({w-literal(alldiffrow_00008_00009,0),diseq(grid_00008_00001,grid_00009_00001),diseq(grid_00008_00002,grid_00009_00002),diseq(grid_00008_00003,grid_00009_00003),diseq(grid_00008_00004,grid_00009_00004),diseq(grid_00008_00005,grid_00009_00005),diseq(grid_00008_00006,grid_00009_00006),diseq(grid_00008_00007,grid_00009_00007),diseq(grid_00008_00008,grid_00009_00008),diseq(grid_00008_00009,grid_00009_00009),diseq(grid_00008_00010,grid_00009_00010)})
+watched-or({diseq(grid_00008_00001,grid_00010_00001),diseq(grid_00008_00002,grid_00010_00002),diseq(grid_00008_00003,grid_00010_00003),diseq(grid_00008_00004,grid_00010_00004),diseq(grid_00008_00005,grid_00010_00005),diseq(grid_00008_00006,grid_00010_00006),diseq(grid_00008_00007,grid_00010_00007),diseq(grid_00008_00008,grid_00010_00008),diseq(grid_00008_00009,grid_00010_00009),diseq(grid_00008_00010,grid_00010_00010),w-literal(alldiffrow_00008_00010,0)})
+watched-or({diseq(grid_00009_00001,grid_00001_00001),diseq(grid_00009_00002,grid_00001_00002),diseq(grid_00009_00003,grid_00001_00003),diseq(grid_00009_00004,grid_00001_00004),diseq(grid_00009_00005,grid_00001_00005),diseq(grid_00009_00006,grid_00001_00006),diseq(grid_00009_00007,grid_00001_00007),diseq(grid_00009_00008,grid_00001_00008),diseq(grid_00009_00009,grid_00001_00009),diseq(grid_00009_00010,grid_00001_00010),w-literal(alldiffrow_00009_00001,0)})
+watched-or({w-literal(alldiffrow_00009_00002,0),diseq(grid_00009_00001,grid_00002_00001),diseq(grid_00009_00002,grid_00002_00002),diseq(grid_00009_00003,grid_00002_00003),diseq(grid_00009_00004,grid_00002_00004),diseq(grid_00009_00005,grid_00002_00005),diseq(grid_00009_00006,grid_00002_00006),diseq(grid_00009_00007,grid_00002_00007),diseq(grid_00009_00008,grid_00002_00008),diseq(grid_00009_00009,grid_00002_00009),diseq(grid_00009_00010,grid_00002_00010)})
+watched-or({w-literal(alldiffrow_00009_00003,0),diseq(grid_00003_00001,grid_00009_00001),diseq(grid_00003_00002,grid_00009_00002),diseq(grid_00003_00003,grid_00009_00003),diseq(grid_00003_00004,grid_00009_00004),diseq(grid_00003_00005,grid_00009_00005),diseq(grid_00003_00006,grid_00009_00006),diseq(grid_00003_00007,grid_00009_00007),diseq(grid_00003_00008,grid_00009_00008),diseq(grid_00003_00009,grid_00009_00009),diseq(grid_00003_00010,grid_00009_00010)})
+watched-or({diseq(grid_00004_00001,grid_00009_00001),diseq(grid_00004_00002,grid_00009_00002),diseq(grid_00004_00003,grid_00009_00003),diseq(grid_00004_00004,grid_00009_00004),diseq(grid_00004_00005,grid_00009_00005),diseq(grid_00004_00006,grid_00009_00006),diseq(grid_00004_00007,grid_00009_00007),diseq(grid_00004_00008,grid_00009_00008),diseq(grid_00004_00009,grid_00009_00009),diseq(grid_00004_00010,grid_00009_00010),w-literal(alldiffrow_00009_00004,0)})
+watched-or({diseq(grid_00009_00001,grid_00005_00001),diseq(grid_00009_00002,grid_00005_00002),diseq(grid_00009_00003,grid_00005_00003),diseq(grid_00009_00004,grid_00005_00004),diseq(grid_00009_00005,grid_00005_00005),diseq(grid_00009_00006,grid_00005_00006),diseq(grid_00009_00007,grid_00005_00007),diseq(grid_00009_00008,grid_00005_00008),diseq(grid_00009_00009,grid_00005_00009),diseq(grid_00009_00010,grid_00005_00010),w-literal(alldiffrow_00009_00005,0)})
+watched-or({diseq(grid_00009_00001,grid_00006_00001),diseq(grid_00009_00002,grid_00006_00002),diseq(grid_00009_00003,grid_00006_00003),diseq(grid_00009_00004,grid_00006_00004),diseq(grid_00009_00005,grid_00006_00005),diseq(grid_00009_00006,grid_00006_00006),diseq(grid_00009_00007,grid_00006_00007),diseq(grid_00009_00008,grid_00006_00008),diseq(grid_00009_00009,grid_00006_00009),diseq(grid_00009_00010,grid_00006_00010),w-literal(alldiffrow_00009_00006,0)})
+watched-or({w-literal(alldiffrow_00009_00007,0),diseq(grid_00009_00001,grid_00007_00001),diseq(grid_00009_00002,grid_00007_00002),diseq(grid_00009_00003,grid_00007_00003),diseq(grid_00009_00004,grid_00007_00004),diseq(grid_00009_00005,grid_00007_00005),diseq(grid_00009_00006,grid_00007_00006),diseq(grid_00009_00007,grid_00007_00007),diseq(grid_00009_00008,grid_00007_00008),diseq(grid_00009_00009,grid_00007_00009),diseq(grid_00009_00010,grid_00007_00010)})
+watched-or({w-literal(alldiffrow_00009_00008,0),diseq(grid_00008_00001,grid_00009_00001),diseq(grid_00008_00002,grid_00009_00002),diseq(grid_00008_00003,grid_00009_00003),diseq(grid_00008_00004,grid_00009_00004),diseq(grid_00008_00005,grid_00009_00005),diseq(grid_00008_00006,grid_00009_00006),diseq(grid_00008_00007,grid_00009_00007),diseq(grid_00008_00008,grid_00009_00008),diseq(grid_00008_00009,grid_00009_00009),diseq(grid_00008_00010,grid_00009_00010)})
+watched-or({w-literal(alldiffrow_00009_00010,0),diseq(grid_00009_00001,grid_00010_00001),diseq(grid_00009_00002,grid_00010_00002),diseq(grid_00009_00003,grid_00010_00003),diseq(grid_00009_00004,grid_00010_00004),diseq(grid_00009_00005,grid_00010_00005),diseq(grid_00009_00006,grid_00010_00006),diseq(grid_00009_00007,grid_00010_00007),diseq(grid_00009_00008,grid_00010_00008),diseq(grid_00009_00009,grid_00010_00009),diseq(grid_00009_00010,grid_00010_00010)})
+watched-or({w-literal(alldiffrow_00010_00001,0),diseq(grid_00001_00001,grid_00010_00001),diseq(grid_00001_00002,grid_00010_00002),diseq(grid_00001_00003,grid_00010_00003),diseq(grid_00001_00004,grid_00010_00004),diseq(grid_00001_00005,grid_00010_00005),diseq(grid_00001_00006,grid_00010_00006),diseq(grid_00001_00007,grid_00010_00007),diseq(grid_00001_00008,grid_00010_00008),diseq(grid_00001_00009,grid_00010_00009),diseq(grid_00001_00010,grid_00010_00010)})
+watched-or({w-literal(alldiffrow_00010_00002,0),diseq(grid_00010_00001,grid_00002_00001),diseq(grid_00010_00002,grid_00002_00002),diseq(grid_00010_00003,grid_00002_00003),diseq(grid_00010_00004,grid_00002_00004),diseq(grid_00010_00005,grid_00002_00005),diseq(grid_00010_00006,grid_00002_00006),diseq(grid_00010_00007,grid_00002_00007),diseq(grid_00010_00008,grid_00002_00008),diseq(grid_00010_00009,grid_00002_00009),diseq(grid_00010_00010,grid_00002_00010)})
+watched-or({w-literal(alldiffrow_00010_00003,0),diseq(grid_00003_00001,grid_00010_00001),diseq(grid_00003_00002,grid_00010_00002),diseq(grid_00003_00003,grid_00010_00003),diseq(grid_00003_00004,grid_00010_00004),diseq(grid_00003_00005,grid_00010_00005),diseq(grid_00003_00006,grid_00010_00006),diseq(grid_00003_00007,grid_00010_00007),diseq(grid_00003_00008,grid_00010_00008),diseq(grid_00003_00009,grid_00010_00009),diseq(grid_00003_00010,grid_00010_00010)})
+watched-or({w-literal(alldiffrow_00010_00004,0),diseq(grid_00004_00001,grid_00010_00001),diseq(grid_00004_00002,grid_00010_00002),diseq(grid_00004_00003,grid_00010_00003),diseq(grid_00004_00004,grid_00010_00004),diseq(grid_00004_00005,grid_00010_00005),diseq(grid_00004_00006,grid_00010_00006),diseq(grid_00004_00007,grid_00010_00007),diseq(grid_00004_00008,grid_00010_00008),diseq(grid_00004_00009,grid_00010_00009),diseq(grid_00004_00010,grid_00010_00010)})
+watched-or({diseq(grid_00005_00001,grid_00010_00001),diseq(grid_00005_00002,grid_00010_00002),diseq(grid_00005_00003,grid_00010_00003),diseq(grid_00005_00004,grid_00010_00004),diseq(grid_00005_00005,grid_00010_00005),diseq(grid_00005_00006,grid_00010_00006),diseq(grid_00005_00007,grid_00010_00007),diseq(grid_00005_00008,grid_00010_00008),diseq(grid_00005_00009,grid_00010_00009),diseq(grid_00005_00010,grid_00010_00010),w-literal(alldiffrow_00010_00005,0)})
+watched-or({w-literal(alldiffrow_00010_00006,0),diseq(grid_00006_00001,grid_00010_00001),diseq(grid_00006_00002,grid_00010_00002),diseq(grid_00006_00003,grid_00010_00003),diseq(grid_00006_00004,grid_00010_00004),diseq(grid_00006_00005,grid_00010_00005),diseq(grid_00006_00006,grid_00010_00006),diseq(grid_00006_00007,grid_00010_00007),diseq(grid_00006_00008,grid_00010_00008),diseq(grid_00006_00009,grid_00010_00009),diseq(grid_00006_00010,grid_00010_00010)})
+watched-or({w-literal(alldiffrow_00010_00007,0),diseq(grid_00010_00001,grid_00007_00001),diseq(grid_00010_00002,grid_00007_00002),diseq(grid_00010_00003,grid_00007_00003),diseq(grid_00010_00004,grid_00007_00004),diseq(grid_00010_00005,grid_00007_00005),diseq(grid_00010_00006,grid_00007_00006),diseq(grid_00010_00007,grid_00007_00007),diseq(grid_00010_00008,grid_00007_00008),diseq(grid_00010_00009,grid_00007_00009),diseq(grid_00010_00010,grid_00007_00010)})
+watched-or({w-literal(alldiffrow_00010_00008,0),diseq(grid_00008_00001,grid_00010_00001),diseq(grid_00008_00002,grid_00010_00002),diseq(grid_00008_00003,grid_00010_00003),diseq(grid_00008_00004,grid_00010_00004),diseq(grid_00008_00005,grid_00010_00005),diseq(grid_00008_00006,grid_00010_00006),diseq(grid_00008_00007,grid_00010_00007),diseq(grid_00008_00008,grid_00010_00008),diseq(grid_00008_00009,grid_00010_00009),diseq(grid_00008_00010,grid_00010_00010)})
+watched-or({w-literal(alldiffrow_00010_00009,0),diseq(grid_00009_00001,grid_00010_00001),diseq(grid_00009_00002,grid_00010_00002),diseq(grid_00009_00003,grid_00010_00003),diseq(grid_00009_00004,grid_00010_00004),diseq(grid_00009_00005,grid_00010_00005),diseq(grid_00009_00006,grid_00010_00006),diseq(grid_00009_00007,grid_00010_00007),diseq(grid_00009_00008,grid_00010_00008),diseq(grid_00009_00009,grid_00010_00009),diseq(grid_00009_00010,grid_00010_00010)})
+watched-or({diseq(grid_00002_00001,grid_00002_00002),diseq(grid_00007_00001,grid_00007_00002),diseq(grid_00004_00001,grid_00004_00002),diseq(grid_00009_00001,grid_00009_00002),diseq(grid_00001_00001,grid_00001_00002),diseq(grid_00006_00001,grid_00006_00002),w-literal(alldiffcol_00001_00002,0),diseq(grid_00003_00001,grid_00003_00002),diseq(grid_00008_00001,grid_00008_00002),diseq(grid_00010_00001,grid_00010_00002),diseq(grid_00005_00001,grid_00005_00002)})
+watched-or({diseq(grid_00002_00001,grid_00002_00003),diseq(grid_00007_00001,grid_00007_00003),diseq(grid_00004_00001,grid_00004_00003),diseq(grid_00009_00001,grid_00009_00003),diseq(grid_00001_00001,grid_00001_00003),diseq(grid_00006_00001,grid_00006_00003),w-literal(alldiffcol_00001_00003,0),diseq(grid_00003_00001,grid_00003_00003),diseq(grid_00008_00001,grid_00008_00003),diseq(grid_00010_00001,grid_00010_00003),diseq(grid_00005_00001,grid_00005_00003)})
+watched-or({diseq(grid_00002_00001,grid_00002_00004),diseq(grid_00007_00001,grid_00007_00004),diseq(grid_00004_00001,grid_00004_00004),diseq(grid_00009_00001,grid_00009_00004),diseq(grid_00001_00001,grid_00001_00004),diseq(grid_00006_00001,grid_00006_00004),w-literal(alldiffcol_00001_00004,0),diseq(grid_00003_00001,grid_00003_00004),diseq(grid_00008_00001,grid_00008_00004),diseq(grid_00010_00001,grid_00010_00004),diseq(grid_00005_00001,grid_00005_00004)})
+watched-or({diseq(grid_00002_00001,grid_00002_00005),diseq(grid_00007_00001,grid_00007_00005),diseq(grid_00004_00001,grid_00004_00005),diseq(grid_00009_00001,grid_00009_00005),diseq(grid_00001_00001,grid_00001_00005),diseq(grid_00006_00001,grid_00006_00005),w-literal(alldiffcol_00001_00005,0),diseq(grid_00003_00001,grid_00003_00005),diseq(grid_00008_00001,grid_00008_00005),diseq(grid_00010_00001,grid_00010_00005),diseq(grid_00005_00001,grid_00005_00005)})
+watched-or({diseq(grid_00002_00001,grid_00002_00006),diseq(grid_00007_00001,grid_00007_00006),diseq(grid_00004_00001,grid_00004_00006),diseq(grid_00009_00001,grid_00009_00006),diseq(grid_00001_00001,grid_00001_00006),diseq(grid_00006_00001,grid_00006_00006),w-literal(alldiffcol_00001_00006,0),diseq(grid_00003_00001,grid_00003_00006),diseq(grid_00008_00001,grid_00008_00006),diseq(grid_00010_00001,grid_00010_00006),diseq(grid_00005_00001,grid_00005_00006)})
+watched-or({diseq(grid_00002_00001,grid_00002_00007),diseq(grid_00007_00001,grid_00007_00007),diseq(grid_00004_00001,grid_00004_00007),diseq(grid_00009_00001,grid_00009_00007),diseq(grid_00001_00001,grid_00001_00007),diseq(grid_00006_00001,grid_00006_00007),w-literal(alldiffcol_00001_00007,0),diseq(grid_00003_00001,grid_00003_00007),diseq(grid_00008_00001,grid_00008_00007),diseq(grid_00010_00001,grid_00010_00007),diseq(grid_00005_00001,grid_00005_00007)})
+watched-or({diseq(grid_00002_00001,grid_00002_00008),diseq(grid_00007_00001,grid_00007_00008),diseq(grid_00004_00001,grid_00004_00008),diseq(grid_00009_00001,grid_00009_00008),diseq(grid_00001_00001,grid_00001_00008),diseq(grid_00006_00001,grid_00006_00008),w-literal(alldiffcol_00001_00008,0),diseq(grid_00003_00001,grid_00003_00008),diseq(grid_00008_00001,grid_00008_00008),diseq(grid_00010_00001,grid_00010_00008),diseq(grid_00005_00001,grid_00005_00008)})
+watched-or({diseq(grid_00002_00001,grid_00002_00009),diseq(grid_00007_00001,grid_00007_00009),diseq(grid_00004_00001,grid_00004_00009),diseq(grid_00009_00001,grid_00009_00009),diseq(grid_00001_00001,grid_00001_00009),diseq(grid_00006_00001,grid_00006_00009),w-literal(alldiffcol_00001_00009,0),diseq(grid_00003_00001,grid_00003_00009),diseq(grid_00008_00001,grid_00008_00009),diseq(grid_00010_00001,grid_00010_00009),diseq(grid_00005_00001,grid_00005_00009)})
+watched-or({diseq(grid_00002_00001,grid_00002_00010),diseq(grid_00007_00001,grid_00007_00010),diseq(grid_00004_00001,grid_00004_00010),diseq(grid_00009_00001,grid_00009_00010),diseq(grid_00001_00001,grid_00001_00010),diseq(grid_00006_00001,grid_00006_00010),w-literal(alldiffcol_00001_00010,0),diseq(grid_00003_00001,grid_00003_00010),diseq(grid_00008_00001,grid_00008_00010),diseq(grid_00010_00001,grid_00010_00010),diseq(grid_00005_00001,grid_00005_00010)})
+watched-or({diseq(grid_00002_00001,grid_00002_00002),diseq(grid_00007_00001,grid_00007_00002),diseq(grid_00004_00001,grid_00004_00002),diseq(grid_00009_00001,grid_00009_00002),diseq(grid_00001_00001,grid_00001_00002),diseq(grid_00006_00001,grid_00006_00002),diseq(grid_00003_00001,grid_00003_00002),diseq(grid_00008_00001,grid_00008_00002),diseq(grid_00010_00001,grid_00010_00002),w-literal(alldiffcol_00002_00001,0),diseq(grid_00005_00001,grid_00005_00002)})
+watched-or({diseq(grid_00002_00002,grid_00002_00003),diseq(grid_00007_00002,grid_00007_00003),diseq(grid_00004_00002,grid_00004_00003),diseq(grid_00009_00002,grid_00009_00003),diseq(grid_00001_00002,grid_00001_00003),diseq(grid_00006_00002,grid_00006_00003),diseq(grid_00003_00002,grid_00003_00003),diseq(grid_00008_00002,grid_00008_00003),diseq(grid_00010_00002,grid_00010_00003),w-literal(alldiffcol_00002_00003,0),diseq(grid_00005_00002,grid_00005_00003)})
+watched-or({diseq(grid_00002_00002,grid_00002_00004),diseq(grid_00007_00002,grid_00007_00004),diseq(grid_00004_00002,grid_00004_00004),diseq(grid_00009_00002,grid_00009_00004),diseq(grid_00001_00002,grid_00001_00004),diseq(grid_00006_00002,grid_00006_00004),diseq(grid_00003_00002,grid_00003_00004),diseq(grid_00008_00002,grid_00008_00004),diseq(grid_00010_00002,grid_00010_00004),w-literal(alldiffcol_00002_00004,0),diseq(grid_00005_00002,grid_00005_00004)})
+watched-or({diseq(grid_00002_00002,grid_00002_00005),diseq(grid_00007_00002,grid_00007_00005),diseq(grid_00004_00002,grid_00004_00005),diseq(grid_00009_00002,grid_00009_00005),diseq(grid_00001_00002,grid_00001_00005),diseq(grid_00006_00002,grid_00006_00005),diseq(grid_00003_00002,grid_00003_00005),diseq(grid_00008_00002,grid_00008_00005),diseq(grid_00010_00002,grid_00010_00005),w-literal(alldiffcol_00002_00005,0),diseq(grid_00005_00002,grid_00005_00005)})
+watched-or({diseq(grid_00002_00002,grid_00002_00006),diseq(grid_00007_00002,grid_00007_00006),diseq(grid_00004_00002,grid_00004_00006),diseq(grid_00009_00002,grid_00009_00006),diseq(grid_00001_00002,grid_00001_00006),diseq(grid_00006_00002,grid_00006_00006),diseq(grid_00003_00002,grid_00003_00006),diseq(grid_00008_00002,grid_00008_00006),diseq(grid_00010_00002,grid_00010_00006),w-literal(alldiffcol_00002_00006,0),diseq(grid_00005_00002,grid_00005_00006)})
+watched-or({diseq(grid_00002_00002,grid_00002_00007),diseq(grid_00007_00002,grid_00007_00007),diseq(grid_00004_00002,grid_00004_00007),diseq(grid_00009_00002,grid_00009_00007),diseq(grid_00001_00002,grid_00001_00007),diseq(grid_00006_00002,grid_00006_00007),diseq(grid_00003_00002,grid_00003_00007),diseq(grid_00008_00002,grid_00008_00007),diseq(grid_00010_00002,grid_00010_00007),w-literal(alldiffcol_00002_00007,0),diseq(grid_00005_00002,grid_00005_00007)})
+watched-or({diseq(grid_00002_00002,grid_00002_00008),diseq(grid_00007_00002,grid_00007_00008),diseq(grid_00004_00002,grid_00004_00008),diseq(grid_00009_00002,grid_00009_00008),diseq(grid_00001_00002,grid_00001_00008),diseq(grid_00006_00002,grid_00006_00008),diseq(grid_00003_00002,grid_00003_00008),diseq(grid_00008_00002,grid_00008_00008),diseq(grid_00010_00002,grid_00010_00008),w-literal(alldiffcol_00002_00008,0),diseq(grid_00005_00002,grid_00005_00008)})
+watched-or({diseq(grid_00002_00002,grid_00002_00009),diseq(grid_00007_00002,grid_00007_00009),diseq(grid_00004_00002,grid_00004_00009),diseq(grid_00009_00002,grid_00009_00009),diseq(grid_00001_00002,grid_00001_00009),diseq(grid_00006_00002,grid_00006_00009),diseq(grid_00003_00002,grid_00003_00009),diseq(grid_00008_00002,grid_00008_00009),diseq(grid_00010_00002,grid_00010_00009),w-literal(alldiffcol_00002_00009,0),diseq(grid_00005_00002,grid_00005_00009)})
+watched-or({diseq(grid_00002_00002,grid_00002_00010),diseq(grid_00007_00002,grid_00007_00010),diseq(grid_00004_00002,grid_00004_00010),diseq(grid_00009_00002,grid_00009_00010),diseq(grid_00001_00002,grid_00001_00010),diseq(grid_00006_00002,grid_00006_00010),diseq(grid_00003_00002,grid_00003_00010),diseq(grid_00008_00002,grid_00008_00010),diseq(grid_00010_00002,grid_00010_00010),w-literal(alldiffcol_00002_00010,0),diseq(grid_00005_00002,grid_00005_00010)})
+watched-or({w-literal(alldiffcol_00003_00001,0),diseq(grid_00002_00001,grid_00002_00003),diseq(grid_00007_00001,grid_00007_00003),diseq(grid_00004_00001,grid_00004_00003),diseq(grid_00009_00001,grid_00009_00003),diseq(grid_00001_00001,grid_00001_00003),diseq(grid_00006_00001,grid_00006_00003),diseq(grid_00003_00001,grid_00003_00003),diseq(grid_00008_00001,grid_00008_00003),diseq(grid_00010_00001,grid_00010_00003),diseq(grid_00005_00001,grid_00005_00003)})
+watched-or({w-literal(alldiffcol_00003_00002,0),diseq(grid_00002_00002,grid_00002_00003),diseq(grid_00007_00002,grid_00007_00003),diseq(grid_00004_00002,grid_00004_00003),diseq(grid_00009_00002,grid_00009_00003),diseq(grid_00001_00002,grid_00001_00003),diseq(grid_00006_00002,grid_00006_00003),diseq(grid_00003_00002,grid_00003_00003),diseq(grid_00008_00002,grid_00008_00003),diseq(grid_00010_00002,grid_00010_00003),diseq(grid_00005_00002,grid_00005_00003)})
+watched-or({w-literal(alldiffcol_00003_00004,0),diseq(grid_00002_00003,grid_00002_00004),diseq(grid_00007_00003,grid_00007_00004),diseq(grid_00004_00003,grid_00004_00004),diseq(grid_00009_00003,grid_00009_00004),diseq(grid_00001_00003,grid_00001_00004),diseq(grid_00006_00003,grid_00006_00004),diseq(grid_00003_00003,grid_00003_00004),diseq(grid_00008_00003,grid_00008_00004),diseq(grid_00010_00003,grid_00010_00004),diseq(grid_00005_00003,grid_00005_00004)})
+watched-or({w-literal(alldiffcol_00003_00005,0),diseq(grid_00002_00003,grid_00002_00005),diseq(grid_00007_00003,grid_00007_00005),diseq(grid_00004_00003,grid_00004_00005),diseq(grid_00009_00003,grid_00009_00005),diseq(grid_00001_00003,grid_00001_00005),diseq(grid_00006_00003,grid_00006_00005),diseq(grid_00003_00003,grid_00003_00005),diseq(grid_00008_00003,grid_00008_00005),diseq(grid_00010_00003,grid_00010_00005),diseq(grid_00005_00003,grid_00005_00005)})
+watched-or({w-literal(alldiffcol_00003_00006,0),diseq(grid_00002_00003,grid_00002_00006),diseq(grid_00007_00003,grid_00007_00006),diseq(grid_00004_00003,grid_00004_00006),diseq(grid_00009_00003,grid_00009_00006),diseq(grid_00001_00003,grid_00001_00006),diseq(grid_00006_00003,grid_00006_00006),diseq(grid_00003_00003,grid_00003_00006),diseq(grid_00008_00003,grid_00008_00006),diseq(grid_00010_00003,grid_00010_00006),diseq(grid_00005_00003,grid_00005_00006)})
+watched-or({w-literal(alldiffcol_00003_00007,0),diseq(grid_00002_00003,grid_00002_00007),diseq(grid_00007_00003,grid_00007_00007),diseq(grid_00004_00003,grid_00004_00007),diseq(grid_00009_00003,grid_00009_00007),diseq(grid_00001_00003,grid_00001_00007),diseq(grid_00006_00003,grid_00006_00007),diseq(grid_00003_00003,grid_00003_00007),diseq(grid_00008_00003,grid_00008_00007),diseq(grid_00010_00003,grid_00010_00007),diseq(grid_00005_00003,grid_00005_00007)})
+watched-or({w-literal(alldiffcol_00003_00008,0),diseq(grid_00002_00003,grid_00002_00008),diseq(grid_00007_00003,grid_00007_00008),diseq(grid_00004_00003,grid_00004_00008),diseq(grid_00009_00003,grid_00009_00008),diseq(grid_00001_00003,grid_00001_00008),diseq(grid_00006_00003,grid_00006_00008),diseq(grid_00003_00003,grid_00003_00008),diseq(grid_00008_00003,grid_00008_00008),diseq(grid_00010_00003,grid_00010_00008),diseq(grid_00005_00003,grid_00005_00008)})
+watched-or({w-literal(alldiffcol_00003_00009,0),diseq(grid_00002_00003,grid_00002_00009),diseq(grid_00007_00003,grid_00007_00009),diseq(grid_00004_00003,grid_00004_00009),diseq(grid_00009_00003,grid_00009_00009),diseq(grid_00001_00003,grid_00001_00009),diseq(grid_00006_00003,grid_00006_00009),diseq(grid_00003_00003,grid_00003_00009),diseq(grid_00008_00003,grid_00008_00009),diseq(grid_00010_00003,grid_00010_00009),diseq(grid_00005_00003,grid_00005_00009)})
+watched-or({w-literal(alldiffcol_00003_00010,0),diseq(grid_00002_00003,grid_00002_00010),diseq(grid_00007_00003,grid_00007_00010),diseq(grid_00004_00003,grid_00004_00010),diseq(grid_00009_00003,grid_00009_00010),diseq(grid_00001_00003,grid_00001_00010),diseq(grid_00006_00003,grid_00006_00010),diseq(grid_00003_00003,grid_00003_00010),diseq(grid_00008_00003,grid_00008_00010),diseq(grid_00010_00003,grid_00010_00010),diseq(grid_00005_00003,grid_00005_00010)})
+watched-or({diseq(grid_00002_00001,grid_00002_00004),diseq(grid_00007_00001,grid_00007_00004),w-literal(alldiffcol_00004_00001,0),diseq(grid_00004_00001,grid_00004_00004),diseq(grid_00009_00001,grid_00009_00004),diseq(grid_00001_00001,grid_00001_00004),diseq(grid_00006_00001,grid_00006_00004),diseq(grid_00003_00001,grid_00003_00004),diseq(grid_00008_00001,grid_00008_00004),diseq(grid_00010_00001,grid_00010_00004),diseq(grid_00005_00001,grid_00005_00004)})
+watched-or({diseq(grid_00002_00002,grid_00002_00004),diseq(grid_00007_00002,grid_00007_00004),w-literal(alldiffcol_00004_00002,0),diseq(grid_00004_00002,grid_00004_00004),diseq(grid_00009_00002,grid_00009_00004),diseq(grid_00001_00002,grid_00001_00004),diseq(grid_00006_00002,grid_00006_00004),diseq(grid_00003_00002,grid_00003_00004),diseq(grid_00008_00002,grid_00008_00004),diseq(grid_00010_00002,grid_00010_00004),diseq(grid_00005_00002,grid_00005_00004)})
+watched-or({diseq(grid_00002_00003,grid_00002_00004),diseq(grid_00007_00003,grid_00007_00004),w-literal(alldiffcol_00004_00003,0),diseq(grid_00004_00003,grid_00004_00004),diseq(grid_00009_00003,grid_00009_00004),diseq(grid_00001_00003,grid_00001_00004),diseq(grid_00006_00003,grid_00006_00004),diseq(grid_00003_00003,grid_00003_00004),diseq(grid_00008_00003,grid_00008_00004),diseq(grid_00010_00003,grid_00010_00004),diseq(grid_00005_00003,grid_00005_00004)})
+watched-or({diseq(grid_00002_00004,grid_00002_00005),diseq(grid_00007_00004,grid_00007_00005),w-literal(alldiffcol_00004_00005,0),diseq(grid_00004_00004,grid_00004_00005),diseq(grid_00009_00004,grid_00009_00005),diseq(grid_00001_00004,grid_00001_00005),diseq(grid_00006_00004,grid_00006_00005),diseq(grid_00003_00004,grid_00003_00005),diseq(grid_00008_00004,grid_00008_00005),diseq(grid_00010_00004,grid_00010_00005),diseq(grid_00005_00004,grid_00005_00005)})
+watched-or({diseq(grid_00002_00004,grid_00002_00006),diseq(grid_00007_00004,grid_00007_00006),w-literal(alldiffcol_00004_00006,0),diseq(grid_00004_00004,grid_00004_00006),diseq(grid_00009_00004,grid_00009_00006),diseq(grid_00001_00004,grid_00001_00006),diseq(grid_00006_00004,grid_00006_00006),diseq(grid_00003_00004,grid_00003_00006),diseq(grid_00008_00004,grid_00008_00006),diseq(grid_00010_00004,grid_00010_00006),diseq(grid_00005_00004,grid_00005_00006)})
+watched-or({diseq(grid_00002_00004,grid_00002_00007),diseq(grid_00007_00004,grid_00007_00007),w-literal(alldiffcol_00004_00007,0),diseq(grid_00004_00004,grid_00004_00007),diseq(grid_00009_00004,grid_00009_00007),diseq(grid_00001_00004,grid_00001_00007),diseq(grid_00006_00004,grid_00006_00007),diseq(grid_00003_00004,grid_00003_00007),diseq(grid_00008_00004,grid_00008_00007),diseq(grid_00010_00004,grid_00010_00007),diseq(grid_00005_00004,grid_00005_00007)})
+watched-or({diseq(grid_00002_00004,grid_00002_00008),diseq(grid_00007_00004,grid_00007_00008),w-literal(alldiffcol_00004_00008,0),diseq(grid_00004_00004,grid_00004_00008),diseq(grid_00009_00004,grid_00009_00008),diseq(grid_00001_00004,grid_00001_00008),diseq(grid_00006_00004,grid_00006_00008),diseq(grid_00003_00004,grid_00003_00008),diseq(grid_00008_00004,grid_00008_00008),diseq(grid_00010_00004,grid_00010_00008),diseq(grid_00005_00004,grid_00005_00008)})
+watched-or({diseq(grid_00002_00004,grid_00002_00009),diseq(grid_00007_00004,grid_00007_00009),w-literal(alldiffcol_00004_00009,0),diseq(grid_00004_00004,grid_00004_00009),diseq(grid_00009_00004,grid_00009_00009),diseq(grid_00001_00004,grid_00001_00009),diseq(grid_00006_00004,grid_00006_00009),diseq(grid_00003_00004,grid_00003_00009),diseq(grid_00008_00004,grid_00008_00009),diseq(grid_00010_00004,grid_00010_00009),diseq(grid_00005_00004,grid_00005_00009)})
+watched-or({diseq(grid_00002_00004,grid_00002_00010),diseq(grid_00007_00004,grid_00007_00010),w-literal(alldiffcol_00004_00010,0),diseq(grid_00004_00004,grid_00004_00010),diseq(grid_00009_00004,grid_00009_00010),diseq(grid_00001_00004,grid_00001_00010),diseq(grid_00006_00004,grid_00006_00010),diseq(grid_00003_00004,grid_00003_00010),diseq(grid_00008_00004,grid_00008_00010),diseq(grid_00010_00004,grid_00010_00010),diseq(grid_00005_00004,grid_00005_00010)})
+watched-or({diseq(grid_00002_00001,grid_00002_00005),diseq(grid_00007_00001,grid_00007_00005),diseq(grid_00004_00001,grid_00004_00005),diseq(grid_00009_00001,grid_00009_00005),diseq(grid_00001_00001,grid_00001_00005),w-literal(alldiffcol_00005_00001,0),diseq(grid_00006_00001,grid_00006_00005),diseq(grid_00003_00001,grid_00003_00005),diseq(grid_00008_00001,grid_00008_00005),diseq(grid_00010_00001,grid_00010_00005),diseq(grid_00005_00001,grid_00005_00005)})
+watched-or({diseq(grid_00002_00002,grid_00002_00005),diseq(grid_00007_00002,grid_00007_00005),diseq(grid_00004_00002,grid_00004_00005),diseq(grid_00009_00002,grid_00009_00005),diseq(grid_00001_00002,grid_00001_00005),w-literal(alldiffcol_00005_00002,0),diseq(grid_00006_00002,grid_00006_00005),diseq(grid_00003_00002,grid_00003_00005),diseq(grid_00008_00002,grid_00008_00005),diseq(grid_00010_00002,grid_00010_00005),diseq(grid_00005_00002,grid_00005_00005)})
+watched-or({diseq(grid_00002_00003,grid_00002_00005),diseq(grid_00007_00003,grid_00007_00005),diseq(grid_00004_00003,grid_00004_00005),diseq(grid_00009_00003,grid_00009_00005),diseq(grid_00001_00003,grid_00001_00005),w-literal(alldiffcol_00005_00003,0),diseq(grid_00006_00003,grid_00006_00005),diseq(grid_00003_00003,grid_00003_00005),diseq(grid_00008_00003,grid_00008_00005),diseq(grid_00010_00003,grid_00010_00005),diseq(grid_00005_00003,grid_00005_00005)})
+watched-or({diseq(grid_00002_00004,grid_00002_00005),diseq(grid_00007_00004,grid_00007_00005),diseq(grid_00004_00004,grid_00004_00005),diseq(grid_00009_00004,grid_00009_00005),diseq(grid_00001_00004,grid_00001_00005),w-literal(alldiffcol_00005_00004,0),diseq(grid_00006_00004,grid_00006_00005),diseq(grid_00003_00004,grid_00003_00005),diseq(grid_00008_00004,grid_00008_00005),diseq(grid_00010_00004,grid_00010_00005),diseq(grid_00005_00004,grid_00005_00005)})
+watched-or({diseq(grid_00002_00005,grid_00002_00006),diseq(grid_00007_00005,grid_00007_00006),diseq(grid_00004_00005,grid_00004_00006),diseq(grid_00009_00005,grid_00009_00006),diseq(grid_00001_00005,grid_00001_00006),w-literal(alldiffcol_00005_00006,0),diseq(grid_00006_00005,grid_00006_00006),diseq(grid_00003_00005,grid_00003_00006),diseq(grid_00008_00005,grid_00008_00006),diseq(grid_00010_00005,grid_00010_00006),diseq(grid_00005_00005,grid_00005_00006)})
+watched-or({diseq(grid_00002_00005,grid_00002_00007),diseq(grid_00007_00005,grid_00007_00007),diseq(grid_00004_00005,grid_00004_00007),diseq(grid_00009_00005,grid_00009_00007),diseq(grid_00001_00005,grid_00001_00007),w-literal(alldiffcol_00005_00007,0),diseq(grid_00006_00005,grid_00006_00007),diseq(grid_00003_00005,grid_00003_00007),diseq(grid_00008_00005,grid_00008_00007),diseq(grid_00010_00005,grid_00010_00007),diseq(grid_00005_00005,grid_00005_00007)})
+watched-or({diseq(grid_00002_00005,grid_00002_00008),diseq(grid_00007_00005,grid_00007_00008),diseq(grid_00004_00005,grid_00004_00008),diseq(grid_00009_00005,grid_00009_00008),diseq(grid_00001_00005,grid_00001_00008),w-literal(alldiffcol_00005_00008,0),diseq(grid_00006_00005,grid_00006_00008),diseq(grid_00003_00005,grid_00003_00008),diseq(grid_00008_00005,grid_00008_00008),diseq(grid_00010_00005,grid_00010_00008),diseq(grid_00005_00005,grid_00005_00008)})
+watched-or({diseq(grid_00002_00005,grid_00002_00009),diseq(grid_00007_00005,grid_00007_00009),diseq(grid_00004_00005,grid_00004_00009),diseq(grid_00009_00005,grid_00009_00009),diseq(grid_00001_00005,grid_00001_00009),w-literal(alldiffcol_00005_00009,0),diseq(grid_00006_00005,grid_00006_00009),diseq(grid_00003_00005,grid_00003_00009),diseq(grid_00008_00005,grid_00008_00009),diseq(grid_00010_00005,grid_00010_00009),diseq(grid_00005_00005,grid_00005_00009)})
+watched-or({diseq(grid_00002_00005,grid_00002_00010),diseq(grid_00007_00005,grid_00007_00010),diseq(grid_00004_00005,grid_00004_00010),diseq(grid_00009_00005,grid_00009_00010),diseq(grid_00001_00005,grid_00001_00010),w-literal(alldiffcol_00005_00010,0),diseq(grid_00006_00005,grid_00006_00010),diseq(grid_00003_00005,grid_00003_00010),diseq(grid_00008_00005,grid_00008_00010),diseq(grid_00010_00005,grid_00010_00010),diseq(grid_00005_00005,grid_00005_00010)})
+watched-or({diseq(grid_00002_00001,grid_00002_00006),diseq(grid_00007_00001,grid_00007_00006),diseq(grid_00004_00001,grid_00004_00006),diseq(grid_00009_00001,grid_00009_00006),diseq(grid_00001_00001,grid_00001_00006),diseq(grid_00006_00001,grid_00006_00006),diseq(grid_00003_00001,grid_00003_00006),w-literal(alldiffcol_00006_00001,0),diseq(grid_00008_00001,grid_00008_00006),diseq(grid_00010_00001,grid_00010_00006),diseq(grid_00005_00001,grid_00005_00006)})
+watched-or({diseq(grid_00002_00002,grid_00002_00006),diseq(grid_00007_00002,grid_00007_00006),diseq(grid_00004_00002,grid_00004_00006),diseq(grid_00009_00002,grid_00009_00006),diseq(grid_00001_00002,grid_00001_00006),diseq(grid_00006_00002,grid_00006_00006),diseq(grid_00003_00002,grid_00003_00006),w-literal(alldiffcol_00006_00002,0),diseq(grid_00008_00002,grid_00008_00006),diseq(grid_00010_00002,grid_00010_00006),diseq(grid_00005_00002,grid_00005_00006)})
+watched-or({diseq(grid_00002_00003,grid_00002_00006),diseq(grid_00007_00003,grid_00007_00006),diseq(grid_00004_00003,grid_00004_00006),diseq(grid_00009_00003,grid_00009_00006),diseq(grid_00001_00003,grid_00001_00006),diseq(grid_00006_00003,grid_00006_00006),diseq(grid_00003_00003,grid_00003_00006),w-literal(alldiffcol_00006_00003,0),diseq(grid_00008_00003,grid_00008_00006),diseq(grid_00010_00003,grid_00010_00006),diseq(grid_00005_00003,grid_00005_00006)})
+watched-or({diseq(grid_00002_00004,grid_00002_00006),diseq(grid_00007_00004,grid_00007_00006),diseq(grid_00004_00004,grid_00004_00006),diseq(grid_00009_00004,grid_00009_00006),diseq(grid_00001_00004,grid_00001_00006),diseq(grid_00006_00004,grid_00006_00006),diseq(grid_00003_00004,grid_00003_00006),w-literal(alldiffcol_00006_00004,0),diseq(grid_00008_00004,grid_00008_00006),diseq(grid_00010_00004,grid_00010_00006),diseq(grid_00005_00004,grid_00005_00006)})
+watched-or({diseq(grid_00002_00005,grid_00002_00006),diseq(grid_00007_00005,grid_00007_00006),diseq(grid_00004_00005,grid_00004_00006),diseq(grid_00009_00005,grid_00009_00006),diseq(grid_00001_00005,grid_00001_00006),diseq(grid_00006_00005,grid_00006_00006),diseq(grid_00003_00005,grid_00003_00006),w-literal(alldiffcol_00006_00005,0),diseq(grid_00008_00005,grid_00008_00006),diseq(grid_00010_00005,grid_00010_00006),diseq(grid_00005_00005,grid_00005_00006)})
+watched-or({diseq(grid_00002_00006,grid_00002_00007),diseq(grid_00007_00006,grid_00007_00007),diseq(grid_00004_00006,grid_00004_00007),diseq(grid_00009_00006,grid_00009_00007),diseq(grid_00001_00006,grid_00001_00007),diseq(grid_00006_00006,grid_00006_00007),diseq(grid_00003_00006,grid_00003_00007),w-literal(alldiffcol_00006_00007,0),diseq(grid_00008_00006,grid_00008_00007),diseq(grid_00010_00006,grid_00010_00007),diseq(grid_00005_00006,grid_00005_00007)})
+watched-or({diseq(grid_00002_00006,grid_00002_00008),diseq(grid_00007_00006,grid_00007_00008),diseq(grid_00004_00006,grid_00004_00008),diseq(grid_00009_00006,grid_00009_00008),diseq(grid_00001_00006,grid_00001_00008),diseq(grid_00006_00006,grid_00006_00008),diseq(grid_00003_00006,grid_00003_00008),w-literal(alldiffcol_00006_00008,0),diseq(grid_00008_00006,grid_00008_00008),diseq(grid_00010_00006,grid_00010_00008),diseq(grid_00005_00006,grid_00005_00008)})
+watched-or({diseq(grid_00002_00006,grid_00002_00009),diseq(grid_00007_00006,grid_00007_00009),diseq(grid_00004_00006,grid_00004_00009),diseq(grid_00009_00006,grid_00009_00009),diseq(grid_00001_00006,grid_00001_00009),diseq(grid_00006_00006,grid_00006_00009),diseq(grid_00003_00006,grid_00003_00009),w-literal(alldiffcol_00006_00009,0),diseq(grid_00008_00006,grid_00008_00009),diseq(grid_00010_00006,grid_00010_00009),diseq(grid_00005_00006,grid_00005_00009)})
+watched-or({diseq(grid_00002_00006,grid_00002_00010),diseq(grid_00007_00006,grid_00007_00010),diseq(grid_00004_00006,grid_00004_00010),diseq(grid_00009_00006,grid_00009_00010),diseq(grid_00001_00006,grid_00001_00010),diseq(grid_00006_00006,grid_00006_00010),diseq(grid_00003_00006,grid_00003_00010),w-literal(alldiffcol_00006_00010,0),diseq(grid_00008_00006,grid_00008_00010),diseq(grid_00010_00006,grid_00010_00010),diseq(grid_00005_00006,grid_00005_00010)})
+watched-or({diseq(grid_00002_00001,grid_00002_00007),diseq(grid_00007_00001,grid_00007_00007),diseq(grid_00004_00001,grid_00004_00007),diseq(grid_00009_00001,grid_00009_00007),diseq(grid_00001_00001,grid_00001_00007),diseq(grid_00006_00001,grid_00006_00007),diseq(grid_00003_00001,grid_00003_00007),diseq(grid_00008_00001,grid_00008_00007),diseq(grid_00010_00001,grid_00010_00007),w-literal(alldiffcol_00007_00001,0),diseq(grid_00005_00001,grid_00005_00007)})
+watched-or({diseq(grid_00002_00002,grid_00002_00007),diseq(grid_00007_00002,grid_00007_00007),diseq(grid_00004_00002,grid_00004_00007),diseq(grid_00009_00002,grid_00009_00007),diseq(grid_00001_00002,grid_00001_00007),diseq(grid_00006_00002,grid_00006_00007),diseq(grid_00003_00002,grid_00003_00007),diseq(grid_00008_00002,grid_00008_00007),diseq(grid_00010_00002,grid_00010_00007),w-literal(alldiffcol_00007_00002,0),diseq(grid_00005_00002,grid_00005_00007)})
+watched-or({diseq(grid_00002_00003,grid_00002_00007),diseq(grid_00007_00003,grid_00007_00007),diseq(grid_00004_00003,grid_00004_00007),diseq(grid_00009_00003,grid_00009_00007),diseq(grid_00001_00003,grid_00001_00007),diseq(grid_00006_00003,grid_00006_00007),diseq(grid_00003_00003,grid_00003_00007),diseq(grid_00008_00003,grid_00008_00007),diseq(grid_00010_00003,grid_00010_00007),w-literal(alldiffcol_00007_00003,0),diseq(grid_00005_00003,grid_00005_00007)})
+watched-or({diseq(grid_00002_00004,grid_00002_00007),diseq(grid_00007_00004,grid_00007_00007),diseq(grid_00004_00004,grid_00004_00007),diseq(grid_00009_00004,grid_00009_00007),diseq(grid_00001_00004,grid_00001_00007),diseq(grid_00006_00004,grid_00006_00007),diseq(grid_00003_00004,grid_00003_00007),diseq(grid_00008_00004,grid_00008_00007),diseq(grid_00010_00004,grid_00010_00007),w-literal(alldiffcol_00007_00004,0),diseq(grid_00005_00004,grid_00005_00007)})
+watched-or({diseq(grid_00002_00005,grid_00002_00007),diseq(grid_00007_00005,grid_00007_00007),diseq(grid_00004_00005,grid_00004_00007),diseq(grid_00009_00005,grid_00009_00007),diseq(grid_00001_00005,grid_00001_00007),diseq(grid_00006_00005,grid_00006_00007),diseq(grid_00003_00005,grid_00003_00007),diseq(grid_00008_00005,grid_00008_00007),diseq(grid_00010_00005,grid_00010_00007),w-literal(alldiffcol_00007_00005,0),diseq(grid_00005_00005,grid_00005_00007)})
+watched-or({diseq(grid_00002_00006,grid_00002_00007),diseq(grid_00007_00006,grid_00007_00007),diseq(grid_00004_00006,grid_00004_00007),diseq(grid_00009_00006,grid_00009_00007),diseq(grid_00001_00006,grid_00001_00007),diseq(grid_00006_00006,grid_00006_00007),diseq(grid_00003_00006,grid_00003_00007),diseq(grid_00008_00006,grid_00008_00007),diseq(grid_00010_00006,grid_00010_00007),w-literal(alldiffcol_00007_00006,0),diseq(grid_00005_00006,grid_00005_00007)})
+watched-or({diseq(grid_00002_00007,grid_00002_00008),diseq(grid_00007_00007,grid_00007_00008),diseq(grid_00004_00007,grid_00004_00008),diseq(grid_00009_00007,grid_00009_00008),diseq(grid_00001_00007,grid_00001_00008),diseq(grid_00006_00007,grid_00006_00008),diseq(grid_00003_00007,grid_00003_00008),diseq(grid_00008_00007,grid_00008_00008),diseq(grid_00010_00007,grid_00010_00008),w-literal(alldiffcol_00007_00008,0),diseq(grid_00005_00007,grid_00005_00008)})
+watched-or({diseq(grid_00002_00007,grid_00002_00009),diseq(grid_00007_00007,grid_00007_00009),diseq(grid_00004_00007,grid_00004_00009),diseq(grid_00009_00007,grid_00009_00009),diseq(grid_00001_00007,grid_00001_00009),diseq(grid_00006_00007,grid_00006_00009),diseq(grid_00003_00007,grid_00003_00009),diseq(grid_00008_00007,grid_00008_00009),diseq(grid_00010_00007,grid_00010_00009),w-literal(alldiffcol_00007_00009,0),diseq(grid_00005_00007,grid_00005_00009)})
+watched-or({diseq(grid_00002_00007,grid_00002_00010),diseq(grid_00007_00007,grid_00007_00010),diseq(grid_00004_00007,grid_00004_00010),diseq(grid_00009_00007,grid_00009_00010),diseq(grid_00001_00007,grid_00001_00010),diseq(grid_00006_00007,grid_00006_00010),diseq(grid_00003_00007,grid_00003_00010),diseq(grid_00008_00007,grid_00008_00010),diseq(grid_00010_00007,grid_00010_00010),w-literal(alldiffcol_00007_00010,0),diseq(grid_00005_00007,grid_00005_00010)})
+watched-or({diseq(grid_00002_00001,grid_00002_00008),w-literal(alldiffcol_00008_00001,0),diseq(grid_00007_00001,grid_00007_00008),diseq(grid_00004_00001,grid_00004_00008),diseq(grid_00009_00001,grid_00009_00008),diseq(grid_00001_00001,grid_00001_00008),diseq(grid_00006_00001,grid_00006_00008),diseq(grid_00003_00001,grid_00003_00008),diseq(grid_00008_00001,grid_00008_00008),diseq(grid_00010_00001,grid_00010_00008),diseq(grid_00005_00001,grid_00005_00008)})
+watched-or({diseq(grid_00002_00002,grid_00002_00008),w-literal(alldiffcol_00008_00002,0),diseq(grid_00007_00002,grid_00007_00008),diseq(grid_00004_00002,grid_00004_00008),diseq(grid_00009_00002,grid_00009_00008),diseq(grid_00001_00002,grid_00001_00008),diseq(grid_00006_00002,grid_00006_00008),diseq(grid_00003_00002,grid_00003_00008),diseq(grid_00008_00002,grid_00008_00008),diseq(grid_00010_00002,grid_00010_00008),diseq(grid_00005_00002,grid_00005_00008)})
+watched-or({diseq(grid_00002_00003,grid_00002_00008),w-literal(alldiffcol_00008_00003,0),diseq(grid_00007_00003,grid_00007_00008),diseq(grid_00004_00003,grid_00004_00008),diseq(grid_00009_00003,grid_00009_00008),diseq(grid_00001_00003,grid_00001_00008),diseq(grid_00006_00003,grid_00006_00008),diseq(grid_00003_00003,grid_00003_00008),diseq(grid_00008_00003,grid_00008_00008),diseq(grid_00010_00003,grid_00010_00008),diseq(grid_00005_00003,grid_00005_00008)})
+watched-or({diseq(grid_00002_00004,grid_00002_00008),w-literal(alldiffcol_00008_00004,0),diseq(grid_00007_00004,grid_00007_00008),diseq(grid_00004_00004,grid_00004_00008),diseq(grid_00009_00004,grid_00009_00008),diseq(grid_00001_00004,grid_00001_00008),diseq(grid_00006_00004,grid_00006_00008),diseq(grid_00003_00004,grid_00003_00008),diseq(grid_00008_00004,grid_00008_00008),diseq(grid_00010_00004,grid_00010_00008),diseq(grid_00005_00004,grid_00005_00008)})
+watched-or({diseq(grid_00002_00005,grid_00002_00008),w-literal(alldiffcol_00008_00005,0),diseq(grid_00007_00005,grid_00007_00008),diseq(grid_00004_00005,grid_00004_00008),diseq(grid_00009_00005,grid_00009_00008),diseq(grid_00001_00005,grid_00001_00008),diseq(grid_00006_00005,grid_00006_00008),diseq(grid_00003_00005,grid_00003_00008),diseq(grid_00008_00005,grid_00008_00008),diseq(grid_00010_00005,grid_00010_00008),diseq(grid_00005_00005,grid_00005_00008)})
+watched-or({diseq(grid_00002_00006,grid_00002_00008),w-literal(alldiffcol_00008_00006,0),diseq(grid_00007_00006,grid_00007_00008),diseq(grid_00004_00006,grid_00004_00008),diseq(grid_00009_00006,grid_00009_00008),diseq(grid_00001_00006,grid_00001_00008),diseq(grid_00006_00006,grid_00006_00008),diseq(grid_00003_00006,grid_00003_00008),diseq(grid_00008_00006,grid_00008_00008),diseq(grid_00010_00006,grid_00010_00008),diseq(grid_00005_00006,grid_00005_00008)})
+watched-or({diseq(grid_00002_00007,grid_00002_00008),w-literal(alldiffcol_00008_00007,0),diseq(grid_00007_00007,grid_00007_00008),diseq(grid_00004_00007,grid_00004_00008),diseq(grid_00009_00007,grid_00009_00008),diseq(grid_00001_00007,grid_00001_00008),diseq(grid_00006_00007,grid_00006_00008),diseq(grid_00003_00007,grid_00003_00008),diseq(grid_00008_00007,grid_00008_00008),diseq(grid_00010_00007,grid_00010_00008),diseq(grid_00005_00007,grid_00005_00008)})
+watched-or({diseq(grid_00002_00008,grid_00002_00009),w-literal(alldiffcol_00008_00009,0),diseq(grid_00007_00008,grid_00007_00009),diseq(grid_00004_00008,grid_00004_00009),diseq(grid_00009_00008,grid_00009_00009),diseq(grid_00001_00008,grid_00001_00009),diseq(grid_00006_00008,grid_00006_00009),diseq(grid_00003_00008,grid_00003_00009),diseq(grid_00008_00008,grid_00008_00009),diseq(grid_00010_00008,grid_00010_00009),diseq(grid_00005_00008,grid_00005_00009)})
+watched-or({diseq(grid_00002_00008,grid_00002_00010),w-literal(alldiffcol_00008_00010,0),diseq(grid_00007_00008,grid_00007_00010),diseq(grid_00004_00008,grid_00004_00010),diseq(grid_00009_00008,grid_00009_00010),diseq(grid_00001_00008,grid_00001_00010),diseq(grid_00006_00008,grid_00006_00010),diseq(grid_00003_00008,grid_00003_00010),diseq(grid_00008_00008,grid_00008_00010),diseq(grid_00010_00008,grid_00010_00010),diseq(grid_00005_00008,grid_00005_00010)})
+watched-or({diseq(grid_00002_00001,grid_00002_00009),diseq(grid_00007_00001,grid_00007_00009),diseq(grid_00004_00001,grid_00004_00009),w-literal(alldiffcol_00009_00001,0),diseq(grid_00009_00001,grid_00009_00009),diseq(grid_00001_00001,grid_00001_00009),diseq(grid_00006_00001,grid_00006_00009),diseq(grid_00003_00001,grid_00003_00009),diseq(grid_00008_00001,grid_00008_00009),diseq(grid_00010_00001,grid_00010_00009),diseq(grid_00005_00001,grid_00005_00009)})
+watched-or({diseq(grid_00002_00002,grid_00002_00009),diseq(grid_00007_00002,grid_00007_00009),diseq(grid_00004_00002,grid_00004_00009),w-literal(alldiffcol_00009_00002,0),diseq(grid_00009_00002,grid_00009_00009),diseq(grid_00001_00002,grid_00001_00009),diseq(grid_00006_00002,grid_00006_00009),diseq(grid_00003_00002,grid_00003_00009),diseq(grid_00008_00002,grid_00008_00009),diseq(grid_00010_00002,grid_00010_00009),diseq(grid_00005_00002,grid_00005_00009)})
+watched-or({diseq(grid_00002_00003,grid_00002_00009),diseq(grid_00007_00003,grid_00007_00009),diseq(grid_00004_00003,grid_00004_00009),w-literal(alldiffcol_00009_00003,0),diseq(grid_00009_00003,grid_00009_00009),diseq(grid_00001_00003,grid_00001_00009),diseq(grid_00006_00003,grid_00006_00009),diseq(grid_00003_00003,grid_00003_00009),diseq(grid_00008_00003,grid_00008_00009),diseq(grid_00010_00003,grid_00010_00009),diseq(grid_00005_00003,grid_00005_00009)})
+watched-or({diseq(grid_00002_00004,grid_00002_00009),diseq(grid_00007_00004,grid_00007_00009),diseq(grid_00004_00004,grid_00004_00009),w-literal(alldiffcol_00009_00004,0),diseq(grid_00009_00004,grid_00009_00009),diseq(grid_00001_00004,grid_00001_00009),diseq(grid_00006_00004,grid_00006_00009),diseq(grid_00003_00004,grid_00003_00009),diseq(grid_00008_00004,grid_00008_00009),diseq(grid_00010_00004,grid_00010_00009),diseq(grid_00005_00004,grid_00005_00009)})
+watched-or({diseq(grid_00002_00005,grid_00002_00009),diseq(grid_00007_00005,grid_00007_00009),diseq(grid_00004_00005,grid_00004_00009),w-literal(alldiffcol_00009_00005,0),diseq(grid_00009_00005,grid_00009_00009),diseq(grid_00001_00005,grid_00001_00009),diseq(grid_00006_00005,grid_00006_00009),diseq(grid_00003_00005,grid_00003_00009),diseq(grid_00008_00005,grid_00008_00009),diseq(grid_00010_00005,grid_00010_00009),diseq(grid_00005_00005,grid_00005_00009)})
+watched-or({diseq(grid_00002_00006,grid_00002_00009),diseq(grid_00007_00006,grid_00007_00009),diseq(grid_00004_00006,grid_00004_00009),w-literal(alldiffcol_00009_00006,0),diseq(grid_00009_00006,grid_00009_00009),diseq(grid_00001_00006,grid_00001_00009),diseq(grid_00006_00006,grid_00006_00009),diseq(grid_00003_00006,grid_00003_00009),diseq(grid_00008_00006,grid_00008_00009),diseq(grid_00010_00006,grid_00010_00009),diseq(grid_00005_00006,grid_00005_00009)})
+watched-or({diseq(grid_00002_00007,grid_00002_00009),diseq(grid_00007_00007,grid_00007_00009),diseq(grid_00004_00007,grid_00004_00009),w-literal(alldiffcol_00009_00007,0),diseq(grid_00009_00007,grid_00009_00009),diseq(grid_00001_00007,grid_00001_00009),diseq(grid_00006_00007,grid_00006_00009),diseq(grid_00003_00007,grid_00003_00009),diseq(grid_00008_00007,grid_00008_00009),diseq(grid_00010_00007,grid_00010_00009),diseq(grid_00005_00007,grid_00005_00009)})
+watched-or({diseq(grid_00002_00008,grid_00002_00009),diseq(grid_00007_00008,grid_00007_00009),diseq(grid_00004_00008,grid_00004_00009),w-literal(alldiffcol_00009_00008,0),diseq(grid_00009_00008,grid_00009_00009),diseq(grid_00001_00008,grid_00001_00009),diseq(grid_00006_00008,grid_00006_00009),diseq(grid_00003_00008,grid_00003_00009),diseq(grid_00008_00008,grid_00008_00009),diseq(grid_00010_00008,grid_00010_00009),diseq(grid_00005_00008,grid_00005_00009)})
+watched-or({diseq(grid_00002_00009,grid_00002_00010),diseq(grid_00007_00009,grid_00007_00010),diseq(grid_00004_00009,grid_00004_00010),w-literal(alldiffcol_00009_00010,0),diseq(grid_00009_00009,grid_00009_00010),diseq(grid_00001_00009,grid_00001_00010),diseq(grid_00006_00009,grid_00006_00010),diseq(grid_00003_00009,grid_00003_00010),diseq(grid_00008_00009,grid_00008_00010),diseq(grid_00010_00009,grid_00010_00010),diseq(grid_00005_00009,grid_00005_00010)})
+watched-or({diseq(grid_00002_00001,grid_00002_00010),diseq(grid_00007_00001,grid_00007_00010),diseq(grid_00004_00001,grid_00004_00010),diseq(grid_00009_00001,grid_00009_00010),diseq(grid_00001_00001,grid_00001_00010),diseq(grid_00006_00001,grid_00006_00010),diseq(grid_00003_00001,grid_00003_00010),diseq(grid_00008_00001,grid_00008_00010),diseq(grid_00010_00001,grid_00010_00010),w-literal(alldiffcol_00010_00001,0),diseq(grid_00005_00001,grid_00005_00010)})
+watched-or({diseq(grid_00002_00002,grid_00002_00010),diseq(grid_00007_00002,grid_00007_00010),diseq(grid_00004_00002,grid_00004_00010),diseq(grid_00009_00002,grid_00009_00010),diseq(grid_00001_00002,grid_00001_00010),diseq(grid_00006_00002,grid_00006_00010),diseq(grid_00003_00002,grid_00003_00010),diseq(grid_00008_00002,grid_00008_00010),diseq(grid_00010_00002,grid_00010_00010),w-literal(alldiffcol_00010_00002,0),diseq(grid_00005_00002,grid_00005_00010)})
+watched-or({diseq(grid_00002_00003,grid_00002_00010),diseq(grid_00007_00003,grid_00007_00010),diseq(grid_00004_00003,grid_00004_00010),diseq(grid_00009_00003,grid_00009_00010),diseq(grid_00001_00003,grid_00001_00010),diseq(grid_00006_00003,grid_00006_00010),diseq(grid_00003_00003,grid_00003_00010),diseq(grid_00008_00003,grid_00008_00010),diseq(grid_00010_00003,grid_00010_00010),w-literal(alldiffcol_00010_00003,0),diseq(grid_00005_00003,grid_00005_00010)})
+watched-or({diseq(grid_00002_00004,grid_00002_00010),diseq(grid_00007_00004,grid_00007_00010),diseq(grid_00004_00004,grid_00004_00010),diseq(grid_00009_00004,grid_00009_00010),diseq(grid_00001_00004,grid_00001_00010),diseq(grid_00006_00004,grid_00006_00010),diseq(grid_00003_00004,grid_00003_00010),diseq(grid_00008_00004,grid_00008_00010),diseq(grid_00010_00004,grid_00010_00010),w-literal(alldiffcol_00010_00004,0),diseq(grid_00005_00004,grid_00005_00010)})
+watched-or({diseq(grid_00002_00005,grid_00002_00010),diseq(grid_00007_00005,grid_00007_00010),diseq(grid_00004_00005,grid_00004_00010),diseq(grid_00009_00005,grid_00009_00010),diseq(grid_00001_00005,grid_00001_00010),diseq(grid_00006_00005,grid_00006_00010),diseq(grid_00003_00005,grid_00003_00010),diseq(grid_00008_00005,grid_00008_00010),diseq(grid_00010_00005,grid_00010_00010),w-literal(alldiffcol_00010_00005,0),diseq(grid_00005_00005,grid_00005_00010)})
+watched-or({diseq(grid_00002_00006,grid_00002_00010),diseq(grid_00007_00006,grid_00007_00010),diseq(grid_00004_00006,grid_00004_00010),diseq(grid_00009_00006,grid_00009_00010),diseq(grid_00001_00006,grid_00001_00010),diseq(grid_00006_00006,grid_00006_00010),diseq(grid_00003_00006,grid_00003_00010),diseq(grid_00008_00006,grid_00008_00010),diseq(grid_00010_00006,grid_00010_00010),w-literal(alldiffcol_00010_00006,0),diseq(grid_00005_00006,grid_00005_00010)})
+watched-or({diseq(grid_00002_00007,grid_00002_00010),diseq(grid_00007_00007,grid_00007_00010),diseq(grid_00004_00007,grid_00004_00010),diseq(grid_00009_00007,grid_00009_00010),diseq(grid_00001_00007,grid_00001_00010),diseq(grid_00006_00007,grid_00006_00010),diseq(grid_00003_00007,grid_00003_00010),diseq(grid_00008_00007,grid_00008_00010),diseq(grid_00010_00007,grid_00010_00010),w-literal(alldiffcol_00010_00007,0),diseq(grid_00005_00007,grid_00005_00010)})
+watched-or({diseq(grid_00002_00008,grid_00002_00010),diseq(grid_00007_00008,grid_00007_00010),diseq(grid_00004_00008,grid_00004_00010),diseq(grid_00009_00008,grid_00009_00010),diseq(grid_00001_00008,grid_00001_00010),diseq(grid_00006_00008,grid_00006_00010),diseq(grid_00003_00008,grid_00003_00010),diseq(grid_00008_00008,grid_00008_00010),diseq(grid_00010_00008,grid_00010_00010),w-literal(alldiffcol_00010_00008,0),diseq(grid_00005_00008,grid_00005_00010)})
+watched-or({diseq(grid_00002_00009,grid_00002_00010),diseq(grid_00007_00009,grid_00007_00010),diseq(grid_00004_00009,grid_00004_00010),diseq(grid_00009_00009,grid_00009_00010),diseq(grid_00001_00009,grid_00001_00010),diseq(grid_00006_00009,grid_00006_00010),diseq(grid_00003_00009,grid_00003_00010),diseq(grid_00008_00009,grid_00008_00010),diseq(grid_00010_00009,grid_00010_00010),w-literal(alldiffcol_00010_00009,0),diseq(grid_00005_00009,grid_00005_00010)})
+**EOF**
