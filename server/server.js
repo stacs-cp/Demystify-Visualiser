@@ -42,11 +42,15 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var path_1 = __importDefault(require("path"));
 var express_1 = __importDefault(require("express"));
 var fs = require("fs");
+var spawn = require('child_process').spawn;
 var config = require("./config.js");
 var app = express_1.default();
 app.use(express_1.default.json());
 app.use(config.baseUrl, express_1.default.static(path_1.default.join(__dirname, "..", "client", "build")));
 app.use(config.baseUrl, express_1.default.static(path_1.default.join(__dirname, "..", "client", "public")));
+var uint8arrayToString = function (data) {
+    return String.fromCharCode.apply(null, data);
+};
 var indexRouter = express_1.default.Router();
 var examplesFolder = "./examples";
 indexRouter.get("/examples", function (inRequest, inResponse) { return __awaiter(void 0, void 0, void 0, function () {
@@ -83,9 +87,37 @@ indexRouter.get("/examples/:name", function (inRequest, inResponse) { return __a
     });
 }); });
 indexRouter.post("/run", function (inRequest, inResponse) { return __awaiter(void 0, void 0, void 0, function () {
-    return __generator(this, function (_a) {
-        console.log('Got body:', inRequest.body);
-        inResponse.sendStatus(200);
+    var _a, eprime, eprimename, param, paramname;
+    return __generator(this, function (_b) {
+        console.log("POST /run (1)");
+        _a = inRequest.body, eprime = _a.eprime, eprimename = _a.eprimename, param = _a.param, paramname = _a.paramname;
+        fs.writeFile("./uploads/" + eprimename, eprime, function (err) {
+            if (err)
+                return inResponse.sendStatus(500);
+            fs.writeFile("./uploads/" + paramname, param, function (err) {
+                if (err)
+                    return inResponse.sendStatus(500);
+                var process = spawn("python3", [
+                    path_1.default.join(config.demystifyPath, "demystify"),
+                    "--eprime",
+                    "./uploads/" + eprimename,
+                    "--eprimeparam",
+                    "./uploads/" + paramname,
+                    "--json",
+                    "demystifyoutput"
+                ]);
+                process.stdout.on('data', function (data) {
+                    console.log(uint8arrayToString(data));
+                });
+                process.stderr.on('data', function (data) {
+                    console.log(uint8arrayToString(data));
+                });
+                process.on('close', function (code) {
+                    var data = fs.readFileSync("./demystifyoutput.json", "utf8");
+                    inResponse.json(JSON.parse(data));
+                });
+            });
+        });
         return [2 /*return*/];
     });
 }); });

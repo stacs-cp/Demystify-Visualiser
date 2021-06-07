@@ -10,12 +10,14 @@ async function getExampleData(exampleName) {
     return response.data;
 }
 
-async function runDemystifyOnInput(eprime, param) {
+async function runDemystifyOnInput(eprimename, eprime, paramname, param) {
     const response = await axios.post("run", {
+        eprimename: eprimename,
         eprime: eprime,
+        paramname: paramname,
         param: param
     })
-    return
+    return response.data
 }
 
 export { getExamples, getExampleData, runDemystifyOnInput};
