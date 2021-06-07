@@ -13,7 +13,9 @@ class MainMenu extends React.Component {
             isLoadingExamples: true,
             examples: [],
             eprime: null,
+            eprimename: null,
             param: null,
+            paramname: null,
             error: "",
             isRunning: false,
         };
@@ -33,7 +35,9 @@ class MainMenu extends React.Component {
         }
 
         this.setState({isRunning: true});
-        await API.runDemystifyOnInput(this.state.eprime, this.state.param);
+        const {eprimename, eprime, paramname, param} = this.state;
+        const result = await API.runDemystifyOnInput(eprimename, eprime, paramname, param);
+        this.props.setInput(result);
     }
 
     setError(message) {
@@ -123,7 +127,7 @@ class MainMenu extends React.Component {
                                     <p className="mx-4">Puzzle description (.eprime): </p>
                                     <FileUploader
                                         disabled={this.state.isRunning}
-                                        onUpload={(text) => this.setState({eprime: text})}
+                                        onUpload={(text, name) => this.setState({eprime: text, eprimename: name})}
                                         onError={() => this.setError(
                                         "Could not read the input file. Ensure it is a valid .eprime file.")}
                                     />
@@ -133,13 +137,26 @@ class MainMenu extends React.Component {
                                     <p className="mx-4">Puzzle instance (.param): </p>
                                     <FileUploader 
                                         disabled={this.state.isRunning}
-                                        onUpload={(text) => this.setState({param: text})}
+                                        onUpload={(text, name) => this.setState({param: text, paramname: name})}
                                         onError={() => this.setError(
                                         "Could not read the input file. Ensure it is a valid .param file.")}
                                     />
                                 </Row>
                                 <Row>
-                                    <Button className="mx-4" variant="success" onClick={this.handleGo.bind(this)}>Go</Button>
+                                    <Button 
+                                        disabled={this.state.isRunning}
+                                        className="mx-4" 
+                                        variant="success" 
+                                        onClick={this.handleGo.bind(this)}>
+                                            Go
+                                    </Button>
+                                    {this.state.isRunning &&
+                                        <React.Fragment>
+                                            <Spinner animation="border" />
+                                            <p className="ml-4">Demystify is running... This may take some time to complete.</p>
+                                        </React.Fragment>
+                                        
+                                    }
                                 </Row>
                                 
                         </ListGroup.Item>
