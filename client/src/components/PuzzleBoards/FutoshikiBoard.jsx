@@ -36,7 +36,6 @@ class FutoshikiBoard extends React.Component {
                 }
             }
         }
-        console.log(rightLabels);
         return rightLabels;
     }
 

@@ -74,7 +74,6 @@ class KakuroBoard extends React.Component {
             }
         }
 
-        console.log(cornerNumbers)
         return cornerNumbers
     }
     render() {

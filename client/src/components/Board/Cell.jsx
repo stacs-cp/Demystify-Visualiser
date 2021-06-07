@@ -62,7 +62,6 @@ class Cell extends React.Component {
     getFontSize(scale) {
         const { literalSize } = this.props;
         if (literalSize) {
-            console.log((literalSize * scale).toString() + "vw")
             return (literalSize * scale).toString() + "vw"
         } else {
             return scale.toString() + "vw"

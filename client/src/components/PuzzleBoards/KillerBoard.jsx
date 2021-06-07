@@ -69,8 +69,6 @@ class KillerBoard extends React.Component {
                     cornerNumbers[i].push({value: null, style: {top: "0%", left: "0%"}})
             }
         }
-
-        console.log(cornerNumbers)
         return cornerNumbers
     }
     

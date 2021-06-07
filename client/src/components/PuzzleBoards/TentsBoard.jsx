@@ -50,7 +50,6 @@ class TentsBoard extends React.Component {
     
 
     render() {
-        console.log("here")
         return (<Board
                 highlight={this.props.highlight} 
                 key={this.props.key} 
