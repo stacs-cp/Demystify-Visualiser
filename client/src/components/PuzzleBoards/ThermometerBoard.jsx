@@ -27,27 +27,27 @@ class ThermometerBoard extends React.Component {
 
                 if(grid[i][j] % 10 === 1) {
                     if(north === thermNum) {
-                        backgrounds[i].push("url(images/themHeadN.png")
+                        backgrounds[i].push("url(images/themHeadN.png)")
                     } else if(west === thermNum) {
-                        backgrounds[i].push("url(images/themHeadW.png")
+                        backgrounds[i].push("url(images/themHeadW.png)")
                     } else if(east === thermNum) {
-                        backgrounds[i].push("url(images/themHeadE.png")
+                        backgrounds[i].push("url(images/themHeadE.png)")
                     } else if(south === thermNum) {
-                        backgrounds[i].push("url(images/themHeadS.png")
+                        backgrounds[i].push("url(images/themHeadS.png)")
                     }
                 } else {
                     if(north === thermNum && south !== thermNum) {
-                        backgrounds[i].push("url(images/themTipS.png")    
+                        backgrounds[i].push("url(images/themTipS.png)")    
                     } else if(south === thermNum && north !== thermNum) {
-                        backgrounds[i].push("url(images/themTipN.png")
+                        backgrounds[i].push("url(images/themTipN.png)")
                     } else if(north === thermNum && south === thermNum) {
-                        backgrounds[i].push("url(images/themV.png")
+                        backgrounds[i].push("url(images/themV.png)")
                     } else if(east === thermNum && west !== thermNum) {
-                        backgrounds[i].push("url(images/themTipW.png")    
+                        backgrounds[i].push("url(images/themTipW.png)")    
                     } else if(west === thermNum && east !== thermNum) {
-                        backgrounds[i].push("url(images/themTipE.png")
+                        backgrounds[i].push("url(images/themTipE.png)")
                     } else if(east === thermNum && west === thermNum) {
-                        backgrounds[i].push("url(images/themH.png")
+                        backgrounds[i].push("url(images/themH.png)")
                     }
                 }
                 
@@ -60,9 +60,9 @@ class ThermometerBoard extends React.Component {
     getCellBorders() {
         let borders = []
 
-        for(let i = 0; i < 9; i++) {
+        for(let i = 0; i < this.state.grid.length; i++) {
             borders[i] = []
-            for(let j = 0; j < 9; j++) {
+            for(let j = 0; j < this.state.grid[0].length; j++) {
                 borders[i].push(
                     {
                         borderTop: i===0 ? "2px solid black" : "2px solid lightgray",

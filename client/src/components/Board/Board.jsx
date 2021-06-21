@@ -60,7 +60,7 @@ class Board extends React.Component {
                             <SquareCol />
                             {colsums.map((sum, j) =>
                                 <SquareCol>
-                                    <h3 style={{ fontSize: "3vw", color: "gray" }}>
+                                    <h3 style={{ fontSize: "2vw", color: "gray" }}>
                                         {sum}
                                     </h3>
                                 </SquareCol>)}
@@ -77,7 +77,7 @@ class Board extends React.Component {
                             {rowsums &&
                                 // Extra column for row sums if ncessary.
                                 <SquareCol>
-                                    <h3 style={{ fontSize: "3vw", color: "gray" }}>
+                                    <h3 style={{ fontSize: "2vw", color: "gray" }}>
                                         {rowsums[i]}
                                     </h3>
                                 </SquareCol>}
@@ -111,7 +111,7 @@ class Board extends React.Component {
                             {endrowsums &&
                                 // Extra column for end row sums if ncessary.
                                 <SquareCol>
-                                    <h3 style={{ fontSize: "3vw", color: "gray" }}>
+                                    <h3 style={{ fontSize: "2vw", color: "gray" }}>
                                         {endrowsums[i]}
                                     </h3>
                                 </SquareCol>}
@@ -124,7 +124,7 @@ class Board extends React.Component {
                             <SquareCol />
                             {endcolsums.map((sum, j) =>
                                 <SquareCol>
-                                    <h3 style={{ fontSize: "3vw", color: "gray" }}>
+                                    <h3 style={{ fontSize: "2vw", color: "gray" }}>
                                         {sum}
                                     </h3>
                                 </SquareCol>)}
