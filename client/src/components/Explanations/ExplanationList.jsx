@@ -9,7 +9,7 @@ import Explanation from './Explanation';
 class ExplanationList extends React.Component {
 
     render() {
-        const { simpleDeductions, deductions, otherChoices, smallestMUSSize} = this.props;
+        const { simpleDeductions, deduction, otherChoices, smallestMUSSize} = this.props;
         return (
             <React.Fragment>
                 <Card className="mt-3" >
@@ -40,7 +40,7 @@ class ExplanationList extends React.Component {
                                 </ListGroup>
                             </Accordion.Collapse>
                         </Accordion>
-                        : deductions &&
+                        : deduction &&
                         /* Otherwise we have an "interesting" deductions, 
                             so display the deductions with a list of reasons */
                         <React.Fragment>
@@ -50,11 +50,11 @@ class ExplanationList extends React.Component {
                             </Card.Header>
                             <Card.Body>
                                 <div className="mb-3">
-                                    <b >{deductions.decision}</b>
+                                    <b >{deduction.decision}</b>
                                 </div>
 
                                 <ListGroup style={{ maxHeight: "75vh", overflowY: "scroll" }}>
-                                    {deductions.reason.map((reason, i) =>
+                                    {deduction.reason.map((reason, i) =>
                                         <Explanation
                                             highlighted={this.props.highlighted.includes(i.toString())}
                                             reason={reason}

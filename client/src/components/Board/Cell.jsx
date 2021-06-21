@@ -46,27 +46,28 @@ class Cell extends React.Component {
         or taking the indexed cellBackground. */
     chooseBackground() {
 
-        
         const { cellContent, literalBackgrounds, cellBackground } = this.props;
         const { highlighted } = this.state;
+        let highlightBackground
 
         if (cellContent.cellRows.some(
             row => row.cellValues.some(
                 value => value.explanations.includes(
                     highlighted.toString())))) {
-            console.log("here")
-            return "linear-gradient(cornsilk, cornsilk)"
+            highlightBackground = "linear-gradient(cornsilk, cornsilk)"
+        } else {
+            highlightBackground = ""
         }
 
         const isSingleton = this.isSingleton();
         const singletonValue = this.getSingletonValue();
 
         if (literalBackgrounds && isSingleton) {
-            return literalBackgrounds[singletonValue.toString()]
+            return [literalBackgrounds[singletonValue.toString()], highlightBackground]
         } else if (cellBackground) {
-            return cellBackground;
+            return [cellBackground, highlightBackground]
         } else {
-            return null;
+            return [highlightBackground];
         }
     }
 

@@ -7,10 +7,11 @@ class TentsBoard extends React.Component {
         this.state = {
             x: this.props.params.x,
             y: this.props.params.y,
-            colsums: this.props.params.colsums,
-            rowsums: this.props.params.rowsums,
+            colsums: Object.values(this.props.params.colsums),
+            rowsums: Object.values(this.props.params.rowsums),
             treecount: this.props.params.treecount
         }
+        console.log(this.state)
     }
 
     getBackgrounds() {

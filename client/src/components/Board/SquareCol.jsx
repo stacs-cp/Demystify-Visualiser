@@ -7,7 +7,7 @@ import {Col} from 'react-bootstrap';
 class SquareCol extends React.Component {
     
     render() {
-
+        console.log(this.props)
         const borders = this.props.borders ? this.props.borders :
         {
             border: "2px solid lightgray",
@@ -16,9 +16,29 @@ class SquareCol extends React.Component {
         }
 
         const margin = this.props.margin ? this.props.margin : {}
+        
+        let background1 = null
+        let background2 = null
+
+        if (this.props.background) {
+            if (this.props.background.length > 1) {
+                background1 = this.props.background[0]
+                background2 = this.props.background[1]
+            } else {
+                background1 = this.props.background[0]
+            }
+        } else {
+            background1 = this.props.background
+        }
 
         return (
             <Col className="m-0 p-0" >
+                <div
+                    style={{
+                        backgroundImage: background2
+                    }}
+                
+                >
                 <div
                     style={{
                         ...borders,
@@ -26,7 +46,7 @@ class SquareCol extends React.Component {
                         display: "flex",
                         justifyContent: "center",
                         alignItems: "center",
-                        backgroundImage: this.props.background,
+                        backgroundImage: background1,
                         backgroundSize:"100% 100%",
                     }}
                 >   
@@ -86,6 +106,7 @@ class SquareCol extends React.Component {
                     </div>
                     
                     
+                </div>
                 </div>
             </Col >
         )

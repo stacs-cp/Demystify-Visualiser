@@ -122,7 +122,7 @@ class PuzzleStepper extends React.Component {
 
                             /* Only one of simpleDeductions or deductions should be defined. */
                             simpleDeductions={stepData.simpleDeductions}
-                            deductions={stepData.deductions}
+                            deduction={stepData.deduction}
 
                             highlighted={this.state.highlightedExplanations} 
 
