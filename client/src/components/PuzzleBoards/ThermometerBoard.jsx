@@ -5,9 +5,10 @@ class ThermometerBoard extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            colsums: this.props.params.colsums,
-            rowsums: this.props.params.rowsums,
-            grid: this.props.params.therms
+            colsums: Object.values(this.props.params.colsums),
+            rowsums: Object.values(this.props.params.rowsums),
+            grid: Object.values(this.props.params.therms)
+                    .map(o => Object.values(o))
         }
     }
 

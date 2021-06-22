@@ -39,7 +39,7 @@ class Literal extends React.Component {
                 (status === "positive") ? "bolder" : "normal",
             fontStyle:
                 (status === "involved") ? "italic" : "normal",
-            backgroundColor: this.state.highlighted ? "cornsilk" : null
+            //backgroundColor: this.state.highlighted ? "cornsilk" : null
         }}
             onMouseEnter={this.toggleHighlight.bind(this)} 
             onMouseLeave={this.toggleHighlight.bind(this)}

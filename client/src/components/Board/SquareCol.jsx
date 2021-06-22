@@ -37,7 +37,6 @@ class SquareCol extends React.Component {
                     style={{
                         backgroundImage: background2
                     }}
-                
                 >
                 <div
                     style={{
