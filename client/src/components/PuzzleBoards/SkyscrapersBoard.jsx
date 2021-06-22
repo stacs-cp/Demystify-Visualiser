@@ -6,10 +6,14 @@ class SkyscrapersBoard extends React.Component {
         super(props);
         this.state = {
             size: this.props.params.SIZE,
-            rowsums: this.props.params.CLUES[0].map(num => num === 0 ? null : num),
-            colsums: this.props.params.CLUES[1].map(num => num === 0 ? null : num),
-            endrowsums: this.props.params.CLUES[2].map(num => num === 0 ? null : num),
-            endcolsums: this.props.params.CLUES[3].map(num => num === 0 ? null : num),
+            rowsums: Object.values(this.props.params.CLUES["1"])
+                    .map(num => num === 0 ? null : num),
+            colsums: Object.values(this.props.params.CLUES["2"])
+                    .map(num => num === 0 ? null : num),
+            endrowsums: Object.values(this.props.params.CLUES["3"])
+                    .map(num => num === 0 ? null : num),
+            endcolsums: Object.values(this.props.params.CLUES["4"])
+                    .map(num => num === 0 ? null : num),
         }
     }
 
