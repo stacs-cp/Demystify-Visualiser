@@ -5,8 +5,9 @@ class KillerBoard extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            grid: this.props.params.grid,
-            hints: this.props.params.hints
+            grid: Object.values(this.props.params.grid)
+                .map(o => Object.values(o)),
+            hints: Object.values(this.props.params.hints)
         }
     }
 
