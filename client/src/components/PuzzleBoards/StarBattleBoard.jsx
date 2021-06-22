@@ -5,7 +5,8 @@ class KakuroBoard extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            grid: this.props.params.blocks,
+            grid: Object.values(this.props.params.blocks)
+                    .map(o => Object.values(o)),
             gridSize: this.props.params.grid,
         }
     }
