@@ -5,7 +5,8 @@ class FutoshikiBoard extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            lessThans: this.props.params.lt,
+            lessThans: Object.values(this.props.params.lt)
+                    .map(o => Object.values(o)),
             size: this.props.params.SIZE
         }
     }

@@ -7,9 +7,12 @@ class KakuroBoard extends React.Component {
         this.state = {
             x: this.props.params.x_max,
             y: this.props.params.y_max,
-            rowsums: this.props.params.horzsums,
-            colsums: this.props.params.vertsums,
-            blanks: this.props.params.blanks
+            rowsums: Object.values(this.props.params.horzsums).map(
+                o => Object.values(o)),
+            colsums: Object.values(this.props.params.vertsums).map(
+                o => Object.values(o)),
+            blanks:  Object.values(this.props.params.blanks).map(
+                o => Object.values(o))
         }
     }
 
