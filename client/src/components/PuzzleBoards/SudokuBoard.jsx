@@ -5,7 +5,8 @@ class SudokuBoard extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            grid: this.props.params.grid,
+            grid: Object.values(this.props.params.grid)
+            .map(o => Object.values(o)),
             hints: this.props.params.hints
         }
     }

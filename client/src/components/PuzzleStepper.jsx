@@ -13,6 +13,7 @@ import StarBattleBoard from './PuzzleBoards/StarBattleBoard';
 import FutoshikiBoard from './PuzzleBoards/FutoshikiBoard';
 import ThermometerBoard from './PuzzleBoards/ThermometerBoard';
 import SkyscrapersBoard from './PuzzleBoards/SkyscrapersBoard';
+import GaramBoard from './PuzzleBoards/GaramBoard';
 
 /**
  * Main puzzle visualiser with a board on the left and explanations on the right.
@@ -75,6 +76,8 @@ class PuzzleStepper extends React.Component {
                 return <ThermometerBoard {...boardProps}/>
             case "skyscrapers.eprime":
                 return <SkyscrapersBoard {...boardProps}/>
+            case "garam.eprime":
+                return <GaramBoard {...boardProps}/>
             default:
                 return <Board {...boardProps}/>
         }

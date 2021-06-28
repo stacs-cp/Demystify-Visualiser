@@ -1,6 +1,9 @@
 import React from 'react';
 import Board from '../Board/Board';
 
+/**
+ * TODO: This still needs to be implemented on the demystify side. 
+ */
 class KakurasuBoard extends React.Component {
     constructor(props) {
         super(props);

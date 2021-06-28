@@ -71,7 +71,8 @@ class SquareCol extends React.Component {
                         position: "absolute",
                         top: "35%",
                         right: "-5%",
-                        fontSize: "2vw"
+                        fontSize: "2vw",
+                        zIndex: "2",
                     }}>
                         {this.props.rightLabel}
                     </div>}
