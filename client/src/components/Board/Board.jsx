@@ -35,8 +35,12 @@ class Board extends React.Component {
             rowsums,
             endrowsums,
             colsums,
-            endcolsums
-            
+            endcolsums,
+            startrows,
+            endrows,
+            startcols,
+            endcols
+      
         } = this.props;
         
         return (
@@ -45,6 +49,8 @@ class Board extends React.Component {
                     {/*'Thin' row to display column indices.*/}
                     <SquareRow>
                         <Col xs={1} className="m-0 p-0" />
+                        {startcols && startcols.map(col =>
+                                <Col className="m-0 p-0"/>)}
                         {rowsums && <Col className="m-0 p-0" /> /* small corner cell*/}
                         {rows[0].cells.map((cell, i) =>
                             <Col key={i} className="m-0 p-0">
@@ -52,6 +58,21 @@ class Board extends React.Component {
                             </Col>)}
                         {endrowsums && <Col className="m-0 p-0" /> /* small corner cell*/}
                     </SquareRow>
+                    
+                    {startrows && startrows.map(row =>
+                        // Extra rows for e.g. nonogram
+                        <SquareRow>
+                            <Col xs={1} className="m-0 p-0" />
+                            {startcols && startcols.map(col =>
+                                <SquareCol/>)}
+                            {row.map((val, j) =>
+                                <SquareCol>
+                                    <h3 style={{ fontSize: "2vw", color: "gray" }}>
+                                        {val}
+                                    </h3>
+                                </SquareCol>)}
+                            {endrowsums && <SquareCol />}
+                        </SquareRow>)}
 
                     {colsums &&
                         // Extra row for column sums if necessary.
@@ -74,6 +95,14 @@ class Board extends React.Component {
                                 <small className="text-muted">{i + 1}</small>
                             </Col>
 
+                            {startcols && startcols.map(col =>
+                                // Extra column for row sums if ncessary.
+                                <SquareCol>
+                                    <h3 style={{ fontSize: "2vw", color: "gray" }}>
+                                        {col[i]}
+                                    </h3>
+                                </SquareCol>)}
+
                             {rowsums &&
                                 // Extra column for row sums if ncessary.
                                 <SquareCol>
@@ -81,6 +110,7 @@ class Board extends React.Component {
                                         {rowsums[i]}
                                     </h3>
                                 </SquareCol>}
+
                             {row.cells.map((cell, j) =>
                                     // Main rows of puzzle
                                     <Cell

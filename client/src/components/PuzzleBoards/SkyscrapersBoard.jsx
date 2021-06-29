@@ -27,7 +27,7 @@ class SkyscrapersBoard extends React.Component {
                 endcolsums={this.state.endcolsums}
                 rowsums={this.state.rowsums}
                 endrowsums={this.state.endrowsums}
-                
+
                 />)
     }
 }
