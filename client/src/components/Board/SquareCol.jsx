@@ -7,7 +7,6 @@ import {Col} from 'react-bootstrap';
 class SquareCol extends React.Component {
     
     render() {
-        console.log(this.props)
         const borders = this.props.borders ? this.props.borders :
         {
             border: "2px solid lightgray",

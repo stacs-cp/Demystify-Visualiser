@@ -11,7 +11,6 @@ class TentsBoard extends React.Component {
             rowsums: Object.values(this.props.params.rowsums),
             treecount: this.props.params.treecount
         }
-        console.log(this.state)
     }
 
     getBackgrounds() {
