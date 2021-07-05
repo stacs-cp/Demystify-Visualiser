@@ -4,13 +4,16 @@ import express,
 const fs = require("fs");
 const {spawn} = require('child_process');
 const config = require("./config.js")
+const { createProxyMiddleware } = require('http-proxy-middleware')
 
 const app: Express = express();
+const apiProxy = createProxyMiddleware({target: 'http://localhost:5000'});
 
 app.use(express.json());
 
 app.use(config.baseUrl, express.static(path.join(__dirname, "..", "client", "build")));
 app.use(config.baseUrl, express.static(path.join(__dirname, "..", "client", "public")));
+app.use(config.baseUrl + '/api', apiProxy)
 
 const uint8arrayToString = function(data){
     return String.fromCharCode.apply(null, data);

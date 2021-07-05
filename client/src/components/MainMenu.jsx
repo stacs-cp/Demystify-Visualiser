@@ -85,7 +85,7 @@ class MainMenu extends React.Component {
         return (
             <div className="d-flex flex-column align-items-center">
                 <h1 className="mt-3">Demystify Visualiser</h1>
-                <img className="mt-3" style={{width: "100px"}} src="favicon.ico"/>
+                <img className="mt-3" style={{width: "100px"}} alt="demystify logo" src="favicon.ico"/>
                 <Card as={Row} className="mt-3 pt-3 w-75">
                     <ListGroup variant="flush">
                         <ListGroup.Item>

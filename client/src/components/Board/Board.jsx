@@ -37,9 +37,7 @@ class Board extends React.Component {
             colsums,
             endcolsums,
             startrows,
-            endrows,
             startcols,
-            endcols
       
         } = this.props;
         

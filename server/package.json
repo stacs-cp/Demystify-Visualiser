@@ -12,6 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
+    "http-proxy-middleware": "^2.0.1",
     "typescript": "^4.3.2"
   },
   "devDependencies": {

@@ -20,10 +20,10 @@ class GaramBoard extends React.Component {
             for(let j = 0; j < grid[0].length; j++) {
                 borders[i].push(
                     {
-                        borderTop: grid[i][j] == -2 ? "2px solid transparent" : "2px solid lightgray",
-                        borderBottom: grid[i][j] == -2 ? "2px solid transparent" : "2px solid lightgray",
-                        borderLeft: grid[i][j] == -2 ? "2px solid transparent" : "2px solid lightgray",
-                        borderRight: grid[i][j] == -2 ? "2px solid transparent" : "2px solid lightgray",
+                        borderTop: grid[i][j] === -2 ? "2px solid transparent" : "2px solid lightgray",
+                        borderBottom: grid[i][j] === -2 ? "2px solid transparent" : "2px solid lightgray",
+                        borderLeft: grid[i][j] === -2 ? "2px solid transparent" : "2px solid lightgray",
+                        borderRight: grid[i][j] === -2 ? "2px solid transparent" : "2px solid lightgray",
                         marginLeft: "-2px",
                         marginBottom: "-2px",
                     }

@@ -44,10 +44,13 @@ var express_1 = __importDefault(require("express"));
 var fs = require("fs");
 var spawn = require('child_process').spawn;
 var config = require("./config.js");
+var createProxyMiddleware = require('http-proxy-middleware').createProxyMiddleware;
 var app = express_1.default();
+var apiProxy = createProxyMiddleware({ target: 'http://localhost:5000' });
 app.use(express_1.default.json());
 app.use(config.baseUrl, express_1.default.static(path_1.default.join(__dirname, "..", "client", "build")));
 app.use(config.baseUrl, express_1.default.static(path_1.default.join(__dirname, "..", "client", "public")));
+app.use(config.baseUrl + '/api', apiProxy);
 var uint8arrayToString = function (data) {
     return String.fromCharCode.apply(null, data);
 };
