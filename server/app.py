@@ -12,6 +12,8 @@ from routes import bp as routes
 
 BASE_URL = "/demystify"
 app = Flask(__name__, static_folder='../client/build', static_url_path=BASE_URL)
+app.url_map.strict_slashes = False
+
 CORS(app)
 
 q = Queue(connection=conn)
