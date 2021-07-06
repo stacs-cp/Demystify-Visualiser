@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Row, ListGroup, Dropdown, Alert, Spinner, Button } from 'react-bootstrap'
+import { Card, Row, ListGroup, Dropdown, Alert, Spinner, Button, Form } from 'react-bootstrap'
 import * as API from "../API";
 import FileUploader from './FileUploader';
 
@@ -28,36 +28,36 @@ class MainMenu extends React.Component {
     }
 
     async handleGo() {
-        if(!this.state.eprime || ! this.state.param) {
+        if (!this.state.eprime || !this.state.param) {
             this.setError(
                 "Please upload .eprime and .param files to run Demystify.");
             return;
         }
 
-        this.setState({isRunning: true});
-        const {eprimename, eprime, paramname, param} = this.state;
+        this.setState({ isRunning: true });
+        const { eprimename, eprime, paramname, param } = this.state;
 
         try {
             const result = await API.runDemystifyOnInput(eprimename, eprime, paramname, param);
             this.props.setInput(result);
-        } catch(err) {
+        } catch (err) {
             this.setError(
                 "There was a problem running Demystify on the server. (Currently most things are too long).");
-            this.setState({isRunning: false});
+            this.setState({ isRunning: false });
         }
     }
 
     setError(message) {
-        this.setState({error: message});
+        this.setState({ error: message });
     }
 
     componentDidUpdate = () => {
         if (this.state.isRunning) {
-          window.onbeforeunload = () => {return true;}
+            window.onbeforeunload = () => { return true; }
         } else {
-          window.onbeforeunload = undefined
+            window.onbeforeunload = undefined
         }
-      }
+    }
 
     async getExamples() {
         const examples = await API.getExamples();
@@ -85,19 +85,19 @@ class MainMenu extends React.Component {
         return (
             <div className="d-flex flex-column align-items-center">
                 <h1 className="mt-3">Demystify Visualiser</h1>
-                <img className="mt-3" style={{width: "100px"}} alt="demystify logo" src="favicon.ico"/>
+                <img className="mt-3" style={{ width: "100px" }} alt="demystify logo" src="favicon.ico" />
                 <Card as={Row} className="mt-3 pt-3 w-75">
                     <ListGroup variant="flush">
                         <ListGroup.Item>
                             <Row>
-                            {/* Basic file selection. */}
-                            <b className="mx-4">  Load Demystify output from JSON file:</b>
-                            <FileUploader
-                                disabled={this.state.isRunning}
-                                onUpload={(text) => this.props.setInput(JSON.parse(text))}
-                                onError={() => this.setError(
-                                    "Could not read the input file. Ensure it is a JSON file produced by Demystify.")}
-                            />
+                                {/* Basic file selection. */}
+                                <b className="mx-4">  Load Demystify output from JSON file:</b>
+                                <FileUploader
+                                    disabled={this.state.isRunning}
+                                    onUpload={(text) => this.props.setInput(JSON.parse(text))}
+                                    onError={() => this.setError(
+                                        "Could not read the input file. Ensure it is a JSON file produced by Demystify.")}
+                                />
                             </Row>
                         </ListGroup.Item>
 
@@ -107,9 +107,9 @@ class MainMenu extends React.Component {
                                 <Dropdown onSelect={(e) => this.chooseExample(e)}>
                                     <Dropdown.Toggle disabled={this.state.isRunning} variant="success" id="dropdown-basic">
                                         Examples
-                                </Dropdown.Toggle>
+                                    </Dropdown.Toggle>
 
-                            
+
                                     <Dropdown.Menu>
                                         {this.state.isLoadingExamples ?
                                             <div className="d-flex justify-content-center">
@@ -126,53 +126,68 @@ class MainMenu extends React.Component {
                         </ListGroup.Item>
 
                         <ListGroup.Item>
-        
-                                <Row>
-                                    <b className="mx-4 mb-4">Run Demystify live:</b>
-                                </Row>
-                                <Row>
-                                    <p className="mx-4">Puzzle description (.eprime): </p>
-                                    <FileUploader
-                                        disabled={this.state.isRunning}
-                                        onUpload={(text, name) => this.setState({eprime: text, eprimename: name})}
-                                        onError={() => this.setError(
+
+                            <Row>
+                                <b className="mx-4 mb-4">Run Demystify live:</b>
+                            </Row>
+                            <Row>
+                                <p className="mx-4">Puzzle description (.eprime): </p>
+                                <FileUploader
+                                    disabled={this.state.isRunning}
+                                    onUpload={(text, name) => this.setState({ eprime: text, eprimename: name })}
+                                    onError={() => this.setError(
                                         "Could not read the input file. Ensure it is a valid .eprime file.")}
-                                    />
-                                </Row>
-                                
-                                <Row>
-                                    <p className="mx-4">Puzzle instance (.param): </p>
-                                    <FileUploader 
-                                        disabled={this.state.isRunning}
-                                        onUpload={(text, name) => this.setState({param: text, paramname: name})}
-                                        onError={() => this.setError(
+                                />
+                            </Row>
+
+                            <Row>
+                                <p className="mx-4">Puzzle instance (.param): </p>
+                                <FileUploader
+                                    disabled={this.state.isRunning}
+                                    onUpload={(text, name) => this.setState({ param: text, paramname: name })}
+                                    onError={() => this.setError(
                                         "Could not read the input file. Ensure it is a valid .param file.")}
-                                    />
-                                </Row>
-                                <Row>
-                                    <Button 
-                                        disabled={this.state.isRunning}
-                                        className="mx-4" 
-                                        variant="success" 
-                                        onClick={this.handleGo.bind(this)}>
-                                            Go
-                                    </Button>
-                                    {this.state.isRunning &&
-                                        <React.Fragment>
-                                            <Spinner animation="border" />
-                                            <p className="ml-4">Demystify is running... This may take some time to complete.</p>
-                                        </React.Fragment>
-                                        
-                                    }
-                                </Row>
-                                
+                                />
+                            </Row>
+                            {/*<Row>
+                                <Form className="mx-4">
+                                    
+                                            <Form.Check
+                                                type="radio"
+                                                name="group1"
+                                                id="default-radio"
+                                            />
+
+                                            <Form.Check
+                                                type='radio'
+                                                name="group1"
+                                            />
+                                </Form>
+                            </Row>*/}
+                            <Row>
+                                <Button
+                                    disabled={this.state.isRunning}
+                                    className="mx-4"
+                                    variant="success"
+                                    onClick={this.handleGo.bind(this)}>
+                                    Go
+                                </Button>
+                                {this.state.isRunning &&
+                                    <React.Fragment>
+                                        <Spinner animation="border" />
+                                        <p className="ml-4">Demystify is running... This may take some time to complete.</p>
+                                    </React.Fragment>
+
+                                }
+                            </Row>
+
                         </ListGroup.Item>
                     </ListGroup>
                 </Card>
                 {this.state.error.length > 0 &&
-                        <Alert variant="warning" className="mt-3 p-4 w-75 text-center">
-                            {this.state.error}
-                        </Alert>}
+                    <Alert variant="warning" className="mt-3 p-4 w-75 text-center">
+                        {this.state.error}
+                    </Alert>}
             </div>
         )
     }

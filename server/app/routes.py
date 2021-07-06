@@ -1,21 +1,35 @@
-from flask import request, Blueprint
+from flask import request, Blueprint, jsonify
 from rq.job import Job
 from demystify.explain import Explainer  
-from app import conn
+import app
+from worker import conn
 
 bp = Blueprint('routes', __name__)
 
 def run_demystify(eprime_name, eprime, param_name, param, num_steps):
     explainer = Explainer("cascade")
-
-    eprime_file = open(eprime_name, "w")
+    eprime_path = "./eprime/" + eprime_name
+    param_path = "./eprime/" + param_name
+    eprime_file = open(eprime_path, "w")
     eprime_file.write(eprime)
-    param_file = open(param_name, "w")
+    eprime_file.close()
+
+    param_file = open(param_path, "w")
     param_file.write(param)
+    param_file.close()
 
-    explainer.init_from_essence(eprime_name, param_name)
+    try:
+        explainer.init_from_essence(eprime_path, param_path)
+    except Exception as e:
+        return str(e), 400
 
-    return explainer.explain_steps(num_steps=num_steps)
+    try:
+        result = explainer.explain_steps(num_steps=None)
+        print("GOT A RESULT")
+        return result
+    except Exception as e:
+        return str(e), 400
+
 
 @bp.route("/")                   
 def index():                      
@@ -25,14 +39,14 @@ def index():
 def create_job():
     json = request.get_json(force=True)
     
-    job = q.enqueue_call(
+    job = app.q.enqueue_call(
             func=run_demystify, 
             args=(
-                json["eprimeName"], 
-                json["eprime"],
-                json["paramName"],
-                json["param"],
-                json["numberOfSteps"]
+                json.get("eprimeName"), 
+                json.get("eprime"),
+                json.get("paramName"),
+                json.get("param"),
+                json.get("numSteps", -1)
                 ), result_ttl=5000
         )
     print(job.get_id())
@@ -43,7 +57,7 @@ def get_job(job_id):
     job = Job.fetch(job_id, connection=conn)
 
     if job.is_finished:
-        return "Job finished", 200
+        return jsonify(job.result)
     else:
         return "Nay!", 202
 

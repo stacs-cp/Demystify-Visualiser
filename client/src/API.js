@@ -11,10 +11,10 @@ async function getExampleData(exampleName) {
 }
 
 async function runDemystifyOnInput(eprimename, eprime, paramname, param) {
-    const response = await axios.post("run", {
-        eprimename: eprimename,
+    const response = await axios.post("api/job", {
+        eprimeName: eprimename,
         eprime: eprime,
-        paramname: paramname,
+        paramName: paramname,
         param: param
     })
     return response.data
