@@ -10,7 +10,7 @@ async function getExampleData(exampleName) {
     return response.data;
 }
 
-async function runDemystifyOnInput(eprimename, eprime, paramname, param) {
+async function createJob(eprimename, eprime, paramname, param) {
     const response = await axios.post("api/job", {
         eprimeName: eprimename,
         eprime: eprime,
@@ -20,5 +20,16 @@ async function runDemystifyOnInput(eprimename, eprime, paramname, param) {
     return response.data
 }
 
-export { getExamples, getExampleData, runDemystifyOnInput};
+async function getJob(jobId) {
+    const response = await axios.get(`api/job/${jobId}`);
+    return response.data
+}
+
+async function getJobOutput(jobId) {
+    const response = await axios.get(`api/job/${jobId}/output`);
+    return response.data
+}
+
+
+export { getExamples, getExampleData, createJob, getJob, getJobOutput};
 

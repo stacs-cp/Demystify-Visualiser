@@ -2,6 +2,7 @@ import React from 'react';
 import { Card, Row, ListGroup, Dropdown, Alert, Spinner, Button, Form } from 'react-bootstrap'
 import * as API from "../API";
 import FileUploader from './FileUploader';
+import JobWait from './JobWait';
 
 /**
  * Load a JSON input from the user's filesystem or preloaded examples.
@@ -10,14 +11,16 @@ class MainMenu extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            isLoadingExamples: true,
             examples: [],
             eprime: null,
             eprimename: null,
             param: null,
             paramname: null,
             error: "",
-            isRunning: false,
+            jobId: null,
+            isLoadingExamples: true,
+            isQueueing: false,
+            isWaiting: false
         };
     }
 
@@ -38,11 +41,12 @@ class MainMenu extends React.Component {
         const { eprimename, eprime, paramname, param } = this.state;
 
         try {
-            const result = await API.runDemystifyOnInput(eprimename, eprime, paramname, param);
-            this.props.setInput(result);
+            const result = await API.createJob(eprimename, eprime, paramname, param);
+            this.setState({isWaiting: true, jobId: result.jobId})
+            
         } catch (err) {
             this.setError(
-                "There was a problem running Demystify on the server. (Currently most things are too long).");
+                "There was a problem running Demystify on the server.");
             this.setState({ isRunning: false });
         }
     }
@@ -52,7 +56,7 @@ class MainMenu extends React.Component {
     }
 
     componentDidUpdate = () => {
-        if (this.state.isRunning) {
+        if (this.state.isQueueing) {
             window.onbeforeunload = () => { return true; }
         } else {
             window.onbeforeunload = undefined
@@ -83,17 +87,19 @@ class MainMenu extends React.Component {
 
     render() {
         return (
+            
             <div className="d-flex flex-column align-items-center">
                 <h1 className="mt-3">Demystify Visualiser</h1>
                 <img className="mt-3" style={{ width: "100px" }} alt="demystify logo" src="favicon.ico" />
                 <Card as={Row} className="mt-3 pt-3 w-75">
+                    {this.state.isWaiting ? <JobWait jobId={this.state.jobId} setInput={this.props.setInput}/> :
                     <ListGroup variant="flush">
                         <ListGroup.Item>
                             <Row>
                                 {/* Basic file selection. */}
                                 <b className="mx-4">  Load Demystify output from JSON file:</b>
                                 <FileUploader
-                                    disabled={this.state.isRunning}
+                                    disabled={this.state.isQueueing}
                                     onUpload={(text) => this.props.setInput(JSON.parse(text))}
                                     onError={() => this.setError(
                                         "Could not read the input file. Ensure it is a JSON file produced by Demystify.")}
@@ -105,7 +111,7 @@ class MainMenu extends React.Component {
                             <Row>
                                 <b className="mx-4 pt-2">View a pre-generated example:</b>
                                 <Dropdown onSelect={(e) => this.chooseExample(e)}>
-                                    <Dropdown.Toggle disabled={this.state.isRunning} variant="success" id="dropdown-basic">
+                                    <Dropdown.Toggle disabled={this.state.isQueueing} variant="success" id="dropdown-basic">
                                         Examples
                                     </Dropdown.Toggle>
 
@@ -133,7 +139,7 @@ class MainMenu extends React.Component {
                             <Row>
                                 <p className="mx-4">Puzzle description (.eprime): </p>
                                 <FileUploader
-                                    disabled={this.state.isRunning}
+                                    disabled={this.state.isQueueing}
                                     onUpload={(text, name) => this.setState({ eprime: text, eprimename: name })}
                                     onError={() => this.setError(
                                         "Could not read the input file. Ensure it is a valid .eprime file.")}
@@ -143,46 +149,47 @@ class MainMenu extends React.Component {
                             <Row>
                                 <p className="mx-4">Puzzle instance (.param): </p>
                                 <FileUploader
-                                    disabled={this.state.isRunning}
+                                    disabled={this.state.isQueueing}
                                     onUpload={(text, name) => this.setState({ param: text, paramname: name })}
                                     onError={() => this.setError(
                                         "Could not read the input file. Ensure it is a valid .param file.")}
                                 />
                             </Row>
-                            {/*<Row>
-                                <Form className="mx-4">
+                            {<Row>
+                                <Form inline className="mx-4 mb-3">
                                     
-                                            <Form.Check
+                                            <Form.Check className="mr-4"
                                                 type="radio"
-                                                name="group1"
-                                                id="default-radio"
+                                                name="mode"
+                                                label="Use default MUS choices"
                                             />
 
                                             <Form.Check
                                                 type='radio'
-                                                name="group1"
+                                                name="mode"
+                                                label="Choose MUSes manually (slower)"
                                             />
                                 </Form>
-                            </Row>*/}
+                            </Row>}
                             <Row>
                                 <Button
-                                    disabled={this.state.isRunning}
+                                    disabled={this.state.isQueueing}
                                     className="mx-4"
                                     variant="success"
                                     onClick={this.handleGo.bind(this)}>
                                     Go
                                 </Button>
-                                {this.state.isRunning &&
+                                {this.state.isQueueing &&
                                     <React.Fragment>
                                         <Spinner animation="border" />
-                                        <p className="ml-4">Demystify is running... This may take some time to complete.</p>
+                                        <p className="ml-4">Setting up Demystify job...</p>
                                     </React.Fragment>
 
                                 }
                             </Row>
 
                         </ListGroup.Item>
-                    </ListGroup>
+                    </ListGroup> }
                 </Card>
                 {this.state.error.length > 0 &&
                     <Alert variant="warning" className="mt-3 p-4 w-75 text-center">

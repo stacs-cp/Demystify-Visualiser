@@ -25,7 +25,6 @@ def run_demystify(eprime_name, eprime, param_name, param, num_steps):
 
     try:
         result = explainer.explain_steps(num_steps=None)
-        print("GOT A RESULT")
         return result
     except Exception as e:
         return str(e), 400
@@ -49,22 +48,34 @@ def create_job():
                 json.get("numSteps", -1)
                 ), result_ttl=5000
         )
-    print(job.get_id())
-    return "create_job()"
+    return jsonify({
+                "jobId": job.get_id(),
+                })
 
 @bp.route('/job/<string:job_id>', methods=['GET'])
 def get_job(job_id):    
     job = Job.fetch(job_id, connection=conn)
 
     if job.is_finished:
-        return jsonify(job.result)
+        return jsonify({
+                "jobId": job_id,
+                "status": job.get_status(),
+                })
     else:
-        return "Nay!", 202
+        return jsonify({
+                "jobId": job_id,
+                "status": job.get_status(),
+                })
 
 @bp.route('/job/<string:job_id>', methods=['POST'])
 def continue_job(job_id):    
     return f'continue_job({job_id})'
 
-@bp.route('/job/<string:job_id>', methods=['GET'])
-def get_job_output(job_id):    
-    return f'get_job_output({job_id})'
+@bp.route('/job/<string:job_id>/output', methods=['GET'])
+def get_job_output(job_id):
+    job = Job.fetch(job_id, connection=conn)
+    
+    if job.is_finished:
+        return jsonify(job.result)
+    else:
+        abort(404, description="Job ID Not Found")
