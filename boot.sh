@@ -18,5 +18,7 @@ kill $(lsof -t -i:21586)
 kill $(lsof -t -i:6379)
 tmux kill-session -t Redis
 tmux kill-session -t Demystify-Viz
+tmux kill-session -t RQWorker
 tmux new-session -d -s Redis "redis-server"
-tmux new-session -d -s Demystify-Viz "cd client && npm install && npm run build && cd ../server && rq worker.py && gunicorn -b 127.0.0.1:21586 app:app --log-level debug"
+tmux new-session -d -s RQWorker "cd server && rq worker"
+tmux new-session -d -s Demystify-Viz "cd client && npm install && npm run build && cd ../server && gunicorn -b 127.0.0.1:21586 api:app --log-level debug"

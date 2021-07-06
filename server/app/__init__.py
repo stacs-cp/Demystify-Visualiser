@@ -13,7 +13,7 @@ from .routes import bp as routes
 q = Queue(connection=conn)
 def create_app():
     BASE_URL = "/demystify"
-    app = Flask(__name__, static_folder='../client/build', static_url_path=BASE_URL + "/")
+    app = Flask(__name__, static_folder='../../client/build', static_url_path=BASE_URL + "/")
 
     CORS(app)
     app.url_map.strict_slashes = False
