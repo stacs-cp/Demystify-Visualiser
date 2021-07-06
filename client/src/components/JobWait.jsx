@@ -1,5 +1,5 @@
 import React from 'react';
-import { Spinner, Link } from 'react-bootstrap';
+import { Spinner } from 'react-bootstrap';
 
 import * as API from "../API";
 

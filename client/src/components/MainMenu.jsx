@@ -19,6 +19,7 @@ class MainMenu extends React.Component {
             error: "",
             jobId: null,
             isLoadingExamples: true,
+            liveMode: "default",
             isQueueing: false,
             isWaiting: false
         };
@@ -83,6 +84,12 @@ class MainMenu extends React.Component {
     async chooseExample(name) {
         const example = await API.getExampleData(name);
         this.props.setInput(example);
+    }
+
+    handleModeChange(e) {
+        this.setState({
+            liveMode: e.target.value
+        });
     }
 
     render() {
@@ -161,12 +168,18 @@ class MainMenu extends React.Component {
                                             <Form.Check className="mr-4"
                                                 type="radio"
                                                 name="mode"
+                                                value="default"
+                                                checked={this.state.liveMode === "default"}
+                                                onChange={this.handleModeChange.bind(this)}
                                                 label="Use default MUS choices"
                                             />
 
                                             <Form.Check
                                                 type='radio'
                                                 name="mode"
+                                                value="manual"
+                                                checked={this.state.liveMode === "manual"}
+                                                onChange={this.handleModeChange.bind(this)}
                                                 label="Choose MUSes manually (slower)"
                                             />
                                 </Form>
