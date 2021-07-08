@@ -1,12 +1,16 @@
 import React from 'react';
-import { Spinner } from 'react-bootstrap';
+import { Spinner, Alert } from 'react-bootstrap';
 
 import * as API from "../API";
 
 class JobWait extends React.Component {
     constructor(props) {
         super(props)
-        this.state = {status: "pending", pollDelay: 1000, pollCount: 0}
+        this.state = {
+            status: "pending", 
+            pollDelay: 1000, 
+            pollCount: 0,
+            error: null}
     }
     componentDidMount() {
         this.timer = setInterval(()=> this.checkStatus(), this.state.pollDelay);
@@ -28,16 +32,32 @@ class JobWait extends React.Component {
             .then(res => res.status === "finished" && 
                 API.getJobOutput(this.props.jobId)
                     .then(output => {
-                        clearInterval(this.timer)
-                        this.props.setInput(output)})) 
+                            clearInterval(this.timer)
+                            this.props.setInput(output)
+                        }).catch(error => {
+                            clearInterval(this.timer)
+                            this.setState({error: error.response.data})
+                        })) 
         this.setState({pollCount: this.state.pollCount + 1})
         if(this.state.pollCount === 10) {
             this.setState({pollDelay: 10000})
         }
     }
     render() {
+        console.log(this.state.error)
         return (
-            <div>
+        <div>
+        {this.state.error !== null ? (
+            <>
+                <h4>demystify job failed</h4> 
+
+                <p><b>Job ID:</b> {this.props.jobId}</p>
+                <Alert variant="warning" className="m-4"><b>Error message: </b>{this.state.error}</Alert>
+
+            </>
+            ) :
+            (
+            <>
                 <Spinner animation="border"/>
                 <h4>demystify is running... </h4> 
                 <p><b>Job ID:</b> {this.props.jobId}</p>
@@ -46,8 +66,10 @@ class JobWait extends React.Component {
                     <br /> and then save the result when it's ready from: 
                     <br /> <a href={window.location + "api/job/" + this.props.jobId + "/output"}>{window.location + "api/job/" + this.props.jobId + "/output"}</a>
                     </p>
-
-            </div>
+            </>
+            )
+        }
+        </div>
         )
     }
 }
