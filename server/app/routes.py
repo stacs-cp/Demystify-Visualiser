@@ -1,4 +1,4 @@
-from flask import request, Blueprint, jsonify
+from flask import request, Blueprint, jsonify, abort
 from rq.job import Job
 from demystify.explain import Explainer  
 import app
@@ -21,13 +21,13 @@ def run_demystify(eprime_name, eprime, param_name, param, num_steps):
     try:
         explainer.init_from_essence(eprime_path, param_path)
     except Exception as e:
-        return str(e), 400
+        return str(e)
 
     try:
         result = explainer.explain_steps(num_steps=None)
         return result
     except Exception as e:
-        return str(e), 400
+        return str(e)
 
 
 @bp.route("/")                   
@@ -76,6 +76,9 @@ def get_job_output(job_id):
     job = Job.fetch(job_id, connection=conn)
     
     if job.is_finished:
-        return jsonify(job.result)
+        if type(job.result) is dict:
+            return jsonify(job.result)
+        else:
+            return jsonify(job.result), 400
     else:
         abort(404, description="Job ID Not Found")

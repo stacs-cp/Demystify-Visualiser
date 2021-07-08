@@ -3,7 +3,7 @@ import os
 import re
 import json 
 
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, send_from_directory
 from flask_cors import CORS
 from rq import Queue
 
@@ -13,7 +13,7 @@ from .routes import bp as routes
 q = Queue(connection=conn)
 def create_app():
     BASE_URL = "/demystify"
-    app = Flask(__name__, static_folder='../client/build', static_url_path=BASE_URL + "/")
+    app = Flask(__name__, static_folder='../../client/build', static_url_path=BASE_URL + "/")
 
     CORS(app)
     app.url_map.strict_slashes = False
@@ -24,7 +24,7 @@ def create_app():
 
     @app.route(BASE_URL + "/")
     def index():
-        return app.send_static_file('index.html')
+        return send_from_directory('../../client/build', "index.html")
 
     @app.route(BASE_URL + "/examples")
     def get_all_examples():
