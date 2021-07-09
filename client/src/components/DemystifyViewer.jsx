@@ -2,6 +2,7 @@ import React from 'react';
 
 import { Container} from 'react-bootstrap';
 import ManualPuzzleStepper from './ManualPuzzleStepper';
+import AutoPuzzleStepper from './AutoPuzzleStepper';
 import MainMenu from './MainMenu';
 
 /**
@@ -18,7 +19,7 @@ class DemystifyViewer extends React.Component {
   
   // Load the steps, the type of puzzle, and the params (configuration) of the puzzle
   setJSONInput(obj, mode) {
-    this.setState({ inputObject: obj.steps, type: obj.name, params: obj.params },
+    this.setState({ inputObject: obj.steps, type: obj.name, params: obj.params, mode: mode},
       () => !(this.state.inputObject && this.state.type && this.state.params)  
       && this.setError()) 
   }
@@ -41,10 +42,15 @@ class DemystifyViewer extends React.Component {
             <MainMenu setInput={this.setJSONInput.bind(this)} />
           :
           /*Otherwise display the main puzzle visualiser*/
-          <ManualPuzzleStepper
-            inputObject={this.state.inputObject}
-            type={this.state.type}
-            params={this.state.params} />
+          (this.state.mode == "default" ? 
+            <AutoPuzzleStepper 
+              inputObject={this.state.inputObject}
+              type={this.state.type}
+              params={this.state.params} /> :
+            <ManualPuzzleStepper
+              inputObject={this.state.inputObject}
+              type={this.state.type}
+              params={this.state.params} />)
         }
       </Container>
     )

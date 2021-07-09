@@ -88,7 +88,7 @@ class MainMenu extends React.Component {
 
     handleModeChange(e) {
         this.setState({
-            liveMode: e.target.value
+            mode: e.target.value
         });
     }
 

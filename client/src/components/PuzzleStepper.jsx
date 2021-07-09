@@ -108,7 +108,9 @@ class PuzzleStepper extends React.Component {
                     stepName={"step"} 
                     setCurrentStep={this.setCurrentStep.bind(this)} 
                     maxSteps={this.state.inputObject.length - 1} 
-                    currentStep={this.state.currentStep}/>
+                    currentStep={this.state.currentStep}
+                    endButton={this.props.mode==="manual"}
+                    />
 
                 <Row className="mb-4">
                     {/*The main board: adjust width based on screen size */}

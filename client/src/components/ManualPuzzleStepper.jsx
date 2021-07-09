@@ -5,8 +5,7 @@ class ManualPuzzleStepper extends React.Component {
     render() {
         return (
             <div>
-                <h1>MANUAL</h1>
-                <PuzzleStepper {...this.props} />
+                <PuzzleStepper mode="manual" {...this.props} />
             </div>)
     }
 }
