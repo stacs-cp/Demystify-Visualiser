@@ -19,7 +19,7 @@ class MainMenu extends React.Component {
             error: "",
             jobId: null,
             isLoadingExamples: true,
-            liveMode: "default",
+            mode: "default",
             isQueueing: false,
             isWaiting: false
         };
@@ -83,7 +83,7 @@ class MainMenu extends React.Component {
 
     async chooseExample(name) {
         const example = await API.getExampleData(name);
-        this.props.setInput(example);
+        this.props.setInput(example, "default");
     }
 
     handleModeChange(e) {
@@ -99,7 +99,7 @@ class MainMenu extends React.Component {
                 <h1 className="mt-3">Demystify Visualiser</h1>
                 <img className="mt-3" style={{ width: "100px" }} alt="demystify logo" src="favicon.ico" />
                 <Card as={Row} className="mt-3 pt-3 w-75">
-                    {this.state.isWaiting ? <JobWait jobId={this.state.jobId} setInput={this.props.setInput}/> :
+                    {this.state.isWaiting ? <JobWait jobId={this.state.jobId} setInput={this.props.setInput} mode={this.state.mode}/> :
                     <ListGroup variant="flush">
                         <ListGroup.Item>
                             <Row>
@@ -107,7 +107,7 @@ class MainMenu extends React.Component {
                                 <b className="mx-4">  Load Demystify output from JSON file:</b>
                                 <FileUploader
                                     disabled={this.state.isQueueing}
-                                    onUpload={(text) => this.props.setInput(JSON.parse(text))}
+                                    onUpload={(text) => this.props.setInput(JSON.parse(text), "default")}
                                     onError={() => this.setError(
                                         "Could not read the input file. Ensure it is a JSON file produced by Demystify.")}
                                 />
@@ -169,7 +169,7 @@ class MainMenu extends React.Component {
                                                 type="radio"
                                                 name="mode"
                                                 value="default"
-                                                checked={this.state.liveMode === "default"}
+                                                checked={this.state.mode === "default"}
                                                 onChange={this.handleModeChange.bind(this)}
                                                 label="Use default MUS choices"
                                             />
@@ -178,7 +178,7 @@ class MainMenu extends React.Component {
                                                 type='radio'
                                                 name="mode"
                                                 value="manual"
-                                                checked={this.state.liveMode === "manual"}
+                                                checked={this.state.mode === "manual"}
                                                 onChange={this.handleModeChange.bind(this)}
                                                 label="Choose MUSes manually (slower)"
                                             />
