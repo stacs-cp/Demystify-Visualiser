@@ -84,6 +84,8 @@ class PuzzleStepper extends React.Component {
                 return <NonogramBoard {...boardProps}/>
             case "x-sums.eprime":
                 return <SudokuBoard {...boardProps} />
+            case "sudoku.eprime":
+                return <SudokuBoard {...boardProps} />
             default:
                 return <Board {...boardProps}/>
         }
