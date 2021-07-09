@@ -20,6 +20,7 @@ class MainMenu extends React.Component {
             jobId: null,
             isLoadingExamples: true,
             mode: "default",
+            algorithm: "cascade",
             isQueueing: false,
             isWaiting: false
         };
@@ -39,10 +40,10 @@ class MainMenu extends React.Component {
         }
 
         this.setState({ isRunning: true });
-        const { eprimename, eprime, paramname, param } = this.state;
+        const { eprimename, eprime, paramname, param, algorithm } = this.state;
 
         try {
-            const result = await API.createJob(eprimename, eprime, paramname, param);
+            const result = await API.createJob(eprimename, eprime, paramname, param, algorithm);
             this.setState({isWaiting: true, jobId: result.jobId})
             
         } catch (err) {
@@ -89,6 +90,12 @@ class MainMenu extends React.Component {
     handleModeChange(e) {
         this.setState({
             mode: e.target.value
+        });
+    }
+
+    handleOptionChange(e) {
+        this.setState({
+            [e.target.name]: e.target.value
         });
     }
 
@@ -162,9 +169,9 @@ class MainMenu extends React.Component {
                                         "Could not read the input file. Ensure it is a valid .param file.")}
                                 />
                             </Row>
-                            {<Row>
+                            <Row>
                                 <Form inline className="mx-4 mb-3">
-                                    
+                                            <Form.Label className="mr-4">Mode: </Form.Label>
                                             <Form.Check className="mr-4"
                                                 type="radio"
                                                 name="mode"
@@ -180,10 +187,32 @@ class MainMenu extends React.Component {
                                                 value="manual"
                                                 checked={this.state.mode === "manual"}
                                                 onChange={this.handleModeChange.bind(this)}
-                                                label="Choose MUSes manually (slower)"
+                                                label="Choose MUSes manually"
                                             />
                                 </Form>
-                            </Row>}
+                            </Row>
+                            <Row>
+                                <Form inline className="mx-4 mb-3">
+                                            <Form.Label className="mr-4">MUS algorithm: </Form.Label>
+                                            <Form.Check className="mr-4"
+                                                type="radio"
+                                                name="algorithm"
+                                                value="cascade"
+                                                checked={this.state.algorithm === "cascade"}
+                                                onChange={this.handleOptionChange.bind(this)}
+                                                label="Cascade"
+                                            />
+
+                                            <Form.Check
+                                                type='radio'
+                                                name="algorithm"
+                                                value="forqes"
+                                                checked={this.state.algorithm === "forqes"}
+                                                onChange={this.handleOptionChange.bind(this)}
+                                                label="FORQES"
+                                            />
+                                </Form>
+                            </Row>
                             <Row>
                                 <Button
                                     disabled={this.state.isQueueing}

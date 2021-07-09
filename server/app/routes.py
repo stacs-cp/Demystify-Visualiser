@@ -6,8 +6,8 @@ from worker import conn
 
 bp = Blueprint('routes', __name__)
 
-def run_demystify(eprime_name, eprime, param_name, param, num_steps):
-    explainer = Explainer("cascade")
+def run_demystify(eprime_name, eprime, param_name, param, num_steps, algorithm):
+    explainer = Explainer(algorithm)
     eprime_path = "./eprime/" + eprime_name
     param_path = "./eprime/" + param_name
     eprime_file = open(eprime_path, "w")
@@ -45,7 +45,8 @@ def create_job():
                 json.get("eprime"),
                 json.get("paramName"),
                 json.get("param"),
-                json.get("numSteps", -1)
+                json.get("numSteps", -1),
+                json.get("algorithm", "cascade")
                 ), result_ttl=5000
         )
     return jsonify({
