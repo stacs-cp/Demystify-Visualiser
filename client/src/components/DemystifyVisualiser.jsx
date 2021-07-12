@@ -14,15 +14,19 @@ class DemystifyViewer extends React.Component {
     type: "",
     params: {},
     error: false,
-    mode: "default"
+    mode: "default",
+    continueData: null
   }
   
   // Load the steps, the type of puzzle, and the params (configuration) of the puzzle
   setJSONInput(obj, mode) {
-    this.setState({ inputObject: obj.steps, type: obj.name, params: obj.params, mode: mode},
+    const result = obj.result;
+
+    this.setState({ continueData: obj, inputObject: result.steps, type: result.name, params: result.params, mode: mode},
       () => !(this.state.inputObject && this.state.type && this.state.params)  
       && this.setError()) 
   }
+
 
   // Avoid invalid JSON
   setError() {

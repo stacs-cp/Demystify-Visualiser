@@ -85,7 +85,7 @@ class MainMenu extends React.Component {
 
     async chooseExample(name) {
         const example = await API.getExampleData(name);
-        this.props.setInput(example, "default");
+        this.props.setInput({result: example}, "default");
     }
 
     handleModeChange(e) {
@@ -115,7 +115,7 @@ class MainMenu extends React.Component {
                                 <b className="mx-4">  Load Demystify output from JSON file:</b>
                                 <FileUploader
                                     disabled={this.state.isQueueing}
-                                    onUpload={(text) => this.props.setInput(JSON.parse(text), "default")}
+                                    onUpload={(text) => this.props.setInput({result: JSON.parse(text)}, "default")}
                                     onError={() => this.setError(
                                         "Could not read the input file. Ensure it is a JSON file produced by Demystify.")}
                                 />

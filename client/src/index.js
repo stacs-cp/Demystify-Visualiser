@@ -1,14 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import DemystifyViewer from './components/DemystifyViewer';
+import DemystifyVisualiser from './components/DemystifyVisualiser';
 import reportWebVitals from './reportWebVitals';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 ReactDOM.render(
   <React.StrictMode>
-    <DemystifyViewer/>
+    <DemystifyVisualiser/>
   </React.StrictMode>,
   document.getElementById('root')
 );

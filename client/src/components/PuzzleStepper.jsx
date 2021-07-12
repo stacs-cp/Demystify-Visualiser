@@ -30,7 +30,8 @@ class PuzzleStepper extends React.Component {
             currentAlternative: 0,
             type: this.props.type,
             params: this.props.params,
-            inputObject: this.props.inputObject
+            inputObject: this.props.inputObject,
+            continueData: this.props.continueData
         }
     }
 

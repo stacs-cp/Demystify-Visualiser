@@ -18,20 +18,23 @@ def run_demystify(eprime_name, eprime, param_name, param, num_steps, algorithm):
     param_file.write(param)
     param_file.close()
 
+    if num_steps < 1:
+        num_steps=None
+
     try:
         explainer.init_from_essence(eprime_path, param_path)
     except Exception as e:
         return str(e)
 
     try:
-        result = explainer.explain_steps(num_steps=int(num_steps))
+        result = explainer.explain_steps(num_steps=num_steps)
         return {"result": result, 
                 "eprimeName": eprime_name, 
                 "paramName": param_name,
                 "eprime": eprime,
                 "param": param, 
                 "algorithm": algorithm,
-                "explainedLits": explainer.explained,
+                "explainedLits": [str(l) for l in explainer.explained],
                 "stepsExplained": explainer.steps_explained}
     
     except Exception as e:
