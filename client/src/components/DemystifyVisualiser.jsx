@@ -46,15 +46,11 @@ class DemystifyViewer extends React.Component {
             <MainMenu setInput={this.setJSONInput.bind(this)} />
           :
           /*Otherwise display the main puzzle visualiser*/
-          (this.state.mode === "default" ? 
-            <AutoPuzzleStepper 
+            <PuzzleStepper
               inputObject={this.state.inputObject}
               type={this.state.type}
-              params={this.state.params} /> :
-            <ManualPuzzleStepper
-              inputObject={this.state.inputObject}
-              type={this.state.type}
-              params={this.state.params} />)
+              params={this.state.params} 
+              mode={this.state.mode} />
         }
       </Container>
     )
