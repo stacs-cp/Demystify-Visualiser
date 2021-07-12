@@ -1,0 +1,99 @@
+MINION 3
+**VARIABLES**
+DISCRETE grid_00001_00001 #
+{0..9}
+DISCRETE grid_00001_00002 #
+{0..9}
+DISCRETE grid_00001_00003 #
+{0..9}
+DISCRETE grid_00002_00001 #
+{0..9}
+DISCRETE grid_00002_00002 #
+{0..9}
+DISCRETE grid_00002_00003 #
+{0..9}
+DISCRETE grid_00003_00001 #
+{0..9}
+DISCRETE grid_00003_00002 #
+{0..9}
+DISCRETE grid_00003_00003 #
+{0..9}
+BOOL vertalldiff_00001_00001 #
+BOOL vertalldiff_00001_00002 #
+BOOL vertalldiff_00001_00003 #
+BOOL vertalldiff_00002_00001 #
+BOOL vertalldiff_00002_00002 #
+BOOL vertalldiff_00002_00003 #
+BOOL vertalldiff_00003_00001 #
+BOOL vertalldiff_00003_00002 #
+BOOL vertalldiff_00003_00003 #
+BOOL vertsum_00001_00001 #
+BOOL vertsum_00001_00002 #
+BOOL vertsum_00001_00003 #
+BOOL vertsum_00002_00001 #
+BOOL vertsum_00002_00002 #
+BOOL vertsum_00002_00003 #
+BOOL vertsum_00003_00001 #
+BOOL vertsum_00003_00002 #
+BOOL vertsum_00003_00003 #
+BOOL horzalldiff_00001_00001 #
+BOOL horzalldiff_00001_00002 #
+BOOL horzalldiff_00001_00003 #
+BOOL horzalldiff_00002_00001 #
+BOOL horzalldiff_00002_00002 #
+BOOL horzalldiff_00002_00003 #
+BOOL horzalldiff_00003_00001 #
+BOOL horzalldiff_00003_00002 #
+BOOL horzalldiff_00003_00003 #
+BOOL horzsum_00001_00001 #
+BOOL horzsum_00001_00002 #
+BOOL horzsum_00001_00003 #
+BOOL horzsum_00002_00001 #
+BOOL horzsum_00002_00002 #
+BOOL horzsum_00002_00003 #
+BOOL horzsum_00003_00001 #
+BOOL horzsum_00003_00002 #
+BOOL horzsum_00003_00003 #
+**TUPLELIST**
+horzsums 3 3
+0 0 0 
+0 0 0 
+12 0 0 
+**VARIABLES**
+ALIAS horzsums[3,3]=[[0, 0, 0], [0, 0, 0], [12, 0, 0]]
+**TUPLELIST**
+blanks 3 3
+0 0 0 
+0 1 1 
+0 1 1 
+**VARIABLES**
+ALIAS blanks[3,3]=[[0, 0, 0], [0, 1, 1], [0, 1, 1]]
+**TUPLELIST**
+vertsums 3 3
+0 5 16 
+0 0 0 
+0 0 0 
+**VARIABLES**
+ALIAS vertsums[3,3]=[[0, 5, 16], [0, 0, 0], [0, 0, 0]]
+**SEARCH**
+PRINT[[grid_00001_00001],[grid_00001_00002],[grid_00001_00003],[grid_00002_00001],[grid_00002_00002],[grid_00002_00003],[grid_00003_00001],[grid_00003_00002],[grid_00003_00003],[vertalldiff_00001_00001],[vertalldiff_00001_00002],[vertalldiff_00001_00003],[vertalldiff_00002_00001],[vertalldiff_00002_00002],[vertalldiff_00002_00003],[vertalldiff_00003_00001],[vertalldiff_00003_00002],[vertalldiff_00003_00003],[vertsum_00001_00001],[vertsum_00001_00002],[vertsum_00001_00003],[vertsum_00002_00001],[vertsum_00002_00002],[vertsum_00002_00003],[vertsum_00003_00001],[vertsum_00003_00002],[vertsum_00003_00003],[horzalldiff_00001_00001],[horzalldiff_00001_00002],[horzalldiff_00001_00003],[horzalldiff_00002_00001],[horzalldiff_00002_00002],[horzalldiff_00002_00003],[horzalldiff_00003_00001],[horzalldiff_00003_00002],[horzalldiff_00003_00003],[horzsum_00001_00001],[horzsum_00001_00002],[horzsum_00001_00003],[horzsum_00002_00001],[horzsum_00002_00002],[horzsum_00002_00003],[horzsum_00003_00001],[horzsum_00003_00002],[horzsum_00003_00003]]
+**CONSTRAINTS**
+reifyimply(diseq(grid_00003_00002,grid_00003_00003), horzalldiff_00003_00001)
+w-literal(grid_00001_00001,0)
+w-literal(grid_00001_00002,0)
+w-literal(grid_00001_00003,0)
+w-literal(grid_00002_00001,0)
+diseq(0,grid_00002_00002)
+diseq(0,grid_00002_00003)
+w-literal(grid_00003_00001,0)
+diseq(grid_00003_00002,0)
+diseq(grid_00003_00003,0)
+reifyimply(diseq(grid_00003_00002,grid_00002_00002), vertalldiff_00001_00002)
+reifyimply(diseq(grid_00003_00003,grid_00002_00003), vertalldiff_00001_00003)
+reifyimply(sumleq([grid_00003_00002,grid_00003_00003],12), horzsum_00003_00001)
+reifyimply(sumgeq([grid_00003_00002,grid_00003_00003],12), horzsum_00003_00001)
+reifyimply(sumleq([grid_00003_00002,grid_00002_00002],5), vertsum_00001_00002)
+reifyimply(sumgeq([grid_00003_00002,grid_00002_00002],5), vertsum_00001_00002)
+reifyimply(sumleq([grid_00003_00003,grid_00002_00003],16), vertsum_00001_00003)
+reifyimply(sumgeq([grid_00003_00003,grid_00002_00003],16), vertsum_00001_00003)
+**EOF**
