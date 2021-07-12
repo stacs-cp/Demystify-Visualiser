@@ -24,8 +24,16 @@ def run_demystify(eprime_name, eprime, param_name, param, num_steps, algorithm):
         return str(e)
 
     try:
-        result = explainer.explain_steps(num_steps=None)
-        return result
+        result = explainer.explain_steps(num_steps=int(num_steps))
+        return {"result": result, 
+                "eprimeName": eprime_name, 
+                "paramName": param_name,
+                "eprime": eprime,
+                "param": param, 
+                "algorithm": algorithm,
+                "explainedLits": explainer.explained,
+                "stepsExplained": explainer.steps_explained}
+    
     except Exception as e:
         return str(e)
 

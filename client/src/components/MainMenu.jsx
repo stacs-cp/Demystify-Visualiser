@@ -40,10 +40,11 @@ class MainMenu extends React.Component {
         }
 
         this.setState({ isRunning: true });
-        const { eprimename, eprime, paramname, param, algorithm } = this.state;
+        const { eprimename, eprime, paramname, param, mode, algorithm } = this.state;
+        const numSteps = mode === "default" ? -1 : 1;
 
         try {
-            const result = await API.createJob(eprimename, eprime, paramname, param, algorithm);
+            const result = await API.createJob(eprimename, eprime, paramname, param, algorithm, numSteps);
             this.setState({isWaiting: true, jobId: result.jobId})
             
         } catch (err) {

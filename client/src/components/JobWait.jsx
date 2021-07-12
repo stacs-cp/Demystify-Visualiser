@@ -33,7 +33,7 @@ class JobWait extends React.Component {
                 API.getJobOutput(this.props.jobId)
                     .then(output => {
                             clearInterval(this.timer)
-                            this.props.setInput(output, this.props.mode)
+                            this.props.setInput(output.result, this.props.mode)
                         }).catch(error => {
                             clearInterval(this.timer)
                             this.setState({error: error.response.data})
@@ -44,7 +44,6 @@ class JobWait extends React.Component {
         }
     }
     render() {
-        console.log(this.state.error)
         return (
         <div>
         {this.state.error !== null ? (

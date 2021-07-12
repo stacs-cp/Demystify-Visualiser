@@ -3,7 +3,7 @@ import NavSwitcher from './NavSwitcher';
 import Board from './Board/Board';
 import ExplanationList from "./Explanations/ExplanationList";
 
-import { Row, Col, Card } from 'react-bootstrap';
+import { Row, Col, Card, Button } from 'react-bootstrap';
 
 import TentsBoard from './PuzzleBoards/TentsBoard';
 import BinairoBoard from './PuzzleBoards/BinairoBoard';
@@ -90,6 +90,18 @@ class PuzzleStepper extends React.Component {
                 return <Board {...boardProps}/>
         }
     }
+
+    getEndButton() {
+        if(this.props.mode==="manual" && this.state.currentStep == this.state.inputObject.length - 1) {
+            return <Button variant="success" onClick={this.handleGetChoices.bind(this)}>{"Choices for next step"}</Button>
+        } else {
+            return null
+        }
+    }
+
+    handleGetChoices() {
+        
+    }
     render() {
         const stepData = this.state.currentAlternative=== 0 ?
             this.state.inputObject[this.state.currentStep]
@@ -103,6 +115,8 @@ class PuzzleStepper extends React.Component {
             highlighted: this.state.highlightedLiterals, 
             rows: stepData.puzzleState.matrices[0].rows
         }
+
+
         return (
             <React.Fragment>
                 <NavSwitcher 
@@ -111,7 +125,7 @@ class PuzzleStepper extends React.Component {
                     setCurrentStep={this.setCurrentStep.bind(this)} 
                     maxSteps={this.state.inputObject.length - 1} 
                     currentStep={this.state.currentStep}
-                    endButton={this.props.mode==="manual"}
+                    endButton={this.getEndButton()}
                     />
 
                 <Row className="mb-4">

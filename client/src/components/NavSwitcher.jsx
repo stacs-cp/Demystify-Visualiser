@@ -48,9 +48,9 @@ class NavSwitcher extends React.Component {
                         <Form.Label className="w-70 mr-2">Current {this.props.stepName}:</Form.Label>
                         <Form.Label className="w-70 mr-2">{this.state.currentStep + 1}</Form.Label>
                     </Form.Group>
-
-                    {this.props.endButton && this.state.currentStep === this.props.maxSteps ?
-                    <Button variant="success" >Compute next {this.props.stepName} </Button>:
+                    
+                    {this.props.endButton ?
+                    this.props.endButton:
                     <Button disabled={this.state.currentStep === this.props.maxSteps} variant="primary" onClick={this.nextStep.bind(this)}>
                         Next {this.props.stepName}
                     </Button>}

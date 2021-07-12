@@ -10,13 +10,26 @@ async function getExampleData(exampleName) {
     return response.data;
 }
 
-async function createJob(eprimename, eprime, paramname, param, algorithm) {
+async function createJob(eprimename, eprime, paramname, param, algorithm, numSteps) {
     const response = await axios.post("api/job", {
         eprimeName: eprimename,
         eprime: eprime,
         paramName: paramname,
         param: param,
-        algorithm: algorithm
+        algorithm: algorithm,
+        numSteps: numSteps
+    })
+    return response.data
+}
+
+async function createJob(eprimename, eprime, paramname, param, algorithm, numSteps) {
+    const response = await axios.post("api/job", {
+        eprimeName: eprimename,
+        eprime: eprime,
+        paramName: paramname,
+        param: param,
+        algorithm: algorithm,
+        numSteps: numSteps
     })
     return response.data
 }
