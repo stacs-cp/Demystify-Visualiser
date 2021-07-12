@@ -94,7 +94,7 @@ class PuzzleStepper extends React.Component {
     }
 
     getEndButton() {
-        if(this.props.mode==="manual" && this.state.currentStep == this.state.inputObject.length - 1) {
+        if(this.props.mode==="manual" && this.state.currentStep === this.state.inputObject.length - 1) {
             return <Button variant="success" onClick={this.handleGetChoices.bind(this)}>{"Choices for next step"}</Button>
         } else {
             return null
