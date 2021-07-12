@@ -2,14 +2,6 @@ import React from 'react';
 import Board from '../Board/Board';
 
 class SudokuBoard extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            grid: Object.values(this.props.params.grid)
-            .map(o => Object.values(o)),
-            hints: this.props.params.hints
-        }
-    }
 
     getCellBorders() {
         let borders = []
@@ -39,8 +31,6 @@ class SudokuBoard extends React.Component {
                 key={this.props.key} 
                 highlighted={this.props.highlighted} 
                 rows={this.props.rows}
-                colsums={this.state.colsums}
-                rowsums={this.state.rowsums}
                 cellBorders={this.getCellBorders()}
                 literalSize={0.7}
                 />)

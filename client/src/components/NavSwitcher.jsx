@@ -39,7 +39,7 @@ class NavSwitcher extends React.Component {
             <Card className={this.props.className}>
 
                 <Form inline onSubmit={e => e.preventDefault()} className="d-flex justify-content-between">
-                    <Button variant="primary" onClick={this.lastStep.bind(this)}>
+                    <Button disabled={this.state.currentStep === 0} variant="primary" onClick={this.lastStep.bind(this)}>
                         Last {this.props.stepName}
                     </Button>
 
@@ -49,9 +49,11 @@ class NavSwitcher extends React.Component {
                         <Form.Label className="w-70 mr-2">{this.state.currentStep + 1}</Form.Label>
                     </Form.Group>
 
-                    <Button variant="primary" onClick={this.nextStep.bind(this)}>
+                    {this.props.endButton && this.state.currentStep === this.props.maxSteps ?
+                    <Button variant="success" >Compute next {this.props.stepName} </Button>:
+                    <Button disabled={this.state.currentStep === this.props.maxSteps} variant="primary" onClick={this.nextStep.bind(this)}>
                         Next {this.props.stepName}
-                    </Button>
+                    </Button>}
 
                 </Form>
 
