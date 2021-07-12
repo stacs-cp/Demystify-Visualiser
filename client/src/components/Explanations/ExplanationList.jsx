@@ -9,7 +9,7 @@ import Explanation from './Explanation';
 class ExplanationList extends React.Component {
 
     render() {
-        const { simpleDeductions, deduction, otherChoices, smallestMUSSize} = this.props;
+        const { simpleDeductions, deduction, choices, smallestMUSSize} = this.props;
         return (
             <React.Fragment>
                 <Card className="mt-3" >
@@ -68,10 +68,10 @@ class ExplanationList extends React.Component {
                 </Card>
 
                 {/*If there are other choices, display a NavSwitcher to step through the alternatives */
-                otherChoices && 
+                choices && 
                     <Card className="mt-3">
                     <Card.Header>
-                        <b>Found {otherChoices.length + 1} choices in total for this step:</b>
+                        <b>Found {choices.length + 1} choices in total for this step:</b>
                     </Card.Header>
                     <Card.Body>
                         <div className="mb-3">
@@ -82,7 +82,7 @@ class ExplanationList extends React.Component {
                             stepName={"Alt"} 
                             className="p-3" 
                             setCurrentStep={this.props.setAlternative} 
-                            maxSteps={otherChoices.length}
+                            maxSteps={choices.length}
                             currentStep={this.props.currentAlternative}
                             />
                         <div>
@@ -92,7 +92,7 @@ class ExplanationList extends React.Component {
                         </div>
 
                     </Card.Body>
-
+                {this.props.children}
                 </Card>}
             </React.Fragment>
         );

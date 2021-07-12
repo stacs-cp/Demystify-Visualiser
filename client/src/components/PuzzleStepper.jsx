@@ -16,6 +16,9 @@ import SkyscrapersBoard from './PuzzleBoards/SkyscrapersBoard';
 import GaramBoard from './PuzzleBoards/GaramBoard';
 import NonogramBoard from './PuzzleBoards/NonogramBoard';
 import SudokuBoard from './PuzzleBoards/SudokuBoard';
+import JobWait from './JobWait';
+
+import * as API from "../API";
 
 /**
  * Main puzzle visualiser with a board on the left and explanations on the right.
@@ -27,12 +30,17 @@ class PuzzleStepper extends React.Component {
             currentStep: 0,
             highlightedLiterals: -1,
             highlightedExplanations: [],
-            currentAlternative: 0,
+            currentChoice: 0,
             type: this.props.type,
             params: this.props.params,
             inputObject: this.props.inputObject,
-            continueData: this.props.continueData
+            continueData: this.props.continueData,
+            isWaiting: false,
         }
+    }
+
+    isChoicesStep() {
+        return (this.props.mode === "manual") && (this.state.currentStep === this.state.inputObject.length - 1)
     }
 
     /* Two-way highlighting system: mouseover an explanation and see relevant literals,
@@ -52,12 +60,12 @@ class PuzzleStepper extends React.Component {
 
     // Passed to the NavSwitcher for overall steps
     setCurrentStep(step) {
-        this.setState({ currentStep: step, currentAlternative: 0});
+        this.setState({ currentStep: step, currentChoice: 0});
     }
 
     // Passed to the NavSwitcher for switching between alternatives.
-    setAlternative(number) {
-        this.setState({currentAlternative: number})
+    setChoice(number) {
+        this.setState({currentChoice: number})
     }
 
     // Choose a board if we have defined one for this puzzle type.
@@ -95,20 +103,40 @@ class PuzzleStepper extends React.Component {
     }
 
     getEndButton() {
-        if(this.props.mode==="manual" && this.state.currentStep === this.state.inputObject.length - 1) {
-            return <Button variant="success" onClick={this.handleGetChoices.bind(this)}>{"Choices for next step"}</Button>
+        if(this.isChoicesStep()) {
+            return <Button 
+                        variant="success" 
+                        disabled={this.state.isWaiting} 
+                        onClick={this.handleGetChoices.bind(this)}>{"Choices for next step"} </Button>
         } else {
             return null
         }
     }
 
-    handleGetChoices() {
-        
+    appendInput(obj, mode) {
+        this.setState({
+            continueData: obj, 
+            inputObject: [...this.state.inputObject, {...obj.result[0], otherChoices: obj.result}],
+            isWaiting: false})
+    }
+
+    async handleGetChoices() {
+        const {eprimename, eprime, paramname, param, algorithm} = this.state.continueData;
+
+        const result = await API.createJob(eprimename, eprime, paramname, param, algorithm, 0);
+        this.setState({isWaiting: true, jobId: result.jobId})
+    }
+
+    getStepData() {
+        if(this.isChoicesStep()) {
+            return this.state.inputObject[this.state.currentStep]
+        }
     }
     render() {
-        const stepData = this.state.currentAlternative=== 0 ?
+
+        const stepData = this.state.currentChoice=== 0 ?
             this.state.inputObject[this.state.currentStep]
-            : this.state.inputObject[this.state.currentStep].otherChoices[this.state.currentAlternative - 1]
+            : this.state.inputObject[this.state.currentStep].otherChoices[this.state.currentChoice - 1]
 
         // Core required board props. 
         const boardProps = {
@@ -130,7 +158,10 @@ class PuzzleStepper extends React.Component {
                     currentStep={this.state.currentStep}
                     endButton={this.getEndButton()}
                     />
-
+                {this.state.isWaiting ? 
+                            <Row className="mt-4 d-flex justify-content-center align-items-center">
+                                <JobWait jobId={this.state.jobId} setInput={this.appendInput.bind(this)} mode={this.state.mode}/>
+                            </Row>:
                 <Row className="mb-4">
                     {/*The main board: adjust width based on screen size */}
                     <Col xs={12} md={8} lg={8} xl={6}>
@@ -153,19 +184,24 @@ class PuzzleStepper extends React.Component {
                             /* Only one of simpleDeductions or deductions should be defined. */
                             simpleDeductions={stepData.simpleDeductions}
                             deduction={stepData.deduction}
-
+                            
                             highlighted={this.state.highlightedExplanations} 
 
                             /* Props for displaying alternatives */
-                            otherChoices={this.state.inputObject[this.state.currentStep].otherChoices}
+                            choices={this.state.inputObject[this.state.currentStep].otherChoices}
                             smallestMUSSize={this.state.inputObject[this.state.currentStep].smallestMUSSize}
-                            setAlternative={this.setAlternative.bind(this)}
-                            currentAlternative={this.state.currentAlternative}
-                            />
+                            setChoice={this.setChoice.bind(this)}
+                            currentChoice={this.state.currentChoice}
+                            >
+                            {this.isChoicesStep() &&
+                            <> <Button variant="success">Select explanation</Button> 
+                                <p>Currently selected choice: </p> </>}
+                        </ExplanationList>
+                        
                         
                         
                     </Col>
-                </Row>
+                </Row>}
             </React.Fragment>
         );
     }

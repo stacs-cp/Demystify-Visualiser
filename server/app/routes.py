@@ -18,8 +18,7 @@ def run_demystify(eprime_name, eprime, param_name, param, num_steps, algorithm):
     param_file.write(param)
     param_file.close()
 
-    if num_steps < 1:
-        num_steps=None
+    
 
     try:
         explainer.init_from_essence(eprime_path, param_path)
@@ -27,10 +26,16 @@ def run_demystify(eprime_name, eprime, param_name, param, num_steps, algorithm):
         return str(e)
 
     try:
-        result = explainer.explain_steps(num_steps=num_steps)
+        if num_steps == 0:
+            result = explainer.get_choices()
+        elif num_steps < 0:    
+            result = explainer.explain_steps()
+        else:
+            result = explainer.explain_steps(num_steps=num_steps)
+
         return {"result": result, 
-                "eprimeName": eprime_name, 
-                "paramName": param_name,
+                "eprimename": eprime_name, 
+                "paramname": param_name,
                 "eprime": eprime,
                 "param": param, 
                 "algorithm": algorithm,

@@ -1,8 +1,8 @@
 import React from 'react';
 
 import { Container} from 'react-bootstrap';
-import ManualPuzzleStepper from './ManualPuzzleStepper';
-import AutoPuzzleStepper from './AutoPuzzleStepper';
+import PuzzleStepper from './PuzzleStepper';
+
 import MainMenu from './MainMenu';
 
 /**
@@ -48,6 +48,7 @@ class DemystifyViewer extends React.Component {
           /*Otherwise display the main puzzle visualiser*/
             <PuzzleStepper
               inputObject={this.state.inputObject}
+              continueData={this.state.continueData}
               type={this.state.type}
               params={this.state.params} 
               mode={this.state.mode} />

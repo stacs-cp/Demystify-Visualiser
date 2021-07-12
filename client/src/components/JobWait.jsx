@@ -36,7 +36,12 @@ class JobWait extends React.Component {
                             this.props.setInput(output, this.props.mode)
                         }).catch(error => {
                             clearInterval(this.timer)
-                            this.setState({error: error.response.data})
+                            if(error.response) {
+                                this.setState({error: error.response.data})
+                            } else {
+                                this.setState({error: error})
+                            }
+                            
                         })) 
         this.setState({pollCount: this.state.pollCount + 1})
         if(this.state.pollCount === 10) {
