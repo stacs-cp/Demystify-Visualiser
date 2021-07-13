@@ -9,10 +9,10 @@ import Explanation from './Explanation';
 class ExplanationList extends React.Component {
 
     render() {
-        const { simpleDeductions, deduction, choices, smallestMUSSize, extraChoice} = this.props;
+        const { simpleDeductions, deduction, choices, smallestMUSSize, extraChoice, boldBorder} = this.props;
         return (
             <React.Fragment>
-                <Card className="mt-3" >
+                <Card className="mt-3" border={boldBorder ? "primary" : "none"}>
 
                     { /*For simple deductions (just one reason), display a collapsible list */
                         simpleDeductions ?

@@ -19,6 +19,7 @@ class MainMenu extends React.Component {
             error: "",
             jobId: null,
             isLoadingExamples: true,
+            isLoadingExampleJSON: false,
             mode: "default",
             algorithm: "cascade",
             isQueueing: false,
@@ -84,6 +85,7 @@ class MainMenu extends React.Component {
     }
 
     async chooseExample(name) {
+        this.setState({isLoadingExampleJSON: true})
         const example = await API.getExampleData(name);
         this.props.setInput({result: example}, "default");
     }
@@ -114,7 +116,7 @@ class MainMenu extends React.Component {
                                 {/* Basic file selection. */}
                                 <b className="mx-4">  Load Demystify output from JSON file:</b>
                                 <FileUploader
-                                    disabled={this.state.isQueueing}
+                                    disabled={this.state.isQueueing || this.state.isLoadingExampleJSON}
                                     onUpload={(text) => this.props.setInput({result: JSON.parse(text)}, "default")}
                                     onError={() => this.setError(
                                         "Could not read the input file. Ensure it is a JSON file produced by Demystify.")}
@@ -143,6 +145,7 @@ class MainMenu extends React.Component {
                                                 </Dropdown.Item>)}
                                     </Dropdown.Menu>
                                 </Dropdown>
+                                {this.state.isLoadingExampleJSON && <Spinner className="ml-4" animation="border"/>}
                             </Row>
                         </ListGroup.Item>
 
@@ -154,7 +157,7 @@ class MainMenu extends React.Component {
                             <Row>
                                 <p className="mx-4">Puzzle description (.eprime): </p>
                                 <FileUploader
-                                    disabled={this.state.isQueueing}
+                                    disabled={this.state.isQueueing || this.state.isLoadingExampleJSON}
                                     onUpload={(text, name) => this.setState({ eprime: text, eprimename: name })}
                                     onError={() => this.setError(
                                         "Could not read the input file. Ensure it is a valid .eprime file.")}
@@ -164,7 +167,7 @@ class MainMenu extends React.Component {
                             <Row>
                                 <p className="mx-4">Puzzle instance (.param): </p>
                                 <FileUploader
-                                    disabled={this.state.isQueueing}
+                                    disabled={this.state.isQueueing || this.state.isLoadingExampleJSON}
                                     onUpload={(text, name) => this.setState({ param: text, paramname: name })}
                                     onError={() => this.setError(
                                         "Could not read the input file. Ensure it is a valid .param file.")}
@@ -216,7 +219,7 @@ class MainMenu extends React.Component {
                             </Row>
                             <Row>
                                 <Button
-                                    disabled={this.state.isQueueing}
+                                    disabled={this.state.isQueueing || this.state.isLoadingExampleJSON}
                                     className="mx-4"
                                     variant="success"
                                     onClick={this.handleGo.bind(this)}>

@@ -31,6 +31,7 @@ class PuzzleStepper extends React.Component {
             highlightedLiterals: -1,
             highlightedExplanations: [],
             currentChoice: 0,
+            selectedChoice: 0,
             type: this.props.type,
             params: this.props.params,
             inputObject: this.props.inputObject,
@@ -144,6 +145,10 @@ class PuzzleStepper extends React.Component {
             return this.state.inputObject[this.state.currentStep].otherChoices
         }
     }
+
+    handleSelectChoice() {
+        this.setState({selectedChoice: this.state.currentChoice})
+    }
     render() {
 
         const stepData = this.getStepData()
@@ -200,7 +205,7 @@ class PuzzleStepper extends React.Component {
                             deduction={stepData.deduction}
                             
                             highlighted={this.state.highlightedExplanations} 
-
+                            boldBorder={this.isChoicesStep() && this.state.currentChoice === this.state.selectedChoice}
                             /* Props for displaying alternatives */
                             choices={this.getAlternatives()}
                             smallestMUSSize={this.state.inputObject[this.state.currentStep].smallestMUSSize}
@@ -209,8 +214,11 @@ class PuzzleStepper extends React.Component {
                             extraChoice={!this.isChoicesStep()}
                             >
                             {this.isChoicesStep() &&
-                            <> <Button className="mt-3" variant="success">Select explanation</Button> 
-                                <p className="mt-3">Currently selected choice: </p> </>}
+                            <> 
+                                {this.state.currentChoice !== this.state.selectedChoice ?
+                                    <Button onClick={this.handleSelectChoice.bind(this)} className="mt-3" variant="success">Select explanation</Button>
+                                :   <Button className="mt-3" disabled variant="success">Currently selected</Button>}
+                                <p className="mt-3">Currently selected choice: {this.state.selectedChoice + 1}</p> </>}
                         </ExplanationList>
                         
                         
