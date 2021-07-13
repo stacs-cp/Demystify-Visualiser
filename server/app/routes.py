@@ -36,18 +36,41 @@ def run_demystify(eprime_name, eprime, param_name, param, num_steps, algorithm, 
             # TODO make demystify return something that lets this be less messy
             result = {"steps": []}
             output = explainer.get_choices()
-            choices = output["steps"][0]
+            choices = output["steps"][0] if len(output["steps"])> 0 else []
             result["name"] = output["name"]
             result["params"] = output["params"]
             result["steps"].append({"choices": choices})
+            while len(choices) == 0 and len(explainer.unexplained) > 0:
+                result["steps"] = result["steps"][:-1]
+                result["steps"].append(explainer.explain_steps(num_steps=1)["steps"][0])
+                if len(explainer.unexplained) > 0:
+                    output = explainer.get_choices()
+                    choices = output["steps"][0] if len(output["steps"]) > 0 else []
+                    result["name"] = output["name"]
+                    result["params"] = output["params"]
+                    result["steps"].append({"choices": choices})
+
         elif num_steps < 0:    
             result = explainer.explain_steps()
         else:
             result = explainer.explain_steps(num_steps=num_steps, mus_choice=choice)
-        
-        if appendChoices:
-            choices = explainer.get_choices()["steps"][0]
+            output = explainer.get_choices()
+            choices = output["steps"][0] if len(output["steps"]) > 0 else []
+            result["name"] = output["name"]
+            result["params"] = output["params"]
             result["steps"].append({"choices": choices})
+            while len(choices) == 0 and len(explainer.unexplained) > 0:
+                result["steps"] = result["steps"][:-1]
+                result["steps"].append(explainer.explain_steps(num_steps=1)["steps"][0])
+                if len(explainer.unexplained) > 0:
+                    output = explainer.get_choices()
+                    choices = output["steps"][0] if len(output["steps"]) > 0 else []
+                    result["name"] = output["name"]
+                    result["params"] = output["params"]
+                    result["steps"].append({"choices": choices})
+            
+        
+        
 
 
         return {"result": result, 

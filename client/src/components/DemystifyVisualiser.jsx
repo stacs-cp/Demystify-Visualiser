@@ -25,6 +25,9 @@ class DemystifyVisualiser extends React.Component {
     this.setState({ continueData: obj, inputObject: result.steps, type: result.name, params: result.params, mode: mode},
       () => !(this.state.inputObject && this.state.type && this.state.params)  
       && this.setError()) 
+    
+    // If we already finished the puzzle, switch to non-interactive
+    obj.finished && this.setState({mode: "default"})
   }
 
 

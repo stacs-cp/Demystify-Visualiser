@@ -42,7 +42,7 @@ class PuzzleStepper extends React.Component {
     }
 
     isChoicesStep() {
-        return (this.props.mode === "manual") && !this.state.finished && (this.state.currentStep === this.state.inputObject.length - 1)
+        return (this.props.mode === "manual") && !this.state.finishedPuzzle && (this.state.currentStep === this.state.inputObject.length - 1)
     }
 
     /* Two-way highlighting system: mouseover an explanation and see relevant literals,
