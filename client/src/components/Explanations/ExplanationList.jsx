@@ -9,7 +9,7 @@ import Explanation from './Explanation';
 class ExplanationList extends React.Component {
 
     render() {
-        const { simpleDeductions, deduction, choices, smallestMUSSize} = this.props;
+        const { simpleDeductions, deduction, choices, smallestMUSSize, extraChoice} = this.props;
         return (
             <React.Fragment>
                 <Card className="mt-3" >
@@ -71,7 +71,7 @@ class ExplanationList extends React.Component {
                 choices && 
                     <Card className="mt-3">
                     <Card.Header>
-                        <b>Found {choices.length + 1} choices in total for this step:</b>
+                        <b>Found {extraChoice ? choices.length + 1 : choices.length} choices in total for this step:</b>
                     </Card.Header>
                     <Card.Body>
                         <div className="mb-3">
@@ -81,18 +81,18 @@ class ExplanationList extends React.Component {
                         <NavSwitcher 
                             stepName={"Alt"} 
                             className="p-3" 
-                            setCurrentStep={this.props.setAlternative} 
-                            maxSteps={choices.length}
-                            currentStep={this.props.currentAlternative}
+                            setCurrentStep={this.props.setChoice} 
+                            maxSteps={extraChoice? choices.length : choices.length - 1}
+                            currentStep={this.props.currentChoice}
                             />
                         <div>
                             <small className="text-muted">
                                 (Note: different MUSs may result in deductions that look identical)
                             </small>
                         </div>
-
+                        {this.props.children}
                     </Card.Body>
-                {this.props.children}
+                
                 </Card>}
             </React.Fragment>
         );

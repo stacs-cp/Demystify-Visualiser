@@ -107,7 +107,7 @@ class PuzzleStepper extends React.Component {
             return <Button 
                         variant="success" 
                         disabled={this.state.isWaiting} 
-                        onClick={this.handleGetChoices.bind(this)}>{"Choices for next step"} </Button>
+                        onClick={this.handleGetChoices.bind(this)}>{"Confirm Choice"} </Button>
         } else {
             return null
         }
@@ -129,14 +129,24 @@ class PuzzleStepper extends React.Component {
 
     getStepData() {
         if(this.isChoicesStep()) {
+            return this.state.inputObject[this.state.currentStep][this.state.currentChoice]
+        } else {
+            return this.state.currentChoice=== 0 ?
+            this.state.inputObject[this.state.currentStep]
+            : this.state.inputObject[this.state.currentStep].otherChoices[this.state.currentChoice - 1]
+        }
+    }
+
+    getAlternatives() {
+        if(this.isChoicesStep()) {
             return this.state.inputObject[this.state.currentStep]
+        } else {
+            return this.state.inputObject[this.state.currentStep].otherChoices
         }
     }
     render() {
 
-        const stepData = this.state.currentChoice=== 0 ?
-            this.state.inputObject[this.state.currentStep]
-            : this.state.inputObject[this.state.currentStep].otherChoices[this.state.currentChoice - 1]
+        const stepData = this.getStepData()
 
         // Core required board props. 
         const boardProps = {
@@ -160,7 +170,11 @@ class PuzzleStepper extends React.Component {
                     />
                 {this.state.isWaiting ? 
                             <Row className="mt-4 d-flex justify-content-center align-items-center">
-                                <JobWait jobId={this.state.jobId} setInput={this.appendInput.bind(this)} mode={this.state.mode}/>
+                                <Card className="mt-3">
+                                    <Card.Body>
+                                        <JobWait jobId={this.state.jobId} setInput={this.appendInput.bind(this)} mode={this.state.mode}/>
+                                    </Card.Body>
+                                </Card>
                             </Row>:
                 <Row className="mb-4">
                     {/*The main board: adjust width based on screen size */}
@@ -188,14 +202,15 @@ class PuzzleStepper extends React.Component {
                             highlighted={this.state.highlightedExplanations} 
 
                             /* Props for displaying alternatives */
-                            choices={this.state.inputObject[this.state.currentStep].otherChoices}
+                            choices={this.getAlternatives()}
                             smallestMUSSize={this.state.inputObject[this.state.currentStep].smallestMUSSize}
                             setChoice={this.setChoice.bind(this)}
                             currentChoice={this.state.currentChoice}
+                            extraChoice={!this.isChoicesStep()}
                             >
                             {this.isChoicesStep() &&
-                            <> <Button variant="success">Select explanation</Button> 
-                                <p>Currently selected choice: </p> </>}
+                            <> <Button className="mt-3" variant="success">Select explanation</Button> 
+                                <p className="mt-3">Currently selected choice: </p> </>}
                         </ExplanationList>
                         
                         
