@@ -45,7 +45,7 @@ class MainMenu extends React.Component {
         const numSteps = mode === "default" ? -1 : 0;
 
         try {
-            const result = await API.createJob(eprimename, eprime, paramname, param, algorithm, numSteps);
+            const result = await API.createJob(eprimename, eprime, paramname, param, algorithm, numSteps, [], false, 0);
             this.setState({isWaiting: true, jobId: result.jobId})
             
         } catch (err) {

@@ -6,7 +6,7 @@ from worker import conn
 
 bp = Blueprint('routes', __name__)
 
-def run_demystify(eprime_name, eprime, param_name, param, num_steps, algorithm):
+def run_demystify(eprime_name, eprime, param_name, param, num_steps, algorithm, explained, appendChoices, choice):
     explainer = Explainer(algorithm)
     eprime_path = "./eprime/" + eprime_name
     param_path = "./eprime/" + param_name
@@ -22,16 +22,34 @@ def run_demystify(eprime_name, eprime, param_name, param, num_steps, algorithm):
 
     try:
         explainer.init_from_essence(eprime_path, param_path)
+        sol = explainer.solution
+        solmap = {}
+        for s in sol:
+            solmap[str(s)] = s
+
+        explainer._add_known([solmap[e] for e in explained])
+
     except Exception as e:
         return str(e)
 
     try:
         if num_steps == 0:
-            result = explainer.get_choices()
+            # TODO make demystify return something that lets this be less messy
+            result = {"steps": []}
+            output = explainer.get_choices()
+            choices = output["steps"][0]
+            result["name"] = output["name"]
+            result["params"] = output["params"]
+            result["steps"].append({"choices": choices})
         elif num_steps < 0:    
             result = explainer.explain_steps()
         else:
-            result = explainer.explain_steps(num_steps=num_steps)
+            result = explainer.explain_steps(num_steps=num_steps, mus_choice=choice)
+        
+        if appendChoices:
+            choices = explainer.get_choices()["steps"][0]
+            result["steps"].append({"choices": choices})
+
 
         return {"result": result, 
                 "eprimename": eprime_name, 
@@ -62,7 +80,10 @@ def create_job():
                 json.get("paramName"),
                 json.get("param"),
                 json.get("numSteps", -1),
-                json.get("algorithm", "cascade")
+                json.get("algorithm", "cascade"),
+                json.get("explainedLits", []),
+                json.get("appendChoices", False),
+                json.get("choice", 0)
                 ), result_ttl=5000
         )
     return jsonify({
@@ -84,9 +105,6 @@ def get_job(job_id):
                 "status": job.get_status(),
                 })
 
-@bp.route('/job/<string:job_id>', methods=['POST'])
-def continue_job(job_id):    
-    return f'continue_job({job_id})'
 
 @bp.route('/job/<string:job_id>/output', methods=['GET'])
 def get_job_output(job_id):

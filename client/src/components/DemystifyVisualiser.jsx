@@ -8,7 +8,7 @@ import MainMenu from './MainMenu';
 /**
  * Currently the main content component for this application.
  */
-class DemystifyViewer extends React.Component {
+class DemystifyVisualiser extends React.Component {
   state = {
     inputObject: [],
     type: "",
@@ -58,4 +58,4 @@ class DemystifyViewer extends React.Component {
   }
 }
 
-export default DemystifyViewer
+export default DemystifyVisualiser

@@ -108,7 +108,7 @@ class PuzzleStepper extends React.Component {
             return <Button 
                         variant="success" 
                         disabled={this.state.isWaiting} 
-                        onClick={this.handleGetChoices.bind(this)}>{"Confirm Choice"} </Button>
+                        onClick={this.handleGetNext.bind(this)}>{"Confirm Choice"} </Button>
         } else {
             return null
         }
@@ -116,21 +116,24 @@ class PuzzleStepper extends React.Component {
 
     appendInput(obj, mode) {
         this.setState({
+            currentChoice: 0,
+            selectedChoice: 0,
+            currentStep: this.state.currentStep + 1,
             continueData: obj, 
-            inputObject: [...this.state.inputObject, {...obj.result[0], otherChoices: obj.result}],
+            inputObject: [...(this.state.inputObject.slice(0, -1)), ...obj.result.steps],
             isWaiting: false})
     }
 
-    async handleGetChoices() {
-        const {eprimename, eprime, paramname, param, algorithm} = this.state.continueData;
-
-        const result = await API.createJob(eprimename, eprime, paramname, param, algorithm, 0);
+    async handleGetNext() {
+        const {eprimename, eprime, paramname, param, algorithm, explainedLits} = this.state.continueData;
+        const {currentChoice} = this.state;
+        const result = await API.createJob(eprimename, eprime, paramname, param, algorithm, 1, explainedLits, true, currentChoice);
         this.setState({isWaiting: true, jobId: result.jobId})
     }
 
     getStepData() {
         if(this.isChoicesStep()) {
-            return this.state.inputObject[this.state.currentStep][this.state.currentChoice]
+            return this.state.inputObject[this.state.currentStep].choices[this.state.currentChoice]
         } else {
             return this.state.currentChoice=== 0 ?
             this.state.inputObject[this.state.currentStep]
@@ -140,7 +143,7 @@ class PuzzleStepper extends React.Component {
 
     getAlternatives() {
         if(this.isChoicesStep()) {
-            return this.state.inputObject[this.state.currentStep]
+            return this.state.inputObject[this.state.currentStep].choices
         } else {
             return this.state.inputObject[this.state.currentStep].otherChoices
         }
