@@ -37,11 +37,12 @@ class PuzzleStepper extends React.Component {
             inputObject: this.props.inputObject,
             continueData: this.props.continueData,
             isWaiting: false,
+            finishedPuzzle: false
         }
     }
 
     isChoicesStep() {
-        return (this.props.mode === "manual") && (this.state.currentStep === this.state.inputObject.length - 1)
+        return (this.props.mode === "manual") && !this.state.finished && (this.state.currentStep === this.state.inputObject.length - 1)
     }
 
     /* Two-way highlighting system: mouseover an explanation and see relevant literals,
@@ -119,7 +120,8 @@ class PuzzleStepper extends React.Component {
             currentChoice: 0,
             selectedChoice: 0,
             currentStep: this.state.currentStep + 1,
-            continueData: obj, 
+            continueData: obj,
+            finishedPuzzle: obj.finished,
             inputObject: [...(this.state.inputObject.slice(0, -1)), ...obj.result.steps],
             isWaiting: false})
     }

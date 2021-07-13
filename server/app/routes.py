@@ -3,6 +3,7 @@ from rq.job import Job
 from demystify.explain import Explainer  
 import app
 from worker import conn
+import traceback
 
 bp = Blueprint('routes', __name__)
 
@@ -18,8 +19,6 @@ def run_demystify(eprime_name, eprime, param_name, param, num_steps, algorithm, 
     param_file.write(param)
     param_file.close()
 
-    
-
     try:
         explainer.init_from_essence(eprime_path, param_path)
         sol = explainer.solution
@@ -30,7 +29,7 @@ def run_demystify(eprime_name, eprime, param_name, param, num_steps, algorithm, 
         explainer._add_known([solmap[e] for e in explained])
 
     except Exception as e:
-        return str(e)
+        return traceback.format_exc() + str(e)
 
     try:
         if num_steps == 0:
@@ -58,10 +57,11 @@ def run_demystify(eprime_name, eprime, param_name, param, num_steps, algorithm, 
                 "param": param, 
                 "algorithm": algorithm,
                 "explainedLits": [str(l) for l in explainer.explained],
-                "stepsExplained": explainer.steps_explained}
+                "stepsExplained": explainer.steps_explained,
+                "finished": len(explainer.unexplained) <= 0}
     
     except Exception as e:
-        return str(e)
+        return traceback.format_exc() +  str(e)
 
 
 @bp.route("/")                   
