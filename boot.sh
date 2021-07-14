@@ -1,5 +1,6 @@
 #!/bin/sh
 
+export PATH=$HOME/.local/bin:$PATH
 cp ./nginx.conf /host/mjm42/nginx.d/default/demystify.conf
 nginx -c /host/mjm42/nginx.conf -s reload
 

@@ -16,7 +16,7 @@ Jinja2==3.0.1
 keyring==23.0.1
 lazy-object-proxy==1.4.3
 MarkupSafe==2.0.1
-numpy==1.21.0
+numpy==1.19.0
 packaging==21.0
 pkginfo==1.7.0
 Pygments==2.9.0
