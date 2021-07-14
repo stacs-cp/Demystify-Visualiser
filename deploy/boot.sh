@@ -5,7 +5,7 @@ cp ./nginx.conf /host/mjm42/nginx.d/default/demystify.conf
 nginx -c /host/mjm42/nginx.conf -s reload
 
 echo "Setting up python virtual environment."
-cd ./server
+cd ../server
 python3 -m venv venv
 source venv/bin/activate
 pip3 install -r requirements.txt
