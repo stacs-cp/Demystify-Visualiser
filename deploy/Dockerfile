@@ -10,7 +10,8 @@ RUN npm install && npm run build
 
 WORKDIR /home/DemystifyVisualiser/server
 RUN pip3 install -r requirements.txt 
-RUN touch start.sh &&\
-    echo 
+ENV FLASK_ENV production
+ENV REDISTOGO_URL redis://redis:6379/0
 EXPOSE 5000
+
 CMD ["gunicorn", "--workers", "4", "-b", ":5000", "api:app"]
