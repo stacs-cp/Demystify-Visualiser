@@ -2,27 +2,48 @@
 
 This is a react-based tool that provides a visualisation of the human understandable solutions to "pen and paper" puzzles produced by the "Demystify" solver. Originally written by Matthew McIlree (https://github.com/mmcilree) as part of an Undergraduate Research Assistant Scheme project 2021. 
 
-## How to Run
+## How to Run (Basic)
 
 1. Ensure you have [Node >= 10.16 and npm >= 5.6](https://nodejs.org/en/) installed.
-2. Clone the repository.
-3. Navigate to the `demystify-visualiser/client` folder. 
-4. Run `npm install`
-5. Run `npm start`
+2. Ensure you have python3/pip3 installed
+3. Clone the repository.
+4. Navigate to the `demystify-visualiser/client` folder. 
+5. Run `npm install`
+6. Run `npm start`
+7. Run `npm run backend`
+8. The web application will be available at `localhost:3000/demystify`
+
+## How to Run (Including Live Features)
+
+To make use of the "Run demystify live feature" some extra steps are required:
+
+1. Install conjure as described in the README for demystify (https://github.com/stacs-cp/demystify).
+2. Install [Redis >= 6.24](https://redis.io/download)
+3. Follow the steps as above
+4. Additionally run `npm run worker` in the client folder.
+
+## Alternative Using Dockerfile
+
+Alternatively, the installation steps above (including install of conjure) can be replaced with installation in a container using Docker. 
+
+1. Navigate to the `deploy` folder.
+2. Run `docker-compose build` (this may take some time to complete)
+3. Then, the application can be started via`docker-compose up`.
+4. The web application will be available at `localhost:5000/demystify`
 
 ## Basic Usage
 
-Currently the visualiser takes a JSON input file produced by running Demystify with the ``--json`` option (the value of the option is the name of the json file to be produced) e.g.
+The visualiser can take as input JSON input file produced by running Demystify with the ``--json`` option (the value of the option is the name of the json file to be produced) e.g.
 
 ```bash
 python3 demystify --eprime ./eprime/nfutoshiki.eprime --eprimeparam ./eprime/futoshiki/nfutoshiki-1.param --json futoshiki
 ```
 
-Such an output can then be selected and viewed. Alternatively preloaded examples are available for demonstration purposes. 
+Such an output can then be selected and viewed. Alternatively preloaded examples are available for demonstration purposes, or if the additional steps were taken, demystify can be run directly from the app by uploading eprime and param files. 
 
 ## Extending the Styling Code for Further Puzzles
 
-I have aimed to make this project extensible, so that it can properly style many similar puzzles to the ones already implemented. 
+I have aimed to make the puzzle styling for this project extensible, so that it can properly style many similar puzzles to the ones already implemented. 
 
 The core component for puzzle display is the [`Board`](./src/components/Board/Board.jsx) component. This provides by default a basic grid/numerical display for puzzles (as can be seen for the unstyled Binairo puzzle). To create a new Puzzle style, take the following steps:
 
@@ -48,5 +69,5 @@ The currently supported `Board` props are as follows:
 
 ## Deploying to a server
 
-A simple method of deploying (using the npm serve package) is demonstrated via the `nginx.conf` file and the `boot.sh` deployment script. 
+One way of deploying (using Flask) is demonstrated via the `nginx.conf` file and the `boot.sh` deployment script. 
 
