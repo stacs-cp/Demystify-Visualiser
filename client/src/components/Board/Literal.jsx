@@ -33,7 +33,8 @@ class Literal extends React.Component {
             color:  (status === "involved") ? "blue" :
                     (status === "negative") ? "red" :
                     (status === "positive") ? "green" : "black",
-            textShadow: (status === "involved") ? "0 0 4px #00FEFE" : "none",
+            textShadow: (status === "involved") ? "0 0 4px #00FEFE" : 
+                        (status === "positive") ? "0 0 4px #90EE90" : "none",
             textDecoration:
                 (status === "negative") ? "line-through" : "none",
             fontWeight:

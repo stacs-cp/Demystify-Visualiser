@@ -20,8 +20,14 @@ class Cell extends React.Component {
     isSingleton() {
         const cellRows = this.props.cellContent.cellRows;
 
-        return cellRows.length === 1 &&
-                cellRows[0].cellValues.length === 1
+        return (cellRows.length === 1 &&
+                cellRows[0].cellValues.length === 1) || this.containsKnown(cellRows)
+    }
+
+    // Additional check in case for some reason (e.g. with PyExplain) the grid isn't 1x1 but the value
+    // is nevertheless known.
+    containsKnown(cellRows) {
+        return cellRows.some(row => row.cellValues.some(value => value.markers.includes("pik")))
     }
 
     // Get the first value of the cell grid.
