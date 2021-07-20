@@ -11,9 +11,11 @@ def run_demystify(eprime_name, eprime, param_name, param, num_steps, algorithm, 
     explainer = Explainer(algorithm)
     eprime_path = "./eprime/" + eprime_name
     param_path = "./eprime/" + param_name
-    eprime_file = open(eprime_path, "w")
-    eprime_file.write(eprime)
-    eprime_file.close()
+
+    if eprime is not None:
+        eprime_file = open(eprime_path, "w")
+        eprime_file.write(eprime)
+        eprime_file.close()
 
     param_file = open(param_path, "w")
     param_file.write(param)
@@ -99,7 +101,7 @@ def create_job():
             func=run_demystify, 
             args=(
                 json.get("eprimeName"), 
-                json.get("eprime"),
+                json.get("eprime", None),
                 json.get("paramName"),
                 json.get("param"),
                 json.get("numSteps", -1),

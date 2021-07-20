@@ -10,7 +10,7 @@ from rq import Queue
 from worker import conn
 from .routes import bp as routes
 
-q = Queue(connection=conn)
+q = Queue(connection=conn, default_timeout=600)
 def create_app():
     BASE_URL = "/demystify"
     app = Flask(__name__, static_folder='../../client/build', static_url_path=BASE_URL + "/")

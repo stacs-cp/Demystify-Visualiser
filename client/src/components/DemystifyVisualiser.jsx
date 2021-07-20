@@ -52,7 +52,9 @@ class DemystifyVisualiser extends React.Component {
         {/*If the puzzle has not been correctly loaded, display the main menu*/
           (this.state.inputObject.length === 0 || this.state.error) ?
             this.state.buildSudoku ? 
-              <SudokuBuilder />
+              <SudokuBuilder 
+                setInput={this.setJSONInput.bind(this)} 
+                />
               :
               <MainMenu 
                 setInput={this.setJSONInput.bind(this)} 
