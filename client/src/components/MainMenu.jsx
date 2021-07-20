@@ -148,7 +148,12 @@ class MainMenu extends React.Component {
                                 {this.state.isLoadingExampleJSON && <Spinner className="ml-4" animation="border"/>}
                             </Row>
                         </ListGroup.Item>
-
+                        <ListGroup.Item>
+                            <Row>    
+                                <b className="mx-4 pt-2">Try your own Sudoku instance:</b>
+                                <Button variant="success" onClick={this.props.handleBuildSudoku}>Create</Button>
+                            </Row>
+                        </ListGroup.Item>
                         <ListGroup.Item>
 
                             <Row>
@@ -235,6 +240,7 @@ class MainMenu extends React.Component {
                             </Row>
 
                         </ListGroup.Item>
+                        
                     </ListGroup> }
                 </Card>
                 {this.state.error.length > 0 &&

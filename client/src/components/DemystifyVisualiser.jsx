@@ -4,6 +4,7 @@ import { Container} from 'react-bootstrap';
 import PuzzleStepper from './PuzzleStepper';
 
 import MainMenu from './MainMenu';
+import SudokuBuilder from './SudokuBuilder';
 
 /**
  * Currently the main content component for this application.
@@ -15,7 +16,8 @@ class DemystifyVisualiser extends React.Component {
     params: {},
     error: false,
     mode: "default",
-    continueData: null
+    continueData: null,
+    buildSudoku: false
   }
   
   // Load the steps, the type of puzzle, and the params (configuration) of the puzzle
@@ -40,13 +42,21 @@ class DemystifyVisualiser extends React.Component {
     if(prevState.error) this.setState({error: false});
   }
 
+  handleBuildSudoku() {
+    this.setState({buildSudoku: true})
+  }
   render = () => {
     return (
       <Container fluid style={{textAlign: "center"}}>
         
         {/*If the puzzle has not been correctly loaded, display the main menu*/
           (this.state.inputObject.length === 0 || this.state.error) ?
-            <MainMenu setInput={this.setJSONInput.bind(this)} />
+            this.state.buildSudoku ? 
+              <SudokuBuilder />
+              :
+              <MainMenu 
+                setInput={this.setJSONInput.bind(this)} 
+                handleBuildSudoku={this.handleBuildSudoku.bind(this)}/>
           :
           /*Otherwise display the main puzzle visualiser*/
             <PuzzleStepper
