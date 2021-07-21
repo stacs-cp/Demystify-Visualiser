@@ -26,9 +26,12 @@ class Literal extends React.Component {
         }
     }
 
+    handleClick() {
+        this.props.setSelectedLiteral()
+    }
     render() {
         const { value, status } = this.props;
-        return <Col className="m-0 p-0" style={{
+        return <Col className="m-0 p-0" onClick={this.handleClick.bind(this)} style={{
             // Styling dependent on literal status.
             color:  (status === "involved") ? "blue" :
                     (status === "negative") ? "red" :

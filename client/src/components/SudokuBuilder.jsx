@@ -65,9 +65,7 @@ class SudokuBuilder extends React.Component {
                     param: this.getParamString(), 
                     algorithm: "cascade",
                     numSteps: -1, 
-                    explainedLits: [], 
-                    appendChoices: false, 
-                    choice: 0
+                    explainedLits: [],
                 });
 
             this.setState({isWaiting: true, jobId: result.jobId})

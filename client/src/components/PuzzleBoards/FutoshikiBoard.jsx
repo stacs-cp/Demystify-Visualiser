@@ -72,10 +72,7 @@ class FutoshikiBoard extends React.Component {
 
     render() {
         return (<Board
-                highlight={this.props.highlight} 
-                key={this.props.key} 
-                highlighted={this.props.highlighted} 
-                rows={this.props.rows}
+                {...this.props}
                 cellMargin={{margin: "20px"}}
                 rightLabels={this.getRightLabels()}
                 bottomLabels={this.getBottomLabels()}

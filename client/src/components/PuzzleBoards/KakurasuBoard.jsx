@@ -51,10 +51,7 @@ class KakurasuBoard extends React.Component {
 
     render() {
         return (<Board
-                highlight={this.props.highlight} 
-                key={this.props.key} 
-                highlighted={this.props.highlighted} 
-                rows={this.props.rows}
+                {...this.props}
                 colsums={this.state.colsums}
                 rowsums={this.state.rowsums}
                 literalBackgrounds={this.getBackgrounds()}

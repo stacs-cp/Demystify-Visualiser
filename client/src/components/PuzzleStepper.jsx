@@ -3,7 +3,7 @@ import NavSwitcher from './NavSwitcher';
 import Board from './Board/Board';
 import ExplanationList from "./Explanations/ExplanationList";
 
-import { Row, Col, Card, Button } from 'react-bootstrap';
+import { Row, Col, Card, Button, Alert } from 'react-bootstrap';
 
 import TentsBoard from './PuzzleBoards/TentsBoard';
 import BinairoBoard from './PuzzleBoards/BinairoBoard';
@@ -30,6 +30,7 @@ class PuzzleStepper extends React.Component {
             currentStep: 0,
             highlightedLiterals: -1,
             highlightedExplanations: [],
+            selectedLiteral: null,
             currentChoice: 0,
             selectedChoice: 0,
             type: this.props.type,
@@ -37,7 +38,8 @@ class PuzzleStepper extends React.Component {
             inputObject: this.props.inputObject,
             continueData: this.props.continueData,
             isWaiting: false,
-            finishedPuzzle: false
+            finishedPuzzle: false,
+            error: null
         }
     }
 
@@ -118,7 +120,7 @@ class PuzzleStepper extends React.Component {
             return <Button 
                         variant="success" 
                         disabled={this.state.isWaiting} 
-                        onClick={this.handleGetNext.bind(this)}>{"Confirm Choice"} </Button>
+                        onClick={this.handleGetNextWithForce.bind(this)}>{"Confirm Choice"} </Button>
         } else {
             return null
         }
@@ -128,7 +130,8 @@ class PuzzleStepper extends React.Component {
         this.setState({
             currentChoice: 0,
             selectedChoice: 0,
-            currentStep: this.state.currentStep + 1,
+            selectedLiteral: null,
+            currentStep: this.props.mode === "force" ? this.state.currentStep : this.state.currentStep + 1,
             continueData: obj,
             finishedPuzzle: obj.finished,
             inputObject: [...(this.state.inputObject.slice(0, -1)), ...obj.result.steps],
@@ -136,6 +139,7 @@ class PuzzleStepper extends React.Component {
     }
 
     async handleGetNext() {
+
         const {eprimeName, eprime, paramName, param, algorithm, explainedLits} = this.state.continueData;
         const {currentChoice} = this.state;
         const result = await API.createJob(
@@ -147,10 +151,35 @@ class PuzzleStepper extends React.Component {
                 algorithm: algorithm, 
                 numSteps: 1, 
                 explainedLits: explainedLits, 
-                appendChoices: true, 
                 choice: currentChoice
             });
         this.setState({isWaiting: true, jobId: result.jobId})
+    }
+
+    async handleGetNextWithForce() {
+        if(!this.state.selectedLiteral) {
+            this.setState({error: "Please choose a literal to continue."})
+            return
+        }
+        const {eprimeName, eprime, paramName, param, algorithm, explainedLits} = this.state.continueData;
+        const {selectedLiteral} = this.state;
+        const litChoice = {
+            row: selectedLiteral.row + 1, 
+            column: selectedLiteral.column + 1, 
+            value: selectedLiteral.value }
+
+        const result = await API.createJob(
+            {
+                eprimeName: eprimeName, 
+                eprime: eprime, 
+                paramName: paramName,
+                param: param, 
+                algorithm: algorithm, 
+                numSteps: 1, 
+                explainedLits: explainedLits,
+                litChoice: litChoice
+            });
+        this.setState({isWaiting: true, jobId: result.jobId, error: null})
     }
 
     getStepData() {
@@ -174,6 +203,10 @@ class PuzzleStepper extends React.Component {
     handleSelectChoice() {
         this.setState({selectedChoice: this.state.currentChoice})
     }
+
+    setSelectedLiteral(row, column, value) {
+        this.setState({selectedLiteral: {row: row, column: column, value: value}})
+    }
     render() {
 
         const stepData = this.getStepData()
@@ -184,7 +217,8 @@ class PuzzleStepper extends React.Component {
             highlight: this.highlightExplanation.bind(this),
             key: this.state.highlightedLiterals,
             highlighted: this.state.highlightedLiterals, 
-            rows: stepData.puzzleState.matrices[0].rows
+            rows: stepData.puzzleState.matrices[0].rows,
+            setSelectedLiteral: this.setSelectedLiteral.bind(this)
         }
 
 
@@ -214,6 +248,18 @@ class PuzzleStepper extends React.Component {
 
                     {/*The explanations*/}
                     <Col>
+                        {this.isLitForceStep() &&
+                            <Card className="mt-3">
+                                <Card.Body>
+                                    <b>Choose a literal (value on the board) to force explanations for that literal.</b>
+                                    <br /> <br /> Currently selected literal: 
+                                    <b>{
+                                    this.state.selectedLiteral ? " [" + (this.state.selectedLiteral.row + 1)+ ", "
+                                                                + (this.state.selectedLiteral.column + 1) + "] with value "
+                                                                + this.state.selectedLiteral.value : " none"}</b>
+                                </Card.Body>
+                            </Card>
+                        }
                         {stepData.skippedDeductions &&
                             <Card className="mt-3">
                                 <Card.Body>
@@ -222,7 +268,9 @@ class PuzzleStepper extends React.Component {
                             </Card>
                         }
 
-                        <ExplanationList
+                        {this.state.error && <Alert className="mt-3" variant="warning">{this.state.error}</Alert>}
+
+                        {!this.isLitForceStep() && <ExplanationList
                             highlight={this.highlightLiteral.bind(this)}
 
                             /* Only one of simpleDeductions or deductions should be defined. */
@@ -244,7 +292,7 @@ class PuzzleStepper extends React.Component {
                                     <Button onClick={this.handleSelectChoice.bind(this)} className="mt-3" variant="success">Select explanation</Button>
                                 :   <Button className="mt-3" disabled variant="success">Currently selected</Button>}
                                 <p className="mt-3">Currently selected choice: {this.state.selectedChoice + 1}</p> </>}
-                        </ExplanationList>
+                        </ExplanationList>}
                         
                         
                         

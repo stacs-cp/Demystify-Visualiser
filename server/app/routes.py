@@ -1,13 +1,13 @@
 from flask import request, Blueprint, jsonify, abort
 from rq.job import Job
-from demystify.explain import Explainer  
+from demystify.explain import Explainer
 import app
 from worker import conn
 import traceback
 
 bp = Blueprint('routes', __name__)
 
-def run_demystify(eprime_name, eprime, param_name, param, num_steps, algorithm, explained, appendChoices, choice):
+def run_demystify(eprime_name, eprime, param_name, param, num_steps, algorithm, explained, get_initial, choice, lit_choice):
     explainer = Explainer(algorithm)
     eprime_path = "./eprime/" + eprime_name
     param_path = "./eprime/" + param_name
@@ -34,7 +34,9 @@ def run_demystify(eprime_name, eprime, param_name, param, num_steps, algorithm, 
         return traceback.format_exc() + str(e)
 
     try:
-        if num_steps == 0:
+        if get_initial: 
+            result = explainer.get_current_state()
+        elif num_steps == 0:
             # TODO make demystify return something that lets this be less messy
             result = {"steps": []}
             output = explainer.get_choices()
@@ -54,6 +56,10 @@ def run_demystify(eprime_name, eprime, param_name, param, num_steps, algorithm, 
 
         elif num_steps < 0:    
             result = explainer.explain_steps()
+        elif lit_choice is not None:
+            result = explainer.explain_steps(num_steps=num_steps, lit_choice=lit_choice)
+            current_state = explainer.get_current_state()
+            result["steps"].append(current_state["steps"][0])
         else:
             result = explainer.explain_steps(num_steps=num_steps, mus_choice=choice)
             output = explainer.get_choices()
@@ -107,8 +113,9 @@ def create_job():
                 json.get("numSteps", -1),
                 json.get("algorithm", "cascade"),
                 json.get("explainedLits", []),
-                json.get("appendChoices", False),
-                json.get("choice", 0)
+                json.get("getInitial", False),
+                json.get("choice", 0),
+                json.get("litChoice", None),
                 ), result_ttl=5000
         )
     return jsonify({

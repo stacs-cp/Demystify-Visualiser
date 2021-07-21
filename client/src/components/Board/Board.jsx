@@ -134,6 +134,7 @@ class Board extends React.Component {
                                         literalBackgrounds={literalBackgrounds}
                                         literalSize={literalSize}
                                         hiddenLiterals={hiddenLiterals}
+                                        setSelectedLiteral={this.props.setSelectedLiteral}
                                         />      
                                 )}
                             {endrowsums &&

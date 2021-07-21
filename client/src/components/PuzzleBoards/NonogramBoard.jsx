@@ -29,10 +29,7 @@ class NonogramBoard extends React.Component {
 
     render() {
         return (<Board
-                highlight={this.props.highlight} 
-                key={this.props.key} 
-                highlighted={this.props.highlighted} 
-                rows={this.props.rows}
+                {...this.props}
                 literalBackgrounds={this.getBackgrounds()}
                 hiddenLiterals={[0, 1]}
                 startrows={this.transpose(this.state.colcounts)}

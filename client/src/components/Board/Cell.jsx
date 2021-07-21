@@ -95,6 +95,8 @@ class Cell extends React.Component {
 
     render() {
         const {
+            row,
+            column,
             cellContent,
             cellBorders,
             cellInnerBorders,
@@ -136,10 +138,13 @@ class Cell extends React.Component {
                                     // Possibilities are positive/negative literals.
                                     <Literal
                                         key={i}
+                                        row={this.props.row}
+                                        column={column}
                                         value={literal.value}
                                         status={literal.status} // positive / negative
                                         highlighted={literal.explanations.includes(highlighted.toString())}
                                         highlightExplanation={() => this.highlight(literal.explanations)}
+                                        setSelectedLiteral={() => this.props.setSelectedLiteral(this.props.row, column, literal.value)}
                                     />
                                 )}
                             </SquareRow>

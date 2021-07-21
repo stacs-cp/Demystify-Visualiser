@@ -43,7 +43,7 @@ class MainMenu extends React.Component {
         this.setState({ isRunning: true });
         const { eprimeName, eprime, paramName, param, mode, algorithm } = this.state;
         const numSteps = mode === "default" ? -1 : 0;
-
+        const getInitial = mode === "force"
         try {
             const result = await API.createJob(
                 {
@@ -53,9 +53,8 @@ class MainMenu extends React.Component {
                     param: param, 
                     algorithm: algorithm, 
                     numSteps: numSteps, 
-                    explainedLits: [], 
-                    appendChoices: false, 
-                    choice: 0});
+                    explainedLits: [],
+                    getInitial: getInitial});
 
             this.setState({isWaiting: true, jobId: result.jobId})
             

@@ -1,7 +1,7 @@
 import React from 'react';
 import Board from '../Board/Board';
 
-class KakuroBoard extends React.Component {
+class StarBattleBoard extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -42,10 +42,7 @@ class KakuroBoard extends React.Component {
 
     render() {
         return (<Board
-                highlight={this.props.highlight} 
-                key={this.props.key} 
-                highlighted={this.props.highlighted} 
-                rows={this.props.rows}
+                {...this.props}
                 colsums={this.state.colsums}
                 rowsums={this.state.rowsums}
                 cellBorders={this.getCellBorders()}
@@ -54,4 +51,4 @@ class KakuroBoard extends React.Component {
     }
 }
 
-export default KakuroBoard;
+export default StarBattleBoard;

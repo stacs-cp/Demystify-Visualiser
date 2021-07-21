@@ -110,10 +110,7 @@ class GaramBoard extends React.Component {
 
     render() {
         return (<Board
-                highlight={this.props.highlight} 
-                key={this.props.key} 
-                highlighted={this.props.highlighted} 
-                rows={this.props.rows}
+                {...this.props}
                 hiddenLiterals={[-2]}
                 cellBorders={this.getCellBorders()}
                 rightLabels={this.getRightLabels()}
