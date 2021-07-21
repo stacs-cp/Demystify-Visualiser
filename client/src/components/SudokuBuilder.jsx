@@ -58,15 +58,17 @@ class SudokuBuilder extends React.Component {
 
         try {
             const result = await API.createJob(
-                "sudoku.eprime", 
-                null, 
-                "sudoku_builder_" + Date.now() + ".param", 
-                this.getParamString(), 
-                "cascade",
-                -1, 
-                [], 
-                false, 
-                0);
+                {
+                    eprimeName: "sudoku.eprime", 
+                    eprime: null, 
+                    paramName: "sudoku_builder_" + Date.now() + ".param", 
+                    param: this.getParamString(), 
+                    algorithm: "cascade",
+                    numSteps: -1, 
+                    explainedLits: [], 
+                    appendChoices: false, 
+                    choice: 0
+                });
 
             this.setState({isWaiting: true, jobId: result.jobId})
             

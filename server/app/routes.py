@@ -76,8 +76,8 @@ def run_demystify(eprime_name, eprime, param_name, param, num_steps, algorithm, 
 
 
         return {"result": result, 
-                "eprimename": eprime_name, 
-                "paramname": param_name,
+                "eprimeName": eprime_name, 
+                "paramName": param_name,
                 "eprime": eprime,
                 "param": param, 
                 "algorithm": algorithm,

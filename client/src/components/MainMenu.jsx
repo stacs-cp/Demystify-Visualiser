@@ -13,9 +13,9 @@ class MainMenu extends React.Component {
         this.state = {
             examples: [],
             eprime: null,
-            eprimename: null,
+            eprimeName: null,
             param: null,
-            paramname: null,
+            paramName: null,
             error: "",
             jobId: null,
             isLoadingExamples: true,
@@ -41,11 +41,22 @@ class MainMenu extends React.Component {
         }
 
         this.setState({ isRunning: true });
-        const { eprimename, eprime, paramname, param, mode, algorithm } = this.state;
+        const { eprimeName, eprime, paramName, param, mode, algorithm } = this.state;
         const numSteps = mode === "default" ? -1 : 0;
 
         try {
-            const result = await API.createJob(eprimename, eprime, paramname, param, algorithm, numSteps, [], false, 0);
+            const result = await API.createJob(
+                {
+                    eprimeName: eprimeName, 
+                    eprime: eprime, 
+                    paramName: paramName, 
+                    param: param, 
+                    algorithm: algorithm, 
+                    numSteps: numSteps, 
+                    explainedLits: [], 
+                    appendChoices: false, 
+                    choice: 0});
+
             this.setState({isWaiting: true, jobId: result.jobId})
             
         } catch (err) {
@@ -163,7 +174,7 @@ class MainMenu extends React.Component {
                                 <p className="mx-4">Puzzle description (.eprime): </p>
                                 <FileUploader
                                     disabled={this.state.isQueueing || this.state.isLoadingExampleJSON}
-                                    onUpload={(text, name) => this.setState({ eprime: text, eprimename: name })}
+                                    onUpload={(text, name) => this.setState({ eprime: text, eprimeName: name })}
                                     onError={() => this.setError(
                                         "Could not read the input file. Ensure it is a valid .eprime file.")}
                                 />
@@ -173,7 +184,7 @@ class MainMenu extends React.Component {
                                 <p className="mx-4">Puzzle instance (.param): </p>
                                 <FileUploader
                                     disabled={this.state.isQueueing || this.state.isLoadingExampleJSON}
-                                    onUpload={(text, name) => this.setState({ param: text, paramname: name })}
+                                    onUpload={(text, name) => this.setState({ param: text, paramName: name })}
                                     onError={() => this.setError(
                                         "Could not read the input file. Ensure it is a valid .param file.")}
                                 />
@@ -190,7 +201,7 @@ class MainMenu extends React.Component {
                                                 label="Use default MUS choices"
                                             />
 
-                                            <Form.Check
+                                            <Form.Check className="mr-4"
                                                 type='radio'
                                                 name="mode"
                                                 value="manual"
@@ -198,6 +209,15 @@ class MainMenu extends React.Component {
                                                 onChange={this.handleModeChange.bind(this)}
                                                 label="Choose MUSes manually"
                                             />
+
+                                            <Form.Check
+                                                type='radio'
+                                                name="mode"
+                                                value="force"
+                                                checked={this.state.mode === "force"}
+                                                onChange={this.handleOptionChange.bind(this)}
+                                                label="Force literal choices."
+                                            />  
                                 </Form>
                             </Row>
                             <Row>
@@ -220,6 +240,7 @@ class MainMenu extends React.Component {
                                                 onChange={this.handleOptionChange.bind(this)}
                                                 label="FORQES"
                                             />
+
                                 </Form>
                             </Row>
                             <Row>

@@ -45,6 +45,10 @@ class PuzzleStepper extends React.Component {
         return (this.props.mode === "manual") && !this.state.finishedPuzzle && (this.state.currentStep === this.state.inputObject.length - 1)
     }
 
+    isLitForceStep() {
+        return (this.props.mode === "force") && !this.state.finishedPuzzle && (this.state.currentStep === this.state.inputObject.length - 1)
+    }
+
     /* Two-way highlighting system: mouseover an explanation and see relevant literals,
         mouseover a literals to see relevant explanations. 
     */
@@ -110,6 +114,11 @@ class PuzzleStepper extends React.Component {
                         variant="success" 
                         disabled={this.state.isWaiting} 
                         onClick={this.handleGetNext.bind(this)}>{"Confirm Choice"} </Button>
+        } else if(this.isLitForceStep()) {
+            return <Button 
+                        variant="success" 
+                        disabled={this.state.isWaiting} 
+                        onClick={this.handleGetNext.bind(this)}>{"Confirm Choice"} </Button>
         } else {
             return null
         }
@@ -127,9 +136,20 @@ class PuzzleStepper extends React.Component {
     }
 
     async handleGetNext() {
-        const {eprimename, eprime, paramname, param, algorithm, explainedLits} = this.state.continueData;
+        const {eprimeName, eprime, paramName, param, algorithm, explainedLits} = this.state.continueData;
         const {currentChoice} = this.state;
-        const result = await API.createJob(eprimename, eprime, paramname, param, algorithm, 1, explainedLits, true, currentChoice);
+        const result = await API.createJob(
+            {
+                eprimeName: eprimeName, 
+                eprime: eprime, 
+                paramName: paramName,
+                param: param, 
+                algorithm: algorithm, 
+                numSteps: 1, 
+                explainedLits: explainedLits, 
+                appendChoices: true, 
+                choice: currentChoice
+            });
         this.setState({isWaiting: true, jobId: result.jobId})
     }
 

@@ -4,8 +4,10 @@ RUN \
     apt-get install -y python3-pip git &&\
     git clone https://github.com/mmcilree/Demystify-Visualiser.git \
         /home/DemystifyVisualiser &&\
+    cd /home/DemystifyVisualiser &&\
     git checkout f85d1d4aef1cc3497880db1b7218d7424ec85ed7 &&\
     git clone https://github.com/conjure-cp/conjure.git /conjure &&\
+    cd /    conjure &&\
     git checkout 45b679f183bdf31565b
 
 ENV WORK /conjure
