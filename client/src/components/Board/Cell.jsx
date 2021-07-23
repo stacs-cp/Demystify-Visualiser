@@ -33,7 +33,15 @@ class Cell extends React.Component {
     // Get the first value of the cell grid.
     getSingletonValue() {
         const cellRows = this.props.cellContent.cellRows;
-        return cellRows[0].cellValues[0].value
+        let result;
+        if(this.containsKnown(cellRows)) {
+            result = cellRows.filter(row => row.cellValues.some(value => value.markers.includes("pik")))[0].cellValues
+            .filter(value => value.markers.includes("pik"))[0].value
+        } else {
+            result = cellRows[0].cellValues[0].value
+        }
+        
+        return result
     }
 
     // Check whether the cell should be highlighted
