@@ -11,7 +11,7 @@ This is a react-based tool that provides a visualisation of the human understand
 5. Run `npm install`
 6. Run `npm start`
 7. Run `npm run backend`
-8. The web application will be available at `localhost:3000/demystify`
+8. The web application will be available at `localhost:3000/demystify/` (note the trailing slash is important)
 
 ## How to Run (Including Live Features)
 
