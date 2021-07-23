@@ -11,7 +11,7 @@ This is a react-based tool that provides a visualisation of the human understand
 5. Run `npm install`
 6. Run `npm start`
 7. Run `npm run backend`
-8. The web application will be available at `localhost:3000/demystify/` (note the trailing slash is important)
+8. The web application will be available at `localhost:3000/demystify` 
 
 ## How to Run (Including Live Features)
 
@@ -29,7 +29,7 @@ Alternatively, the installation steps above (including install of conjure) can b
 1. Navigate to the `deploy` folder.
 2. Run `docker-compose build` (this may take some time to complete)
 3. Then, the application can be started via`docker-compose up`.
-4. The web application will be available at `localhost:5000/demystify`
+4. The web application will be available at `localhost:5000/demystify/` (note: the trailing slash is important here)
 
 ## Basic Usage
 
