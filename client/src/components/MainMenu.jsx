@@ -225,10 +225,19 @@ class MainMenu extends React.Component {
                                             <Form.Check className="mr-4"
                                                 type="radio"
                                                 name="algorithm"
-                                                value="cascade"
-                                                checked={this.state.algorithm === "cascade"}
+                                                value="cascade-fast"
+                                                checked={this.state.algorithm === "cascade-fast"}
                                                 onChange={this.handleOptionChange.bind(this)}
-                                                label="Cascade"
+                                                label="Cascade - faster"
+                                            />
+
+                                            <Form.Check className="mr-4"
+                                                type="radio"
+                                                name="algorithm"
+                                                value="cascade-more"
+                                                checked={this.state.algorithm === "cascade-more"}
+                                                onChange={this.handleOptionChange.bind(this)}
+                                                label="Cascade - more choices"
                                             />
 
                                             <Form.Check

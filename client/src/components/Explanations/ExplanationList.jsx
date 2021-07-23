@@ -75,7 +75,7 @@ class ExplanationList extends React.Component {
                     </Card.Header>
                     <Card.Body>
                         <div className="mb-3">
-                            See the alternative deductions with MUS size {smallestMUSSize}:
+                            See the alternative deductions with MUS size at least {smallestMUSSize}:
                             
                         </div>
                         <NavSwitcher 
