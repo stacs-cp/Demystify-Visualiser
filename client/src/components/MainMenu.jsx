@@ -21,7 +21,7 @@ class MainMenu extends React.Component {
             isLoadingExamples: true,
             isLoadingExampleJSON: false,
             mode: "default",
-            algorithm: "cascade",
+            algorithm: "cascade-fast",
             isQueueing: false,
             isWaiting: false
         };
