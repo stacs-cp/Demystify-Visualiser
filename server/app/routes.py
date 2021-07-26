@@ -4,13 +4,27 @@ from demystify.explain import Explainer
 import app
 from worker import conn
 import traceback
+import os
+import logging
+from rq import get_current_job
 
 bp = Blueprint('routes', __name__)
 
 def run_demystify(eprime_name, eprime, param_name, param, num_steps, algorithm, explained, get_initial, choice, lit_choice):
-    explainer = Explainer(algorithm)
-    eprime_path = "./eprime/" + eprime_name
-    param_path = "./eprime/" + param_name
+    job = get_current_job()
+
+    
+    job.meta["progress"] = "Starting demystify"
+    job.save_meta()
+
+    explainer = Explainer(algorithm, debug=True)
+    logger = logging.getLogger("")
+    #logger.setLevel(logging.ERROR)
+    fh = logging.FileHandler("demystify" + job.id + ".log")
+    fh.setLevel(logging.DEBUG)
+    logger.addHandler(fh)
+    eprime_path = "./eprime_tmp/" + eprime_name
+    param_path = "./eprime_tmp/" + param_name
 
     if eprime is not None:
         eprime_file = open(eprime_path, "w")
@@ -22,21 +36,29 @@ def run_demystify(eprime_name, eprime, param_name, param, num_steps, algorithm, 
     param_file.close()
 
     try:
+        job.meta['progress'] = "Initialising from essence prime"
+        job.save_meta()
         explainer.init_from_essence(eprime_path, param_path)
+        
         sol = explainer.solution
         solmap = {}
         for s in sol:
             solmap[str(s)] = s
 
         explainer._add_known([solmap[e] for e in explained])
-
+        job.meta['progress'] = "Initialisation complete!"
+        job.save_meta()
     except Exception as e:
         return traceback.format_exc() + str(e)
 
     try:
-        if get_initial: 
+        if get_initial:
+            job.meta['progress'] = "Getting initial state"
+            job.save_meta()
             result = explainer.get_current_state()
         elif num_steps == 0:
+            job.meta['progress'] = "Computing MUSes"
+            job.save_meta()
             # TODO make demystify return something that lets this be less messy
             result = {"steps": []}
             output = explainer.get_choices()
@@ -54,13 +76,19 @@ def run_demystify(eprime_name, eprime, param_name, param, num_steps, algorithm, 
                     result["params"] = output["params"]
                     result["steps"].append({"choices": choices})
 
-        elif num_steps < 0:    
+        elif num_steps < 0:
+            job.meta['progress'] = "Computing MUSes"
+            job.save_meta()    
             result = explainer.explain_steps()
         elif lit_choice is not None:
+            job.meta['progress'] = "Computing MUSes"
+            job.save_meta()
             result = explainer.explain_steps(num_steps=num_steps, lit_choice=lit_choice)
             current_state = explainer.get_current_state()
             result["steps"].append(current_state["steps"][0])
         else:
+            job.meta['progress'] = "Computing MUSes"
+            job.save_meta()
             result = explainer.explain_steps(num_steps=num_steps, mus_choice=choice)
             output = explainer.get_choices()
             choices = output["steps"][0] if len(output["steps"]) > 0 else []
@@ -77,10 +105,11 @@ def run_demystify(eprime_name, eprime, param_name, param, num_steps, algorithm, 
                     result["params"] = output["params"]
                     result["steps"].append({"choices": choices})
             
+        if len(explainer.unexplained) <= 0:
+            os.remove(eprime_path)
+            os.remove(param_path)
+            
         
-        
-
-
         return {"result": result, 
                 "eprimeName": eprime_name, 
                 "paramName": param_name,
@@ -116,7 +145,7 @@ def create_job():
                 json.get("getInitial", False),
                 json.get("choice", 0),
                 json.get("litChoice", None),
-                ), result_ttl=5000
+                ), result_ttl=5000,
         )
     return jsonify({
                 "jobId": job.get_id(),
@@ -127,14 +156,21 @@ def get_job(job_id):
     job = Job.fetch(job_id, connection=conn)
 
     if job.is_finished:
+        os.remove("demystify" + job.id + ".log")
         return jsonify({
                 "jobId": job_id,
                 "status": job.get_status(),
                 })
     else:
+        log = open("demystify" + job.id + ".log", "r+")
+        data = log.read()
+        lines = data.splitlines()
+
         return jsonify({
                 "jobId": job_id,
                 "status": job.get_status(),
+                "log": lines,
+                "progress": job.meta["progress"]
                 })
 
 
@@ -149,3 +185,21 @@ def get_job_output(job_id):
             return jsonify(job.result), 400
     else:
         abort(404, description="Job ID Not Found")
+
+
+@bp.route("/eprime")
+def get_all_examples():
+    dir_contents = os.listdir("./eprime")
+    eprime_dirs = list(filter(lambda s: s[-7:] != ".eprime", dir_contents))
+    eprime_names = []
+
+    for dir in eprime_dirs:
+        param_files = list(os.listdir("./eprime/" + dir))
+        to_append = list(map(lambda s : dir + ".eprime, " + s, param_files))
+        eprime_names.append(to_append)
+
+    return jsonify(eprime_names)
+
+@bp.route("/examples/<string:eprime_name>")
+def get_examples(eprime_name):
+    pass

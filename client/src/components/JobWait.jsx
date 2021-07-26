@@ -7,73 +7,98 @@ class JobWait extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            status: "pending", 
-            pollDelay: 1000, 
+            status: "pending",
+            pollDelay: 1000,
             pollCount: 0,
-            error: null}
+            error: null,
+            log: null,
+            progress: null
+        }
     }
     componentDidMount() {
-        this.timer = setInterval(()=> this.checkStatus(), this.state.pollDelay);
+        this.timer = setInterval(() => this.checkStatus(), this.state.pollDelay);
     }
 
     componentDidUpdate(prevProps, prevState) {
         if (prevState.pollDelay !== this.state.pollDelay) {
             clearInterval(this.timer)
             this.timer = setInterval(() => this.checkStatus(), this.state.pollDelay)
+            
         }
     }
-    
+
     componentWillUnmount() {
         clearInterval(this.timer);
     }
-    
+
     checkStatus() {
         API.getJob(this.props.jobId)
-            .then(res => res.status === "finished" && 
-                API.getJobOutput(this.props.jobId)
-                    .then(output => {
+            .then(res => {
+                res.status === "finished" ?
+                    API.getJobOutput(this.props.jobId)
+                        .then(output => {
                             clearInterval(this.timer)
                             this.props.setInput(output, this.props.mode)
                         }).catch(error => {
                             clearInterval(this.timer)
-                            if(error.response) {
-                                this.setState({error: error.response.data})
+                            if (error.response) {
+                                this.setState({ error: error.response.data })
                             } else {
-                                this.setState({error: error})
+                                this.setState({ error: error })
                             }
-                            
-                        })) 
-        this.setState({pollCount: this.state.pollCount + 1})
-        if(this.state.pollCount === 10) {
-            this.setState({pollDelay: 10000})
+
+                        })
+                : this.setState({log: res.log, progress: res.progress})
+            }
+            )
+        this.setState({ pollCount: this.state.pollCount + 1 })
+        // Poll less frequently after the first 30 seconds
+        if (this.state.pollCount === 30) {
+            this.setState({ pollDelay: 10000 })
         }
     }
     render() {
         return (
-        <div>
-        {this.state.error !== null ? (
-            <>
-                <h4>demystify job failed</h4> 
+            <div>
+                {this.state.error !== null ? (
+                    <>
+                        <h4>demystify job failed</h4>
 
-                <p><b>Job ID:</b> {this.props.jobId}</p>
-                <Alert variant="warning" className="m-4"><b>Error message: </b>{this.state.error}</Alert>
+                        <p><b>Job ID:</b> {this.props.jobId}</p>
+                        <Alert variant="warning" className="m-4"><b>Error message: </b>{this.state.error}</Alert>
 
-            </>
-            ) :
-            (
-            <>
-                <Spinner animation="border"/>
-                <h4>demystify is running... </h4> 
-                <p><b>Job ID:</b> {this.props.jobId}</p>
-                <p>If you don't want to wait here for the job to complete you can check its progress later
-                    at: <br /> <a href={window.location + "api/job/" + this.props.jobId}>{window.location + "api/job/" + this.props.jobId}</a>
-                    <br /> and then save the result when it's ready from: 
-                    <br /> <a href={window.location + "api/job/" + this.props.jobId + "/output"}>{window.location + "api/job/" + this.props.jobId + "/output"}</a>
-                    </p>
-            </>
-            )
-        }
-        </div>
+                    </>
+                ) :
+                    (
+                        <>
+                            <Spinner animation="border" />
+                            <h4>demystify is running... </h4>
+                            <p><b>Job ID:</b> {this.props.jobId}</p>
+                            <p>If you don't want to wait here for the job to complete you can check its progress later
+                                at: <br /> <a href={window.location + "api/job/" + this.props.jobId}>{window.location + "api/job/" + this.props.jobId}</a>
+                                <br /> and then save the result when it's ready from:
+                                <br /> <a href={window.location + "api/job/" + this.props.jobId + "/output"}>{window.location + "api/job/" + this.props.jobId + "/output"}</a>
+                                {this.state.log && 
+                                    <Alert className="m-4" variant="info">
+                                        {this.state.progress && <b>{this.state.progress}</b>}
+                                        <br />
+                                        <div
+                                            style={{ 
+                                                    maxHeight: "8em", 
+                                                    overflowY: "scroll", 
+                                                    display: "flex", 
+                                                    flexDirection: "column-reverse",
+                                                    size: "10pt"}}>
+
+                                            {this.state.log.reverse().map(l => <p style={{textAlign: "left"}}>{l}</p>)}
+                                        </div>
+                                        
+                                    </Alert>}
+                            </p>
+                        </>
+                    )
+                }
+            </div>
         )
     }
 }
