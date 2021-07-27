@@ -1,0 +1,13 @@
+letting grid be 5
+letting starcount be 1
+letting numblocks be 5
+
+
+letting blocks be 
+[
+    [5,1,1,1,2],
+    [5,5,3,3,2],
+    [5,5,3,3,2],
+    [5,5,3,3,4],
+    [5,5,4,4,4]
+]
