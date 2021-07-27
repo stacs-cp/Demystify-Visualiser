@@ -1,8 +1,9 @@
 import React from 'react';
 import { Card, Row, ListGroup, Dropdown, Alert, Spinner, Button, Form } from 'react-bootstrap'
-import * as API from "../API";
-import FileUploader from './FileUploader';
-import JobWait from './JobWait';
+import * as API from "../../API";
+import FileUploader from '../FileUploader';
+import DropdownChoices from './DropdownChoices';
+import JobWait from '../JobWait';
 
 /**
  * Load a JSON input from the user's filesystem or preloaded examples.
@@ -117,7 +118,7 @@ class MainMenu extends React.Component {
             
             <div className="d-flex flex-column align-items-center">
                 <h1 className="mt-3">Demystify Visualiser</h1>
-                <img className="mt-3" style={{ width: "100px" }} alt="demystify logo" src="favicon.ico" />
+                <img className="mt-3" style={{ width: "80px" }} alt="demystify logo" src="favicon.ico" />
                 <Card as={Row} className="mt-3 pt-3 w-75">
                     {this.state.isWaiting ? <JobWait jobId={this.state.jobId} setInput={this.props.setInput} mode={this.state.mode}/> :
                     <ListGroup variant="flush">
@@ -137,24 +138,13 @@ class MainMenu extends React.Component {
                         <ListGroup.Item>
                             <Row>
                                 <b className="mx-4 pt-2">View a pre-generated example:</b>
-                                <Dropdown onSelect={(e) => this.chooseExample(e)}>
-                                    <Dropdown.Toggle disabled={this.state.isQueueing} variant="success" id="dropdown-basic">
-                                        Examples
-                                    </Dropdown.Toggle>
-
-
-                                    <Dropdown.Menu>
-                                        {this.state.isLoadingExamples ?
-                                            <div className="d-flex justify-content-center">
-                                                <Spinner animation="border" />
-                                            </div>
-                                            :
-                                            this.state.examples.map((name) =>
-                                                <Dropdown.Item key={name} eventKey={name} onClick={() => this.chooseExample(name)}>
-                                                    {name}
-                                                </Dropdown.Item>)}
-                                    </Dropdown.Menu>
-                                </Dropdown>
+                                <DropdownChoices 
+                                    name={"Examples"}
+                                    choices={this.state.examples}
+                                    makeChoice={this.chooseExample.bind(this)}
+                                    disabled={this.state.isQueueing}
+                                    isLoading={this.state.isLoadingExamples}
+                                />
                                 {this.state.isLoadingExampleJSON && <Spinner className="ml-4" animation="border"/>}
                             </Row>
                         </ListGroup.Item>
@@ -170,7 +160,20 @@ class MainMenu extends React.Component {
                                 <b className="mx-4 mb-4">Run Demystify live:</b>
                             </Row>
                             <Row>
-                                <p className="mx-4">Puzzle description (.eprime): </p>
+                                <p className="mx-4 pt-2 mb-2">Select an eprime/param combination:</p>
+                                <DropdownChoices 
+                                    name={"Examples"}
+                                    choices={this.state.examples}
+                                    makeChoice={this.chooseExample.bind(this)}
+                                    disabled={this.state.isQueueing}
+                                    isLoading={this.state.isLoadingExamples}
+                                />
+                            </Row>
+                            <Row>
+                                <b className="mx-4 mb-2">OR</b>
+                            </Row>
+                            <Row>
+                                <p className="mx-4">Upload puzzle description (.eprime): </p>
                                 <FileUploader
                                     disabled={this.state.isQueueing || this.state.isLoadingExampleJSON}
                                     onUpload={(text, name) => this.setState({ eprime: text, eprimeName: name })}
@@ -180,7 +183,7 @@ class MainMenu extends React.Component {
                             </Row>
 
                             <Row>
-                                <p className="mx-4">Puzzle instance (.param): </p>
+                                <p className="mx-4">and puzzle instance (.param): </p>
                                 <FileUploader
                                     disabled={this.state.isQueueing || this.state.isLoadingExampleJSON}
                                     onUpload={(text, name) => this.setState({ param: text, paramName: name })}

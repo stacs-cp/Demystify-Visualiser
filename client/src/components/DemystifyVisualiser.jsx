@@ -3,7 +3,7 @@ import React from 'react';
 import { Container} from 'react-bootstrap';
 import PuzzleStepper from './PuzzleStepper';
 
-import MainMenu from './MainMenu';
+import MainMenu from './Menu/MainMenu';
 import SudokuBuilder from './SudokuBuilder';
 
 /**
