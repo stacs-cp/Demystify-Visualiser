@@ -1,0 +1,61 @@
+MINION 3
+**VARIABLES**
+DISCRETE grid_00001_00000 #
+{4..16}
+DISCRETE grid_00001_00001 #
+{4..16}
+DISCRETE grid_00001_00002 #
+{4..16}
+DISCRETE grid_00002_00000 #
+{4..16}
+DISCRETE grid_00002_00001 #
+{4..16}
+DISCRETE grid_00002_00002 #
+{4..16}
+DISCRETE grid_00003_00000 #
+{4..16}
+DISCRETE grid_00003_00001 #
+{4..16}
+DISCRETE grid_00003_00002 #
+{4..16}
+DISCRETE grid_00004_00000 #
+{4..16}
+DISCRETE grid_00004_00001 #
+{4..16}
+DISCRETE grid_00004_00002 #
+{4..16}
+BOOL con1 #
+BOOL con2 #
+BOOL con3 #
+BOOL con4 #
+BOOL con5 #
+BOOL con6 #
+BOOL con7 #
+BOOL con8 #
+**SEARCH**
+PRINT[[grid_00001_00000],[grid_00001_00001],[grid_00001_00002],[grid_00002_00000],[grid_00002_00001],[grid_00002_00002],[grid_00003_00000],[grid_00003_00001],[grid_00003_00002],[grid_00004_00000],[grid_00004_00001],[grid_00004_00002],[con1],[con2],[con3],[con4],[con5],[con6],[con7],[con8]]
+**CONSTRAINTS**
+watched-or({watched-and({w-literal(grid_00002_00000,6),w-literal(grid_00002_00001,10)}),watched-and({w-literal(grid_00001_00000,6),w-literal(grid_00001_00001,10)}),w-literal(con8,0),watched-and({w-literal(grid_00004_00000,6),w-literal(grid_00004_00001,10)}),watched-and({w-literal(grid_00003_00000,6),w-literal(grid_00003_00001,10)})})
+watched-or({w-literal(grid_00001_00000,6),w-literal(grid_00004_00000,6),w-literal(con7,0)})
+watched-or({w-literal(grid_00003_00001,9),w-literal(grid_00002_00001,9),w-literal(con6,0)})
+reifyimply(diseq(grid_00003_00000,8), con4)
+watched-or({watched-and({w-literal(grid_00003_00001,12),watched-or({watched-and({sumleq([-8,grid_00002_00002],grid_00003_00002),sumgeq([-8,grid_00002_00002],grid_00003_00002)}),watched-and({sumleq([8,grid_00002_00002],grid_00003_00002),sumgeq([8,grid_00002_00002],grid_00003_00002)})})}),watched-and({watched-or({watched-and({sumleq([-8,grid_00002_00002],grid_00002_00002),sumgeq([-8,grid_00002_00002],grid_00002_00002)}),watched-and({sumleq([8,grid_00002_00002],grid_00002_00002),sumgeq([8,grid_00002_00002],grid_00002_00002)})}),w-literal(grid_00002_00001,12)}),watched-and({watched-or({watched-and({sumleq([-8,grid_00002_00002],grid_00004_00002),sumgeq([-8,grid_00002_00002],grid_00004_00002)}),watched-and({sumleq([8,grid_00002_00002],grid_00004_00002),sumgeq([8,grid_00002_00002],grid_00004_00002)})}),w-literal(grid_00004_00001,12)}),w-literal(con5,0),watched-and({w-literal(grid_00001_00001,12),watched-or({watched-and({sumleq([-8,grid_00002_00002],grid_00001_00002),sumgeq([-8,grid_00002_00002],grid_00001_00002)}),watched-and({sumleq([8,grid_00002_00002],grid_00001_00002),sumgeq([8,grid_00002_00002],grid_00001_00002)})})})})
+watched-or({watched-and({w-literal(grid_00001_00001,11),ineq(grid_00001_00002, grid_00002_00002, -1),w-literal(grid_00002_00000,7)}),watched-and({w-literal(grid_00003_00001,11),w-literal(grid_00004_00000,7),ineq(grid_00003_00002, grid_00004_00002, -1)}),watched-and({w-literal(grid_00001_00001,11),w-literal(grid_00004_00000,7),ineq(grid_00001_00002, grid_00004_00002, -1)}),watched-and({w-literal(grid_00003_00000,7),w-literal(grid_00001_00001,11),ineq(grid_00001_00002, grid_00003_00002, -1)}),watched-and({ineq(grid_00003_00002, grid_00002_00002, -1),w-literal(grid_00003_00001,11),w-literal(grid_00002_00000,7)}),watched-and({w-literal(grid_00003_00000,7),w-literal(grid_00004_00001,11),ineq(grid_00004_00002, grid_00003_00002, -1)}),watched-and({w-literal(grid_00001_00000,7),w-literal(grid_00002_00001,11),ineq(grid_00002_00002, grid_00001_00002, -1)}),watched-and({w-literal(grid_00002_00000,7),ineq(grid_00004_00002, grid_00002_00002, -1),w-literal(grid_00004_00001,11)}),watched-and({ineq(grid_00002_00002, grid_00004_00002, -1),w-literal(grid_00002_00001,11),w-literal(grid_00004_00000,7)}),watched-and({w-literal(grid_00001_00000,7),ineq(grid_00004_00002, grid_00001_00002, -1),w-literal(grid_00004_00001,11)}),watched-and({w-literal(grid_00003_00001,11),w-literal(grid_00001_00000,7),ineq(grid_00003_00002, grid_00001_00002, -1)}),w-literal(con3,0),watched-and({w-literal(grid_00003_00000,7),w-literal(grid_00002_00001,11),ineq(grid_00002_00002, grid_00003_00002, -1)})})
+watched-or({watched-and({w-literal(grid_00001_00001,9),ineq(grid_00001_00002, grid_00002_00002, -1),w-literal(grid_00002_00000,6)}),watched-and({w-literal(grid_00003_00001,9),w-literal(grid_00004_00000,6),ineq(grid_00003_00002, grid_00004_00002, -1)}),watched-and({w-literal(grid_00001_00001,9),w-literal(grid_00004_00000,6),ineq(grid_00001_00002, grid_00004_00002, -1)}),watched-and({w-literal(grid_00003_00000,6),w-literal(grid_00001_00001,9),ineq(grid_00001_00002, grid_00003_00002, -1)}),watched-and({ineq(grid_00003_00002, grid_00002_00002, -1),w-literal(grid_00003_00001,9),w-literal(grid_00002_00000,6)}),watched-and({w-literal(grid_00003_00000,6),w-literal(grid_00004_00001,9),ineq(grid_00004_00002, grid_00003_00002, -1)}),watched-and({w-literal(grid_00001_00000,6),w-literal(grid_00002_00001,9),ineq(grid_00002_00002, grid_00001_00002, -1)}),watched-and({w-literal(grid_00002_00000,6),ineq(grid_00004_00002, grid_00002_00002, -1),w-literal(grid_00004_00001,9)}),watched-and({ineq(grid_00002_00002, grid_00004_00002, -1),w-literal(grid_00002_00001,9),w-literal(grid_00004_00000,6)}),watched-and({w-literal(grid_00001_00000,6),ineq(grid_00004_00002, grid_00001_00002, -1),w-literal(grid_00004_00001,9)}),watched-and({w-literal(grid_00003_00001,9),w-literal(grid_00001_00000,6),ineq(grid_00003_00002, grid_00001_00002, -1)}),w-literal(con1,0),watched-and({w-literal(grid_00003_00000,6),w-literal(grid_00002_00001,9),ineq(grid_00002_00002, grid_00003_00002, -1)})})
+watched-or({watched-and({ineq(grid_00001_00002, grid_00002_00002, -1),w-literal(grid_00002_00001,11)}),watched-and({w-literal(grid_00004_00001,11),ineq(grid_00001_00002, grid_00004_00002, -1)}),watched-and({w-literal(grid_00003_00001,11),ineq(grid_00001_00002, grid_00003_00002, -1)}),w-literal(con2,0)})
+gacalldiff([grid_00003_00000, grid_00004_00000, grid_00001_00000, grid_00002_00000])
+gacalldiff([grid_00003_00001, grid_00004_00001, grid_00001_00001, grid_00002_00001])
+gacalldiff([grid_00003_00002, grid_00004_00002, grid_00001_00002, grid_00002_00002])
+w-inintervalset(grid_00001_00002,[4,4,8,8,12,12,16,16])
+w-inintervalset(grid_00001_00000,[5,8])
+w-inintervalset(grid_00001_00001,[9,12])
+w-inintervalset(grid_00002_00002,[4,4,8,8,12,12,16,16])
+w-inintervalset(grid_00002_00000,[5,8])
+w-inintervalset(grid_00002_00001,[9,12])
+w-inintervalset(grid_00003_00002,[4,4,8,8,12,12,16,16])
+w-inintervalset(grid_00003_00000,[5,8])
+w-inintervalset(grid_00003_00001,[9,12])
+w-inintervalset(grid_00004_00002,[4,4,8,8,12,12,16,16])
+w-inintervalset(grid_00004_00000,[5,8])
+w-inintervalset(grid_00004_00001,[9,12])
+**EOF**

@@ -1,0 +1,1881 @@
+MINION 3
+**VARIABLES**
+DISCRETE field_00001_00001 #
+{1..9}
+DISCRETE field_00001_00002 #
+{1..9}
+DISCRETE field_00001_00003 #
+{1..9}
+DISCRETE field_00001_00004 #
+{1..9}
+DISCRETE field_00001_00005 #
+{1..9}
+DISCRETE field_00001_00006 #
+{1..9}
+DISCRETE field_00001_00007 #
+{1..9}
+DISCRETE field_00001_00008 #
+{1..9}
+DISCRETE field_00001_00009 #
+{1..9}
+DISCRETE field_00002_00001 #
+{1..9}
+DISCRETE field_00002_00002 #
+{1..9}
+DISCRETE field_00002_00003 #
+{1..9}
+DISCRETE field_00002_00004 #
+{1..9}
+DISCRETE field_00002_00005 #
+{1..9}
+DISCRETE field_00002_00006 #
+{1..9}
+DISCRETE field_00002_00007 #
+{1..9}
+DISCRETE field_00002_00008 #
+{1..9}
+DISCRETE field_00002_00009 #
+{1..9}
+DISCRETE field_00003_00001 #
+{1..9}
+DISCRETE field_00003_00002 #
+{1..9}
+DISCRETE field_00003_00003 #
+{1..9}
+DISCRETE field_00003_00004 #
+{1..9}
+DISCRETE field_00003_00005 #
+{1..9}
+DISCRETE field_00003_00006 #
+{1..9}
+DISCRETE field_00003_00007 #
+{1..9}
+DISCRETE field_00003_00008 #
+{1..9}
+DISCRETE field_00003_00009 #
+{1..9}
+DISCRETE field_00004_00001 #
+{1..9}
+DISCRETE field_00004_00002 #
+{1..9}
+DISCRETE field_00004_00003 #
+{1..9}
+DISCRETE field_00004_00004 #
+{1..9}
+DISCRETE field_00004_00005 #
+{1..9}
+DISCRETE field_00004_00006 #
+{1..9}
+DISCRETE field_00004_00007 #
+{1..9}
+DISCRETE field_00004_00008 #
+{1..9}
+DISCRETE field_00004_00009 #
+{1..9}
+DISCRETE field_00005_00001 #
+{1..9}
+DISCRETE field_00005_00002 #
+{1..9}
+DISCRETE field_00005_00003 #
+{1..9}
+DISCRETE field_00005_00004 #
+{1..9}
+DISCRETE field_00005_00005 #
+{1..9}
+DISCRETE field_00005_00006 #
+{1..9}
+DISCRETE field_00005_00007 #
+{1..9}
+DISCRETE field_00005_00008 #
+{1..9}
+DISCRETE field_00005_00009 #
+{1..9}
+DISCRETE field_00006_00001 #
+{1..9}
+DISCRETE field_00006_00002 #
+{1..9}
+DISCRETE field_00006_00003 #
+{1..9}
+DISCRETE field_00006_00004 #
+{1..9}
+DISCRETE field_00006_00005 #
+{1..9}
+DISCRETE field_00006_00006 #
+{1..9}
+DISCRETE field_00006_00007 #
+{1..9}
+DISCRETE field_00006_00008 #
+{1..9}
+DISCRETE field_00006_00009 #
+{1..9}
+DISCRETE field_00007_00001 #
+{1..9}
+DISCRETE field_00007_00002 #
+{1..9}
+DISCRETE field_00007_00003 #
+{1..9}
+DISCRETE field_00007_00004 #
+{1..9}
+DISCRETE field_00007_00005 #
+{1..9}
+DISCRETE field_00007_00006 #
+{1..9}
+DISCRETE field_00007_00007 #
+{1..9}
+DISCRETE field_00007_00008 #
+{1..9}
+DISCRETE field_00007_00009 #
+{1..9}
+DISCRETE field_00008_00001 #
+{1..9}
+DISCRETE field_00008_00002 #
+{1..9}
+DISCRETE field_00008_00003 #
+{1..9}
+DISCRETE field_00008_00004 #
+{1..9}
+DISCRETE field_00008_00005 #
+{1..9}
+DISCRETE field_00008_00006 #
+{1..9}
+DISCRETE field_00008_00007 #
+{1..9}
+DISCRETE field_00008_00008 #
+{1..9}
+DISCRETE field_00008_00009 #
+{1..9}
+DISCRETE field_00009_00001 #
+{1..9}
+DISCRETE field_00009_00002 #
+{1..9}
+DISCRETE field_00009_00003 #
+{1..9}
+DISCRETE field_00009_00004 #
+{1..9}
+DISCRETE field_00009_00005 #
+{1..9}
+DISCRETE field_00009_00006 #
+{1..9}
+DISCRETE field_00009_00007 #
+{1..9}
+DISCRETE field_00009_00008 #
+{1..9}
+DISCRETE field_00009_00009 #
+{1..9}
+DISCRETE variant_fields_00001_00001_00001 #
+{1..9}
+DISCRETE variant_fields_00001_00001_00002 #
+{1..9}
+DISCRETE variant_fields_00001_00001_00003 #
+{1..9}
+DISCRETE variant_fields_00001_00001_00004 #
+{1..9}
+DISCRETE variant_fields_00001_00001_00005 #
+{1..9}
+DISCRETE variant_fields_00001_00001_00006 #
+{1..9}
+DISCRETE variant_fields_00001_00001_00007 #
+{1..9}
+DISCRETE variant_fields_00001_00001_00008 #
+{1..9}
+DISCRETE variant_fields_00001_00001_00009 #
+{1..9}
+DISCRETE variant_fields_00001_00002_00001 #
+{1..9}
+DISCRETE variant_fields_00001_00002_00002 #
+{1..9}
+DISCRETE variant_fields_00001_00002_00003 #
+{1..9}
+DISCRETE variant_fields_00001_00002_00004 #
+{1..9}
+DISCRETE variant_fields_00001_00002_00005 #
+{1..9}
+DISCRETE variant_fields_00001_00002_00006 #
+{1..9}
+DISCRETE variant_fields_00001_00002_00007 #
+{1..9}
+DISCRETE variant_fields_00001_00002_00008 #
+{1..9}
+DISCRETE variant_fields_00001_00002_00009 #
+{1..9}
+DISCRETE variant_fields_00001_00003_00001 #
+{1..9}
+DISCRETE variant_fields_00001_00003_00002 #
+{1..9}
+DISCRETE variant_fields_00001_00003_00003 #
+{1..9}
+DISCRETE variant_fields_00001_00003_00004 #
+{1..9}
+DISCRETE variant_fields_00001_00003_00005 #
+{1..9}
+DISCRETE variant_fields_00001_00003_00006 #
+{1..9}
+DISCRETE variant_fields_00001_00003_00007 #
+{1..9}
+DISCRETE variant_fields_00001_00003_00008 #
+{1..9}
+DISCRETE variant_fields_00001_00003_00009 #
+{1..9}
+DISCRETE variant_fields_00001_00004_00001 #
+{1..9}
+DISCRETE variant_fields_00001_00004_00002 #
+{1..9}
+DISCRETE variant_fields_00001_00004_00003 #
+{1..9}
+DISCRETE variant_fields_00001_00004_00004 #
+{1..9}
+DISCRETE variant_fields_00001_00004_00005 #
+{1..9}
+DISCRETE variant_fields_00001_00004_00006 #
+{1..9}
+DISCRETE variant_fields_00001_00004_00007 #
+{1..9}
+DISCRETE variant_fields_00001_00004_00008 #
+{1..9}
+DISCRETE variant_fields_00001_00004_00009 #
+{1..9}
+DISCRETE variant_fields_00001_00005_00001 #
+{1..9}
+DISCRETE variant_fields_00001_00005_00002 #
+{1..9}
+DISCRETE variant_fields_00001_00005_00003 #
+{1..9}
+DISCRETE variant_fields_00001_00005_00004 #
+{1..9}
+DISCRETE variant_fields_00001_00005_00005 #
+{1..9}
+DISCRETE variant_fields_00001_00005_00006 #
+{1..9}
+DISCRETE variant_fields_00001_00005_00007 #
+{1..9}
+DISCRETE variant_fields_00001_00005_00008 #
+{1..9}
+DISCRETE variant_fields_00001_00005_00009 #
+{1..9}
+DISCRETE variant_fields_00001_00006_00001 #
+{1..9}
+DISCRETE variant_fields_00001_00006_00002 #
+{1..9}
+DISCRETE variant_fields_00001_00006_00003 #
+{1..9}
+DISCRETE variant_fields_00001_00006_00004 #
+{1..9}
+DISCRETE variant_fields_00001_00006_00005 #
+{1..9}
+DISCRETE variant_fields_00001_00006_00006 #
+{1..9}
+DISCRETE variant_fields_00001_00006_00007 #
+{1..9}
+DISCRETE variant_fields_00001_00006_00008 #
+{1..9}
+DISCRETE variant_fields_00001_00006_00009 #
+{1..9}
+DISCRETE variant_fields_00001_00007_00001 #
+{1..9}
+DISCRETE variant_fields_00001_00007_00002 #
+{1..9}
+DISCRETE variant_fields_00001_00007_00003 #
+{1..9}
+DISCRETE variant_fields_00001_00007_00004 #
+{1..9}
+DISCRETE variant_fields_00001_00007_00005 #
+{1..9}
+DISCRETE variant_fields_00001_00007_00006 #
+{1..9}
+DISCRETE variant_fields_00001_00007_00007 #
+{1..9}
+DISCRETE variant_fields_00001_00007_00008 #
+{1..9}
+DISCRETE variant_fields_00001_00007_00009 #
+{1..9}
+DISCRETE variant_fields_00001_00008_00001 #
+{1..9}
+DISCRETE variant_fields_00001_00008_00002 #
+{1..9}
+DISCRETE variant_fields_00001_00008_00003 #
+{1..9}
+DISCRETE variant_fields_00001_00008_00004 #
+{1..9}
+DISCRETE variant_fields_00001_00008_00005 #
+{1..9}
+DISCRETE variant_fields_00001_00008_00006 #
+{1..9}
+DISCRETE variant_fields_00001_00008_00007 #
+{1..9}
+DISCRETE variant_fields_00001_00008_00008 #
+{1..9}
+DISCRETE variant_fields_00001_00008_00009 #
+{1..9}
+DISCRETE variant_fields_00001_00009_00001 #
+{1..9}
+DISCRETE variant_fields_00001_00009_00002 #
+{1..9}
+DISCRETE variant_fields_00001_00009_00003 #
+{1..9}
+DISCRETE variant_fields_00001_00009_00004 #
+{1..9}
+DISCRETE variant_fields_00001_00009_00005 #
+{1..9}
+DISCRETE variant_fields_00001_00009_00006 #
+{1..9}
+DISCRETE variant_fields_00001_00009_00007 #
+{1..9}
+DISCRETE variant_fields_00001_00009_00008 #
+{1..9}
+DISCRETE variant_fields_00001_00009_00009 #
+{1..9}
+DISCRETE variant_fields_00002_00001_00001 #
+{1..9}
+DISCRETE variant_fields_00002_00001_00002 #
+{1..9}
+DISCRETE variant_fields_00002_00001_00003 #
+{1..9}
+DISCRETE variant_fields_00002_00001_00004 #
+{1..9}
+DISCRETE variant_fields_00002_00001_00005 #
+{1..9}
+DISCRETE variant_fields_00002_00001_00006 #
+{1..9}
+DISCRETE variant_fields_00002_00001_00007 #
+{1..9}
+DISCRETE variant_fields_00002_00001_00008 #
+{1..9}
+DISCRETE variant_fields_00002_00001_00009 #
+{1..9}
+DISCRETE variant_fields_00002_00002_00001 #
+{1..9}
+DISCRETE variant_fields_00002_00002_00002 #
+{1..9}
+DISCRETE variant_fields_00002_00002_00003 #
+{1..9}
+DISCRETE variant_fields_00002_00002_00004 #
+{1..9}
+DISCRETE variant_fields_00002_00002_00005 #
+{1..9}
+DISCRETE variant_fields_00002_00002_00006 #
+{1..9}
+DISCRETE variant_fields_00002_00002_00007 #
+{1..9}
+DISCRETE variant_fields_00002_00002_00008 #
+{1..9}
+DISCRETE variant_fields_00002_00002_00009 #
+{1..9}
+DISCRETE variant_fields_00002_00003_00001 #
+{1..9}
+DISCRETE variant_fields_00002_00003_00002 #
+{1..9}
+DISCRETE variant_fields_00002_00003_00003 #
+{1..9}
+DISCRETE variant_fields_00002_00003_00004 #
+{1..9}
+DISCRETE variant_fields_00002_00003_00005 #
+{1..9}
+DISCRETE variant_fields_00002_00003_00006 #
+{1..9}
+DISCRETE variant_fields_00002_00003_00007 #
+{1..9}
+DISCRETE variant_fields_00002_00003_00008 #
+{1..9}
+DISCRETE variant_fields_00002_00003_00009 #
+{1..9}
+DISCRETE variant_fields_00002_00004_00001 #
+{1..9}
+DISCRETE variant_fields_00002_00004_00002 #
+{1..9}
+DISCRETE variant_fields_00002_00004_00003 #
+{1..9}
+DISCRETE variant_fields_00002_00004_00004 #
+{1..9}
+DISCRETE variant_fields_00002_00004_00005 #
+{1..9}
+DISCRETE variant_fields_00002_00004_00006 #
+{1..9}
+DISCRETE variant_fields_00002_00004_00007 #
+{1..9}
+DISCRETE variant_fields_00002_00004_00008 #
+{1..9}
+DISCRETE variant_fields_00002_00004_00009 #
+{1..9}
+DISCRETE variant_fields_00002_00005_00001 #
+{1..9}
+DISCRETE variant_fields_00002_00005_00002 #
+{1..9}
+DISCRETE variant_fields_00002_00005_00003 #
+{1..9}
+DISCRETE variant_fields_00002_00005_00004 #
+{1..9}
+DISCRETE variant_fields_00002_00005_00005 #
+{1..9}
+DISCRETE variant_fields_00002_00005_00006 #
+{1..9}
+DISCRETE variant_fields_00002_00005_00007 #
+{1..9}
+DISCRETE variant_fields_00002_00005_00008 #
+{1..9}
+DISCRETE variant_fields_00002_00005_00009 #
+{1..9}
+DISCRETE variant_fields_00002_00006_00001 #
+{1..9}
+DISCRETE variant_fields_00002_00006_00002 #
+{1..9}
+DISCRETE variant_fields_00002_00006_00003 #
+{1..9}
+DISCRETE variant_fields_00002_00006_00004 #
+{1..9}
+DISCRETE variant_fields_00002_00006_00005 #
+{1..9}
+DISCRETE variant_fields_00002_00006_00006 #
+{1..9}
+DISCRETE variant_fields_00002_00006_00007 #
+{1..9}
+DISCRETE variant_fields_00002_00006_00008 #
+{1..9}
+DISCRETE variant_fields_00002_00006_00009 #
+{1..9}
+DISCRETE variant_fields_00002_00007_00001 #
+{1..9}
+DISCRETE variant_fields_00002_00007_00002 #
+{1..9}
+DISCRETE variant_fields_00002_00007_00003 #
+{1..9}
+DISCRETE variant_fields_00002_00007_00004 #
+{1..9}
+DISCRETE variant_fields_00002_00007_00005 #
+{1..9}
+DISCRETE variant_fields_00002_00007_00006 #
+{1..9}
+DISCRETE variant_fields_00002_00007_00007 #
+{1..9}
+DISCRETE variant_fields_00002_00007_00008 #
+{1..9}
+DISCRETE variant_fields_00002_00007_00009 #
+{1..9}
+DISCRETE variant_fields_00002_00008_00001 #
+{1..9}
+DISCRETE variant_fields_00002_00008_00002 #
+{1..9}
+DISCRETE variant_fields_00002_00008_00003 #
+{1..9}
+DISCRETE variant_fields_00002_00008_00004 #
+{1..9}
+DISCRETE variant_fields_00002_00008_00005 #
+{1..9}
+DISCRETE variant_fields_00002_00008_00006 #
+{1..9}
+DISCRETE variant_fields_00002_00008_00007 #
+{1..9}
+DISCRETE variant_fields_00002_00008_00008 #
+{1..9}
+DISCRETE variant_fields_00002_00008_00009 #
+{1..9}
+DISCRETE variant_fields_00002_00009_00001 #
+{1..9}
+DISCRETE variant_fields_00002_00009_00002 #
+{1..9}
+DISCRETE variant_fields_00002_00009_00003 #
+{1..9}
+DISCRETE variant_fields_00002_00009_00004 #
+{1..9}
+DISCRETE variant_fields_00002_00009_00005 #
+{1..9}
+DISCRETE variant_fields_00002_00009_00006 #
+{1..9}
+DISCRETE variant_fields_00002_00009_00007 #
+{1..9}
+DISCRETE variant_fields_00002_00009_00008 #
+{1..9}
+DISCRETE variant_fields_00002_00009_00009 #
+{1..9}
+DISCRETE variant_fields_00003_00001_00001 #
+{1..9}
+DISCRETE variant_fields_00003_00001_00002 #
+{1..9}
+DISCRETE variant_fields_00003_00001_00003 #
+{1..9}
+DISCRETE variant_fields_00003_00001_00004 #
+{1..9}
+DISCRETE variant_fields_00003_00001_00005 #
+{1..9}
+DISCRETE variant_fields_00003_00001_00006 #
+{1..9}
+DISCRETE variant_fields_00003_00001_00007 #
+{1..9}
+DISCRETE variant_fields_00003_00001_00008 #
+{1..9}
+DISCRETE variant_fields_00003_00001_00009 #
+{1..9}
+DISCRETE variant_fields_00003_00002_00001 #
+{1..9}
+DISCRETE variant_fields_00003_00002_00002 #
+{1..9}
+DISCRETE variant_fields_00003_00002_00003 #
+{1..9}
+DISCRETE variant_fields_00003_00002_00004 #
+{1..9}
+DISCRETE variant_fields_00003_00002_00005 #
+{1..9}
+DISCRETE variant_fields_00003_00002_00006 #
+{1..9}
+DISCRETE variant_fields_00003_00002_00007 #
+{1..9}
+DISCRETE variant_fields_00003_00002_00008 #
+{1..9}
+DISCRETE variant_fields_00003_00002_00009 #
+{1..9}
+DISCRETE variant_fields_00003_00003_00001 #
+{1..9}
+DISCRETE variant_fields_00003_00003_00002 #
+{1..9}
+DISCRETE variant_fields_00003_00003_00003 #
+{1..9}
+DISCRETE variant_fields_00003_00003_00004 #
+{1..9}
+DISCRETE variant_fields_00003_00003_00005 #
+{1..9}
+DISCRETE variant_fields_00003_00003_00006 #
+{1..9}
+DISCRETE variant_fields_00003_00003_00007 #
+{1..9}
+DISCRETE variant_fields_00003_00003_00008 #
+{1..9}
+DISCRETE variant_fields_00003_00003_00009 #
+{1..9}
+DISCRETE variant_fields_00003_00004_00001 #
+{1..9}
+DISCRETE variant_fields_00003_00004_00002 #
+{1..9}
+DISCRETE variant_fields_00003_00004_00003 #
+{1..9}
+DISCRETE variant_fields_00003_00004_00004 #
+{1..9}
+DISCRETE variant_fields_00003_00004_00005 #
+{1..9}
+DISCRETE variant_fields_00003_00004_00006 #
+{1..9}
+DISCRETE variant_fields_00003_00004_00007 #
+{1..9}
+DISCRETE variant_fields_00003_00004_00008 #
+{1..9}
+DISCRETE variant_fields_00003_00004_00009 #
+{1..9}
+DISCRETE variant_fields_00003_00005_00001 #
+{1..9}
+DISCRETE variant_fields_00003_00005_00002 #
+{1..9}
+DISCRETE variant_fields_00003_00005_00003 #
+{1..9}
+DISCRETE variant_fields_00003_00005_00004 #
+{1..9}
+DISCRETE variant_fields_00003_00005_00005 #
+{1..9}
+DISCRETE variant_fields_00003_00005_00006 #
+{1..9}
+DISCRETE variant_fields_00003_00005_00007 #
+{1..9}
+DISCRETE variant_fields_00003_00005_00008 #
+{1..9}
+DISCRETE variant_fields_00003_00005_00009 #
+{1..9}
+DISCRETE variant_fields_00003_00006_00001 #
+{1..9}
+DISCRETE variant_fields_00003_00006_00002 #
+{1..9}
+DISCRETE variant_fields_00003_00006_00003 #
+{1..9}
+DISCRETE variant_fields_00003_00006_00004 #
+{1..9}
+DISCRETE variant_fields_00003_00006_00005 #
+{1..9}
+DISCRETE variant_fields_00003_00006_00006 #
+{1..9}
+DISCRETE variant_fields_00003_00006_00007 #
+{1..9}
+DISCRETE variant_fields_00003_00006_00008 #
+{1..9}
+DISCRETE variant_fields_00003_00006_00009 #
+{1..9}
+DISCRETE variant_fields_00003_00007_00001 #
+{1..9}
+DISCRETE variant_fields_00003_00007_00002 #
+{1..9}
+DISCRETE variant_fields_00003_00007_00003 #
+{1..9}
+DISCRETE variant_fields_00003_00007_00004 #
+{1..9}
+DISCRETE variant_fields_00003_00007_00005 #
+{1..9}
+DISCRETE variant_fields_00003_00007_00006 #
+{1..9}
+DISCRETE variant_fields_00003_00007_00007 #
+{1..9}
+DISCRETE variant_fields_00003_00007_00008 #
+{1..9}
+DISCRETE variant_fields_00003_00007_00009 #
+{1..9}
+DISCRETE variant_fields_00003_00008_00001 #
+{1..9}
+DISCRETE variant_fields_00003_00008_00002 #
+{1..9}
+DISCRETE variant_fields_00003_00008_00003 #
+{1..9}
+DISCRETE variant_fields_00003_00008_00004 #
+{1..9}
+DISCRETE variant_fields_00003_00008_00005 #
+{1..9}
+DISCRETE variant_fields_00003_00008_00006 #
+{1..9}
+DISCRETE variant_fields_00003_00008_00007 #
+{1..9}
+DISCRETE variant_fields_00003_00008_00008 #
+{1..9}
+DISCRETE variant_fields_00003_00008_00009 #
+{1..9}
+DISCRETE variant_fields_00003_00009_00001 #
+{1..9}
+DISCRETE variant_fields_00003_00009_00002 #
+{1..9}
+DISCRETE variant_fields_00003_00009_00003 #
+{1..9}
+DISCRETE variant_fields_00003_00009_00004 #
+{1..9}
+DISCRETE variant_fields_00003_00009_00005 #
+{1..9}
+DISCRETE variant_fields_00003_00009_00006 #
+{1..9}
+DISCRETE variant_fields_00003_00009_00007 #
+{1..9}
+DISCRETE variant_fields_00003_00009_00008 #
+{1..9}
+DISCRETE variant_fields_00003_00009_00009 #
+{1..9}
+DISCRETE variant_fields_00004_00001_00001 #
+{1..9}
+DISCRETE variant_fields_00004_00001_00002 #
+{1..9}
+DISCRETE variant_fields_00004_00001_00003 #
+{1..9}
+DISCRETE variant_fields_00004_00001_00004 #
+{1..9}
+DISCRETE variant_fields_00004_00001_00005 #
+{1..9}
+DISCRETE variant_fields_00004_00001_00006 #
+{1..9}
+DISCRETE variant_fields_00004_00001_00007 #
+{1..9}
+DISCRETE variant_fields_00004_00001_00008 #
+{1..9}
+DISCRETE variant_fields_00004_00001_00009 #
+{1..9}
+DISCRETE variant_fields_00004_00002_00001 #
+{1..9}
+DISCRETE variant_fields_00004_00002_00002 #
+{1..9}
+DISCRETE variant_fields_00004_00002_00003 #
+{1..9}
+DISCRETE variant_fields_00004_00002_00004 #
+{1..9}
+DISCRETE variant_fields_00004_00002_00005 #
+{1..9}
+DISCRETE variant_fields_00004_00002_00006 #
+{1..9}
+DISCRETE variant_fields_00004_00002_00007 #
+{1..9}
+DISCRETE variant_fields_00004_00002_00008 #
+{1..9}
+DISCRETE variant_fields_00004_00002_00009 #
+{1..9}
+DISCRETE variant_fields_00004_00003_00001 #
+{1..9}
+DISCRETE variant_fields_00004_00003_00002 #
+{1..9}
+DISCRETE variant_fields_00004_00003_00003 #
+{1..9}
+DISCRETE variant_fields_00004_00003_00004 #
+{1..9}
+DISCRETE variant_fields_00004_00003_00005 #
+{1..9}
+DISCRETE variant_fields_00004_00003_00006 #
+{1..9}
+DISCRETE variant_fields_00004_00003_00007 #
+{1..9}
+DISCRETE variant_fields_00004_00003_00008 #
+{1..9}
+DISCRETE variant_fields_00004_00003_00009 #
+{1..9}
+DISCRETE variant_fields_00004_00004_00001 #
+{1..9}
+DISCRETE variant_fields_00004_00004_00002 #
+{1..9}
+DISCRETE variant_fields_00004_00004_00003 #
+{1..9}
+DISCRETE variant_fields_00004_00004_00004 #
+{1..9}
+DISCRETE variant_fields_00004_00004_00005 #
+{1..9}
+DISCRETE variant_fields_00004_00004_00006 #
+{1..9}
+DISCRETE variant_fields_00004_00004_00007 #
+{1..9}
+DISCRETE variant_fields_00004_00004_00008 #
+{1..9}
+DISCRETE variant_fields_00004_00004_00009 #
+{1..9}
+DISCRETE variant_fields_00004_00005_00001 #
+{1..9}
+DISCRETE variant_fields_00004_00005_00002 #
+{1..9}
+DISCRETE variant_fields_00004_00005_00003 #
+{1..9}
+DISCRETE variant_fields_00004_00005_00004 #
+{1..9}
+DISCRETE variant_fields_00004_00005_00005 #
+{1..9}
+DISCRETE variant_fields_00004_00005_00006 #
+{1..9}
+DISCRETE variant_fields_00004_00005_00007 #
+{1..9}
+DISCRETE variant_fields_00004_00005_00008 #
+{1..9}
+DISCRETE variant_fields_00004_00005_00009 #
+{1..9}
+DISCRETE variant_fields_00004_00006_00001 #
+{1..9}
+DISCRETE variant_fields_00004_00006_00002 #
+{1..9}
+DISCRETE variant_fields_00004_00006_00003 #
+{1..9}
+DISCRETE variant_fields_00004_00006_00004 #
+{1..9}
+DISCRETE variant_fields_00004_00006_00005 #
+{1..9}
+DISCRETE variant_fields_00004_00006_00006 #
+{1..9}
+DISCRETE variant_fields_00004_00006_00007 #
+{1..9}
+DISCRETE variant_fields_00004_00006_00008 #
+{1..9}
+DISCRETE variant_fields_00004_00006_00009 #
+{1..9}
+DISCRETE variant_fields_00004_00007_00001 #
+{1..9}
+DISCRETE variant_fields_00004_00007_00002 #
+{1..9}
+DISCRETE variant_fields_00004_00007_00003 #
+{1..9}
+DISCRETE variant_fields_00004_00007_00004 #
+{1..9}
+DISCRETE variant_fields_00004_00007_00005 #
+{1..9}
+DISCRETE variant_fields_00004_00007_00006 #
+{1..9}
+DISCRETE variant_fields_00004_00007_00007 #
+{1..9}
+DISCRETE variant_fields_00004_00007_00008 #
+{1..9}
+DISCRETE variant_fields_00004_00007_00009 #
+{1..9}
+DISCRETE variant_fields_00004_00008_00001 #
+{1..9}
+DISCRETE variant_fields_00004_00008_00002 #
+{1..9}
+DISCRETE variant_fields_00004_00008_00003 #
+{1..9}
+DISCRETE variant_fields_00004_00008_00004 #
+{1..9}
+DISCRETE variant_fields_00004_00008_00005 #
+{1..9}
+DISCRETE variant_fields_00004_00008_00006 #
+{1..9}
+DISCRETE variant_fields_00004_00008_00007 #
+{1..9}
+DISCRETE variant_fields_00004_00008_00008 #
+{1..9}
+DISCRETE variant_fields_00004_00008_00009 #
+{1..9}
+DISCRETE variant_fields_00004_00009_00001 #
+{1..9}
+DISCRETE variant_fields_00004_00009_00002 #
+{1..9}
+DISCRETE variant_fields_00004_00009_00003 #
+{1..9}
+DISCRETE variant_fields_00004_00009_00004 #
+{1..9}
+DISCRETE variant_fields_00004_00009_00005 #
+{1..9}
+DISCRETE variant_fields_00004_00009_00006 #
+{1..9}
+DISCRETE variant_fields_00004_00009_00007 #
+{1..9}
+DISCRETE variant_fields_00004_00009_00008 #
+{1..9}
+DISCRETE variant_fields_00004_00009_00009 #
+{1..9}
+BOOL alldiff_row_00001 #
+BOOL alldiff_row_00002 #
+BOOL alldiff_row_00003 #
+BOOL alldiff_row_00004 #
+BOOL alldiff_row_00005 #
+BOOL alldiff_row_00006 #
+BOOL alldiff_row_00007 #
+BOOL alldiff_row_00008 #
+BOOL alldiff_row_00009 #
+BOOL alldiff_col_00001 #
+BOOL alldiff_col_00002 #
+BOOL alldiff_col_00003 #
+BOOL alldiff_col_00004 #
+BOOL alldiff_col_00005 #
+BOOL alldiff_col_00006 #
+BOOL alldiff_col_00007 #
+BOOL alldiff_col_00008 #
+BOOL alldiff_col_00009 #
+BOOL alldiff_box_00001 #
+BOOL alldiff_box_00002 #
+BOOL alldiff_box_00003 #
+BOOL alldiff_box_00004 #
+BOOL alldiff_box_00005 #
+BOOL alldiff_box_00006 #
+BOOL alldiff_box_00007 #
+BOOL alldiff_box_00008 #
+BOOL alldiff_box_00009 #
+BOOL clues_left_on_00001_00001 #
+BOOL clues_left_on_00001_00002 #
+BOOL clues_left_on_00001_00003 #
+BOOL clues_left_on_00001_00004 #
+BOOL clues_left_on_00001_00005 #
+BOOL clues_left_on_00001_00006 #
+BOOL clues_left_on_00001_00007 #
+BOOL clues_left_on_00001_00008 #
+BOOL clues_left_on_00001_00009 #
+BOOL clues_left_on_00002_00001 #
+BOOL clues_left_on_00002_00002 #
+BOOL clues_left_on_00002_00003 #
+BOOL clues_left_on_00002_00004 #
+BOOL clues_left_on_00002_00005 #
+BOOL clues_left_on_00002_00006 #
+BOOL clues_left_on_00002_00007 #
+BOOL clues_left_on_00002_00008 #
+BOOL clues_left_on_00002_00009 #
+BOOL clues_left_on_00003_00001 #
+BOOL clues_left_on_00003_00002 #
+BOOL clues_left_on_00003_00003 #
+BOOL clues_left_on_00003_00004 #
+BOOL clues_left_on_00003_00005 #
+BOOL clues_left_on_00003_00006 #
+BOOL clues_left_on_00003_00007 #
+BOOL clues_left_on_00003_00008 #
+BOOL clues_left_on_00003_00009 #
+BOOL clues_left_on_00004_00001 #
+BOOL clues_left_on_00004_00002 #
+BOOL clues_left_on_00004_00003 #
+BOOL clues_left_on_00004_00004 #
+BOOL clues_left_on_00004_00005 #
+BOOL clues_left_on_00004_00006 #
+BOOL clues_left_on_00004_00007 #
+BOOL clues_left_on_00004_00008 #
+BOOL clues_left_on_00004_00009 #
+BOOL aux0 #(2<=variant_fields_00001_00002_00001)
+DISCRETE aux1 #(variant_fields_00001_00002_00002 * aux0)
+{0..9}
+BOOL aux2 #(3<=variant_fields_00001_00002_00001)
+DISCRETE aux3 #(variant_fields_00001_00002_00003 * aux2)
+{0..9}
+BOOL aux4 #(4<=variant_fields_00001_00002_00001)
+DISCRETE aux5 #(variant_fields_00001_00002_00004 * aux4)
+{0..9}
+BOOL aux6 #(5<=variant_fields_00001_00002_00001)
+DISCRETE aux7 #(variant_fields_00001_00002_00005 * aux6)
+{0..9}
+BOOL aux8 #(6<=variant_fields_00001_00002_00001)
+DISCRETE aux9 #(variant_fields_00001_00002_00006 * aux8)
+{0..9}
+BOOL aux10 #(7<=variant_fields_00001_00002_00001)
+DISCRETE aux11 #(variant_fields_00001_00002_00007 * aux10)
+{0..9}
+BOOL aux12 #(8<=variant_fields_00001_00002_00001)
+DISCRETE aux13 #(variant_fields_00001_00002_00008 * aux12)
+{0..9}
+BOOL aux14 #(9<=variant_fields_00001_00002_00001)
+DISCRETE aux15 #(variant_fields_00001_00002_00009 * aux14)
+{0..9}
+BOOL aux16 #(2<=variant_fields_00001_00004_00001)
+DISCRETE aux17 #(aux16 * variant_fields_00001_00004_00002)
+{0..9}
+BOOL aux18 #(3<=variant_fields_00001_00004_00001)
+DISCRETE aux19 #(aux18 * variant_fields_00001_00004_00003)
+{0..9}
+BOOL aux20 #(4<=variant_fields_00001_00004_00001)
+DISCRETE aux21 #(aux20 * variant_fields_00001_00004_00004)
+{0..9}
+BOOL aux22 #(5<=variant_fields_00001_00004_00001)
+DISCRETE aux23 #(aux22 * variant_fields_00001_00004_00005)
+{0..9}
+BOOL aux24 #(6<=variant_fields_00001_00004_00001)
+DISCRETE aux25 #(aux24 * variant_fields_00001_00004_00006)
+{0..9}
+BOOL aux26 #(7<=variant_fields_00001_00004_00001)
+DISCRETE aux27 #(aux26 * variant_fields_00001_00004_00007)
+{0..9}
+BOOL aux28 #(8<=variant_fields_00001_00004_00001)
+DISCRETE aux29 #(aux28 * variant_fields_00001_00004_00008)
+{0..9}
+BOOL aux30 #(9<=variant_fields_00001_00004_00001)
+DISCRETE aux31 #(aux30 * variant_fields_00001_00004_00009)
+{0..9}
+BOOL aux32 #(2<=variant_fields_00001_00006_00001)
+DISCRETE aux33 #(variant_fields_00001_00006_00002 * aux32)
+{0..9}
+BOOL aux34 #(3<=variant_fields_00001_00006_00001)
+DISCRETE aux35 #(variant_fields_00001_00006_00003 * aux34)
+{0..9}
+BOOL aux36 #(4<=variant_fields_00001_00006_00001)
+DISCRETE aux37 #(variant_fields_00001_00006_00004 * aux36)
+{0..9}
+BOOL aux38 #(5<=variant_fields_00001_00006_00001)
+DISCRETE aux39 #(variant_fields_00001_00006_00005 * aux38)
+{0..9}
+BOOL aux40 #(6<=variant_fields_00001_00006_00001)
+DISCRETE aux41 #(variant_fields_00001_00006_00006 * aux40)
+{0..9}
+BOOL aux42 #(7<=variant_fields_00001_00006_00001)
+DISCRETE aux43 #(variant_fields_00001_00006_00007 * aux42)
+{0..9}
+BOOL aux44 #(8<=variant_fields_00001_00006_00001)
+DISCRETE aux45 #(variant_fields_00001_00006_00008 * aux44)
+{0..9}
+BOOL aux46 #(9<=variant_fields_00001_00006_00001)
+DISCRETE aux47 #(variant_fields_00001_00006_00009 * aux46)
+{0..9}
+BOOL aux48 #(2<=variant_fields_00001_00008_00001)
+DISCRETE aux49 #(variant_fields_00001_00008_00002 * aux48)
+{0..9}
+BOOL aux50 #(3<=variant_fields_00001_00008_00001)
+DISCRETE aux51 #(variant_fields_00001_00008_00003 * aux50)
+{0..9}
+BOOL aux52 #(4<=variant_fields_00001_00008_00001)
+DISCRETE aux53 #(variant_fields_00001_00008_00004 * aux52)
+{0..9}
+BOOL aux54 #(5<=variant_fields_00001_00008_00001)
+DISCRETE aux55 #(variant_fields_00001_00008_00005 * aux54)
+{0..9}
+BOOL aux56 #(6<=variant_fields_00001_00008_00001)
+DISCRETE aux57 #(variant_fields_00001_00008_00006 * aux56)
+{0..9}
+BOOL aux58 #(7<=variant_fields_00001_00008_00001)
+DISCRETE aux59 #(variant_fields_00001_00008_00007 * aux58)
+{0..9}
+BOOL aux60 #(8<=variant_fields_00001_00008_00001)
+DISCRETE aux61 #(variant_fields_00001_00008_00008 * aux60)
+{0..9}
+BOOL aux62 #(9<=variant_fields_00001_00008_00001)
+DISCRETE aux63 #(variant_fields_00001_00008_00009 * aux62)
+{0..9}
+BOOL aux64 #(2<=variant_fields_00002_00002_00001)
+DISCRETE aux65 #(variant_fields_00002_00002_00002 * aux64)
+{0..9}
+BOOL aux66 #(3<=variant_fields_00002_00002_00001)
+DISCRETE aux67 #(variant_fields_00002_00002_00003 * aux66)
+{0..9}
+BOOL aux68 #(4<=variant_fields_00002_00002_00001)
+DISCRETE aux69 #(variant_fields_00002_00002_00004 * aux68)
+{0..9}
+BOOL aux70 #(5<=variant_fields_00002_00002_00001)
+DISCRETE aux71 #(variant_fields_00002_00002_00005 * aux70)
+{0..9}
+BOOL aux72 #(6<=variant_fields_00002_00002_00001)
+DISCRETE aux73 #(variant_fields_00002_00002_00006 * aux72)
+{0..9}
+BOOL aux74 #(7<=variant_fields_00002_00002_00001)
+DISCRETE aux75 #(variant_fields_00002_00002_00007 * aux74)
+{0..9}
+BOOL aux76 #(8<=variant_fields_00002_00002_00001)
+DISCRETE aux77 #(variant_fields_00002_00002_00008 * aux76)
+{0..9}
+BOOL aux78 #(9<=variant_fields_00002_00002_00001)
+DISCRETE aux79 #(variant_fields_00002_00002_00009 * aux78)
+{0..9}
+BOOL aux80 #(2<=variant_fields_00002_00004_00001)
+DISCRETE aux81 #(variant_fields_00002_00004_00002 * aux80)
+{0..9}
+BOOL aux82 #(3<=variant_fields_00002_00004_00001)
+DISCRETE aux83 #(variant_fields_00002_00004_00003 * aux82)
+{0..9}
+BOOL aux84 #(4<=variant_fields_00002_00004_00001)
+DISCRETE aux85 #(variant_fields_00002_00004_00004 * aux84)
+{0..9}
+BOOL aux86 #(5<=variant_fields_00002_00004_00001)
+DISCRETE aux87 #(variant_fields_00002_00004_00005 * aux86)
+{0..9}
+BOOL aux88 #(6<=variant_fields_00002_00004_00001)
+DISCRETE aux89 #(variant_fields_00002_00004_00006 * aux88)
+{0..9}
+BOOL aux90 #(7<=variant_fields_00002_00004_00001)
+DISCRETE aux91 #(variant_fields_00002_00004_00007 * aux90)
+{0..9}
+BOOL aux92 #(8<=variant_fields_00002_00004_00001)
+DISCRETE aux93 #(variant_fields_00002_00004_00008 * aux92)
+{0..9}
+BOOL aux94 #(9<=variant_fields_00002_00004_00001)
+DISCRETE aux95 #(variant_fields_00002_00004_00009 * aux94)
+{0..9}
+BOOL aux96 #(2<=variant_fields_00002_00006_00001)
+DISCRETE aux97 #(variant_fields_00002_00006_00002 * aux96)
+{0..9}
+BOOL aux98 #(3<=variant_fields_00002_00006_00001)
+DISCRETE aux99 #(variant_fields_00002_00006_00003 * aux98)
+{0..9}
+BOOL aux100 #(4<=variant_fields_00002_00006_00001)
+DISCRETE aux101 #(variant_fields_00002_00006_00004 * aux100)
+{0..9}
+BOOL aux102 #(5<=variant_fields_00002_00006_00001)
+DISCRETE aux103 #(variant_fields_00002_00006_00005 * aux102)
+{0..9}
+BOOL aux104 #(6<=variant_fields_00002_00006_00001)
+DISCRETE aux105 #(variant_fields_00002_00006_00006 * aux104)
+{0..9}
+BOOL aux106 #(7<=variant_fields_00002_00006_00001)
+DISCRETE aux107 #(variant_fields_00002_00006_00007 * aux106)
+{0..9}
+BOOL aux108 #(8<=variant_fields_00002_00006_00001)
+DISCRETE aux109 #(variant_fields_00002_00006_00008 * aux108)
+{0..9}
+BOOL aux110 #(9<=variant_fields_00002_00006_00001)
+DISCRETE aux111 #(variant_fields_00002_00006_00009 * aux110)
+{0..9}
+BOOL aux112 #(2<=variant_fields_00002_00007_00001)
+DISCRETE aux113 #(variant_fields_00002_00007_00002 * aux112)
+{0..9}
+BOOL aux114 #(3<=variant_fields_00002_00007_00001)
+DISCRETE aux115 #(variant_fields_00002_00007_00003 * aux114)
+{0..9}
+BOOL aux116 #(4<=variant_fields_00002_00007_00001)
+DISCRETE aux117 #(variant_fields_00002_00007_00004 * aux116)
+{0..9}
+BOOL aux118 #(5<=variant_fields_00002_00007_00001)
+DISCRETE aux119 #(variant_fields_00002_00007_00005 * aux118)
+{0..9}
+BOOL aux120 #(6<=variant_fields_00002_00007_00001)
+DISCRETE aux121 #(variant_fields_00002_00007_00006 * aux120)
+{0..9}
+BOOL aux122 #(7<=variant_fields_00002_00007_00001)
+DISCRETE aux123 #(variant_fields_00002_00007_00007 * aux122)
+{0..9}
+BOOL aux124 #(8<=variant_fields_00002_00007_00001)
+DISCRETE aux125 #(variant_fields_00002_00007_00008 * aux124)
+{0..9}
+BOOL aux126 #(9<=variant_fields_00002_00007_00001)
+DISCRETE aux127 #(variant_fields_00002_00007_00009 * aux126)
+{0..9}
+BOOL aux128 #(2<=variant_fields_00003_00002_00001)
+DISCRETE aux129 #(variant_fields_00003_00002_00002 * aux128)
+{0..9}
+BOOL aux130 #(3<=variant_fields_00003_00002_00001)
+DISCRETE aux131 #(variant_fields_00003_00002_00003 * aux130)
+{0..9}
+BOOL aux132 #(4<=variant_fields_00003_00002_00001)
+DISCRETE aux133 #(variant_fields_00003_00002_00004 * aux132)
+{0..9}
+BOOL aux134 #(5<=variant_fields_00003_00002_00001)
+DISCRETE aux135 #(variant_fields_00003_00002_00005 * aux134)
+{0..9}
+BOOL aux136 #(6<=variant_fields_00003_00002_00001)
+DISCRETE aux137 #(variant_fields_00003_00002_00006 * aux136)
+{0..9}
+BOOL aux138 #(7<=variant_fields_00003_00002_00001)
+DISCRETE aux139 #(variant_fields_00003_00002_00007 * aux138)
+{0..9}
+BOOL aux140 #(8<=variant_fields_00003_00002_00001)
+DISCRETE aux141 #(variant_fields_00003_00002_00008 * aux140)
+{0..9}
+BOOL aux142 #(9<=variant_fields_00003_00002_00001)
+DISCRETE aux143 #(variant_fields_00003_00002_00009 * aux142)
+{0..9}
+BOOL aux144 #(2<=variant_fields_00003_00004_00001)
+DISCRETE aux145 #(variant_fields_00003_00004_00002 * aux144)
+{0..9}
+BOOL aux146 #(3<=variant_fields_00003_00004_00001)
+DISCRETE aux147 #(variant_fields_00003_00004_00003 * aux146)
+{0..9}
+BOOL aux148 #(4<=variant_fields_00003_00004_00001)
+DISCRETE aux149 #(variant_fields_00003_00004_00004 * aux148)
+{0..9}
+BOOL aux150 #(5<=variant_fields_00003_00004_00001)
+DISCRETE aux151 #(variant_fields_00003_00004_00005 * aux150)
+{0..9}
+BOOL aux152 #(6<=variant_fields_00003_00004_00001)
+DISCRETE aux153 #(variant_fields_00003_00004_00006 * aux152)
+{0..9}
+BOOL aux154 #(7<=variant_fields_00003_00004_00001)
+DISCRETE aux155 #(variant_fields_00003_00004_00007 * aux154)
+{0..9}
+BOOL aux156 #(8<=variant_fields_00003_00004_00001)
+DISCRETE aux157 #(variant_fields_00003_00004_00008 * aux156)
+{0..9}
+BOOL aux158 #(9<=variant_fields_00003_00004_00001)
+DISCRETE aux159 #(variant_fields_00003_00004_00009 * aux158)
+{0..9}
+BOOL aux160 #(2<=variant_fields_00003_00006_00001)
+DISCRETE aux161 #(variant_fields_00003_00006_00002 * aux160)
+{0..9}
+BOOL aux162 #(3<=variant_fields_00003_00006_00001)
+DISCRETE aux163 #(variant_fields_00003_00006_00003 * aux162)
+{0..9}
+BOOL aux164 #(4<=variant_fields_00003_00006_00001)
+DISCRETE aux165 #(variant_fields_00003_00006_00004 * aux164)
+{0..9}
+BOOL aux166 #(5<=variant_fields_00003_00006_00001)
+DISCRETE aux167 #(variant_fields_00003_00006_00005 * aux166)
+{0..9}
+BOOL aux168 #(6<=variant_fields_00003_00006_00001)
+DISCRETE aux169 #(variant_fields_00003_00006_00006 * aux168)
+{0..9}
+BOOL aux170 #(7<=variant_fields_00003_00006_00001)
+DISCRETE aux171 #(variant_fields_00003_00006_00007 * aux170)
+{0..9}
+BOOL aux172 #(8<=variant_fields_00003_00006_00001)
+DISCRETE aux173 #(variant_fields_00003_00006_00008 * aux172)
+{0..9}
+BOOL aux174 #(9<=variant_fields_00003_00006_00001)
+DISCRETE aux175 #(variant_fields_00003_00006_00009 * aux174)
+{0..9}
+BOOL aux176 #(2<=variant_fields_00003_00008_00001)
+DISCRETE aux177 #(variant_fields_00003_00008_00002 * aux176)
+{0..9}
+BOOL aux178 #(3<=variant_fields_00003_00008_00001)
+DISCRETE aux179 #(variant_fields_00003_00008_00003 * aux178)
+{0..9}
+BOOL aux180 #(4<=variant_fields_00003_00008_00001)
+DISCRETE aux181 #(variant_fields_00003_00008_00004 * aux180)
+{0..9}
+BOOL aux182 #(5<=variant_fields_00003_00008_00001)
+DISCRETE aux183 #(variant_fields_00003_00008_00005 * aux182)
+{0..9}
+BOOL aux184 #(6<=variant_fields_00003_00008_00001)
+DISCRETE aux185 #(variant_fields_00003_00008_00006 * aux184)
+{0..9}
+BOOL aux186 #(7<=variant_fields_00003_00008_00001)
+DISCRETE aux187 #(variant_fields_00003_00008_00007 * aux186)
+{0..9}
+BOOL aux188 #(8<=variant_fields_00003_00008_00001)
+DISCRETE aux189 #(variant_fields_00003_00008_00008 * aux188)
+{0..9}
+BOOL aux190 #(9<=variant_fields_00003_00008_00001)
+DISCRETE aux191 #(variant_fields_00003_00008_00009 * aux190)
+{0..9}
+BOOL aux192 #(2<=variant_fields_00004_00002_00001)
+DISCRETE aux193 #(variant_fields_00004_00002_00002 * aux192)
+{0..9}
+BOOL aux194 #(3<=variant_fields_00004_00002_00001)
+DISCRETE aux195 #(variant_fields_00004_00002_00003 * aux194)
+{0..9}
+BOOL aux196 #(4<=variant_fields_00004_00002_00001)
+DISCRETE aux197 #(variant_fields_00004_00002_00004 * aux196)
+{0..9}
+BOOL aux198 #(5<=variant_fields_00004_00002_00001)
+DISCRETE aux199 #(variant_fields_00004_00002_00005 * aux198)
+{0..9}
+BOOL aux200 #(6<=variant_fields_00004_00002_00001)
+DISCRETE aux201 #(variant_fields_00004_00002_00006 * aux200)
+{0..9}
+BOOL aux202 #(7<=variant_fields_00004_00002_00001)
+DISCRETE aux203 #(variant_fields_00004_00002_00007 * aux202)
+{0..9}
+BOOL aux204 #(8<=variant_fields_00004_00002_00001)
+DISCRETE aux205 #(variant_fields_00004_00002_00008 * aux204)
+{0..9}
+BOOL aux206 #(9<=variant_fields_00004_00002_00001)
+DISCRETE aux207 #(variant_fields_00004_00002_00009 * aux206)
+{0..9}
+BOOL aux208 #(2<=variant_fields_00004_00004_00001)
+DISCRETE aux209 #(variant_fields_00004_00004_00002 * aux208)
+{0..9}
+BOOL aux210 #(3<=variant_fields_00004_00004_00001)
+DISCRETE aux211 #(variant_fields_00004_00004_00003 * aux210)
+{0..9}
+BOOL aux212 #(4<=variant_fields_00004_00004_00001)
+DISCRETE aux213 #(variant_fields_00004_00004_00004 * aux212)
+{0..9}
+BOOL aux214 #(5<=variant_fields_00004_00004_00001)
+DISCRETE aux215 #(variant_fields_00004_00004_00005 * aux214)
+{0..9}
+BOOL aux216 #(6<=variant_fields_00004_00004_00001)
+DISCRETE aux217 #(variant_fields_00004_00004_00006 * aux216)
+{0..9}
+BOOL aux218 #(7<=variant_fields_00004_00004_00001)
+DISCRETE aux219 #(variant_fields_00004_00004_00007 * aux218)
+{0..9}
+BOOL aux220 #(8<=variant_fields_00004_00004_00001)
+DISCRETE aux221 #(variant_fields_00004_00004_00008 * aux220)
+{0..9}
+BOOL aux222 #(9<=variant_fields_00004_00004_00001)
+DISCRETE aux223 #(variant_fields_00004_00004_00009 * aux222)
+{0..9}
+BOOL aux224 #(2<=variant_fields_00004_00007_00001)
+DISCRETE aux225 #(variant_fields_00004_00007_00002 * aux224)
+{0..9}
+BOOL aux226 #(3<=variant_fields_00004_00007_00001)
+DISCRETE aux227 #(variant_fields_00004_00007_00003 * aux226)
+{0..9}
+BOOL aux228 #(4<=variant_fields_00004_00007_00001)
+DISCRETE aux229 #(variant_fields_00004_00007_00004 * aux228)
+{0..9}
+BOOL aux230 #(5<=variant_fields_00004_00007_00001)
+DISCRETE aux231 #(variant_fields_00004_00007_00005 * aux230)
+{0..9}
+BOOL aux232 #(6<=variant_fields_00004_00007_00001)
+DISCRETE aux233 #(variant_fields_00004_00007_00006 * aux232)
+{0..9}
+BOOL aux234 #(7<=variant_fields_00004_00007_00001)
+DISCRETE aux235 #(variant_fields_00004_00007_00007 * aux234)
+{0..9}
+BOOL aux236 #(8<=variant_fields_00004_00007_00001)
+DISCRETE aux237 #(variant_fields_00004_00007_00008 * aux236)
+{0..9}
+BOOL aux238 #(9<=variant_fields_00004_00007_00001)
+DISCRETE aux239 #(variant_fields_00004_00007_00009 * aux238)
+{0..9}
+**TUPLELIST**
+GRID 9 9
+0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 
+**VARIABLES**
+ALIAS GRID[9,9]=[[0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0]]
+**TUPLELIST**
+CLUES 4 9
+0 8 0 17 0 30 0 28 0 
+0 27 0 11 0 21 16 0 0 
+0 8 0 17 0 30 0 28 0 
+0 27 0 11 0 0 16 0 0 
+**VARIABLES**
+ALIAS CLUES[4,9]=[[0, 8, 0, 17, 0, 30, 0, 28, 0], [0, 27, 0, 11, 0, 21, 16, 0, 0], [0, 8, 0, 17, 0, 30, 0, 28, 0], [0, 27, 0, 11, 0, 0, 16, 0, 0]]
+**SEARCH**
+PRINT[[field_00001_00001],[field_00001_00002],[field_00001_00003],[field_00001_00004],[field_00001_00005],[field_00001_00006],[field_00001_00007],[field_00001_00008],[field_00001_00009],[field_00002_00001],[field_00002_00002],[field_00002_00003],[field_00002_00004],[field_00002_00005],[field_00002_00006],[field_00002_00007],[field_00002_00008],[field_00002_00009],[field_00003_00001],[field_00003_00002],[field_00003_00003],[field_00003_00004],[field_00003_00005],[field_00003_00006],[field_00003_00007],[field_00003_00008],[field_00003_00009],[field_00004_00001],[field_00004_00002],[field_00004_00003],[field_00004_00004],[field_00004_00005],[field_00004_00006],[field_00004_00007],[field_00004_00008],[field_00004_00009],[field_00005_00001],[field_00005_00002],[field_00005_00003],[field_00005_00004],[field_00005_00005],[field_00005_00006],[field_00005_00007],[field_00005_00008],[field_00005_00009],[field_00006_00001],[field_00006_00002],[field_00006_00003],[field_00006_00004],[field_00006_00005],[field_00006_00006],[field_00006_00007],[field_00006_00008],[field_00006_00009],[field_00007_00001],[field_00007_00002],[field_00007_00003],[field_00007_00004],[field_00007_00005],[field_00007_00006],[field_00007_00007],[field_00007_00008],[field_00007_00009],[field_00008_00001],[field_00008_00002],[field_00008_00003],[field_00008_00004],[field_00008_00005],[field_00008_00006],[field_00008_00007],[field_00008_00008],[field_00008_00009],[field_00009_00001],[field_00009_00002],[field_00009_00003],[field_00009_00004],[field_00009_00005],[field_00009_00006],[field_00009_00007],[field_00009_00008],[field_00009_00009],[variant_fields_00001_00001_00001],[variant_fields_00001_00001_00002],[variant_fields_00001_00001_00003],[variant_fields_00001_00001_00004],[variant_fields_00001_00001_00005],[variant_fields_00001_00001_00006],[variant_fields_00001_00001_00007],[variant_fields_00001_00001_00008],[variant_fields_00001_00001_00009],[variant_fields_00001_00002_00001],[variant_fields_00001_00002_00002],[variant_fields_00001_00002_00003],[variant_fields_00001_00002_00004],[variant_fields_00001_00002_00005],[variant_fields_00001_00002_00006],[variant_fields_00001_00002_00007],[variant_fields_00001_00002_00008],[variant_fields_00001_00002_00009],[variant_fields_00001_00003_00001],[variant_fields_00001_00003_00002],[variant_fields_00001_00003_00003],[variant_fields_00001_00003_00004],[variant_fields_00001_00003_00005],[variant_fields_00001_00003_00006],[variant_fields_00001_00003_00007],[variant_fields_00001_00003_00008],[variant_fields_00001_00003_00009],[variant_fields_00001_00004_00001],[variant_fields_00001_00004_00002],[variant_fields_00001_00004_00003],[variant_fields_00001_00004_00004],[variant_fields_00001_00004_00005],[variant_fields_00001_00004_00006],[variant_fields_00001_00004_00007],[variant_fields_00001_00004_00008],[variant_fields_00001_00004_00009],[variant_fields_00001_00005_00001],[variant_fields_00001_00005_00002],[variant_fields_00001_00005_00003],[variant_fields_00001_00005_00004],[variant_fields_00001_00005_00005],[variant_fields_00001_00005_00006],[variant_fields_00001_00005_00007],[variant_fields_00001_00005_00008],[variant_fields_00001_00005_00009],[variant_fields_00001_00006_00001],[variant_fields_00001_00006_00002],[variant_fields_00001_00006_00003],[variant_fields_00001_00006_00004],[variant_fields_00001_00006_00005],[variant_fields_00001_00006_00006],[variant_fields_00001_00006_00007],[variant_fields_00001_00006_00008],[variant_fields_00001_00006_00009],[variant_fields_00001_00007_00001],[variant_fields_00001_00007_00002],[variant_fields_00001_00007_00003],[variant_fields_00001_00007_00004],[variant_fields_00001_00007_00005],[variant_fields_00001_00007_00006],[variant_fields_00001_00007_00007],[variant_fields_00001_00007_00008],[variant_fields_00001_00007_00009],[variant_fields_00001_00008_00001],[variant_fields_00001_00008_00002],[variant_fields_00001_00008_00003],[variant_fields_00001_00008_00004],[variant_fields_00001_00008_00005],[variant_fields_00001_00008_00006],[variant_fields_00001_00008_00007],[variant_fields_00001_00008_00008],[variant_fields_00001_00008_00009],[variant_fields_00001_00009_00001],[variant_fields_00001_00009_00002],[variant_fields_00001_00009_00003],[variant_fields_00001_00009_00004],[variant_fields_00001_00009_00005],[variant_fields_00001_00009_00006],[variant_fields_00001_00009_00007],[variant_fields_00001_00009_00008],[variant_fields_00001_00009_00009],[variant_fields_00002_00001_00001],[variant_fields_00002_00001_00002],[variant_fields_00002_00001_00003],[variant_fields_00002_00001_00004],[variant_fields_00002_00001_00005],[variant_fields_00002_00001_00006],[variant_fields_00002_00001_00007],[variant_fields_00002_00001_00008],[variant_fields_00002_00001_00009],[variant_fields_00002_00002_00001],[variant_fields_00002_00002_00002],[variant_fields_00002_00002_00003],[variant_fields_00002_00002_00004],[variant_fields_00002_00002_00005],[variant_fields_00002_00002_00006],[variant_fields_00002_00002_00007],[variant_fields_00002_00002_00008],[variant_fields_00002_00002_00009],[variant_fields_00002_00003_00001],[variant_fields_00002_00003_00002],[variant_fields_00002_00003_00003],[variant_fields_00002_00003_00004],[variant_fields_00002_00003_00005],[variant_fields_00002_00003_00006],[variant_fields_00002_00003_00007],[variant_fields_00002_00003_00008],[variant_fields_00002_00003_00009],[variant_fields_00002_00004_00001],[variant_fields_00002_00004_00002],[variant_fields_00002_00004_00003],[variant_fields_00002_00004_00004],[variant_fields_00002_00004_00005],[variant_fields_00002_00004_00006],[variant_fields_00002_00004_00007],[variant_fields_00002_00004_00008],[variant_fields_00002_00004_00009],[variant_fields_00002_00005_00001],[variant_fields_00002_00005_00002],[variant_fields_00002_00005_00003],[variant_fields_00002_00005_00004],[variant_fields_00002_00005_00005],[variant_fields_00002_00005_00006],[variant_fields_00002_00005_00007],[variant_fields_00002_00005_00008],[variant_fields_00002_00005_00009],[variant_fields_00002_00006_00001],[variant_fields_00002_00006_00002],[variant_fields_00002_00006_00003],[variant_fields_00002_00006_00004],[variant_fields_00002_00006_00005],[variant_fields_00002_00006_00006],[variant_fields_00002_00006_00007],[variant_fields_00002_00006_00008],[variant_fields_00002_00006_00009],[variant_fields_00002_00007_00001],[variant_fields_00002_00007_00002],[variant_fields_00002_00007_00003],[variant_fields_00002_00007_00004],[variant_fields_00002_00007_00005],[variant_fields_00002_00007_00006],[variant_fields_00002_00007_00007],[variant_fields_00002_00007_00008],[variant_fields_00002_00007_00009],[variant_fields_00002_00008_00001],[variant_fields_00002_00008_00002],[variant_fields_00002_00008_00003],[variant_fields_00002_00008_00004],[variant_fields_00002_00008_00005],[variant_fields_00002_00008_00006],[variant_fields_00002_00008_00007],[variant_fields_00002_00008_00008],[variant_fields_00002_00008_00009],[variant_fields_00002_00009_00001],[variant_fields_00002_00009_00002],[variant_fields_00002_00009_00003],[variant_fields_00002_00009_00004],[variant_fields_00002_00009_00005],[variant_fields_00002_00009_00006],[variant_fields_00002_00009_00007],[variant_fields_00002_00009_00008],[variant_fields_00002_00009_00009],[variant_fields_00003_00001_00001],[variant_fields_00003_00001_00002],[variant_fields_00003_00001_00003],[variant_fields_00003_00001_00004],[variant_fields_00003_00001_00005],[variant_fields_00003_00001_00006],[variant_fields_00003_00001_00007],[variant_fields_00003_00001_00008],[variant_fields_00003_00001_00009],[variant_fields_00003_00002_00001],[variant_fields_00003_00002_00002],[variant_fields_00003_00002_00003],[variant_fields_00003_00002_00004],[variant_fields_00003_00002_00005],[variant_fields_00003_00002_00006],[variant_fields_00003_00002_00007],[variant_fields_00003_00002_00008],[variant_fields_00003_00002_00009],[variant_fields_00003_00003_00001],[variant_fields_00003_00003_00002],[variant_fields_00003_00003_00003],[variant_fields_00003_00003_00004],[variant_fields_00003_00003_00005],[variant_fields_00003_00003_00006],[variant_fields_00003_00003_00007],[variant_fields_00003_00003_00008],[variant_fields_00003_00003_00009],[variant_fields_00003_00004_00001],[variant_fields_00003_00004_00002],[variant_fields_00003_00004_00003],[variant_fields_00003_00004_00004],[variant_fields_00003_00004_00005],[variant_fields_00003_00004_00006],[variant_fields_00003_00004_00007],[variant_fields_00003_00004_00008],[variant_fields_00003_00004_00009],[variant_fields_00003_00005_00001],[variant_fields_00003_00005_00002],[variant_fields_00003_00005_00003],[variant_fields_00003_00005_00004],[variant_fields_00003_00005_00005],[variant_fields_00003_00005_00006],[variant_fields_00003_00005_00007],[variant_fields_00003_00005_00008],[variant_fields_00003_00005_00009],[variant_fields_00003_00006_00001],[variant_fields_00003_00006_00002],[variant_fields_00003_00006_00003],[variant_fields_00003_00006_00004],[variant_fields_00003_00006_00005],[variant_fields_00003_00006_00006],[variant_fields_00003_00006_00007],[variant_fields_00003_00006_00008],[variant_fields_00003_00006_00009],[variant_fields_00003_00007_00001],[variant_fields_00003_00007_00002],[variant_fields_00003_00007_00003],[variant_fields_00003_00007_00004],[variant_fields_00003_00007_00005],[variant_fields_00003_00007_00006],[variant_fields_00003_00007_00007],[variant_fields_00003_00007_00008],[variant_fields_00003_00007_00009],[variant_fields_00003_00008_00001],[variant_fields_00003_00008_00002],[variant_fields_00003_00008_00003],[variant_fields_00003_00008_00004],[variant_fields_00003_00008_00005],[variant_fields_00003_00008_00006],[variant_fields_00003_00008_00007],[variant_fields_00003_00008_00008],[variant_fields_00003_00008_00009],[variant_fields_00003_00009_00001],[variant_fields_00003_00009_00002],[variant_fields_00003_00009_00003],[variant_fields_00003_00009_00004],[variant_fields_00003_00009_00005],[variant_fields_00003_00009_00006],[variant_fields_00003_00009_00007],[variant_fields_00003_00009_00008],[variant_fields_00003_00009_00009],[variant_fields_00004_00001_00001],[variant_fields_00004_00001_00002],[variant_fields_00004_00001_00003],[variant_fields_00004_00001_00004],[variant_fields_00004_00001_00005],[variant_fields_00004_00001_00006],[variant_fields_00004_00001_00007],[variant_fields_00004_00001_00008],[variant_fields_00004_00001_00009],[variant_fields_00004_00002_00001],[variant_fields_00004_00002_00002],[variant_fields_00004_00002_00003],[variant_fields_00004_00002_00004],[variant_fields_00004_00002_00005],[variant_fields_00004_00002_00006],[variant_fields_00004_00002_00007],[variant_fields_00004_00002_00008],[variant_fields_00004_00002_00009],[variant_fields_00004_00003_00001],[variant_fields_00004_00003_00002],[variant_fields_00004_00003_00003],[variant_fields_00004_00003_00004],[variant_fields_00004_00003_00005],[variant_fields_00004_00003_00006],[variant_fields_00004_00003_00007],[variant_fields_00004_00003_00008],[variant_fields_00004_00003_00009],[variant_fields_00004_00004_00001],[variant_fields_00004_00004_00002],[variant_fields_00004_00004_00003],[variant_fields_00004_00004_00004],[variant_fields_00004_00004_00005],[variant_fields_00004_00004_00006],[variant_fields_00004_00004_00007],[variant_fields_00004_00004_00008],[variant_fields_00004_00004_00009],[variant_fields_00004_00005_00001],[variant_fields_00004_00005_00002],[variant_fields_00004_00005_00003],[variant_fields_00004_00005_00004],[variant_fields_00004_00005_00005],[variant_fields_00004_00005_00006],[variant_fields_00004_00005_00007],[variant_fields_00004_00005_00008],[variant_fields_00004_00005_00009],[variant_fields_00004_00006_00001],[variant_fields_00004_00006_00002],[variant_fields_00004_00006_00003],[variant_fields_00004_00006_00004],[variant_fields_00004_00006_00005],[variant_fields_00004_00006_00006],[variant_fields_00004_00006_00007],[variant_fields_00004_00006_00008],[variant_fields_00004_00006_00009],[variant_fields_00004_00007_00001],[variant_fields_00004_00007_00002],[variant_fields_00004_00007_00003],[variant_fields_00004_00007_00004],[variant_fields_00004_00007_00005],[variant_fields_00004_00007_00006],[variant_fields_00004_00007_00007],[variant_fields_00004_00007_00008],[variant_fields_00004_00007_00009],[variant_fields_00004_00008_00001],[variant_fields_00004_00008_00002],[variant_fields_00004_00008_00003],[variant_fields_00004_00008_00004],[variant_fields_00004_00008_00005],[variant_fields_00004_00008_00006],[variant_fields_00004_00008_00007],[variant_fields_00004_00008_00008],[variant_fields_00004_00008_00009],[variant_fields_00004_00009_00001],[variant_fields_00004_00009_00002],[variant_fields_00004_00009_00003],[variant_fields_00004_00009_00004],[variant_fields_00004_00009_00005],[variant_fields_00004_00009_00006],[variant_fields_00004_00009_00007],[variant_fields_00004_00009_00008],[variant_fields_00004_00009_00009],[alldiff_row_00001],[alldiff_row_00002],[alldiff_row_00003],[alldiff_row_00004],[alldiff_row_00005],[alldiff_row_00006],[alldiff_row_00007],[alldiff_row_00008],[alldiff_row_00009],[alldiff_col_00001],[alldiff_col_00002],[alldiff_col_00003],[alldiff_col_00004],[alldiff_col_00005],[alldiff_col_00006],[alldiff_col_00007],[alldiff_col_00008],[alldiff_col_00009],[alldiff_box_00001],[alldiff_box_00002],[alldiff_box_00003],[alldiff_box_00004],[alldiff_box_00005],[alldiff_box_00006],[alldiff_box_00007],[alldiff_box_00008],[alldiff_box_00009],[clues_left_on_00001_00001],[clues_left_on_00001_00002],[clues_left_on_00001_00003],[clues_left_on_00001_00004],[clues_left_on_00001_00005],[clues_left_on_00001_00006],[clues_left_on_00001_00007],[clues_left_on_00001_00008],[clues_left_on_00001_00009],[clues_left_on_00002_00001],[clues_left_on_00002_00002],[clues_left_on_00002_00003],[clues_left_on_00002_00004],[clues_left_on_00002_00005],[clues_left_on_00002_00006],[clues_left_on_00002_00007],[clues_left_on_00002_00008],[clues_left_on_00002_00009],[clues_left_on_00003_00001],[clues_left_on_00003_00002],[clues_left_on_00003_00003],[clues_left_on_00003_00004],[clues_left_on_00003_00005],[clues_left_on_00003_00006],[clues_left_on_00003_00007],[clues_left_on_00003_00008],[clues_left_on_00003_00009],[clues_left_on_00004_00001],[clues_left_on_00004_00002],[clues_left_on_00004_00003],[clues_left_on_00004_00004],[clues_left_on_00004_00005],[clues_left_on_00004_00006],[clues_left_on_00004_00007],[clues_left_on_00004_00008],[clues_left_on_00004_00009]]
+**CONSTRAINTS**
+reify(ineq(2, variant_fields_00001_00002_00001, 0), aux0)
+product(variant_fields_00001_00002_00002, aux0, aux1)
+reify(ineq(3, variant_fields_00001_00002_00001, 0), aux2)
+product(variant_fields_00001_00002_00003, aux2, aux3)
+reify(ineq(4, variant_fields_00001_00002_00001, 0), aux4)
+product(variant_fields_00001_00002_00004, aux4, aux5)
+reify(ineq(5, variant_fields_00001_00002_00001, 0), aux6)
+product(variant_fields_00001_00002_00005, aux6, aux7)
+reify(ineq(6, variant_fields_00001_00002_00001, 0), aux8)
+product(variant_fields_00001_00002_00006, aux8, aux9)
+reify(ineq(7, variant_fields_00001_00002_00001, 0), aux10)
+product(variant_fields_00001_00002_00007, aux10, aux11)
+reify(ineq(8, variant_fields_00001_00002_00001, 0), aux12)
+product(variant_fields_00001_00002_00008, aux12, aux13)
+reify(ineq(9, variant_fields_00001_00002_00001, 0), aux14)
+product(variant_fields_00001_00002_00009, aux14, aux15)
+reify(ineq(2, variant_fields_00001_00004_00001, 0), aux16)
+product(aux16, variant_fields_00001_00004_00002, aux17)
+reify(ineq(3, variant_fields_00001_00004_00001, 0), aux18)
+product(aux18, variant_fields_00001_00004_00003, aux19)
+reify(ineq(4, variant_fields_00001_00004_00001, 0), aux20)
+product(aux20, variant_fields_00001_00004_00004, aux21)
+reify(ineq(5, variant_fields_00001_00004_00001, 0), aux22)
+product(aux22, variant_fields_00001_00004_00005, aux23)
+reify(ineq(6, variant_fields_00001_00004_00001, 0), aux24)
+product(aux24, variant_fields_00001_00004_00006, aux25)
+reify(ineq(7, variant_fields_00001_00004_00001, 0), aux26)
+product(aux26, variant_fields_00001_00004_00007, aux27)
+reify(ineq(8, variant_fields_00001_00004_00001, 0), aux28)
+product(aux28, variant_fields_00001_00004_00008, aux29)
+reify(ineq(9, variant_fields_00001_00004_00001, 0), aux30)
+product(aux30, variant_fields_00001_00004_00009, aux31)
+reify(ineq(2, variant_fields_00001_00006_00001, 0), aux32)
+product(variant_fields_00001_00006_00002, aux32, aux33)
+reify(ineq(3, variant_fields_00001_00006_00001, 0), aux34)
+product(variant_fields_00001_00006_00003, aux34, aux35)
+reify(ineq(4, variant_fields_00001_00006_00001, 0), aux36)
+product(variant_fields_00001_00006_00004, aux36, aux37)
+reify(ineq(5, variant_fields_00001_00006_00001, 0), aux38)
+product(variant_fields_00001_00006_00005, aux38, aux39)
+reify(ineq(6, variant_fields_00001_00006_00001, 0), aux40)
+product(variant_fields_00001_00006_00006, aux40, aux41)
+reify(ineq(7, variant_fields_00001_00006_00001, 0), aux42)
+product(variant_fields_00001_00006_00007, aux42, aux43)
+reify(ineq(8, variant_fields_00001_00006_00001, 0), aux44)
+product(variant_fields_00001_00006_00008, aux44, aux45)
+reify(ineq(9, variant_fields_00001_00006_00001, 0), aux46)
+product(variant_fields_00001_00006_00009, aux46, aux47)
+reify(ineq(2, variant_fields_00001_00008_00001, 0), aux48)
+product(variant_fields_00001_00008_00002, aux48, aux49)
+reify(ineq(3, variant_fields_00001_00008_00001, 0), aux50)
+product(variant_fields_00001_00008_00003, aux50, aux51)
+reify(ineq(4, variant_fields_00001_00008_00001, 0), aux52)
+product(variant_fields_00001_00008_00004, aux52, aux53)
+reify(ineq(5, variant_fields_00001_00008_00001, 0), aux54)
+product(variant_fields_00001_00008_00005, aux54, aux55)
+reify(ineq(6, variant_fields_00001_00008_00001, 0), aux56)
+product(variant_fields_00001_00008_00006, aux56, aux57)
+reify(ineq(7, variant_fields_00001_00008_00001, 0), aux58)
+product(variant_fields_00001_00008_00007, aux58, aux59)
+reify(ineq(8, variant_fields_00001_00008_00001, 0), aux60)
+product(variant_fields_00001_00008_00008, aux60, aux61)
+reify(ineq(9, variant_fields_00001_00008_00001, 0), aux62)
+product(variant_fields_00001_00008_00009, aux62, aux63)
+reify(ineq(2, variant_fields_00002_00002_00001, 0), aux64)
+product(variant_fields_00002_00002_00002, aux64, aux65)
+reify(ineq(3, variant_fields_00002_00002_00001, 0), aux66)
+product(variant_fields_00002_00002_00003, aux66, aux67)
+reify(ineq(4, variant_fields_00002_00002_00001, 0), aux68)
+product(variant_fields_00002_00002_00004, aux68, aux69)
+reify(ineq(5, variant_fields_00002_00002_00001, 0), aux70)
+product(variant_fields_00002_00002_00005, aux70, aux71)
+reify(ineq(6, variant_fields_00002_00002_00001, 0), aux72)
+product(variant_fields_00002_00002_00006, aux72, aux73)
+reify(ineq(7, variant_fields_00002_00002_00001, 0), aux74)
+product(variant_fields_00002_00002_00007, aux74, aux75)
+reify(ineq(8, variant_fields_00002_00002_00001, 0), aux76)
+product(variant_fields_00002_00002_00008, aux76, aux77)
+reify(ineq(9, variant_fields_00002_00002_00001, 0), aux78)
+product(variant_fields_00002_00002_00009, aux78, aux79)
+reify(ineq(2, variant_fields_00002_00004_00001, 0), aux80)
+product(variant_fields_00002_00004_00002, aux80, aux81)
+reify(ineq(3, variant_fields_00002_00004_00001, 0), aux82)
+product(variant_fields_00002_00004_00003, aux82, aux83)
+reify(ineq(4, variant_fields_00002_00004_00001, 0), aux84)
+product(variant_fields_00002_00004_00004, aux84, aux85)
+reify(ineq(5, variant_fields_00002_00004_00001, 0), aux86)
+product(variant_fields_00002_00004_00005, aux86, aux87)
+reify(ineq(6, variant_fields_00002_00004_00001, 0), aux88)
+product(variant_fields_00002_00004_00006, aux88, aux89)
+reify(ineq(7, variant_fields_00002_00004_00001, 0), aux90)
+product(variant_fields_00002_00004_00007, aux90, aux91)
+reify(ineq(8, variant_fields_00002_00004_00001, 0), aux92)
+product(variant_fields_00002_00004_00008, aux92, aux93)
+reify(ineq(9, variant_fields_00002_00004_00001, 0), aux94)
+product(variant_fields_00002_00004_00009, aux94, aux95)
+reify(ineq(2, variant_fields_00002_00006_00001, 0), aux96)
+product(variant_fields_00002_00006_00002, aux96, aux97)
+reify(ineq(3, variant_fields_00002_00006_00001, 0), aux98)
+product(variant_fields_00002_00006_00003, aux98, aux99)
+reify(ineq(4, variant_fields_00002_00006_00001, 0), aux100)
+product(variant_fields_00002_00006_00004, aux100, aux101)
+reify(ineq(5, variant_fields_00002_00006_00001, 0), aux102)
+product(variant_fields_00002_00006_00005, aux102, aux103)
+reify(ineq(6, variant_fields_00002_00006_00001, 0), aux104)
+product(variant_fields_00002_00006_00006, aux104, aux105)
+reify(ineq(7, variant_fields_00002_00006_00001, 0), aux106)
+product(variant_fields_00002_00006_00007, aux106, aux107)
+reify(ineq(8, variant_fields_00002_00006_00001, 0), aux108)
+product(variant_fields_00002_00006_00008, aux108, aux109)
+reify(ineq(9, variant_fields_00002_00006_00001, 0), aux110)
+product(variant_fields_00002_00006_00009, aux110, aux111)
+reify(ineq(2, variant_fields_00002_00007_00001, 0), aux112)
+product(variant_fields_00002_00007_00002, aux112, aux113)
+reify(ineq(3, variant_fields_00002_00007_00001, 0), aux114)
+product(variant_fields_00002_00007_00003, aux114, aux115)
+reify(ineq(4, variant_fields_00002_00007_00001, 0), aux116)
+product(variant_fields_00002_00007_00004, aux116, aux117)
+reify(ineq(5, variant_fields_00002_00007_00001, 0), aux118)
+product(variant_fields_00002_00007_00005, aux118, aux119)
+reify(ineq(6, variant_fields_00002_00007_00001, 0), aux120)
+product(variant_fields_00002_00007_00006, aux120, aux121)
+reify(ineq(7, variant_fields_00002_00007_00001, 0), aux122)
+product(variant_fields_00002_00007_00007, aux122, aux123)
+reify(ineq(8, variant_fields_00002_00007_00001, 0), aux124)
+product(variant_fields_00002_00007_00008, aux124, aux125)
+reify(ineq(9, variant_fields_00002_00007_00001, 0), aux126)
+product(variant_fields_00002_00007_00009, aux126, aux127)
+reify(ineq(2, variant_fields_00003_00002_00001, 0), aux128)
+product(variant_fields_00003_00002_00002, aux128, aux129)
+reify(ineq(3, variant_fields_00003_00002_00001, 0), aux130)
+product(variant_fields_00003_00002_00003, aux130, aux131)
+reify(ineq(4, variant_fields_00003_00002_00001, 0), aux132)
+product(variant_fields_00003_00002_00004, aux132, aux133)
+reify(ineq(5, variant_fields_00003_00002_00001, 0), aux134)
+product(variant_fields_00003_00002_00005, aux134, aux135)
+reify(ineq(6, variant_fields_00003_00002_00001, 0), aux136)
+product(variant_fields_00003_00002_00006, aux136, aux137)
+reify(ineq(7, variant_fields_00003_00002_00001, 0), aux138)
+product(variant_fields_00003_00002_00007, aux138, aux139)
+reify(ineq(8, variant_fields_00003_00002_00001, 0), aux140)
+product(variant_fields_00003_00002_00008, aux140, aux141)
+reify(ineq(9, variant_fields_00003_00002_00001, 0), aux142)
+product(variant_fields_00003_00002_00009, aux142, aux143)
+reify(ineq(2, variant_fields_00003_00004_00001, 0), aux144)
+product(variant_fields_00003_00004_00002, aux144, aux145)
+reify(ineq(3, variant_fields_00003_00004_00001, 0), aux146)
+product(variant_fields_00003_00004_00003, aux146, aux147)
+reify(ineq(4, variant_fields_00003_00004_00001, 0), aux148)
+product(variant_fields_00003_00004_00004, aux148, aux149)
+reify(ineq(5, variant_fields_00003_00004_00001, 0), aux150)
+product(variant_fields_00003_00004_00005, aux150, aux151)
+reify(ineq(6, variant_fields_00003_00004_00001, 0), aux152)
+product(variant_fields_00003_00004_00006, aux152, aux153)
+reify(ineq(7, variant_fields_00003_00004_00001, 0), aux154)
+product(variant_fields_00003_00004_00007, aux154, aux155)
+reify(ineq(8, variant_fields_00003_00004_00001, 0), aux156)
+product(variant_fields_00003_00004_00008, aux156, aux157)
+reify(ineq(9, variant_fields_00003_00004_00001, 0), aux158)
+product(variant_fields_00003_00004_00009, aux158, aux159)
+reify(ineq(2, variant_fields_00003_00006_00001, 0), aux160)
+product(variant_fields_00003_00006_00002, aux160, aux161)
+reify(ineq(3, variant_fields_00003_00006_00001, 0), aux162)
+product(variant_fields_00003_00006_00003, aux162, aux163)
+reify(ineq(4, variant_fields_00003_00006_00001, 0), aux164)
+product(variant_fields_00003_00006_00004, aux164, aux165)
+reify(ineq(5, variant_fields_00003_00006_00001, 0), aux166)
+product(variant_fields_00003_00006_00005, aux166, aux167)
+reify(ineq(6, variant_fields_00003_00006_00001, 0), aux168)
+product(variant_fields_00003_00006_00006, aux168, aux169)
+reify(ineq(7, variant_fields_00003_00006_00001, 0), aux170)
+product(variant_fields_00003_00006_00007, aux170, aux171)
+reify(ineq(8, variant_fields_00003_00006_00001, 0), aux172)
+product(variant_fields_00003_00006_00008, aux172, aux173)
+reify(ineq(9, variant_fields_00003_00006_00001, 0), aux174)
+product(variant_fields_00003_00006_00009, aux174, aux175)
+reify(ineq(2, variant_fields_00003_00008_00001, 0), aux176)
+product(variant_fields_00003_00008_00002, aux176, aux177)
+reify(ineq(3, variant_fields_00003_00008_00001, 0), aux178)
+product(variant_fields_00003_00008_00003, aux178, aux179)
+reify(ineq(4, variant_fields_00003_00008_00001, 0), aux180)
+product(variant_fields_00003_00008_00004, aux180, aux181)
+reify(ineq(5, variant_fields_00003_00008_00001, 0), aux182)
+product(variant_fields_00003_00008_00005, aux182, aux183)
+reify(ineq(6, variant_fields_00003_00008_00001, 0), aux184)
+product(variant_fields_00003_00008_00006, aux184, aux185)
+reify(ineq(7, variant_fields_00003_00008_00001, 0), aux186)
+product(variant_fields_00003_00008_00007, aux186, aux187)
+reify(ineq(8, variant_fields_00003_00008_00001, 0), aux188)
+product(variant_fields_00003_00008_00008, aux188, aux189)
+reify(ineq(9, variant_fields_00003_00008_00001, 0), aux190)
+product(variant_fields_00003_00008_00009, aux190, aux191)
+reify(ineq(2, variant_fields_00004_00002_00001, 0), aux192)
+product(variant_fields_00004_00002_00002, aux192, aux193)
+reify(ineq(3, variant_fields_00004_00002_00001, 0), aux194)
+product(variant_fields_00004_00002_00003, aux194, aux195)
+reify(ineq(4, variant_fields_00004_00002_00001, 0), aux196)
+product(variant_fields_00004_00002_00004, aux196, aux197)
+reify(ineq(5, variant_fields_00004_00002_00001, 0), aux198)
+product(variant_fields_00004_00002_00005, aux198, aux199)
+reify(ineq(6, variant_fields_00004_00002_00001, 0), aux200)
+product(variant_fields_00004_00002_00006, aux200, aux201)
+reify(ineq(7, variant_fields_00004_00002_00001, 0), aux202)
+product(variant_fields_00004_00002_00007, aux202, aux203)
+reify(ineq(8, variant_fields_00004_00002_00001, 0), aux204)
+product(variant_fields_00004_00002_00008, aux204, aux205)
+reify(ineq(9, variant_fields_00004_00002_00001, 0), aux206)
+product(variant_fields_00004_00002_00009, aux206, aux207)
+reify(ineq(2, variant_fields_00004_00004_00001, 0), aux208)
+product(variant_fields_00004_00004_00002, aux208, aux209)
+reify(ineq(3, variant_fields_00004_00004_00001, 0), aux210)
+product(variant_fields_00004_00004_00003, aux210, aux211)
+reify(ineq(4, variant_fields_00004_00004_00001, 0), aux212)
+product(variant_fields_00004_00004_00004, aux212, aux213)
+reify(ineq(5, variant_fields_00004_00004_00001, 0), aux214)
+product(variant_fields_00004_00004_00005, aux214, aux215)
+reify(ineq(6, variant_fields_00004_00004_00001, 0), aux216)
+product(variant_fields_00004_00004_00006, aux216, aux217)
+reify(ineq(7, variant_fields_00004_00004_00001, 0), aux218)
+product(variant_fields_00004_00004_00007, aux218, aux219)
+reify(ineq(8, variant_fields_00004_00004_00001, 0), aux220)
+product(variant_fields_00004_00004_00008, aux220, aux221)
+reify(ineq(9, variant_fields_00004_00004_00001, 0), aux222)
+product(variant_fields_00004_00004_00009, aux222, aux223)
+reify(ineq(2, variant_fields_00004_00007_00001, 0), aux224)
+product(variant_fields_00004_00007_00002, aux224, aux225)
+reify(ineq(3, variant_fields_00004_00007_00001, 0), aux226)
+product(variant_fields_00004_00007_00003, aux226, aux227)
+reify(ineq(4, variant_fields_00004_00007_00001, 0), aux228)
+product(variant_fields_00004_00007_00004, aux228, aux229)
+reify(ineq(5, variant_fields_00004_00007_00001, 0), aux230)
+product(variant_fields_00004_00007_00005, aux230, aux231)
+reify(ineq(6, variant_fields_00004_00007_00001, 0), aux232)
+product(variant_fields_00004_00007_00006, aux232, aux233)
+reify(ineq(7, variant_fields_00004_00007_00001, 0), aux234)
+product(variant_fields_00004_00007_00007, aux234, aux235)
+reify(ineq(8, variant_fields_00004_00007_00001, 0), aux236)
+product(variant_fields_00004_00007_00008, aux236, aux237)
+reify(ineq(9, variant_fields_00004_00007_00001, 0), aux238)
+product(variant_fields_00004_00007_00009, aux238, aux239)
+gaceq(field_00009_00001,variant_fields_00004_00001_00001)
+gaceq(variant_fields_00003_00001_00001,field_00001_00009)
+gaceq(variant_fields_00001_00001_00001,field_00001_00001)
+gaceq(variant_fields_00002_00001_00001,field_00001_00001)
+gaceq(field_00008_00001,variant_fields_00004_00001_00002)
+gaceq(variant_fields_00003_00001_00002,field_00001_00008)
+gaceq(variant_fields_00001_00001_00002,field_00001_00002)
+gaceq(variant_fields_00002_00001_00002,field_00002_00001)
+gaceq(field_00007_00001,variant_fields_00004_00001_00003)
+gaceq(variant_fields_00003_00001_00003,field_00001_00007)
+gaceq(variant_fields_00001_00001_00003,field_00001_00003)
+gaceq(variant_fields_00002_00001_00003,field_00003_00001)
+gaceq(field_00006_00001,variant_fields_00004_00001_00004)
+gaceq(variant_fields_00003_00001_00004,field_00001_00006)
+gaceq(variant_fields_00001_00001_00004,field_00001_00004)
+gaceq(variant_fields_00002_00001_00004,field_00004_00001)
+gaceq(field_00005_00001,variant_fields_00004_00001_00005)
+gaceq(variant_fields_00003_00001_00005,field_00001_00005)
+gaceq(variant_fields_00001_00001_00005,field_00001_00005)
+gaceq(variant_fields_00002_00001_00005,field_00005_00001)
+gaceq(field_00004_00001,variant_fields_00004_00001_00006)
+gaceq(variant_fields_00003_00001_00006,field_00001_00004)
+gaceq(variant_fields_00001_00001_00006,field_00001_00006)
+gaceq(variant_fields_00002_00001_00006,field_00006_00001)
+gaceq(field_00003_00001,variant_fields_00004_00001_00007)
+gaceq(variant_fields_00003_00001_00007,field_00001_00003)
+gaceq(variant_fields_00001_00001_00007,field_00001_00007)
+gaceq(variant_fields_00002_00001_00007,field_00007_00001)
+gaceq(field_00002_00001,variant_fields_00004_00001_00008)
+gaceq(variant_fields_00003_00001_00008,field_00001_00002)
+gaceq(variant_fields_00001_00001_00008,field_00001_00008)
+gaceq(variant_fields_00002_00001_00008,field_00008_00001)
+gaceq(field_00001_00001,variant_fields_00004_00001_00009)
+gaceq(variant_fields_00003_00001_00009,field_00001_00001)
+gaceq(variant_fields_00001_00001_00009,field_00001_00009)
+gaceq(variant_fields_00002_00001_00009,field_00009_00001)
+gaceq(variant_fields_00004_00002_00001,field_00009_00002)
+gaceq(variant_fields_00003_00002_00001,field_00002_00009)
+gaceq(variant_fields_00001_00002_00001,field_00002_00001)
+gaceq(variant_fields_00002_00002_00001,field_00001_00002)
+gaceq(field_00008_00002,variant_fields_00004_00002_00002)
+gaceq(variant_fields_00003_00002_00002,field_00002_00008)
+gaceq(variant_fields_00001_00002_00002,field_00002_00002)
+gaceq(variant_fields_00002_00002_00002,field_00002_00002)
+gaceq(variant_fields_00004_00002_00003,field_00007_00002)
+gaceq(variant_fields_00003_00002_00003,field_00002_00007)
+gaceq(variant_fields_00001_00002_00003,field_00002_00003)
+gaceq(field_00003_00002,variant_fields_00002_00002_00003)
+gaceq(variant_fields_00004_00002_00004,field_00006_00002)
+gaceq(variant_fields_00003_00002_00004,field_00002_00006)
+gaceq(variant_fields_00001_00002_00004,field_00002_00004)
+gaceq(variant_fields_00002_00002_00004,field_00004_00002)
+gaceq(variant_fields_00004_00002_00005,field_00005_00002)
+gaceq(variant_fields_00003_00002_00005,field_00002_00005)
+gaceq(variant_fields_00001_00002_00005,field_00002_00005)
+gaceq(variant_fields_00002_00002_00005,field_00005_00002)
+gaceq(variant_fields_00004_00002_00006,field_00004_00002)
+gaceq(variant_fields_00003_00002_00006,field_00002_00004)
+gaceq(variant_fields_00001_00002_00006,field_00002_00006)
+gaceq(variant_fields_00002_00002_00006,field_00006_00002)
+gaceq(field_00003_00002,variant_fields_00004_00002_00007)
+gaceq(variant_fields_00003_00002_00007,field_00002_00003)
+gaceq(variant_fields_00001_00002_00007,field_00002_00007)
+gaceq(variant_fields_00002_00002_00007,field_00007_00002)
+gaceq(variant_fields_00004_00002_00008,field_00002_00002)
+gaceq(variant_fields_00003_00002_00008,field_00002_00002)
+gaceq(variant_fields_00001_00002_00008,field_00002_00008)
+gaceq(field_00008_00002,variant_fields_00002_00002_00008)
+gaceq(variant_fields_00004_00002_00009,field_00001_00002)
+gaceq(variant_fields_00003_00002_00009,field_00002_00001)
+gaceq(variant_fields_00001_00002_00009,field_00002_00009)
+gaceq(variant_fields_00002_00002_00009,field_00009_00002)
+gaceq(field_00009_00003,variant_fields_00004_00003_00001)
+gaceq(field_00003_00009,variant_fields_00003_00003_00001)
+gaceq(field_00003_00001,variant_fields_00001_00003_00001)
+gaceq(variant_fields_00002_00003_00001,field_00001_00003)
+gaceq(field_00008_00003,variant_fields_00004_00003_00002)
+gaceq(field_00003_00008,variant_fields_00003_00003_00002)
+gaceq(field_00003_00002,variant_fields_00001_00003_00002)
+gaceq(variant_fields_00002_00003_00002,field_00002_00003)
+gaceq(variant_fields_00004_00003_00003,field_00007_00003)
+gaceq(field_00003_00007,variant_fields_00003_00003_00003)
+gaceq(field_00003_00003,variant_fields_00001_00003_00003)
+gaceq(field_00003_00003,variant_fields_00002_00003_00003)
+gaceq(variant_fields_00004_00003_00004,field_00006_00003)
+gaceq(field_00003_00006,variant_fields_00003_00003_00004)
+gaceq(field_00003_00004,variant_fields_00001_00003_00004)
+gaceq(field_00004_00003,variant_fields_00002_00003_00004)
+gaceq(variant_fields_00004_00003_00005,field_00005_00003)
+gaceq(field_00003_00005,variant_fields_00003_00003_00005)
+gaceq(field_00003_00005,variant_fields_00001_00003_00005)
+gaceq(variant_fields_00002_00003_00005,field_00005_00003)
+gaceq(field_00004_00003,variant_fields_00004_00003_00006)
+gaceq(field_00003_00004,variant_fields_00003_00003_00006)
+gaceq(field_00003_00006,variant_fields_00001_00003_00006)
+gaceq(variant_fields_00002_00003_00006,field_00006_00003)
+gaceq(field_00003_00003,variant_fields_00004_00003_00007)
+gaceq(field_00003_00003,variant_fields_00003_00003_00007)
+gaceq(field_00003_00007,variant_fields_00001_00003_00007)
+gaceq(variant_fields_00002_00003_00007,field_00007_00003)
+gaceq(variant_fields_00004_00003_00008,field_00002_00003)
+gaceq(field_00003_00002,variant_fields_00003_00003_00008)
+gaceq(field_00003_00008,variant_fields_00001_00003_00008)
+gaceq(field_00008_00003,variant_fields_00002_00003_00008)
+gaceq(variant_fields_00004_00003_00009,field_00001_00003)
+gaceq(field_00003_00001,variant_fields_00003_00003_00009)
+gaceq(field_00003_00009,variant_fields_00001_00003_00009)
+gaceq(field_00009_00003,variant_fields_00002_00003_00009)
+gaceq(field_00009_00004,variant_fields_00004_00004_00001)
+gaceq(field_00004_00009,variant_fields_00003_00004_00001)
+gaceq(field_00004_00001,variant_fields_00001_00004_00001)
+gaceq(field_00001_00004,variant_fields_00002_00004_00001)
+gaceq(field_00008_00004,variant_fields_00004_00004_00002)
+gaceq(field_00004_00008,variant_fields_00003_00004_00002)
+gaceq(field_00004_00002,variant_fields_00001_00004_00002)
+gaceq(variant_fields_00002_00004_00002,field_00002_00004)
+gaceq(variant_fields_00004_00004_00003,field_00007_00004)
+gaceq(field_00004_00007,variant_fields_00003_00004_00003)
+gaceq(field_00004_00003,variant_fields_00001_00004_00003)
+gaceq(field_00003_00004,variant_fields_00002_00004_00003)
+gaceq(variant_fields_00004_00004_00004,field_00006_00004)
+gaceq(field_00004_00006,variant_fields_00003_00004_00004)
+gaceq(field_00004_00004,variant_fields_00001_00004_00004)
+gaceq(field_00004_00004,variant_fields_00002_00004_00004)
+gaceq(field_00005_00004,variant_fields_00004_00004_00005)
+gaceq(field_00004_00005,variant_fields_00003_00004_00005)
+gaceq(field_00004_00005,variant_fields_00001_00004_00005)
+gaceq(field_00005_00004,variant_fields_00002_00004_00005)
+gaceq(field_00004_00004,variant_fields_00004_00004_00006)
+gaceq(field_00004_00004,variant_fields_00003_00004_00006)
+gaceq(field_00004_00006,variant_fields_00001_00004_00006)
+gaceq(variant_fields_00002_00004_00006,field_00006_00004)
+gaceq(field_00003_00004,variant_fields_00004_00004_00007)
+gaceq(field_00004_00003,variant_fields_00003_00004_00007)
+gaceq(field_00004_00007,variant_fields_00001_00004_00007)
+gaceq(variant_fields_00002_00004_00007,field_00007_00004)
+gaceq(variant_fields_00004_00004_00008,field_00002_00004)
+gaceq(field_00004_00002,variant_fields_00003_00004_00008)
+gaceq(field_00004_00008,variant_fields_00001_00004_00008)
+gaceq(field_00008_00004,variant_fields_00002_00004_00008)
+gaceq(variant_fields_00004_00004_00009,field_00001_00004)
+gaceq(field_00004_00001,variant_fields_00003_00004_00009)
+gaceq(field_00004_00009,variant_fields_00001_00004_00009)
+gaceq(field_00009_00004,variant_fields_00002_00004_00009)
+gaceq(field_00009_00005,variant_fields_00004_00005_00001)
+gaceq(field_00005_00009,variant_fields_00003_00005_00001)
+gaceq(field_00005_00001,variant_fields_00001_00005_00001)
+gaceq(field_00001_00005,variant_fields_00002_00005_00001)
+gaceq(field_00008_00005,variant_fields_00004_00005_00002)
+gaceq(field_00005_00008,variant_fields_00003_00005_00002)
+gaceq(field_00005_00002,variant_fields_00001_00005_00002)
+gaceq(field_00002_00005,variant_fields_00002_00005_00002)
+gaceq(variant_fields_00004_00005_00003,field_00007_00005)
+gaceq(field_00005_00007,variant_fields_00003_00005_00003)
+gaceq(field_00005_00003,variant_fields_00001_00005_00003)
+gaceq(field_00003_00005,variant_fields_00002_00005_00003)
+gaceq(field_00006_00005,variant_fields_00004_00005_00004)
+gaceq(field_00005_00006,variant_fields_00003_00005_00004)
+gaceq(field_00005_00004,variant_fields_00001_00005_00004)
+gaceq(field_00004_00005,variant_fields_00002_00005_00004)
+gaceq(field_00005_00005,variant_fields_00004_00005_00005)
+gaceq(field_00005_00005,variant_fields_00003_00005_00005)
+gaceq(field_00005_00005,variant_fields_00001_00005_00005)
+gaceq(field_00005_00005,variant_fields_00002_00005_00005)
+gaceq(field_00004_00005,variant_fields_00004_00005_00006)
+gaceq(field_00005_00004,variant_fields_00003_00005_00006)
+gaceq(field_00005_00006,variant_fields_00001_00005_00006)
+gaceq(field_00006_00005,variant_fields_00002_00005_00006)
+gaceq(field_00003_00005,variant_fields_00004_00005_00007)
+gaceq(field_00005_00003,variant_fields_00003_00005_00007)
+gaceq(field_00005_00007,variant_fields_00001_00005_00007)
+gaceq(variant_fields_00002_00005_00007,field_00007_00005)
+gaceq(variant_fields_00004_00005_00008,field_00002_00005)
+gaceq(field_00005_00002,variant_fields_00003_00005_00008)
+gaceq(field_00005_00008,variant_fields_00001_00005_00008)
+gaceq(field_00008_00005,variant_fields_00002_00005_00008)
+gaceq(field_00001_00005,variant_fields_00004_00005_00009)
+gaceq(field_00005_00001,variant_fields_00003_00005_00009)
+gaceq(field_00005_00009,variant_fields_00001_00005_00009)
+gaceq(field_00009_00005,variant_fields_00002_00005_00009)
+gaceq(field_00009_00006,variant_fields_00004_00006_00001)
+gaceq(variant_fields_00003_00006_00001,field_00006_00009)
+gaceq(variant_fields_00001_00006_00001,field_00006_00001)
+gaceq(variant_fields_00002_00006_00001,field_00001_00006)
+gaceq(field_00008_00006,variant_fields_00004_00006_00002)
+gaceq(variant_fields_00003_00006_00002,field_00006_00008)
+gaceq(variant_fields_00001_00006_00002,field_00006_00002)
+gaceq(variant_fields_00002_00006_00002,field_00002_00006)
+gaceq(field_00007_00006,variant_fields_00004_00006_00003)
+gaceq(variant_fields_00003_00006_00003,field_00006_00007)
+gaceq(variant_fields_00001_00006_00003,field_00006_00003)
+gaceq(field_00003_00006,variant_fields_00002_00006_00003)
+gaceq(field_00006_00006,variant_fields_00004_00006_00004)
+gaceq(variant_fields_00003_00006_00004,field_00006_00006)
+gaceq(variant_fields_00001_00006_00004,field_00006_00004)
+gaceq(variant_fields_00002_00006_00004,field_00004_00006)
+gaceq(field_00005_00006,variant_fields_00004_00006_00005)
+gaceq(variant_fields_00003_00006_00005,field_00006_00005)
+gaceq(variant_fields_00001_00006_00005,field_00006_00005)
+gaceq(variant_fields_00002_00006_00005,field_00005_00006)
+gaceq(field_00004_00006,variant_fields_00004_00006_00006)
+gaceq(variant_fields_00003_00006_00006,field_00006_00004)
+gaceq(variant_fields_00001_00006_00006,field_00006_00006)
+gaceq(variant_fields_00002_00006_00006,field_00006_00006)
+gaceq(field_00003_00006,variant_fields_00004_00006_00007)
+gaceq(variant_fields_00003_00006_00007,field_00006_00003)
+gaceq(variant_fields_00001_00006_00007,field_00006_00007)
+gaceq(variant_fields_00002_00006_00007,field_00007_00006)
+gaceq(field_00002_00006,variant_fields_00004_00006_00008)
+gaceq(variant_fields_00003_00006_00008,field_00006_00002)
+gaceq(variant_fields_00001_00006_00008,field_00006_00008)
+gaceq(variant_fields_00002_00006_00008,field_00008_00006)
+gaceq(field_00001_00006,variant_fields_00004_00006_00009)
+gaceq(variant_fields_00003_00006_00009,field_00006_00001)
+gaceq(variant_fields_00001_00006_00009,field_00006_00009)
+gaceq(variant_fields_00002_00006_00009,field_00009_00006)
+gaceq(variant_fields_00004_00007_00001,field_00009_00007)
+gaceq(variant_fields_00003_00007_00001,field_00007_00009)
+gaceq(variant_fields_00001_00007_00001,field_00007_00001)
+gaceq(variant_fields_00002_00007_00001,field_00001_00007)
+gaceq(field_00008_00007,variant_fields_00004_00007_00002)
+gaceq(variant_fields_00003_00007_00002,field_00007_00008)
+gaceq(variant_fields_00001_00007_00002,field_00007_00002)
+gaceq(variant_fields_00002_00007_00002,field_00002_00007)
+gaceq(variant_fields_00004_00007_00003,field_00007_00007)
+gaceq(variant_fields_00003_00007_00003,field_00007_00007)
+gaceq(variant_fields_00001_00007_00003,field_00007_00003)
+gaceq(field_00003_00007,variant_fields_00002_00007_00003)
+gaceq(variant_fields_00004_00007_00004,field_00006_00007)
+gaceq(variant_fields_00003_00007_00004,field_00007_00006)
+gaceq(variant_fields_00001_00007_00004,field_00007_00004)
+gaceq(field_00004_00007,variant_fields_00002_00007_00004)
+gaceq(variant_fields_00004_00007_00005,field_00005_00007)
+gaceq(variant_fields_00003_00007_00005,field_00007_00005)
+gaceq(variant_fields_00001_00007_00005,field_00007_00005)
+gaceq(variant_fields_00002_00007_00005,field_00005_00007)
+gaceq(variant_fields_00004_00007_00006,field_00004_00007)
+gaceq(variant_fields_00003_00007_00006,field_00007_00004)
+gaceq(variant_fields_00001_00007_00006,field_00007_00006)
+gaceq(variant_fields_00002_00007_00006,field_00006_00007)
+gaceq(field_00003_00007,variant_fields_00004_00007_00007)
+gaceq(variant_fields_00003_00007_00007,field_00007_00003)
+gaceq(variant_fields_00001_00007_00007,field_00007_00007)
+gaceq(variant_fields_00002_00007_00007,field_00007_00007)
+gaceq(variant_fields_00004_00007_00008,field_00002_00007)
+gaceq(variant_fields_00003_00007_00008,field_00007_00002)
+gaceq(variant_fields_00001_00007_00008,field_00007_00008)
+gaceq(field_00008_00007,variant_fields_00002_00007_00008)
+gaceq(variant_fields_00004_00007_00009,field_00001_00007)
+gaceq(variant_fields_00003_00007_00009,field_00007_00001)
+gaceq(variant_fields_00001_00007_00009,field_00007_00009)
+gaceq(variant_fields_00002_00007_00009,field_00009_00007)
+gaceq(field_00009_00008,variant_fields_00004_00008_00001)
+gaceq(field_00008_00009,variant_fields_00003_00008_00001)
+gaceq(field_00008_00001,variant_fields_00001_00008_00001)
+gaceq(variant_fields_00002_00008_00001,field_00001_00008)
+gaceq(field_00008_00008,variant_fields_00004_00008_00002)
+gaceq(field_00008_00008,variant_fields_00003_00008_00002)
+gaceq(field_00008_00002,variant_fields_00001_00008_00002)
+gaceq(variant_fields_00002_00008_00002,field_00002_00008)
+gaceq(variant_fields_00004_00008_00003,field_00007_00008)
+gaceq(field_00008_00007,variant_fields_00003_00008_00003)
+gaceq(field_00008_00003,variant_fields_00001_00008_00003)
+gaceq(field_00003_00008,variant_fields_00002_00008_00003)
+gaceq(variant_fields_00004_00008_00004,field_00006_00008)
+gaceq(field_00008_00006,variant_fields_00003_00008_00004)
+gaceq(field_00008_00004,variant_fields_00001_00008_00004)
+gaceq(field_00004_00008,variant_fields_00002_00008_00004)
+gaceq(variant_fields_00004_00008_00005,field_00005_00008)
+gaceq(field_00008_00005,variant_fields_00003_00008_00005)
+gaceq(field_00008_00005,variant_fields_00001_00008_00005)
+gaceq(field_00005_00008,variant_fields_00002_00008_00005)
+gaceq(field_00004_00008,variant_fields_00004_00008_00006)
+gaceq(field_00008_00004,variant_fields_00003_00008_00006)
+gaceq(field_00008_00006,variant_fields_00001_00008_00006)
+gaceq(variant_fields_00002_00008_00006,field_00006_00008)
+gaceq(field_00003_00008,variant_fields_00004_00008_00007)
+gaceq(field_00008_00003,variant_fields_00003_00008_00007)
+gaceq(field_00008_00007,variant_fields_00001_00008_00007)
+gaceq(variant_fields_00002_00008_00007,field_00007_00008)
+gaceq(variant_fields_00004_00008_00008,field_00002_00008)
+gaceq(field_00008_00002,variant_fields_00003_00008_00008)
+gaceq(field_00008_00008,variant_fields_00001_00008_00008)
+gaceq(field_00008_00008,variant_fields_00002_00008_00008)
+gaceq(variant_fields_00004_00008_00009,field_00001_00008)
+gaceq(field_00008_00001,variant_fields_00003_00008_00009)
+gaceq(field_00008_00009,variant_fields_00001_00008_00009)
+gaceq(field_00009_00008,variant_fields_00002_00008_00009)
+gaceq(field_00009_00009,variant_fields_00004_00009_00001)
+gaceq(field_00009_00009,variant_fields_00003_00009_00001)
+gaceq(field_00009_00001,variant_fields_00001_00009_00001)
+gaceq(field_00001_00009,variant_fields_00002_00009_00001)
+gaceq(field_00008_00009,variant_fields_00004_00009_00002)
+gaceq(field_00009_00008,variant_fields_00003_00009_00002)
+gaceq(field_00009_00002,variant_fields_00001_00009_00002)
+gaceq(variant_fields_00002_00009_00002,field_00002_00009)
+gaceq(variant_fields_00004_00009_00003,field_00007_00009)
+gaceq(field_00009_00007,variant_fields_00003_00009_00003)
+gaceq(field_00009_00003,variant_fields_00001_00009_00003)
+gaceq(field_00003_00009,variant_fields_00002_00009_00003)
+gaceq(variant_fields_00004_00009_00004,field_00006_00009)
+gaceq(field_00009_00006,variant_fields_00003_00009_00004)
+gaceq(field_00009_00004,variant_fields_00001_00009_00004)
+gaceq(field_00004_00009,variant_fields_00002_00009_00004)
+gaceq(field_00005_00009,variant_fields_00004_00009_00005)
+gaceq(field_00009_00005,variant_fields_00003_00009_00005)
+gaceq(field_00009_00005,variant_fields_00001_00009_00005)
+gaceq(field_00005_00009,variant_fields_00002_00009_00005)
+gaceq(field_00004_00009,variant_fields_00004_00009_00006)
+gaceq(field_00009_00004,variant_fields_00003_00009_00006)
+gaceq(field_00009_00006,variant_fields_00001_00009_00006)
+gaceq(field_00006_00009,variant_fields_00002_00009_00006)
+gaceq(field_00003_00009,variant_fields_00004_00009_00007)
+gaceq(field_00009_00003,variant_fields_00003_00009_00007)
+gaceq(field_00009_00007,variant_fields_00001_00009_00007)
+gaceq(variant_fields_00002_00009_00007,field_00007_00009)
+gaceq(variant_fields_00004_00009_00008,field_00002_00009)
+gaceq(field_00009_00002,variant_fields_00003_00009_00008)
+gaceq(field_00009_00008,variant_fields_00001_00009_00008)
+gaceq(field_00008_00009,variant_fields_00002_00009_00008)
+gaceq(variant_fields_00004_00009_00009,field_00001_00009)
+gaceq(field_00009_00001,variant_fields_00003_00009_00009)
+gaceq(field_00009_00009,variant_fields_00001_00009_00009)
+gaceq(field_00009_00009,variant_fields_00002_00009_00009)
+reifyimply(gacalldiff([field_00003_00001, field_00008_00001, field_00004_00001, field_00009_00001, field_00005_00001, field_00001_00001, field_00006_00001, field_00002_00001, field_00007_00001]), alldiff_row_00001)
+reifyimply(gacalldiff([field_00003_00002, field_00008_00002, field_00004_00002, field_00009_00002, field_00005_00002, field_00001_00002, field_00006_00002, field_00002_00002, field_00007_00002]), alldiff_row_00002)
+reifyimply(gacalldiff([field_00003_00003, field_00008_00003, field_00004_00003, field_00009_00003, field_00005_00003, field_00001_00003, field_00006_00003, field_00002_00003, field_00007_00003]), alldiff_row_00003)
+reifyimply(gacalldiff([field_00003_00004, field_00008_00004, field_00004_00004, field_00009_00004, field_00005_00004, field_00001_00004, field_00006_00004, field_00002_00004, field_00007_00004]), alldiff_row_00004)
+reifyimply(gacalldiff([field_00003_00005, field_00008_00005, field_00004_00005, field_00009_00005, field_00005_00005, field_00001_00005, field_00006_00005, field_00002_00005, field_00007_00005]), alldiff_row_00005)
+reifyimply(gacalldiff([field_00003_00006, field_00008_00006, field_00004_00006, field_00009_00006, field_00005_00006, field_00001_00006, field_00006_00006, field_00002_00006, field_00007_00006]), alldiff_row_00006)
+reifyimply(gacalldiff([field_00003_00007, field_00008_00007, field_00004_00007, field_00009_00007, field_00005_00007, field_00001_00007, field_00006_00007, field_00002_00007, field_00007_00007]), alldiff_row_00007)
+reifyimply(gacalldiff([field_00003_00008, field_00008_00008, field_00004_00008, field_00009_00008, field_00005_00008, field_00001_00008, field_00006_00008, field_00002_00008, field_00007_00008]), alldiff_row_00008)
+reifyimply(gacalldiff([field_00003_00009, field_00008_00009, field_00004_00009, field_00009_00009, field_00005_00009, field_00001_00009, field_00006_00009, field_00002_00009, field_00007_00009]), alldiff_row_00009)
+reifyimply(gacalldiff([field_00001_00001, field_00001_00002, field_00001_00003, field_00001_00004, field_00001_00005, field_00001_00006, field_00001_00007, field_00001_00008, field_00001_00009]), alldiff_col_00001)
+reifyimply(gacalldiff([field_00002_00001, field_00002_00002, field_00002_00003, field_00002_00004, field_00002_00005, field_00002_00006, field_00002_00007, field_00002_00008, field_00002_00009]), alldiff_col_00002)
+reifyimply(gacalldiff([field_00003_00001, field_00003_00002, field_00003_00003, field_00003_00004, field_00003_00005, field_00003_00006, field_00003_00007, field_00003_00008, field_00003_00009]), alldiff_col_00003)
+reifyimply(gacalldiff([field_00004_00001, field_00004_00002, field_00004_00003, field_00004_00004, field_00004_00005, field_00004_00006, field_00004_00007, field_00004_00008, field_00004_00009]), alldiff_col_00004)
+reifyimply(gacalldiff([field_00005_00001, field_00005_00002, field_00005_00003, field_00005_00004, field_00005_00005, field_00005_00006, field_00005_00007, field_00005_00008, field_00005_00009]), alldiff_col_00005)
+reifyimply(gacalldiff([field_00006_00001, field_00006_00002, field_00006_00003, field_00006_00004, field_00006_00005, field_00006_00006, field_00006_00007, field_00006_00008, field_00006_00009]), alldiff_col_00006)
+reifyimply(gacalldiff([field_00007_00001, field_00007_00002, field_00007_00003, field_00007_00004, field_00007_00005, field_00007_00006, field_00007_00007, field_00007_00008, field_00007_00009]), alldiff_col_00007)
+reifyimply(gacalldiff([field_00008_00001, field_00008_00002, field_00008_00003, field_00008_00004, field_00008_00005, field_00008_00006, field_00008_00007, field_00008_00008, field_00008_00009]), alldiff_col_00008)
+reifyimply(gacalldiff([field_00009_00001, field_00009_00002, field_00009_00003, field_00009_00004, field_00009_00005, field_00009_00006, field_00009_00007, field_00009_00008, field_00009_00009]), alldiff_col_00009)
+reifyimply(gacalldiff([field_00003_00001, field_00003_00002, field_00003_00003, field_00001_00001, field_00001_00002, field_00001_00003, field_00002_00001, field_00002_00002, field_00002_00003]), alldiff_box_00001)
+reifyimply(gacalldiff([field_00003_00004, field_00003_00005, field_00003_00006, field_00001_00004, field_00001_00005, field_00001_00006, field_00002_00004, field_00002_00005, field_00002_00006]), alldiff_box_00002)
+reifyimply(gacalldiff([field_00003_00007, field_00003_00008, field_00003_00009, field_00001_00007, field_00001_00008, field_00001_00009, field_00002_00007, field_00002_00008, field_00002_00009]), alldiff_box_00003)
+reifyimply(gacalldiff([field_00004_00001, field_00004_00002, field_00004_00003, field_00005_00001, field_00005_00002, field_00005_00003, field_00006_00001, field_00006_00002, field_00006_00003]), alldiff_box_00004)
+reifyimply(gacalldiff([field_00004_00004, field_00004_00005, field_00004_00006, field_00005_00004, field_00005_00005, field_00005_00006, field_00006_00004, field_00006_00005, field_00006_00006]), alldiff_box_00005)
+reifyimply(gacalldiff([field_00004_00007, field_00004_00008, field_00004_00009, field_00005_00007, field_00005_00008, field_00005_00009, field_00006_00007, field_00006_00008, field_00006_00009]), alldiff_box_00006)
+reifyimply(gacalldiff([field_00008_00001, field_00008_00002, field_00008_00003, field_00009_00001, field_00009_00002, field_00009_00003, field_00007_00001, field_00007_00002, field_00007_00003]), alldiff_box_00007)
+reifyimply(gacalldiff([field_00008_00004, field_00008_00005, field_00008_00006, field_00009_00004, field_00009_00005, field_00009_00006, field_00007_00004, field_00007_00005, field_00007_00006]), alldiff_box_00008)
+reifyimply(gacalldiff([field_00008_00007, field_00008_00008, field_00008_00009, field_00009_00007, field_00009_00008, field_00009_00009, field_00007_00007, field_00007_00008, field_00007_00009]), alldiff_box_00009)
+reifyimply(sumleq([variant_fields_00001_00002_00001,aux1,aux3,aux5,aux7,aux9,aux11,aux13,aux15],8), clues_left_on_00001_00002)
+reifyimply(sumgeq([variant_fields_00001_00002_00001,aux1,aux3,aux5,aux7,aux9,aux11,aux13,aux15],8), clues_left_on_00001_00002)
+reifyimply(sumleq([aux17,aux19,aux21,aux23,aux25,aux27,aux29,aux31,variant_fields_00001_00004_00001],17), clues_left_on_00001_00004)
+reifyimply(sumgeq([aux17,aux19,aux21,aux23,aux25,aux27,aux29,aux31,variant_fields_00001_00004_00001],17), clues_left_on_00001_00004)
+reifyimply(sumleq([variant_fields_00001_00006_00001,aux33,aux35,aux37,aux39,aux41,aux43,aux45,aux47],30), clues_left_on_00001_00006)
+reifyimply(sumgeq([variant_fields_00001_00006_00001,aux33,aux35,aux37,aux39,aux41,aux43,aux45,aux47],30), clues_left_on_00001_00006)
+reifyimply(sumleq([aux49,aux51,aux53,aux55,aux57,aux59,aux61,aux63,variant_fields_00001_00008_00001],28), clues_left_on_00001_00008)
+reifyimply(sumgeq([aux49,aux51,aux53,aux55,aux57,aux59,aux61,aux63,variant_fields_00001_00008_00001],28), clues_left_on_00001_00008)
+reifyimply(sumleq([variant_fields_00002_00002_00001,aux65,aux67,aux69,aux71,aux73,aux75,aux77,aux79],27), clues_left_on_00002_00002)
+reifyimply(sumgeq([variant_fields_00002_00002_00001,aux65,aux67,aux69,aux71,aux73,aux75,aux77,aux79],27), clues_left_on_00002_00002)
+reifyimply(sumleq([aux81,aux83,aux85,aux87,aux89,aux91,aux93,aux95,variant_fields_00002_00004_00001],11), clues_left_on_00002_00004)
+reifyimply(sumgeq([aux81,aux83,aux85,aux87,aux89,aux91,aux93,aux95,variant_fields_00002_00004_00001],11), clues_left_on_00002_00004)
+reifyimply(sumleq([variant_fields_00002_00006_00001,aux101,aux103,aux105,aux107,aux109,aux111,aux97,aux99],21), clues_left_on_00002_00006)
+reifyimply(sumgeq([variant_fields_00002_00006_00001,aux101,aux103,aux105,aux107,aux109,aux111,aux97,aux99],21), clues_left_on_00002_00006)
+reifyimply(sumleq([aux113,aux115,aux117,aux119,aux121,aux123,aux125,aux127,variant_fields_00002_00007_00001],16), clues_left_on_00002_00007)
+reifyimply(sumgeq([aux113,aux115,aux117,aux119,aux121,aux123,aux125,aux127,variant_fields_00002_00007_00001],16), clues_left_on_00002_00007)
+reifyimply(sumleq([aux129,aux131,aux133,aux135,aux137,aux139,aux141,aux143,variant_fields_00003_00002_00001],8), clues_left_on_00003_00002)
+reifyimply(sumgeq([aux129,aux131,aux133,aux135,aux137,aux139,aux141,aux143,variant_fields_00003_00002_00001],8), clues_left_on_00003_00002)
+reifyimply(sumleq([aux145,aux147,aux149,aux151,aux153,aux155,aux157,aux159,variant_fields_00003_00004_00001],17), clues_left_on_00003_00004)
+reifyimply(sumgeq([aux145,aux147,aux149,aux151,aux153,aux155,aux157,aux159,variant_fields_00003_00004_00001],17), clues_left_on_00003_00004)
+reifyimply(sumleq([variant_fields_00003_00006_00001,aux161,aux163,aux165,aux167,aux169,aux171,aux173,aux175],30), clues_left_on_00003_00006)
+reifyimply(sumgeq([variant_fields_00003_00006_00001,aux161,aux163,aux165,aux167,aux169,aux171,aux173,aux175],30), clues_left_on_00003_00006)
+reifyimply(sumleq([aux177,aux179,aux181,aux183,aux185,aux187,aux189,aux191,variant_fields_00003_00008_00001],28), clues_left_on_00003_00008)
+reifyimply(sumgeq([aux177,aux179,aux181,aux183,aux185,aux187,aux189,aux191,variant_fields_00003_00008_00001],28), clues_left_on_00003_00008)
+reifyimply(sumleq([variant_fields_00004_00002_00001,aux193,aux195,aux197,aux199,aux201,aux203,aux205,aux207],27), clues_left_on_00004_00002)
+reifyimply(sumgeq([variant_fields_00004_00002_00001,aux193,aux195,aux197,aux199,aux201,aux203,aux205,aux207],27), clues_left_on_00004_00002)
+reifyimply(sumleq([aux209,aux211,aux213,aux215,aux217,aux219,aux221,aux223,variant_fields_00004_00004_00001],11), clues_left_on_00004_00004)
+reifyimply(sumgeq([aux209,aux211,aux213,aux215,aux217,aux219,aux221,aux223,variant_fields_00004_00004_00001],11), clues_left_on_00004_00004)
+reifyimply(sumleq([aux225,aux227,aux229,aux231,aux233,aux235,aux237,aux239,variant_fields_00004_00007_00001],16), clues_left_on_00004_00007)
+reifyimply(sumgeq([aux225,aux227,aux229,aux231,aux233,aux235,aux237,aux239,variant_fields_00004_00007_00001],16), clues_left_on_00004_00007)
+**EOF**
