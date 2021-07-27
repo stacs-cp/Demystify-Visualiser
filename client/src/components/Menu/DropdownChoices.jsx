@@ -10,7 +10,7 @@ class DropdownChoices extends React.Component {
                     {name}
                 </Dropdown.Toggle>
 
-                <Dropdown.Menu>
+                <Dropdown.Menu style={{maxHeight: "20vh", overflowY: "scroll"}}>
                     {isLoading ?
                         <div className="d-flex justify-content-center">
                             <Spinner animation="border" />

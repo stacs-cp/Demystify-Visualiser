@@ -17,23 +17,31 @@ def run_demystify(eprime_name, eprime, param_name, param, num_steps, algorithm, 
     job.meta["progress"] = "Starting demystify"
     job.save_meta()
 
+    if eprime is None or param is None:
+        eprime_dir = "./eprime/"
+        param_dir = "./eprime/" + eprime_name[:-7] + "/"
+    else:
+        eprime_dir = "./eprime_tmp/"
+        param_dir = "./eprime_tmp/"
+    
     explainer = Explainer(algorithm, debug=True)
     logger = logging.getLogger("")
     #logger.setLevel(logging.ERROR)
     fh = logging.FileHandler("demystify" + job.id + ".log")
     fh.setLevel(logging.DEBUG)
     logger.addHandler(fh)
-    eprime_path = "./eprime_tmp/" + eprime_name
-    param_path = "./eprime_tmp/" + param_name
+    eprime_path = eprime_dir + eprime_name
+    param_path = param_dir + param_name
 
     if eprime is not None:
         eprime_file = open(eprime_path, "w")
         eprime_file.write(eprime)
         eprime_file.close()
 
-    param_file = open(param_path, "w")
-    param_file.write(param)
-    param_file.close()
+    if param is not None:
+        param_file = open(param_path, "w")
+        param_file.write(param)
+        param_file.close()
 
     try:
         job.meta['progress'] = "Initialising from essence prime"
@@ -105,7 +113,7 @@ def run_demystify(eprime_name, eprime, param_name, param, num_steps, algorithm, 
                     result["params"] = output["params"]
                     result["steps"].append({"choices": choices})
             
-        if len(explainer.unexplained) <= 0:
+        if eprime is not None and param is not None:
             os.remove(eprime_path)
             os.remove(param_path)
             
@@ -195,8 +203,9 @@ def get_all_examples():
 
     for dir in eprime_dirs:
         param_files = list(os.listdir("./eprime/" + dir))
+        param_files = list(filter(lambda p : p[-6:] == ".param", param_files))
         to_append = list(map(lambda s : dir + ".eprime, " + s, param_files))
-        eprime_names.append(to_append)
+        eprime_names.extend(to_append)
 
     return jsonify(eprime_names)
 

@@ -5,8 +5,14 @@ async function getExamples() {
     return response.data;
 }
 
+
 async function getExampleData(exampleName) {
     const response = await axios.get(`examples/${exampleName}`);
+    return response.data;
+}
+
+async function getEprime() {
+    const response = await axios.get("api/eprime");
     return response.data;
 }
 
@@ -26,5 +32,5 @@ async function getJobOutput(jobId) {
 }
 
 
-export { getExamples, getExampleData, createJob, getJob, getJobOutput};
+export { getExamples, getExampleData, getEprime, createJob, getJob, getJobOutput};
 
