@@ -199,6 +199,25 @@ class PuzzleStepper extends React.Component {
     this.setState({ isWaiting: true, jobId: result.jobId });
   }
 
+    // Get next step skipping choices entirely
+    async handleSkip() {
+        const { eprimeName, eprime, paramName, param, algorithm, explainedLits } =
+          this.state.continueData;
+        const { currentChoice } = this.state;
+        const result = await API.createJob({
+          eprimeName: eprimeName,
+          eprime: eprime,
+          paramName: paramName,
+          param: param,
+          algorithm: algorithm,
+          numSteps: 1,
+          explainedLits: explainedLits,
+          choice: 0,
+          appendCurrent: this.props.mode === "force"
+        });
+        this.setState({ isWaiting: true, jobId: result.jobId });
+      }
+
   // Get next step with literal choice.
   async handleGetNextWithForce() {
     if (!this.state.selectedLiteral) {
@@ -324,6 +343,12 @@ class PuzzleStepper extends React.Component {
                           this.state.selectedLiteral.value
                         : " none"}
                     </b>
+                    <br />
+                    <Button 
+                       className="mt-4" 
+                       variant="secondary"
+                       onClick={this.handleSkip.bind(this)}>
+                        Skip choice for this step</Button>
                   </Card.Body>
                 </Card>
               )}

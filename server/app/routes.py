@@ -10,7 +10,7 @@ from rq import get_current_job
 
 bp = Blueprint('routes', __name__)
 
-def run_demystify(eprime_name, eprime, param_name, param, num_steps, algorithm, explained, get_initial, choice, lit_choice):
+def run_demystify(eprime_name, eprime, param_name, param, num_steps, algorithm, explained, get_initial, choice, lit_choice, append_current):
     job = get_current_job()
 
     
@@ -92,8 +92,7 @@ def run_demystify(eprime_name, eprime, param_name, param, num_steps, algorithm, 
             job.meta['progress'] = "Computing MUSes"
             job.save_meta()
             result = explainer.explain_steps(num_steps=num_steps, lit_choice=lit_choice)
-            current_state = explainer.get_current_state()
-            result["steps"].append(current_state["steps"][0])
+            
         else:
             job.meta['progress'] = "Computing MUSes"
             job.save_meta()
@@ -112,7 +111,12 @@ def run_demystify(eprime_name, eprime, param_name, param, num_steps, algorithm, 
                     result["name"] = output["name"]
                     result["params"] = output["params"]
                     result["steps"].append({"choices": choices})
-            
+
+        if append_current:
+            result["steps"] = result["steps"][:-1]
+            current_state = explainer.get_current_state()
+            result["steps"].append(current_state["steps"][0])
+
         if eprime is not None and param is not None:
             os.remove(eprime_path)
             os.remove(param_path)
@@ -153,6 +157,7 @@ def create_job():
                 json.get("getInitial", False),
                 json.get("choice", 0),
                 json.get("litChoice", None),
+                json.get("appendCurrent", None)
                 ), result_ttl=5000,
         )
     return jsonify({
