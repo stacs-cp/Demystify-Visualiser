@@ -9,6 +9,7 @@ import TentsBoard from './PuzzleBoards/TentsBoard';
 import BinairoBoard from './PuzzleBoards/BinairoBoard';
 import KillerBoard from './PuzzleBoards/KillerBoard';
 import KakuroBoard from './PuzzleBoards/KakuroBoard';
+import KakurasuBoard from './PuzzleBoards/KakurasuBoard';
 import StarBattleBoard from './PuzzleBoards/StarBattleBoard';
 import FutoshikiBoard from './PuzzleBoards/FutoshikiBoard';
 import ThermometerBoard from './PuzzleBoards/ThermometerBoard';
@@ -89,6 +90,8 @@ class PuzzleStepper extends React.Component {
                 return <StarBattleBoard {...boardProps}/>
             case "kakuro.eprime":
                 return <KakuroBoard {...boardProps}/>
+            case "kakurasu.eprime":
+                return <KakurasuBoard {...boardProps}/>
             case "nfutoshiki.eprime":
                 return <FutoshikiBoard {...boardProps}/>
             case "thermometer.eprime":

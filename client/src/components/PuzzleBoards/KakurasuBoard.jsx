@@ -9,17 +9,16 @@ class KakurasuBoard extends React.Component {
         super(props);
         this.state = {
             size: this.props.params.dims,
-            colsums: this.props.params.col_sums,
-            rowsums: this.props.params.row_sums,
+            colsums: Object.values(this.props.params.col_sums),
+            rowsums: Object.values(this.props.params.row_sums),
         }
     }
 
     getBackgrounds() {
         let backgrounds = {};
 
-        
-        backgrounds["0"] = "linear-gradient(lightblue, lightblue)"
-        backgrounds["1"] = "linear-gradient(lightblue, lightblue)"
+        backgrounds["0"] = "linear-gradient(white, white)"
+        backgrounds["1"] = "linear-gradient(gray, gray)"
         
         return backgrounds;
     }

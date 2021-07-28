@@ -13,21 +13,28 @@ class MainMenu extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
+            // Dropdown choices
             examples: [],
             eprimeChoices: [],
             chosenEprime: null,
+
+            // Form input
             eprime: null,
             eprimeName: null,
             param: null,
             paramName: null,
-            error: "",
-            jobId: null,
-            isLoadingExamples: true,
-            isLoadingExampleJSON: false,
             mode: "default",
             algorithm: "cascade-fast",
-            isQueueing: false,
-            isWaiting: false
+
+            // Controls spinners
+            isLoadingExamples: true,
+            isLoadingExampleJSON: false,
+            isQueueing: false, // Setting up job
+            isWaiting: false, // Job is running (show JobWait)
+
+            // Other
+            jobId: null,
+            error: ""
         };
     }
 
@@ -38,6 +45,42 @@ class MainMenu extends React.Component {
         API.getEprime()
             .then(res => this.setState({ eprimeChoices: res },
                 () => this.setState({ isLoadingEprime: false })));
+    }
+
+    componentDidUpdate = () => {
+        if (this.state.isQueueing || this.state.isWaiting) {
+            window.onbeforeunload = () => { return true; }
+        } else {
+            window.onbeforeunload = undefined
+        }
+    }
+
+    setError(message) {
+        this.setState({ error: message });
+    }
+
+    async chooseExample(name) {
+        this.setState({ isLoadingExampleJSON: true })
+        const example = await API.getExampleData(name);
+        this.props.setInput({ result: example }, "default");
+    }
+
+    chooseEprime(name) {
+        const both = name.toString().split(",");
+        this.setState(
+            {
+                eprimeName: both[0],
+                eprime: null,
+                paramName: both[1].replace(/\s/g, ''),
+                param: null,
+                chosenEprime: both[1].replace(/\s/g, '').substr(0, 8) + "..."
+            })
+    }
+
+    handleOptionChange(e) {
+        this.setState({
+            [e.target.name]: e.target.value
+        });
     }
 
     async handleGo() {
@@ -73,60 +116,6 @@ class MainMenu extends React.Component {
         }
     }
 
-    setError(message) {
-        this.setState({ error: message });
-    }
-
-    componentDidUpdate = () => {
-        if (this.state.isQueueing) {
-            window.onbeforeunload = () => { return true; }
-        } else {
-            window.onbeforeunload = undefined
-        }
-    }
-
-    async getExamples() {
-        const examples = await API.getExamples();
-
-        try {
-            const items = examples.map(name =>
-                <Dropdown.Item>
-                    {name}
-                </Dropdown.Item>);
-            return items;
-        } catch {
-            return (
-                <Alert className="m-0" variant="warning">
-                    Error fetching examples.
-                </Alert>)
-        }
-    }
-
-    async chooseExample(name) {
-        this.setState({ isLoadingExampleJSON: true })
-        const example = await API.getExampleData(name);
-        this.props.setInput({ result: example }, "default");
-    }
-
-    chooseEprime(name) {
-
-        const both = name.toString().split(",");
-        this.setState(
-            {
-                eprimeName: both[0],
-                eprime: null,
-                paramName: both[1].replace(/\s/g, ''),
-                param: null,
-                chosenEprime: both[1].replace(/\s/g, '').substr(0,8) + "..."})
-    }
-
-
-    handleOptionChange(e) {
-        this.setState({
-            [e.target.name]: e.target.value
-        });
-    }
-
     render() {
         return (
 
@@ -135,7 +124,8 @@ class MainMenu extends React.Component {
                 <img className="mt-3" style={{ width: "80px" }} alt="demystify logo" src="favicon.ico" />
 
                 <Card as={Row} className="mt-3 pt-3 w-75">
-                    {this.state.isWaiting ? <JobWait jobId={this.state.jobId} setInput={this.props.setInput} mode={this.state.mode} /> :
+                    {this.state.isWaiting ? 
+                        <JobWait jobId={this.state.jobId} setInput={this.props.setInput} mode={this.state.mode} /> :
                         <ListGroup variant="flush">
                             <ListGroup.Item>
                                 <Row>
@@ -170,7 +160,6 @@ class MainMenu extends React.Component {
                                 </Row>
                             </ListGroup.Item>
                             <ListGroup.Item>
-
                                 <Row>
                                     <b className="mx-4 mb-2">Run Demystify live:</b>
                                 </Row>
@@ -197,7 +186,6 @@ class MainMenu extends React.Component {
                                         noFile={this.state.eprime === null}
                                     />
                                 </Row>
-
                                 <Row>
                                     <p className="mx-4">and puzzle instance (.param): </p>
                                     <FileUploader
@@ -232,20 +220,17 @@ class MainMenu extends React.Component {
                                         onClick={this.handleGo.bind(this)}>
                                         Go
                                     </Button>
-
                                     {this.state.isQueueing &&
                                         <React.Fragment>
                                             <Spinner animation="border" />
                                             <p className="ml-4">Setting up Demystify job...</p>
                                         </React.Fragment>
-
                                     }
                                 </Row>
-
                             </ListGroup.Item>
-
                         </ListGroup>}
                 </Card>
+
                 {this.state.error.length > 0 &&
                     <Alert variant="warning" className="mt-3 p-4 w-75 text-center">
                         {this.state.error}

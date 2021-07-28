@@ -1,0 +1,67 @@
+MINION 3
+**VARIABLES**
+DISCRETE res_00001_00001 #
+{0..1}
+DISCRETE res_00001_00002 #
+{0..1}
+DISCRETE res_00001_00003 #
+{0..1}
+DISCRETE res_00001_00004 #
+{0..1}
+DISCRETE res_00002_00001 #
+{0..1}
+DISCRETE res_00002_00002 #
+{0..1}
+DISCRETE res_00002_00003 #
+{0..1}
+DISCRETE res_00002_00004 #
+{0..1}
+DISCRETE res_00003_00001 #
+{0..1}
+DISCRETE res_00003_00002 #
+{0..1}
+DISCRETE res_00003_00003 #
+{0..1}
+DISCRETE res_00003_00004 #
+{0..1}
+DISCRETE res_00004_00001 #
+{0..1}
+DISCRETE res_00004_00002 #
+{0..1}
+DISCRETE res_00004_00003 #
+{0..1}
+DISCRETE res_00004_00004 #
+{0..1}
+BOOL rowcon_00001 #
+BOOL rowcon_00002 #
+BOOL rowcon_00003 #
+BOOL rowcon_00004 #
+BOOL colcon_00001 #
+BOOL colcon_00002 #
+BOOL colcon_00003 #
+BOOL colcon_00004 #
+**VARIABLES**
+ALIAS aux0[4]=[1, 2, 3, 4]
+**VARIABLES**
+ALIAS col_sums[4]=[3, 4, 9, 3]
+**VARIABLES**
+ALIAS row_sums[4]=[2, 3, 10, 3]
+**SEARCH**
+PRINT[[res_00001_00001],[res_00001_00002],[res_00001_00003],[res_00001_00004],[res_00002_00001],[res_00002_00002],[res_00002_00003],[res_00002_00004],[res_00003_00001],[res_00003_00002],[res_00003_00003],[res_00003_00004],[res_00004_00001],[res_00004_00002],[res_00004_00003],[res_00004_00004],[rowcon_00001],[rowcon_00002],[rowcon_00003],[rowcon_00004],[colcon_00001],[colcon_00002],[colcon_00003],[colcon_00004]]
+**CONSTRAINTS**
+reifyimply(weightedsumgeq([1,2,3,4],[res_00003_00001,res_00003_00002,res_00003_00003,res_00003_00004],10), rowcon_00003)
+reifyimply(weightedsumleq([1,2,3,4],[res_00001_00001,res_00001_00002,res_00001_00003,res_00001_00004],2), rowcon_00001)
+reifyimply(weightedsumgeq([1,2,3,4],[res_00001_00001,res_00001_00002,res_00001_00003,res_00001_00004],2), rowcon_00001)
+reifyimply(weightedsumleq([1,2,3,4],[res_00002_00001,res_00002_00002,res_00002_00003,res_00002_00004],3), rowcon_00002)
+reifyimply(weightedsumgeq([1,2,3,4],[res_00002_00001,res_00002_00002,res_00002_00003,res_00002_00004],3), rowcon_00002)
+reifyimply(weightedsumleq([1,2,3,4],[res_00004_00001,res_00004_00002,res_00004_00003,res_00004_00004],3), rowcon_00004)
+reifyimply(weightedsumgeq([1,2,3,4],[res_00004_00001,res_00004_00002,res_00004_00003,res_00004_00004],3), rowcon_00004)
+reifyimply(weightedsumleq([4,1,2,3],[res_00004_00001,res_00001_00001,res_00002_00001,res_00003_00001],3), colcon_00001)
+reifyimply(weightedsumgeq([4,1,2,3],[res_00004_00001,res_00001_00001,res_00002_00001,res_00003_00001],3), colcon_00001)
+reifyimply(weightedsumleq([4,1,2,3],[res_00004_00002,res_00001_00002,res_00002_00002,res_00003_00002],4), colcon_00002)
+reifyimply(weightedsumgeq([4,1,2,3],[res_00004_00002,res_00001_00002,res_00002_00002,res_00003_00002],4), colcon_00002)
+reifyimply(weightedsumleq([4,1,2,3],[res_00004_00003,res_00001_00003,res_00002_00003,res_00003_00003],9), colcon_00003)
+reifyimply(weightedsumgeq([4,1,2,3],[res_00004_00003,res_00001_00003,res_00002_00003,res_00003_00003],9), colcon_00003)
+reifyimply(weightedsumleq([4,1,2,3],[res_00004_00004,res_00001_00004,res_00002_00004,res_00003_00004],3), colcon_00004)
+reifyimply(weightedsumgeq([4,1,2,3],[res_00004_00004,res_00001_00004,res_00002_00004,res_00003_00004],3), colcon_00004)
+**EOF**

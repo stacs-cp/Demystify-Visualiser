@@ -1,0 +1,576 @@
+p cnf 87 226                                                                                        
+
+1 0
+c Encoding variable: res_00001_00001 with domain: int(0..1) (representing constraint )
+c Var 'res_00001_00001' direct represents '0' with '-2'
+c Var 'res_00001_00001' direct represents '1' with '2'
+c Var 'res_00001_00001' order represents '1' with '1'
+c Var 'res_00001_00001' order represents '0' with '-2'
+c Encoding variable: res_00001_00002 with domain: int(0..1) (representing constraint )
+c Var 'res_00001_00002' direct represents '0' with '-3'
+c Var 'res_00001_00002' direct represents '1' with '3'
+c Var 'res_00001_00002' order represents '1' with '1'
+c Var 'res_00001_00002' order represents '0' with '-3'
+c Encoding variable: res_00001_00003 with domain: int(0..1) (representing constraint )
+c Var 'res_00001_00003' direct represents '0' with '-4'
+c Var 'res_00001_00003' direct represents '1' with '4'
+c Var 'res_00001_00003' order represents '1' with '1'
+c Var 'res_00001_00003' order represents '0' with '-4'
+c Encoding variable: res_00001_00004 with domain: int(0..1) (representing constraint )
+c Var 'res_00001_00004' direct represents '0' with '-5'
+c Var 'res_00001_00004' direct represents '1' with '5'
+c Var 'res_00001_00004' order represents '1' with '1'
+c Var 'res_00001_00004' order represents '0' with '-5'
+c Encoding variable: res_00002_00001 with domain: int(0..1) (representing constraint )
+c Var 'res_00002_00001' direct represents '0' with '-6'
+c Var 'res_00002_00001' direct represents '1' with '6'
+c Var 'res_00002_00001' order represents '1' with '1'
+c Var 'res_00002_00001' order represents '0' with '-6'
+c Encoding variable: res_00002_00002 with domain: int(0..1) (representing constraint )
+c Var 'res_00002_00002' direct represents '0' with '-7'
+c Var 'res_00002_00002' direct represents '1' with '7'
+c Var 'res_00002_00002' order represents '1' with '1'
+c Var 'res_00002_00002' order represents '0' with '-7'
+c Encoding variable: res_00002_00003 with domain: int(0..1) (representing constraint )
+c Var 'res_00002_00003' direct represents '0' with '-8'
+c Var 'res_00002_00003' direct represents '1' with '8'
+c Var 'res_00002_00003' order represents '1' with '1'
+c Var 'res_00002_00003' order represents '0' with '-8'
+c Encoding variable: res_00002_00004 with domain: int(0..1) (representing constraint )
+c Var 'res_00002_00004' direct represents '0' with '-9'
+c Var 'res_00002_00004' direct represents '1' with '9'
+c Var 'res_00002_00004' order represents '1' with '1'
+c Var 'res_00002_00004' order represents '0' with '-9'
+c Encoding variable: res_00003_00001 with domain: int(0..1) (representing constraint )
+c Var 'res_00003_00001' direct represents '0' with '-10'
+c Var 'res_00003_00001' direct represents '1' with '10'
+c Var 'res_00003_00001' order represents '1' with '1'
+c Var 'res_00003_00001' order represents '0' with '-10'
+c Encoding variable: res_00003_00002 with domain: int(0..1) (representing constraint )
+c Var 'res_00003_00002' direct represents '0' with '-11'
+c Var 'res_00003_00002' direct represents '1' with '11'
+c Var 'res_00003_00002' order represents '1' with '1'
+c Var 'res_00003_00002' order represents '0' with '-11'
+c Encoding variable: res_00003_00003 with domain: int(0..1) (representing constraint )
+c Var 'res_00003_00003' direct represents '0' with '-12'
+c Var 'res_00003_00003' direct represents '1' with '12'
+c Var 'res_00003_00003' order represents '1' with '1'
+c Var 'res_00003_00003' order represents '0' with '-12'
+c Encoding variable: res_00003_00004 with domain: int(0..1) (representing constraint )
+c Var 'res_00003_00004' direct represents '0' with '-13'
+c Var 'res_00003_00004' direct represents '1' with '13'
+c Var 'res_00003_00004' order represents '1' with '1'
+c Var 'res_00003_00004' order represents '0' with '-13'
+c Encoding variable: res_00004_00001 with domain: int(0..1) (representing constraint )
+c Var 'res_00004_00001' direct represents '0' with '-14'
+c Var 'res_00004_00001' direct represents '1' with '14'
+c Var 'res_00004_00001' order represents '1' with '1'
+c Var 'res_00004_00001' order represents '0' with '-14'
+c Encoding variable: res_00004_00002 with domain: int(0..1) (representing constraint )
+c Var 'res_00004_00002' direct represents '0' with '-15'
+c Var 'res_00004_00002' direct represents '1' with '15'
+c Var 'res_00004_00002' order represents '1' with '1'
+c Var 'res_00004_00002' order represents '0' with '-15'
+c Encoding variable: res_00004_00003 with domain: int(0..1) (representing constraint )
+c Var 'res_00004_00003' direct represents '0' with '-16'
+c Var 'res_00004_00003' direct represents '1' with '16'
+c Var 'res_00004_00003' order represents '1' with '1'
+c Var 'res_00004_00003' order represents '0' with '-16'
+c Encoding variable: res_00004_00004 with domain: int(0..1) (representing constraint )
+c Var 'res_00004_00004' direct represents '0' with '-17'
+c Var 'res_00004_00004' direct represents '1' with '17'
+c Var 'res_00004_00004' order represents '1' with '1'
+c Var 'res_00004_00004' order represents '0' with '-17'
+c Encoding variable: rowcon_00001 with domain: bool (representing constraint )
+c Var 'rowcon_00001' direct represents '0' with '-18'
+c Var 'rowcon_00001' direct represents '1' with '18'
+c Var 'rowcon_00001' order represents '1' with '1'
+c Var 'rowcon_00001' order represents '0' with '-18'
+c Encoding variable: rowcon_00002 with domain: bool (representing constraint )
+c Var 'rowcon_00002' direct represents '0' with '-19'
+c Var 'rowcon_00002' direct represents '1' with '19'
+c Var 'rowcon_00002' order represents '1' with '1'
+c Var 'rowcon_00002' order represents '0' with '-19'
+c Encoding variable: rowcon_00003 with domain: bool (representing constraint )
+c Var 'rowcon_00003' direct represents '0' with '-20'
+c Var 'rowcon_00003' direct represents '1' with '20'
+c Var 'rowcon_00003' order represents '1' with '1'
+c Var 'rowcon_00003' order represents '0' with '-20'
+c Encoding variable: rowcon_00004 with domain: bool (representing constraint )
+c Var 'rowcon_00004' direct represents '0' with '-21'
+c Var 'rowcon_00004' direct represents '1' with '21'
+c Var 'rowcon_00004' order represents '1' with '1'
+c Var 'rowcon_00004' order represents '0' with '-21'
+c Encoding variable: colcon_00001 with domain: bool (representing constraint )
+c Var 'colcon_00001' direct represents '0' with '-22'
+c Var 'colcon_00001' direct represents '1' with '22'
+c Var 'colcon_00001' order represents '1' with '1'
+c Var 'colcon_00001' order represents '0' with '-22'
+c Encoding variable: colcon_00002 with domain: bool (representing constraint )
+c Var 'colcon_00002' direct represents '0' with '-23'
+c Var 'colcon_00002' direct represents '1' with '23'
+c Var 'colcon_00002' order represents '1' with '1'
+c Var 'colcon_00002' order represents '0' with '-23'
+c Encoding variable: colcon_00003 with domain: bool (representing constraint )
+c Var 'colcon_00003' direct represents '0' with '-24'
+c Var 'colcon_00003' direct represents '1' with '24'
+c Var 'colcon_00003' order represents '1' with '1'
+c Var 'colcon_00003' order represents '0' with '-24'
+c Encoding variable: colcon_00004 with domain: bool (representing constraint )
+c Var 'colcon_00004' direct represents '0' with '-25'
+c Var 'colcon_00004' direct represents '1' with '25'
+c Var 'colcon_00004' order represents '1' with '1'
+c Var 'colcon_00004' order represents '0' with '-25'
+c Encoding variable: aux1 with domain: bool (representing constraint ((res_00001_00001 + 2*res_00001_00002 + 3*res_00001_00003 + 4*res_00001_00004)=tv=2))
+c Var 'aux1' direct represents '0' with '-26'
+c Var 'aux1' direct represents '1' with '26'
+c Var 'aux1' order represents '1' with '1'
+c Var 'aux1' order represents '0' with '-26'
+c Encoding variable: aux2 with domain: bool (representing constraint ((res_00002_00001 + 2*res_00002_00002 + 3*res_00002_00003 + 4*res_00002_00004)=tv=3))
+c Var 'aux2' direct represents '0' with '-27'
+c Var 'aux2' direct represents '1' with '27'
+c Var 'aux2' order represents '1' with '1'
+c Var 'aux2' order represents '0' with '-27'
+c Encoding variable: aux3 with domain: bool (representing constraint ((res_00003_00001 + 2*res_00003_00002 + 3*res_00003_00003 + 4*res_00003_00004)=tv=10))
+c Var 'aux3' direct represents '0' with '-28'
+c Var 'aux3' direct represents '1' with '28'
+c Var 'aux3' order represents '1' with '1'
+c Var 'aux3' order represents '0' with '-28'
+c Encoding variable: aux4 with domain: bool (representing constraint ((res_00004_00001 + 2*res_00004_00002 + 3*res_00004_00003 + 4*res_00004_00004)=tv=3))
+c Var 'aux4' direct represents '0' with '-29'
+c Var 'aux4' direct represents '1' with '29'
+c Var 'aux4' order represents '1' with '1'
+c Var 'aux4' order represents '0' with '-29'
+c Encoding variable: aux5 with domain: bool (representing constraint ((4*res_00004_00001 + res_00001_00001 + 2*res_00002_00001 + 3*res_00003_00001)=tv=3))
+c Var 'aux5' direct represents '0' with '-30'
+c Var 'aux5' direct represents '1' with '30'
+c Var 'aux5' order represents '1' with '1'
+c Var 'aux5' order represents '0' with '-30'
+c Encoding variable: aux6 with domain: bool (representing constraint ((4*res_00004_00002 + res_00001_00002 + 2*res_00002_00002 + 3*res_00003_00002)=tv=4))
+c Var 'aux6' direct represents '0' with '-31'
+c Var 'aux6' direct represents '1' with '31'
+c Var 'aux6' order represents '1' with '1'
+c Var 'aux6' order represents '0' with '-31'
+c Encoding variable: aux7 with domain: bool (representing constraint ((4*res_00004_00003 + res_00001_00003 + 2*res_00002_00003 + 3*res_00003_00003)=tv=9))
+c Var 'aux7' direct represents '0' with '-32'
+c Var 'aux7' direct represents '1' with '32'
+c Var 'aux7' order represents '1' with '1'
+c Var 'aux7' order represents '0' with '-32'
+c Encoding variable: aux8 with domain: bool (representing constraint ((4*res_00004_00004 + res_00001_00004 + 2*res_00002_00004 + 3*res_00003_00004)=tv=3))
+c Var 'aux8' direct represents '0' with '-33'
+c Var 'aux8' direct represents '1' with '33'
+c Var 'aux8' order represents '1' with '1'
+c Var 'aux8' order represents '0' with '-33'
+c Encoding variable: aux9 with domain: int(0..3) (representing constraint (res_00001_00001 + 2*res_00001_00002))
+c Both direct and order encoding.
+c Var 'aux9' order represents '0' with '34'
+c Var 'aux9' direct represents '0' with '34'
+c Var 'aux9' order represents '1' with '35'
+-34 35 0
+c Var 'aux9' direct represents '1' with '36'
+34 -35 36 0
+-36 35 0
+-36 -34 0
+c Var 'aux9' order represents '2' with '37'
+-35 37 0
+c Var 'aux9' direct represents '2' with '38'
+35 -37 38 0
+-38 37 0
+-38 -35 0
+c Var 'aux9' direct represents '3' with '-37'
+34 36 38 -37 0
+c Encoding variable: aux10 with domain: int(0..3) (representing constraint (res_00002_00001 + 2*res_00002_00002))
+c Both direct and order encoding.
+c Var 'aux10' order represents '0' with '39'
+c Var 'aux10' direct represents '0' with '39'
+c Var 'aux10' order represents '1' with '40'
+-39 40 0
+c Var 'aux10' direct represents '1' with '41'
+39 -40 41 0
+-41 40 0
+-41 -39 0
+c Var 'aux10' order represents '2' with '42'
+-40 42 0
+c Var 'aux10' direct represents '2' with '43'
+40 -42 43 0
+-43 42 0
+-43 -40 0
+c Var 'aux10' direct represents '3' with '-42'
+39 41 43 -42 0
+c Encoding variable: aux11 with domain: int(0..3) (representing constraint (res_00003_00001 + 2*res_00003_00002))
+c Both direct and order encoding.
+c Var 'aux11' order represents '0' with '44'
+c Var 'aux11' direct represents '0' with '44'
+c Var 'aux11' order represents '1' with '45'
+-44 45 0
+c Var 'aux11' direct represents '1' with '46'
+44 -45 46 0
+-46 45 0
+-46 -44 0
+c Var 'aux11' order represents '2' with '47'
+-45 47 0
+c Var 'aux11' direct represents '2' with '48'
+45 -47 48 0
+-48 47 0
+-48 -45 0
+c Var 'aux11' direct represents '3' with '-47'
+44 46 48 -47 0
+c Encoding variable: aux12 with domain: int(0..3) (representing constraint (res_00004_00001 + 2*res_00004_00002))
+c Both direct and order encoding.
+c Var 'aux12' order represents '0' with '49'
+c Var 'aux12' direct represents '0' with '49'
+c Var 'aux12' order represents '1' with '50'
+-49 50 0
+c Var 'aux12' direct represents '1' with '51'
+49 -50 51 0
+-51 50 0
+-51 -49 0
+c Var 'aux12' order represents '2' with '52'
+-50 52 0
+c Var 'aux12' direct represents '2' with '53'
+50 -52 53 0
+-53 52 0
+-53 -50 0
+c Var 'aux12' direct represents '3' with '-52'
+49 51 53 -52 0
+c Encoding variable: aux13 with domain: int(0..3) (representing constraint (res_00001_00001 + 2*res_00002_00001))
+c Both direct and order encoding.
+c Var 'aux13' order represents '0' with '54'
+c Var 'aux13' direct represents '0' with '54'
+c Var 'aux13' order represents '1' with '55'
+-54 55 0
+c Var 'aux13' direct represents '1' with '56'
+54 -55 56 0
+-56 55 0
+-56 -54 0
+c Var 'aux13' order represents '2' with '57'
+-55 57 0
+c Var 'aux13' direct represents '2' with '58'
+55 -57 58 0
+-58 57 0
+-58 -55 0
+c Var 'aux13' direct represents '3' with '-57'
+54 56 58 -57 0
+c Encoding variable: aux14 with domain: int(0..3) (representing constraint (res_00001_00002 + 2*res_00002_00002))
+c Both direct and order encoding.
+c Var 'aux14' order represents '0' with '59'
+c Var 'aux14' direct represents '0' with '59'
+c Var 'aux14' order represents '1' with '60'
+-59 60 0
+c Var 'aux14' direct represents '1' with '61'
+59 -60 61 0
+-61 60 0
+-61 -59 0
+c Var 'aux14' order represents '2' with '62'
+-60 62 0
+c Var 'aux14' direct represents '2' with '63'
+60 -62 63 0
+-63 62 0
+-63 -60 0
+c Var 'aux14' direct represents '3' with '-62'
+59 61 63 -62 0
+c Encoding variable: aux15 with domain: int(0..3) (representing constraint (res_00001_00003 + 2*res_00002_00003))
+c Both direct and order encoding.
+c Var 'aux15' order represents '0' with '64'
+c Var 'aux15' direct represents '0' with '64'
+c Var 'aux15' order represents '1' with '65'
+-64 65 0
+c Var 'aux15' direct represents '1' with '66'
+64 -65 66 0
+-66 65 0
+-66 -64 0
+c Var 'aux15' order represents '2' with '67'
+-65 67 0
+c Var 'aux15' direct represents '2' with '68'
+65 -67 68 0
+-68 67 0
+-68 -65 0
+c Var 'aux15' direct represents '3' with '-67'
+64 66 68 -67 0
+c Encoding variable: aux16 with domain: int(0..3) (representing constraint (res_00001_00004 + 2*res_00002_00004))
+c Both direct and order encoding.
+c Var 'aux16' order represents '0' with '69'
+c Var 'aux16' direct represents '0' with '69'
+c Var 'aux16' order represents '1' with '70'
+-69 70 0
+c Var 'aux16' direct represents '1' with '71'
+69 -70 71 0
+-71 70 0
+-71 -69 0
+c Var 'aux16' order represents '2' with '72'
+-70 72 0
+c Var 'aux16' direct represents '2' with '73'
+70 -72 73 0
+-73 72 0
+-73 -70 0
+c Var 'aux16' direct represents '3' with '-72'
+69 71 73 -72 0
+c Encoding variable: aux17 with domain: bool (representing constraint ((3*res_00001_00003 + 4*res_00001_00004 + aux9)<=2))
+c Var 'aux17' direct represents '0' with '-74'
+c Var 'aux17' direct represents '1' with '74'
+c Var 'aux17' order represents '1' with '1'
+c Var 'aux17' order represents '0' with '-74'
+c Encoding variable: aux18 with domain: bool (representing constraint (2<=(3*res_00001_00003 + 4*res_00001_00004 + aux9)))
+c Var 'aux18' direct represents '0' with '-75'
+c Var 'aux18' direct represents '1' with '75'
+c Var 'aux18' order represents '1' with '1'
+c Var 'aux18' order represents '0' with '-75'
+c Encoding variable: aux19 with domain: bool (representing constraint ((aux10 + 3*res_00002_00003 + 4*res_00002_00004)<=3))
+c Var 'aux19' direct represents '0' with '-76'
+c Var 'aux19' direct represents '1' with '76'
+c Var 'aux19' order represents '1' with '1'
+c Var 'aux19' order represents '0' with '-76'
+c Encoding variable: aux20 with domain: bool (representing constraint (3<=(aux10 + 3*res_00002_00003 + 4*res_00002_00004)))
+c Var 'aux20' direct represents '0' with '-77'
+c Var 'aux20' direct represents '1' with '77'
+c Var 'aux20' order represents '1' with '1'
+c Var 'aux20' order represents '0' with '-77'
+c Encoding variable: aux21 with domain: bool (representing constraint ((3*res_00004_00003 + 4*res_00004_00004 + aux12)<=3))
+c Var 'aux21' direct represents '0' with '-78'
+c Var 'aux21' direct represents '1' with '78'
+c Var 'aux21' order represents '1' with '1'
+c Var 'aux21' order represents '0' with '-78'
+c Encoding variable: aux22 with domain: bool (representing constraint (3<=(3*res_00004_00003 + 4*res_00004_00004 + aux12)))
+c Var 'aux22' direct represents '0' with '-79'
+c Var 'aux22' direct represents '1' with '79'
+c Var 'aux22' order represents '1' with '1'
+c Var 'aux22' order represents '0' with '-79'
+c Encoding variable: aux23 with domain: bool (representing constraint ((4*res_00004_00001 + aux13 + 3*res_00003_00001)<=3))
+c Var 'aux23' direct represents '0' with '-80'
+c Var 'aux23' direct represents '1' with '80'
+c Var 'aux23' order represents '1' with '1'
+c Var 'aux23' order represents '0' with '-80'
+c Encoding variable: aux24 with domain: bool (representing constraint (3<=(4*res_00004_00001 + aux13 + 3*res_00003_00001)))
+c Var 'aux24' direct represents '0' with '-81'
+c Var 'aux24' direct represents '1' with '81'
+c Var 'aux24' order represents '1' with '1'
+c Var 'aux24' order represents '0' with '-81'
+c Encoding variable: aux25 with domain: bool (representing constraint ((4*res_00004_00002 + aux14 + 3*res_00003_00002)<=4))
+c Var 'aux25' direct represents '0' with '-82'
+c Var 'aux25' direct represents '1' with '82'
+c Var 'aux25' order represents '1' with '1'
+c Var 'aux25' order represents '0' with '-82'
+c Encoding variable: aux26 with domain: bool (representing constraint (4<=(4*res_00004_00002 + aux14 + 3*res_00003_00002)))
+c Var 'aux26' direct represents '0' with '-83'
+c Var 'aux26' direct represents '1' with '83'
+c Var 'aux26' order represents '1' with '1'
+c Var 'aux26' order represents '0' with '-83'
+c Encoding variable: aux27 with domain: bool (representing constraint ((4*res_00004_00003 + aux15 + 3*res_00003_00003)<=9))
+c Var 'aux27' direct represents '0' with '-84'
+c Var 'aux27' direct represents '1' with '84'
+c Var 'aux27' order represents '1' with '1'
+c Var 'aux27' order represents '0' with '-84'
+c Encoding variable: aux28 with domain: bool (representing constraint (9<=(4*res_00004_00003 + aux15 + 3*res_00003_00003)))
+c Var 'aux28' direct represents '0' with '-85'
+c Var 'aux28' direct represents '1' with '85'
+c Var 'aux28' order represents '1' with '1'
+c Var 'aux28' order represents '0' with '-85'
+c Encoding variable: aux29 with domain: bool (representing constraint ((4*res_00004_00004 + aux16 + 3*res_00003_00004)<=3))
+c Var 'aux29' direct represents '0' with '-86'
+c Var 'aux29' direct represents '1' with '86'
+c Var 'aux29' order represents '1' with '1'
+c Var 'aux29' order represents '0' with '-86'
+c Encoding variable: aux30 with domain: bool (representing constraint (3<=(4*res_00004_00004 + aux16 + 3*res_00003_00004)))
+c Var 'aux30' direct represents '0' with '-87'
+c Var 'aux30' direct represents '1' with '87'
+c Var 'aux30' order represents '1' with '1'
+c Var 'aux30' order represents '0' with '-87'
+c (((3*res_00001_00003 + 4*res_00001_00004 + aux9)<=2)=tv=SATLiteral(74))
+-74 37 0
+-74 -5 0
+-74 -4 0
+-74 -4 -5 0
+74 4 5 -37 0
+c ((2<=(3*res_00001_00003 + 4*res_00001_00004 + aux9))=tv=SATLiteral(75))
+-75 4 5 -35 0
+75 35 0
+75 -5 0
+75 -4 0
+75 -4 -5 0
+c (((aux10 + 3*res_00002_00003 + 4*res_00002_00004)<=3)=tv=SATLiteral(76))
+-76 -9 0
+-76 -8 39 0
+-76 -8 -9 0
+76 9 -39 0
+76 8 9 0
+c ((3<=(aux10 + 3*res_00002_00003 + 4*res_00002_00004))=tv=SATLiteral(77))
+-77 8 9 -42 0
+77 42 0
+77 -9 0
+77 -8 0
+77 -8 -9 0
+c (((3*res_00004_00003 + 4*res_00004_00004 + aux12)<=3)=tv=SATLiteral(78))
+-78 -17 0
+-78 -16 49 0
+-78 -16 -17 0
+78 17 -49 0
+78 16 17 0
+c ((3<=(3*res_00004_00003 + 4*res_00004_00004 + aux12))=tv=SATLiteral(79))
+-79 16 17 -52 0
+79 52 0
+79 -17 0
+79 -16 0
+79 -16 -17 0
+c (((4*res_00004_00001 + aux13 + 3*res_00003_00001)<=3)=tv=SATLiteral(80))
+-80 -10 54 0
+-80 -14 0
+-80 -14 -10 0
+80 14 -54 0
+80 14 10 0
+c ((3<=(4*res_00004_00001 + aux13 + 3*res_00003_00001))=tv=SATLiteral(81))
+-81 14 10 -57 0
+81 57 0
+81 -10 0
+81 -14 0
+81 -14 -10 0
+c (((4*res_00004_00002 + aux14 + 3*res_00003_00002)<=4)=tv=SATLiteral(82))
+-82 -11 60 0
+-82 -15 59 0
+-82 -15 -11 0
+82 11 -59 0
+82 15 -60 0
+82 15 11 0
+c ((4<=(4*res_00004_00002 + aux14 + 3*res_00003_00002))=tv=SATLiteral(83))
+-83 15 -59 0
+-83 15 11 0
+83 -11 59 0
+83 -15 0
+83 -15 -11 0
+c (((4*res_00004_00003 + aux15 + 3*res_00003_00003)<=9)=tv=SATLiteral(84))
+-84 -16 -12 67 0
+84 -67 0
+84 12 0
+84 16 0
+84 16 12 0
+c ((9<=(4*res_00004_00003 + aux15 + 3*res_00003_00003))=tv=SATLiteral(85))
+-85 -65 0
+-85 12 0
+-85 16 0
+-85 16 12 0
+85 -16 -12 65 0
+c (((4*res_00004_00004 + aux16 + 3*res_00003_00004)<=3)=tv=SATLiteral(86))
+-86 -13 69 0
+-86 -17 0
+-86 -17 -13 0
+86 17 -69 0
+86 17 13 0
+c ((3<=(4*res_00004_00004 + aux16 + 3*res_00003_00004))=tv=SATLiteral(87))
+-87 17 13 -72 0
+87 72 0
+87 -13 0
+87 -17 0
+87 -17 -13 0
+c ((SATLiteral(74) /\ SATLiteral(75))=tv=SATLiteral(26))
+26 -74 -75 0
+74 -26 0
+75 -26 0
+c ((SATLiteral(76) /\ SATLiteral(77))=tv=SATLiteral(27))
+27 -76 -77 0
+76 -27 0
+77 -27 0
+c ((10<=(aux11 + 3*res_00003_00003 + 4*res_00003_00004))=tv=SATLiteral(28))
+-28 -47 0
+-28 13 0
+-28 12 0
+-28 12 13 0
+28 -12 -13 47 0
+c ((SATLiteral(78) /\ SATLiteral(79))=tv=SATLiteral(29))
+29 -78 -79 0
+78 -29 0
+79 -29 0
+c ((SATLiteral(80) /\ SATLiteral(81))=tv=SATLiteral(30))
+30 -80 -81 0
+80 -30 0
+81 -30 0
+c ((SATLiteral(82) /\ SATLiteral(83))=tv=SATLiteral(31))
+31 -82 -83 0
+82 -31 0
+83 -31 0
+c ((SATLiteral(84) /\ SATLiteral(85))=tv=SATLiteral(32))
+32 -84 -85 0
+84 -32 0
+85 -32 0
+c ((SATLiteral(86) /\ SATLiteral(87))=tv=SATLiteral(33))
+33 -86 -87 0
+86 -33 0
+87 -33 0
+c (SATLiteral(18) -> SATLiteral(26))
+-18 26 0
+c (SATLiteral(19) -> SATLiteral(27))
+-19 27 0
+c (SATLiteral(20) -> SATLiteral(28))
+-20 28 0
+c (SATLiteral(21) -> SATLiteral(29))
+-21 29 0
+c (SATLiteral(22) -> SATLiteral(30))
+-22 30 0
+c (SATLiteral(23) -> SATLiteral(31))
+-23 31 0
+c (SATLiteral(24) -> SATLiteral(32))
+-24 32 0
+c (SATLiteral(25) -> SATLiteral(33))
+-25 33 0
+c ((res_00001_00001 + 2*res_00001_00002 - aux9)<=0)
+-3 -35 0
+-2 -34 0
+-2 -3 -37 0
+c (0<=(res_00001_00001 + 2*res_00001_00002 - aux9))
+3 35 0
+2 37 0
+2 3 34 0
+c (( - aux10 + res_00002_00001 + 2*res_00002_00002)<=0)
+-7 -40 0
+-6 -39 0
+-6 -7 -42 0
+c (0<=( - aux10 + res_00002_00001 + 2*res_00002_00002))
+7 40 0
+6 42 0
+6 7 39 0
+c (( - aux11 + res_00003_00001 + 2*res_00003_00002)<=0)
+-11 -45 0
+-10 -44 0
+-10 -11 -47 0
+c (0<=( - aux11 + res_00003_00001 + 2*res_00003_00002))
+11 45 0
+10 47 0
+10 11 44 0
+c ((res_00004_00001 + 2*res_00004_00002 - aux12)<=0)
+-15 -50 0
+-14 -49 0
+-14 -15 -52 0
+c (0<=(res_00004_00001 + 2*res_00004_00002 - aux12))
+15 50 0
+14 52 0
+14 15 49 0
+c ((res_00001_00001 - aux13 + 2*res_00002_00001)<=0)
+-6 -55 0
+-2 -54 0
+-2 -6 -57 0
+c (0<=(res_00001_00001 - aux13 + 2*res_00002_00001))
+6 55 0
+2 57 0
+2 6 54 0
+c ((res_00001_00002 - aux14 + 2*res_00002_00002)<=0)
+-7 -60 0
+-3 -59 0
+-3 -7 -62 0
+c (0<=(res_00001_00002 - aux14 + 2*res_00002_00002))
+7 60 0
+3 62 0
+3 7 59 0
+c ((res_00001_00003 - aux15 + 2*res_00002_00003)<=0)
+-8 -65 0
+-4 -64 0
+-4 -8 -67 0
+c (0<=(res_00001_00003 - aux15 + 2*res_00002_00003))
+8 65 0
+4 67 0
+4 8 64 0
+c ((res_00001_00004 - aux16 + 2*res_00002_00004)<=0)
+-9 -70 0
+-5 -69 0
+-5 -9 -72 0
+c (0<=(res_00001_00004 - aux16 + 2*res_00002_00004))
+9 70 0
+5 72 0
+5 9 69 0
