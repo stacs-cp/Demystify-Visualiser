@@ -53,6 +53,7 @@ class DemystifyVisualiser extends React.Component {
   handleBuildSudoku() {
     this.setState({ buildSudoku: true });
   }
+  
   render = () => {
     return (
       <Container fluid style={{ textAlign: "center" }}>

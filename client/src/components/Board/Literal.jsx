@@ -9,7 +9,7 @@ class Literal extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      highlighted: this.props.highlighted,
+      highlighted: false,
     };
   }
 
@@ -22,11 +22,11 @@ class Literal extends React.Component {
   }
 
   // Check whether this literal should be highlighted.
-  componentDidUpdate(prevProps) {
-    if (prevProps.highlighted !== this.props.highlighted) {
-      this.setState({ highlighted: this.props.highlighted });
-    }
-  }
+  // componentDidUpdate(prevProps) {
+  //   if (prevProps.highlighted !== this.props.highlighted) {
+  //     this.setState({ highlighted: this.props.highlighted });
+  //   }
+  // }
 
   handleClick() {
     this.props.setSelectedLiteral();
