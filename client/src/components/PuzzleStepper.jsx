@@ -20,6 +20,7 @@ import SudokuBoard from "./PuzzleBoards/SudokuBoard";
 import JobWait from "./JobWait";
 
 import * as API from "../API";
+import LoopyBoard from "./PuzzleBoards/LoopyBoard";
 
 /**
  * Main puzzle visualiser with a board on the left and explanations on the right.
@@ -75,6 +76,8 @@ class PuzzleStepper extends React.Component {
         return <SudokuBoard {...boardProps} />;
       case "sudoku.eprime":
         return <SudokuBoard {...boardProps} />;
+      case "loopy.essence":
+        return <LoopyBoard {...boardProps} />;
       // ================================
       // <-- More Cases can be added here
       // ================================

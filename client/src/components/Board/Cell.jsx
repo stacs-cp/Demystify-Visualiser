@@ -88,8 +88,10 @@ class Cell extends React.Component {
 
     if (literalBackgrounds && isSingleton) {
       return [
+        cellBackground,
         literalBackgrounds[singletonValue.toString()],
         highlightBackground,
+        
       ];
     } else if (cellBackground) {
       return [cellBackground, highlightBackground];
