@@ -1,23 +1,40 @@
 # Demystify-Visualiser
 
-This is a react-based tool that provides a visualisation of the human understandable solutions to "pen and paper" puzzles produced by the "Demystify" solver. Originally written by Matthew McIlree (https://github.com/mmcilree) as part of an Undergraduate Research Assistant Scheme project 2021. 
+This is a react-based tool that provides a visualisation of the human understandable solutions to "pen and paper" puzzles produced by the [Demystify](https://github.com/stacs-cp/demystify) solver. Originally written by [Matthew McIlree](https://github.com/mmcilree) as part of an Undergraduate Research Assistant Scheme project 2021. 
 
-## How to Run (Basic)
+## How to Run (Development)
 
 1. Ensure you have [Node >= 10.16 and npm >= 5.6](https://nodejs.org/en/) installed.
-2. Ensure you have python3/pip3 installed
-3. Clone the repository.
-4. Navigate to the `demystify-visualiser/client` folder. 
-5. Run `npm install`
-6. Run `npm start`
-7. Run `npm run backend`
-8. The web application will be available at `localhost:3000/demystify` 
 
-## How to Run (Including Live Features)
+2. Ensure you have [python3/pip3](https://realpython.com/installing-python/) installed
+
+3. Clone the repository.
+
+4. Navigate to the `demystify-visualiser/server` folder. 
+
+5. Run:
+	```bash
+   python3 -m venv venv
+   source venv/bin/activate
+   pip3 install -r requirements.txt
+   ```
+	*This creates a python [virtual environment](https://docs.python.org/3/tutorial/venv.html) to avoid installing modules globally. The environment can be exited via `deactivate`*
+	
+6. Navigate to the `demystify-visualiser/client` folder. 
+
+7. Run `npm install`
+
+8. Run `npm start`
+
+9. Run `npm run backend`
+
+10. The web application will be available at `localhost:3000/demystify` 
+
+## Including Live Features
 
 To make use of the "Run demystify live feature" some extra steps are required:
 
-1. Install conjure as described in the README for demystify (https://github.com/stacs-cp/demystify).
+1. Install conjure as described in the [README](https://github.com/stacs-cp/demystify#readme) for demystify.
 2. Install [Redis >= 6.24](https://redis.io/download)
 3. Follow the steps as above
 4. Additionally run `npm run worker` in the client folder.
@@ -33,39 +50,40 @@ Alternatively, the installation steps above (including install of conjure) can b
 
 ## Basic Usage
 
+There are currently four functionalities available for this visualiser. 
+
+### Visualise Demystify JSON output:
+
 The visualiser can take as input JSON input file produced by running Demystify with the ``--json`` option (the value of the option is the name of the json file to be produced) e.g.
 
 ```bash
 python3 demystify --eprime ./eprime/nfutoshiki.eprime --eprimeparam ./eprime/futoshiki/nfutoshiki-1.param --json futoshiki
 ```
 
-Such an output can then be selected and viewed. Alternatively preloaded examples are available for demonstration purposes, or if the additional steps were taken, demystify can be run directly from the app by uploading eprime and param files. 
+The *.eprime* files are written in the [essence prime]() constraint modelling language, and specify the puzzle rules. A specific puzzle instance is described in a *.param* file. Once computed, the output can then be selected and viewed. 
 
-## Extending the Styling Code for Further Puzzles
+### Preloaded examples:
 
-I have aimed to make the puzzle styling for this project extensible, so that it can properly style many similar puzzles to the ones already implemented. 
+Alternatively preloaded examples are available for demonstration purposes. Demystify JSON output is loaded in from the server side.
 
-The core component for puzzle display is the [`Board`](./src/components/Board/Board.jsx) component. This provides by default a basic grid/numerical display for puzzles (as can be seen for the unstyled Binairo puzzle). To create a new Puzzle style, take the following steps:
+### Sudoku Builder:
 
-1. Create a new `NewPuzzleBoard.jsx` file in the [`./src/components/PuzzleBoards`](./src/components/PuzzleBoards) directory. 
-2. Copy the code for `BinairoBoard.jsx` into this file and change the class name accordingly. 
-3. Add a case to the switch statement in the `chooseBoard()` function of the [`PuzzleStepper.jsx`](./src/components/PuzzleStepper.jsx) file.
-4. Read desired `param` values into state from the `this.props.params` object.
-5. Write functions to generate desired `Board` props from these `param` values. 
+For the "normal" Sudoku puzzle only there is an option to build a custom puzzle instance and either download it as a *.param* file or pass it to a live demystifty run.
 
-The currently supported `Board` props are as follows:
+### Run Demystify Live:
 
-- **literalBackgrounds:** An object mapping literal singleton values to background image values, so that known cells can have a custom image background. See [`TentsBoard.jsx`](./src/components/PuzzleBoards/TentsBoard.jsx) for an example.
-- **cellBorders:** A 2D array with each indexed value corresponding to the `border` css of each cell at that index in the grid. Can be used to draw arbitrary "boxes" within the borders of the grid. See [`StarBattleBoard.jsx`](./src/components/PuzzleBoards/StarBattleBoard.jsx) for an example. 
-- **cellInnerBorders:** A 2D array with each indexed value corresponding to the `border` css of an "inner box" for each cell at that index in the grid. Can be used to draw additional "boxes" in over the borders of the grid. See [`KillerBoard.jsx`](./src/components/PuzzleBoards/KillerBoard.jsx) for an example. 
-- **cellMargin:** An object containing the margin property for all cells in the grid. Can be used to space cells further apart. See [`FutoshikiBoard.jsx`](./src/components/PuzzleBoards/FutoshikiBoard.jsx) for an example. 
-- **literalSize:** An float representing the size of the smallest literal values as a percentage of the viewport width (known literals are exactly 3 times larger). See [`KillerBoard.jsx`](./src/components/PuzzleBoard/KillerBoard.jsx) for an example. 
-- **cornerNumbers**: A 2D array of objects, each with a `value` and a `style` field. For each cell this is an optional label to display, for example, a small number in the corner. See [`KillerBoard.jsx`](./src/components/PuzzleBoard/KillerBoard.jsx), or [`KakuroBoard.jsx`](./src/components/PuzzleBoards/KakuroBoard.jsx) for an example. 
-- **rightLabels:** A 2D array of strings, to be displayed as an optional label between a cell and the cell directly to its right. See [`FutoshikiBoard.jsx`](./src/components/PuzzleBoards/FutoshikiBoard.jsx) for an example. 
-- **bottomLabels:** As with right-labels, but between a cell and the cell directly below. 
-- **hiddenLiterals:** An array of literal singleton values to be hidden, e.g. as a way to hide 0s. See [`KakuroBoard.jsx`](./src/components/PuzzleBoards/KakuroBoard.jsx) for an example. 
-- **colsums:** An array representing an additional row to be displayed at the top of the grid (useful for puzzles with column sums). See [`TentsBoard.jsx`](./src/components/PuzzleBoards/TentsBoard.jsx) for an example.
-- **rowsums:** An array representing an additional column to be displayed at the left of the grid (useful for puzzles with row sums). See [`TentsBoard.jsx`](./src/components/PuzzleBoards/TentsBoard.jsx) for an example.
+Demystify is installed as a pip package as part of the flask server and so can be run on the server without the need for a local installation. Essence input files can be uploaded or selected and various options can be specified:
+
+- **Default mode:** Demystify will make all explanation/solving steps itself and present the solved puzzle / explanation to the user.
+- **Choose MUSes manually:** When there are multiple options for a particular MUS choice (explanation constraints) the user can choose which is to be used for the next step.
+- **Force literal choice:** At each step, the user can force the solver to consider a particular literal (solved puzzle value).
+- **Cascade Algorithm (Faster):** The MUS finding algorithm descibed in [this paper](http://ceur-ws.org/Vol-2894/short8.pdf)  
+- **Cascade Algorithm (More MUSes):** Tweaked version of the above algorithm to focus on finding more options for non-trivial explanation steps. This runs more slowly.
+- **FORQES Algorithm:** An experimental MUS finder using an adapated version of the FORQES algorithm described in [this paper](https://alexeyignatiev.github.io/assets/pdf/iplms-cp15-preprint.pdf)
+
+## Development Documentation
+
+Some further notes on the visualiser implementation and a [guide for possible extension](./doc/Styling_Puzzles.md) are available in the doc folder.
 
 ## Deploying to a server
 
