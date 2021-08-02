@@ -1,0 +1,726 @@
+MINION 3
+**VARIABLES**
+DISCRETE field_00001_00001 #
+{1..4}
+DISCRETE field_00001_00002 #
+{1..4}
+DISCRETE field_00001_00003 #
+{1..4}
+DISCRETE field_00001_00004 #
+{1..4}
+DISCRETE field_00002_00001 #
+{1..4}
+DISCRETE field_00002_00002 #
+{1..4}
+DISCRETE field_00002_00003 #
+{1..4}
+DISCRETE field_00002_00004 #
+{1..4}
+DISCRETE field_00003_00001 #
+{1..4}
+DISCRETE field_00003_00002 #
+{1..4}
+DISCRETE field_00003_00003 #
+{1..4}
+DISCRETE field_00003_00004 #
+{1..4}
+DISCRETE field_00004_00001 #
+{1..4}
+DISCRETE field_00004_00002 #
+{1..4}
+DISCRETE field_00004_00003 #
+{1..4}
+DISCRETE field_00004_00004 #
+{1..4}
+BOOL row_alldiff_00001 #
+BOOL row_alldiff_00002 #
+BOOL row_alldiff_00003 #
+BOOL row_alldiff_00004 #
+BOOL col_alldiff_00001 #
+BOOL col_alldiff_00002 #
+BOOL col_alldiff_00003 #
+BOOL col_alldiff_00004 #
+BOOL clues_left_on_00001_00001 #
+BOOL clues_left_on_00001_00002 #
+BOOL clues_left_on_00001_00003 #
+BOOL clues_left_on_00001_00004 #
+BOOL clues_left_on_00002_00001 #
+BOOL clues_left_on_00002_00002 #
+BOOL clues_left_on_00002_00003 #
+BOOL clues_left_on_00002_00004 #
+BOOL clues_left_on_00003_00001 #
+BOOL clues_left_on_00003_00002 #
+BOOL clues_left_on_00003_00003 #
+BOOL clues_left_on_00003_00004 #
+BOOL clues_left_on_00004_00001 #
+BOOL clues_left_on_00004_00002 #
+BOOL clues_left_on_00004_00003 #
+BOOL clues_left_on_00004_00004 #
+DISCRETE max_left_00001_00001_00000 #
+{0..4}
+DISCRETE max_left_00001_00001_00001 #
+{0..4}
+DISCRETE max_left_00001_00001_00002 #
+{0..4}
+DISCRETE max_left_00001_00001_00003 #
+{0..4}
+DISCRETE max_left_00001_00001_00004 #
+{0..4}
+DISCRETE max_left_00001_00002_00000 #
+{0..4}
+DISCRETE max_left_00001_00002_00001 #
+{0..4}
+DISCRETE max_left_00001_00002_00002 #
+{0..4}
+DISCRETE max_left_00001_00002_00003 #
+{0..4}
+DISCRETE max_left_00001_00002_00004 #
+{0..4}
+DISCRETE max_left_00001_00003_00000 #
+{0..4}
+DISCRETE max_left_00001_00003_00001 #
+{0..4}
+DISCRETE max_left_00001_00003_00002 #
+{0..4}
+DISCRETE max_left_00001_00003_00003 #
+{0..4}
+DISCRETE max_left_00001_00003_00004 #
+{0..4}
+DISCRETE max_left_00001_00004_00000 #
+{0..4}
+DISCRETE max_left_00001_00004_00001 #
+{0..4}
+DISCRETE max_left_00001_00004_00002 #
+{0..4}
+DISCRETE max_left_00001_00004_00003 #
+{0..4}
+DISCRETE max_left_00001_00004_00004 #
+{0..4}
+DISCRETE max_left_00002_00001_00000 #
+{0..4}
+DISCRETE max_left_00002_00001_00001 #
+{0..4}
+DISCRETE max_left_00002_00001_00002 #
+{0..4}
+DISCRETE max_left_00002_00001_00003 #
+{0..4}
+DISCRETE max_left_00002_00001_00004 #
+{0..4}
+DISCRETE max_left_00002_00002_00000 #
+{0..4}
+DISCRETE max_left_00002_00002_00001 #
+{0..4}
+DISCRETE max_left_00002_00002_00002 #
+{0..4}
+DISCRETE max_left_00002_00002_00003 #
+{0..4}
+DISCRETE max_left_00002_00002_00004 #
+{0..4}
+DISCRETE max_left_00002_00003_00000 #
+{0..4}
+DISCRETE max_left_00002_00003_00001 #
+{0..4}
+DISCRETE max_left_00002_00003_00002 #
+{0..4}
+DISCRETE max_left_00002_00003_00003 #
+{0..4}
+DISCRETE max_left_00002_00003_00004 #
+{0..4}
+DISCRETE max_left_00002_00004_00000 #
+{0..4}
+DISCRETE max_left_00002_00004_00001 #
+{0..4}
+DISCRETE max_left_00002_00004_00002 #
+{0..4}
+DISCRETE max_left_00002_00004_00003 #
+{0..4}
+DISCRETE max_left_00002_00004_00004 #
+{0..4}
+DISCRETE max_left_00003_00001_00000 #
+{0..4}
+DISCRETE max_left_00003_00001_00001 #
+{0..4}
+DISCRETE max_left_00003_00001_00002 #
+{0..4}
+DISCRETE max_left_00003_00001_00003 #
+{0..4}
+DISCRETE max_left_00003_00001_00004 #
+{0..4}
+DISCRETE max_left_00003_00002_00000 #
+{0..4}
+DISCRETE max_left_00003_00002_00001 #
+{0..4}
+DISCRETE max_left_00003_00002_00002 #
+{0..4}
+DISCRETE max_left_00003_00002_00003 #
+{0..4}
+DISCRETE max_left_00003_00002_00004 #
+{0..4}
+DISCRETE max_left_00003_00003_00000 #
+{0..4}
+DISCRETE max_left_00003_00003_00001 #
+{0..4}
+DISCRETE max_left_00003_00003_00002 #
+{0..4}
+DISCRETE max_left_00003_00003_00003 #
+{0..4}
+DISCRETE max_left_00003_00003_00004 #
+{0..4}
+DISCRETE max_left_00003_00004_00000 #
+{0..4}
+DISCRETE max_left_00003_00004_00001 #
+{0..4}
+DISCRETE max_left_00003_00004_00002 #
+{0..4}
+DISCRETE max_left_00003_00004_00003 #
+{0..4}
+DISCRETE max_left_00003_00004_00004 #
+{0..4}
+DISCRETE max_left_00004_00001_00000 #
+{0..4}
+DISCRETE max_left_00004_00001_00001 #
+{0..4}
+DISCRETE max_left_00004_00001_00002 #
+{0..4}
+DISCRETE max_left_00004_00001_00003 #
+{0..4}
+DISCRETE max_left_00004_00001_00004 #
+{0..4}
+DISCRETE max_left_00004_00002_00000 #
+{0..4}
+DISCRETE max_left_00004_00002_00001 #
+{0..4}
+DISCRETE max_left_00004_00002_00002 #
+{0..4}
+DISCRETE max_left_00004_00002_00003 #
+{0..4}
+DISCRETE max_left_00004_00002_00004 #
+{0..4}
+DISCRETE max_left_00004_00003_00000 #
+{0..4}
+DISCRETE max_left_00004_00003_00001 #
+{0..4}
+DISCRETE max_left_00004_00003_00002 #
+{0..4}
+DISCRETE max_left_00004_00003_00003 #
+{0..4}
+DISCRETE max_left_00004_00003_00004 #
+{0..4}
+DISCRETE max_left_00004_00004_00000 #
+{0..4}
+DISCRETE max_left_00004_00004_00001 #
+{0..4}
+DISCRETE max_left_00004_00004_00002 #
+{0..4}
+DISCRETE max_left_00004_00004_00003 #
+{0..4}
+DISCRETE max_left_00004_00004_00004 #
+{0..4}
+DISCRETE sky_left_00001_00001 #
+{1..4}
+DISCRETE sky_left_00001_00002 #
+{1..4}
+DISCRETE sky_left_00001_00003 #
+{1..4}
+DISCRETE sky_left_00001_00004 #
+{1..4}
+DISCRETE sky_left_00002_00001 #
+{1..4}
+DISCRETE sky_left_00002_00002 #
+{1..4}
+DISCRETE sky_left_00002_00003 #
+{1..4}
+DISCRETE sky_left_00002_00004 #
+{1..4}
+DISCRETE sky_left_00003_00001 #
+{1..4}
+DISCRETE sky_left_00003_00002 #
+{1..4}
+DISCRETE sky_left_00003_00003 #
+{1..4}
+DISCRETE sky_left_00003_00004 #
+{1..4}
+DISCRETE sky_left_00004_00001 #
+{1..4}
+DISCRETE sky_left_00004_00002 #
+{1..4}
+DISCRETE sky_left_00004_00003 #
+{1..4}
+DISCRETE sky_left_00004_00004 #
+{1..4}
+DISCRETE variant_fields_00001_00001_00001 #
+{1..4}
+DISCRETE variant_fields_00001_00001_00002 #
+{1..4}
+DISCRETE variant_fields_00001_00001_00003 #
+{1..4}
+DISCRETE variant_fields_00001_00001_00004 #
+{1..4}
+DISCRETE variant_fields_00001_00002_00001 #
+{1..4}
+DISCRETE variant_fields_00001_00002_00002 #
+{1..4}
+DISCRETE variant_fields_00001_00002_00003 #
+{1..4}
+DISCRETE variant_fields_00001_00002_00004 #
+{1..4}
+DISCRETE variant_fields_00001_00003_00001 #
+{1..4}
+DISCRETE variant_fields_00001_00003_00002 #
+{1..4}
+DISCRETE variant_fields_00001_00003_00003 #
+{1..4}
+DISCRETE variant_fields_00001_00003_00004 #
+{1..4}
+DISCRETE variant_fields_00001_00004_00001 #
+{1..4}
+DISCRETE variant_fields_00001_00004_00002 #
+{1..4}
+DISCRETE variant_fields_00001_00004_00003 #
+{1..4}
+DISCRETE variant_fields_00001_00004_00004 #
+{1..4}
+DISCRETE variant_fields_00002_00001_00001 #
+{1..4}
+DISCRETE variant_fields_00002_00001_00002 #
+{1..4}
+DISCRETE variant_fields_00002_00001_00003 #
+{1..4}
+DISCRETE variant_fields_00002_00001_00004 #
+{1..4}
+DISCRETE variant_fields_00002_00002_00001 #
+{1..4}
+DISCRETE variant_fields_00002_00002_00002 #
+{1..4}
+DISCRETE variant_fields_00002_00002_00003 #
+{1..4}
+DISCRETE variant_fields_00002_00002_00004 #
+{1..4}
+DISCRETE variant_fields_00002_00003_00001 #
+{1..4}
+DISCRETE variant_fields_00002_00003_00002 #
+{1..4}
+DISCRETE variant_fields_00002_00003_00003 #
+{1..4}
+DISCRETE variant_fields_00002_00003_00004 #
+{1..4}
+DISCRETE variant_fields_00002_00004_00001 #
+{1..4}
+DISCRETE variant_fields_00002_00004_00002 #
+{1..4}
+DISCRETE variant_fields_00002_00004_00003 #
+{1..4}
+DISCRETE variant_fields_00002_00004_00004 #
+{1..4}
+DISCRETE variant_fields_00003_00001_00001 #
+{1..4}
+DISCRETE variant_fields_00003_00001_00002 #
+{1..4}
+DISCRETE variant_fields_00003_00001_00003 #
+{1..4}
+DISCRETE variant_fields_00003_00001_00004 #
+{1..4}
+DISCRETE variant_fields_00003_00002_00001 #
+{1..4}
+DISCRETE variant_fields_00003_00002_00002 #
+{1..4}
+DISCRETE variant_fields_00003_00002_00003 #
+{1..4}
+DISCRETE variant_fields_00003_00002_00004 #
+{1..4}
+DISCRETE variant_fields_00003_00003_00001 #
+{1..4}
+DISCRETE variant_fields_00003_00003_00002 #
+{1..4}
+DISCRETE variant_fields_00003_00003_00003 #
+{1..4}
+DISCRETE variant_fields_00003_00003_00004 #
+{1..4}
+DISCRETE variant_fields_00003_00004_00001 #
+{1..4}
+DISCRETE variant_fields_00003_00004_00002 #
+{1..4}
+DISCRETE variant_fields_00003_00004_00003 #
+{1..4}
+DISCRETE variant_fields_00003_00004_00004 #
+{1..4}
+DISCRETE variant_fields_00004_00001_00001 #
+{1..4}
+DISCRETE variant_fields_00004_00001_00002 #
+{1..4}
+DISCRETE variant_fields_00004_00001_00003 #
+{1..4}
+DISCRETE variant_fields_00004_00001_00004 #
+{1..4}
+DISCRETE variant_fields_00004_00002_00001 #
+{1..4}
+DISCRETE variant_fields_00004_00002_00002 #
+{1..4}
+DISCRETE variant_fields_00004_00002_00003 #
+{1..4}
+DISCRETE variant_fields_00004_00002_00004 #
+{1..4}
+DISCRETE variant_fields_00004_00003_00001 #
+{1..4}
+DISCRETE variant_fields_00004_00003_00002 #
+{1..4}
+DISCRETE variant_fields_00004_00003_00003 #
+{1..4}
+DISCRETE variant_fields_00004_00003_00004 #
+{1..4}
+DISCRETE variant_fields_00004_00004_00001 #
+{1..4}
+DISCRETE variant_fields_00004_00004_00002 #
+{1..4}
+DISCRETE variant_fields_00004_00004_00003 #
+{1..4}
+DISCRETE variant_fields_00004_00004_00004 #
+{1..4}
+BOOL aux0 #(max_left_00001_00001_00000<max_left_00001_00001_00001)
+BOOL aux1 #(max_left_00001_00001_00001<max_left_00001_00001_00002)
+BOOL aux2 #(max_left_00001_00001_00002<max_left_00001_00001_00003)
+BOOL aux3 #(max_left_00001_00001_00003<max_left_00001_00001_00004)
+BOOL aux4 #(max_left_00001_00002_00000<max_left_00001_00002_00001)
+BOOL aux5 #(max_left_00001_00002_00001<max_left_00001_00002_00002)
+BOOL aux6 #(max_left_00001_00002_00002<max_left_00001_00002_00003)
+BOOL aux7 #(max_left_00001_00002_00003<max_left_00001_00002_00004)
+BOOL aux8 #(max_left_00001_00003_00000<max_left_00001_00003_00001)
+BOOL aux9 #(max_left_00001_00003_00001<max_left_00001_00003_00002)
+BOOL aux10 #(max_left_00001_00003_00002<max_left_00001_00003_00003)
+BOOL aux11 #(max_left_00001_00003_00003<max_left_00001_00003_00004)
+BOOL aux12 #(max_left_00001_00004_00000<max_left_00001_00004_00001)
+BOOL aux13 #(max_left_00001_00004_00001<max_left_00001_00004_00002)
+BOOL aux14 #(max_left_00001_00004_00002<max_left_00001_00004_00003)
+BOOL aux15 #(max_left_00001_00004_00003<max_left_00001_00004_00004)
+BOOL aux16 #(max_left_00002_00001_00000<max_left_00002_00001_00001)
+BOOL aux17 #(max_left_00002_00001_00001<max_left_00002_00001_00002)
+BOOL aux18 #(max_left_00002_00001_00002<max_left_00002_00001_00003)
+BOOL aux19 #(max_left_00002_00001_00003<max_left_00002_00001_00004)
+BOOL aux20 #(max_left_00002_00002_00000<max_left_00002_00002_00001)
+BOOL aux21 #(max_left_00002_00002_00001<max_left_00002_00002_00002)
+BOOL aux22 #(max_left_00002_00002_00002<max_left_00002_00002_00003)
+BOOL aux23 #(max_left_00002_00002_00003<max_left_00002_00002_00004)
+BOOL aux24 #(max_left_00002_00003_00000<max_left_00002_00003_00001)
+BOOL aux25 #(max_left_00002_00003_00001<max_left_00002_00003_00002)
+BOOL aux26 #(max_left_00002_00003_00002<max_left_00002_00003_00003)
+BOOL aux27 #(max_left_00002_00003_00003<max_left_00002_00003_00004)
+BOOL aux28 #(max_left_00002_00004_00000<max_left_00002_00004_00001)
+BOOL aux29 #(max_left_00002_00004_00001<max_left_00002_00004_00002)
+BOOL aux30 #(max_left_00002_00004_00002<max_left_00002_00004_00003)
+BOOL aux31 #(max_left_00002_00004_00003<max_left_00002_00004_00004)
+BOOL aux32 #(max_left_00003_00001_00000<max_left_00003_00001_00001)
+BOOL aux33 #(max_left_00003_00001_00001<max_left_00003_00001_00002)
+BOOL aux34 #(max_left_00003_00001_00002<max_left_00003_00001_00003)
+BOOL aux35 #(max_left_00003_00001_00003<max_left_00003_00001_00004)
+BOOL aux36 #(max_left_00003_00002_00000<max_left_00003_00002_00001)
+BOOL aux37 #(max_left_00003_00002_00001<max_left_00003_00002_00002)
+BOOL aux38 #(max_left_00003_00002_00002<max_left_00003_00002_00003)
+BOOL aux39 #(max_left_00003_00002_00003<max_left_00003_00002_00004)
+BOOL aux40 #(max_left_00003_00003_00000<max_left_00003_00003_00001)
+BOOL aux41 #(max_left_00003_00003_00001<max_left_00003_00003_00002)
+BOOL aux42 #(max_left_00003_00003_00002<max_left_00003_00003_00003)
+BOOL aux43 #(max_left_00003_00003_00003<max_left_00003_00003_00004)
+BOOL aux44 #(max_left_00003_00004_00000<max_left_00003_00004_00001)
+BOOL aux45 #(max_left_00003_00004_00001<max_left_00003_00004_00002)
+BOOL aux46 #(max_left_00003_00004_00002<max_left_00003_00004_00003)
+BOOL aux47 #(max_left_00003_00004_00003<max_left_00003_00004_00004)
+BOOL aux48 #(max_left_00004_00001_00000<max_left_00004_00001_00001)
+BOOL aux49 #(max_left_00004_00001_00001<max_left_00004_00001_00002)
+BOOL aux50 #(max_left_00004_00001_00002<max_left_00004_00001_00003)
+BOOL aux51 #(max_left_00004_00001_00003<max_left_00004_00001_00004)
+BOOL aux52 #(max_left_00004_00002_00000<max_left_00004_00002_00001)
+BOOL aux53 #(max_left_00004_00002_00001<max_left_00004_00002_00002)
+BOOL aux54 #(max_left_00004_00002_00002<max_left_00004_00002_00003)
+BOOL aux55 #(max_left_00004_00002_00003<max_left_00004_00002_00004)
+BOOL aux56 #(max_left_00004_00003_00000<max_left_00004_00003_00001)
+BOOL aux57 #(max_left_00004_00003_00001<max_left_00004_00003_00002)
+BOOL aux58 #(max_left_00004_00003_00002<max_left_00004_00003_00003)
+BOOL aux59 #(max_left_00004_00003_00003<max_left_00004_00003_00004)
+BOOL aux60 #(max_left_00004_00004_00000<max_left_00004_00004_00001)
+BOOL aux61 #(max_left_00004_00004_00001<max_left_00004_00004_00002)
+BOOL aux62 #(max_left_00004_00004_00002<max_left_00004_00004_00003)
+BOOL aux63 #(max_left_00004_00004_00003<max_left_00004_00004_00004)
+**TUPLELIST**
+GRID 4 4
+0 0 0 0 
+0 0 0 0 
+0 0 0 0 
+0 0 0 0 
+**VARIABLES**
+ALIAS GRID[4,4]=[[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]]
+**TUPLELIST**
+CLUES 4 4
+1 2 2 2 
+1 2 3 3 
+4 3 1 2 
+3 3 1 2 
+**VARIABLES**
+ALIAS CLUES[4,4]=[[1, 2, 2, 2], [1, 2, 3, 3], [4, 3, 1, 2], [3, 3, 1, 2]]
+**SEARCH**
+PRINT[[field_00001_00001],[field_00001_00002],[field_00001_00003],[field_00001_00004],[field_00002_00001],[field_00002_00002],[field_00002_00003],[field_00002_00004],[field_00003_00001],[field_00003_00002],[field_00003_00003],[field_00003_00004],[field_00004_00001],[field_00004_00002],[field_00004_00003],[field_00004_00004],[row_alldiff_00001],[row_alldiff_00002],[row_alldiff_00003],[row_alldiff_00004],[col_alldiff_00001],[col_alldiff_00002],[col_alldiff_00003],[col_alldiff_00004],[clues_left_on_00001_00001],[clues_left_on_00001_00002],[clues_left_on_00001_00003],[clues_left_on_00001_00004],[clues_left_on_00002_00001],[clues_left_on_00002_00002],[clues_left_on_00002_00003],[clues_left_on_00002_00004],[clues_left_on_00003_00001],[clues_left_on_00003_00002],[clues_left_on_00003_00003],[clues_left_on_00003_00004],[clues_left_on_00004_00001],[clues_left_on_00004_00002],[clues_left_on_00004_00003],[clues_left_on_00004_00004],[max_left_00001_00001_00000],[max_left_00001_00001_00001],[max_left_00001_00001_00002],[max_left_00001_00001_00003],[max_left_00001_00001_00004],[max_left_00001_00002_00000],[max_left_00001_00002_00001],[max_left_00001_00002_00002],[max_left_00001_00002_00003],[max_left_00001_00002_00004],[max_left_00001_00003_00000],[max_left_00001_00003_00001],[max_left_00001_00003_00002],[max_left_00001_00003_00003],[max_left_00001_00003_00004],[max_left_00001_00004_00000],[max_left_00001_00004_00001],[max_left_00001_00004_00002],[max_left_00001_00004_00003],[max_left_00001_00004_00004],[max_left_00002_00001_00000],[max_left_00002_00001_00001],[max_left_00002_00001_00002],[max_left_00002_00001_00003],[max_left_00002_00001_00004],[max_left_00002_00002_00000],[max_left_00002_00002_00001],[max_left_00002_00002_00002],[max_left_00002_00002_00003],[max_left_00002_00002_00004],[max_left_00002_00003_00000],[max_left_00002_00003_00001],[max_left_00002_00003_00002],[max_left_00002_00003_00003],[max_left_00002_00003_00004],[max_left_00002_00004_00000],[max_left_00002_00004_00001],[max_left_00002_00004_00002],[max_left_00002_00004_00003],[max_left_00002_00004_00004],[max_left_00003_00001_00000],[max_left_00003_00001_00001],[max_left_00003_00001_00002],[max_left_00003_00001_00003],[max_left_00003_00001_00004],[max_left_00003_00002_00000],[max_left_00003_00002_00001],[max_left_00003_00002_00002],[max_left_00003_00002_00003],[max_left_00003_00002_00004],[max_left_00003_00003_00000],[max_left_00003_00003_00001],[max_left_00003_00003_00002],[max_left_00003_00003_00003],[max_left_00003_00003_00004],[max_left_00003_00004_00000],[max_left_00003_00004_00001],[max_left_00003_00004_00002],[max_left_00003_00004_00003],[max_left_00003_00004_00004],[max_left_00004_00001_00000],[max_left_00004_00001_00001],[max_left_00004_00001_00002],[max_left_00004_00001_00003],[max_left_00004_00001_00004],[max_left_00004_00002_00000],[max_left_00004_00002_00001],[max_left_00004_00002_00002],[max_left_00004_00002_00003],[max_left_00004_00002_00004],[max_left_00004_00003_00000],[max_left_00004_00003_00001],[max_left_00004_00003_00002],[max_left_00004_00003_00003],[max_left_00004_00003_00004],[max_left_00004_00004_00000],[max_left_00004_00004_00001],[max_left_00004_00004_00002],[max_left_00004_00004_00003],[max_left_00004_00004_00004],[sky_left_00001_00001],[sky_left_00001_00002],[sky_left_00001_00003],[sky_left_00001_00004],[sky_left_00002_00001],[sky_left_00002_00002],[sky_left_00002_00003],[sky_left_00002_00004],[sky_left_00003_00001],[sky_left_00003_00002],[sky_left_00003_00003],[sky_left_00003_00004],[sky_left_00004_00001],[sky_left_00004_00002],[sky_left_00004_00003],[sky_left_00004_00004],[variant_fields_00001_00001_00001],[variant_fields_00001_00001_00002],[variant_fields_00001_00001_00003],[variant_fields_00001_00001_00004],[variant_fields_00001_00002_00001],[variant_fields_00001_00002_00002],[variant_fields_00001_00002_00003],[variant_fields_00001_00002_00004],[variant_fields_00001_00003_00001],[variant_fields_00001_00003_00002],[variant_fields_00001_00003_00003],[variant_fields_00001_00003_00004],[variant_fields_00001_00004_00001],[variant_fields_00001_00004_00002],[variant_fields_00001_00004_00003],[variant_fields_00001_00004_00004],[variant_fields_00002_00001_00001],[variant_fields_00002_00001_00002],[variant_fields_00002_00001_00003],[variant_fields_00002_00001_00004],[variant_fields_00002_00002_00001],[variant_fields_00002_00002_00002],[variant_fields_00002_00002_00003],[variant_fields_00002_00002_00004],[variant_fields_00002_00003_00001],[variant_fields_00002_00003_00002],[variant_fields_00002_00003_00003],[variant_fields_00002_00003_00004],[variant_fields_00002_00004_00001],[variant_fields_00002_00004_00002],[variant_fields_00002_00004_00003],[variant_fields_00002_00004_00004],[variant_fields_00003_00001_00001],[variant_fields_00003_00001_00002],[variant_fields_00003_00001_00003],[variant_fields_00003_00001_00004],[variant_fields_00003_00002_00001],[variant_fields_00003_00002_00002],[variant_fields_00003_00002_00003],[variant_fields_00003_00002_00004],[variant_fields_00003_00003_00001],[variant_fields_00003_00003_00002],[variant_fields_00003_00003_00003],[variant_fields_00003_00003_00004],[variant_fields_00003_00004_00001],[variant_fields_00003_00004_00002],[variant_fields_00003_00004_00003],[variant_fields_00003_00004_00004],[variant_fields_00004_00001_00001],[variant_fields_00004_00001_00002],[variant_fields_00004_00001_00003],[variant_fields_00004_00001_00004],[variant_fields_00004_00002_00001],[variant_fields_00004_00002_00002],[variant_fields_00004_00002_00003],[variant_fields_00004_00002_00004],[variant_fields_00004_00003_00001],[variant_fields_00004_00003_00002],[variant_fields_00004_00003_00003],[variant_fields_00004_00003_00004],[variant_fields_00004_00004_00001],[variant_fields_00004_00004_00002],[variant_fields_00004_00004_00003],[variant_fields_00004_00004_00004]]
+**CONSTRAINTS**
+reify(ineq(max_left_00001_00001_00000, max_left_00001_00001_00001, -1), aux0)
+reify(ineq(max_left_00001_00001_00001, max_left_00001_00001_00002, -1), aux1)
+reify(ineq(max_left_00001_00001_00002, max_left_00001_00001_00003, -1), aux2)
+reify(ineq(max_left_00001_00001_00003, max_left_00001_00001_00004, -1), aux3)
+reify(ineq(max_left_00001_00002_00000, max_left_00001_00002_00001, -1), aux4)
+reify(ineq(max_left_00001_00002_00001, max_left_00001_00002_00002, -1), aux5)
+reify(ineq(max_left_00001_00002_00002, max_left_00001_00002_00003, -1), aux6)
+reify(ineq(max_left_00001_00002_00003, max_left_00001_00002_00004, -1), aux7)
+reify(ineq(max_left_00001_00003_00000, max_left_00001_00003_00001, -1), aux8)
+reify(ineq(max_left_00001_00003_00001, max_left_00001_00003_00002, -1), aux9)
+reify(ineq(max_left_00001_00003_00002, max_left_00001_00003_00003, -1), aux10)
+reify(ineq(max_left_00001_00003_00003, max_left_00001_00003_00004, -1), aux11)
+reify(ineq(max_left_00001_00004_00000, max_left_00001_00004_00001, -1), aux12)
+reify(ineq(max_left_00001_00004_00001, max_left_00001_00004_00002, -1), aux13)
+reify(ineq(max_left_00001_00004_00002, max_left_00001_00004_00003, -1), aux14)
+reify(ineq(max_left_00001_00004_00003, max_left_00001_00004_00004, -1), aux15)
+reify(ineq(max_left_00002_00001_00000, max_left_00002_00001_00001, -1), aux16)
+reify(ineq(max_left_00002_00001_00001, max_left_00002_00001_00002, -1), aux17)
+reify(ineq(max_left_00002_00001_00002, max_left_00002_00001_00003, -1), aux18)
+reify(ineq(max_left_00002_00001_00003, max_left_00002_00001_00004, -1), aux19)
+reify(ineq(max_left_00002_00002_00000, max_left_00002_00002_00001, -1), aux20)
+reify(ineq(max_left_00002_00002_00001, max_left_00002_00002_00002, -1), aux21)
+reify(ineq(max_left_00002_00002_00002, max_left_00002_00002_00003, -1), aux22)
+reify(ineq(max_left_00002_00002_00003, max_left_00002_00002_00004, -1), aux23)
+reify(ineq(max_left_00002_00003_00000, max_left_00002_00003_00001, -1), aux24)
+reify(ineq(max_left_00002_00003_00001, max_left_00002_00003_00002, -1), aux25)
+reify(ineq(max_left_00002_00003_00002, max_left_00002_00003_00003, -1), aux26)
+reify(ineq(max_left_00002_00003_00003, max_left_00002_00003_00004, -1), aux27)
+reify(ineq(max_left_00002_00004_00000, max_left_00002_00004_00001, -1), aux28)
+reify(ineq(max_left_00002_00004_00001, max_left_00002_00004_00002, -1), aux29)
+reify(ineq(max_left_00002_00004_00002, max_left_00002_00004_00003, -1), aux30)
+reify(ineq(max_left_00002_00004_00003, max_left_00002_00004_00004, -1), aux31)
+reify(ineq(max_left_00003_00001_00000, max_left_00003_00001_00001, -1), aux32)
+reify(ineq(max_left_00003_00001_00001, max_left_00003_00001_00002, -1), aux33)
+reify(ineq(max_left_00003_00001_00002, max_left_00003_00001_00003, -1), aux34)
+reify(ineq(max_left_00003_00001_00003, max_left_00003_00001_00004, -1), aux35)
+reify(ineq(max_left_00003_00002_00000, max_left_00003_00002_00001, -1), aux36)
+reify(ineq(max_left_00003_00002_00001, max_left_00003_00002_00002, -1), aux37)
+reify(ineq(max_left_00003_00002_00002, max_left_00003_00002_00003, -1), aux38)
+reify(ineq(max_left_00003_00002_00003, max_left_00003_00002_00004, -1), aux39)
+reify(ineq(max_left_00003_00003_00000, max_left_00003_00003_00001, -1), aux40)
+reify(ineq(max_left_00003_00003_00001, max_left_00003_00003_00002, -1), aux41)
+reify(ineq(max_left_00003_00003_00002, max_left_00003_00003_00003, -1), aux42)
+reify(ineq(max_left_00003_00003_00003, max_left_00003_00003_00004, -1), aux43)
+reify(ineq(max_left_00003_00004_00000, max_left_00003_00004_00001, -1), aux44)
+reify(ineq(max_left_00003_00004_00001, max_left_00003_00004_00002, -1), aux45)
+reify(ineq(max_left_00003_00004_00002, max_left_00003_00004_00003, -1), aux46)
+reify(ineq(max_left_00003_00004_00003, max_left_00003_00004_00004, -1), aux47)
+reify(ineq(max_left_00004_00001_00000, max_left_00004_00001_00001, -1), aux48)
+reify(ineq(max_left_00004_00001_00001, max_left_00004_00001_00002, -1), aux49)
+reify(ineq(max_left_00004_00001_00002, max_left_00004_00001_00003, -1), aux50)
+reify(ineq(max_left_00004_00001_00003, max_left_00004_00001_00004, -1), aux51)
+reify(ineq(max_left_00004_00002_00000, max_left_00004_00002_00001, -1), aux52)
+reify(ineq(max_left_00004_00002_00001, max_left_00004_00002_00002, -1), aux53)
+reify(ineq(max_left_00004_00002_00002, max_left_00004_00002_00003, -1), aux54)
+reify(ineq(max_left_00004_00002_00003, max_left_00004_00002_00004, -1), aux55)
+reify(ineq(max_left_00004_00003_00000, max_left_00004_00003_00001, -1), aux56)
+reify(ineq(max_left_00004_00003_00001, max_left_00004_00003_00002, -1), aux57)
+reify(ineq(max_left_00004_00003_00002, max_left_00004_00003_00003, -1), aux58)
+reify(ineq(max_left_00004_00003_00003, max_left_00004_00003_00004, -1), aux59)
+reify(ineq(max_left_00004_00004_00000, max_left_00004_00004_00001, -1), aux60)
+reify(ineq(max_left_00004_00004_00001, max_left_00004_00004_00002, -1), aux61)
+reify(ineq(max_left_00004_00004_00002, max_left_00004_00004_00003, -1), aux62)
+reify(ineq(max_left_00004_00004_00003, max_left_00004_00004_00004, -1), aux63)
+reifyimply(gacalldiff([field_00001_00001, field_00001_00002, field_00001_00003, field_00001_00004]), row_alldiff_00001)
+reifyimply(gacalldiff([field_00002_00001, field_00002_00002, field_00002_00003, field_00002_00004]), row_alldiff_00002)
+reifyimply(gacalldiff([field_00003_00001, field_00003_00002, field_00003_00003, field_00003_00004]), row_alldiff_00003)
+reifyimply(gacalldiff([field_00004_00001, field_00004_00002, field_00004_00003, field_00004_00004]), row_alldiff_00004)
+reifyimply(gacalldiff([field_00003_00001, field_00004_00001, field_00001_00001, field_00002_00001]), col_alldiff_00001)
+reifyimply(gacalldiff([field_00003_00002, field_00004_00002, field_00001_00002, field_00002_00002]), col_alldiff_00002)
+reifyimply(gacalldiff([field_00003_00003, field_00004_00003, field_00001_00003, field_00002_00003]), col_alldiff_00003)
+reifyimply(gacalldiff([field_00003_00004, field_00004_00004, field_00001_00004, field_00002_00004]), col_alldiff_00004)
+gaceq(field_00004_00001,variant_fields_00004_00001_00001)
+gaceq(variant_fields_00003_00001_00001,field_00001_00004)
+gaceq(variant_fields_00001_00001_00001,field_00001_00001)
+gaceq(variant_fields_00002_00001_00001,field_00001_00001)
+gaceq(field_00003_00001,variant_fields_00004_00001_00002)
+gaceq(variant_fields_00003_00001_00002,field_00001_00003)
+gaceq(variant_fields_00001_00001_00002,field_00001_00002)
+gaceq(variant_fields_00002_00001_00002,field_00002_00001)
+gaceq(field_00002_00001,variant_fields_00004_00001_00003)
+gaceq(variant_fields_00003_00001_00003,field_00001_00002)
+gaceq(variant_fields_00001_00001_00003,field_00001_00003)
+gaceq(variant_fields_00002_00001_00003,field_00003_00001)
+gaceq(field_00001_00001,variant_fields_00004_00001_00004)
+gaceq(variant_fields_00003_00001_00004,field_00001_00001)
+gaceq(variant_fields_00001_00001_00004,field_00001_00004)
+gaceq(variant_fields_00002_00001_00004,field_00004_00001)
+gaceq(variant_fields_00004_00002_00001,field_00004_00002)
+gaceq(variant_fields_00003_00002_00001,field_00002_00004)
+gaceq(variant_fields_00001_00002_00001,field_00002_00001)
+gaceq(variant_fields_00002_00002_00001,field_00001_00002)
+gaceq(field_00003_00002,variant_fields_00004_00002_00002)
+gaceq(variant_fields_00003_00002_00002,field_00002_00003)
+gaceq(variant_fields_00001_00002_00002,field_00002_00002)
+gaceq(variant_fields_00002_00002_00002,field_00002_00002)
+gaceq(variant_fields_00004_00002_00003,field_00002_00002)
+gaceq(variant_fields_00003_00002_00003,field_00002_00002)
+gaceq(variant_fields_00001_00002_00003,field_00002_00003)
+gaceq(field_00003_00002,variant_fields_00002_00002_00003)
+gaceq(variant_fields_00004_00002_00004,field_00001_00002)
+gaceq(variant_fields_00003_00002_00004,field_00002_00001)
+gaceq(variant_fields_00001_00002_00004,field_00002_00004)
+gaceq(variant_fields_00002_00002_00004,field_00004_00002)
+gaceq(field_00004_00003,variant_fields_00004_00003_00001)
+gaceq(field_00003_00004,variant_fields_00003_00003_00001)
+gaceq(field_00003_00001,variant_fields_00001_00003_00001)
+gaceq(variant_fields_00002_00003_00001,field_00001_00003)
+gaceq(field_00003_00003,variant_fields_00004_00003_00002)
+gaceq(field_00003_00003,variant_fields_00003_00003_00002)
+gaceq(field_00003_00002,variant_fields_00001_00003_00002)
+gaceq(variant_fields_00002_00003_00002,field_00002_00003)
+gaceq(variant_fields_00004_00003_00003,field_00002_00003)
+gaceq(field_00003_00002,variant_fields_00003_00003_00003)
+gaceq(field_00003_00003,variant_fields_00001_00003_00003)
+gaceq(field_00003_00003,variant_fields_00002_00003_00003)
+gaceq(variant_fields_00004_00003_00004,field_00001_00003)
+gaceq(field_00003_00001,variant_fields_00003_00003_00004)
+gaceq(field_00003_00004,variant_fields_00001_00003_00004)
+gaceq(field_00004_00003,variant_fields_00002_00003_00004)
+gaceq(field_00004_00004,variant_fields_00004_00004_00001)
+gaceq(field_00004_00004,variant_fields_00003_00004_00001)
+gaceq(field_00004_00001,variant_fields_00001_00004_00001)
+gaceq(field_00001_00004,variant_fields_00002_00004_00001)
+gaceq(field_00003_00004,variant_fields_00004_00004_00002)
+gaceq(field_00004_00003,variant_fields_00003_00004_00002)
+gaceq(field_00004_00002,variant_fields_00001_00004_00002)
+gaceq(variant_fields_00002_00004_00002,field_00002_00004)
+gaceq(variant_fields_00004_00004_00003,field_00002_00004)
+gaceq(field_00004_00002,variant_fields_00003_00004_00003)
+gaceq(field_00004_00003,variant_fields_00001_00004_00003)
+gaceq(field_00003_00004,variant_fields_00002_00004_00003)
+gaceq(variant_fields_00004_00004_00004,field_00001_00004)
+gaceq(field_00004_00001,variant_fields_00003_00004_00004)
+gaceq(field_00004_00004,variant_fields_00001_00004_00004)
+gaceq(field_00004_00004,variant_fields_00002_00004_00004)
+w-literal(max_left_00001_00001_00000,0)
+max([max_left_00001_00001_00000,variant_fields_00001_00001_00001],max_left_00001_00001_00001)
+max([max_left_00001_00001_00001,variant_fields_00001_00001_00002],max_left_00001_00001_00002)
+max([max_left_00001_00001_00002,variant_fields_00001_00001_00003],max_left_00001_00001_00003)
+max([max_left_00001_00001_00003,variant_fields_00001_00001_00004],max_left_00001_00001_00004)
+w-literal(max_left_00001_00002_00000,0)
+max([max_left_00001_00002_00000,variant_fields_00001_00002_00001],max_left_00001_00002_00001)
+max([max_left_00001_00002_00001,variant_fields_00001_00002_00002],max_left_00001_00002_00002)
+max([max_left_00001_00002_00002,variant_fields_00001_00002_00003],max_left_00001_00002_00003)
+max([max_left_00001_00002_00003,variant_fields_00001_00002_00004],max_left_00001_00002_00004)
+w-literal(max_left_00001_00003_00000,0)
+max([max_left_00001_00003_00000,variant_fields_00001_00003_00001],max_left_00001_00003_00001)
+max([max_left_00001_00003_00001,variant_fields_00001_00003_00002],max_left_00001_00003_00002)
+max([max_left_00001_00003_00002,variant_fields_00001_00003_00003],max_left_00001_00003_00003)
+max([max_left_00001_00003_00003,variant_fields_00001_00003_00004],max_left_00001_00003_00004)
+w-literal(max_left_00001_00004_00000,0)
+max([max_left_00001_00004_00000,variant_fields_00001_00004_00001],max_left_00001_00004_00001)
+max([max_left_00001_00004_00001,variant_fields_00001_00004_00002],max_left_00001_00004_00002)
+max([max_left_00001_00004_00002,variant_fields_00001_00004_00003],max_left_00001_00004_00003)
+max([max_left_00001_00004_00003,variant_fields_00001_00004_00004],max_left_00001_00004_00004)
+w-literal(max_left_00002_00001_00000,0)
+max([max_left_00002_00001_00000,variant_fields_00002_00001_00001],max_left_00002_00001_00001)
+max([max_left_00002_00001_00001,variant_fields_00002_00001_00002],max_left_00002_00001_00002)
+max([max_left_00002_00001_00002,variant_fields_00002_00001_00003],max_left_00002_00001_00003)
+max([max_left_00002_00001_00003,variant_fields_00002_00001_00004],max_left_00002_00001_00004)
+w-literal(max_left_00002_00002_00000,0)
+max([max_left_00002_00002_00000,variant_fields_00002_00002_00001],max_left_00002_00002_00001)
+max([max_left_00002_00002_00001,variant_fields_00002_00002_00002],max_left_00002_00002_00002)
+max([max_left_00002_00002_00002,variant_fields_00002_00002_00003],max_left_00002_00002_00003)
+max([max_left_00002_00002_00003,variant_fields_00002_00002_00004],max_left_00002_00002_00004)
+w-literal(max_left_00002_00003_00000,0)
+max([max_left_00002_00003_00000,variant_fields_00002_00003_00001],max_left_00002_00003_00001)
+max([max_left_00002_00003_00001,variant_fields_00002_00003_00002],max_left_00002_00003_00002)
+max([max_left_00002_00003_00002,variant_fields_00002_00003_00003],max_left_00002_00003_00003)
+max([max_left_00002_00003_00003,variant_fields_00002_00003_00004],max_left_00002_00003_00004)
+w-literal(max_left_00002_00004_00000,0)
+max([max_left_00002_00004_00000,variant_fields_00002_00004_00001],max_left_00002_00004_00001)
+max([max_left_00002_00004_00001,variant_fields_00002_00004_00002],max_left_00002_00004_00002)
+max([max_left_00002_00004_00002,variant_fields_00002_00004_00003],max_left_00002_00004_00003)
+max([max_left_00002_00004_00003,variant_fields_00002_00004_00004],max_left_00002_00004_00004)
+w-literal(max_left_00003_00001_00000,0)
+max([variant_fields_00003_00001_00001,max_left_00003_00001_00000],max_left_00003_00001_00001)
+max([variant_fields_00003_00001_00002,max_left_00003_00001_00001],max_left_00003_00001_00002)
+max([variant_fields_00003_00001_00003,max_left_00003_00001_00002],max_left_00003_00001_00003)
+max([variant_fields_00003_00001_00004,max_left_00003_00001_00003],max_left_00003_00001_00004)
+w-literal(max_left_00003_00002_00000,0)
+max([max_left_00003_00002_00000,variant_fields_00003_00002_00001],max_left_00003_00002_00001)
+max([max_left_00003_00002_00001,variant_fields_00003_00002_00002],max_left_00003_00002_00002)
+max([max_left_00003_00002_00002,variant_fields_00003_00002_00003],max_left_00003_00002_00003)
+max([max_left_00003_00002_00003,variant_fields_00003_00002_00004],max_left_00003_00002_00004)
+w-literal(max_left_00003_00003_00000,0)
+max([max_left_00003_00003_00000,variant_fields_00003_00003_00001],max_left_00003_00003_00001)
+max([max_left_00003_00003_00001,variant_fields_00003_00003_00002],max_left_00003_00003_00002)
+max([max_left_00003_00003_00002,variant_fields_00003_00003_00003],max_left_00003_00003_00003)
+max([max_left_00003_00003_00003,variant_fields_00003_00003_00004],max_left_00003_00003_00004)
+w-literal(max_left_00003_00004_00000,0)
+max([max_left_00003_00004_00000,variant_fields_00003_00004_00001],max_left_00003_00004_00001)
+max([max_left_00003_00004_00001,variant_fields_00003_00004_00002],max_left_00003_00004_00002)
+max([max_left_00003_00004_00002,variant_fields_00003_00004_00003],max_left_00003_00004_00003)
+max([max_left_00003_00004_00003,variant_fields_00003_00004_00004],max_left_00003_00004_00004)
+w-literal(max_left_00004_00001_00000,0)
+max([max_left_00004_00001_00000,variant_fields_00004_00001_00001],max_left_00004_00001_00001)
+max([max_left_00004_00001_00001,variant_fields_00004_00001_00002],max_left_00004_00001_00002)
+max([max_left_00004_00001_00002,variant_fields_00004_00001_00003],max_left_00004_00001_00003)
+max([max_left_00004_00001_00003,variant_fields_00004_00001_00004],max_left_00004_00001_00004)
+w-literal(max_left_00004_00002_00000,0)
+max([max_left_00004_00002_00000,variant_fields_00004_00002_00001],max_left_00004_00002_00001)
+max([max_left_00004_00002_00001,variant_fields_00004_00002_00002],max_left_00004_00002_00002)
+max([max_left_00004_00002_00002,variant_fields_00004_00002_00003],max_left_00004_00002_00003)
+max([max_left_00004_00002_00003,variant_fields_00004_00002_00004],max_left_00004_00002_00004)
+w-literal(max_left_00004_00003_00000,0)
+max([max_left_00004_00003_00000,variant_fields_00004_00003_00001],max_left_00004_00003_00001)
+max([max_left_00004_00003_00001,variant_fields_00004_00003_00002],max_left_00004_00003_00002)
+max([max_left_00004_00003_00002,variant_fields_00004_00003_00003],max_left_00004_00003_00003)
+max([max_left_00004_00003_00003,variant_fields_00004_00003_00004],max_left_00004_00003_00004)
+w-literal(max_left_00004_00004_00000,0)
+max([max_left_00004_00004_00000,variant_fields_00004_00004_00001],max_left_00004_00004_00001)
+max([max_left_00004_00004_00001,variant_fields_00004_00004_00002],max_left_00004_00004_00002)
+max([max_left_00004_00004_00002,variant_fields_00004_00004_00003],max_left_00004_00004_00003)
+max([max_left_00004_00004_00003,variant_fields_00004_00004_00004],max_left_00004_00004_00004)
+reifyimply(w-literal(sky_left_00001_00001,1), clues_left_on_00001_00001)
+reifyimply(w-literal(sky_left_00001_00002,2), clues_left_on_00001_00002)
+reifyimply(w-literal(sky_left_00001_00003,2), clues_left_on_00001_00003)
+reifyimply(w-literal(sky_left_00001_00004,2), clues_left_on_00001_00004)
+reifyimply(w-literal(sky_left_00002_00001,1), clues_left_on_00002_00001)
+reifyimply(w-literal(sky_left_00002_00002,2), clues_left_on_00002_00002)
+reifyimply(w-literal(sky_left_00002_00003,3), clues_left_on_00002_00003)
+reifyimply(w-literal(sky_left_00002_00004,3), clues_left_on_00002_00004)
+reifyimply(w-literal(sky_left_00003_00001,4), clues_left_on_00003_00001)
+reifyimply(w-literal(sky_left_00003_00002,3), clues_left_on_00003_00002)
+reifyimply(w-literal(sky_left_00003_00003,1), clues_left_on_00003_00003)
+reifyimply(w-literal(sky_left_00003_00004,2), clues_left_on_00003_00004)
+reifyimply(w-literal(sky_left_00004_00001,3), clues_left_on_00004_00001)
+reifyimply(w-literal(sky_left_00004_00002,3), clues_left_on_00004_00002)
+reifyimply(w-literal(sky_left_00004_00003,1), clues_left_on_00004_00003)
+reifyimply(w-literal(sky_left_00004_00004,2), clues_left_on_00004_00004)
+sumleq([aux0,aux1,aux2,aux3],sky_left_00001_00001)
+sumgeq([aux0,aux1,aux2,aux3],sky_left_00001_00001)
+sumleq([aux4,aux5,aux6,aux7],sky_left_00001_00002)
+sumgeq([aux4,aux5,aux6,aux7],sky_left_00001_00002)
+sumleq([aux8,aux9,aux10,aux11],sky_left_00001_00003)
+sumgeq([aux8,aux9,aux10,aux11],sky_left_00001_00003)
+sumleq([aux12,aux13,aux14,aux15],sky_left_00001_00004)
+sumgeq([aux12,aux13,aux14,aux15],sky_left_00001_00004)
+sumleq([aux16,aux17,aux18,aux19],sky_left_00002_00001)
+sumgeq([aux16,aux17,aux18,aux19],sky_left_00002_00001)
+sumleq([aux20,aux21,aux22,aux23],sky_left_00002_00002)
+sumgeq([aux20,aux21,aux22,aux23],sky_left_00002_00002)
+sumleq([aux24,aux25,aux26,aux27],sky_left_00002_00003)
+sumgeq([aux24,aux25,aux26,aux27],sky_left_00002_00003)
+sumleq([aux28,aux29,aux30,aux31],sky_left_00002_00004)
+sumgeq([aux28,aux29,aux30,aux31],sky_left_00002_00004)
+sumleq([aux32,aux33,aux34,aux35],sky_left_00003_00001)
+sumgeq([aux32,aux33,aux34,aux35],sky_left_00003_00001)
+sumleq([aux36,aux37,aux38,aux39],sky_left_00003_00002)
+sumgeq([aux36,aux37,aux38,aux39],sky_left_00003_00002)
+sumleq([aux40,aux41,aux42,aux43],sky_left_00003_00003)
+sumgeq([aux40,aux41,aux42,aux43],sky_left_00003_00003)
+sumleq([aux44,aux45,aux46,aux47],sky_left_00003_00004)
+sumgeq([aux44,aux45,aux46,aux47],sky_left_00003_00004)
+sumleq([aux48,aux49,aux50,aux51],sky_left_00004_00001)
+sumgeq([aux48,aux49,aux50,aux51],sky_left_00004_00001)
+sumleq([aux52,aux53,aux54,aux55],sky_left_00004_00002)
+sumgeq([aux52,aux53,aux54,aux55],sky_left_00004_00002)
+sumleq([aux56,aux57,aux58,aux59],sky_left_00004_00003)
+sumgeq([aux56,aux57,aux58,aux59],sky_left_00004_00003)
+sumleq([aux60,aux61,aux62,aux63],sky_left_00004_00004)
+sumgeq([aux60,aux61,aux62,aux63],sky_left_00004_00004)
+**EOF**

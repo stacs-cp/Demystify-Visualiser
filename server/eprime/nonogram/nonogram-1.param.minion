@@ -1,0 +1,1718 @@
+MINION 3
+**VARIABLES**
+BOOL grid_00000_00000 #
+BOOL grid_00000_00001 #
+BOOL grid_00000_00002 #
+BOOL grid_00000_00003 #
+BOOL grid_00000_00004 #
+BOOL grid_00000_00005 #
+BOOL grid_00001_00000 #
+BOOL grid_00001_00001 #
+BOOL grid_00001_00002 #
+BOOL grid_00001_00003 #
+BOOL grid_00001_00004 #
+BOOL grid_00001_00005 #
+BOOL grid_00002_00000 #
+BOOL grid_00002_00001 #
+BOOL grid_00002_00002 #
+BOOL grid_00002_00003 #
+BOOL grid_00002_00004 #
+BOOL grid_00002_00005 #
+BOOL grid_00003_00000 #
+BOOL grid_00003_00001 #
+BOOL grid_00003_00002 #
+BOOL grid_00003_00003 #
+BOOL grid_00003_00004 #
+BOOL grid_00003_00005 #
+BOOL grid_00004_00000 #
+BOOL grid_00004_00001 #
+BOOL grid_00004_00002 #
+BOOL grid_00004_00003 #
+BOOL grid_00004_00004 #
+BOOL grid_00004_00005 #
+BOOL grid_00005_00000 #
+BOOL grid_00005_00001 #
+BOOL grid_00005_00002 #
+BOOL grid_00005_00003 #
+BOOL grid_00005_00004 #
+BOOL grid_00005_00005 #
+DISCRETE rowstarts_00000_00000 #
+{0..5}
+DISCRETE rowstarts_00000_00001 #
+{0..5}
+DISCRETE rowstarts_00001_00000 #
+{0..5}
+DISCRETE rowstarts_00001_00001 #
+{0..5}
+DISCRETE rowstarts_00002_00000 #
+{0..5}
+DISCRETE rowstarts_00002_00001 #
+{0..5}
+DISCRETE rowstarts_00003_00000 #
+{0..5}
+DISCRETE rowstarts_00003_00001 #
+{0..5}
+DISCRETE rowstarts_00004_00000 #
+{0..5}
+DISCRETE rowstarts_00004_00001 #
+{0..5}
+DISCRETE rowstarts_00005_00000 #
+{0..5}
+DISCRETE rowstarts_00005_00001 #
+{0..5}
+DISCRETE colstarts_00000_00000 #
+{0..5}
+DISCRETE colstarts_00000_00001 #
+{0..5}
+DISCRETE colstarts_00001_00000 #
+{0..5}
+DISCRETE colstarts_00001_00001 #
+{0..5}
+DISCRETE colstarts_00002_00000 #
+{0..5}
+DISCRETE colstarts_00002_00001 #
+{0..5}
+DISCRETE colstarts_00003_00000 #
+{0..5}
+DISCRETE colstarts_00003_00001 #
+{0..5}
+DISCRETE colstarts_00004_00000 #
+{0..5}
+DISCRETE colstarts_00004_00001 #
+{0..5}
+DISCRETE colstarts_00005_00000 #
+{0..5}
+DISCRETE colstarts_00005_00001 #
+{0..5}
+BOOL sumrow_00000 #
+BOOL sumrow_00001 #
+BOOL sumrow_00002 #
+BOOL sumrow_00003 #
+BOOL sumrow_00004 #
+BOOL sumrow_00005 #
+BOOL sumcol_00000 #
+BOOL sumcol_00001 #
+BOOL sumcol_00002 #
+BOOL sumcol_00003 #
+BOOL sumcol_00004 #
+BOOL sumcol_00005 #
+BOOL rowbefore_00000_00000 #
+BOOL rowbefore_00000_00001 #
+BOOL rowbefore_00001_00000 #
+BOOL rowbefore_00001_00001 #
+BOOL rowbefore_00002_00000 #
+BOOL rowbefore_00002_00001 #
+BOOL rowbefore_00003_00000 #
+BOOL rowbefore_00003_00001 #
+BOOL rowbefore_00004_00000 #
+BOOL rowbefore_00004_00001 #
+BOOL rowbefore_00005_00000 #
+BOOL rowbefore_00005_00001 #
+BOOL colbefore_00000_00000 #
+BOOL colbefore_00000_00001 #
+BOOL colbefore_00001_00000 #
+BOOL colbefore_00001_00001 #
+BOOL colbefore_00002_00000 #
+BOOL colbefore_00002_00001 #
+BOOL colbefore_00003_00000 #
+BOOL colbefore_00003_00001 #
+BOOL colbefore_00004_00000 #
+BOOL colbefore_00004_00001 #
+BOOL colbefore_00005_00000 #
+BOOL colbefore_00005_00001 #
+BOOL rowblack_00000_00000_00000 #
+BOOL rowblack_00000_00000_00001 #
+BOOL rowblack_00000_00001_00000 #
+BOOL rowblack_00000_00001_00001 #
+BOOL rowblack_00000_00002_00000 #
+BOOL rowblack_00000_00002_00001 #
+BOOL rowblack_00000_00003_00000 #
+BOOL rowblack_00000_00003_00001 #
+BOOL rowblack_00000_00004_00000 #
+BOOL rowblack_00000_00004_00001 #
+BOOL rowblack_00000_00005_00000 #
+BOOL rowblack_00000_00005_00001 #
+BOOL rowblack_00001_00000_00000 #
+BOOL rowblack_00001_00000_00001 #
+BOOL rowblack_00001_00001_00000 #
+BOOL rowblack_00001_00001_00001 #
+BOOL rowblack_00001_00002_00000 #
+BOOL rowblack_00001_00002_00001 #
+BOOL rowblack_00001_00003_00000 #
+BOOL rowblack_00001_00003_00001 #
+BOOL rowblack_00001_00004_00000 #
+BOOL rowblack_00001_00004_00001 #
+BOOL rowblack_00001_00005_00000 #
+BOOL rowblack_00001_00005_00001 #
+BOOL rowblack_00002_00000_00000 #
+BOOL rowblack_00002_00000_00001 #
+BOOL rowblack_00002_00001_00000 #
+BOOL rowblack_00002_00001_00001 #
+BOOL rowblack_00002_00002_00000 #
+BOOL rowblack_00002_00002_00001 #
+BOOL rowblack_00002_00003_00000 #
+BOOL rowblack_00002_00003_00001 #
+BOOL rowblack_00002_00004_00000 #
+BOOL rowblack_00002_00004_00001 #
+BOOL rowblack_00002_00005_00000 #
+BOOL rowblack_00002_00005_00001 #
+BOOL rowblack_00003_00000_00000 #
+BOOL rowblack_00003_00000_00001 #
+BOOL rowblack_00003_00001_00000 #
+BOOL rowblack_00003_00001_00001 #
+BOOL rowblack_00003_00002_00000 #
+BOOL rowblack_00003_00002_00001 #
+BOOL rowblack_00003_00003_00000 #
+BOOL rowblack_00003_00003_00001 #
+BOOL rowblack_00003_00004_00000 #
+BOOL rowblack_00003_00004_00001 #
+BOOL rowblack_00003_00005_00000 #
+BOOL rowblack_00003_00005_00001 #
+BOOL rowblack_00004_00000_00000 #
+BOOL rowblack_00004_00000_00001 #
+BOOL rowblack_00004_00001_00000 #
+BOOL rowblack_00004_00001_00001 #
+BOOL rowblack_00004_00002_00000 #
+BOOL rowblack_00004_00002_00001 #
+BOOL rowblack_00004_00003_00000 #
+BOOL rowblack_00004_00003_00001 #
+BOOL rowblack_00004_00004_00000 #
+BOOL rowblack_00004_00004_00001 #
+BOOL rowblack_00004_00005_00000 #
+BOOL rowblack_00004_00005_00001 #
+BOOL rowblack_00005_00000_00000 #
+BOOL rowblack_00005_00000_00001 #
+BOOL rowblack_00005_00001_00000 #
+BOOL rowblack_00005_00001_00001 #
+BOOL rowblack_00005_00002_00000 #
+BOOL rowblack_00005_00002_00001 #
+BOOL rowblack_00005_00003_00000 #
+BOOL rowblack_00005_00003_00001 #
+BOOL rowblack_00005_00004_00000 #
+BOOL rowblack_00005_00004_00001 #
+BOOL rowblack_00005_00005_00000 #
+BOOL rowblack_00005_00005_00001 #
+BOOL colblack_00000_00000_00000 #
+BOOL colblack_00000_00000_00001 #
+BOOL colblack_00000_00001_00000 #
+BOOL colblack_00000_00001_00001 #
+BOOL colblack_00000_00002_00000 #
+BOOL colblack_00000_00002_00001 #
+BOOL colblack_00000_00003_00000 #
+BOOL colblack_00000_00003_00001 #
+BOOL colblack_00000_00004_00000 #
+BOOL colblack_00000_00004_00001 #
+BOOL colblack_00000_00005_00000 #
+BOOL colblack_00000_00005_00001 #
+BOOL colblack_00001_00000_00000 #
+BOOL colblack_00001_00000_00001 #
+BOOL colblack_00001_00001_00000 #
+BOOL colblack_00001_00001_00001 #
+BOOL colblack_00001_00002_00000 #
+BOOL colblack_00001_00002_00001 #
+BOOL colblack_00001_00003_00000 #
+BOOL colblack_00001_00003_00001 #
+BOOL colblack_00001_00004_00000 #
+BOOL colblack_00001_00004_00001 #
+BOOL colblack_00001_00005_00000 #
+BOOL colblack_00001_00005_00001 #
+BOOL colblack_00002_00000_00000 #
+BOOL colblack_00002_00000_00001 #
+BOOL colblack_00002_00001_00000 #
+BOOL colblack_00002_00001_00001 #
+BOOL colblack_00002_00002_00000 #
+BOOL colblack_00002_00002_00001 #
+BOOL colblack_00002_00003_00000 #
+BOOL colblack_00002_00003_00001 #
+BOOL colblack_00002_00004_00000 #
+BOOL colblack_00002_00004_00001 #
+BOOL colblack_00002_00005_00000 #
+BOOL colblack_00002_00005_00001 #
+BOOL colblack_00003_00000_00000 #
+BOOL colblack_00003_00000_00001 #
+BOOL colblack_00003_00001_00000 #
+BOOL colblack_00003_00001_00001 #
+BOOL colblack_00003_00002_00000 #
+BOOL colblack_00003_00002_00001 #
+BOOL colblack_00003_00003_00000 #
+BOOL colblack_00003_00003_00001 #
+BOOL colblack_00003_00004_00000 #
+BOOL colblack_00003_00004_00001 #
+BOOL colblack_00003_00005_00000 #
+BOOL colblack_00003_00005_00001 #
+BOOL colblack_00004_00000_00000 #
+BOOL colblack_00004_00000_00001 #
+BOOL colblack_00004_00001_00000 #
+BOOL colblack_00004_00001_00001 #
+BOOL colblack_00004_00002_00000 #
+BOOL colblack_00004_00002_00001 #
+BOOL colblack_00004_00003_00000 #
+BOOL colblack_00004_00003_00001 #
+BOOL colblack_00004_00004_00000 #
+BOOL colblack_00004_00004_00001 #
+BOOL colblack_00004_00005_00000 #
+BOOL colblack_00004_00005_00001 #
+BOOL colblack_00005_00000_00000 #
+BOOL colblack_00005_00000_00001 #
+BOOL colblack_00005_00001_00000 #
+BOOL colblack_00005_00001_00001 #
+BOOL colblack_00005_00002_00000 #
+BOOL colblack_00005_00002_00001 #
+BOOL colblack_00005_00003_00000 #
+BOOL colblack_00005_00003_00001 #
+BOOL colblack_00005_00004_00000 #
+BOOL colblack_00005_00004_00001 #
+BOOL colblack_00005_00005_00000 #
+BOOL colblack_00005_00005_00001 #
+BOOL rowwhite_00000_00000_00000 #
+BOOL rowwhite_00000_00000_00001 #
+BOOL rowwhite_00000_00001_00000 #
+BOOL rowwhite_00000_00001_00001 #
+BOOL rowwhite_00000_00002_00000 #
+BOOL rowwhite_00000_00002_00001 #
+BOOL rowwhite_00000_00003_00000 #
+BOOL rowwhite_00000_00003_00001 #
+BOOL rowwhite_00000_00004_00000 #
+BOOL rowwhite_00000_00004_00001 #
+BOOL rowwhite_00000_00005_00000 #
+BOOL rowwhite_00000_00005_00001 #
+BOOL rowwhite_00001_00000_00000 #
+BOOL rowwhite_00001_00000_00001 #
+BOOL rowwhite_00001_00001_00000 #
+BOOL rowwhite_00001_00001_00001 #
+BOOL rowwhite_00001_00002_00000 #
+BOOL rowwhite_00001_00002_00001 #
+BOOL rowwhite_00001_00003_00000 #
+BOOL rowwhite_00001_00003_00001 #
+BOOL rowwhite_00001_00004_00000 #
+BOOL rowwhite_00001_00004_00001 #
+BOOL rowwhite_00001_00005_00000 #
+BOOL rowwhite_00001_00005_00001 #
+BOOL rowwhite_00002_00000_00000 #
+BOOL rowwhite_00002_00000_00001 #
+BOOL rowwhite_00002_00001_00000 #
+BOOL rowwhite_00002_00001_00001 #
+BOOL rowwhite_00002_00002_00000 #
+BOOL rowwhite_00002_00002_00001 #
+BOOL rowwhite_00002_00003_00000 #
+BOOL rowwhite_00002_00003_00001 #
+BOOL rowwhite_00002_00004_00000 #
+BOOL rowwhite_00002_00004_00001 #
+BOOL rowwhite_00002_00005_00000 #
+BOOL rowwhite_00002_00005_00001 #
+BOOL rowwhite_00003_00000_00000 #
+BOOL rowwhite_00003_00000_00001 #
+BOOL rowwhite_00003_00001_00000 #
+BOOL rowwhite_00003_00001_00001 #
+BOOL rowwhite_00003_00002_00000 #
+BOOL rowwhite_00003_00002_00001 #
+BOOL rowwhite_00003_00003_00000 #
+BOOL rowwhite_00003_00003_00001 #
+BOOL rowwhite_00003_00004_00000 #
+BOOL rowwhite_00003_00004_00001 #
+BOOL rowwhite_00003_00005_00000 #
+BOOL rowwhite_00003_00005_00001 #
+BOOL rowwhite_00004_00000_00000 #
+BOOL rowwhite_00004_00000_00001 #
+BOOL rowwhite_00004_00001_00000 #
+BOOL rowwhite_00004_00001_00001 #
+BOOL rowwhite_00004_00002_00000 #
+BOOL rowwhite_00004_00002_00001 #
+BOOL rowwhite_00004_00003_00000 #
+BOOL rowwhite_00004_00003_00001 #
+BOOL rowwhite_00004_00004_00000 #
+BOOL rowwhite_00004_00004_00001 #
+BOOL rowwhite_00004_00005_00000 #
+BOOL rowwhite_00004_00005_00001 #
+BOOL rowwhite_00005_00000_00000 #
+BOOL rowwhite_00005_00000_00001 #
+BOOL rowwhite_00005_00001_00000 #
+BOOL rowwhite_00005_00001_00001 #
+BOOL rowwhite_00005_00002_00000 #
+BOOL rowwhite_00005_00002_00001 #
+BOOL rowwhite_00005_00003_00000 #
+BOOL rowwhite_00005_00003_00001 #
+BOOL rowwhite_00005_00004_00000 #
+BOOL rowwhite_00005_00004_00001 #
+BOOL rowwhite_00005_00005_00000 #
+BOOL rowwhite_00005_00005_00001 #
+BOOL colwhite_00000_00000_00000 #
+BOOL colwhite_00000_00000_00001 #
+BOOL colwhite_00000_00001_00000 #
+BOOL colwhite_00000_00001_00001 #
+BOOL colwhite_00000_00002_00000 #
+BOOL colwhite_00000_00002_00001 #
+BOOL colwhite_00000_00003_00000 #
+BOOL colwhite_00000_00003_00001 #
+BOOL colwhite_00000_00004_00000 #
+BOOL colwhite_00000_00004_00001 #
+BOOL colwhite_00000_00005_00000 #
+BOOL colwhite_00000_00005_00001 #
+BOOL colwhite_00001_00000_00000 #
+BOOL colwhite_00001_00000_00001 #
+BOOL colwhite_00001_00001_00000 #
+BOOL colwhite_00001_00001_00001 #
+BOOL colwhite_00001_00002_00000 #
+BOOL colwhite_00001_00002_00001 #
+BOOL colwhite_00001_00003_00000 #
+BOOL colwhite_00001_00003_00001 #
+BOOL colwhite_00001_00004_00000 #
+BOOL colwhite_00001_00004_00001 #
+BOOL colwhite_00001_00005_00000 #
+BOOL colwhite_00001_00005_00001 #
+BOOL colwhite_00002_00000_00000 #
+BOOL colwhite_00002_00000_00001 #
+BOOL colwhite_00002_00001_00000 #
+BOOL colwhite_00002_00001_00001 #
+BOOL colwhite_00002_00002_00000 #
+BOOL colwhite_00002_00002_00001 #
+BOOL colwhite_00002_00003_00000 #
+BOOL colwhite_00002_00003_00001 #
+BOOL colwhite_00002_00004_00000 #
+BOOL colwhite_00002_00004_00001 #
+BOOL colwhite_00002_00005_00000 #
+BOOL colwhite_00002_00005_00001 #
+BOOL colwhite_00003_00000_00000 #
+BOOL colwhite_00003_00000_00001 #
+BOOL colwhite_00003_00001_00000 #
+BOOL colwhite_00003_00001_00001 #
+BOOL colwhite_00003_00002_00000 #
+BOOL colwhite_00003_00002_00001 #
+BOOL colwhite_00003_00003_00000 #
+BOOL colwhite_00003_00003_00001 #
+BOOL colwhite_00003_00004_00000 #
+BOOL colwhite_00003_00004_00001 #
+BOOL colwhite_00003_00005_00000 #
+BOOL colwhite_00003_00005_00001 #
+BOOL colwhite_00004_00000_00000 #
+BOOL colwhite_00004_00000_00001 #
+BOOL colwhite_00004_00001_00000 #
+BOOL colwhite_00004_00001_00001 #
+BOOL colwhite_00004_00002_00000 #
+BOOL colwhite_00004_00002_00001 #
+BOOL colwhite_00004_00003_00000 #
+BOOL colwhite_00004_00003_00001 #
+BOOL colwhite_00004_00004_00000 #
+BOOL colwhite_00004_00004_00001 #
+BOOL colwhite_00004_00005_00000 #
+BOOL colwhite_00004_00005_00001 #
+BOOL colwhite_00005_00000_00000 #
+BOOL colwhite_00005_00000_00001 #
+BOOL colwhite_00005_00001_00000 #
+BOOL colwhite_00005_00001_00001 #
+BOOL colwhite_00005_00002_00000 #
+BOOL colwhite_00005_00002_00001 #
+BOOL colwhite_00005_00003_00000 #
+BOOL colwhite_00005_00003_00001 #
+BOOL colwhite_00005_00004_00000 #
+BOOL colwhite_00005_00004_00001 #
+BOOL colwhite_00005_00005_00000 #
+BOOL colwhite_00005_00005_00001 #
+BOOL cellblackrow_00000_00000 #
+BOOL cellblackrow_00000_00001 #
+BOOL cellblackrow_00000_00002 #
+BOOL cellblackrow_00000_00003 #
+BOOL cellblackrow_00000_00004 #
+BOOL cellblackrow_00000_00005 #
+BOOL cellblackrow_00001_00000 #
+BOOL cellblackrow_00001_00001 #
+BOOL cellblackrow_00001_00002 #
+BOOL cellblackrow_00001_00003 #
+BOOL cellblackrow_00001_00004 #
+BOOL cellblackrow_00001_00005 #
+BOOL cellblackrow_00002_00000 #
+BOOL cellblackrow_00002_00001 #
+BOOL cellblackrow_00002_00002 #
+BOOL cellblackrow_00002_00003 #
+BOOL cellblackrow_00002_00004 #
+BOOL cellblackrow_00002_00005 #
+BOOL cellblackrow_00003_00000 #
+BOOL cellblackrow_00003_00001 #
+BOOL cellblackrow_00003_00002 #
+BOOL cellblackrow_00003_00003 #
+BOOL cellblackrow_00003_00004 #
+BOOL cellblackrow_00003_00005 #
+BOOL cellblackrow_00004_00000 #
+BOOL cellblackrow_00004_00001 #
+BOOL cellblackrow_00004_00002 #
+BOOL cellblackrow_00004_00003 #
+BOOL cellblackrow_00004_00004 #
+BOOL cellblackrow_00004_00005 #
+BOOL cellblackrow_00005_00000 #
+BOOL cellblackrow_00005_00001 #
+BOOL cellblackrow_00005_00002 #
+BOOL cellblackrow_00005_00003 #
+BOOL cellblackrow_00005_00004 #
+BOOL cellblackrow_00005_00005 #
+BOOL cellblackcol_00000_00000 #
+BOOL cellblackcol_00000_00001 #
+BOOL cellblackcol_00000_00002 #
+BOOL cellblackcol_00000_00003 #
+BOOL cellblackcol_00000_00004 #
+BOOL cellblackcol_00000_00005 #
+BOOL cellblackcol_00001_00000 #
+BOOL cellblackcol_00001_00001 #
+BOOL cellblackcol_00001_00002 #
+BOOL cellblackcol_00001_00003 #
+BOOL cellblackcol_00001_00004 #
+BOOL cellblackcol_00001_00005 #
+BOOL cellblackcol_00002_00000 #
+BOOL cellblackcol_00002_00001 #
+BOOL cellblackcol_00002_00002 #
+BOOL cellblackcol_00002_00003 #
+BOOL cellblackcol_00002_00004 #
+BOOL cellblackcol_00002_00005 #
+BOOL cellblackcol_00003_00000 #
+BOOL cellblackcol_00003_00001 #
+BOOL cellblackcol_00003_00002 #
+BOOL cellblackcol_00003_00003 #
+BOOL cellblackcol_00003_00004 #
+BOOL cellblackcol_00003_00005 #
+BOOL cellblackcol_00004_00000 #
+BOOL cellblackcol_00004_00001 #
+BOOL cellblackcol_00004_00002 #
+BOOL cellblackcol_00004_00003 #
+BOOL cellblackcol_00004_00004 #
+BOOL cellblackcol_00004_00005 #
+BOOL cellblackcol_00005_00000 #
+BOOL cellblackcol_00005_00001 #
+BOOL cellblackcol_00005_00002 #
+BOOL cellblackcol_00005_00003 #
+BOOL cellblackcol_00005_00004 #
+BOOL cellblackcol_00005_00005 #
+BOOL cellwhiterow_00000_00000 #
+BOOL cellwhiterow_00000_00001 #
+BOOL cellwhiterow_00000_00002 #
+BOOL cellwhiterow_00000_00003 #
+BOOL cellwhiterow_00000_00004 #
+BOOL cellwhiterow_00000_00005 #
+BOOL cellwhiterow_00001_00000 #
+BOOL cellwhiterow_00001_00001 #
+BOOL cellwhiterow_00001_00002 #
+BOOL cellwhiterow_00001_00003 #
+BOOL cellwhiterow_00001_00004 #
+BOOL cellwhiterow_00001_00005 #
+BOOL cellwhiterow_00002_00000 #
+BOOL cellwhiterow_00002_00001 #
+BOOL cellwhiterow_00002_00002 #
+BOOL cellwhiterow_00002_00003 #
+BOOL cellwhiterow_00002_00004 #
+BOOL cellwhiterow_00002_00005 #
+BOOL cellwhiterow_00003_00000 #
+BOOL cellwhiterow_00003_00001 #
+BOOL cellwhiterow_00003_00002 #
+BOOL cellwhiterow_00003_00003 #
+BOOL cellwhiterow_00003_00004 #
+BOOL cellwhiterow_00003_00005 #
+BOOL cellwhiterow_00004_00000 #
+BOOL cellwhiterow_00004_00001 #
+BOOL cellwhiterow_00004_00002 #
+BOOL cellwhiterow_00004_00003 #
+BOOL cellwhiterow_00004_00004 #
+BOOL cellwhiterow_00004_00005 #
+BOOL cellwhiterow_00005_00000 #
+BOOL cellwhiterow_00005_00001 #
+BOOL cellwhiterow_00005_00002 #
+BOOL cellwhiterow_00005_00003 #
+BOOL cellwhiterow_00005_00004 #
+BOOL cellwhiterow_00005_00005 #
+BOOL cellwhitecol_00000_00000 #
+BOOL cellwhitecol_00000_00001 #
+BOOL cellwhitecol_00000_00002 #
+BOOL cellwhitecol_00000_00003 #
+BOOL cellwhitecol_00000_00004 #
+BOOL cellwhitecol_00000_00005 #
+BOOL cellwhitecol_00001_00000 #
+BOOL cellwhitecol_00001_00001 #
+BOOL cellwhitecol_00001_00002 #
+BOOL cellwhitecol_00001_00003 #
+BOOL cellwhitecol_00001_00004 #
+BOOL cellwhitecol_00001_00005 #
+BOOL cellwhitecol_00002_00000 #
+BOOL cellwhitecol_00002_00001 #
+BOOL cellwhitecol_00002_00002 #
+BOOL cellwhitecol_00002_00003 #
+BOOL cellwhitecol_00002_00004 #
+BOOL cellwhitecol_00002_00005 #
+BOOL cellwhitecol_00003_00000 #
+BOOL cellwhitecol_00003_00001 #
+BOOL cellwhitecol_00003_00002 #
+BOOL cellwhitecol_00003_00003 #
+BOOL cellwhitecol_00003_00004 #
+BOOL cellwhitecol_00003_00005 #
+BOOL cellwhitecol_00004_00000 #
+BOOL cellwhitecol_00004_00001 #
+BOOL cellwhitecol_00004_00002 #
+BOOL cellwhitecol_00004_00003 #
+BOOL cellwhitecol_00004_00004 #
+BOOL cellwhitecol_00004_00005 #
+BOOL cellwhitecol_00005_00000 #
+BOOL cellwhitecol_00005_00001 #
+BOOL cellwhitecol_00005_00002 #
+BOOL cellwhitecol_00005_00003 #
+BOOL cellwhitecol_00005_00004 #
+BOOL cellwhitecol_00005_00005 #
+DISCRETE aux0 #(2 + colstarts_00004_00000)
+{2..7}
+DISCRETE aux1 #(rowstarts_00000_00000 + 2)
+{2..7}
+DISCRETE aux2 #(1 + rowstarts_00001_00000)
+{1..6}
+DISCRETE aux3 #(1 + rowstarts_00002_00000)
+{1..6}
+DISCRETE aux4 #(-rowstarts_00000_00000)
+{-5..0}
+DISCRETE aux5 #(-rowstarts_00000_00000)
+{-5..0}
+DISCRETE aux6 #(-rowstarts_00000_00000)
+{-5..0}
+DISCRETE aux7 #(-rowstarts_00000_00000)
+{-5..0}
+DISCRETE aux8 #(-rowstarts_00001_00000)
+{-5..0}
+DISCRETE aux9 #(-rowstarts_00001_00000)
+{-5..0}
+DISCRETE aux10 #(-rowstarts_00001_00000)
+{-5..0}
+DISCRETE aux11 #(-rowstarts_00001_00000)
+{-5..0}
+DISCRETE aux12 #(-rowstarts_00001_00000)
+{-5..0}
+DISCRETE aux13 #(-rowstarts_00002_00000)
+{-5..0}
+DISCRETE aux14 #(-rowstarts_00002_00000)
+{-5..0}
+DISCRETE aux15 #(-rowstarts_00002_00000)
+{-5..0}
+DISCRETE aux16 #(-rowstarts_00002_00000)
+{-5..0}
+DISCRETE aux17 #(-rowstarts_00002_00000)
+{-5..0}
+DISCRETE aux18 #(-colstarts_00000_00000)
+{-5..0}
+DISCRETE aux19 #(-colstarts_00004_00001)
+{-5..0}
+DISCRETE aux20 #(-colstarts_00000_00000)
+{-5..0}
+DISCRETE aux21 #(-colstarts_00002_00000)
+{-5..0}
+DISCRETE aux22 #(-colstarts_00005_00000)
+{-5..0}
+DISCRETE aux23 #(-colstarts_00004_00000)
+{-5..0}
+DISCRETE aux24 #(-colstarts_00004_00001)
+{-5..0}
+DISCRETE aux25 #(-colstarts_00000_00000)
+{-5..0}
+DISCRETE aux26 #(-colstarts_00002_00000)
+{-5..0}
+DISCRETE aux27 #(-colstarts_00005_00000)
+{-5..0}
+DISCRETE aux28 #(-colstarts_00004_00000)
+{-5..0}
+DISCRETE aux29 #(-colstarts_00004_00001)
+{-5..0}
+DISCRETE aux30 #(-colstarts_00000_00000)
+{-5..0}
+DISCRETE aux31 #(-colstarts_00002_00000)
+{-5..0}
+DISCRETE aux32 #(-colstarts_00005_00000)
+{-5..0}
+DISCRETE aux33 #(-colstarts_00004_00000)
+{-5..0}
+DISCRETE aux34 #(-colstarts_00004_00001)
+{-5..0}
+DISCRETE aux35 #(-colstarts_00000_00000)
+{-5..0}
+DISCRETE aux36 #(-colstarts_00001_00000)
+{-5..0}
+DISCRETE aux37 #(-colstarts_00002_00000)
+{-5..0}
+DISCRETE aux38 #(-colstarts_00003_00000)
+{-5..0}
+DISCRETE aux39 #(-colstarts_00005_00000)
+{-5..0}
+DISCRETE aux40 #(-colstarts_00004_00000)
+{-5..0}
+DISCRETE aux41 #(-colstarts_00004_00001)
+{-5..0}
+DISCRETE aux42 #(-rowstarts_00000_00000)
+{-5..0}
+DISCRETE aux43 #(-rowstarts_00000_00000)
+{-5..0}
+DISCRETE aux44 #(-rowstarts_00000_00000)
+{-5..0}
+DISCRETE aux45 #(-rowstarts_00001_00000)
+{-5..0}
+DISCRETE aux46 #(-rowstarts_00001_00000)
+{-5..0}
+DISCRETE aux47 #(-rowstarts_00001_00000)
+{-5..0}
+DISCRETE aux48 #(-rowstarts_00001_00000)
+{-5..0}
+DISCRETE aux49 #(-rowstarts_00002_00000)
+{-5..0}
+DISCRETE aux50 #(-rowstarts_00002_00000)
+{-5..0}
+DISCRETE aux51 #(-rowstarts_00002_00000)
+{-5..0}
+DISCRETE aux52 #(-rowstarts_00002_00000)
+{-5..0}
+DISCRETE aux53 #(-colstarts_00000_00000)
+{-5..0}
+DISCRETE aux54 #(-colstarts_00000_00000)
+{-5..0}
+DISCRETE aux55 #(-colstarts_00002_00000)
+{-5..0}
+DISCRETE aux56 #(-colstarts_00005_00000)
+{-5..0}
+DISCRETE aux57 #(-colstarts_00004_00000)
+{-5..0}
+DISCRETE aux58 #(-colstarts_00000_00000)
+{-5..0}
+DISCRETE aux59 #(-colstarts_00002_00000)
+{-5..0}
+DISCRETE aux60 #(-colstarts_00005_00000)
+{-5..0}
+DISCRETE aux61 #(-colstarts_00004_00000)
+{-5..0}
+DISCRETE aux62 #(-colstarts_00000_00000)
+{-5..0}
+DISCRETE aux63 #(-colstarts_00002_00000)
+{-5..0}
+DISCRETE aux64 #(-colstarts_00005_00000)
+{-5..0}
+DISCRETE aux65 #(-colstarts_00004_00000)
+{-5..0}
+DISCRETE aux66 #(-rowstarts_00000_00001)
+{-5..0}
+DISCRETE aux67 #(-rowstarts_00000_00000)
+{-5..0}
+DISCRETE aux68 #(-rowstarts_00000_00001)
+{-5..0}
+DISCRETE aux69 #(-rowstarts_00000_00000)
+{-5..0}
+DISCRETE aux70 #(-rowstarts_00000_00001)
+{-5..0}
+DISCRETE aux71 #(-rowstarts_00000_00000)
+{-5..0}
+DISCRETE aux72 #(-rowstarts_00000_00001)
+{-5..0}
+DISCRETE aux73 #(-rowstarts_00000_00000)
+{-5..0}
+DISCRETE aux74 #(-rowstarts_00000_00001)
+{-5..0}
+DISCRETE aux75 #(-rowstarts_00001_00000)
+{-5..0}
+DISCRETE aux76 #(-rowstarts_00001_00000)
+{-5..0}
+DISCRETE aux77 #(-rowstarts_00001_00000)
+{-5..0}
+DISCRETE aux78 #(-rowstarts_00001_00001)
+{-5..0}
+DISCRETE aux79 #(-rowstarts_00001_00000)
+{-5..0}
+DISCRETE aux80 #(-rowstarts_00001_00001)
+{-5..0}
+DISCRETE aux81 #(-rowstarts_00001_00000)
+{-5..0}
+DISCRETE aux82 #(-rowstarts_00001_00001)
+{-5..0}
+DISCRETE aux83 #(-rowstarts_00002_00000)
+{-5..0}
+DISCRETE aux84 #(-rowstarts_00002_00000)
+{-5..0}
+DISCRETE aux85 #(-rowstarts_00002_00001)
+{-5..0}
+DISCRETE aux86 #(-rowstarts_00002_00000)
+{-5..0}
+DISCRETE aux87 #(-rowstarts_00002_00001)
+{-5..0}
+DISCRETE aux88 #(-rowstarts_00002_00000)
+{-5..0}
+DISCRETE aux89 #(-rowstarts_00002_00001)
+{-5..0}
+DISCRETE aux90 #(-rowstarts_00002_00000)
+{-5..0}
+DISCRETE aux91 #(-rowstarts_00002_00001)
+{-5..0}
+DISCRETE aux92 #(-rowstarts_00003_00001)
+{-5..0}
+DISCRETE aux93 #(-rowstarts_00003_00001)
+{-5..0}
+DISCRETE aux94 #(-rowstarts_00003_00001)
+{-5..0}
+DISCRETE aux95 #(-rowstarts_00003_00000)
+{-5..0}
+DISCRETE aux96 #(-rowstarts_00003_00001)
+{-5..0}
+DISCRETE aux97 #(-rowstarts_00003_00000)
+{-5..0}
+DISCRETE aux98 #(-rowstarts_00003_00001)
+{-5..0}
+DISCRETE aux99 #(-rowstarts_00003_00000)
+{-5..0}
+DISCRETE aux100 #(-rowstarts_00004_00001)
+{-5..0}
+DISCRETE aux101 #(-rowstarts_00004_00001)
+{-5..0}
+DISCRETE aux102 #(-rowstarts_00004_00001)
+{-5..0}
+DISCRETE aux103 #(-rowstarts_00004_00001)
+{-5..0}
+DISCRETE aux104 #(-rowstarts_00004_00000)
+{-5..0}
+DISCRETE aux105 #(-rowstarts_00004_00001)
+{-5..0}
+DISCRETE aux106 #(-rowstarts_00004_00000)
+{-5..0}
+DISCRETE aux107 #(-rowstarts_00005_00001)
+{-5..0}
+DISCRETE aux108 #(-rowstarts_00005_00000)
+{-5..0}
+DISCRETE aux109 #(-rowstarts_00005_00001)
+{-5..0}
+DISCRETE aux110 #(-rowstarts_00005_00000)
+{-5..0}
+DISCRETE aux111 #(-rowstarts_00005_00001)
+{-5..0}
+DISCRETE aux112 #(-rowstarts_00005_00000)
+{-5..0}
+DISCRETE aux113 #(-rowstarts_00005_00001)
+{-5..0}
+DISCRETE aux114 #(-rowstarts_00005_00000)
+{-5..0}
+DISCRETE aux115 #(-rowstarts_00005_00001)
+{-5..0}
+DISCRETE aux116 #(-rowstarts_00005_00000)
+{-5..0}
+DISCRETE aux117 #(-rowstarts_00000_00001)
+{-5..0}
+DISCRETE aux118 #(-rowstarts_00000_00000)
+{-5..0}
+DISCRETE aux119 #(-rowstarts_00000_00001)
+{-5..0}
+DISCRETE aux120 #(-rowstarts_00000_00000)
+{-5..0}
+DISCRETE aux121 #(-rowstarts_00000_00001)
+{-5..0}
+DISCRETE aux122 #(-rowstarts_00000_00000)
+{-5..0}
+DISCRETE aux123 #(-rowstarts_00000_00001)
+{-5..0}
+DISCRETE aux124 #(-rowstarts_00000_00000)
+{-5..0}
+DISCRETE aux125 #(-rowstarts_00000_00001)
+{-5..0}
+DISCRETE aux126 #(-rowstarts_00001_00000)
+{-5..0}
+DISCRETE aux127 #(-rowstarts_00001_00000)
+{-5..0}
+DISCRETE aux128 #(-rowstarts_00001_00000)
+{-5..0}
+DISCRETE aux129 #(-rowstarts_00001_00001)
+{-5..0}
+DISCRETE aux130 #(-rowstarts_00001_00000)
+{-5..0}
+DISCRETE aux131 #(-rowstarts_00001_00001)
+{-5..0}
+DISCRETE aux132 #(-rowstarts_00001_00000)
+{-5..0}
+DISCRETE aux133 #(-rowstarts_00001_00001)
+{-5..0}
+DISCRETE aux134 #(-rowstarts_00002_00000)
+{-5..0}
+DISCRETE aux135 #(-rowstarts_00002_00000)
+{-5..0}
+DISCRETE aux136 #(-rowstarts_00002_00001)
+{-5..0}
+DISCRETE aux137 #(-rowstarts_00002_00000)
+{-5..0}
+DISCRETE aux138 #(-rowstarts_00002_00001)
+{-5..0}
+DISCRETE aux139 #(-rowstarts_00002_00000)
+{-5..0}
+DISCRETE aux140 #(-rowstarts_00002_00001)
+{-5..0}
+DISCRETE aux141 #(-rowstarts_00002_00000)
+{-5..0}
+DISCRETE aux142 #(-rowstarts_00002_00001)
+{-5..0}
+DISCRETE aux143 #(-rowstarts_00003_00001)
+{-5..0}
+DISCRETE aux144 #(-rowstarts_00003_00001)
+{-5..0}
+DISCRETE aux145 #(-rowstarts_00003_00001)
+{-5..0}
+DISCRETE aux146 #(-rowstarts_00003_00000)
+{-5..0}
+DISCRETE aux147 #(-rowstarts_00003_00001)
+{-5..0}
+DISCRETE aux148 #(-rowstarts_00003_00000)
+{-5..0}
+DISCRETE aux149 #(-rowstarts_00003_00001)
+{-5..0}
+DISCRETE aux150 #(-rowstarts_00003_00000)
+{-5..0}
+DISCRETE aux151 #(-rowstarts_00004_00001)
+{-5..0}
+DISCRETE aux152 #(-rowstarts_00004_00001)
+{-5..0}
+DISCRETE aux153 #(-rowstarts_00004_00001)
+{-5..0}
+DISCRETE aux154 #(-rowstarts_00004_00001)
+{-5..0}
+DISCRETE aux155 #(-rowstarts_00004_00000)
+{-5..0}
+DISCRETE aux156 #(-rowstarts_00004_00001)
+{-5..0}
+DISCRETE aux157 #(-rowstarts_00004_00000)
+{-5..0}
+DISCRETE aux158 #(-rowstarts_00005_00001)
+{-5..0}
+DISCRETE aux159 #(-rowstarts_00005_00000)
+{-5..0}
+DISCRETE aux160 #(-rowstarts_00005_00001)
+{-5..0}
+DISCRETE aux161 #(-rowstarts_00005_00000)
+{-5..0}
+DISCRETE aux162 #(-rowstarts_00005_00001)
+{-5..0}
+DISCRETE aux163 #(-rowstarts_00005_00000)
+{-5..0}
+DISCRETE aux164 #(-rowstarts_00005_00001)
+{-5..0}
+DISCRETE aux165 #(-rowstarts_00005_00000)
+{-5..0}
+DISCRETE aux166 #(-rowstarts_00005_00001)
+{-5..0}
+DISCRETE aux167 #(-rowstarts_00005_00000)
+{-5..0}
+DISCRETE aux168 #(-colstarts_00000_00001)
+{-5..0}
+DISCRETE aux169 #(-colstarts_00001_00001)
+{-5..0}
+DISCRETE aux170 #(-colstarts_00002_00001)
+{-5..0}
+DISCRETE aux171 #(-colstarts_00003_00001)
+{-5..0}
+DISCRETE aux172 #(-colstarts_00005_00001)
+{-5..0}
+DISCRETE aux173 #(-colstarts_00000_00000)
+{-5..0}
+DISCRETE aux174 #(-colstarts_00000_00001)
+{-5..0}
+DISCRETE aux175 #(-colstarts_00001_00001)
+{-5..0}
+DISCRETE aux176 #(-colstarts_00002_00001)
+{-5..0}
+DISCRETE aux177 #(-colstarts_00003_00001)
+{-5..0}
+DISCRETE aux178 #(-colstarts_00004_00001)
+{-5..0}
+DISCRETE aux179 #(-colstarts_00005_00001)
+{-5..0}
+DISCRETE aux180 #(-colstarts_00000_00000)
+{-5..0}
+DISCRETE aux181 #(-colstarts_00000_00001)
+{-5..0}
+DISCRETE aux182 #(-colstarts_00001_00001)
+{-5..0}
+DISCRETE aux183 #(-colstarts_00002_00000)
+{-5..0}
+DISCRETE aux184 #(-colstarts_00002_00001)
+{-5..0}
+DISCRETE aux185 #(-colstarts_00003_00001)
+{-5..0}
+DISCRETE aux186 #(-colstarts_00004_00000)
+{-5..0}
+DISCRETE aux187 #(-colstarts_00004_00001)
+{-5..0}
+DISCRETE aux188 #(-colstarts_00005_00000)
+{-5..0}
+DISCRETE aux189 #(-colstarts_00005_00001)
+{-5..0}
+DISCRETE aux190 #(-colstarts_00000_00000)
+{-5..0}
+DISCRETE aux191 #(-colstarts_00000_00001)
+{-5..0}
+DISCRETE aux192 #(-colstarts_00001_00001)
+{-5..0}
+DISCRETE aux193 #(-colstarts_00002_00000)
+{-5..0}
+DISCRETE aux194 #(-colstarts_00002_00001)
+{-5..0}
+DISCRETE aux195 #(-colstarts_00003_00001)
+{-5..0}
+DISCRETE aux196 #(-colstarts_00004_00000)
+{-5..0}
+DISCRETE aux197 #(-colstarts_00004_00001)
+{-5..0}
+DISCRETE aux198 #(-colstarts_00005_00000)
+{-5..0}
+DISCRETE aux199 #(-colstarts_00005_00001)
+{-5..0}
+DISCRETE aux200 #(-colstarts_00000_00000)
+{-5..0}
+DISCRETE aux201 #(-colstarts_00000_00001)
+{-5..0}
+DISCRETE aux202 #(-colstarts_00001_00001)
+{-5..0}
+DISCRETE aux203 #(-colstarts_00002_00000)
+{-5..0}
+DISCRETE aux204 #(-colstarts_00002_00001)
+{-5..0}
+DISCRETE aux205 #(-colstarts_00003_00001)
+{-5..0}
+DISCRETE aux206 #(-colstarts_00004_00000)
+{-5..0}
+DISCRETE aux207 #(-colstarts_00004_00001)
+{-5..0}
+DISCRETE aux208 #(-colstarts_00005_00000)
+{-5..0}
+DISCRETE aux209 #(-colstarts_00005_00001)
+{-5..0}
+DISCRETE aux210 #(-colstarts_00000_00000)
+{-5..0}
+DISCRETE aux211 #(-colstarts_00001_00000)
+{-5..0}
+DISCRETE aux212 #(-colstarts_00002_00000)
+{-5..0}
+DISCRETE aux213 #(-colstarts_00003_00000)
+{-5..0}
+DISCRETE aux214 #(-colstarts_00004_00000)
+{-5..0}
+DISCRETE aux215 #(-colstarts_00004_00001)
+{-5..0}
+DISCRETE aux216 #(-colstarts_00005_00000)
+{-5..0}
+DISCRETE aux217 #(-colstarts_00000_00001)
+{-5..0}
+DISCRETE aux218 #(-colstarts_00001_00001)
+{-5..0}
+DISCRETE aux219 #(-colstarts_00002_00001)
+{-5..0}
+DISCRETE aux220 #(-colstarts_00003_00001)
+{-5..0}
+DISCRETE aux221 #(-colstarts_00005_00001)
+{-5..0}
+DISCRETE aux222 #(-colstarts_00000_00000)
+{-5..0}
+DISCRETE aux223 #(-colstarts_00000_00001)
+{-5..0}
+DISCRETE aux224 #(-colstarts_00001_00001)
+{-5..0}
+DISCRETE aux225 #(-colstarts_00002_00001)
+{-5..0}
+DISCRETE aux226 #(-colstarts_00003_00001)
+{-5..0}
+DISCRETE aux227 #(-colstarts_00004_00001)
+{-5..0}
+DISCRETE aux228 #(-colstarts_00005_00001)
+{-5..0}
+DISCRETE aux229 #(-colstarts_00000_00000)
+{-5..0}
+DISCRETE aux230 #(-colstarts_00000_00001)
+{-5..0}
+DISCRETE aux231 #(-colstarts_00001_00001)
+{-5..0}
+DISCRETE aux232 #(-colstarts_00002_00000)
+{-5..0}
+DISCRETE aux233 #(-colstarts_00002_00001)
+{-5..0}
+DISCRETE aux234 #(-colstarts_00003_00001)
+{-5..0}
+DISCRETE aux235 #(-colstarts_00004_00000)
+{-5..0}
+DISCRETE aux236 #(-colstarts_00004_00001)
+{-5..0}
+DISCRETE aux237 #(-colstarts_00005_00000)
+{-5..0}
+DISCRETE aux238 #(-colstarts_00005_00001)
+{-5..0}
+DISCRETE aux239 #(-colstarts_00000_00000)
+{-5..0}
+DISCRETE aux240 #(-colstarts_00000_00001)
+{-5..0}
+DISCRETE aux241 #(-colstarts_00001_00001)
+{-5..0}
+DISCRETE aux242 #(-colstarts_00002_00000)
+{-5..0}
+DISCRETE aux243 #(-colstarts_00002_00001)
+{-5..0}
+DISCRETE aux244 #(-colstarts_00003_00001)
+{-5..0}
+DISCRETE aux245 #(-colstarts_00004_00000)
+{-5..0}
+DISCRETE aux246 #(-colstarts_00004_00001)
+{-5..0}
+DISCRETE aux247 #(-colstarts_00005_00000)
+{-5..0}
+DISCRETE aux248 #(-colstarts_00005_00001)
+{-5..0}
+DISCRETE aux249 #(-colstarts_00000_00000)
+{-5..0}
+DISCRETE aux250 #(-colstarts_00000_00001)
+{-5..0}
+DISCRETE aux251 #(-colstarts_00001_00001)
+{-5..0}
+DISCRETE aux252 #(-colstarts_00002_00000)
+{-5..0}
+DISCRETE aux253 #(-colstarts_00002_00001)
+{-5..0}
+DISCRETE aux254 #(-colstarts_00003_00001)
+{-5..0}
+DISCRETE aux255 #(-colstarts_00004_00000)
+{-5..0}
+DISCRETE aux256 #(-colstarts_00004_00001)
+{-5..0}
+DISCRETE aux257 #(-colstarts_00005_00000)
+{-5..0}
+DISCRETE aux258 #(-colstarts_00005_00001)
+{-5..0}
+DISCRETE aux259 #(-colstarts_00000_00000)
+{-5..0}
+DISCRETE aux260 #(-colstarts_00001_00000)
+{-5..0}
+DISCRETE aux261 #(-colstarts_00002_00000)
+{-5..0}
+DISCRETE aux262 #(-colstarts_00003_00000)
+{-5..0}
+DISCRETE aux263 #(-colstarts_00004_00000)
+{-5..0}
+DISCRETE aux264 #(-colstarts_00004_00001)
+{-5..0}
+DISCRETE aux265 #(-colstarts_00005_00000)
+{-5..0}
+**TUPLELIST**
+colcounts 6 2
+1 0 
+5 0 
+2 0 
+5 0 
+2 1 
+2 0 
+**VARIABLES**
+ALIAS colcounts[6,2]=[[1, 0], [5, 0], [2, 0], [5, 0], [2, 1], [2, 0]]
+**TUPLELIST**
+rowcounts 6 2
+2 1 
+1 3 
+1 2 
+3 0 
+4 0 
+1 0 
+**VARIABLES**
+ALIAS rowcounts[6,2]=[[2, 1], [1, 3], [1, 2], [3, 0], [4, 0], [1, 0]]
+**SEARCH**
+PRINT[[grid_00000_00000],[grid_00000_00001],[grid_00000_00002],[grid_00000_00003],[grid_00000_00004],[grid_00000_00005],[grid_00001_00000],[grid_00001_00001],[grid_00001_00002],[grid_00001_00003],[grid_00001_00004],[grid_00001_00005],[grid_00002_00000],[grid_00002_00001],[grid_00002_00002],[grid_00002_00003],[grid_00002_00004],[grid_00002_00005],[grid_00003_00000],[grid_00003_00001],[grid_00003_00002],[grid_00003_00003],[grid_00003_00004],[grid_00003_00005],[grid_00004_00000],[grid_00004_00001],[grid_00004_00002],[grid_00004_00003],[grid_00004_00004],[grid_00004_00005],[grid_00005_00000],[grid_00005_00001],[grid_00005_00002],[grid_00005_00003],[grid_00005_00004],[grid_00005_00005],[rowstarts_00000_00000],[rowstarts_00000_00001],[rowstarts_00001_00000],[rowstarts_00001_00001],[rowstarts_00002_00000],[rowstarts_00002_00001],[rowstarts_00003_00000],[rowstarts_00003_00001],[rowstarts_00004_00000],[rowstarts_00004_00001],[rowstarts_00005_00000],[rowstarts_00005_00001],[colstarts_00000_00000],[colstarts_00000_00001],[colstarts_00001_00000],[colstarts_00001_00001],[colstarts_00002_00000],[colstarts_00002_00001],[colstarts_00003_00000],[colstarts_00003_00001],[colstarts_00004_00000],[colstarts_00004_00001],[colstarts_00005_00000],[colstarts_00005_00001],[sumrow_00000],[sumrow_00001],[sumrow_00002],[sumrow_00003],[sumrow_00004],[sumrow_00005],[sumcol_00000],[sumcol_00001],[sumcol_00002],[sumcol_00003],[sumcol_00004],[sumcol_00005],[rowbefore_00000_00000],[rowbefore_00000_00001],[rowbefore_00001_00000],[rowbefore_00001_00001],[rowbefore_00002_00000],[rowbefore_00002_00001],[rowbefore_00003_00000],[rowbefore_00003_00001],[rowbefore_00004_00000],[rowbefore_00004_00001],[rowbefore_00005_00000],[rowbefore_00005_00001],[colbefore_00000_00000],[colbefore_00000_00001],[colbefore_00001_00000],[colbefore_00001_00001],[colbefore_00002_00000],[colbefore_00002_00001],[colbefore_00003_00000],[colbefore_00003_00001],[colbefore_00004_00000],[colbefore_00004_00001],[colbefore_00005_00000],[colbefore_00005_00001],[rowblack_00000_00000_00000],[rowblack_00000_00000_00001],[rowblack_00000_00001_00000],[rowblack_00000_00001_00001],[rowblack_00000_00002_00000],[rowblack_00000_00002_00001],[rowblack_00000_00003_00000],[rowblack_00000_00003_00001],[rowblack_00000_00004_00000],[rowblack_00000_00004_00001],[rowblack_00000_00005_00000],[rowblack_00000_00005_00001],[rowblack_00001_00000_00000],[rowblack_00001_00000_00001],[rowblack_00001_00001_00000],[rowblack_00001_00001_00001],[rowblack_00001_00002_00000],[rowblack_00001_00002_00001],[rowblack_00001_00003_00000],[rowblack_00001_00003_00001],[rowblack_00001_00004_00000],[rowblack_00001_00004_00001],[rowblack_00001_00005_00000],[rowblack_00001_00005_00001],[rowblack_00002_00000_00000],[rowblack_00002_00000_00001],[rowblack_00002_00001_00000],[rowblack_00002_00001_00001],[rowblack_00002_00002_00000],[rowblack_00002_00002_00001],[rowblack_00002_00003_00000],[rowblack_00002_00003_00001],[rowblack_00002_00004_00000],[rowblack_00002_00004_00001],[rowblack_00002_00005_00000],[rowblack_00002_00005_00001],[rowblack_00003_00000_00000],[rowblack_00003_00000_00001],[rowblack_00003_00001_00000],[rowblack_00003_00001_00001],[rowblack_00003_00002_00000],[rowblack_00003_00002_00001],[rowblack_00003_00003_00000],[rowblack_00003_00003_00001],[rowblack_00003_00004_00000],[rowblack_00003_00004_00001],[rowblack_00003_00005_00000],[rowblack_00003_00005_00001],[rowblack_00004_00000_00000],[rowblack_00004_00000_00001],[rowblack_00004_00001_00000],[rowblack_00004_00001_00001],[rowblack_00004_00002_00000],[rowblack_00004_00002_00001],[rowblack_00004_00003_00000],[rowblack_00004_00003_00001],[rowblack_00004_00004_00000],[rowblack_00004_00004_00001],[rowblack_00004_00005_00000],[rowblack_00004_00005_00001],[rowblack_00005_00000_00000],[rowblack_00005_00000_00001],[rowblack_00005_00001_00000],[rowblack_00005_00001_00001],[rowblack_00005_00002_00000],[rowblack_00005_00002_00001],[rowblack_00005_00003_00000],[rowblack_00005_00003_00001],[rowblack_00005_00004_00000],[rowblack_00005_00004_00001],[rowblack_00005_00005_00000],[rowblack_00005_00005_00001],[colblack_00000_00000_00000],[colblack_00000_00000_00001],[colblack_00000_00001_00000],[colblack_00000_00001_00001],[colblack_00000_00002_00000],[colblack_00000_00002_00001],[colblack_00000_00003_00000],[colblack_00000_00003_00001],[colblack_00000_00004_00000],[colblack_00000_00004_00001],[colblack_00000_00005_00000],[colblack_00000_00005_00001],[colblack_00001_00000_00000],[colblack_00001_00000_00001],[colblack_00001_00001_00000],[colblack_00001_00001_00001],[colblack_00001_00002_00000],[colblack_00001_00002_00001],[colblack_00001_00003_00000],[colblack_00001_00003_00001],[colblack_00001_00004_00000],[colblack_00001_00004_00001],[colblack_00001_00005_00000],[colblack_00001_00005_00001],[colblack_00002_00000_00000],[colblack_00002_00000_00001],[colblack_00002_00001_00000],[colblack_00002_00001_00001],[colblack_00002_00002_00000],[colblack_00002_00002_00001],[colblack_00002_00003_00000],[colblack_00002_00003_00001],[colblack_00002_00004_00000],[colblack_00002_00004_00001],[colblack_00002_00005_00000],[colblack_00002_00005_00001],[colblack_00003_00000_00000],[colblack_00003_00000_00001],[colblack_00003_00001_00000],[colblack_00003_00001_00001],[colblack_00003_00002_00000],[colblack_00003_00002_00001],[colblack_00003_00003_00000],[colblack_00003_00003_00001],[colblack_00003_00004_00000],[colblack_00003_00004_00001],[colblack_00003_00005_00000],[colblack_00003_00005_00001],[colblack_00004_00000_00000],[colblack_00004_00000_00001],[colblack_00004_00001_00000],[colblack_00004_00001_00001],[colblack_00004_00002_00000],[colblack_00004_00002_00001],[colblack_00004_00003_00000],[colblack_00004_00003_00001],[colblack_00004_00004_00000],[colblack_00004_00004_00001],[colblack_00004_00005_00000],[colblack_00004_00005_00001],[colblack_00005_00000_00000],[colblack_00005_00000_00001],[colblack_00005_00001_00000],[colblack_00005_00001_00001],[colblack_00005_00002_00000],[colblack_00005_00002_00001],[colblack_00005_00003_00000],[colblack_00005_00003_00001],[colblack_00005_00004_00000],[colblack_00005_00004_00001],[colblack_00005_00005_00000],[colblack_00005_00005_00001],[rowwhite_00000_00000_00000],[rowwhite_00000_00000_00001],[rowwhite_00000_00001_00000],[rowwhite_00000_00001_00001],[rowwhite_00000_00002_00000],[rowwhite_00000_00002_00001],[rowwhite_00000_00003_00000],[rowwhite_00000_00003_00001],[rowwhite_00000_00004_00000],[rowwhite_00000_00004_00001],[rowwhite_00000_00005_00000],[rowwhite_00000_00005_00001],[rowwhite_00001_00000_00000],[rowwhite_00001_00000_00001],[rowwhite_00001_00001_00000],[rowwhite_00001_00001_00001],[rowwhite_00001_00002_00000],[rowwhite_00001_00002_00001],[rowwhite_00001_00003_00000],[rowwhite_00001_00003_00001],[rowwhite_00001_00004_00000],[rowwhite_00001_00004_00001],[rowwhite_00001_00005_00000],[rowwhite_00001_00005_00001],[rowwhite_00002_00000_00000],[rowwhite_00002_00000_00001],[rowwhite_00002_00001_00000],[rowwhite_00002_00001_00001],[rowwhite_00002_00002_00000],[rowwhite_00002_00002_00001],[rowwhite_00002_00003_00000],[rowwhite_00002_00003_00001],[rowwhite_00002_00004_00000],[rowwhite_00002_00004_00001],[rowwhite_00002_00005_00000],[rowwhite_00002_00005_00001],[rowwhite_00003_00000_00000],[rowwhite_00003_00000_00001],[rowwhite_00003_00001_00000],[rowwhite_00003_00001_00001],[rowwhite_00003_00002_00000],[rowwhite_00003_00002_00001],[rowwhite_00003_00003_00000],[rowwhite_00003_00003_00001],[rowwhite_00003_00004_00000],[rowwhite_00003_00004_00001],[rowwhite_00003_00005_00000],[rowwhite_00003_00005_00001],[rowwhite_00004_00000_00000],[rowwhite_00004_00000_00001],[rowwhite_00004_00001_00000],[rowwhite_00004_00001_00001],[rowwhite_00004_00002_00000],[rowwhite_00004_00002_00001],[rowwhite_00004_00003_00000],[rowwhite_00004_00003_00001],[rowwhite_00004_00004_00000],[rowwhite_00004_00004_00001],[rowwhite_00004_00005_00000],[rowwhite_00004_00005_00001],[rowwhite_00005_00000_00000],[rowwhite_00005_00000_00001],[rowwhite_00005_00001_00000],[rowwhite_00005_00001_00001],[rowwhite_00005_00002_00000],[rowwhite_00005_00002_00001],[rowwhite_00005_00003_00000],[rowwhite_00005_00003_00001],[rowwhite_00005_00004_00000],[rowwhite_00005_00004_00001],[rowwhite_00005_00005_00000],[rowwhite_00005_00005_00001],[colwhite_00000_00000_00000],[colwhite_00000_00000_00001],[colwhite_00000_00001_00000],[colwhite_00000_00001_00001],[colwhite_00000_00002_00000],[colwhite_00000_00002_00001],[colwhite_00000_00003_00000],[colwhite_00000_00003_00001],[colwhite_00000_00004_00000],[colwhite_00000_00004_00001],[colwhite_00000_00005_00000],[colwhite_00000_00005_00001],[colwhite_00001_00000_00000],[colwhite_00001_00000_00001],[colwhite_00001_00001_00000],[colwhite_00001_00001_00001],[colwhite_00001_00002_00000],[colwhite_00001_00002_00001],[colwhite_00001_00003_00000],[colwhite_00001_00003_00001],[colwhite_00001_00004_00000],[colwhite_00001_00004_00001],[colwhite_00001_00005_00000],[colwhite_00001_00005_00001],[colwhite_00002_00000_00000],[colwhite_00002_00000_00001],[colwhite_00002_00001_00000],[colwhite_00002_00001_00001],[colwhite_00002_00002_00000],[colwhite_00002_00002_00001],[colwhite_00002_00003_00000],[colwhite_00002_00003_00001],[colwhite_00002_00004_00000],[colwhite_00002_00004_00001],[colwhite_00002_00005_00000],[colwhite_00002_00005_00001],[colwhite_00003_00000_00000],[colwhite_00003_00000_00001],[colwhite_00003_00001_00000],[colwhite_00003_00001_00001],[colwhite_00003_00002_00000],[colwhite_00003_00002_00001],[colwhite_00003_00003_00000],[colwhite_00003_00003_00001],[colwhite_00003_00004_00000],[colwhite_00003_00004_00001],[colwhite_00003_00005_00000],[colwhite_00003_00005_00001],[colwhite_00004_00000_00000],[colwhite_00004_00000_00001],[colwhite_00004_00001_00000],[colwhite_00004_00001_00001],[colwhite_00004_00002_00000],[colwhite_00004_00002_00001],[colwhite_00004_00003_00000],[colwhite_00004_00003_00001],[colwhite_00004_00004_00000],[colwhite_00004_00004_00001],[colwhite_00004_00005_00000],[colwhite_00004_00005_00001],[colwhite_00005_00000_00000],[colwhite_00005_00000_00001],[colwhite_00005_00001_00000],[colwhite_00005_00001_00001],[colwhite_00005_00002_00000],[colwhite_00005_00002_00001],[colwhite_00005_00003_00000],[colwhite_00005_00003_00001],[colwhite_00005_00004_00000],[colwhite_00005_00004_00001],[colwhite_00005_00005_00000],[colwhite_00005_00005_00001],[cellblackrow_00000_00000],[cellblackrow_00000_00001],[cellblackrow_00000_00002],[cellblackrow_00000_00003],[cellblackrow_00000_00004],[cellblackrow_00000_00005],[cellblackrow_00001_00000],[cellblackrow_00001_00001],[cellblackrow_00001_00002],[cellblackrow_00001_00003],[cellblackrow_00001_00004],[cellblackrow_00001_00005],[cellblackrow_00002_00000],[cellblackrow_00002_00001],[cellblackrow_00002_00002],[cellblackrow_00002_00003],[cellblackrow_00002_00004],[cellblackrow_00002_00005],[cellblackrow_00003_00000],[cellblackrow_00003_00001],[cellblackrow_00003_00002],[cellblackrow_00003_00003],[cellblackrow_00003_00004],[cellblackrow_00003_00005],[cellblackrow_00004_00000],[cellblackrow_00004_00001],[cellblackrow_00004_00002],[cellblackrow_00004_00003],[cellblackrow_00004_00004],[cellblackrow_00004_00005],[cellblackrow_00005_00000],[cellblackrow_00005_00001],[cellblackrow_00005_00002],[cellblackrow_00005_00003],[cellblackrow_00005_00004],[cellblackrow_00005_00005],[cellblackcol_00000_00000],[cellblackcol_00000_00001],[cellblackcol_00000_00002],[cellblackcol_00000_00003],[cellblackcol_00000_00004],[cellblackcol_00000_00005],[cellblackcol_00001_00000],[cellblackcol_00001_00001],[cellblackcol_00001_00002],[cellblackcol_00001_00003],[cellblackcol_00001_00004],[cellblackcol_00001_00005],[cellblackcol_00002_00000],[cellblackcol_00002_00001],[cellblackcol_00002_00002],[cellblackcol_00002_00003],[cellblackcol_00002_00004],[cellblackcol_00002_00005],[cellblackcol_00003_00000],[cellblackcol_00003_00001],[cellblackcol_00003_00002],[cellblackcol_00003_00003],[cellblackcol_00003_00004],[cellblackcol_00003_00005],[cellblackcol_00004_00000],[cellblackcol_00004_00001],[cellblackcol_00004_00002],[cellblackcol_00004_00003],[cellblackcol_00004_00004],[cellblackcol_00004_00005],[cellblackcol_00005_00000],[cellblackcol_00005_00001],[cellblackcol_00005_00002],[cellblackcol_00005_00003],[cellblackcol_00005_00004],[cellblackcol_00005_00005],[cellwhiterow_00000_00000],[cellwhiterow_00000_00001],[cellwhiterow_00000_00002],[cellwhiterow_00000_00003],[cellwhiterow_00000_00004],[cellwhiterow_00000_00005],[cellwhiterow_00001_00000],[cellwhiterow_00001_00001],[cellwhiterow_00001_00002],[cellwhiterow_00001_00003],[cellwhiterow_00001_00004],[cellwhiterow_00001_00005],[cellwhiterow_00002_00000],[cellwhiterow_00002_00001],[cellwhiterow_00002_00002],[cellwhiterow_00002_00003],[cellwhiterow_00002_00004],[cellwhiterow_00002_00005],[cellwhiterow_00003_00000],[cellwhiterow_00003_00001],[cellwhiterow_00003_00002],[cellwhiterow_00003_00003],[cellwhiterow_00003_00004],[cellwhiterow_00003_00005],[cellwhiterow_00004_00000],[cellwhiterow_00004_00001],[cellwhiterow_00004_00002],[cellwhiterow_00004_00003],[cellwhiterow_00004_00004],[cellwhiterow_00004_00005],[cellwhiterow_00005_00000],[cellwhiterow_00005_00001],[cellwhiterow_00005_00002],[cellwhiterow_00005_00003],[cellwhiterow_00005_00004],[cellwhiterow_00005_00005],[cellwhitecol_00000_00000],[cellwhitecol_00000_00001],[cellwhitecol_00000_00002],[cellwhitecol_00000_00003],[cellwhitecol_00000_00004],[cellwhitecol_00000_00005],[cellwhitecol_00001_00000],[cellwhitecol_00001_00001],[cellwhitecol_00001_00002],[cellwhitecol_00001_00003],[cellwhitecol_00001_00004],[cellwhitecol_00001_00005],[cellwhitecol_00002_00000],[cellwhitecol_00002_00001],[cellwhitecol_00002_00002],[cellwhitecol_00002_00003],[cellwhitecol_00002_00004],[cellwhitecol_00002_00005],[cellwhitecol_00003_00000],[cellwhitecol_00003_00001],[cellwhitecol_00003_00002],[cellwhitecol_00003_00003],[cellwhitecol_00003_00004],[cellwhitecol_00003_00005],[cellwhitecol_00004_00000],[cellwhitecol_00004_00001],[cellwhitecol_00004_00002],[cellwhitecol_00004_00003],[cellwhitecol_00004_00004],[cellwhitecol_00004_00005],[cellwhitecol_00005_00000],[cellwhitecol_00005_00001],[cellwhitecol_00005_00002],[cellwhitecol_00005_00003],[cellwhitecol_00005_00004],[cellwhitecol_00005_00005]]
+**CONSTRAINTS**
+minuseq(aux4, rowstarts_00000_00000)
+minuseq(aux5, rowstarts_00000_00000)
+minuseq(aux6, rowstarts_00000_00000)
+minuseq(aux7, rowstarts_00000_00000)
+minuseq(aux8, rowstarts_00001_00000)
+minuseq(aux9, rowstarts_00001_00000)
+minuseq(aux10, rowstarts_00001_00000)
+minuseq(aux11, rowstarts_00001_00000)
+minuseq(aux12, rowstarts_00001_00000)
+minuseq(aux13, rowstarts_00002_00000)
+minuseq(aux14, rowstarts_00002_00000)
+minuseq(aux15, rowstarts_00002_00000)
+minuseq(aux16, rowstarts_00002_00000)
+minuseq(aux17, rowstarts_00002_00000)
+minuseq(aux18, colstarts_00000_00000)
+minuseq(aux19, colstarts_00004_00001)
+minuseq(aux20, colstarts_00000_00000)
+minuseq(aux21, colstarts_00002_00000)
+minuseq(aux22, colstarts_00005_00000)
+minuseq(aux23, colstarts_00004_00000)
+minuseq(aux24, colstarts_00004_00001)
+minuseq(aux25, colstarts_00000_00000)
+minuseq(aux26, colstarts_00002_00000)
+minuseq(aux27, colstarts_00005_00000)
+minuseq(aux28, colstarts_00004_00000)
+minuseq(aux29, colstarts_00004_00001)
+minuseq(aux30, colstarts_00000_00000)
+minuseq(aux31, colstarts_00002_00000)
+minuseq(aux32, colstarts_00005_00000)
+minuseq(aux33, colstarts_00004_00000)
+minuseq(aux34, colstarts_00004_00001)
+minuseq(aux35, colstarts_00000_00000)
+minuseq(aux36, colstarts_00001_00000)
+minuseq(aux37, colstarts_00002_00000)
+minuseq(aux38, colstarts_00003_00000)
+minuseq(aux39, colstarts_00005_00000)
+minuseq(aux40, colstarts_00004_00000)
+minuseq(aux41, colstarts_00004_00001)
+minuseq(aux42, rowstarts_00000_00000)
+minuseq(aux43, rowstarts_00000_00000)
+minuseq(aux44, rowstarts_00000_00000)
+minuseq(aux45, rowstarts_00001_00000)
+minuseq(aux46, rowstarts_00001_00000)
+minuseq(aux47, rowstarts_00001_00000)
+minuseq(aux48, rowstarts_00001_00000)
+minuseq(aux49, rowstarts_00002_00000)
+minuseq(aux50, rowstarts_00002_00000)
+minuseq(aux51, rowstarts_00002_00000)
+minuseq(aux52, rowstarts_00002_00000)
+minuseq(aux53, colstarts_00000_00000)
+minuseq(aux54, colstarts_00000_00000)
+minuseq(aux55, colstarts_00002_00000)
+minuseq(aux56, colstarts_00005_00000)
+minuseq(aux57, colstarts_00004_00000)
+minuseq(aux58, colstarts_00000_00000)
+minuseq(aux59, colstarts_00002_00000)
+minuseq(aux60, colstarts_00005_00000)
+minuseq(aux61, colstarts_00004_00000)
+minuseq(aux62, colstarts_00000_00000)
+minuseq(aux63, colstarts_00002_00000)
+minuseq(aux64, colstarts_00005_00000)
+minuseq(aux65, colstarts_00004_00000)
+minuseq(aux66, rowstarts_00000_00001)
+minuseq(aux67, rowstarts_00000_00000)
+minuseq(aux68, rowstarts_00000_00001)
+minuseq(aux69, rowstarts_00000_00000)
+minuseq(aux70, rowstarts_00000_00001)
+minuseq(aux71, rowstarts_00000_00000)
+minuseq(aux72, rowstarts_00000_00001)
+minuseq(aux73, rowstarts_00000_00000)
+minuseq(aux74, rowstarts_00000_00001)
+minuseq(aux75, rowstarts_00001_00000)
+minuseq(aux76, rowstarts_00001_00000)
+minuseq(aux77, rowstarts_00001_00000)
+minuseq(aux78, rowstarts_00001_00001)
+minuseq(aux79, rowstarts_00001_00000)
+minuseq(aux80, rowstarts_00001_00001)
+minuseq(aux81, rowstarts_00001_00000)
+minuseq(aux82, rowstarts_00001_00001)
+minuseq(aux83, rowstarts_00002_00000)
+minuseq(aux84, rowstarts_00002_00000)
+minuseq(aux85, rowstarts_00002_00001)
+minuseq(aux86, rowstarts_00002_00000)
+minuseq(aux87, rowstarts_00002_00001)
+minuseq(aux88, rowstarts_00002_00000)
+minuseq(aux89, rowstarts_00002_00001)
+minuseq(aux90, rowstarts_00002_00000)
+minuseq(aux91, rowstarts_00002_00001)
+minuseq(aux92, rowstarts_00003_00001)
+minuseq(aux93, rowstarts_00003_00001)
+minuseq(aux94, rowstarts_00003_00001)
+minuseq(aux95, rowstarts_00003_00000)
+minuseq(aux96, rowstarts_00003_00001)
+minuseq(aux97, rowstarts_00003_00000)
+minuseq(aux98, rowstarts_00003_00001)
+minuseq(aux99, rowstarts_00003_00000)
+minuseq(aux100, rowstarts_00004_00001)
+minuseq(aux101, rowstarts_00004_00001)
+minuseq(aux102, rowstarts_00004_00001)
+minuseq(aux103, rowstarts_00004_00001)
+minuseq(aux104, rowstarts_00004_00000)
+minuseq(aux105, rowstarts_00004_00001)
+minuseq(aux106, rowstarts_00004_00000)
+minuseq(aux107, rowstarts_00005_00001)
+minuseq(aux108, rowstarts_00005_00000)
+minuseq(aux109, rowstarts_00005_00001)
+minuseq(aux110, rowstarts_00005_00000)
+minuseq(aux111, rowstarts_00005_00001)
+minuseq(aux112, rowstarts_00005_00000)
+minuseq(aux113, rowstarts_00005_00001)
+minuseq(aux114, rowstarts_00005_00000)
+minuseq(aux115, rowstarts_00005_00001)
+minuseq(aux116, rowstarts_00005_00000)
+minuseq(aux117, rowstarts_00000_00001)
+minuseq(aux118, rowstarts_00000_00000)
+minuseq(aux119, rowstarts_00000_00001)
+minuseq(aux120, rowstarts_00000_00000)
+minuseq(aux121, rowstarts_00000_00001)
+minuseq(aux122, rowstarts_00000_00000)
+minuseq(aux123, rowstarts_00000_00001)
+minuseq(aux124, rowstarts_00000_00000)
+minuseq(aux125, rowstarts_00000_00001)
+minuseq(aux126, rowstarts_00001_00000)
+minuseq(aux127, rowstarts_00001_00000)
+minuseq(aux128, rowstarts_00001_00000)
+minuseq(aux129, rowstarts_00001_00001)
+minuseq(aux130, rowstarts_00001_00000)
+minuseq(aux131, rowstarts_00001_00001)
+minuseq(aux132, rowstarts_00001_00000)
+minuseq(aux133, rowstarts_00001_00001)
+minuseq(aux134, rowstarts_00002_00000)
+minuseq(aux135, rowstarts_00002_00000)
+minuseq(aux136, rowstarts_00002_00001)
+minuseq(aux137, rowstarts_00002_00000)
+minuseq(aux138, rowstarts_00002_00001)
+minuseq(aux139, rowstarts_00002_00000)
+minuseq(aux140, rowstarts_00002_00001)
+minuseq(aux141, rowstarts_00002_00000)
+minuseq(aux142, rowstarts_00002_00001)
+minuseq(aux143, rowstarts_00003_00001)
+minuseq(aux144, rowstarts_00003_00001)
+minuseq(aux145, rowstarts_00003_00001)
+minuseq(aux146, rowstarts_00003_00000)
+minuseq(aux147, rowstarts_00003_00001)
+minuseq(aux148, rowstarts_00003_00000)
+minuseq(aux149, rowstarts_00003_00001)
+minuseq(aux150, rowstarts_00003_00000)
+minuseq(aux151, rowstarts_00004_00001)
+minuseq(aux152, rowstarts_00004_00001)
+minuseq(aux153, rowstarts_00004_00001)
+minuseq(aux154, rowstarts_00004_00001)
+minuseq(aux155, rowstarts_00004_00000)
+minuseq(aux156, rowstarts_00004_00001)
+minuseq(aux157, rowstarts_00004_00000)
+minuseq(aux158, rowstarts_00005_00001)
+minuseq(aux159, rowstarts_00005_00000)
+minuseq(aux160, rowstarts_00005_00001)
+minuseq(aux161, rowstarts_00005_00000)
+minuseq(aux162, rowstarts_00005_00001)
+minuseq(aux163, rowstarts_00005_00000)
+minuseq(aux164, rowstarts_00005_00001)
+minuseq(aux165, rowstarts_00005_00000)
+minuseq(aux166, rowstarts_00005_00001)
+minuseq(aux167, rowstarts_00005_00000)
+minuseq(aux168, colstarts_00000_00001)
+minuseq(aux169, colstarts_00001_00001)
+minuseq(aux170, colstarts_00002_00001)
+minuseq(aux171, colstarts_00003_00001)
+minuseq(aux172, colstarts_00005_00001)
+minuseq(aux173, colstarts_00000_00000)
+minuseq(aux174, colstarts_00000_00001)
+minuseq(aux175, colstarts_00001_00001)
+minuseq(aux176, colstarts_00002_00001)
+minuseq(aux177, colstarts_00003_00001)
+minuseq(aux178, colstarts_00004_00001)
+minuseq(aux179, colstarts_00005_00001)
+minuseq(aux180, colstarts_00000_00000)
+minuseq(aux181, colstarts_00000_00001)
+minuseq(aux182, colstarts_00001_00001)
+minuseq(aux183, colstarts_00002_00000)
+minuseq(aux184, colstarts_00002_00001)
+minuseq(aux185, colstarts_00003_00001)
+minuseq(aux186, colstarts_00004_00000)
+minuseq(aux187, colstarts_00004_00001)
+minuseq(aux188, colstarts_00005_00000)
+minuseq(aux189, colstarts_00005_00001)
+minuseq(aux190, colstarts_00000_00000)
+minuseq(aux191, colstarts_00000_00001)
+minuseq(aux192, colstarts_00001_00001)
+minuseq(aux193, colstarts_00002_00000)
+minuseq(aux194, colstarts_00002_00001)
+minuseq(aux195, colstarts_00003_00001)
+minuseq(aux196, colstarts_00004_00000)
+minuseq(aux197, colstarts_00004_00001)
+minuseq(aux198, colstarts_00005_00000)
+minuseq(aux199, colstarts_00005_00001)
+minuseq(aux200, colstarts_00000_00000)
+minuseq(aux201, colstarts_00000_00001)
+minuseq(aux202, colstarts_00001_00001)
+minuseq(aux203, colstarts_00002_00000)
+minuseq(aux204, colstarts_00002_00001)
+minuseq(aux205, colstarts_00003_00001)
+minuseq(aux206, colstarts_00004_00000)
+minuseq(aux207, colstarts_00004_00001)
+minuseq(aux208, colstarts_00005_00000)
+minuseq(aux209, colstarts_00005_00001)
+minuseq(aux210, colstarts_00000_00000)
+minuseq(aux211, colstarts_00001_00000)
+minuseq(aux212, colstarts_00002_00000)
+minuseq(aux213, colstarts_00003_00000)
+minuseq(aux214, colstarts_00004_00000)
+minuseq(aux215, colstarts_00004_00001)
+minuseq(aux216, colstarts_00005_00000)
+minuseq(aux217, colstarts_00000_00001)
+minuseq(aux218, colstarts_00001_00001)
+minuseq(aux219, colstarts_00002_00001)
+minuseq(aux220, colstarts_00003_00001)
+minuseq(aux221, colstarts_00005_00001)
+minuseq(aux222, colstarts_00000_00000)
+minuseq(aux223, colstarts_00000_00001)
+minuseq(aux224, colstarts_00001_00001)
+minuseq(aux225, colstarts_00002_00001)
+minuseq(aux226, colstarts_00003_00001)
+minuseq(aux227, colstarts_00004_00001)
+minuseq(aux228, colstarts_00005_00001)
+minuseq(aux229, colstarts_00000_00000)
+minuseq(aux230, colstarts_00000_00001)
+minuseq(aux231, colstarts_00001_00001)
+minuseq(aux232, colstarts_00002_00000)
+minuseq(aux233, colstarts_00002_00001)
+minuseq(aux234, colstarts_00003_00001)
+minuseq(aux235, colstarts_00004_00000)
+minuseq(aux236, colstarts_00004_00001)
+minuseq(aux237, colstarts_00005_00000)
+minuseq(aux238, colstarts_00005_00001)
+minuseq(aux239, colstarts_00000_00000)
+minuseq(aux240, colstarts_00000_00001)
+minuseq(aux241, colstarts_00001_00001)
+minuseq(aux242, colstarts_00002_00000)
+minuseq(aux243, colstarts_00002_00001)
+minuseq(aux244, colstarts_00003_00001)
+minuseq(aux245, colstarts_00004_00000)
+minuseq(aux246, colstarts_00004_00001)
+minuseq(aux247, colstarts_00005_00000)
+minuseq(aux248, colstarts_00005_00001)
+minuseq(aux249, colstarts_00000_00000)
+minuseq(aux250, colstarts_00000_00001)
+minuseq(aux251, colstarts_00001_00001)
+minuseq(aux252, colstarts_00002_00000)
+minuseq(aux253, colstarts_00002_00001)
+minuseq(aux254, colstarts_00003_00001)
+minuseq(aux255, colstarts_00004_00000)
+minuseq(aux256, colstarts_00004_00001)
+minuseq(aux257, colstarts_00005_00000)
+minuseq(aux258, colstarts_00005_00001)
+minuseq(aux259, colstarts_00000_00000)
+minuseq(aux260, colstarts_00001_00000)
+minuseq(aux261, colstarts_00002_00000)
+minuseq(aux262, colstarts_00003_00000)
+minuseq(aux263, colstarts_00004_00000)
+minuseq(aux264, colstarts_00004_00001)
+minuseq(aux265, colstarts_00005_00000)
+reifyimply(ineq(aux0, colstarts_00004_00001, -1), colbefore_00004_00000)
+ineq(rowstarts_00000_00000, 4, 0)
+ineq(rowstarts_00001_00001, 3, 0)
+ineq(rowstarts_00002_00001, 4, 0)
+w-literal(rowstarts_00005_00001,0)
+ineq(rowstarts_00003_00000, 3, 0)
+w-literal(rowstarts_00003_00001,0)
+ineq(rowstarts_00004_00000, 2, 0)
+w-literal(rowstarts_00004_00001,0)
+w-literal(colstarts_00000_00001,0)
+ineq(colstarts_00004_00000, 4, 0)
+ineq(colstarts_00001_00000, 1, 0)
+w-literal(colstarts_00001_00001,0)
+ineq(colstarts_00002_00000, 4, 0)
+w-literal(colstarts_00002_00001,0)
+ineq(colstarts_00003_00000, 1, 0)
+w-literal(colstarts_00003_00001,0)
+ineq(colstarts_00005_00000, 4, 0)
+w-literal(colstarts_00005_00001,0)
+reifyimply(ineq(aux1, rowstarts_00000_00001, -1), rowbefore_00000_00000)
+reifyimply(ineq(aux2, rowstarts_00001_00001, -1), rowbefore_00001_00000)
+reifyimply(ineq(aux3, rowstarts_00002_00001, -1), rowbefore_00002_00000)
+watched-or({w-literal(rowblack_00000_00000_00000,0),ineq(0, rowstarts_00000_00000, -1),w-literal(grid_00000_00000,1)})
+watched-or({w-literal(rowblack_00000_00001_00000,0),ineq(1, rowstarts_00000_00000, -1),w-literal(grid_00000_00001,1)})
+watched-or({ineq(2, rowstarts_00000_00000, -1),w-literal(grid_00000_00002,1),w-literal(rowblack_00000_00002_00000,0),ineq(0, aux4, 0)})
+watched-or({ineq(3, rowstarts_00000_00000, -1),w-literal(grid_00000_00003,1),w-literal(rowblack_00000_00003_00000,0),ineq(-1, aux5, 0)})
+watched-or({w-literal(rowblack_00000_00004_00000,0),ineq(4, rowstarts_00000_00000, -1),w-literal(grid_00000_00004,1),ineq(-2, aux6, 0)})
+watched-or({w-literal(rowblack_00000_00005_00000,0),w-literal(grid_00000_00005,1),ineq(-3, aux7, 0)})
+watched-or({w-literal(rowblack_00001_00000_00000,0),ineq(0, rowstarts_00001_00000, -1),w-literal(grid_00001_00000,1)})
+watched-or({ineq(0, aux8, 0),w-literal(rowblack_00001_00001_00000,0),ineq(1, rowstarts_00001_00000, -1),w-literal(grid_00001_00001,1)})
+watched-or({ineq(-1, aux9, 0),w-literal(rowblack_00001_00002_00000,0),ineq(2, rowstarts_00001_00000, -1),w-literal(grid_00001_00002,1)})
+watched-or({ineq(-2, aux10, 0),ineq(3, rowstarts_00001_00000, -1),w-literal(grid_00001_00003,1),w-literal(rowblack_00001_00003_00000,0)})
+watched-or({ineq(-3, aux11, 0),ineq(4, rowstarts_00001_00000, -1),w-literal(grid_00001_00004,1),w-literal(rowblack_00001_00004_00000,0)})
+watched-or({w-literal(rowblack_00001_00005_00000,0),ineq(-4, aux12, 0),w-literal(grid_00001_00005,1)})
+watched-or({w-literal(rowblack_00002_00000_00000,0),ineq(0, rowstarts_00002_00000, -1),w-literal(grid_00002_00000,1)})
+watched-or({w-literal(rowblack_00002_00001_00000,0),ineq(0, aux13, 0),ineq(1, rowstarts_00002_00000, -1),w-literal(grid_00002_00001,1)})
+watched-or({ineq(-1, aux14, 0),w-literal(rowblack_00002_00002_00000,0),ineq(2, rowstarts_00002_00000, -1),w-literal(grid_00002_00002,1)})
+watched-or({ineq(-2, aux15, 0),w-literal(rowblack_00002_00003_00000,0),ineq(3, rowstarts_00002_00000, -1),w-literal(grid_00002_00003,1)})
+watched-or({ineq(-3, aux16, 0),w-literal(rowblack_00002_00004_00000,0),ineq(4, rowstarts_00002_00000, -1),w-literal(grid_00002_00004,1)})
+watched-or({w-literal(rowblack_00002_00005_00000,0),ineq(-4, aux17, 0),w-literal(grid_00002_00005,1)})
+watched-or({w-literal(colblack_00000_00000_00000,0),w-literal(grid_00000_00000,1),ineq(0, colstarts_00000_00000, -1)})
+watched-or({ineq(0, colstarts_00001_00000, -1),w-literal(colblack_00000_00001_00000,0),w-literal(grid_00000_00001,1)})
+watched-or({ineq(0, colstarts_00002_00000, -1),w-literal(grid_00000_00002,1),w-literal(colblack_00000_00002_00000,0)})
+watched-or({w-literal(grid_00000_00003,1),ineq(0, colstarts_00003_00000, -1),w-literal(colblack_00000_00003_00000,0)})
+watched-or({w-literal(colblack_00000_00005_00000,0),w-literal(grid_00000_00005,1),ineq(0, colstarts_00005_00000, -1)})
+watched-or({w-literal(colblack_00000_00004_00000,0),w-literal(grid_00000_00004,1),ineq(0, colstarts_00004_00000, -1)})
+watched-or({w-literal(colblack_00000_00004_00001,0),w-literal(grid_00000_00004,1),ineq(0, colstarts_00004_00001, -1)})
+watched-or({w-literal(colblack_00001_00000_00000,0),ineq(0, aux18, 0),w-literal(grid_00001_00000,1),ineq(1, colstarts_00000_00000, -1)})
+watched-or({ineq(1, colstarts_00001_00000, -1),w-literal(colblack_00001_00001_00000,0),w-literal(grid_00001_00001,1)})
+watched-or({ineq(1, colstarts_00002_00000, -1),w-literal(colblack_00001_00002_00000,0),w-literal(grid_00001_00002,1)})
+watched-or({ineq(1, colstarts_00003_00000, -1),w-literal(grid_00001_00003,1),w-literal(colblack_00001_00003_00000,0)})
+watched-or({w-literal(colblack_00001_00005_00000,0),w-literal(grid_00001_00005,1),ineq(1, colstarts_00005_00000, -1)})
+watched-or({w-literal(colblack_00001_00004_00000,0),w-literal(grid_00001_00004,1),ineq(1, colstarts_00004_00000, -1)})
+watched-or({w-literal(colblack_00001_00004_00001,0),ineq(0, aux19, 0),w-literal(grid_00001_00004,1),ineq(1, colstarts_00004_00001, -1)})
+watched-or({w-literal(colblack_00002_00000_00000,0),ineq(-1, aux20, 0),ineq(2, colstarts_00000_00000, -1),w-literal(grid_00002_00000,1)})
+watched-or({ineq(2, colstarts_00001_00000, -1),w-literal(colblack_00002_00001_00000,0),w-literal(grid_00002_00001,1)})
+watched-or({ineq(2, colstarts_00002_00000, -1),w-literal(colblack_00002_00002_00000,0),ineq(0, aux21, 0),w-literal(grid_00002_00002,1)})
+watched-or({ineq(2, colstarts_00003_00000, -1),w-literal(colblack_00002_00003_00000,0),w-literal(grid_00002_00003,1)})
+watched-or({w-literal(colblack_00002_00005_00000,0),ineq(0, aux22, 0),w-literal(grid_00002_00005,1),ineq(2, colstarts_00005_00000, -1)})
+watched-or({ineq(0, aux23, 0),ineq(2, colstarts_00004_00000, -1),w-literal(grid_00002_00004,1),w-literal(colblack_00002_00004_00000,0)})
+watched-or({ineq(-1, aux24, 0),ineq(2, colstarts_00004_00001, -1),w-literal(grid_00002_00004,1),w-literal(colblack_00002_00004_00001,0)})
+watched-or({w-literal(colblack_00003_00000_00000,0),w-literal(grid_00003_00000,1),ineq(-2, aux25, 0),ineq(3, colstarts_00000_00000, -1)})
+watched-or({ineq(3, colstarts_00001_00000, -1),w-literal(grid_00003_00001,1),w-literal(colblack_00003_00001_00000,0)})
+watched-or({w-literal(grid_00003_00002,1),ineq(3, colstarts_00002_00000, -1),w-literal(colblack_00003_00002_00000,0),ineq(-1, aux26, 0)})
+watched-or({w-literal(grid_00003_00003,1),ineq(3, colstarts_00003_00000, -1),w-literal(colblack_00003_00003_00000,0)})
+watched-or({w-literal(colblack_00003_00005_00000,0),w-literal(grid_00003_00005,1),ineq(-1, aux27, 0),ineq(3, colstarts_00005_00000, -1)})
+watched-or({w-literal(grid_00003_00004,1),ineq(-1, aux28, 0),ineq(3, colstarts_00004_00000, -1),w-literal(colblack_00003_00004_00000,0)})
+watched-or({w-literal(grid_00003_00004,1),ineq(-2, aux29, 0),ineq(3, colstarts_00004_00001, -1),w-literal(colblack_00003_00004_00001,0)})
+watched-or({w-literal(grid_00004_00000,1),ineq(-3, aux30, 0),ineq(4, colstarts_00000_00000, -1),w-literal(colblack_00004_00000_00000,0)})
+watched-or({ineq(4, colstarts_00001_00000, -1),w-literal(colblack_00004_00001_00000,0),w-literal(grid_00004_00001,1)})
+watched-or({ineq(4, colstarts_00002_00000, -1),w-literal(grid_00004_00002,1),w-literal(colblack_00004_00002_00000,0),ineq(-2, aux31, 0)})
+watched-or({w-literal(grid_00004_00003,1),ineq(4, colstarts_00003_00000, -1),w-literal(colblack_00004_00003_00000,0)})
+watched-or({w-literal(colblack_00004_00005_00000,0),w-literal(grid_00004_00005,1),ineq(-2, aux32, 0),ineq(4, colstarts_00005_00000, -1)})
+watched-or({ineq(-2, aux33, 0),w-literal(grid_00004_00004,1),ineq(4, colstarts_00004_00000, -1),w-literal(colblack_00004_00004_00000,0)})
+watched-or({ineq(-3, aux34, 0),w-literal(grid_00004_00004,1),ineq(4, colstarts_00004_00001, -1),w-literal(colblack_00004_00004_00001,0)})
+watched-or({ineq(-4, aux35, 0),w-literal(grid_00005_00000,1),w-literal(colblack_00005_00000_00000,0)})
+watched-or({w-literal(colblack_00005_00001_00000,0),w-literal(grid_00005_00001,1),ineq(0, aux36, 0)})
+watched-or({w-literal(colblack_00005_00002_00000,0),w-literal(grid_00005_00002,1),ineq(-3, aux37, 0)})
+watched-or({ineq(0, aux38, 0),w-literal(grid_00005_00003,1),w-literal(colblack_00005_00003_00000,0)})
+watched-or({ineq(-3, aux39, 0),w-literal(grid_00005_00005,1),w-literal(colblack_00005_00005_00000,0)})
+watched-or({ineq(-3, aux40, 0),w-literal(grid_00005_00004,1),w-literal(colblack_00005_00004_00000,0)})
+watched-or({ineq(-4, aux41, 0),w-literal(grid_00005_00004,1),w-literal(colblack_00005_00004_00001,0)})
+watched-or({ineq(aux42, -1, 0),ineq(rowstarts_00000_00001, 2, 0),w-literal(rowwhite_00000_00002_00000,0),w-literal(grid_00000_00002,0)})
+watched-or({ineq(aux43, -2, 0),ineq(rowstarts_00000_00001, 3, 0),w-literal(grid_00000_00003,0),w-literal(rowwhite_00000_00003_00000,0)})
+watched-or({ineq(aux44, -3, 0),ineq(rowstarts_00000_00001, 4, 0),w-literal(grid_00000_00004,0),w-literal(rowwhite_00000_00004_00000,0)})
+watched-or({w-literal(rowwhite_00001_00001_00000,0),ineq(aux45, -1, 0),ineq(rowstarts_00001_00001, 1, 0),w-literal(grid_00001_00001,0)})
+watched-or({w-literal(rowwhite_00001_00002_00000,0),ineq(aux46, -2, 0),ineq(rowstarts_00001_00001, 2, 0),w-literal(grid_00001_00002,0)})
+watched-or({w-literal(rowwhite_00001_00003_00000,0),ineq(aux47, -3, 0),ineq(rowstarts_00001_00001, 3, 0),w-literal(grid_00001_00003,0)})
+watched-or({ineq(aux48, -4, 0),ineq(rowstarts_00001_00001, 4, 0),w-literal(rowwhite_00001_00004_00000,0),w-literal(grid_00001_00004,0)})
+watched-or({w-literal(grid_00002_00001,0),ineq(aux49, -1, 0),w-literal(rowwhite_00002_00001_00000,0),ineq(rowstarts_00002_00001, 1, 0)})
+watched-or({w-literal(grid_00002_00002,0),ineq(aux50, -2, 0),ineq(rowstarts_00002_00001, 2, 0),w-literal(rowwhite_00002_00002_00000,0)})
+watched-or({w-literal(grid_00002_00003,0),ineq(aux51, -3, 0),ineq(rowstarts_00002_00001, 3, 0),w-literal(rowwhite_00002_00003_00000,0)})
+watched-or({w-literal(grid_00002_00004,0),ineq(aux52, -4, 0),ineq(rowstarts_00002_00001, 4, 0),w-literal(rowwhite_00002_00004_00000,0)})
+watched-or({w-literal(colwhite_00001_00000_00000,0),ineq(aux53, -1, 0),ineq(colstarts_00000_00001, 1, 0),w-literal(grid_00001_00000,0)})
+watched-or({w-literal(colwhite_00002_00000_00000,0),w-literal(grid_00002_00000,0),ineq(aux54, -2, 0),ineq(colstarts_00000_00001, 2, 0)})
+watched-or({w-literal(grid_00002_00002,0),ineq(aux55, -1, 0),ineq(colstarts_00002_00001, 2, 0),w-literal(colwhite_00002_00002_00000,0)})
+watched-or({w-literal(colwhite_00002_00005_00000,0),w-literal(grid_00002_00005,0),ineq(aux56, -1, 0),ineq(colstarts_00005_00001, 2, 0)})
+watched-or({ineq(aux57, -1, 0),w-literal(grid_00002_00004,0),ineq(colstarts_00004_00001, 2, 0),w-literal(colwhite_00002_00004_00000,0)})
+watched-or({w-literal(grid_00003_00000,0),ineq(aux58, -3, 0),ineq(colstarts_00000_00001, 3, 0),w-literal(colwhite_00003_00000_00000,0)})
+watched-or({ineq(aux59, -2, 0),w-literal(grid_00003_00002,0),ineq(colstarts_00002_00001, 3, 0),w-literal(colwhite_00003_00002_00000,0)})
+watched-or({w-literal(colwhite_00003_00005_00000,0),w-literal(grid_00003_00005,0),ineq(aux60, -2, 0),ineq(colstarts_00005_00001, 3, 0)})
+watched-or({ineq(aux61, -2, 0),ineq(colstarts_00004_00001, 3, 0),w-literal(grid_00003_00004,0),w-literal(colwhite_00003_00004_00000,0)})
+watched-or({ineq(aux62, -4, 0),ineq(colstarts_00000_00001, 4, 0),w-literal(grid_00004_00000,0),w-literal(colwhite_00004_00000_00000,0)})
+watched-or({ineq(aux63, -3, 0),w-literal(colwhite_00004_00002_00000,0),ineq(colstarts_00002_00001, 4, 0),w-literal(grid_00004_00002,0)})
+watched-or({ineq(aux64, -3, 0),w-literal(grid_00004_00005,0),ineq(colstarts_00005_00001, 4, 0),w-literal(colwhite_00004_00005_00000,0)})
+watched-or({ineq(aux65, -3, 0),ineq(colstarts_00004_00001, 4, 0),w-literal(grid_00004_00004,0),w-literal(colwhite_00004_00004_00000,0)})
+watched-or({w-literal(cellblackrow_00000_00000,0),ineq(rowstarts_00000_00000, 0, 0),ineq(rowstarts_00000_00001, 0, 0),w-literal(grid_00000_00000,0)})
+watched-or({w-literal(cellblackrow_00000_00001,0),ineq(rowstarts_00000_00000, 1, 0),watched-and({ineq(aux66, -1, 0),ineq(rowstarts_00000_00001, 1, 0)}),w-literal(grid_00000_00001,0)})
+watched-or({w-literal(cellblackrow_00000_00002,0),watched-and({ineq(aux67, -1, 0),ineq(rowstarts_00000_00000, 2, 0)}),watched-and({ineq(aux68, -2, 0),ineq(rowstarts_00000_00001, 2, 0)}),w-literal(grid_00000_00002,0)})
+watched-or({w-literal(cellblackrow_00000_00003,0),watched-and({ineq(aux69, -2, 0),ineq(rowstarts_00000_00000, 3, 0)}),watched-and({ineq(aux70, -3, 0),ineq(rowstarts_00000_00001, 3, 0)}),w-literal(grid_00000_00003,0)})
+watched-or({w-literal(cellblackrow_00000_00004,0),watched-and({ineq(aux71, -3, 0),ineq(rowstarts_00000_00000, 4, 0)}),watched-and({ineq(aux72, -4, 0),ineq(rowstarts_00000_00001, 4, 0)}),w-literal(grid_00000_00004,0)})
+watched-or({w-literal(cellblackrow_00000_00005,0),ineq(aux73, -4, 0),ineq(aux74, -5, 0),w-literal(grid_00000_00005,0)})
+watched-or({w-literal(cellblackrow_00001_00000,0),ineq(rowstarts_00001_00000, 0, 0),ineq(rowstarts_00001_00001, 0, 0),w-literal(grid_00001_00000,0)})
+watched-or({w-literal(cellblackrow_00001_00001,0),watched-and({ineq(aux75, -1, 0),ineq(rowstarts_00001_00000, 1, 0)}),ineq(rowstarts_00001_00001, 1, 0),w-literal(grid_00001_00001,0)})
+watched-or({w-literal(cellblackrow_00001_00002,0),watched-and({ineq(aux76, -2, 0),ineq(rowstarts_00001_00000, 2, 0)}),ineq(rowstarts_00001_00001, 2, 0),w-literal(grid_00001_00002,0)})
+watched-or({w-literal(cellblackrow_00001_00003,0),watched-and({ineq(aux77, -3, 0),ineq(rowstarts_00001_00000, 3, 0)}),watched-and({ineq(aux78, -1, 0),ineq(rowstarts_00001_00001, 3, 0)}),w-literal(grid_00001_00003,0)})
+watched-or({w-literal(cellblackrow_00001_00004,0),watched-and({ineq(aux79, -4, 0),ineq(rowstarts_00001_00000, 4, 0)}),watched-and({ineq(aux80, -2, 0),ineq(rowstarts_00001_00001, 4, 0)}),w-literal(grid_00001_00004,0)})
+watched-or({w-literal(cellblackrow_00001_00005,0),ineq(aux81, -5, 0),ineq(aux82, -3, 0),w-literal(grid_00001_00005,0)})
+watched-or({w-literal(grid_00002_00000,0),ineq(rowstarts_00002_00000, 0, 0),ineq(rowstarts_00002_00001, 0, 0),w-literal(cellblackrow_00002_00000,0)})
+watched-or({w-literal(grid_00002_00001,0),ineq(rowstarts_00002_00001, 1, 0),watched-and({ineq(aux83, -1, 0),ineq(rowstarts_00002_00000, 1, 0)}),w-literal(cellblackrow_00002_00001,0)})
+watched-or({w-literal(grid_00002_00002,0),watched-and({ineq(aux84, -2, 0),ineq(rowstarts_00002_00000, 2, 0)}),watched-and({ineq(aux85, -1, 0),ineq(rowstarts_00002_00001, 2, 0)}),w-literal(cellblackrow_00002_00002,0)})
+watched-or({w-literal(grid_00002_00003,0),watched-and({ineq(aux86, -3, 0),ineq(rowstarts_00002_00000, 3, 0)}),watched-and({ineq(aux87, -2, 0),ineq(rowstarts_00002_00001, 3, 0)}),w-literal(cellblackrow_00002_00003,0)})
+watched-or({w-literal(grid_00002_00004,0),watched-and({ineq(aux88, -4, 0),ineq(rowstarts_00002_00000, 4, 0)}),watched-and({ineq(aux89, -3, 0),ineq(rowstarts_00002_00001, 4, 0)}),w-literal(cellblackrow_00002_00004,0)})
+watched-or({w-literal(grid_00002_00005,0),ineq(aux90, -5, 0),ineq(aux91, -4, 0),w-literal(cellblackrow_00002_00005,0)})
+watched-or({w-literal(grid_00003_00000,0),watched-and({ineq(aux92, -1, 0),ineq(rowstarts_00003_00001, 0, 0)}),ineq(rowstarts_00003_00000, 0, 0),w-literal(cellblackrow_00003_00000,0)})
+watched-or({w-literal(grid_00003_00001,0),watched-and({ineq(aux93, -2, 0),ineq(rowstarts_00003_00001, 1, 0)}),ineq(rowstarts_00003_00000, 1, 0),w-literal(cellblackrow_00003_00001,0)})
+watched-or({w-literal(grid_00003_00002,0),watched-and({ineq(aux94, -3, 0),ineq(rowstarts_00003_00001, 2, 0)}),ineq(rowstarts_00003_00000, 2, 0),w-literal(cellblackrow_00003_00002,0)})
+watched-or({w-literal(grid_00003_00003,0),watched-and({ineq(aux95, -1, 0),ineq(rowstarts_00003_00000, 3, 0)}),watched-and({ineq(aux96, -4, 0),ineq(rowstarts_00003_00001, 3, 0)}),w-literal(cellblackrow_00003_00003,0)})
+watched-or({w-literal(grid_00003_00004,0),watched-and({ineq(aux97, -2, 0),ineq(rowstarts_00003_00000, 4, 0)}),watched-and({ineq(aux98, -5, 0),ineq(rowstarts_00003_00001, 4, 0)}),w-literal(cellblackrow_00003_00004,0)})
+watched-or({w-literal(grid_00003_00005,0),ineq(aux99, -3, 0),w-literal(cellblackrow_00003_00005,0)})
+watched-or({ineq(rowstarts_00004_00000, 0, 0),w-literal(grid_00004_00000,0),watched-and({ineq(rowstarts_00004_00001, 0, 0),ineq(aux100, -1, 0)}),w-literal(cellblackrow_00004_00000,0)})
+watched-or({ineq(rowstarts_00004_00000, 1, 0),w-literal(grid_00004_00001,0),watched-and({ineq(rowstarts_00004_00001, 1, 0),ineq(aux101, -2, 0)}),w-literal(cellblackrow_00004_00001,0)})
+watched-or({ineq(rowstarts_00004_00000, 2, 0),w-literal(grid_00004_00002,0),watched-and({ineq(rowstarts_00004_00001, 2, 0),ineq(aux102, -3, 0)}),w-literal(cellblackrow_00004_00002,0)})
+watched-or({ineq(rowstarts_00004_00000, 3, 0),w-literal(grid_00004_00003,0),watched-and({ineq(rowstarts_00004_00001, 3, 0),ineq(aux103, -4, 0)}),w-literal(cellblackrow_00004_00003,0)})
+watched-or({w-literal(grid_00004_00004,0),watched-and({ineq(rowstarts_00004_00000, 4, 0),ineq(aux104, -1, 0)}),watched-and({ineq(rowstarts_00004_00001, 4, 0),ineq(aux105, -5, 0)}),w-literal(cellblackrow_00004_00004,0)})
+watched-or({w-literal(grid_00004_00005,0),ineq(aux106, -2, 0),w-literal(cellblackrow_00004_00005,0)})
+watched-or({w-literal(cellblackrow_00005_00000,0),watched-and({ineq(aux107, -1, 0),ineq(rowstarts_00005_00001, 0, 0)}),ineq(rowstarts_00005_00000, 0, 0),w-literal(grid_00005_00000,0)})
+watched-or({w-literal(cellblackrow_00005_00001,0),watched-and({ineq(aux108, -1, 0),ineq(rowstarts_00005_00000, 1, 0)}),watched-and({ineq(aux109, -2, 0),ineq(rowstarts_00005_00001, 1, 0)}),w-literal(grid_00005_00001,0)})
+watched-or({w-literal(cellblackrow_00005_00002,0),watched-and({ineq(aux110, -2, 0),ineq(rowstarts_00005_00000, 2, 0)}),watched-and({ineq(aux111, -3, 0),ineq(rowstarts_00005_00001, 2, 0)}),w-literal(grid_00005_00002,0)})
+watched-or({w-literal(cellblackrow_00005_00003,0),watched-and({ineq(aux112, -3, 0),ineq(rowstarts_00005_00000, 3, 0)}),watched-and({ineq(aux113, -4, 0),ineq(rowstarts_00005_00001, 3, 0)}),w-literal(grid_00005_00003,0)})
+watched-or({w-literal(cellblackrow_00005_00004,0),watched-and({ineq(aux114, -4, 0),ineq(rowstarts_00005_00000, 4, 0)}),watched-and({ineq(aux115, -5, 0),ineq(rowstarts_00005_00001, 4, 0)}),w-literal(grid_00005_00004,0)})
+watched-or({w-literal(cellblackrow_00005_00005,0),ineq(aux116, -5, 0),w-literal(grid_00005_00005,0)})
+watched-or({w-literal(cellwhiterow_00000_00000,0),ineq(0, rowstarts_00000_00000, -1),w-literal(grid_00000_00000,1)})
+watched-or({w-literal(cellwhiterow_00000_00000,0),ineq(0, rowstarts_00000_00001, -1),w-literal(grid_00000_00000,1)})
+watched-or({w-literal(cellwhiterow_00000_00001,0),ineq(1, rowstarts_00000_00000, -1),w-literal(grid_00000_00001,1)})
+watched-or({w-literal(cellwhiterow_00000_00001,0),ineq(1, rowstarts_00000_00001, -1),w-literal(grid_00000_00001,1),ineq(0, aux117, 0)})
+watched-or({w-literal(cellwhiterow_00000_00002,0),ineq(2, rowstarts_00000_00000, -1),w-literal(grid_00000_00002,1),ineq(0, aux118, 0)})
+watched-or({w-literal(cellwhiterow_00000_00002,0),ineq(2, rowstarts_00000_00001, -1),w-literal(grid_00000_00002,1),ineq(-1, aux119, 0)})
+watched-or({w-literal(cellwhiterow_00000_00003,0),ineq(3, rowstarts_00000_00000, -1),w-literal(grid_00000_00003,1),ineq(-1, aux120, 0)})
+watched-or({w-literal(cellwhiterow_00000_00003,0),ineq(3, rowstarts_00000_00001, -1),w-literal(grid_00000_00003,1),ineq(-2, aux121, 0)})
+watched-or({w-literal(cellwhiterow_00000_00004,0),ineq(4, rowstarts_00000_00000, -1),w-literal(grid_00000_00004,1),ineq(-2, aux122, 0)})
+watched-or({w-literal(cellwhiterow_00000_00004,0),ineq(4, rowstarts_00000_00001, -1),w-literal(grid_00000_00004,1),ineq(-3, aux123, 0)})
+watched-or({w-literal(cellwhiterow_00000_00005,0),w-literal(grid_00000_00005,1),ineq(-3, aux124, 0)})
+watched-or({w-literal(cellwhiterow_00000_00005,0),w-literal(grid_00000_00005,1),ineq(-4, aux125, 0)})
+watched-or({w-literal(cellwhiterow_00001_00000,0),ineq(0, rowstarts_00001_00000, -1),w-literal(grid_00001_00000,1)})
+watched-or({w-literal(cellwhiterow_00001_00000,0),ineq(0, rowstarts_00001_00001, -1),w-literal(grid_00001_00000,1)})
+watched-or({ineq(0, aux126, 0),w-literal(cellwhiterow_00001_00001,0),ineq(1, rowstarts_00001_00000, -1),w-literal(grid_00001_00001,1)})
+watched-or({w-literal(cellwhiterow_00001_00001,0),ineq(1, rowstarts_00001_00001, -1),w-literal(grid_00001_00001,1)})
+watched-or({ineq(-1, aux127, 0),w-literal(cellwhiterow_00001_00002,0),ineq(2, rowstarts_00001_00000, -1),w-literal(grid_00001_00002,1)})
+watched-or({w-literal(cellwhiterow_00001_00002,0),ineq(2, rowstarts_00001_00001, -1),w-literal(grid_00001_00002,1)})
+watched-or({ineq(-2, aux128, 0),w-literal(cellwhiterow_00001_00003,0),ineq(3, rowstarts_00001_00000, -1),w-literal(grid_00001_00003,1)})
+watched-or({ineq(0, aux129, 0),w-literal(cellwhiterow_00001_00003,0),ineq(3, rowstarts_00001_00001, -1),w-literal(grid_00001_00003,1)})
+watched-or({ineq(-3, aux130, 0),w-literal(cellwhiterow_00001_00004,0),ineq(4, rowstarts_00001_00000, -1),w-literal(grid_00001_00004,1)})
+watched-or({ineq(-1, aux131, 0),w-literal(cellwhiterow_00001_00004,0),ineq(4, rowstarts_00001_00001, -1),w-literal(grid_00001_00004,1)})
+watched-or({ineq(-4, aux132, 0),w-literal(cellwhiterow_00001_00005,0),w-literal(grid_00001_00005,1)})
+watched-or({ineq(-2, aux133, 0),w-literal(cellwhiterow_00001_00005,0),w-literal(grid_00001_00005,1)})
+watched-or({w-literal(cellwhiterow_00002_00000,0),ineq(0, rowstarts_00002_00000, -1),w-literal(grid_00002_00000,1)})
+watched-or({w-literal(cellwhiterow_00002_00000,0),ineq(0, rowstarts_00002_00001, -1),w-literal(grid_00002_00000,1)})
+watched-or({ineq(0, aux134, 0),w-literal(cellwhiterow_00002_00001,0),ineq(1, rowstarts_00002_00000, -1),w-literal(grid_00002_00001,1)})
+watched-or({w-literal(cellwhiterow_00002_00001,0),ineq(1, rowstarts_00002_00001, -1),w-literal(grid_00002_00001,1)})
+watched-or({ineq(-1, aux135, 0),w-literal(cellwhiterow_00002_00002,0),ineq(2, rowstarts_00002_00000, -1),w-literal(grid_00002_00002,1)})
+watched-or({ineq(0, aux136, 0),w-literal(cellwhiterow_00002_00002,0),ineq(2, rowstarts_00002_00001, -1),w-literal(grid_00002_00002,1)})
+watched-or({ineq(-2, aux137, 0),w-literal(cellwhiterow_00002_00003,0),ineq(3, rowstarts_00002_00000, -1),w-literal(grid_00002_00003,1)})
+watched-or({ineq(-1, aux138, 0),w-literal(cellwhiterow_00002_00003,0),ineq(3, rowstarts_00002_00001, -1),w-literal(grid_00002_00003,1)})
+watched-or({ineq(-3, aux139, 0),w-literal(cellwhiterow_00002_00004,0),ineq(4, rowstarts_00002_00000, -1),w-literal(grid_00002_00004,1)})
+watched-or({ineq(-2, aux140, 0),w-literal(cellwhiterow_00002_00004,0),ineq(4, rowstarts_00002_00001, -1),w-literal(grid_00002_00004,1)})
+watched-or({ineq(-4, aux141, 0),w-literal(cellwhiterow_00002_00005,0),w-literal(grid_00002_00005,1)})
+watched-or({ineq(-3, aux142, 0),w-literal(cellwhiterow_00002_00005,0),w-literal(grid_00002_00005,1)})
+watched-or({ineq(0, rowstarts_00003_00000, -1),w-literal(grid_00003_00000,1),w-literal(cellwhiterow_00003_00000,0)})
+watched-or({ineq(0, rowstarts_00003_00001, -1),w-literal(grid_00003_00000,1),ineq(0, aux143, 0),w-literal(cellwhiterow_00003_00000,0)})
+watched-or({ineq(1, rowstarts_00003_00000, -1),w-literal(grid_00003_00001,1),w-literal(cellwhiterow_00003_00001,0)})
+watched-or({ineq(1, rowstarts_00003_00001, -1),w-literal(grid_00003_00001,1),ineq(-1, aux144, 0),w-literal(cellwhiterow_00003_00001,0)})
+watched-or({ineq(2, rowstarts_00003_00000, -1),w-literal(grid_00003_00002,1),w-literal(cellwhiterow_00003_00002,0)})
+watched-or({ineq(2, rowstarts_00003_00001, -1),w-literal(grid_00003_00002,1),ineq(-2, aux145, 0),w-literal(cellwhiterow_00003_00002,0)})
+watched-or({ineq(3, rowstarts_00003_00000, -1),w-literal(grid_00003_00003,1),ineq(0, aux146, 0),w-literal(cellwhiterow_00003_00003,0)})
+watched-or({ineq(3, rowstarts_00003_00001, -1),w-literal(grid_00003_00003,1),ineq(-3, aux147, 0),w-literal(cellwhiterow_00003_00003,0)})
+watched-or({ineq(4, rowstarts_00003_00000, -1),w-literal(grid_00003_00004,1),ineq(-1, aux148, 0),w-literal(cellwhiterow_00003_00004,0)})
+watched-or({ineq(4, rowstarts_00003_00001, -1),w-literal(grid_00003_00004,1),ineq(-4, aux149, 0),w-literal(cellwhiterow_00003_00004,0)})
+watched-or({w-literal(grid_00003_00005,1),ineq(-2, aux150, 0),w-literal(cellwhiterow_00003_00005,0)})
+watched-or({ineq(0, rowstarts_00004_00000, -1),w-literal(grid_00004_00000,1),w-literal(cellwhiterow_00004_00000,0)})
+watched-or({ineq(0, rowstarts_00004_00001, -1),w-literal(grid_00004_00000,1),ineq(0, aux151, 0),w-literal(cellwhiterow_00004_00000,0)})
+watched-or({ineq(1, rowstarts_00004_00000, -1),w-literal(grid_00004_00001,1),w-literal(cellwhiterow_00004_00001,0)})
+watched-or({ineq(1, rowstarts_00004_00001, -1),w-literal(grid_00004_00001,1),ineq(-1, aux152, 0),w-literal(cellwhiterow_00004_00001,0)})
+watched-or({ineq(2, rowstarts_00004_00000, -1),w-literal(grid_00004_00002,1),w-literal(cellwhiterow_00004_00002,0)})
+watched-or({ineq(2, rowstarts_00004_00001, -1),w-literal(grid_00004_00002,1),ineq(-2, aux153, 0),w-literal(cellwhiterow_00004_00002,0)})
+watched-or({ineq(3, rowstarts_00004_00000, -1),w-literal(grid_00004_00003,1),w-literal(cellwhiterow_00004_00003,0)})
+watched-or({ineq(3, rowstarts_00004_00001, -1),w-literal(grid_00004_00003,1),ineq(-3, aux154, 0),w-literal(cellwhiterow_00004_00003,0)})
+watched-or({ineq(4, rowstarts_00004_00000, -1),w-literal(grid_00004_00004,1),ineq(0, aux155, 0),w-literal(cellwhiterow_00004_00004,0)})
+watched-or({ineq(4, rowstarts_00004_00001, -1),w-literal(grid_00004_00004,1),ineq(-4, aux156, 0),w-literal(cellwhiterow_00004_00004,0)})
+watched-or({w-literal(grid_00004_00005,1),ineq(-1, aux157, 0),w-literal(cellwhiterow_00004_00005,0)})
+watched-or({w-literal(cellwhiterow_00005_00000,0),ineq(0, rowstarts_00005_00000, -1),w-literal(grid_00005_00000,1)})
+watched-or({ineq(0, aux158, 0),w-literal(cellwhiterow_00005_00000,0),ineq(0, rowstarts_00005_00001, -1),w-literal(grid_00005_00000,1)})
+watched-or({ineq(0, aux159, 0),w-literal(cellwhiterow_00005_00001,0),ineq(1, rowstarts_00005_00000, -1),w-literal(grid_00005_00001,1)})
+watched-or({ineq(-1, aux160, 0),w-literal(cellwhiterow_00005_00001,0),ineq(1, rowstarts_00005_00001, -1),w-literal(grid_00005_00001,1)})
+watched-or({ineq(-1, aux161, 0),w-literal(cellwhiterow_00005_00002,0),ineq(2, rowstarts_00005_00000, -1),w-literal(grid_00005_00002,1)})
+watched-or({ineq(-2, aux162, 0),w-literal(cellwhiterow_00005_00002,0),ineq(2, rowstarts_00005_00001, -1),w-literal(grid_00005_00002,1)})
+watched-or({ineq(-2, aux163, 0),w-literal(cellwhiterow_00005_00003,0),ineq(3, rowstarts_00005_00000, -1),w-literal(grid_00005_00003,1)})
+watched-or({ineq(-3, aux164, 0),w-literal(cellwhiterow_00005_00003,0),ineq(3, rowstarts_00005_00001, -1),w-literal(grid_00005_00003,1)})
+watched-or({ineq(-3, aux165, 0),w-literal(cellwhiterow_00005_00004,0),ineq(4, rowstarts_00005_00000, -1),w-literal(grid_00005_00004,1)})
+watched-or({ineq(-4, aux166, 0),w-literal(cellwhiterow_00005_00004,0),ineq(4, rowstarts_00005_00001, -1),w-literal(grid_00005_00004,1)})
+watched-or({ineq(-4, aux167, 0),w-literal(cellwhiterow_00005_00005,0),w-literal(grid_00005_00005,1)})
+watched-or({ineq(colstarts_00000_00000, 0, 0),w-literal(cellblackcol_00000_00000,0),watched-and({ineq(aux168, -1, 0),ineq(colstarts_00000_00001, 0, 0)}),w-literal(grid_00000_00000,0)})
+watched-or({w-literal(cellblackcol_00000_00001,0),watched-and({ineq(aux169, -1, 0),ineq(colstarts_00001_00001, 0, 0)}),w-literal(grid_00000_00001,0),ineq(colstarts_00001_00000, 0, 0)})
+watched-or({ineq(colstarts_00002_00000, 0, 0),w-literal(cellblackcol_00000_00002,0),watched-and({ineq(aux170, -1, 0),ineq(colstarts_00002_00001, 0, 0)}),w-literal(grid_00000_00002,0)})
+watched-or({watched-and({ineq(aux171, -1, 0),ineq(colstarts_00003_00001, 0, 0)}),w-literal(cellblackcol_00000_00003,0),w-literal(grid_00000_00003,0),ineq(colstarts_00003_00000, 0, 0)})
+watched-or({ineq(colstarts_00004_00000, 0, 0),ineq(colstarts_00004_00001, 0, 0),w-literal(cellblackcol_00000_00004,0),w-literal(grid_00000_00004,0)})
+watched-or({ineq(colstarts_00005_00000, 0, 0),watched-and({ineq(aux172, -1, 0),ineq(colstarts_00005_00001, 0, 0)}),w-literal(cellblackcol_00000_00005,0),w-literal(grid_00000_00005,0)})
+watched-or({watched-and({ineq(aux173, -1, 0),ineq(colstarts_00000_00000, 1, 0)}),watched-and({ineq(aux174, -2, 0),ineq(colstarts_00000_00001, 1, 0)}),w-literal(cellblackcol_00001_00000,0),w-literal(grid_00001_00000,0)})
+watched-or({watched-and({ineq(aux175, -2, 0),ineq(colstarts_00001_00001, 1, 0)}),w-literal(cellblackcol_00001_00001,0),w-literal(grid_00001_00001,0),ineq(colstarts_00001_00000, 1, 0)})
+watched-or({ineq(colstarts_00002_00000, 1, 0),watched-and({ineq(aux176, -2, 0),ineq(colstarts_00002_00001, 1, 0)}),w-literal(cellblackcol_00001_00002,0),w-literal(grid_00001_00002,0)})
+watched-or({watched-and({ineq(aux177, -2, 0),ineq(colstarts_00003_00001, 1, 0)}),ineq(colstarts_00003_00000, 1, 0),w-literal(cellblackcol_00001_00003,0),w-literal(grid_00001_00003,0)})
+watched-or({ineq(colstarts_00004_00000, 1, 0),watched-and({ineq(aux178, -1, 0),ineq(colstarts_00004_00001, 1, 0)}),w-literal(cellblackcol_00001_00004,0),w-literal(grid_00001_00004,0)})
+watched-or({ineq(colstarts_00005_00000, 1, 0),watched-and({ineq(aux179, -2, 0),ineq(colstarts_00005_00001, 1, 0)}),w-literal(cellblackcol_00001_00005,0),w-literal(grid_00001_00005,0)})
+watched-or({w-literal(cellblackcol_00002_00000,0),w-literal(grid_00002_00000,0),watched-and({ineq(aux180, -2, 0),ineq(colstarts_00000_00000, 2, 0)}),watched-and({ineq(aux181, -3, 0),ineq(colstarts_00000_00001, 2, 0)})})
+watched-or({w-literal(cellblackcol_00002_00001,0),w-literal(grid_00002_00001,0),watched-and({ineq(aux182, -3, 0),ineq(colstarts_00001_00001, 2, 0)}),ineq(colstarts_00001_00000, 2, 0)})
+watched-or({w-literal(cellblackcol_00002_00002,0),w-literal(grid_00002_00002,0),watched-and({ineq(aux183, -1, 0),ineq(colstarts_00002_00000, 2, 0)}),watched-and({ineq(aux184, -3, 0),ineq(colstarts_00002_00001, 2, 0)})})
+watched-or({w-literal(cellblackcol_00002_00003,0),w-literal(grid_00002_00003,0),watched-and({ineq(aux185, -3, 0),ineq(colstarts_00003_00001, 2, 0)}),ineq(colstarts_00003_00000, 2, 0)})
+watched-or({w-literal(cellblackcol_00002_00004,0),w-literal(grid_00002_00004,0),watched-and({ineq(aux186, -1, 0),ineq(colstarts_00004_00000, 2, 0)}),watched-and({ineq(aux187, -2, 0),ineq(colstarts_00004_00001, 2, 0)})})
+watched-or({w-literal(cellblackcol_00002_00005,0),w-literal(grid_00002_00005,0),watched-and({ineq(aux188, -1, 0),ineq(colstarts_00005_00000, 2, 0)}),watched-and({ineq(aux189, -3, 0),ineq(colstarts_00005_00001, 2, 0)})})
+watched-or({w-literal(cellblackcol_00003_00000,0),w-literal(grid_00003_00000,0),watched-and({ineq(aux190, -3, 0),ineq(colstarts_00000_00000, 3, 0)}),watched-and({ineq(aux191, -4, 0),ineq(colstarts_00000_00001, 3, 0)})})
+watched-or({w-literal(cellblackcol_00003_00001,0),w-literal(grid_00003_00001,0),watched-and({ineq(aux192, -4, 0),ineq(colstarts_00001_00001, 3, 0)}),ineq(colstarts_00001_00000, 3, 0)})
+watched-or({w-literal(cellblackcol_00003_00002,0),w-literal(grid_00003_00002,0),watched-and({ineq(aux193, -2, 0),ineq(colstarts_00002_00000, 3, 0)}),watched-and({ineq(aux194, -4, 0),ineq(colstarts_00002_00001, 3, 0)})})
+watched-or({w-literal(cellblackcol_00003_00003,0),w-literal(grid_00003_00003,0),watched-and({ineq(aux195, -4, 0),ineq(colstarts_00003_00001, 3, 0)}),ineq(colstarts_00003_00000, 3, 0)})
+watched-or({w-literal(cellblackcol_00003_00004,0),w-literal(grid_00003_00004,0),watched-and({ineq(aux196, -2, 0),ineq(colstarts_00004_00000, 3, 0)}),watched-and({ineq(aux197, -3, 0),ineq(colstarts_00004_00001, 3, 0)})})
+watched-or({w-literal(cellblackcol_00003_00005,0),w-literal(grid_00003_00005,0),watched-and({ineq(aux198, -2, 0),ineq(colstarts_00005_00000, 3, 0)}),watched-and({ineq(aux199, -4, 0),ineq(colstarts_00005_00001, 3, 0)})})
+watched-or({w-literal(cellblackcol_00004_00000,0),w-literal(grid_00004_00000,0),watched-and({ineq(aux200, -4, 0),ineq(colstarts_00000_00000, 4, 0)}),watched-and({ineq(aux201, -5, 0),ineq(colstarts_00000_00001, 4, 0)})})
+watched-or({w-literal(cellblackcol_00004_00001,0),w-literal(grid_00004_00001,0),watched-and({ineq(aux202, -5, 0),ineq(colstarts_00001_00001, 4, 0)}),ineq(colstarts_00001_00000, 4, 0)})
+watched-or({w-literal(cellblackcol_00004_00002,0),w-literal(grid_00004_00002,0),watched-and({ineq(aux203, -3, 0),ineq(colstarts_00002_00000, 4, 0)}),watched-and({ineq(aux204, -5, 0),ineq(colstarts_00002_00001, 4, 0)})})
+watched-or({w-literal(cellblackcol_00004_00003,0),w-literal(grid_00004_00003,0),watched-and({ineq(aux205, -5, 0),ineq(colstarts_00003_00001, 4, 0)}),ineq(colstarts_00003_00000, 4, 0)})
+watched-or({w-literal(cellblackcol_00004_00004,0),w-literal(grid_00004_00004,0),watched-and({ineq(aux206, -3, 0),ineq(colstarts_00004_00000, 4, 0)}),watched-and({ineq(aux207, -4, 0),ineq(colstarts_00004_00001, 4, 0)})})
+watched-or({w-literal(cellblackcol_00004_00005,0),w-literal(grid_00004_00005,0),watched-and({ineq(aux208, -3, 0),ineq(colstarts_00005_00000, 4, 0)}),watched-and({ineq(aux209, -5, 0),ineq(colstarts_00005_00001, 4, 0)})})
+watched-or({ineq(aux210, -5, 0),w-literal(cellblackcol_00005_00000,0),w-literal(grid_00005_00000,0)})
+watched-or({w-literal(cellblackcol_00005_00001,0),w-literal(grid_00005_00001,0),ineq(aux211, -1, 0)})
+watched-or({ineq(aux212, -4, 0),w-literal(cellblackcol_00005_00002,0),w-literal(grid_00005_00002,0)})
+watched-or({w-literal(cellblackcol_00005_00003,0),ineq(aux213, -1, 0),w-literal(grid_00005_00003,0)})
+watched-or({ineq(aux214, -4, 0),ineq(aux215, -5, 0),w-literal(cellblackcol_00005_00004,0),w-literal(grid_00005_00004,0)})
+watched-or({ineq(aux216, -4, 0),w-literal(cellblackcol_00005_00005,0),w-literal(grid_00005_00005,0)})
+watched-or({w-literal(grid_00000_00000,1),w-literal(cellwhitecol_00000_00000,0),ineq(0, colstarts_00000_00000, -1)})
+watched-or({ineq(0, aux217, 0),w-literal(grid_00000_00000,1),w-literal(cellwhitecol_00000_00000,0),ineq(0, colstarts_00000_00001, -1)})
+watched-or({ineq(0, colstarts_00001_00000, -1),w-literal(grid_00000_00001,1),w-literal(cellwhitecol_00000_00001,0)})
+watched-or({ineq(0, colstarts_00001_00001, -1),w-literal(grid_00000_00001,1),ineq(0, aux218, 0),w-literal(cellwhitecol_00000_00001,0)})
+watched-or({ineq(0, colstarts_00002_00000, -1),w-literal(grid_00000_00002,1),w-literal(cellwhitecol_00000_00002,0)})
+watched-or({ineq(0, colstarts_00002_00001, -1),w-literal(grid_00000_00002,1),w-literal(cellwhitecol_00000_00002,0),ineq(0, aux219, 0)})
+watched-or({w-literal(grid_00000_00003,1),ineq(0, colstarts_00003_00000, -1),w-literal(cellwhitecol_00000_00003,0)})
+watched-or({ineq(0, aux220, 0),w-literal(grid_00000_00003,1),ineq(0, colstarts_00003_00001, -1),w-literal(cellwhitecol_00000_00003,0)})
+watched-or({w-literal(grid_00000_00004,1),w-literal(cellwhitecol_00000_00004,0),ineq(0, colstarts_00004_00000, -1)})
+watched-or({w-literal(grid_00000_00004,1),w-literal(cellwhitecol_00000_00004,0),ineq(0, colstarts_00004_00001, -1)})
+watched-or({w-literal(grid_00000_00005,1),w-literal(cellwhitecol_00000_00005,0),ineq(0, colstarts_00005_00000, -1)})
+watched-or({ineq(0, aux221, 0),w-literal(grid_00000_00005,1),w-literal(cellwhitecol_00000_00005,0),ineq(0, colstarts_00005_00001, -1)})
+watched-or({ineq(0, aux222, 0),w-literal(grid_00001_00000,1),w-literal(cellwhitecol_00001_00000,0),ineq(1, colstarts_00000_00000, -1)})
+watched-or({ineq(-1, aux223, 0),w-literal(grid_00001_00000,1),w-literal(cellwhitecol_00001_00000,0),ineq(1, colstarts_00000_00001, -1)})
+watched-or({ineq(1, colstarts_00001_00000, -1),w-literal(grid_00001_00001,1),w-literal(cellwhitecol_00001_00001,0)})
+watched-or({ineq(1, colstarts_00001_00001, -1),ineq(-1, aux224, 0),w-literal(grid_00001_00001,1),w-literal(cellwhitecol_00001_00001,0)})
+watched-or({ineq(1, colstarts_00002_00000, -1),w-literal(grid_00001_00002,1),w-literal(cellwhitecol_00001_00002,0)})
+watched-or({ineq(1, colstarts_00002_00001, -1),w-literal(grid_00001_00002,1),ineq(-1, aux225, 0),w-literal(cellwhitecol_00001_00002,0)})
+watched-or({ineq(1, colstarts_00003_00000, -1),w-literal(grid_00001_00003,1),w-literal(cellwhitecol_00001_00003,0)})
+watched-or({ineq(-1, aux226, 0),ineq(1, colstarts_00003_00001, -1),w-literal(grid_00001_00003,1),w-literal(cellwhitecol_00001_00003,0)})
+watched-or({w-literal(grid_00001_00004,1),ineq(1, colstarts_00004_00000, -1),w-literal(cellwhitecol_00001_00004,0)})
+watched-or({ineq(0, aux227, 0),w-literal(grid_00001_00004,1),ineq(1, colstarts_00004_00001, -1),w-literal(cellwhitecol_00001_00004,0)})
+watched-or({w-literal(grid_00001_00005,1),w-literal(cellwhitecol_00001_00005,0),ineq(1, colstarts_00005_00000, -1)})
+watched-or({ineq(-1, aux228, 0),w-literal(grid_00001_00005,1),w-literal(cellwhitecol_00001_00005,0),ineq(1, colstarts_00005_00001, -1)})
+watched-or({w-literal(cellwhitecol_00002_00000,0),ineq(-1, aux229, 0),ineq(2, colstarts_00000_00000, -1),w-literal(grid_00002_00000,1)})
+watched-or({w-literal(cellwhitecol_00002_00000,0),ineq(-2, aux230, 0),ineq(2, colstarts_00000_00001, -1),w-literal(grid_00002_00000,1)})
+watched-or({w-literal(cellwhitecol_00002_00001,0),ineq(2, colstarts_00001_00000, -1),w-literal(grid_00002_00001,1)})
+watched-or({w-literal(cellwhitecol_00002_00001,0),ineq(2, colstarts_00001_00001, -1),ineq(-2, aux231, 0),w-literal(grid_00002_00001,1)})
+watched-or({w-literal(cellwhitecol_00002_00002,0),ineq(2, colstarts_00002_00000, -1),ineq(0, aux232, 0),w-literal(grid_00002_00002,1)})
+watched-or({w-literal(cellwhitecol_00002_00002,0),ineq(2, colstarts_00002_00001, -1),ineq(-2, aux233, 0),w-literal(grid_00002_00002,1)})
+watched-or({w-literal(cellwhitecol_00002_00003,0),ineq(2, colstarts_00003_00000, -1),w-literal(grid_00002_00003,1)})
+watched-or({ineq(-2, aux234, 0),w-literal(cellwhitecol_00002_00003,0),ineq(2, colstarts_00003_00001, -1),w-literal(grid_00002_00003,1)})
+watched-or({w-literal(cellwhitecol_00002_00004,0),ineq(0, aux235, 0),ineq(2, colstarts_00004_00000, -1),w-literal(grid_00002_00004,1)})
+watched-or({w-literal(cellwhitecol_00002_00004,0),ineq(-1, aux236, 0),ineq(2, colstarts_00004_00001, -1),w-literal(grid_00002_00004,1)})
+watched-or({w-literal(cellwhitecol_00002_00005,0),ineq(0, aux237, 0),w-literal(grid_00002_00005,1),ineq(2, colstarts_00005_00000, -1)})
+watched-or({w-literal(cellwhitecol_00002_00005,0),ineq(-2, aux238, 0),w-literal(grid_00002_00005,1),ineq(2, colstarts_00005_00001, -1)})
+watched-or({w-literal(grid_00003_00000,1),w-literal(cellwhitecol_00003_00000,0),ineq(-2, aux239, 0),ineq(3, colstarts_00000_00000, -1)})
+watched-or({w-literal(grid_00003_00000,1),w-literal(cellwhitecol_00003_00000,0),ineq(-3, aux240, 0),ineq(3, colstarts_00000_00001, -1)})
+watched-or({ineq(3, colstarts_00001_00000, -1),w-literal(grid_00003_00001,1),w-literal(cellwhitecol_00003_00001,0)})
+watched-or({ineq(3, colstarts_00001_00001, -1),w-literal(grid_00003_00001,1),w-literal(cellwhitecol_00003_00001,0),ineq(-3, aux241, 0)})
+watched-or({w-literal(grid_00003_00002,1),w-literal(cellwhitecol_00003_00002,0),ineq(3, colstarts_00002_00000, -1),ineq(-1, aux242, 0)})
+watched-or({w-literal(grid_00003_00002,1),w-literal(cellwhitecol_00003_00002,0),ineq(3, colstarts_00002_00001, -1),ineq(-3, aux243, 0)})
+watched-or({w-literal(grid_00003_00003,1),w-literal(cellwhitecol_00003_00003,0),ineq(3, colstarts_00003_00000, -1)})
+watched-or({ineq(-3, aux244, 0),w-literal(grid_00003_00003,1),w-literal(cellwhitecol_00003_00003,0),ineq(3, colstarts_00003_00001, -1)})
+watched-or({w-literal(grid_00003_00004,1),ineq(-1, aux245, 0),w-literal(cellwhitecol_00003_00004,0),ineq(3, colstarts_00004_00000, -1)})
+watched-or({w-literal(grid_00003_00004,1),ineq(-2, aux246, 0),w-literal(cellwhitecol_00003_00004,0),ineq(3, colstarts_00004_00001, -1)})
+watched-or({w-literal(grid_00003_00005,1),w-literal(cellwhitecol_00003_00005,0),ineq(-1, aux247, 0),ineq(3, colstarts_00005_00000, -1)})
+watched-or({w-literal(grid_00003_00005,1),w-literal(cellwhitecol_00003_00005,0),ineq(-3, aux248, 0),ineq(3, colstarts_00005_00001, -1)})
+watched-or({w-literal(grid_00004_00000,1),ineq(-3, aux249, 0),w-literal(cellwhitecol_00004_00000,0),ineq(4, colstarts_00000_00000, -1)})
+watched-or({w-literal(grid_00004_00000,1),ineq(-4, aux250, 0),w-literal(cellwhitecol_00004_00000,0),ineq(4, colstarts_00000_00001, -1)})
+watched-or({ineq(4, colstarts_00001_00000, -1),w-literal(grid_00004_00001,1),w-literal(cellwhitecol_00004_00001,0)})
+watched-or({ineq(4, colstarts_00001_00001, -1),w-literal(grid_00004_00001,1),w-literal(cellwhitecol_00004_00001,0),ineq(-4, aux251, 0)})
+watched-or({ineq(4, colstarts_00002_00000, -1),w-literal(grid_00004_00002,1),w-literal(cellwhitecol_00004_00002,0),ineq(-2, aux252, 0)})
+watched-or({ineq(4, colstarts_00002_00001, -1),w-literal(grid_00004_00002,1),w-literal(cellwhitecol_00004_00002,0),ineq(-4, aux253, 0)})
+watched-or({w-literal(grid_00004_00003,1),w-literal(cellwhitecol_00004_00003,0),ineq(4, colstarts_00003_00000, -1)})
+watched-or({ineq(-4, aux254, 0),w-literal(grid_00004_00003,1),w-literal(cellwhitecol_00004_00003,0),ineq(4, colstarts_00003_00001, -1)})
+watched-or({ineq(-2, aux255, 0),w-literal(grid_00004_00004,1),w-literal(cellwhitecol_00004_00004,0),ineq(4, colstarts_00004_00000, -1)})
+watched-or({ineq(-3, aux256, 0),w-literal(grid_00004_00004,1),w-literal(cellwhitecol_00004_00004,0),ineq(4, colstarts_00004_00001, -1)})
+watched-or({w-literal(grid_00004_00005,1),ineq(-2, aux257, 0),w-literal(cellwhitecol_00004_00005,0),ineq(4, colstarts_00005_00000, -1)})
+watched-or({w-literal(grid_00004_00005,1),ineq(-4, aux258, 0),w-literal(cellwhitecol_00004_00005,0),ineq(4, colstarts_00005_00001, -1)})
+watched-or({ineq(-4, aux259, 0),w-literal(grid_00005_00000,1),w-literal(cellwhitecol_00005_00000,0)})
+watched-or({w-literal(grid_00005_00001,1),ineq(0, aux260, 0),w-literal(cellwhitecol_00005_00001,0)})
+watched-or({w-literal(grid_00005_00002,1),w-literal(cellwhitecol_00005_00002,0),ineq(-3, aux261, 0)})
+watched-or({ineq(0, aux262, 0),w-literal(grid_00005_00003,1),w-literal(cellwhitecol_00005_00003,0)})
+watched-or({ineq(-3, aux263, 0),w-literal(grid_00005_00004,1),w-literal(cellwhitecol_00005_00004,0)})
+watched-or({ineq(-4, aux264, 0),w-literal(grid_00005_00004,1),w-literal(cellwhitecol_00005_00004,0)})
+watched-or({ineq(-3, aux265, 0),w-literal(grid_00005_00005,1),w-literal(cellwhitecol_00005_00005,0)})
+sumleq([2,colstarts_00004_00000],aux0)
+sumgeq([2,colstarts_00004_00000],aux0)
+sumleq([rowstarts_00000_00000,2],aux1)
+sumgeq([rowstarts_00000_00000,2],aux1)
+sumleq([1,rowstarts_00001_00000],aux2)
+sumgeq([1,rowstarts_00001_00000],aux2)
+sumleq([1,rowstarts_00002_00000],aux3)
+sumgeq([1,rowstarts_00002_00000],aux3)
+reifyimply(sumleq([grid_00000_00000,grid_00000_00001,grid_00000_00002,grid_00000_00003,grid_00000_00004,grid_00000_00005],3), sumrow_00000)
+reifyimply(sumgeq([grid_00000_00000,grid_00000_00001,grid_00000_00002,grid_00000_00003,grid_00000_00004,grid_00000_00005],3), sumrow_00000)
+reifyimply(sumleq([grid_00001_00000,grid_00001_00001,grid_00001_00002,grid_00001_00003,grid_00001_00004,grid_00001_00005],4), sumrow_00001)
+reifyimply(sumgeq([grid_00001_00000,grid_00001_00001,grid_00001_00002,grid_00001_00003,grid_00001_00004,grid_00001_00005],4), sumrow_00001)
+reifyimply(sumleq([grid_00002_00000,grid_00002_00001,grid_00002_00002,grid_00002_00003,grid_00002_00004,grid_00002_00005],3), sumrow_00002)
+reifyimply(sumgeq([grid_00002_00000,grid_00002_00001,grid_00002_00002,grid_00002_00003,grid_00002_00004,grid_00002_00005],3), sumrow_00002)
+reifyimply(sumleq([grid_00003_00000,grid_00003_00001,grid_00003_00002,grid_00003_00003,grid_00003_00004,grid_00003_00005],3), sumrow_00003)
+reifyimply(sumgeq([grid_00003_00000,grid_00003_00001,grid_00003_00002,grid_00003_00003,grid_00003_00004,grid_00003_00005],3), sumrow_00003)
+reifyimply(sumleq([grid_00004_00000,grid_00004_00001,grid_00004_00002,grid_00004_00003,grid_00004_00004,grid_00004_00005],4), sumrow_00004)
+reifyimply(sumgeq([grid_00004_00000,grid_00004_00001,grid_00004_00002,grid_00004_00003,grid_00004_00004,grid_00004_00005],4), sumrow_00004)
+reifyimply(sumleq([grid_00005_00000,grid_00005_00001,grid_00005_00002,grid_00005_00003,grid_00005_00004,grid_00005_00005],1), sumrow_00005)
+reifyimply(sumgeq([grid_00005_00000,grid_00005_00001,grid_00005_00002,grid_00005_00003,grid_00005_00004,grid_00005_00005],1), sumrow_00005)
+reifyimply(sumleq([grid_00003_00000,grid_00004_00000,grid_00000_00000,grid_00005_00000,grid_00001_00000,grid_00002_00000],1), sumcol_00000)
+reifyimply(sumgeq([grid_00003_00000,grid_00004_00000,grid_00000_00000,grid_00005_00000,grid_00001_00000,grid_00002_00000],1), sumcol_00000)
+reifyimply(sumleq([grid_00003_00001,grid_00004_00001,grid_00000_00001,grid_00005_00001,grid_00001_00001,grid_00002_00001],5), sumcol_00001)
+reifyimply(sumgeq([grid_00003_00001,grid_00004_00001,grid_00000_00001,grid_00005_00001,grid_00001_00001,grid_00002_00001],5), sumcol_00001)
+reifyimply(sumleq([grid_00003_00002,grid_00004_00002,grid_00000_00002,grid_00005_00002,grid_00001_00002,grid_00002_00002],2), sumcol_00002)
+reifyimply(sumgeq([grid_00003_00002,grid_00004_00002,grid_00000_00002,grid_00005_00002,grid_00001_00002,grid_00002_00002],2), sumcol_00002)
+reifyimply(sumleq([grid_00003_00003,grid_00004_00003,grid_00000_00003,grid_00005_00003,grid_00001_00003,grid_00002_00003],5), sumcol_00003)
+reifyimply(sumgeq([grid_00003_00003,grid_00004_00003,grid_00000_00003,grid_00005_00003,grid_00001_00003,grid_00002_00003],5), sumcol_00003)
+reifyimply(sumleq([grid_00003_00004,grid_00004_00004,grid_00000_00004,grid_00005_00004,grid_00001_00004,grid_00002_00004],3), sumcol_00004)
+reifyimply(sumgeq([grid_00003_00004,grid_00004_00004,grid_00000_00004,grid_00005_00004,grid_00001_00004,grid_00002_00004],3), sumcol_00004)
+reifyimply(sumleq([grid_00003_00005,grid_00004_00005,grid_00000_00005,grid_00005_00005,grid_00001_00005,grid_00002_00005],2), sumcol_00005)
+reifyimply(sumgeq([grid_00003_00005,grid_00004_00005,grid_00000_00005,grid_00005_00005,grid_00001_00005,grid_00002_00005],2), sumcol_00005)
+**EOF**

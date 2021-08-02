@@ -12,14 +12,23 @@ pip3 install -r requirements.txt
 
 cd ..
 
-echo "Starting tmux session for Demystify Visualiser"
-
-kill $(lsof -t -i:3000)
+echo "Killing process on port 21586"
 kill $(lsof -t -i:21586)
+
+echo "Killing process on port 6379"
 kill $(lsof -t -i:6379)
+
+sleep 1
+
 tmux kill-session -t Redis
-tmux kill-session -t Demystify-Viz
 tmux kill-session -t RQWorker
+tmux kill-session -t Demystify-Viz
+
+echo "Starting tmux session for Redis" 
 tmux new-session -d -s Redis "redis-server"
+
+echo "Starting tmux session for RQ" 
 tmux new-session -d -s RQWorker "cd server && rq worker"
+
+echo "Starting tmux session for Demystify Visualiser (React/Flask)" 
 tmux new-session -d -s Demystify-Viz "cd client && npm install && npm run build && cd ../server && gunicorn -b 127.0.0.1:21586 api:app --log-level debug"
