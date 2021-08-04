@@ -16,26 +16,12 @@ class SquareCol extends React.Component {
 
     const margin = this.props.margin ? this.props.margin : {};
 
-    let background1 = null;
-    let background2 = null;
-
-    if (this.props.background) {
-      if (this.props.background.length > 1) {
-        background1 = this.props.background[0];
-        background2 = this.props.background[1];
-      } else {
-        background1 = this.props.background[0];
-      }
-    } else {
-      background1 = this.props.background;
-    }
-
     return (
       <Col className="m-0 p-0">
         <div
-          style={{
-            backgroundImage: background2,
-          }}
+          // style={{
+          //   backgroundImage: background2,
+          // }}
         >
           <div
             style={{
@@ -44,7 +30,7 @@ class SquareCol extends React.Component {
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
-              backgroundImage: background1,
+              backgroundImage: this.props.background,
               backgroundSize: "100% 100%",
             }}
           >

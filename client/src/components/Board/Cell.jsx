@@ -80,23 +80,28 @@ class Cell extends React.Component {
     ) {
       highlightBackground = "linear-gradient(cornsilk, cornsilk)";
     } else {
-      highlightBackground = "";
+      highlightBackground = null;
     }
 
     const isSingleton = this.isSingleton();
     const singletonValue = this.getSingletonValue();
 
     if (literalBackgrounds && isSingleton) {
-      return [
-        cellBackground,
-        literalBackgrounds[singletonValue.toString()],
-        highlightBackground,
-        
-      ];
+      return ("" 
+        + (cellBackground ? cellBackground + ", " : "") 
+        + (literalBackgrounds[singletonValue.toString()] ? literalBackgrounds[singletonValue.toString()] +", " : "")
+        + (highlightBackground ? highlightBackground + ", " : "")
+        ).slice(0, -2) // Remove trailing comma
+
     } else if (cellBackground) {
-      return [cellBackground, highlightBackground];
+      return ("" 
+        + cellBackground 
+        + ", " 
+        + (highlightBackground ? highlightBackground + ", " : "")
+        ).slice(0, -2) // Remove trailing comma
     } else {
-      return [highlightBackground];
+      // console.log(this.props.row + ", " + this.props.column + ":" + highlightBackground)
+      return highlightBackground;
     }
   }
 
