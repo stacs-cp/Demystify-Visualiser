@@ -1,6 +1,9 @@
 import React from "react";
 import Board from "../Board/Board";
-
+/**
+ * KakuroBoard: blank out irrelevant cells in light blue and apply the diagonal
+ * horizontal and vertical sums using cornerNumbers and diagonal gradients.
+ */
 class KakuroBoard extends React.Component {
   constructor(props) {
     super(props);
@@ -19,6 +22,8 @@ class KakuroBoard extends React.Component {
     };
   }
 
+  // Helper function to display a cell split diagonally between to colours with
+  // a gray border in between.
   getDiagonalGradient(bottomColor, topColor) {
     return `linear-gradient(to bottom left, ${bottomColor}, ${bottomColor} 49%,\
        lightgray 49%, lightgray 51%, ${topColor} 51%, ${topColor})`;
@@ -32,17 +37,22 @@ class KakuroBoard extends React.Component {
       for (let j = 0; j < this.state.y; j++) {
         if (rowsums[i][j] !== 0) {
           if (colsums[i][j] !== 0) {
+            // If we have a horizontal and vertical sum then we have white / white
             backgrounds[i].push(this.getDiagonalGradient("white", "white"));
           } else {
+            // white / lightblue
             backgrounds[i].push(this.getDiagonalGradient("white", "lightblue"));
           }
         } else {
           if (colsums[i][j] !== 0) {
+            // lightblue / white
             backgrounds[i].push(this.getDiagonalGradient("lightblue", "white"));
           } else {
             if (blanks[i][j] === 0) {
+              // lightblue
               backgrounds[i].push("linear-gradient(lightblue, lightblue)");
             } else {
+              // nothing
               backgrounds[i].push("none");
             }
           }
@@ -55,6 +65,8 @@ class KakuroBoard extends React.Component {
   getCornerNumbers() {
     let cornerNumbers = [];
     const { rowsums, colsums, x, y } = this.state;
+
+    // Change the default look of the corner number to fit Kakuro
     const extraStyle = {
       fontWeight: "bolder",
       color: "gray",
@@ -64,6 +76,9 @@ class KakuroBoard extends React.Component {
 
     for (let i = 0; i < x; i++) {
       cornerNumbers[i] = [];
+
+      // Apply the corner numbers and move them to a better position within the 
+      // box.
       for (let j = 0; j < y; j++) {
         if (rowsums[i][j] !== 0) {
           cornerNumbers[i].push({

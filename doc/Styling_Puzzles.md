@@ -14,7 +14,7 @@ The core component for puzzle display is the [`Board`](../client/src/components/
 
 _____
 
-Note: Following an update to *conjure*, parameters are now represented as dictionaries mapping indices to values. The Board properties are based on arrays, so it is necessary to convert between representations. For example:
+Note: Following an update to *conjure*, parameters are now represented as dictionaries mapping indices to values. The `Board` properties are based on arrays, so it is necessary to convert between representations. For example:
 
 ```javascript
 grid: Object.values(this.props.params.presetvals).map((o) =>
@@ -41,3 +41,6 @@ The currently supported `Board` props are as follows:
 - **startrows**: A 2D array of additional rows to be displayed at the top of the grid. See [`NonogramBoard.jsx`](../client/src/components/PuzzleBoards/NonogramBoard.jsx) for an example.
 - **startcols**: A 2D array of additional columns to be displayed at the left of the grid. See [`NonogramBoard.jsx`](../client/src/components/PuzzleBoards/NonogramBoard.jsx) for an example.
 
+____
+
+It can be useful to pass CSS gradients in the **cellBackgrounds** property for drawing simple shapes such as circles, bars and diagonals. 

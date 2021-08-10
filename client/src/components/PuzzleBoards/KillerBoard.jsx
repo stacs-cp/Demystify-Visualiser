@@ -1,6 +1,8 @@
 import React from "react";
 import Board from "../Board/Board";
 
+// KillerBoard: Display the normal Sudoku grid borders, along with extra inner
+// borders indicated the sum boxes, as well as corner numbers for the sum.
 class KillerBoard extends React.Component {
   constructor(props) {
     super(props);
@@ -13,6 +15,7 @@ class KillerBoard extends React.Component {
   getCellBorders() {
     let borders = [];
 
+    // Normal Sudoku borders: 3x3 boxes.
     for (let i = 0; i < 9; i++) {
       borders[i] = [];
       for (let j = 0; j < 9; j++) {
@@ -33,6 +36,9 @@ class KillerBoard extends React.Component {
   getCellInnerBorders() {
     let borders = [];
     const { grid } = this.state;
+
+    // Sum boxes: put a dashed line between any two boxes where the number in
+    // the grid changes.
     for (let i = 0; i < 9; i++) {
       borders[i] = [];
       for (let j = 0; j < 9; j++) {
@@ -66,6 +72,7 @@ class KillerBoard extends React.Component {
     const { hints, grid } = this.state;
     let currentHint = 0;
 
+    // The "hints" become small numbers to display in certain corners.
     for (let i = 0; i < 9; i++) {
       cornerNumbers[i] = [];
       for (let j = 0; j < 9; j++) {

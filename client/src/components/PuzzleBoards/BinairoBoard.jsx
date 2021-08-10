@@ -1,6 +1,10 @@
 import React from "react";
 import Board from "../Board/Board";
 
+/**
+ * BinarioBoard: display black circles for 0 values and white circle for 1 values.
+ * 
+ */
 class BinairoBoard extends React.Component {
   constructor(props) {
     super(props);

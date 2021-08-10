@@ -1,6 +1,11 @@
 import React from "react";
 import Board from "../Board/Board";
 
+/**
+ * ThermometerBoard: Display row and column sums, and draw thermometers in the
+ * correct places. NB: This only handle horizontal or vertical thermometers: 
+ * diagonal or bendy thermometers would require further extension.
+ */
 class ThermometerBoard extends React.Component {
   constructor(props) {
     super(props);
@@ -14,6 +19,7 @@ class ThermometerBoard extends React.Component {
   }
 
   getBackgrounds() {
+
     const { grid } = this.state;
     let backgrounds = [];
     const xsize = this.state.grid.length;
@@ -21,13 +27,19 @@ class ThermometerBoard extends React.Component {
     for (let i = 0; i < xsize; i++) {
       backgrounds[i] = [];
       for (let j = 0; j < ysize; j++) {
+
+        // The first digit of therms[i][j] identifies a particular thermometer, 
+        // and the second digit what part (with 1 being the head and then 
+        // ascending from there)
         const thermNum = Math.floor(grid[i][j] / 10);
         const north = i > 0 ? Math.floor(grid[i - 1][j] / 10) : null;
         const south = i < xsize - 1 ? Math.floor(grid[i + 1][j] / 10) : null;
         const west = j > 0 ? Math.floor(grid[i][j - 1] / 10) : null;
         const east = j < ysize - 1 ? Math.floor(grid[i][j + 1] / 10) : null;
 
+        
         if (grid[i][j] % 10 === 1) {
+          // If it's the head display a head in the correct direction
           if (north === thermNum) {
             backgrounds[i].push("url(images/themHeadN.png)");
           } else if (west === thermNum) {
@@ -38,6 +50,7 @@ class ThermometerBoard extends React.Component {
             backgrounds[i].push("url(images/themHeadS.png)");
           }
         } else {
+          // Otherwise it's either a tip, or a horizontal/vertical piece.
           if (north === thermNum && south !== thermNum) {
             backgrounds[i].push("url(images/themTipS.png)");
           } else if (south === thermNum && north !== thermNum) {
@@ -60,7 +73,7 @@ class ThermometerBoard extends React.Component {
 
   getCellBorders() {
     let borders = [];
-
+    // Frame: If at the top, bottom, left or right, make the border darker.
     for (let i = 0; i < this.state.grid.length; i++) {
       borders[i] = [];
       for (let j = 0; j < this.state.grid[0].length; j++) {

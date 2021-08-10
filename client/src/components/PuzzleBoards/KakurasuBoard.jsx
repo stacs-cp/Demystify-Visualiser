@@ -1,6 +1,10 @@
 import React from "react";
 import Board from "../Board/Board";
 
+/**
+ * KakurasuBoard: fill 0 values in with white and 1 values in with gray, add
+ * row and column sums, and darken the border around the edge.
+ */
 class KakurasuBoard extends React.Component {
   constructor(props) {
     super(props);
@@ -23,6 +27,7 @@ class KakurasuBoard extends React.Component {
   getCellBorders() {
     let borders = [];
 
+    // If at the top, bottom, left or right, make the border darker.
     for (let i = 0; i < this.state.size; i++) {
       borders[i] = [];
       for (let j = 0; j < this.state.size; j++) {

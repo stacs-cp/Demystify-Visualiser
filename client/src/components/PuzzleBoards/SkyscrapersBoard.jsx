@@ -1,6 +1,9 @@
 import React from "react";
 import Board from "../Board/Board";
 
+/**
+ * Skyscrapers board: display row and column sums at the start and the end.
+ */
 class SkyscrapersBoard extends React.Component {
   constructor(props) {
     super(props);

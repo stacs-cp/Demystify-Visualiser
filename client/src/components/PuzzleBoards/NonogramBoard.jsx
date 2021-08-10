@@ -1,6 +1,8 @@
 import React from "react";
 import Board from "../Board/Board";
 
+// Nonogram board: display counts in prepended rows and columns and fill in 
+// cells either black or white.
 class NonogramBoard extends React.Component {
   constructor(props) {
     super(props);

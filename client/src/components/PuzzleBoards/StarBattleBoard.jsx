@@ -1,6 +1,10 @@
 import React from "react";
 import Board from "../Board/Board";
 
+/**
+ * StarBattleBoard: Display a star in place of a one and draw the grid areas
+ * using cell borders.
+ */
 class StarBattleBoard extends React.Component {
   constructor(props) {
     super(props);
@@ -15,6 +19,8 @@ class StarBattleBoard extends React.Component {
   getCellBorders() {
     let borders = [];
     const { grid, gridSize } = this.state;
+    // Sum boxes: put a dashed line between any two boxes where the number in
+    // the grid changes.
     for (let i = 0; i < gridSize; i++) {
       borders[i] = [];
       for (let j = 0; j < gridSize; j++) {

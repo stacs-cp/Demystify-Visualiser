@@ -1,6 +1,9 @@
 import React from "react";
 import Board from "../Board/Board";
 
+/**
+ * SudokuBoard: Normal Sudoku board.
+ */
 class SudokuBoard extends React.Component {
   getCellBorders() {
     let borders = [];

@@ -1,6 +1,10 @@
 import React from "react";
 import Board from "../Board/Board";
 
+/**
+ * TentsBoard: Display positive numbers as tents, negative numbers as trees, and
+ * display row and column sums.
+ */
 class TentsBoard extends React.Component {
   constructor(props) {
     super(props);
@@ -26,7 +30,7 @@ class TentsBoard extends React.Component {
 
   getCellBorders() {
     let borders = [];
-
+    // Frame: If at the top, bottom, left or right, make the border darker.
     for (let i = 0; i < this.state.x; i++) {
       borders[i] = [];
       for (let j = 0; j < this.state.y; j++) {

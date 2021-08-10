@@ -1,5 +1,10 @@
 import React from "react";
 import Board from "../Board/Board";
+
+/**
+ * GaramBoard: Hide the parts of the grid irrelevant to the puzzle and display
+ * operations between cells in the correct position.
+ */
 class GaramBoard extends React.Component {
   constructor(props) {
     super(props);
@@ -19,6 +24,7 @@ class GaramBoard extends React.Component {
     for (let i = 0; i < grid.length; i++) {
       borders[i] = [];
       for (let j = 0; j < grid[0].length; j++) {
+        // Hide cells that contain -2.
         borders[i].push({
           borderTop:
             grid[i][j] === -2 ? "2px solid transparent" : "2px solid lightgray",
