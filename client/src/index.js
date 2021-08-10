@@ -6,6 +6,9 @@ import reportWebVitals from "./reportWebVitals";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
+/**
+ * Main render point for the DemystifyVisualiser.
+ */
 ReactDOM.render(
   <React.StrictMode>
     <DemystifyVisualiser />
