@@ -163,7 +163,9 @@ def run_demystify(
 
         # Append a state with no explanations to the end if desired.
         if append_current:
-            result["steps"] = result["steps"][:-1]
+            # Remove redundant choices if necessary
+            if "choices" in result["steps"][-1]:
+                result["steps"] = result["steps"][:-1]
             current_state = explainer.get_current_state()
             result["steps"].append(current_state["steps"][0])
 
@@ -226,7 +228,6 @@ def get_job(job_id):
     job = Job.fetch(job_id, connection=conn)
 
     if job.is_finished:
-        os.remove("demystify" + job.id + ".log")
         return jsonify(
             {
                 "jobId": job_id,
@@ -237,7 +238,7 @@ def get_job(job_id):
         log = open("demystify" + job.id + ".log", "r+")
         data = log.read()
         lines = data.splitlines()
-
+        log.close()
         return jsonify(
             {
                 "jobId": job_id,
@@ -246,6 +247,7 @@ def get_job(job_id):
                 "progress": job.meta["progress"],
             }
         )
+        
 
 
 @bp.route("/job/<string:job_id>/output", methods=["GET"])

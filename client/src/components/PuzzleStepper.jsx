@@ -198,6 +198,7 @@ class PuzzleStepper extends React.Component {
       numSteps: 1,
       explainedLits: explainedLits,
       choice: currentChoice,
+      appendCurrent: this.props.mode === "force"
     });
     this.setState({ isWaiting: true, jobId: result.jobId });
   }
@@ -245,6 +246,7 @@ class PuzzleStepper extends React.Component {
       numSteps: 1,
       explainedLits: explainedLits,
       litChoice: litChoice,
+      appendCurrent: true
     });
     this.setState({ isWaiting: true, jobId: result.jobId, error: null });
   }

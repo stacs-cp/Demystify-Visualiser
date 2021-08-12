@@ -1,0 +1,1549 @@
+Found VAR: 'stars'
+$#CON adj "({a[0]}, {a[1]}) and ({int(a[0])+int(a[2])}, {int(a[1])+int(a[3])}) are adjacent"
+
+Found CON: 'adj' '({a[0]}, {a[1]}) and ({int(a[0])+int(a[2])}, {int(a[1])+int(a[3])}) are adjacent'
+$#CON rowup "at least {params['starcount']} star(s) in row ({a[0]})"
+
+Found CON: 'rowup' 'at least {params['starcount']} star(s) in row ({a[0]})'
+$#CON rowdown "at most {params['starcount']} star(s) in row ({a[0]})"
+
+Found CON: 'rowdown' 'at most {params['starcount']} star(s) in row ({a[0]})'
+$#CON colup "at least {params['starcount']} star(s) in column ({a[0]})"
+
+Found CON: 'colup' 'at least {params['starcount']} star(s) in column ({a[0]})'
+$#CON coldown "at most {params['starcount']} star(s) in column ({a[0]})"
+
+Found CON: 'coldown' 'at most {params['starcount']} star(s) in column ({a[0]})'
+$#CON blockup "at least {params['starcount']} star(s) in box ({a[0]})"
+
+Found CON: 'blockup' 'at least {params['starcount']} star(s) in box ({a[0]})'
+$#CON blockdown "at most {params['starcount']} star(s) in box ({a[0]})"
+
+Found CON: 'blockdown' 'at most {params['starcount']} star(s) in box ({a[0]})'
+{'stars': {('1', '1'): {0: -2, 1: 2}, ('1', '2'): {0: -3, 1: 3}, ('1', '3'): {0: -4, 1: 4}, ('1', '4'): {0: -5, 1: 5}, ('1', '5'): {0: -6, 1: 6}, ('2', '1'): {0: -7, 1: 7}, ('2', '2'): {0: -8, 1: 8}, ('2', '3'): {0: -9, 1: 9}, ('2', '4'): {0: -10, 1: 10}, ('2', '5'): {0: -11, 1: 11}, ('3', '1'): {0: -12, 1: 12}, ('3', '2'): {0: -13, 1: 13}, ('3', '3'): {0: -14, 1: 14}, ('3', '4'): {0: -15, 1: 15}, ('3', '5'): {0: -16, 1: 16}, ('4', '1'): {0: -17, 1: 17}, ('4', '2'): {0: -18, 1: 18}, ('4', '3'): {0: -19, 1: 19}, ('4', '4'): {0: -20, 1: 20}, ('4', '5'): {0: -21, 1: 21}, ('5', '1'): {0: -22, 1: 22}, ('5', '2'): {0: -23, 1: 23}, ('5', '3'): {0: -24, 1: 24}, ('5', '4'): {0: -25, 1: 25}, ('5', '5'): {0: -26, 1: 26}}, 'adj': {('1', '1', '-1', '-1'): {0: -27, 1: 27}, ('1', '1', '-1', '0'): {0: -28, 1: 28}, ('1', '1', '-1', '1'): {0: -29, 1: 29}, ('1', '1', '0', '-1'): {0: -30, 1: 30}, ('1', '1', '0', '0'): {0: -31, 1: 31}, ('1', '1', '0', '1'): {0: -32, 1: 32}, ('1', '1', '1', '-1'): {0: -33, 1: 33}, ('1', '1', '1', '0'): {0: -34, 1: 34}, ('1', '1', '1', '1'): {0: -35, 1: 35}, ('1', '2', '-1', '-1'): {0: -36, 1: 36}, ('1', '2', '-1', '0'): {0: -37, 1: 37}, ('1', '2', '-1', '1'): {0: -38, 1: 38}, ('1', '2', '0', '-1'): {0: -39, 1: 39}, ('1', '2', '0', '0'): {0: -40, 1: 40}, ('1', '2', '0', '1'): {0: -41, 1: 41}, ('1', '2', '1', '-1'): {0: -42, 1: 42}, ('1', '2', '1', '0'): {0: -43, 1: 43}, ('1', '2', '1', '1'): {0: -44, 1: 44}, ('1', '3', '-1', '-1'): {0: -45, 1: 45}, ('1', '3', '-1', '0'): {0: -46, 1: 46}, ('1', '3', '-1', '1'): {0: -47, 1: 47}, ('1', '3', '0', '-1'): {0: -48, 1: 48}, ('1', '3', '0', '0'): {0: -49, 1: 49}, ('1', '3', '0', '1'): {0: -50, 1: 50}, ('1', '3', '1', '-1'): {0: -51, 1: 51}, ('1', '3', '1', '0'): {0: -52, 1: 52}, ('1', '3', '1', '1'): {0: -53, 1: 53}, ('1', '4', '-1', '-1'): {0: -54, 1: 54}, ('1', '4', '-1', '0'): {0: -55, 1: 55}, ('1', '4', '-1', '1'): {0: -56, 1: 56}, ('1', '4', '0', '-1'): {0: -57, 1: 57}, ('1', '4', '0', '0'): {0: -58, 1: 58}, ('1', '4', '0', '1'): {0: -59, 1: 59}, ('1', '4', '1', '-1'): {0: -60, 1: 60}, ('1', '4', '1', '0'): {0: -61, 1: 61}, ('1', '4', '1', '1'): {0: -62, 1: 62}, ('1', '5', '-1', '-1'): {0: -63, 1: 63}, ('1', '5', '-1', '0'): {0: -64, 1: 64}, ('1', '5', '-1', '1'): {0: -65, 1: 65}, ('1', '5', '0', '-1'): {0: -66, 1: 66}, ('1', '5', '0', '0'): {0: -67, 1: 67}, ('1', '5', '0', '1'): {0: -68, 1: 68}, ('1', '5', '1', '-1'): {0: -69, 1: 69}, ('1', '5', '1', '0'): {0: -70, 1: 70}, ('1', '5', '1', '1'): {0: -71, 1: 71}, ('2', '1', '-1', '-1'): {0: -72, 1: 72}, ('2', '1', '-1', '0'): {0: -73, 1: 73}, ('2', '1', '-1', '1'): {0: -74, 1: 74}, ('2', '1', '0', '-1'): {0: -75, 1: 75}, ('2', '1', '0', '0'): {0: -76, 1: 76}, ('2', '1', '0', '1'): {0: -77, 1: 77}, ('2', '1', '1', '-1'): {0: -78, 1: 78}, ('2', '1', '1', '0'): {0: -79, 1: 79}, ('2', '1', '1', '1'): {0: -80, 1: 80}, ('2', '2', '-1', '-1'): {0: -81, 1: 81}, ('2', '2', '-1', '0'): {0: -82, 1: 82}, ('2', '2', '-1', '1'): {0: -83, 1: 83}, ('2', '2', '0', '-1'): {0: -84, 1: 84}, ('2', '2', '0', '0'): {0: -85, 1: 85}, ('2', '2', '0', '1'): {0: -86, 1: 86}, ('2', '2', '1', '-1'): {0: -87, 1: 87}, ('2', '2', '1', '0'): {0: -88, 1: 88}, ('2', '2', '1', '1'): {0: -89, 1: 89}, ('2', '3', '-1', '-1'): {0: -90, 1: 90}, ('2', '3', '-1', '0'): {0: -91, 1: 91}, ('2', '3', '-1', '1'): {0: -92, 1: 92}, ('2', '3', '0', '-1'): {0: -93, 1: 93}, ('2', '3', '0', '0'): {0: -94, 1: 94}, ('2', '3', '0', '1'): {0: -95, 1: 95}, ('2', '3', '1', '-1'): {0: -96, 1: 96}, ('2', '3', '1', '0'): {0: -97, 1: 97}, ('2', '3', '1', '1'): {0: -98, 1: 98}, ('2', '4', '-1', '-1'): {0: -99, 1: 99}, ('2', '4', '-1', '0'): {0: -100, 1: 100}, ('2', '4', '-1', '1'): {0: -101, 1: 101}, ('2', '4', '0', '-1'): {0: -102, 1: 102}, ('2', '4', '0', '0'): {0: -103, 1: 103}, ('2', '4', '0', '1'): {0: -104, 1: 104}, ('2', '4', '1', '-1'): {0: -105, 1: 105}, ('2', '4', '1', '0'): {0: -106, 1: 106}, ('2', '4', '1', '1'): {0: -107, 1: 107}, ('2', '5', '-1', '-1'): {0: -108, 1: 108}, ('2', '5', '-1', '0'): {0: -109, 1: 109}, ('2', '5', '-1', '1'): {0: -110, 1: 110}, ('2', '5', '0', '-1'): {0: -111, 1: 111}, ('2', '5', '0', '0'): {0: -112, 1: 112}, ('2', '5', '0', '1'): {0: -113, 1: 113}, ('2', '5', '1', '-1'): {0: -114, 1: 114}, ('2', '5', '1', '0'): {0: -115, 1: 115}, ('2', '5', '1', '1'): {0: -116, 1: 116}, ('3', '1', '-1', '-1'): {0: -117, 1: 117}, ('3', '1', '-1', '0'): {0: -118, 1: 118}, ('3', '1', '-1', '1'): {0: -119, 1: 119}, ('3', '1', '0', '-1'): {0: -120, 1: 120}, ('3', '1', '0', '0'): {0: -121, 1: 121}, ('3', '1', '0', '1'): {0: -122, 1: 122}, ('3', '1', '1', '-1'): {0: -123, 1: 123}, ('3', '1', '1', '0'): {0: -124, 1: 124}, ('3', '1', '1', '1'): {0: -125, 1: 125}, ('3', '2', '-1', '-1'): {0: -126, 1: 126}, ('3', '2', '-1', '0'): {0: -127, 1: 127}, ('3', '2', '-1', '1'): {0: -128, 1: 128}, ('3', '2', '0', '-1'): {0: -129, 1: 129}, ('3', '2', '0', '0'): {0: -130, 1: 130}, ('3', '2', '0', '1'): {0: -131, 1: 131}, ('3', '2', '1', '-1'): {0: -132, 1: 132}, ('3', '2', '1', '0'): {0: -133, 1: 133}, ('3', '2', '1', '1'): {0: -134, 1: 134}, ('3', '3', '-1', '-1'): {0: -135, 1: 135}, ('3', '3', '-1', '0'): {0: -136, 1: 136}, ('3', '3', '-1', '1'): {0: -137, 1: 137}, ('3', '3', '0', '-1'): {0: -138, 1: 138}, ('3', '3', '0', '0'): {0: -139, 1: 139}, ('3', '3', '0', '1'): {0: -140, 1: 140}, ('3', '3', '1', '-1'): {0: -141, 1: 141}, ('3', '3', '1', '0'): {0: -142, 1: 142}, ('3', '3', '1', '1'): {0: -143, 1: 143}, ('3', '4', '-1', '-1'): {0: -144, 1: 144}, ('3', '4', '-1', '0'): {0: -145, 1: 145}, ('3', '4', '-1', '1'): {0: -146, 1: 146}, ('3', '4', '0', '-1'): {0: -147, 1: 147}, ('3', '4', '0', '0'): {0: -148, 1: 148}, ('3', '4', '0', '1'): {0: -149, 1: 149}, ('3', '4', '1', '-1'): {0: -150, 1: 150}, ('3', '4', '1', '0'): {0: -151, 1: 151}, ('3', '4', '1', '1'): {0: -152, 1: 152}, ('3', '5', '-1', '-1'): {0: -153, 1: 153}, ('3', '5', '-1', '0'): {0: -154, 1: 154}, ('3', '5', '-1', '1'): {0: -155, 1: 155}, ('3', '5', '0', '-1'): {0: -156, 1: 156}, ('3', '5', '0', '0'): {0: -157, 1: 157}, ('3', '5', '0', '1'): {0: -158, 1: 158}, ('3', '5', '1', '-1'): {0: -159, 1: 159}, ('3', '5', '1', '0'): {0: -160, 1: 160}, ('3', '5', '1', '1'): {0: -161, 1: 161}, ('4', '1', '-1', '-1'): {0: -162, 1: 162}, ('4', '1', '-1', '0'): {0: -163, 1: 163}, ('4', '1', '-1', '1'): {0: -164, 1: 164}, ('4', '1', '0', '-1'): {0: -165, 1: 165}, ('4', '1', '0', '0'): {0: -166, 1: 166}, ('4', '1', '0', '1'): {0: -167, 1: 167}, ('4', '1', '1', '-1'): {0: -168, 1: 168}, ('4', '1', '1', '0'): {0: -169, 1: 169}, ('4', '1', '1', '1'): {0: -170, 1: 170}, ('4', '2', '-1', '-1'): {0: -171, 1: 171}, ('4', '2', '-1', '0'): {0: -172, 1: 172}, ('4', '2', '-1', '1'): {0: -173, 1: 173}, ('4', '2', '0', '-1'): {0: -174, 1: 174}, ('4', '2', '0', '0'): {0: -175, 1: 175}, ('4', '2', '0', '1'): {0: -176, 1: 176}, ('4', '2', '1', '-1'): {0: -177, 1: 177}, ('4', '2', '1', '0'): {0: -178, 1: 178}, ('4', '2', '1', '1'): {0: -179, 1: 179}, ('4', '3', '-1', '-1'): {0: -180, 1: 180}, ('4', '3', '-1', '0'): {0: -181, 1: 181}, ('4', '3', '-1', '1'): {0: -182, 1: 182}, ('4', '3', '0', '-1'): {0: -183, 1: 183}, ('4', '3', '0', '0'): {0: -184, 1: 184}, ('4', '3', '0', '1'): {0: -185, 1: 185}, ('4', '3', '1', '-1'): {0: -186, 1: 186}, ('4', '3', '1', '0'): {0: -187, 1: 187}, ('4', '3', '1', '1'): {0: -188, 1: 188}, ('4', '4', '-1', '-1'): {0: -189, 1: 189}, ('4', '4', '-1', '0'): {0: -190, 1: 190}, ('4', '4', '-1', '1'): {0: -191, 1: 191}, ('4', '4', '0', '-1'): {0: -192, 1: 192}, ('4', '4', '0', '0'): {0: -193, 1: 193}, ('4', '4', '0', '1'): {0: -194, 1: 194}, ('4', '4', '1', '-1'): {0: -195, 1: 195}, ('4', '4', '1', '0'): {0: -196, 1: 196}, ('4', '4', '1', '1'): {0: -197, 1: 197}, ('4', '5', '-1', '-1'): {0: -198, 1: 198}, ('4', '5', '-1', '0'): {0: -199, 1: 199}, ('4', '5', '-1', '1'): {0: -200, 1: 200}, ('4', '5', '0', '-1'): {0: -201, 1: 201}, ('4', '5', '0', '0'): {0: -202, 1: 202}, ('4', '5', '0', '1'): {0: -203, 1: 203}, ('4', '5', '1', '-1'): {0: -204, 1: 204}, ('4', '5', '1', '0'): {0: -205, 1: 205}, ('4', '5', '1', '1'): {0: -206, 1: 206}, ('5', '1', '-1', '-1'): {0: -207, 1: 207}, ('5', '1', '-1', '0'): {0: -208, 1: 208}, ('5', '1', '-1', '1'): {0: -209, 1: 209}, ('5', '1', '0', '-1'): {0: -210, 1: 210}, ('5', '1', '0', '0'): {0: -211, 1: 211}, ('5', '1', '0', '1'): {0: -212, 1: 212}, ('5', '1', '1', '-1'): {0: -213, 1: 213}, ('5', '1', '1', '0'): {0: -214, 1: 214}, ('5', '1', '1', '1'): {0: -215, 1: 215}, ('5', '2', '-1', '-1'): {0: -216, 1: 216}, ('5', '2', '-1', '0'): {0: -217, 1: 217}, ('5', '2', '-1', '1'): {0: -218, 1: 218}, ('5', '2', '0', '-1'): {0: -219, 1: 219}, ('5', '2', '0', '0'): {0: -220, 1: 220}, ('5', '2', '0', '1'): {0: -221, 1: 221}, ('5', '2', '1', '-1'): {0: -222, 1: 222}, ('5', '2', '1', '0'): {0: -223, 1: 223}, ('5', '2', '1', '1'): {0: -224, 1: 224}, ('5', '3', '-1', '-1'): {0: -225, 1: 225}, ('5', '3', '-1', '0'): {0: -226, 1: 226}, ('5', '3', '-1', '1'): {0: -227, 1: 227}, ('5', '3', '0', '-1'): {0: -228, 1: 228}, ('5', '3', '0', '0'): {0: -229, 1: 229}, ('5', '3', '0', '1'): {0: -230, 1: 230}, ('5', '3', '1', '-1'): {0: -231, 1: 231}, ('5', '3', '1', '0'): {0: -232, 1: 232}, ('5', '3', '1', '1'): {0: -233, 1: 233}, ('5', '4', '-1', '-1'): {0: -234, 1: 234}, ('5', '4', '-1', '0'): {0: -235, 1: 235}, ('5', '4', '-1', '1'): {0: -236, 1: 236}, ('5', '4', '0', '-1'): {0: -237, 1: 237}, ('5', '4', '0', '0'): {0: -238, 1: 238}, ('5', '4', '0', '1'): {0: -239, 1: 239}, ('5', '4', '1', '-1'): {0: -240, 1: 240}, ('5', '4', '1', '0'): {0: -241, 1: 241}, ('5', '4', '1', '1'): {0: -242, 1: 242}, ('5', '5', '-1', '-1'): {0: -243, 1: 243}, ('5', '5', '-1', '0'): {0: -244, 1: 244}, ('5', '5', '-1', '1'): {0: -245, 1: 245}, ('5', '5', '0', '-1'): {0: -246, 1: 246}, ('5', '5', '0', '0'): {0: -247, 1: 247}, ('5', '5', '0', '1'): {0: -248, 1: 248}, ('5', '5', '1', '-1'): {0: -249, 1: 249}, ('5', '5', '1', '0'): {0: -250, 1: 250}, ('5', '5', '1', '1'): {0: -251, 1: 251}}, 'rowup': {('1',): {0: -252, 1: 252}, ('2',): {0: -253, 1: 253}, ('3',): {0: -254, 1: 254}, ('4',): {0: -255, 1: 255}, ('5',): {0: -256, 1: 256}}, 'rowdown': {('1',): {0: -257, 1: 257}, ('2',): {0: -258, 1: 258}, ('3',): {0: -259, 1: 259}, ('4',): {0: -260, 1: 260}, ('5',): {0: -261, 1: 261}}, 'colup': {('1',): {0: -262, 1: 262}, ('2',): {0: -263, 1: 263}, ('3',): {0: -264, 1: 264}, ('4',): {0: -265, 1: 265}, ('5',): {0: -266, 1: 266}}, 'coldown': {('1',): {0: -267, 1: 267}, ('2',): {0: -268, 1: 268}, ('3',): {0: -269, 1: 269}, ('4',): {0: -270, 1: 270}, ('5',): {0: -271, 1: 271}}, 'blockup': {('1',): {0: -272, 1: 272}, ('2',): {0: -273, 1: 273}, ('3',): {0: -274, 1: 274}, ('4',): {0: -275, 1: 275}, ('5',): {0: -276, 1: 276}}, 'blockdown': {('1',): {0: -277, 1: 277}, ('2',): {0: -278, 1: 278}, ('3',): {0: -279, 1: 279}, ('4',): {0: -280, 1: 280}, ('5',): {0: -281, 1: 281}}}
+Check: [[27, -27]]
+Check2: ((-1, 1),)
+Constraint never used: (1, 1) and (0, 0) are adjacent
+Check: [[28, -28]]
+Check2: ((-1, 1),)
+Constraint never used: (1, 1) and (0, 1) are adjacent
+Check: [[29, -29]]
+Check2: ((-1, 1),)
+Constraint never used: (1, 1) and (0, 2) are adjacent
+Check: [[30, -30]]
+Check2: ((-1, 1),)
+Constraint never used: (1, 1) and (1, 0) are adjacent
+Check: [[31, -31]]
+Check2: ((-1, 1),)
+Constraint never used: (1, 1) and (1, 1) are adjacent
+Check: [[32, -32]]
+Check2: ((-1, 1),)
+Constraint never used: (1, 1) and (1, 2) are adjacent
+Check: [[33, -33]]
+Check2: ((-1, 1),)
+Constraint never used: (1, 1) and (2, 0) are adjacent
+Check: [[-34, -2, -7]]
+Check2: ((-14, -4, -1),)
+Adding: (1, 1) and (2, 1) are adjacent
+Check: [[-35, -2, -8]]
+Check2: ((-16, -4, -1),)
+Adding: (1, 1) and (2, 2) are adjacent
+Check: [[36, -36]]
+Check2: ((-1, 1),)
+Constraint never used: (1, 2) and (0, 1) are adjacent
+Check: [[37, -37]]
+Check2: ((-1, 1),)
+Constraint never used: (1, 2) and (0, 2) are adjacent
+Check: [[38, -38]]
+Check2: ((-1, 1),)
+Constraint never used: (1, 2) and (0, 3) are adjacent
+Check: [[-39, -2, -3]]
+Check2: ((-6, -4, -1),)
+Adding: (1, 2) and (1, 1) are adjacent
+Check: [[40, -40]]
+Check2: ((-1, 1),)
+Constraint never used: (1, 2) and (1, 2) are adjacent
+Check: [[41, -41]]
+Check2: ((-1, 1),)
+Constraint never used: (1, 2) and (1, 3) are adjacent
+Check: [[-42, -3, -7]]
+Check2: ((-14, -6, -1),)
+Adding: (1, 2) and (2, 1) are adjacent
+Check: [[-43, -3, -8]]
+Check2: ((-16, -6, -1),)
+Adding: (1, 2) and (2, 2) are adjacent
+Check: [[-44, -3, -9]]
+Check2: ((-18, -6, -1),)
+Adding: (1, 2) and (2, 3) are adjacent
+Check: [[45, -45]]
+Check2: ((-1, 1),)
+Constraint never used: (1, 3) and (0, 2) are adjacent
+Check: [[46, -46]]
+Check2: ((-1, 1),)
+Constraint never used: (1, 3) and (0, 3) are adjacent
+Check: [[47, -47]]
+Check2: ((-1, 1),)
+Constraint never used: (1, 3) and (0, 4) are adjacent
+Check: [[-48, -3, -4]]
+Check2: ((-8, -6, -1),)
+Adding: (1, 3) and (1, 2) are adjacent
+Check: [[49, -49]]
+Check2: ((-1, 1),)
+Constraint never used: (1, 3) and (1, 3) are adjacent
+Check: [[50, -50]]
+Check2: ((-1, 1),)
+Constraint never used: (1, 3) and (1, 4) are adjacent
+Check: [[-51, -4, -8]]
+Check2: ((-16, -8, -1),)
+Adding: (1, 3) and (2, 2) are adjacent
+Check: [[-52, -4, -9]]
+Check2: ((-18, -8, -1),)
+Adding: (1, 3) and (2, 3) are adjacent
+Check: [[-53, -4, -10]]
+Check2: ((-20, -8, -1),)
+Adding: (1, 3) and (2, 4) are adjacent
+Check: [[54, -54]]
+Check2: ((-1, 1),)
+Constraint never used: (1, 4) and (0, 3) are adjacent
+Check: [[55, -55]]
+Check2: ((-1, 1),)
+Constraint never used: (1, 4) and (0, 4) are adjacent
+Check: [[56, -56]]
+Check2: ((-1, 1),)
+Constraint never used: (1, 4) and (0, 5) are adjacent
+Check: [[-4, -5, -57]]
+Check2: ((-10, -8, -1),)
+Adding: (1, 4) and (1, 3) are adjacent
+Check: [[58, -58]]
+Check2: ((-1, 1),)
+Constraint never used: (1, 4) and (1, 4) are adjacent
+Check: [[59, -59]]
+Check2: ((-1, 1),)
+Constraint never used: (1, 4) and (1, 5) are adjacent
+Check: [[-60, -5, -9]]
+Check2: ((-18, -10, -1),)
+Adding: (1, 4) and (2, 3) are adjacent
+Check: [[-61, -5, -10]]
+Check2: ((-20, -10, -1),)
+Adding: (1, 4) and (2, 4) are adjacent
+Check: [[-62, -5, -11]]
+Check2: ((-22, -10, -1),)
+Adding: (1, 4) and (2, 5) are adjacent
+Check: [[63, -63]]
+Check2: ((-1, 1),)
+Constraint never used: (1, 5) and (0, 4) are adjacent
+Check: [[64, -64]]
+Check2: ((-1, 1),)
+Constraint never used: (1, 5) and (0, 5) are adjacent
+Check: [[65, -65]]
+Check2: ((-1, 1),)
+Constraint never used: (1, 5) and (0, 6) are adjacent
+Check: [[-5, -6, -66]]
+Check2: ((-12, -10, -1),)
+Adding: (1, 5) and (1, 4) are adjacent
+Check: [[67, -67]]
+Check2: ((-1, 1),)
+Constraint never used: (1, 5) and (1, 5) are adjacent
+Check: [[68, -68]]
+Check2: ((-1, 1),)
+Constraint never used: (1, 5) and (1, 6) are adjacent
+Check: [[-69, -6, -10]]
+Check2: ((-20, -12, -1),)
+Adding: (1, 5) and (2, 4) are adjacent
+Check: [[-70, -6, -11]]
+Check2: ((-22, -12, -1),)
+Adding: (1, 5) and (2, 5) are adjacent
+Check: [[71, -71]]
+Check2: ((-1, 1),)
+Constraint never used: (1, 5) and (2, 6) are adjacent
+Check: [[72, -72]]
+Check2: ((-1, 1),)
+Constraint never used: (2, 1) and (1, 0) are adjacent
+Check: [[73, -73]]
+Check2: ((-1, 1),)
+Constraint never used: (2, 1) and (1, 1) are adjacent
+Check: [[74, -74]]
+Check2: ((-1, 1),)
+Constraint never used: (2, 1) and (1, 2) are adjacent
+Check: [[75, -75]]
+Check2: ((-1, 1),)
+Constraint never used: (2, 1) and (2, 0) are adjacent
+Check: [[76, -76]]
+Check2: ((-1, 1),)
+Constraint never used: (2, 1) and (2, 1) are adjacent
+Check: [[77, -77]]
+Check2: ((-1, 1),)
+Constraint never used: (2, 1) and (2, 2) are adjacent
+Check: [[78, -78]]
+Check2: ((-1, 1),)
+Constraint never used: (2, 1) and (3, 0) are adjacent
+Check: [[-12, -79, -7]]
+Check2: ((-24, -14, -1),)
+Adding: (2, 1) and (3, 1) are adjacent
+Check: [[-13, -80, -7]]
+Check2: ((-26, -14, -1),)
+Adding: (2, 1) and (3, 2) are adjacent
+Check: [[81, -81]]
+Check2: ((-1, 1),)
+Constraint never used: (2, 2) and (1, 1) are adjacent
+Check: [[82, -82]]
+Check2: ((-1, 1),)
+Constraint never used: (2, 2) and (1, 2) are adjacent
+Check: [[83, -83]]
+Check2: ((-1, 1),)
+Constraint never used: (2, 2) and (1, 3) are adjacent
+Check: [[-84, -7, -8]]
+Check2: ((-16, -14, -1),)
+Adding: (2, 2) and (2, 1) are adjacent
+Check: [[85, -85]]
+Check2: ((-1, 1),)
+Constraint never used: (2, 2) and (2, 2) are adjacent
+Check: [[86, -86]]
+Check2: ((-1, 1),)
+Constraint never used: (2, 2) and (2, 3) are adjacent
+Check: [[-12, -87, -8]]
+Check2: ((-24, -16, -1),)
+Adding: (2, 2) and (3, 1) are adjacent
+Check: [[-13, -88, -8]]
+Check2: ((-26, -16, -1),)
+Adding: (2, 2) and (3, 2) are adjacent
+Check: [[-14, -89, -8]]
+Check2: ((-28, -16, -1),)
+Adding: (2, 2) and (3, 3) are adjacent
+Check: [[90, -90]]
+Check2: ((-1, 1),)
+Constraint never used: (2, 3) and (1, 2) are adjacent
+Check: [[91, -91]]
+Check2: ((-1, 1),)
+Constraint never used: (2, 3) and (1, 3) are adjacent
+Check: [[92, -92]]
+Check2: ((-1, 1),)
+Constraint never used: (2, 3) and (1, 4) are adjacent
+Check: [[-8, -9, -93]]
+Check2: ((-18, -16, -1),)
+Adding: (2, 3) and (2, 2) are adjacent
+Check: [[94, -94]]
+Check2: ((-1, 1),)
+Constraint never used: (2, 3) and (2, 3) are adjacent
+Check: [[95, -95]]
+Check2: ((-1, 1),)
+Constraint never used: (2, 3) and (2, 4) are adjacent
+Check: [[-13, -96, -9]]
+Check2: ((-26, -18, -1),)
+Adding: (2, 3) and (3, 2) are adjacent
+Check: [[-14, -97, -9]]
+Check2: ((-28, -18, -1),)
+Adding: (2, 3) and (3, 3) are adjacent
+Check: [[-15, -98, -9]]
+Check2: ((-30, -18, -1),)
+Adding: (2, 3) and (3, 4) are adjacent
+Check: [[99, -99]]
+Check2: ((-1, 1),)
+Constraint never used: (2, 4) and (1, 3) are adjacent
+Check: [[100, -100]]
+Check2: ((-1, 1),)
+Constraint never used: (2, 4) and (1, 4) are adjacent
+Check: [[101, -101]]
+Check2: ((-1, 1),)
+Constraint never used: (2, 4) and (1, 5) are adjacent
+Check: [[-9, -10, -102]]
+Check2: ((-20, -18, -1),)
+Adding: (2, 4) and (2, 3) are adjacent
+Check: [[103, -103]]
+Check2: ((-1, 1),)
+Constraint never used: (2, 4) and (2, 4) are adjacent
+Check: [[104, -104]]
+Check2: ((-1, 1),)
+Constraint never used: (2, 4) and (2, 5) are adjacent
+Check: [[-14, -105, -10]]
+Check2: ((-28, -20, -1),)
+Adding: (2, 4) and (3, 3) are adjacent
+Check: [[-15, -106, -10]]
+Check2: ((-30, -20, -1),)
+Adding: (2, 4) and (3, 4) are adjacent
+Check: [[-16, -107, -10]]
+Check2: ((-32, -20, -1),)
+Adding: (2, 4) and (3, 5) are adjacent
+Check: [[108, -108]]
+Check2: ((-1, 1),)
+Constraint never used: (2, 5) and (1, 4) are adjacent
+Check: [[109, -109]]
+Check2: ((-1, 1),)
+Constraint never used: (2, 5) and (1, 5) are adjacent
+Check: [[110, -110]]
+Check2: ((-1, 1),)
+Constraint never used: (2, 5) and (1, 6) are adjacent
+Check: [[-111, -10, -11]]
+Check2: ((-22, -20, -1),)
+Adding: (2, 5) and (2, 4) are adjacent
+Check: [[112, -112]]
+Check2: ((-1, 1),)
+Constraint never used: (2, 5) and (2, 5) are adjacent
+Check: [[113, -113]]
+Check2: ((-1, 1),)
+Constraint never used: (2, 5) and (2, 6) are adjacent
+Check: [[-15, -114, -11]]
+Check2: ((-30, -22, -1),)
+Adding: (2, 5) and (3, 4) are adjacent
+Check: [[-16, -115, -11]]
+Check2: ((-32, -22, -1),)
+Adding: (2, 5) and (3, 5) are adjacent
+Check: [[116, -116]]
+Check2: ((-1, 1),)
+Constraint never used: (2, 5) and (3, 6) are adjacent
+Check: [[117, -117]]
+Check2: ((-1, 1),)
+Constraint never used: (3, 1) and (2, 0) are adjacent
+Check: [[118, -118]]
+Check2: ((-1, 1),)
+Constraint never used: (3, 1) and (2, 1) are adjacent
+Check: [[119, -119]]
+Check2: ((-1, 1),)
+Constraint never used: (3, 1) and (2, 2) are adjacent
+Check: [[120, -120]]
+Check2: ((-1, 1),)
+Constraint never used: (3, 1) and (3, 0) are adjacent
+Check: [[121, -121]]
+Check2: ((-1, 1),)
+Constraint never used: (3, 1) and (3, 1) are adjacent
+Check: [[122, -122]]
+Check2: ((-1, 1),)
+Constraint never used: (3, 1) and (3, 2) are adjacent
+Check: [[123, -123]]
+Check2: ((-1, 1),)
+Constraint never used: (3, 1) and (4, 0) are adjacent
+Check: [[-12, -124, -17]]
+Check2: ((-34, -24, -1),)
+Adding: (3, 1) and (4, 1) are adjacent
+Check: [[-12, -125, -18]]
+Check2: ((-36, -24, -1),)
+Adding: (3, 1) and (4, 2) are adjacent
+Check: [[126, -126]]
+Check2: ((-1, 1),)
+Constraint never used: (3, 2) and (2, 1) are adjacent
+Check: [[127, -127]]
+Check2: ((-1, 1),)
+Constraint never used: (3, 2) and (2, 2) are adjacent
+Check: [[128, -128]]
+Check2: ((-1, 1),)
+Constraint never used: (3, 2) and (2, 3) are adjacent
+Check: [[-12, -13, -129]]
+Check2: ((-26, -24, -1),)
+Adding: (3, 2) and (3, 1) are adjacent
+Check: [[130, -130]]
+Check2: ((-1, 1),)
+Constraint never used: (3, 2) and (3, 2) are adjacent
+Check: [[131, -131]]
+Check2: ((-1, 1),)
+Constraint never used: (3, 2) and (3, 3) are adjacent
+Check: [[-13, -17, -132]]
+Check2: ((-34, -26, -1),)
+Adding: (3, 2) and (4, 1) are adjacent
+Check: [[-13, -133, -18]]
+Check2: ((-36, -26, -1),)
+Adding: (3, 2) and (4, 2) are adjacent
+Check: [[-13, -134, -19]]
+Check2: ((-38, -26, -1),)
+Adding: (3, 2) and (4, 3) are adjacent
+Check: [[135, -135]]
+Check2: ((-1, 1),)
+Constraint never used: (3, 3) and (2, 2) are adjacent
+Check: [[136, -136]]
+Check2: ((-1, 1),)
+Constraint never used: (3, 3) and (2, 3) are adjacent
+Check: [[137, -137]]
+Check2: ((-1, 1),)
+Constraint never used: (3, 3) and (2, 4) are adjacent
+Check: [[-13, -14, -138]]
+Check2: ((-28, -26, -1),)
+Adding: (3, 3) and (3, 2) are adjacent
+Check: [[139, -139]]
+Check2: ((-1, 1),)
+Constraint never used: (3, 3) and (3, 3) are adjacent
+Check: [[140, -140]]
+Check2: ((-1, 1),)
+Constraint never used: (3, 3) and (3, 4) are adjacent
+Check: [[-14, -18, -141]]
+Check2: ((-36, -28, -1),)
+Adding: (3, 3) and (4, 2) are adjacent
+Check: [[-14, -142, -19]]
+Check2: ((-38, -28, -1),)
+Adding: (3, 3) and (4, 3) are adjacent
+Check: [[-14, -143, -20]]
+Check2: ((-40, -28, -1),)
+Adding: (3, 3) and (4, 4) are adjacent
+Check: [[144, -144]]
+Check2: ((-1, 1),)
+Constraint never used: (3, 4) and (2, 3) are adjacent
+Check: [[145, -145]]
+Check2: ((-1, 1),)
+Constraint never used: (3, 4) and (2, 4) are adjacent
+Check: [[146, -146]]
+Check2: ((-1, 1),)
+Constraint never used: (3, 4) and (2, 5) are adjacent
+Check: [[-14, -15, -147]]
+Check2: ((-30, -28, -1),)
+Adding: (3, 4) and (3, 3) are adjacent
+Check: [[148, -148]]
+Check2: ((-1, 1),)
+Constraint never used: (3, 4) and (3, 4) are adjacent
+Check: [[149, -149]]
+Check2: ((-1, 1),)
+Constraint never used: (3, 4) and (3, 5) are adjacent
+Check: [[-15, -150, -19]]
+Check2: ((-38, -30, -1),)
+Adding: (3, 4) and (4, 3) are adjacent
+Check: [[-15, -20, -151]]
+Check2: ((-40, -30, -1),)
+Adding: (3, 4) and (4, 4) are adjacent
+Check: [[-15, -21, -152]]
+Check2: ((-42, -30, -1),)
+Adding: (3, 4) and (4, 5) are adjacent
+Check: [[153, -153]]
+Check2: ((-1, 1),)
+Constraint never used: (3, 5) and (2, 4) are adjacent
+Check: [[154, -154]]
+Check2: ((-1, 1),)
+Constraint never used: (3, 5) and (2, 5) are adjacent
+Check: [[155, -155]]
+Check2: ((-1, 1),)
+Constraint never used: (3, 5) and (2, 6) are adjacent
+Check: [[-15, -16, -156]]
+Check2: ((-32, -30, -1),)
+Adding: (3, 5) and (3, 4) are adjacent
+Check: [[157, -157]]
+Check2: ((-1, 1),)
+Constraint never used: (3, 5) and (3, 5) are adjacent
+Check: [[158, -158]]
+Check2: ((-1, 1),)
+Constraint never used: (3, 5) and (3, 6) are adjacent
+Check: [[-16, -159, -20]]
+Check2: ((-40, -32, -1),)
+Adding: (3, 5) and (4, 4) are adjacent
+Check: [[-16, -21, -160]]
+Check2: ((-42, -32, -1),)
+Adding: (3, 5) and (4, 5) are adjacent
+Check: [[161, -161]]
+Check2: ((-1, 1),)
+Constraint never used: (3, 5) and (4, 6) are adjacent
+Check: [[162, -162]]
+Check2: ((-1, 1),)
+Constraint never used: (4, 1) and (3, 0) are adjacent
+Check: [[163, -163]]
+Check2: ((-1, 1),)
+Constraint never used: (4, 1) and (3, 1) are adjacent
+Check: [[164, -164]]
+Check2: ((-1, 1),)
+Constraint never used: (4, 1) and (3, 2) are adjacent
+Check: [[165, -165]]
+Check2: ((-1, 1),)
+Constraint never used: (4, 1) and (4, 0) are adjacent
+Check: [[166, -166]]
+Check2: ((-1, 1),)
+Constraint never used: (4, 1) and (4, 1) are adjacent
+Check: [[167, -167]]
+Check2: ((-1, 1),)
+Constraint never used: (4, 1) and (4, 2) are adjacent
+Check: [[168, -168]]
+Check2: ((-1, 1),)
+Constraint never used: (4, 1) and (5, 0) are adjacent
+Check: [[-17, -22, -169]]
+Check2: ((-44, -34, -1),)
+Adding: (4, 1) and (5, 1) are adjacent
+Check: [[-17, -23, -170]]
+Check2: ((-46, -34, -1),)
+Adding: (4, 1) and (5, 2) are adjacent
+Check: [[171, -171]]
+Check2: ((-1, 1),)
+Constraint never used: (4, 2) and (3, 1) are adjacent
+Check: [[172, -172]]
+Check2: ((-1, 1),)
+Constraint never used: (4, 2) and (3, 2) are adjacent
+Check: [[173, -173]]
+Check2: ((-1, 1),)
+Constraint never used: (4, 2) and (3, 3) are adjacent
+Check: [[-17, -18, -174]]
+Check2: ((-36, -34, -1),)
+Adding: (4, 2) and (4, 1) are adjacent
+Check: [[175, -175]]
+Check2: ((-1, 1),)
+Constraint never used: (4, 2) and (4, 2) are adjacent
+Check: [[176, -176]]
+Check2: ((-1, 1),)
+Constraint never used: (4, 2) and (4, 3) are adjacent
+Check: [[-18, -177, -22]]
+Check2: ((-44, -36, -1),)
+Adding: (4, 2) and (5, 1) are adjacent
+Check: [[-18, -23, -178]]
+Check2: ((-46, -36, -1),)
+Adding: (4, 2) and (5, 2) are adjacent
+Check: [[-18, -24, -179]]
+Check2: ((-48, -36, -1),)
+Adding: (4, 2) and (5, 3) are adjacent
+Check: [[180, -180]]
+Check2: ((-1, 1),)
+Constraint never used: (4, 3) and (3, 2) are adjacent
+Check: [[181, -181]]
+Check2: ((-1, 1),)
+Constraint never used: (4, 3) and (3, 3) are adjacent
+Check: [[182, -182]]
+Check2: ((-1, 1),)
+Constraint never used: (4, 3) and (3, 4) are adjacent
+Check: [[-18, -19, -183]]
+Check2: ((-38, -36, -1),)
+Adding: (4, 3) and (4, 2) are adjacent
+Check: [[184, -184]]
+Check2: ((-1, 1),)
+Constraint never used: (4, 3) and (4, 3) are adjacent
+Check: [[185, -185]]
+Check2: ((-1, 1),)
+Constraint never used: (4, 3) and (4, 4) are adjacent
+Check: [[-186, -19, -23]]
+Check2: ((-46, -38, -1),)
+Adding: (4, 3) and (5, 2) are adjacent
+Check: [[-19, -24, -187]]
+Check2: ((-48, -38, -1),)
+Adding: (4, 3) and (5, 3) are adjacent
+Check: [[-19, -25, -188]]
+Check2: ((-50, -38, -1),)
+Adding: (4, 3) and (5, 4) are adjacent
+Check: [[189, -189]]
+Check2: ((-1, 1),)
+Constraint never used: (4, 4) and (3, 3) are adjacent
+Check: [[190, -190]]
+Check2: ((-1, 1),)
+Constraint never used: (4, 4) and (3, 4) are adjacent
+Check: [[191, -191]]
+Check2: ((-1, 1),)
+Constraint never used: (4, 4) and (3, 5) are adjacent
+Check: [[-19, -20, -192]]
+Check2: ((-40, -38, -1),)
+Adding: (4, 4) and (4, 3) are adjacent
+Check: [[193, -193]]
+Check2: ((-1, 1),)
+Constraint never used: (4, 4) and (4, 4) are adjacent
+Check: [[194, -194]]
+Check2: ((-1, 1),)
+Constraint never used: (4, 4) and (4, 5) are adjacent
+Check: [[-195, -20, -24]]
+Check2: ((-48, -40, -1),)
+Adding: (4, 4) and (5, 3) are adjacent
+Check: [[-20, -25, -196]]
+Check2: ((-50, -40, -1),)
+Adding: (4, 4) and (5, 4) are adjacent
+Check: [[-20, -26, -197]]
+Check2: ((-52, -40, -1),)
+Adding: (4, 4) and (5, 5) are adjacent
+Check: [[198, -198]]
+Check2: ((-1, 1),)
+Constraint never used: (4, 5) and (3, 4) are adjacent
+Check: [[199, -199]]
+Check2: ((-1, 1),)
+Constraint never used: (4, 5) and (3, 5) are adjacent
+Check: [[200, -200]]
+Check2: ((-1, 1),)
+Constraint never used: (4, 5) and (3, 6) are adjacent
+Check: [[-20, -21, -201]]
+Check2: ((-42, -40, -1),)
+Adding: (4, 5) and (4, 4) are adjacent
+Check: [[202, -202]]
+Check2: ((-1, 1),)
+Constraint never used: (4, 5) and (4, 5) are adjacent
+Check: [[203, -203]]
+Check2: ((-1, 1),)
+Constraint never used: (4, 5) and (4, 6) are adjacent
+Check: [[-21, -25, -204]]
+Check2: ((-50, -42, -1),)
+Adding: (4, 5) and (5, 4) are adjacent
+Check: [[-21, -26, -205]]
+Check2: ((-52, -42, -1),)
+Adding: (4, 5) and (5, 5) are adjacent
+Check: [[206, -206]]
+Check2: ((-1, 1),)
+Constraint never used: (4, 5) and (5, 6) are adjacent
+Check: [[207, -207]]
+Check2: ((-1, 1),)
+Constraint never used: (5, 1) and (4, 0) are adjacent
+Check: [[208, -208]]
+Check2: ((-1, 1),)
+Constraint never used: (5, 1) and (4, 1) are adjacent
+Check: [[209, -209]]
+Check2: ((-1, 1),)
+Constraint never used: (5, 1) and (4, 2) are adjacent
+Check: [[210, -210]]
+Check2: ((-1, 1),)
+Constraint never used: (5, 1) and (5, 0) are adjacent
+Check: [[211, -211]]
+Check2: ((-1, 1),)
+Constraint never used: (5, 1) and (5, 1) are adjacent
+Check: [[212, -212]]
+Check2: ((-1, 1),)
+Constraint never used: (5, 1) and (5, 2) are adjacent
+Check: [[213, -213]]
+Check2: ((-1, 1),)
+Constraint never used: (5, 1) and (6, 0) are adjacent
+Check: [[214, -214]]
+Check2: ((-1, 1),)
+Constraint never used: (5, 1) and (6, 1) are adjacent
+Check: [[215, -215]]
+Check2: ((-1, 1),)
+Constraint never used: (5, 1) and (6, 2) are adjacent
+Check: [[216, -216]]
+Check2: ((-1, 1),)
+Constraint never used: (5, 2) and (4, 1) are adjacent
+Check: [[217, -217]]
+Check2: ((-1, 1),)
+Constraint never used: (5, 2) and (4, 2) are adjacent
+Check: [[218, -218]]
+Check2: ((-1, 1),)
+Constraint never used: (5, 2) and (4, 3) are adjacent
+Check: [[-22, -23, -219]]
+Check2: ((-46, -44, -1),)
+Adding: (5, 2) and (5, 1) are adjacent
+Check: [[220, -220]]
+Check2: ((-1, 1),)
+Constraint never used: (5, 2) and (5, 2) are adjacent
+Check: [[221, -221]]
+Check2: ((-1, 1),)
+Constraint never used: (5, 2) and (5, 3) are adjacent
+Check: [[222, -222]]
+Check2: ((-1, 1),)
+Constraint never used: (5, 2) and (6, 1) are adjacent
+Check: [[223, -223]]
+Check2: ((-1, 1),)
+Constraint never used: (5, 2) and (6, 2) are adjacent
+Check: [[224, -224]]
+Check2: ((-1, 1),)
+Constraint never used: (5, 2) and (6, 3) are adjacent
+Check: [[225, -225]]
+Check2: ((-1, 1),)
+Constraint never used: (5, 3) and (4, 2) are adjacent
+Check: [[226, -226]]
+Check2: ((-1, 1),)
+Constraint never used: (5, 3) and (4, 3) are adjacent
+Check: [[227, -227]]
+Check2: ((-1, 1),)
+Constraint never used: (5, 3) and (4, 4) are adjacent
+Check: [[-23, -24, -228]]
+Check2: ((-48, -46, -1),)
+Adding: (5, 3) and (5, 2) are adjacent
+Check: [[229, -229]]
+Check2: ((-1, 1),)
+Constraint never used: (5, 3) and (5, 3) are adjacent
+Check: [[230, -230]]
+Check2: ((-1, 1),)
+Constraint never used: (5, 3) and (5, 4) are adjacent
+Check: [[231, -231]]
+Check2: ((-1, 1),)
+Constraint never used: (5, 3) and (6, 2) are adjacent
+Check: [[232, -232]]
+Check2: ((-1, 1),)
+Constraint never used: (5, 3) and (6, 3) are adjacent
+Check: [[233, -233]]
+Check2: ((-1, 1),)
+Constraint never used: (5, 3) and (6, 4) are adjacent
+Check: [[234, -234]]
+Check2: ((-1, 1),)
+Constraint never used: (5, 4) and (4, 3) are adjacent
+Check: [[235, -235]]
+Check2: ((-1, 1),)
+Constraint never used: (5, 4) and (4, 4) are adjacent
+Check: [[236, -236]]
+Check2: ((-1, 1),)
+Constraint never used: (5, 4) and (4, 5) are adjacent
+Check: [[-24, -25, -237]]
+Check2: ((-50, -48, -1),)
+Adding: (5, 4) and (5, 3) are adjacent
+Check: [[238, -238]]
+Check2: ((-1, 1),)
+Constraint never used: (5, 4) and (5, 4) are adjacent
+Check: [[239, -239]]
+Check2: ((-1, 1),)
+Constraint never used: (5, 4) and (5, 5) are adjacent
+Check: [[240, -240]]
+Check2: ((-1, 1),)
+Constraint never used: (5, 4) and (6, 3) are adjacent
+Check: [[241, -241]]
+Check2: ((-1, 1),)
+Constraint never used: (5, 4) and (6, 4) are adjacent
+Check: [[242, -242]]
+Check2: ((-1, 1),)
+Constraint never used: (5, 4) and (6, 5) are adjacent
+Check: [[243, -243]]
+Check2: ((-1, 1),)
+Constraint never used: (5, 5) and (4, 4) are adjacent
+Check: [[244, -244]]
+Check2: ((-1, 1),)
+Constraint never used: (5, 5) and (4, 5) are adjacent
+Check: [[245, -245]]
+Check2: ((-1, 1),)
+Constraint never used: (5, 5) and (4, 6) are adjacent
+Check: [[-25, -26, -246]]
+Check2: ((-52, -50, -1),)
+Adding: (5, 5) and (5, 4) are adjacent
+Check: [[247, -247]]
+Check2: ((-1, 1),)
+Constraint never used: (5, 5) and (5, 5) are adjacent
+Check: [[248, -248]]
+Check2: ((-1, 1),)
+Constraint never used: (5, 5) and (5, 6) are adjacent
+Check: [[249, -249]]
+Check2: ((-1, 1),)
+Constraint never used: (5, 5) and (6, 4) are adjacent
+Check: [[250, -250]]
+Check2: ((-1, 1),)
+Constraint never used: (5, 5) and (6, 5) are adjacent
+Check: [[251, -251]]
+Check2: ((-1, 1),)
+Constraint never used: (5, 5) and (6, 6) are adjacent
+Check: [[-277, 307]]
+Check2: ((-1, 614),)
+Adding: at most 1 star(s) in box (1)
+Check: [[-278, 308]]
+Check2: ((-1, 616),)
+Adding: at most 1 star(s) in box (2)
+Check: [[-279, 309]]
+Check2: ((-1, 618),)
+Adding: at most 1 star(s) in box (3)
+Check: [[-280, 310]]
+Check2: ((-1, 620),)
+Adding: at most 1 star(s) in box (4)
+Check: [[-281, 311]]
+Check2: ((-1, 622),)
+Adding: at most 1 star(s) in box (5)
+Check: [[-272, 302]]
+Check2: ((-1, 604),)
+Adding: at least 1 star(s) in box (1)
+Check: [[-273, 303]]
+Check2: ((-1, 606),)
+Adding: at least 1 star(s) in box (2)
+Check: [[-274, 304]]
+Check2: ((-1, 608),)
+Adding: at least 1 star(s) in box (3)
+Check: [[-275, 305]]
+Check2: ((-1, 610),)
+Adding: at least 1 star(s) in box (4)
+Check: [[-276, 306]]
+Check2: ((-1, 612),)
+Adding: at least 1 star(s) in box (5)
+Check: [[-267, 297]]
+Check2: ((-1, 594),)
+Adding: at most 1 star(s) in column (1)
+Check: [[-268, 298]]
+Check2: ((-1, 596),)
+Adding: at most 1 star(s) in column (2)
+Check: [[-269, 299]]
+Check2: ((-1, 598),)
+Adding: at most 1 star(s) in column (3)
+Check: [[-270, 300]]
+Check2: ((-1, 600),)
+Adding: at most 1 star(s) in column (4)
+Check: [[-271, 301]]
+Check2: ((-1, 602),)
+Adding: at most 1 star(s) in column (5)
+Check: [[-262, 292]]
+Check2: ((-1, 584),)
+Adding: at least 1 star(s) in column (1)
+Check: [[-263, 293]]
+Check2: ((-1, 586),)
+Adding: at least 1 star(s) in column (2)
+Check: [[-264, 294]]
+Check2: ((-1, 588),)
+Adding: at least 1 star(s) in column (3)
+Check: [[-265, 295]]
+Check2: ((-1, 590),)
+Adding: at least 1 star(s) in column (4)
+Check: [[-266, 296]]
+Check2: ((-1, 592),)
+Adding: at least 1 star(s) in column (5)
+Check: [[-257, 287]]
+Check2: ((-1, 574),)
+Adding: at most 1 star(s) in row (1)
+Check: [[-258, 288]]
+Check2: ((-1, 576),)
+Adding: at most 1 star(s) in row (2)
+Check: [[-259, 289]]
+Check2: ((-1, 578),)
+Adding: at most 1 star(s) in row (3)
+Check: [[-260, 290]]
+Check2: ((-1, 580),)
+Adding: at most 1 star(s) in row (4)
+Check: [[-261, 291]]
+Check2: ((-1, 582),)
+Adding: at most 1 star(s) in row (5)
+Check: [[-252, 282]]
+Check2: ((-1, 564),)
+Adding: at least 1 star(s) in row (1)
+Check: [[-253, 283]]
+Check2: ((-1, 566),)
+Adding: at least 1 star(s) in row (2)
+Check: [[-254, 284]]
+Check2: ((-1, 568),)
+Adding: at least 1 star(s) in row (3)
+Check: [[-255, 285]]
+Check2: ((-1, 570),)
+Adding: at least 1 star(s) in row (4)
+Check: [[-256, 286]]
+Check2: ((-1, 572),)
+Adding: at least 1 star(s) in row (5)
+[[stars[1,1], stars[1,2], stars[1,3], stars[1,4], stars[1,5]], [stars[2,1], stars[2,2], stars[2,3], stars[2,4], stars[2,5]], [stars[3,1], stars[3,2], stars[3,3], stars[3,4], stars[3,5]], [stars[4,1], stars[4,2], stars[4,3], stars[4,4], stars[4,5]], [stars[5,1], stars[5,2], stars[5,3], stars[5,4], stars[5,5]]]
+[stars[1,1] is 0, stars[1,1] is not 1, stars[1,2] is not 0, stars[1,2] is 1, stars[1,3] is 0, stars[1,3] is not 1, stars[1,4] is 0, stars[1,4] is not 1, stars[1,5] is 0, stars[1,5] is not 1, stars[2,1] is 0, stars[2,1] is not 1, stars[2,2] is 0, stars[2,2] is not 1, stars[2,3] is 0, stars[2,3] is not 1, stars[2,4] is 0, stars[2,4] is not 1, stars[2,5] is not 0, stars[2,5] is 1, stars[3,1] is 0, stars[3,1] is not 1, stars[3,2] is 0, stars[3,2] is not 1, stars[3,3] is not 0, stars[3,3] is 1, stars[3,4] is 0, stars[3,4] is not 1, stars[3,5] is 0, stars[3,5] is not 1, stars[4,1] is not 0, stars[4,1] is 1, stars[4,2] is 0, stars[4,2] is not 1, stars[4,3] is 0, stars[4,3] is not 1, stars[4,4] is 0, stars[4,4] is not 1, stars[4,5] is 0, stars[4,5] is not 1, stars[5,1] is 0, stars[5,1] is not 1, stars[5,2] is 0, stars[5,2] is not 1, stars[5,3] is 0, stars[5,3] is not 1, stars[5,4] is not 0, stars[5,4] is 1, stars[5,5] is 0, stars[5,5] is not 1]
+[stars[1,1] is 0, stars[1,1] is not 1, stars[1,2] is not 0, stars[1,2] is 1, stars[1,3] is 0, stars[1,3] is not 1, stars[1,4] is 0, stars[1,4] is not 1, stars[1,5] is 0, stars[1,5] is not 1, stars[2,1] is 0, stars[2,1] is not 1, stars[2,2] is 0, stars[2,2] is not 1, stars[2,3] is 0, stars[2,3] is not 1, stars[2,4] is 0, stars[2,4] is not 1, stars[2,5] is not 0, stars[2,5] is 1, stars[3,1] is 0, stars[3,1] is not 1, stars[3,2] is 0, stars[3,2] is not 1, stars[3,3] is not 0, stars[3,3] is 1, stars[3,4] is 0, stars[3,4] is not 1, stars[3,5] is 0, stars[3,5] is not 1, stars[4,1] is not 0, stars[4,1] is 1, stars[4,2] is 0, stars[4,2] is not 1, stars[4,3] is 0, stars[4,3] is not 1, stars[4,4] is 0, stars[4,4] is not 1, stars[4,5] is 0, stars[4,5] is not 1, stars[5,1] is 0, stars[5,1] is not 1, stars[5,2] is 0, stars[5,2] is not 1, stars[5,3] is 0, stars[5,3] is not 1, stars[5,4] is not 0, stars[5,4] is 1, stars[5,5] is 0, stars[5,5] is not 1]
+Doing checkSmall1
+Getting tiny MUSes, distance 1, for 50 puzlits, 1 repeats
+Chunked 50 in [7, 7, 6, 6, 6, 6, 6, 6]
+Smallest MUS A: inf 
+Looking for small
+Getting tiny MUSes, distance 999, for 50 puzlits, 1 repeats
+Chunked 50 in [7, 7, 6, 6, 6, 6, 6, 6]
+ZZPass 23 5 6
+ZZPass 26 3 4
+ZZFail 66 12 9
+ZZPass 19 6 7
+ZZPass 10 5 6
+ZZPass 22 5 6
+ZZPass 15 6 7
+ZZFail 93 14 9
+ZZFail 257 32 9
+ZZFail 159 14 9
+ZZFail 255 25 9
+ZZFail 257 19 9
+ZZPass 26 3 4
+ZZFail 262 38 9
+ZZFail 254 19 9
+ZZFail 159 14 9
+ZZPass 20 6 7
+ZZFail 195 22 9
+ZZFail 177 16 9
+ZZPass 9 5 6
+ZZFail 257 19 9
+ZZPass 21 3 4
+ZZPass 15 6 7
+ZZFail 177 15 9
+ZZPass 2 3 4
+ZZFail 44 11 9
+ZZPass 6 3 4
+ZZFail 257 18 9
+ZZPass 7 4 5
+ZZPass -3 4 5
+ZZFail 93 14 9
+ZZPass 6 3 4
+ZZPass 21 3 4
+ZZPass 2 3 4
+ZZFail 255 19 9
+ZZPass 4 5 6
+ZZFail 195 18 9
+ZZPass 20 6 7
+ZZFail 186 15 9
+ZZPass 9 5 6
+ZZFail 259 20 9
+ZZPass 22 5 6
+ZZPass 10 5 6
+ZZPass 19 6 7
+ZZFail 259 24 9
+ZZPass -3 4 5
+ZZFail 257 23 9
+ZZPass 4 5 6
+ZZFail 44 10 9
+ZZPass 23 5 6
+XX found first stars[5,2] is not 1 4
+XX found first stars[2,4] is 0 4
+XX found first stars[3,4] is 0 5
+XX found first stars[5,5] is not 1 2
+XX found first stars[5,5] is 0 2
+XX found first stars[4,3] is not 1 5
+XX found first stars[5,1] is not 1 4
+XX found first stars[4,4] is not 1 5
+XX found first stars[2,3] is not 1 4
+XX found first stars[4,5] is 0 2
+XX found first stars[3,4] is not 1 5
+XX found first stars[1,1] is 0 2
+XX found first stars[4,5] is not 1 2
+XX found first stars[2,3] is 0 4
+XX found first stars[5,1] is 0 4
+XX found first stars[1,5] is not 1 2
+XX found first stars[1,2] is 1 3
+XX found first stars[1,1] is not 1 2
+XX found first stars[1,3] is 0 4
+XX found first stars[4,4] is 0 5
+XX found first stars[2,1] is 0 3
+XX found first stars[2,4] is not 1 4
+XX found first stars[4,3] is 0 5
+XX found first stars[1,5] is 0 2
+XX found first stars[1,2] is not 0 3
+XX found first stars[1,3] is not 1 4
+XX found first stars[5,2] is 0 4
+Smallest MUS B: 2 
+Checking cache
+Running cascade algorithm
+Considering 2 * 50 jobs for minsize=4
+Chunked 100 in [13, 13, 13, 13, 12, 12, 12, 12]
+YY 2 4 8 stars[4,5] is not 1
+Early Exit!
+YY 2 4 8 stars[1,4] is 0
+YY 2 4 8 stars[2,5] is not 0
+Early Exit!
+Early Exit!
+YY 2 4 8 stars[5,2] is not 1
+Early Exit!
+YY 2 4 8 stars[1,1] is 0
+Early Exit!
+YY 2 4 8 stars[5,1] is 0
+Early Exit!
+YY 2 4 8 stars[5,3] is not 1
+Early Exit!
+YY 2 4 8 stars[3,4] is not 1
+Early Exit!
+YY 2 4 8 stars[4,3] is not 1
+Early Exit!
+YY 2 4 8 stars[3,2] is 0
+Early Exit!
+YY 2 4 8 stars[5,3] is 0
+Early Exit!
+YY 2 4 8 stars[2,3] is 0
+Early Exit!
+YY 2 4 8 stars[5,3] is 0
+Early Exit!
+YY 2 4 8 stars[5,4] is 1
+Early Exit!
+YY 2 4 8 stars[2,3] is not 1
+Early Exit!
+YY 2 4 8 stars[4,1] is not 0
+Early Exit!
+YY 2 4 8 stars[2,5] is 1
+Early Exit!
+YY 2 4 8 stars[4,2] is 0
+Early Exit!
+YY 2 4 8 stars[2,4] is not 1
+Early Exit!
+YY 2 4 8 stars[1,3] is not 1
+Early Exit!
+YY 2 4 8 stars[5,1] is 0
+Early Exit!
+YY 2 4 8 stars[5,4] is 1
+Early Exit!
+YY 2 4 8 stars[2,5] is not 0
+Early Exit!
+YY 2 4 8 stars[5,2] is not 1
+Early Exit!
+YY 2 4 8 stars[5,1] is not 1
+Early Exit!
+YY 2 4 8 stars[4,4] is not 1
+Early Exit!
+YY 2 4 8 stars[5,1] is not 1
+Early Exit!
+YY 2 4 8 stars[4,4] is 0
+Early Exit!
+YY 2 4 8 stars[3,1] is 0
+Early Exit!
+YY 2 4 8 stars[4,3] is not 1
+Early Exit!
+YY 2 4 8 stars[5,3] is not 1
+Early Exit!
+YY 2 4 8 stars[2,2] is 0
+Early Exit!
+YY 2 4 8 stars[3,1] is not 1
+Early Exit!
+YY 2 4 8 stars[3,4] is 0
+Early Exit!
+YY 2 4 8 stars[2,3] is 0
+Early Exit!
+YY 2 4 8 stars[3,3] is 1
+Early Exit!
+YY 2 4 8 stars[4,5] is 0
+Early Exit!
+YY 2 4 8 stars[1,5] is 0
+Early Exit!
+YY 2 4 8 stars[1,1] is not 1
+Early Exit!
+YY 2 4 8 stars[2,1] is not 1
+Early Exit!
+YY 2 4 8 stars[4,1] is not 0
+Early Exit!
+YY 2 4 8 stars[4,3] is 0
+Early Exit!
+YY 2 4 8 stars[4,1] is 1
+Early Exit!
+YY 2 4 8 stars[5,2] is 0
+Early Exit!
+YY 2 4 8 stars[1,1] is 0
+Early Exit!
+YY 2 4 8 stars[3,5] is 0
+YY 2 4 8 stars[3,3] is not 0
+Early Exit!
+Early Exit!
+YY 2 4 8 stars[4,3] is 0
+Early Exit!
+YY 2 4 8 stars[2,4] is 0
+Early Exit!
+YY 2 4 8 stars[1,5] is not 1
+Early Exit!
+YY 2 4 8 stars[3,5] is not 1
+Early Exit!
+YY 2 4 8 stars[4,4] is 0
+Early Exit!
+YY 2 4 8 stars[1,5] is 0
+Early Exit!
+YY 2 4 8 stars[1,4] is not 1
+Early Exit!
+YY 2 4 8 stars[2,1] is not 1
+Early Exit!
+YY 2 4 8 stars[3,2] is not 1
+Early Exit!
+YY 2 4 8 stars[1,4] is not 1
+Early Exit!
+YY 2 4 8 stars[2,4] is not 1
+Early Exit!
+YY 2 4 8 stars[1,2] is not 0
+Early Exit!
+YY 2 4 8 stars[2,1] is 0
+Early Exit!
+YY 2 4 8 stars[3,2] is not 1
+Early Exit!
+YY 2 4 8 stars[3,5] is 0
+Early Exit!
+YY 2 4 8 stars[3,1] is 0
+Early Exit!
+YY 2 4 8 stars[5,5] is not 1
+Early Exit!
+YY 2 4 8 stars[4,5] is 0
+Early Exit!
+YY 2 4 8 stars[1,3] is not 1
+Early Exit!
+YY 2 4 8 stars[3,4] is not 1
+Early Exit!
+YY 2 4 8 stars[5,5] is 0
+Early Exit!
+YY 2 4 8 stars[2,4] is 0
+Early Exit!
+YY 2 4 8 stars[4,2] is not 1
+Early Exit!
+YY 2 4 8 stars[1,2] is 1
+Early Exit!
+YY 2 4 8 stars[1,5] is not 1
+Early Exit!
+YY 2 4 8 stars[4,5] is not 1
+Early Exit!
+YY 2 4 8 stars[3,1] is not 1
+Early Exit!
+YY 2 4 8 stars[4,2] is not 1
+Early Exit!
+YY 2 4 8 stars[1,2] is 1
+Early Exit!
+YY 2 4 8 stars[3,4] is 0
+Early Exit!
+YY 2 4 8 stars[1,1] is not 1
+Early Exit!
+YY 2 4 8 stars[4,2] is 0
+Early Exit!
+YY 2 4 8 stars[3,5] is not 1
+Early Exit!
+YY 2 4 8 stars[2,3] is not 1
+Early Exit!
+YY 2 4 8 stars[5,4] is not 0
+YY 2 4 8 stars[5,2] is 0
+Early Exit!
+Early Exit!
+YY 2 4 8 stars[1,3] is 0
+Early Exit!
+YY 2 4 8 stars[2,2] is 0
+Early Exit!
+YY 2 4 8 stars[1,3] is 0
+Early Exit!
+YY 2 4 8 stars[5,5] is not 1
+Early Exit!
+YY 2 4 8 stars[2,1] is 0
+Early Exit!
+YY 2 4 8 stars[5,4] is not 0
+Early Exit!
+YY 2 4 8 stars[2,2] is not 1
+Early Exit!
+YY 2 4 8 stars[1,2] is not 0
+Early Exit!
+YY 2 4 8 stars[2,2] is not 1
+Early Exit!
+YY 2 4 8 stars[3,3] is 1
+Early Exit!
+YY 2 4 8 stars[3,3] is not 0
+Early Exit!
+YY 2 4 8 stars[4,4] is not 1
+Early Exit!
+YY 2 4 8 stars[5,5] is 0
+Early Exit!
+YY 2 4 8 stars[4,1] is 1
+Early Exit!
+YY 2 4 8 stars[3,2] is 0
+Early Exit!
+YY 2 4 8 stars[1,4] is 0
+Early Exit!
+YY 2 4 8 stars[2,5] is 1
+Early Exit!
+Chunked 10 in [2, 2, 1, 1, 1, 1, 1, 1]
+Chunked 10 in [2, 2, 1, 1, 1, 1, 1, 1]
+Chunked 10 in [2, 2, 1, 1, 1, 1, 1, 1]
+Chunked 10 in [2, 2, 1, 1, 1, 1, 1, 1]
+Chunked 10 in [2, 2, 1, 1, 1, 1, 1, 1]
+Chunked 10 in [2, 2, 1, 1, 1, 1, 1, 1]
+Chunked 10 in [2, 2, 1, 1, 1, 1, 1, 1]
+Chunked 10 in [2, 2, 1, 1, 1, 1, 1, 1]
+Chunked 10 in [2, 2, 1, 1, 1, 1, 1, 1]
+Chunked 10 in [2, 2, 1, 1, 1, 1, 1, 1]
+Chunked 10 in [2, 2, 1, 1, 1, 1, 1, 1]
+Chunked 10 in [2, 2, 1, 1, 1, 1, 1, 1]
+Chunked 10 in [2, 2, 1, 1, 1, 1, 1, 1]
+Chunked 10 in [2, 2, 1, 1, 1, 1, 1, 1]
+Chunked 10 in [2, 2, 1, 1, 1, 1, 1, 1]
+Chunked 10 in [2, 2, 1, 1, 1, 1, 1, 1]
+Doing checkSmall1
+Getting tiny MUSes, distance 1, for 46 puzlits, 1 repeats
+Chunked 46 in [6, 6, 6, 6, 6, 6, 5, 5]
+Smallest MUS A: inf 
+Looking for small
+Getting tiny MUSes, distance 999, for 46 puzlits, 1 repeats
+Chunked 46 in [6, 6, 6, 6, 6, 6, 5, 5]
+ZZFail 42 10 9
+ZZFail 93 14 9
+ZZFail 257 24 9
+ZZFail 107 9 9
+ZZFail 255 19 9
+ZZFail 42 10 9
+ZZFail 255 27 9
+ZZFail 134 15 9
+ZZFail 257 26 9
+ZZPass 22 5 6
+ZZPass 9 5 6
+ZZPass 15 4 5
+ZZPass 21 3 4
+ZZPass 4 5 6
+ZZFail 255 26 9
+ZZPass -3 4 5
+ZZPass 15 4 5
+ZZPass 26 3 4
+ZZFail 93 14 9
+ZZFail 62 11 9
+ZZPass 20 6 7
+ZZFail 257 24 9
+ZZFail 141 10 9
+ZZPass 19 6 7
+ZZPass 20 6 7
+ZZFail 257 31 9
+ZZPass 7 4 5
+ZZFail 62 11 9
+ZZPass 4 7 8
+ZZPass 22 5 6
+ZZPass 19 6 7
+ZZFail 187 11 9
+ZZPass 10 4 5
+ZZFail 259 22 9
+ZZPass 23 5 6
+ZZFail 114 13 9
+ZZPass 10 4 5
+ZZPass 9 5 6
+ZZPass 26 3 4
+ZZFail 42 10 9
+ZZPass 21 3 4
+ZZFail 42 10 9
+ZZPass 23 5 6
+ZZFail 141 10 9
+ZZFail 134 15 9
+ZZPass -3 4 5
+XX found first stars[5,1] is not 1 4
+XX found first stars[3,4] is 0 3
+XX found first stars[1,3] is not 1 4
+XX found first stars[3,4] is not 1 3
+XX found first stars[2,3] is not 1 4
+XX found first stars[4,5] is 0 2
+XX found first stars[1,2] is 1 3
+XX found first stars[5,5] is not 1 2
+XX found first stars[4,4] is not 1 5
+XX found first stars[5,1] is 0 4
+XX found first stars[4,3] is 0 5
+XX found first stars[2,4] is not 1 3
+XX found first stars[2,4] is 0 3
+XX found first stars[4,4] is 0 5
+XX found first stars[4,3] is not 1 5
+XX found first stars[2,1] is 0 3
+XX found first stars[1,3] is 0 6
+XX found first stars[5,2] is 0 4
+XX found first stars[2,3] is 0 4
+XX found first stars[5,5] is 0 2
+XX found first stars[4,5] is not 1 2
+XX found first stars[5,2] is not 1 4
+XX found first stars[1,2] is not 0 3
+Smallest MUS B: 2 
+Checking cache
+Chunked 23 in [3, 3, 3, 3, 3, 3, 3, 2]
+tryManyChop: [stars[4,5] is not 0] 0.000244140625 0 inf 2 inf
+Skip tryManyChop
+Trying to remove 271
+tryManyChop: [stars[5,5] is not 0] 0.000244140625 0 inf 2 inf
+Skip tryManyChop
+Trying to remove 271
+tryManyChop: [stars[4,4] is not 0] 0.000244140625 0 inf 5 inf
+Skip tryManyChop
+Trying to remove 196
+tryManyChop: [stars[4,4] is 1] 0.000244140625 0 inf 5 inf
+Skip tryManyChop
+Trying to remove 196
+Trying to remove 273
+Trying to remove 273
+Trying to remove 195
+Trying to remove 195
+Core for [stars[4,5] is not 0] : [2] to 2, with 2 steps, inf bad (minsize 2)
+tryManyChop: [stars[4,3] is not 0] 0.000244140625 0 inf 5 inf
+Skip tryManyChop
+Trying to remove 273
+Trying to remove 201
+Core for [stars[5,5] is not 0] : [2] to 2, with 2 steps, inf bad (minsize 2)
+Trying to remove 201
+tryManyChop: [stars[2,1] is not 0] 0.000244140625 0 inf 3 inf
+Skip tryManyChop
+Trying to remove 263
+Trying to remove 188
+Trying to remove 197
+Trying to remove 269
+Trying to remove 197
+Trying to remove 275
+Trying to remove 275
+Trying to remove 281
+Trying to remove 271
+Trying to remove 275
+Trying to remove 42
+Core for [stars[4,3] is not 0] : [5] to 5, with 5 steps, inf bad (minsize 5)
+Core for [stars[4,4] is not 0] : [5] to 5, with 5 steps, inf bad (minsize 5)
+tryManyChop: [stars[1,3] is 1] 0.000244140625 0 inf 4 inf
+Skip tryManyChop
+Trying to remove 262
+tryManyChop: [stars[2,4] is 1] 0.000244140625 0 inf 4 inf
+Skip tryManyChop
+Trying to remove 107
+Core for [stars[2,1] is not 0] : [3] to 3, with 3 steps, inf bad (minsize 3)
+Trying to remove 281
+tryManyChop: [stars[2,3] is not 0] 0.000244140625 0 inf 4 inf
+Skip tryManyChop
+tryManyChop: [stars[1,2] is not 1] 0.000244140625 0 inf 3 inf
+tryManyChop: [stars[5,5] is 1] 0.000244140625 0 inf 2 inf
+tryManyChop: [stars[4,3] is 1] 0.000244140625 0 inf 5 inf
+Skip tryManyChop
+Skip tryManyChop
+Skip tryManyChop
+tryManyChop: [stars[3,4] is not 0] 0.000244140625 0 inf 5 inf
+Trying to remove 263
+Trying to remove 188
+Trying to remove 271
+Skip tryManyChop
+Trying to remove 156
+Trying to remove 52
+Trying to remove 263
+Trying to remove 281
+Trying to remove 273
+Trying to remove 114
+Trying to remove 187
+Core for [stars[5,5] is 1] : [2] to 2, with 2 steps, inf bad (minsize 2)
+Trying to remove 262
+tryManyChop: [stars[5,2] is 1] 0.000244140625 0 inf 4 inf
+Skip tryManyChop
+Trying to remove 275
+Trying to remove 273
+Trying to remove 275
+Core for [stars[1,2] is not 1] : [3] to 3, with 3 steps, inf bad (minsize 3)
+Trying to remove 273
+Trying to remove 261
+tryManyChop: [stars[5,1] is not 0] 0.000244140625 0 inf 4 inf
+Trying to remove 273
+Skip tryManyChop
+Trying to remove 275
+Trying to remove 272
+Core for [stars[4,4] is 1] : [5] to 5, with 5 steps, inf bad (minsize 5)
+Can remove: 272
+Core for [stars[3,4] is not 0] : [5, (272, 4)] to 4, with 4 steps, inf bad (minsize 3)
+tryManyChop: [stars[2,4] is not 0] 0.000244140625 0 inf 4 inf
+Skip tryManyChop
+Trying to remove 107
+Trying to remove 271
+tryManyChop: [stars[1,2] is 0] 0.000244140625 0 inf 3 inf
+Skip tryManyChop
+Trying to remove 271
+Trying to remove 261
+Trying to remove 263
+Trying to remove 281
+Trying to remove 111
+Trying to remove 272
+Trying to remove 69
+Trying to remove 262
+Can remove: 69
+Core for [stars[2,4] is 1] : [4, (69, 4)] to 4, with 4 steps, inf bad (minsize 3)
+Trying to remove 60
+tryManyChop: [stars[4,5] is 1] 0.000244140625 0 inf 2 inf
+Skip tryManyChop
+Trying to remove 271
+Trying to remove 44
+Core for [stars[1,2] is 0] : [3] to 3, with 3 steps, inf bad (minsize 3)
+tryManyChop: [stars[5,2] is not 0] 0.000244140625 0 inf 4 inf
+Trying to remove 273
+Trying to remove 48
+Trying to remove 273
+Core for [stars[4,3] is 1] : [5] to 5, with 5 steps, inf bad (minsize 5)
+Trying to remove 271
+tryManyChop: [stars[5,1] is 1] 0.000244140625 0 inf 4 inf
+Skip tryManyChop
+Trying to remove 275
+Core for [stars[5,2] is 1] : [4] to 4, with 4 steps, inf bad (minsize 4)
+Core for [stars[1,3] is 1] : [4] to 4, with 4 steps, inf bad (minsize 4)
+Trying to remove 111
+Skip tryManyChop
+Trying to remove 275
+tryManyChop: [stars[2,3] is 1] 0.000244140625 0 inf 4 inf
+Skip tryManyChop
+Trying to remove 52
+Trying to remove 273
+Trying to remove 273
+Trying to remove 261
+Trying to remove 272
+Trying to remove 69
+Can remove: 69
+Core for [stars[2,4] is not 0] : [4, (69, 4)] to 4, with 4 steps, inf bad (minsize 3)
+Trying to remove 261
+Core for [stars[2,3] is not 0] : [4] to 4, with 4 steps, inf bad (minsize 4)
+Core for [stars[5,1] is not 0] : [4] to 4, with 4 steps, inf bad (minsize 4)
+tryManyChop: [stars[1,3] is not 0] 0.000244140625 0 inf 4 inf
+Skip tryManyChop
+Trying to remove 262
+Trying to remove 60
+Trying to remove 271
+Core for [stars[4,5] is 1] : [2] to 2, with 2 steps, inf bad (minsize 2)
+Trying to remove 271
+Trying to remove 281
+Trying to remove 273
+Trying to remove 44
+Trying to remove 273
+Trying to remove 263
+Core for [stars[5,1] is 1] : [4] to 4, with 4 steps, inf bad (minsize 4)
+tryManyChop: [stars[3,4] is 1] 0.000244140625 0 inf 5 inf
+Skip tryManyChop
+Trying to remove 156
+Core for [stars[2,3] is 1] : [4] to 4, with 4 steps, inf bad (minsize 4)
+Trying to remove 48
+Core for [stars[5,2] is not 0] : [4] to 4, with 4 steps, inf bad (minsize 4)
+Trying to remove 114
+Core for [stars[1,3] is not 0] : [4] to 4, with 4 steps, inf bad (minsize 4)
+Trying to remove 273
+Trying to remove 272
+Can remove: 272
+Core for [stars[3,4] is 1] : [5, (272, 4)] to 4, with 4 steps, inf bad (minsize 3)
+XX find duplicate stars[4,5] is 0
+XX add another new best stars[4,3] is 0 5 1
+XX find duplicate stars[1,3] is not 1
+XX find duplicate stars[5,5] is 0
+XX find duplicate stars[2,1] is 0
+XX find duplicate stars[2,3] is 0
+XX find duplicate stars[4,4] is 0
+XX find duplicate stars[2,4] is not 1
+XX find duplicate stars[4,5] is not 1
+XX find duplicate stars[4,4] is not 1
+XX find duplicate stars[1,2] is not 0
+XX find duplicate stars[5,2] is 0
+XX find duplicate stars[1,2] is 1
+XX find duplicate stars[5,1] is 0
+XX found new best stars[1,3] is 0 6 4
+XX find duplicate stars[5,5] is not 1
+XX find duplicate stars[5,2] is not 1
+XX find duplicate stars[2,3] is not 1
+XX find duplicate stars[4,3] is not 1
+XX find duplicate stars[5,1] is not 1
+XX find duplicate stars[3,4] is not 1
+XX find duplicate stars[3,4] is 0
+XX find duplicate stars[2,4] is 0
+Running cascade algorithm
+Considering 2 * 46 jobs for minsize=4
+Chunked 92 in [12, 12, 12, 12, 11, 11, 11, 11]
+YY 2 4 8 stars[2,4] is 0
+Early Exit!
+YY 2 4 8 stars[3,4] is 0
+Early Exit!
+YY 2 4 8 stars[4,1] is 1
+Early Exit!
+YY 2 4 8 stars[1,2] is 1
+Early Exit!
+YY 2 4 8 stars[5,5] is 0
+YY 2 4 8 stars[3,3] is not 0
+Early Exit!
+YY 2 4 8 stars[5,3] is 0
+Early Exit!
+YY 2 4 8 stars[1,3] is not 1
+Early Exit!
+Early Exit!
+YY 2 4 8 stars[4,3] is 0
+YY 2 4 8 stars[5,5] is not 1
+Early Exit!
+YY 2 4 8 stars[1,4] is not 1
+Early Exit!
+YY 2 4 8 stars[2,5] is not 0
+Early Exit!
+Early Exit!
+YY 2 4 8 stars[3,3] is 1
+YY 2 4 8 stars[4,3] is 0
+Early Exit!
+Early Exit!
+YY 2 4 8 stars[3,2] is 0
+Early Exit!
+YY 2 4 8 stars[5,1] is 0
+YY 2 4 8 stars[5,3] is not 1
+Early Exit!
+Early Exit!
+YY 2 4 8 stars[1,4] is 0
+YY 2 4 8 stars[2,4] is 0
+Early Exit!
+YY 2 4 8 stars[2,3] is 0
+YY 2 4 8 stars[5,4] is 1
+Early Exit!
+Early Exit!
+Early Exit!
+YY 2 4 8 stars[3,5] is not 1
+YY 2 4 8 stars[3,5] is not 1
+Early Exit!
+Early Exit!
+YY 2 4 8 stars[2,4] is not 1
+Early Exit!
+YY 2 4 8 stars[4,4] is not 1
+Early Exit!
+YY 2 4 8 stars[2,3] is not 1
+YY 2 4 8 stars[5,2] is not 1
+Early Exit!
+Early Exit!
+YY 2 4 8 stars[3,3] is 1
+YY 2 4 8 stars[5,4] is not 0
+Early Exit!
+Early Exit!
+YY 2 4 8 stars[3,2] is not 1
+YY 2 4 8 stars[3,3] is not 0
+YY 2 4 8 stars[1,3] is 0
+Early Exit!
+Early Exit!
+Early Exit!
+YY 2 4 8 stars[5,1] is 0
+YY 2 4 8 stars[3,1] is not 1
+Early Exit!
+Early Exit!
+YY 2 4 8 stars[3,5] is 0
+Early Exit!
+YY 2 4 8 stars[5,5] is not 1
+YY 2 4 8 stars[5,2] is 0
+Early Exit!
+Early Exit!
+YY 2 4 8 stars[3,4] is 0
+Early Exit!
+YY 2 4 8 stars[4,2] is not 1
+YY 2 4 8 stars[3,1] is 0
+Early Exit!
+Early Exit!
+YY 2 4 8 stars[1,4] is not 1
+YY 2 4 8 stars[5,3] is not 1
+YY 2 4 8 stars[1,2] is not 0
+YY 2 4 8 stars[1,3] is 0
+Early Exit!
+Early Exit!
+Early Exit!
+Early Exit!
+YY 2 4 8 stars[2,2] is not 1
+YY 2 4 8 stars[2,1] is 0
+YY 2 4 8 stars[4,1] is not 0
+YY 2 4 8 stars[1,3] is not 1
+Early Exit!
+Early Exit!
+YY 2 4 8 stars[2,2] is 0
+Early Exit!
+Early Exit!
+YY 2 4 8 stars[4,3] is not 1
+YY 2 4 8 stars[2,3] is not 1
+Early Exit!
+Early Exit!
+YY 2 4 8 stars[2,1] is not 1
+YY 2 4 8 stars[4,5] is not 1
+Early Exit!
+YY 2 4 8 stars[1,2] is not 0
+Early Exit!
+YY 2 4 8 stars[4,2] is 0
+Early Exit!
+Early Exit!
+YY 2 4 8 stars[4,5] is not 1
+Early Exit!
+YY 2 4 8 stars[5,4] is 1
+Early Exit!
+YY 2 4 8 stars[2,5] is 1
+Early Exit!
+Early Exit!
+YY 2 4 8 stars[2,4] is not 1
+YY 2 4 8 stars[4,1] is 1
+Early Exit!
+YY 2 4 8 stars[4,4] is not 1
+Early Exit!
+YY 2 4 8 stars[2,5] is not 0
+Early Exit!
+Early Exit!
+YY 2 4 8 stars[3,1] is 0
+Early Exit!
+YY 2 4 8 stars[4,2] is 0
+Early Exit!
+YY 2 4 8 stars[5,2] is not 1
+Early Exit!
+YY 2 4 8 stars[5,3] is 0
+YY 2 4 8 stars[4,3] is not 1
+YY 2 4 8 stars[3,5] is 0
+YY 2 4 8 stars[3,4] is not 1
+Early Exit!
+Early Exit!
+YY 2 4 8 stars[4,5] is 0
+YY 2 4 8 stars[2,2] is not 1
+Early Exit!
+YY 2 4 8 stars[4,5] is 0
+Early Exit!
+Early Exit!
+Early Exit!
+YY 2 4 8 stars[5,2] is 0
+YY 2 4 8 stars[3,2] is 0
+Early Exit!
+Early Exit!
+Early Exit!
+YY 2 4 8 stars[4,2] is not 1
+Early Exit!
+YY 2 4 8 stars[2,5] is 1
+YY 2 4 8 stars[3,4] is not 1
+Early Exit!
+Early Exit!
+YY 2 4 8 stars[5,4] is not 0
+Early Exit!
+YY 2 4 8 stars[5,5] is 0
+YY 2 4 8 stars[3,1] is not 1
+YY 2 4 8 stars[5,1] is not 1
+Early Exit!
+Early Exit!
+Early Exit!
+YY 2 4 8 stars[5,1] is not 1
+YY 2 4 8 stars[3,2] is not 1
+Early Exit!
+YY 2 4 8 stars[1,2] is 1
+Early Exit!
+YY 2 4 8 stars[2,3] is 0
+Early Exit!
+Early Exit!
+YY 2 4 8 stars[4,4] is 0
+Early Exit!
+YY 2 4 8 stars[4,4] is 0
+YY 2 4 8 stars[4,1] is not 0
+Early Exit!
+Early Exit!
+YY 2 4 8 stars[2,1] is not 1
+Early Exit!
+YY 2 4 8 stars[1,4] is 0
+Early Exit!
+YY 2 4 8 stars[2,2] is 0
+YY 2 4 8 stars[2,1] is 0
+Early Exit!
+Early Exit!
+Chunked 8 in [1, 1, 1, 1, 1, 1, 1, 1]
+Chunked 8 in [1, 1, 1, 1, 1, 1, 1, 1]
+Chunked 8 in [1, 1, 1, 1, 1, 1, 1, 1]
+Chunked 8 in [1, 1, 1, 1, 1, 1, 1, 1]
+[32mdefault[39;49;00m: [34mJob OK[39;49;00m (81493d09-0474-470a-b5e6-385014691d38)
+Result is kept for 5000 seconds
