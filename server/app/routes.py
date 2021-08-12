@@ -228,6 +228,7 @@ def get_job(job_id):
     job = Job.fetch(job_id, connection=conn)
 
     if job.is_finished:
+        os.remove("demystify" + job.id + ".log")
         return jsonify(
             {
                 "jobId": job_id,
@@ -235,10 +236,13 @@ def get_job(job_id):
             }
         )
     else:
-        log = open("demystify" + job.id + ".log", "r+")
-        data = log.read()
-        lines = data.splitlines()
-        log.close()
+        if os.path.exists("./demystify" + job.id + ".log"):
+            log = open("demystify" + job.id + ".log", "r+")
+            data = log.read()
+            lines = data.splitlines()
+            log.close()
+        else:
+            lines = ""
         return jsonify(
             {
                 "jobId": job_id,
@@ -255,6 +259,7 @@ def get_job_output(job_id):
     job = Job.fetch(job_id, connection=conn)
 
     if job.is_finished:
+        
         if type(job.result) is dict:
             return jsonify(job.result)
         else:
