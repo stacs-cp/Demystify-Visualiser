@@ -2,6 +2,7 @@ version: '3'
 
 services:
   server:
+    platform: "linux/amd64"
     build: .
     image: demystify-image
     ports:
@@ -11,6 +12,7 @@ services:
     tty: true
 
   worker:
+    platform: "linux/amd64"
     image: demystify-image
     depends_on:
       - redis
