@@ -2,10 +2,6 @@ FROM haskell:9
 RUN \
     apt-get update &&\
     apt-get install -y python3-pip git &&\
-    git clone https://github.com/mmcilree/Demystify-Visualiser.git \
-        /home/DemystifyVisualiser &&\
-    cd /home/DemystifyVisualiser &&\
-    git checkout 0657cec8d5e5cdf3e67c7dea8d295c5a44ddcb02 &&\
     git clone https://github.com/conjure-cp/conjure.git /conjure &&\
     cd /conjure &&\
     git checkout f5233b5b92695f2290622ac7e0dbf8a18a6a1cf8
@@ -13,9 +9,18 @@ RUN \
 ENV WORK /conjure
 WORKDIR $WORK
 
-RUN make &&\
+RUN \
+    make &&\
     make install &&\
     etc/build/install-minion.sh
+
+# things should be somewhat static up to here to speed up demystify dev
+
+RUN \
+    git clone https://github.com/mmcilree/Demystify-Visualiser.git \
+        /home/DemystifyVisualiser &&\
+    cd /home/DemystifyVisualiser &&\
+    git checkout 0657cec8d5e5cdf3e67c7dea8d295c5a44ddcb02
 
 # Not necessary since the built files are in the repository already
 
