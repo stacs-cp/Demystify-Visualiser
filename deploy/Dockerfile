@@ -23,7 +23,7 @@ RUN \
     git clone https://github.com/mmcilree/Demystify-Visualiser.git \
         /home/DemystifyVisualiser &&\
     cd /home/DemystifyVisualiser &&\
-    git checkout be5f16d8b6ac60596776caa9f97c999a41eb200d
+    git checkout 86f0c9f496aac797feaa9e53d83c98355fc09379
 
 # Not necessary since the built files are in the repository already
 
