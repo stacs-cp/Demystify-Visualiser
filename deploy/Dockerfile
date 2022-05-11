@@ -26,11 +26,15 @@ RUN apt-get install -y --no-install-recommends \
      openjdk-11-jre-headless
 
 WORKDIR /home/DemystifyVisualiser/server
-RUN pip3 install -r requirements.txt 
-# Update demystify to newer version
-RUN pip3 install --upgrade https://github.com/stacs-cp/demystify/tarball/01636f8e925b294aed554ef412b340cf31d00f8d
+# Need to run in a venv and update pip 
+# to work around bug in pip packaging ( https://github.com/pypa/pip/issues/9348 )
+RUN apt-get install -y python3-venv
+RUN python3 -m venv env 
+RUN . env/bin/activate && pip3 install --upgrade pip
+RUN . env/bin/activate && pip3 install -r requirements.txt 
+RUN . env/bin/activate && pip3 install https://github.com/stacs-cp/demystify/tarball/01636f8e925b294aed554ef412b340cf31d00f8d
 ENV FLASK_ENV production
 ENV REDISTOGO_URL redis://redis:6379/0
 EXPOSE 5000
 
-CMD ["gunicorn", "--workers", "4", "-b", ":5000", "api:app"]
+CMD . env/bin/activate && gunicorn --workers 4 -b :5000 api:app
