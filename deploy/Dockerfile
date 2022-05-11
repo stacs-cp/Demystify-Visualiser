@@ -5,10 +5,10 @@ RUN \
     git clone https://github.com/mmcilree/Demystify-Visualiser.git \
         /home/DemystifyVisualiser &&\
     cd /home/DemystifyVisualiser &&\
-    git checkout f85d1d4aef1cc3497880db1b7218d7424ec85ed7 &&\
+    git checkout acd2301965889da7359acef100612a82ee9b376c &&\
     git clone https://github.com/conjure-cp/conjure.git /conjure &&\
     cd /conjure &&\
-    git checkout 45b679f183bdf31565b
+    git checkout f5233b5b92695f2290622ac7e0dbf8a18a6a1cf8
 
 ENV WORK /conjure
 WORKDIR $WORK
@@ -27,6 +27,8 @@ RUN apt-get install -y --no-install-recommends \
 
 WORKDIR /home/DemystifyVisualiser/server
 RUN pip3 install -r requirements.txt 
+# Update demystify to newer version
+RUN pip3 install --upgrade https://github.com/stacs-cp/demystify/tarball/01636f8e925b294aed554ef412b340cf31d00f8d
 ENV FLASK_ENV production
 ENV REDISTOGO_URL redis://redis:6379/0
 EXPOSE 5000
