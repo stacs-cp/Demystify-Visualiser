@@ -6,6 +6,9 @@ RUN \
     cd /conjure &&\
     git checkout f5233b5b92695f2290622ac7e0dbf8a18a6a1cf8
 
+RUN apt-get install -y --no-install-recommends \
+     openjdk-11-jre-headless
+
 ENV WORK /conjure
 WORKDIR $WORK
 
@@ -27,8 +30,6 @@ RUN \
 # WORKDIR /home/DemystifyVisualiser/client
 # RUN apt -y install nodejs npm
 # RUN npm install && npm run build
-RUN apt-get install -y --no-install-recommends \
-     openjdk-11-jre-headless
 
 WORKDIR /home/DemystifyVisualiser/server
 # Need to run in a venv and update pip 
