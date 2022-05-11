@@ -5,7 +5,7 @@ RUN \
     git clone https://github.com/mmcilree/Demystify-Visualiser.git \
         /home/DemystifyVisualiser &&\
     cd /home/DemystifyVisualiser &&\
-    git checkout acd2301965889da7359acef100612a82ee9b376c &&\
+    git checkout 31747929067bd3e6d3a6963975db8bb71ff0f287 &&\
     git clone https://github.com/conjure-cp/conjure.git /conjure &&\
     cd /conjure &&\
     git checkout f5233b5b92695f2290622ac7e0dbf8a18a6a1cf8
