@@ -26,3 +26,6 @@ If building Conjure fails with an out-of-memory error:
 * in Docker Desktop Settings increase the memory for the virtual machine,
 * on my machine with 32GB RAM I increased the default 7.8GB to 14GB.
 
+Once the container has been built successfully:
+* `docker container create --name demystify-container demystify-image`
+
