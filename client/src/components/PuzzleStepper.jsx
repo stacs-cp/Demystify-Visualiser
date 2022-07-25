@@ -17,6 +17,7 @@ import SkyscrapersBoard from "./PuzzleBoards/SkyscrapersBoard";
 import GaramBoard from "./PuzzleBoards/GaramBoard";
 import NonogramBoard from "./PuzzleBoards/NonogramBoard";
 import SudokuBoard from "./PuzzleBoards/SudokuBoard";
+import DoubleMinesweeperBoard from "./PuzzleBoards/DoubleMinesweeperBoard";
 import JobWait from "./JobWait";
 
 import * as API from "../API";
@@ -78,6 +79,8 @@ class PuzzleStepper extends React.Component {
         return <SudokuBoard {...boardProps} />;
       case "loopy.essence":
         return <LoopyBoard {...boardProps} />;
+      case "double_minesweeper.eprime":
+        return <DoubleMinesweeperBoard {...boardProps} />;
       // ================================
       // <-- More Cases can be added here
       // ================================

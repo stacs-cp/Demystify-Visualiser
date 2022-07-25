@@ -21,7 +21,7 @@
   "scripts": {
     "start": "react-scripts start",
     "worker": "cd ../server && rq worker",
-    "backend": "cd ../server && source venv/bin/activate && export FLASK_ENV=development && flask run -p 21586",
+    "backend": "cd ../server && . venv/bin/activate && export FLASK_ENV=development && flask run -p 21586",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
