@@ -11,12 +11,15 @@ import Board from "../Board/Board";
 class DoubleMinesweeperBoard extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+        mines_per_box: this.props.params.mines_per_box
+    };
   }
 
   getBackgrounds() {
     let backgrounds = {};
 
+    //Images of mines
     backgrounds[-1] = "url(images/1mine.png)"
     backgrounds[-2] = "url(images/2mines.png)"
     backgrounds[-3] = "url(images/3mines.png)"
@@ -25,8 +28,22 @@ class DoubleMinesweeperBoard extends React.Component {
     return backgrounds;
   }
 
+  getHiddenLiterals() {
+    let hiddenLiterals = [];
+
+    //Hide numbers which represent mines
+    for (let i = -1 * this.state.mines_per_box; i < 0; ++i) {
+        hiddenLiterals.push(i);
+    }
+
+    //Hide the number representing the empty square
+    hiddenLiterals.push(this.state.mines_per_box * 8 + 1);
+
+    return hiddenLiterals;
+  }
+
   render() {
-    return <Board {...this.props} literalBackgrounds={this.getBackgrounds()} />;
+    return <Board {...this.props} literalBackgrounds={this.getBackgrounds()} hiddenLiterals={this.getHiddenLiterals()} />;
   }
 }
 
