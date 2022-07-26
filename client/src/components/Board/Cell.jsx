@@ -165,7 +165,7 @@ class Cell extends React.Component {
                     key={i}
                     row={this.props.row}
                     column={this.props.column}
-                    value={literal.value}
+                    value={this.props.optionDict[literal.value] == undefined ? literal.value : this.props.optionDict[literal.value]}
                     status={literal.status} // positive / negative
                     highlighted={literal.explanations.includes(
                       highlighted.toString()

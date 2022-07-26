@@ -40,6 +40,7 @@ The currently supported `Board` props are as follows:
 - **rowsums:** An array representing an additional column to be displayed at the left of the grid (useful for puzzles with row sums). See [`TentsBoard.jsx`](../client/src/components/PuzzleBoards/TentsBoard.jsx) for an example.  (**endrowsums** is the same but for the end of the grid.)
 - **startrows**: A 2D array of additional rows to be displayed at the top of the grid. See [`NonogramBoard.jsx`](../client/src/components/PuzzleBoards/NonogramBoard.jsx) for an example.
 - **startcols**: A 2D array of additional columns to be displayed at the left of the grid. See [`NonogramBoard.jsx`](../client/src/components/PuzzleBoards/NonogramBoard.jsx) for an example.
+- **optionDict**: An object whose keys are the numbers in the essence prime specification of the puzzle, and the values are user readable strings which can be displayed in the PuzzleStepper view
 
 ____
 

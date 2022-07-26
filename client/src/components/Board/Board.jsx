@@ -37,6 +37,7 @@ class Board extends React.Component {
       endcolsums,
       startrows,
       startcols,
+      optionDict
     } = this.props;
 
     return (
@@ -131,6 +132,7 @@ class Board extends React.Component {
                   literalSize={literalSize}
                   hiddenLiterals={hiddenLiterals}
                   setSelectedLiteral={this.props.setSelectedLiteral}
+                  optionDict={this.props.optionDict}
                 />
               ))}
               {endrowsums && (

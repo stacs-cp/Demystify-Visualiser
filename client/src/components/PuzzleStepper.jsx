@@ -43,8 +43,37 @@ class PuzzleStepper extends React.Component {
       isWaiting: false,
       finishedPuzzle: false,
       error: null,
+      optionDict: this.getOptionDict(this.props.type, this.props.params)
     };
   }
+
+  // Get dictionary mapping numbers in essence prime puzzle spec to more user readable strings
+  getOptionDict(type, params) {
+    let optionDict = {};
+    switch (type) {
+      case "double_minesweeper.eprime":
+        let mines_per_box = params.mines_per_box;
+
+        //Display number representing empty square as "Empty"
+        optionDict[mines_per_box * 8 + 1] = "Empty";
+
+        //Display -1 as "1 mine", -2 as "2 mines" and so on
+        for (let i = -mines_per_box; i < 0; ++i) {
+          optionDict[i] = (-i).toString() + " mine"
+          if (i != -1) {
+            optionDict[i] += "s";
+          }
+        }
+
+        return optionDict;
+      // ================================
+      // <-- More Cases can be added here
+      // ================================
+      default:
+        return optionDict;
+    }
+  }
+
 
   // Choose a board if we have defined one for this puzzle type.
   chooseBoard(boardProps) {
@@ -298,6 +327,7 @@ class PuzzleStepper extends React.Component {
       highlighted: this.state.highlightedLiterals,
       rows: stepData.puzzleState.matrices[0].rows,
       setSelectedLiteral: this.setSelectedLiteral.bind(this),
+      optionDict: this.state.optionDict
     };
 
     return (
@@ -396,6 +426,7 @@ class PuzzleStepper extends React.Component {
                   setChoice={this.setChoice.bind(this)}
                   currentChoice={this.state.currentChoice}
                   extraChoice={!this.isChoicesStep()}
+                  optionDict={this.state.optionDict}
                 >
                   {/* If this is a MUS choice step, display another NavSwitcher
                       to view the choices, along with a selection button. */
