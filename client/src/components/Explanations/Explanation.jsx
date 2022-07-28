@@ -10,6 +10,7 @@ class Explanation extends React.Component {
     this.state = {
       highlighted: this.props.highlighted,
     };
+    console.log(this.props.optionDict)
   }
 
   highlight() {
@@ -29,6 +30,8 @@ class Explanation extends React.Component {
     }
   }
 
+  
+
   render() {
     const itemStyle = this.state.highlighted
       ? { backgroundColor: "cornsilk" }
@@ -43,7 +46,7 @@ class Explanation extends React.Component {
         onMouseEnter={this.highlight.bind(this)}
         onMouseLeave={this.deHighlight.bind(this)}
       >
-        {decision}
+        {this.props.getMeaningfulDecision(decision)}
         <br />
         {reason}
       </ListGroup.Item>

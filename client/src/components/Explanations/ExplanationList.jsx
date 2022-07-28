@@ -7,6 +7,14 @@ import Explanation from "./Explanation";
  * A sidebar that displays the deductions made on a given step, along with the explanations for that deduction.
  */
 class ExplanationList extends React.Component {
+
+  constructor(props) {
+    super(props);
+  }
+  
+ 
+
+
   render() {
     const {
       simpleDeductions,
@@ -15,7 +23,12 @@ class ExplanationList extends React.Component {
       smallestMUSSize,
       extraChoice,
       boldBorder,
+      optionDict
     } = this.props;
+
+    
+
+
     return (
       <React.Fragment>
         <Card className="mt-3" border={boldBorder ? "primary" : "none"}>
@@ -42,6 +55,8 @@ class ExplanationList extends React.Component {
                           index={i}
                           key={i}
                           highlight={() => this.props.highlight(i)}
+                          optionDict={optionDict}
+                          getMeaningfulDecision={this.getMeaningfulDecision}
                         />
                       );
                     })}
@@ -58,7 +73,7 @@ class ExplanationList extends React.Component {
                   </Card.Header>
                   <Card.Body>
                     <div className="mb-3">
-                      <b>{deduction.decision}</b>
+                      <b>{this.getMeaningfulDecision(deduction.decision)}</b>
                     </div>
 
                     <ListGroup
@@ -73,6 +88,8 @@ class ExplanationList extends React.Component {
                           index={i}
                           key={i}
                           highlight={() => this.props.highlight(i)}
+                          optionDict={optionDict}
+                          getMeaningfulDecision={this.getMeaningfulDecision}
                         />
                       ))}
                     </ListGroup>
@@ -119,6 +136,23 @@ class ExplanationList extends React.Component {
       </React.Fragment>
     );
   }
+
+  getMeaningfulDecision = (decision) => {
+    console.log("DECISION: " + decision);
+    if (!decision) { 
+      return decision;
+    }
+    let decisionRegExp = /(is not |is )((?:(?! is ).)+)(, | because:)/g;
+
+    let optionDict = this.props.optionDict;
+
+    let result = decision.replaceAll(decisionRegExp, function(match, p1, p2, p3) {
+      let meaningfulAnswer = optionDict[p2] == undefined ? p2 : optionDict[p2];
+      return p1 + meaningfulAnswer + p3;
+    });
+    console.log("RESULT: " + result);
+    return result;
+  };
 }
 
 export default ExplanationList;
