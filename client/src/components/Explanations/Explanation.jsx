@@ -10,7 +10,7 @@ class Explanation extends React.Component {
     this.state = {
       highlighted: this.props.highlighted,
     };
-    console.log(this.props.optionDict)
+    
   }
 
   highlight() {

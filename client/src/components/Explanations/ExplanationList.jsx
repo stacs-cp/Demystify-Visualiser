@@ -138,7 +138,7 @@ class ExplanationList extends React.Component {
   }
 
   getMeaningfulDecision = (decision) => {
-    console.log("DECISION: " + decision);
+    
     if (!decision) { 
       return decision;
     }
@@ -150,7 +150,7 @@ class ExplanationList extends React.Component {
       let meaningfulAnswer = optionDict[p2] == undefined ? p2 : optionDict[p2];
       return p1 + meaningfulAnswer + p3;
     });
-    console.log("RESULT: " + result);
+   
     return result;
   };
 }
