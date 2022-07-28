@@ -121,6 +121,19 @@ class Cell extends React.Component {
     return hiddenLiterals && hiddenLiterals.includes(value);
   }
 
+  getMeaningfulValue(value) {
+    if (!this.props.optionDict){
+      return value;
+    }
+
+    try{
+      return this.props.optionDict[value] == undefined ? value : this.props.optionDict[value];
+    }catch{
+      console.log(value);
+      return value;
+    }
+  }
+
   render() {
     const {
       cellContent,
@@ -165,7 +178,7 @@ class Cell extends React.Component {
                     key={i}
                     row={this.props.row}
                     column={this.props.column}
-                    value={this.props.optionDict[literal.value] == undefined ? literal.value : this.props.optionDict[literal.value]}
+                    value={this.getMeaningfulValue(literal.value)}
                     status={literal.status} // positive / negative
                     highlighted={literal.explanations.includes(
                       highlighted.toString()
