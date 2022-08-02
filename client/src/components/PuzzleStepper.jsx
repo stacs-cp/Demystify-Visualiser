@@ -22,6 +22,7 @@ import JobWait from "./JobWait";
 
 import * as API from "../API";
 import LoopyBoard from "./PuzzleBoards/LoopyBoard";
+import NumberHiveBoard from "./PuzzleBoards/NumberHiveBoard";
 
 /**
  * Main puzzle visualiser with a board on the left and explanations on the right.
@@ -110,6 +111,8 @@ class PuzzleStepper extends React.Component {
         return <LoopyBoard {...boardProps} />;
       case "double_minesweeper.eprime":
         return <DoubleMinesweeperBoard {...boardProps} />;
+      case "number_hive.eprime":
+        return <NumberHiveBoard {...boardProps} />;
       // ================================
       // <-- More Cases can be added here
       // ================================
