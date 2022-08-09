@@ -9,18 +9,7 @@ import HexagonalCell from "./HexagonalCell";
  */
 class HexagonalBoard extends React.Component {
 
-  getBoardType(type){
-    switch(type){
-      case 1:
-        return "oddq";
-      case 2:
-        return "oddr";
-      case 3:
-        return "evenq";
-      case 4:
-        return "evenr";
-    }
-  }
+  
 
   //Functions which map 2d matrix coordinates to hexagonal cubic coordinates
   getQ(i, j, layout){
@@ -95,30 +84,37 @@ class HexagonalBoard extends React.Component {
       endcolsums,
       startrows,
       startcols,
-      optionDict
+      optionDict,
+      matrixprops
     } = this.props;
 
-    console.log(this.props.present);
 
     return (
       <Card className="mt-3 p-5">
         <Container fluid style={{ minWidth: "400px", padding: "0px"}}  >
 
-        <HexGrid height="auto" width="auto" viewBox = "-10 -10 80 80">
-          <Layout origin={{ x: 0, y: 0 }}>
-          {rows.map((row, i) => (row.cells.map((cell, j) => (this.props.present[i+1][j+1] != 0 && (
+        <HexGrid height="auto" width="auto" viewBox = "-20 -20 80 80">
+          <Layout origin={{ x: 0, y: 0 }} flat={this.props.boardType=="oddq" || this.props.boardType=="evenq"}>
+            {rows.map((row, i) => 
+              (row.cells.map((cell, j) => {
+                let matrixpropsset = {}
+                if (matrixprops){
+                  Object.keys(matrixprops).forEach((key) => matrixpropsset[key] = matrixprops[key][i][j]);
+                }
+    
+                return (this.props.present[i+1][j+1] != 0 && (
            
               
-              
+                  
                 <>
 
                   <HexagonalCell
+                  {...matrixpropsset}
                   q={this.getQ(i,j,this.props.boardType)} 
                   r={this.getR(i,j,this.props.boardType)} 
                   s={this.getS(i,j,this.props.boardType)}
                   leftLabels={leftLabels}
                   cellContent={cell}
-                  block={this.props.params.blocks[i+1][j+1]}
                   // Whether this cell is currently highlighted
                   highlighted={highlighted}
                   /* Function to highlight explanation when this cell
@@ -141,7 +137,7 @@ class HexagonalBoard extends React.Component {
                 </>  
               
            
-          )))))}
+          ))})))}
           </Layout>
         </HexGrid>
 

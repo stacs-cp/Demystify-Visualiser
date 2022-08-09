@@ -17,9 +17,9 @@ class NumberHiveBoard extends React.Component {
       case 1:
         return "oddq";
       case 2:
-        return "evenq";
-      case 3:
         return "oddr";
+      case 3:
+        return "evenq";
       case 4:
         return "evenr";
       default:

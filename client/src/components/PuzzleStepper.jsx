@@ -49,6 +49,19 @@ class PuzzleStepper extends React.Component {
     };
   }
 
+  getBoardType(type){
+    switch(type){
+      case 1:
+        return "oddq";
+      case 2:
+        return "oddr";
+      case 3:
+        return "evenq";
+      case 4:
+        return "evenr";
+    }
+  }
+
   
 
   // Get dictionary mapping numbers in essence prime puzzle spec to more user readable strings
@@ -115,20 +128,21 @@ class PuzzleStepper extends React.Component {
       case "double_minesweeper.eprime":
         return <DoubleMinesweeperBoard {...boardProps} />;
       case "number_hive.eprime":
-        return <NumberHiveBoard {...boardProps} />;
+        return <NumberHiveBoard {...boardProps} boardType={this.getBoardType(this.state.params.board_type)}/>;
       // ================================
       // <-- More Cases can be added here
       // ================================
       default:
-        switch(this.state.board){
+        let boardType = this.getBoardType(this.state.params.board_type);
+        switch(boardType){
           case "oddq":
-            return <HexagonalBoard {...boardProps} board={this.state.board} />;
+            return <HexagonalBoard {...boardProps} boardType={boardType} present={this.state.params.blocks}/>;
           case "evenq":
-            return <HexagonalBoard {...boardProps} board={this.state.board} />;
+            return <HexagonalBoard {...boardProps} boardType={boardType} present={this.state.params.blocks}/>;
           case "evenr":
-            return <HexagonalBoard {...boardProps} board={this.state.board} />;
+            return <HexagonalBoard {...boardProps} boardType={boardType} present={this.state.params.blocks}/>;
           case "oddr":
-            return <HexagonalBoard {...boardProps} board={this.state.board} />;
+            return <HexagonalBoard {...boardProps} boardType={boardType} present={this.state.params.blocks}/>;
           default:
             return <Board {...boardProps} />;
         }

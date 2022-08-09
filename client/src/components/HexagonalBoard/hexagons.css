@@ -20,6 +20,10 @@ svg g text {
   fill: rgb(0, 0, 0);
 }
 
+svg g [highlight="false"]{
+  fill:rgb(153, 165, 244)
+}
+
 svg g [highlight="true"]{
   fill:rgb(250, 237, 6)
 }
