@@ -23,6 +23,7 @@ import JobWait from "./JobWait";
 import * as API from "../API";
 import LoopyBoard from "./PuzzleBoards/LoopyBoard";
 import NumberHiveBoard from "./PuzzleBoards/NumberHiveBoard";
+import HexagonalBoard from "./HexagonalBoard/HexagonalBoard";
 
 /**
  * Main puzzle visualiser with a board on the left and explanations on the right.
@@ -47,6 +48,8 @@ class PuzzleStepper extends React.Component {
       optionDict: this.getOptionDict(this.props.type, this.props.params)
     };
   }
+
+  
 
   // Get dictionary mapping numbers in essence prime puzzle spec to more user readable strings
   getOptionDict(type, params) {
@@ -117,8 +120,20 @@ class PuzzleStepper extends React.Component {
       // <-- More Cases can be added here
       // ================================
       default:
-        return <Board {...boardProps} />;
-    }
+        switch(this.state.board){
+          case "oddq":
+            return <HexagonalBoard {...boardProps} board={this.state.board} />;
+          case "evenq":
+            return <HexagonalBoard {...boardProps} board={this.state.board} />;
+          case "evenr":
+            return <HexagonalBoard {...boardProps} board={this.state.board} />;
+          case "oddr":
+            return <HexagonalBoard {...boardProps} board={this.state.board} />;
+          default:
+            return <Board {...boardProps} />;
+        }
+
+      }
   }
 
   /* Detect whether we are at a step where the user should have a choice 

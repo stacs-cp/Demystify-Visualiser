@@ -68,6 +68,8 @@ class Cell extends React.Component {
         or taking the indexed cellBackground. */
   chooseBackground() {
     const { cellContent, literalBackgrounds, cellBackground } = this.props;
+
+
     const { highlighted } = this.state;
     let highlightBackground;
 

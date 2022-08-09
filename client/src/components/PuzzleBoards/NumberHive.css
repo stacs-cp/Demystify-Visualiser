@@ -20,6 +20,23 @@ svg g text {
   fill: rgb(0, 0, 0);
 }
 
+svg g [block="1"]{
+  fill:#a6cee3
+}
+
+svg g [block="2"]{
+  fill:#b2df8a
+}
+
+
+svg g [block="3"]{
+  fill:#fdbf6f
+}
+
+
+svg g [block="4"]{
+  fill:#cab2d6
+}
 svg g [highlight="true"]{
   fill:rgb(250, 237, 6)
 }

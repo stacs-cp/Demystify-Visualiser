@@ -1,9 +1,5 @@
 import React from "react";
-import { Container } from "react-bootstrap";
-import HexagonalLiteral from "./HexagonalLiteral";
-import HexagonalCol from "./HexagonalCol";
-import { Text } from "react-hexgrid";
-import HexagonalRow from "./HexagonalRow";
+import { Text, Hexagon } from "react-hexgrid";
 import "./hexagons.css"
 /**
  * Cell component, where a cell is itself a grid of possible values.
@@ -67,7 +63,7 @@ class HexagonalCell extends React.Component {
 
   /* Choose the cell background, either by reading a mapping for a singleton,
         or taking the indexed cellBackground. */
-  chooseBackground() {
+  chooseClass() {
     const { cellContent, literalBackgrounds, cellBackground } = this.props;
     const { highlighted } = this.state;
     let highlightBackground;
@@ -102,8 +98,22 @@ class HexagonalCell extends React.Component {
         ).slice(0, -2) // Remove trailing comma
     } else {
       // console.log(this.props.row + ", " + this.props.column + ":" + highlightBackground)
+
       return highlightBackground;
     }
+  }
+
+  isHighlighted() {
+    const { cellContent } = this.props;
+    const { highlighted } = this.state;
+
+    return (
+      cellContent.cellRows.some((row) =>
+        row.cellValues.some((value) =>
+          value.explanations.includes(highlighted.toString())
+        )
+      )
+    ) 
   }
 
   /* Known cells should be 3 times larger. */
@@ -146,6 +156,13 @@ class HexagonalCell extends React.Component {
       rightLabel,
       bottomLabel,
       literalSize,
+      leftLabels,
+      q,
+      r,
+      s,
+      row,
+      column,
+      block
     } = this.props;
 
     const { highlighted } = this.state;
@@ -154,8 +171,10 @@ class HexagonalCell extends React.Component {
     const singletonValue = this.getSingletonValue();
 
     return (
+      <Hexagon q={q} r={r} s={s} class={this.chooseClass()} block={block} highlight={this.isHighlighted() ? "true" : "false"}>
+      {leftLabels && Object.keys(leftLabels).length >= 0 && Object.keys(leftLabels[1]).length >= column && leftLabels[row+1][column+1] && <Text x="-0.2cm" y="0cm" class="leftLabel">{leftLabels[row+1][column+1]}</Text>}
       <Text
-        background={this.chooseBackground()}
+
         borders={cellBorders}
         
         margin={cellMargin}
@@ -182,6 +201,7 @@ class HexagonalCell extends React.Component {
           </>
         )}
       </Text>
+      </Hexagon>
     );
   }
 }
