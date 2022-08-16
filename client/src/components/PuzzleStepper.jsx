@@ -19,7 +19,7 @@ import NonogramBoard from "./PuzzleBoards/NonogramBoard";
 import SudokuBoard from "./PuzzleBoards/SudokuBoard";
 import DoubleMinesweeperBoard from "./PuzzleBoards/DoubleMinesweeperBoard";
 import JobWait from "./JobWait";
-
+import TriangularBoard from "./TriangularBoard/TriangularBoard";
 import * as API from "../API";
 import LoopyBoard from "./PuzzleBoards/LoopyBoard";
 import NumberHiveBoard from "./PuzzleBoards/NumberHiveBoard";
@@ -129,6 +129,8 @@ class PuzzleStepper extends React.Component {
         return <DoubleMinesweeperBoard {...boardProps} />;
       case "number_hive.eprime":
         return <NumberHiveBoard {...boardProps} boardType={this.getBoardType(this.state.params.board_type)}/>;
+      case "tridoku.eprime":
+        return <TriangularBoard {...boardProps} present={this.state.params.present}/>;
       // ================================
       // <-- More Cases can be added here
       // ================================
