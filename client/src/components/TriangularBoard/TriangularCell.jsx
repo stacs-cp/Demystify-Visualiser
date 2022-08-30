@@ -1,5 +1,4 @@
 import React from "react";
-import { Text, Hexagon } from "react-hexgrid";
 /**
  * Cell component, where a cell is itself a grid of possible values.
  * (1 x 1) grid if the value becomes or is known.
@@ -12,34 +11,65 @@ class TriangularCell extends React.Component {
     };
   }
 
-  getPoints(column, row){
-    let x1 = -20 + 5*column;
-    let x2 = x1 + 5;
-    let x3 = x2 + 5;
+  /*
+   * Uses the optionDict to convert a numeric value in the Essence Prime model to a more user friendly value to display
+   */
+    getMeaningfulValue(value) {
+      if (!this.props.optionDict){
+        return value;
+      }
+  
+      return this.props.optionDict[value] ? this.props.optionDict[value] : value;
+    }
 
-    let ybase = -20 + row * 10;
+  /*
+   * Takes possible values of cell from cellRows object and turns them into 2D array with subarrays of length 5
+   */
+  getPossibilities2DArray(cellRows) {
 
-    let y1 = (column+row) % 2 == 0 ? ybase  : ybase+10;
-    let y3 = y1;
-    let y2 = (column+row) % 2 == 0 ? ybase  + 10: ybase;
-    return x1.toString() + "," + y1.toString() + " " + x2.toString() + "," + y2.toString() + " " + x3.toString() + "," + y3.toString()  
+    let possibilities = [];
+    let possibilities2D = [];
+
+    //Place all possibilities from the cellRows object into 'possibilities'
+    cellRows.forEach((row) => {
+      row.cellValues.forEach((poss) => {
+        possibilities.push(poss.value);
+      })
+    });
+
+    //Place all possibilities into 2D array with subarrays of length 5
+    let i = 0, j = 0;
+    possibilities.forEach((poss) => {
+      if (j == 0) {
+        possibilities2D.push([]);
+      }
+      possibilities2D[i].push(poss);
+      j++;
+      if (j == 5) {
+        j = 0;
+        i++;
+      }
+    });
+
+    return possibilities2D;
   }
 
-  getTextX(column, row, total, number){
-    let xBase = -20 + 5*column;
-    
-    let xLevel = 5;
+  /*
+   * Return string representing coordinates of points on triangle, using its column and row to determine if its facing up or down
+   */
+  getPoints(column, row) {
 
-    return xBase + xLevel;
+    let {height, width} = this.props;
+    let pointDown = "0,0 " + (width/2).toString() + "," + height.toString() + " " + width.toString() + ",0";
+    let pointUp = "0," + height.toString() + " " + (width/2).toString() + ",0 " + width.toString() + "," + height.toString();
+    return (column + row) % 2 == 0 ? pointDown : pointUp;
   }
 
-  getTextY(column, row, total, number){
-    let yBase = -20 + row * 10;
-
-    let yLevel = 5
-
-
-    return yBase + yLevel;
+  /*
+   * Get the Y offset of a row of possibilities
+   */
+  getTextYOffset(i, j, textRow) {
+    return (i + j) % 2 == 0 ? (textRow - 1) + 2 : (textRow - 1) + 7;
   }
 
   // Whether the cell grid is 1x1 i.e. the value is known.
@@ -65,7 +95,7 @@ class TriangularCell extends React.Component {
     const cellRows = this.props.cellContent.cellRows;
     let result;
     if (this.containsKnown(cellRows)) {
-        // "pik" stands for "positive in known" - marker applied by Demystify
+      // "pik" stands for "positive in known" - marker applied by Demystify
       result = cellRows
         .filter((row) =>
           row.cellValues.some((value) => value.markers.includes("pik"))
@@ -78,60 +108,9 @@ class TriangularCell extends React.Component {
     return result;
   }
 
-  // Check whether the cell should be highlighted
-  componentDidUpdate(prevProps) {
-    if (prevProps.highlighted !== this.props.highlighted) {
-      this.setState({ highlighted: this.props.highlighted });
-    }
-  }
-
-  // Call the parent highlight function
-  highlight(exp) {
-    this.props.highlight(exp);
-  }
-
-  /* Choose the cell background, either by reading a mapping for a singleton,
-        or taking the indexed cellBackground. */
-  chooseClass() {
-    const { cellContent, literalBackgrounds, cellBackground } = this.props;
-    const { highlighted } = this.state;
-    let highlightBackground;
-
-    if (
-      cellContent.cellRows.some((row) =>
-        row.cellValues.some((value) =>
-          value.explanations.includes(highlighted.toString())
-        )
-      )
-    ) {
-      highlightBackground = "linear-gradient(cornsilk, cornsilk)";
-    } else {
-      highlightBackground = null;
-    }
-
-    const isSingleton = this.isSingleton();
-    const singletonValue = this.getSingletonValue();
-
-    if (literalBackgrounds && isSingleton) {
-      return ("" 
-        + (cellBackground ? cellBackground + ", " : "") 
-        + (literalBackgrounds[singletonValue.toString()] ? literalBackgrounds[singletonValue.toString()] +", " : "")
-        + (highlightBackground ? highlightBackground + ", " : "")
-        ).slice(0, -2) // Remove trailing comma
-
-    } else if (cellBackground) {
-      return ("" 
-        + cellBackground 
-        + ", " 
-        + (highlightBackground ? highlightBackground + ", " : "")
-        ).slice(0, -2) // Remove trailing comma
-    } else {
-      // console.log(this.props.row + ", " + this.props.column + ":" + highlightBackground)
-
-      return highlightBackground;
-    }
-  }
-
+  /*
+   * Determines if a triangle should be highlighted
+   */
   isHighlighted() {
     const { cellContent } = this.props;
     const { highlighted } = this.state;
@@ -142,17 +121,7 @@ class TriangularCell extends React.Component {
           value.explanations.includes(highlighted.toString())
         )
       )
-    ) 
-  }
-
-  /* Known cells should be 3 times larger. */
-  getFontSize(scale) {
-    const { literalSize } = this.props;
-    if (literalSize) {
-      return (literalSize * scale).toString() + "vw";
-    } else {
-      return scale.toString() + "vw";
-    }
+    )
   }
 
   /* Check if a singleton value should be hidden */
@@ -161,75 +130,46 @@ class TriangularCell extends React.Component {
     return hiddenLiterals && hiddenLiterals.includes(value);
   }
 
-  //Remove safeguards and test
-  getMeaningfulValue(value) {
-    if (!this.props.optionDict){
-      return value;
-    }
-
-    try{
-      return this.props.optionDict[value] == undefined ? value : this.props.optionDict[value];
-    }catch{
-      console.log(value);
-      return value;
-    }
-  }
-
   render() {
     const {
       cellContent,
-      cellBorders,
-      cellInnerBorders,
-      cellMargin,
-      cornerNumber,
-      rightLabel,
-      bottomLabel,
-      literalSize,
-      leftLabels,
       i,
-      j,
-      row,
-      column,
-      block
+      j
     } = this.props;
-
-    const { highlighted } = this.state;
 
     const isSingleton = this.isSingleton();
     const singletonValue = this.getSingletonValue();
 
     return (
-       <g class="hexagon" highlight={this.isHighlighted() ? "true": "false"}>
-                  <polygon points={this.getPoints(i,j)} class="triangle">
-                    </polygon>
-                  
-                    {isSingleton ? (
+      <g highlight={this.isHighlighted() ? "true" : "false"}>
+        <polygon points={this.getPoints(i, j)}/>
+
+        {isSingleton ? (
           // Display a single value if it is known and not hidden.
           !this.isHidden(singletonValue) && (
-            <text x={this.getTextX(i,j,1,1)} y={this.getTextY(i,j,1,1)} text-anchor="middle">
-            <tspan style={{ }} class="singleton">{singletonValue}</tspan>
+            <text x="5" y="5" text-anchor="middle">
+              <tspan class="singleton">{this.getMeaningfulValue(singletonValue)}</tspan>
             </text>
           )
         ) : (
           // Otherwise display a grid of possibilities
-          <><text x={this.getTextX(i,j,1,1)} y={this.getTextY(i,j,1,1)} text-anchor="middle">
-          <tspan class="possibilities">
-            {cellContent.cellRows.map((row, r) => (
-              row.cellValues.map((literal, l) => {console.log(literal); return(
-                
-                  <>{literal.value},</>
-                  
-                )})
-             
-                ))}
-                
-                </tspan>
-              </text>
-          </>
+          <text x="5" y="5" text-anchor="middle">
+            <tspan class="possibilities">
+              {this.getPossibilities2DArray(cellContent.cellRows).map((row, r) => {
+                //Only display 3 rows due to size of triangle
+                return r < 3 && (
+                  <tspan y={this.getTextYOffset(i, j, r)} x="5">
+                    {row.map((literal, l) => (
+                      //Display ... if there are more possibilities that cannot be shown
+                      <>{this.getMeaningfulValue(literal)}, {r == 2 && l == 4 && cellContent.cellRows.length > 3 && "..."}</>
+                    ))}
+                  </tspan>
+                )
+              })}
+            </tspan>
+          </text>
         )}
-                    </g>
-      
-      
+      </g>
     );
   }
 }

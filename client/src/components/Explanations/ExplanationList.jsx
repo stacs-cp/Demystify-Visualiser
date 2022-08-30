@@ -137,11 +137,15 @@ class ExplanationList extends React.Component {
     );
   }
 
+  /*
+   * Replace raw Essence Model values with meaningful values in explanations
+   */
   getMeaningfulDecision = (decision) => {
     
     if (!decision) { 
       return decision;
     }
+    
     let decisionRegExp = /(is not |is )((?:(?! is ).)+)(, | because:)/g;
 
     let optionDict = this.props.optionDict;

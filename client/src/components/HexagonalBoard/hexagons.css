@@ -1,23 +1,11 @@
 svg g text {
     font-size: 0.12em;
     fill: rgb(161, 11, 11);
-    fill-opacity: 0.7;
-    transition: fill-opacity .5s;
   }
 
-.container{
-    background-color: rgb(23, 43, 173);
-}
-
-
 .singleton{
-  fill: rgb(26, 13, 160);
-  
+  fill: rgb(26, 13, 160);  
   font-size: 2em;
-}
-
-.leftLabel{
-  fill: rgb(0, 0, 0);
 }
 
 svg g [highlight="false"]{

@@ -39,7 +39,7 @@ class Board extends React.Component {
       startcols,
       optionDict
     } = this.props;
-
+    
     return (
       <Card className="mt-3 p-5">
         <Container fluid style={{ minWidth: "400px", padding: "0px" }}>
@@ -132,7 +132,7 @@ class Board extends React.Component {
                   literalSize={literalSize}
                   hiddenLiterals={hiddenLiterals}
                   setSelectedLiteral={this.props.setSelectedLiteral}
-                  optionDict={this.props.optionDict}
+                  optionDict={optionDict}
                 />
               ))}
               {endrowsums && (

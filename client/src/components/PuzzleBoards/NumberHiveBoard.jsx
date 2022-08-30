@@ -12,23 +12,9 @@ class NumberHiveBoard extends React.Component {
     this.state = {};
   }
 
-  getBoardType(boardTypeParam){
-    switch(boardTypeParam){
-      case 1:
-        return "oddq";
-      case 2:
-        return "oddr";
-      case 3:
-        return "evenq";
-      case 4:
-        return "evenr";
-      default:
-        throw "Unrecognised board type parameter";
-    }
-  }
-
+  //Convert 2d matrices from essence which are 1 indexed to 0 indexed objects
   essenceToZeroIndex(obj) {
-    let zeroIndex = {}
+    let zeroIndex = {};
   
     for(let i = 1; i <= Object.keys(obj).length; ++i){
       for(let j = 1; j <= Object.keys(obj[i]).length; ++j){
@@ -43,8 +29,7 @@ class NumberHiveBoard extends React.Component {
   }
   
   render() {
-
-    return <HexagonalBoard {...this.props} leftLabels={this.props.params.blocks} boardType={this.getBoardType(this.props.params.board_type)} present={this.props.params.blocks} matrixprops={{"block":this.essenceToZeroIndex(this.props.params.blocks)}}/>;
+    return <HexagonalBoard {...this.props} boardType={this.props.params.board_type} present={this.props.present} matrixprops={{"block":this.essenceToZeroIndex(this.props.params.blocks)}}/>;
   }
 }
 

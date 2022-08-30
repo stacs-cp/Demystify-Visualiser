@@ -123,17 +123,15 @@ class Cell extends React.Component {
     return hiddenLiterals && hiddenLiterals.includes(value);
   }
 
+  /*
+   * Uses the optionDict to convert a numeric value in the Essence Prime model to a more user friendly value to display
+   */
   getMeaningfulValue(value) {
     if (!this.props.optionDict){
       return value;
     }
 
-    try{
-      return this.props.optionDict[value] == undefined ? value : this.props.optionDict[value];
-    }catch{
-      console.log(value);
-      return value;
-    }
+    return this.props.optionDict[value] ? this.props.optionDict[value] : value;
   }
 
   render() {

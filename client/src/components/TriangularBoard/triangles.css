@@ -1,17 +1,16 @@
-.singleton{
-    fill: rgb(26, 13, 160);
-    
-    font-size: 2em;
-  }
+.singleton {
+  fill: rgb(26, 13, 160);
+  font-size: 2em;
+}
 
-  .possibilities{
-    font-size: 0.5em;
-  }
+.possibilities {
+  font-size: 0.5em;
+}
 
-  svg g [highlight="false"]{
-    fill:rgb(153, 165, 244)
-  }
+svg g [highlight="false"] {
+  fill:rgb(153, 165, 244);
+}
   
-  svg g [highlight="true"]{
-    fill:rgb(250, 237, 6)
-  }
+svg g [highlight="true"] {
+  fill:rgb(250, 237, 6);
+}

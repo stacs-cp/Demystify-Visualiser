@@ -9,9 +9,8 @@ import HexagonalCell from "./HexagonalCell";
  */
 class HexagonalBoard extends React.Component {
 
-  
-
   //Functions which map 2d matrix coordinates to hexagonal cubic coordinates
+  //Formulae found in https://www.redblobgames.com/grids/hexagons/
   getQ(i, j, layout){
     switch(layout){
       case "oddr":
@@ -57,91 +56,123 @@ class HexagonalBoard extends React.Component {
     }
   }
 
+  /*
+   * Returns a string describing the relevant portion of the svg which should be shown
+   */
+  getViewBox(board_type, rows) {
+    let minx, miny, width, height, dim;
+
+    if (!rows || rows.length == 0 || !rows[0] || rows[0]["cells"].length == 0){
+      return "0 0 0 0";
+    }
+
+
+    switch(board_type){
+      case "oddr":
+        minx = -10;
+        miny = -10;
+        width = (rows.length + 0.5) * 18;
+        height = (rows[0]["cells"].length - 1) * 15 + 21;
+        break;
+      case "evenr":
+        minx = -20; 
+        miny = -10;
+        width = (rows.length + 0.5) * 18;
+        height = (rows[0]["cells"].length - 1) * 15 + 21;
+        break;
+      case "oddq":
+        minx = -10;
+        miny = -10;
+        width = (rows.length - 1) * 15 + 21;
+        height = (rows[0]["cells"].length + 0.5) * 18;
+        break;
+      case "evenq":
+        minx = -10;
+        miny = -20;
+        width = (rows.length - 1) * 15 + 21;
+        height = (rows[0]["cells"].length + 0.5) * 18;
+        break;
+      default:
+        throw "Unrecognised Hexagonal Board Type";
+    }
+
+    dim = width > height ? width : height;
+
+    return minx.toString() + " " + miny.toString() + " " + dim.toString() + " " + dim.toString();
+    
+
+  }
+
+  getBoardType(boardTypeParam){
+    switch(boardTypeParam){
+      case 1:
+        return "oddq";
+      case 2:
+        return "oddr";
+      case 3:
+        return "evenq";
+      case 4:
+        return "evenr";
+      default:
+        throw "Unrecognised board type parameter";
+    }
+  }
+
 
   render() {
     const {
-      // Required Props
+      // Required Props - 'present' is defined in .prime files
       highlighted,
-      highlight,
       rows,
       present,
 
       //Optional Props, for custom styling (see README)
-      literalBackgrounds,
-      cellBorders,
-      cellInnerBorders,
-      cellBackgrounds,
-      cellMargin,
-      literalSize,
-      cornerNumbers,
-      rightLabels,
       leftLabels,
-      bottomLabels,
       hiddenLiterals,
-      rowsums,
-      endrowsums,
-      colsums,
-      endcolsums,
-      startrows,
-      startcols,
       optionDict,
       matrixprops
     } = this.props;
 
-
+    let boardType = this.getBoardType(this.props.boardType);
+   
     return (
       <Card className="mt-3 p-5">
-        <Container fluid style={{ minWidth: "400px", padding: "0px"}}  >
+        <Container fluid style={{ minWidth: "400px", minHeight: "400px", padding: "0px"}}  >
 
-        <HexGrid height="auto" width="auto" viewBox = "-20 -20 80 80">
-          <Layout origin={{ x: 0, y: 0 }} flat={this.props.boardType=="oddq" || this.props.boardType=="evenq"}>
-            {rows.map((row, i) => 
-              (row.cells.map((cell, j) => {
-                let matrixpropsset = {}
-                if (matrixprops){
-                  Object.keys(matrixprops).forEach((key) => matrixpropsset[key] = matrixprops[key][i][j]);
-                }
-    
-                return (this.props.present[i+1][j+1] != 0 && (
-           
-              
-                  
-                <>
+          <HexGrid height="400px" width="400px" viewBox = {this.getViewBox(boardType, rows)}>
+            <Layout origin={{ x: 0, y: 0 }} flat={boardType=="oddq" || boardType=="evenq"}>
+              {rows.map((row, i) => 
+                (row.cells.map((cell, j) => {
 
-                  <HexagonalCell
-                  {...matrixpropsset}
-                  q={this.getQ(i,j,this.props.boardType)} 
-                  r={this.getR(i,j,this.props.boardType)} 
-                  s={this.getS(i,j,this.props.boardType)}
-                  leftLabels={leftLabels}
-                  cellContent={cell}
-                  // Whether this cell is currently highlighted
-                  highlighted={highlighted}
-                  /* Function to highlight explanation when this cell
-                                            is moused over */
-                  highlight={highlight}
-                  // Styling
-                  //cellBorders={this.getIndex(cellBorders, i, j)}
-                  //cellInnerBorders={this.getIndex(cellInnerBorders, i, j)}
-                  //cellBackground={this.getIndex(cellBackgrounds, i, j)}
-                  //cornerNumber={this.getIndex(cornerNumbers, i, j)}
-                  //rightLabel={this.getIndex(rightLabels, i, j)}
-                  //bottomLabel={this.getIndex(bottomLabels, i, j)}
-                  //cellMargin={cellMargin}
-                  //literalBackgrounds={literalBackgrounds}
-                  //literalSize={literalSize}
-                  //hiddenLiterals={hiddenLiterals}
-                  //setSelectedLiteral={this.props.setSelectedLiteral}
-                  //optionDict={this.props.optionDict} 
-                  />
-                </>  
-              
-           
-          ))})))}
-          </Layout>
-        </HexGrid>
+                  //Create object storing the properties defined in matrixprops so they may be allocated to the appropriate cells
+                  let matrixpropsset = {}
+                  if (matrixprops){
+                    Object.keys(matrixprops).forEach((key) => matrixpropsset[key] = matrixprops[key][i][j]);
+                  }
+      
+                  //'present' indexed from 1 as it is obtained from Demystify
+                  return (present[i+1][j+1] != 0 && (
 
-      </Container>
+                    <HexagonalCell
+                      {...matrixpropsset}
+                      q={this.getQ(i,j,boardType)} 
+                      r={this.getR(i,j,boardType)} 
+                      s={this.getS(i,j,boardType)}
+                      leftLabels={leftLabels}
+                      cellContent={cell}
+                      // Whether this cell is currently highlighted
+                      highlighted={highlighted}
+
+                      hiddenLiterals={hiddenLiterals}
+                      optionDict={optionDict} 
+                    />
+                  ))
+                }))
+              )}
+            </Layout>
+          </HexGrid>
+
+        </Container>
       </Card>
     );
   }

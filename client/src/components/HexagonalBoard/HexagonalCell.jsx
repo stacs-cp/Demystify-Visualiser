@@ -13,6 +13,17 @@ class HexagonalCell extends React.Component {
     };
   }
 
+  /*
+  * Uses the optionDict to convert a numeric value in the Essence Prime model to a more user friendly value to display
+  */
+  getMeaningfulValue(value) {
+    if (!this.props.optionDict){
+      return value;
+    }
+  
+    return this.props.optionDict[value] ? this.props.optionDict[value] : value;
+  }
+
   // Whether the cell grid is 1x1 i.e. the value is known.
   isSingleton() {
     const cellRows = this.props.cellContent.cellRows;
@@ -49,60 +60,9 @@ class HexagonalCell extends React.Component {
     return result;
   }
 
-  // Check whether the cell should be highlighted
-  componentDidUpdate(prevProps) {
-    if (prevProps.highlighted !== this.props.highlighted) {
-      this.setState({ highlighted: this.props.highlighted });
-    }
-  }
-
-  // Call the parent highlight function
-  highlight(exp) {
-    this.props.highlight(exp);
-  }
-
-  /* Choose the cell background, either by reading a mapping for a singleton,
-        or taking the indexed cellBackground. */
-  chooseClass() {
-    const { cellContent, literalBackgrounds, cellBackground } = this.props;
-    const { highlighted } = this.state;
-    let highlightBackground;
-
-    if (
-      cellContent.cellRows.some((row) =>
-        row.cellValues.some((value) =>
-          value.explanations.includes(highlighted.toString())
-        )
-      )
-    ) {
-      highlightBackground = "linear-gradient(cornsilk, cornsilk)";
-    } else {
-      highlightBackground = null;
-    }
-
-    const isSingleton = this.isSingleton();
-    const singletonValue = this.getSingletonValue();
-
-    if (literalBackgrounds && isSingleton) {
-      return ("" 
-        + (cellBackground ? cellBackground + ", " : "") 
-        + (literalBackgrounds[singletonValue.toString()] ? literalBackgrounds[singletonValue.toString()] +", " : "")
-        + (highlightBackground ? highlightBackground + ", " : "")
-        ).slice(0, -2) // Remove trailing comma
-
-    } else if (cellBackground) {
-      return ("" 
-        + cellBackground 
-        + ", " 
-        + (highlightBackground ? highlightBackground + ", " : "")
-        ).slice(0, -2) // Remove trailing comma
-    } else {
-      // console.log(this.props.row + ", " + this.props.column + ":" + highlightBackground)
-
-      return highlightBackground;
-    }
-  }
-
+  /*
+   * Determines if the cell should be highlighted
+   */
   isHighlighted() {
     const { cellContent } = this.props;
     const { highlighted } = this.state;
@@ -116,91 +76,90 @@ class HexagonalCell extends React.Component {
     ) 
   }
 
-  /* Known cells should be 3 times larger. */
-  getFontSize(scale) {
-    const { literalSize } = this.props;
-    if (literalSize) {
-      return (literalSize * scale).toString() + "vw";
-    } else {
-      return scale.toString() + "vw";
-    }
-  }
-
   /* Check if a singleton value should be hidden */
   isHidden(value) {
     const { hiddenLiterals } = this.props;
     return hiddenLiterals && hiddenLiterals.includes(value);
   }
 
-  //Remove safeguards and test
-  getMeaningfulValue(value) {
-    if (!this.props.optionDict){
-      return value;
-    }
+   /*
+   * Takes possible values of cell from cellRows object and turns them into 2D array with subarrays of length 5
+   */
+  getPossibilities2DArray(cellRows){
+    let possibilities = [];
+    let possibilities2D = [];
+    
+    //Place all possibilities from the cellRows object into 'possibilities'
+    cellRows.forEach((row) => {
+      row.cellValues.forEach((poss) => {
+        possibilities.push(poss.value);
+      })
+    })
 
-    try{
-      return this.props.optionDict[value] == undefined ? value : this.props.optionDict[value];
-    }catch{
-      console.log(value);
-      return value;
-    }
+    //Place all possibilities into 2D array with subarrays of length 5
+    let i = 0, j = 0;
+    possibilities.forEach((poss) => {
+      if (j == 0) {
+        possibilities2D.push([]);
+      }
+      possibilities2D[i].push(poss);
+      j++;
+      if (j == 5){
+        j = 0;
+        i ++;
+      }
+
+    })
+
+    return possibilities2D;
   }
 
   render() {
     const {
       cellContent,
-      cellBorders,
-      cellInnerBorders,
-      cellMargin,
-      cornerNumber,
-      rightLabel,
-      bottomLabel,
-      literalSize,
-      leftLabels,
       q,
       r,
       s,
-      row,
-      column,
       block
     } = this.props;
 
-    const { highlighted } = this.state;
-
     const isSingleton = this.isSingleton();
     const singletonValue = this.getSingletonValue();
-
+    
     return (
-      <Hexagon q={q} r={r} s={s} class={this.chooseClass()} block={block} highlight={this.isHighlighted() ? "true" : "false"}>
-      {leftLabels && Object.keys(leftLabels).length >= 0 && Object.keys(leftLabels[1]).length >= column && leftLabels[row+1][column+1] && <Text x="-0.2cm" y="0cm" class="leftLabel">{leftLabels[row+1][column+1]}</Text>}
-      <Text
-
-        borders={cellBorders}
-        
-        margin={cellMargin}
-        size={"0.7em"}
+      <Hexagon 
+        q={q} 
+        r={r} 
+        s={s} 
+        block={block} 
+        highlight={this.isHighlighted() ? "true" : "false"}>
       
-       
-      >
-        {isSingleton ? (
-          // Display a single value if it is known and not hidden.
-          !this.isHidden(singletonValue) && (
-            <tspan style={{ }} class="singleton">{singletonValue}</tspan>
-          )
-        ) : (
-          // Otherwise display a grid of possibilities
-          <>
-            {cellContent.cellRows.map((row, i) => {return(
-                <tspan y={(i-1)*0.05 + "cm"} x="0cm">
-                {row.cellValues.map((literal, j) => (
-                  <>{literal.value}, </>
-                ))}<br></br>
+        <Text size={"0.7em"}>
+          {isSingleton ? (
+            // Display a single value if it is known and not hidden.
+            !this.isHidden(singletonValue) && (
+              <tspan class="singleton">{this.getMeaningfulValue(singletonValue)}</tspan>
+            )
+          ) : (
+            // Otherwise display a grid of possibilities
+            <>
+            {this.getPossibilities2DArray(cellContent.cellRows).map((row, i) => 
+              {//Only display 5 rows of possibilities
+                return i < 5 && (
+                <tspan y={(i-1)*0.06-0.03 + "cm"} x="0cm">
+                  {row.map((literal, j) => (
+                    <>
+                      {this.getMeaningfulValue(literal)}, 
+                      {//If there are more than 5 rows of possibilities add '...' to indicate they could not fit
+                      i == 4 && j == 4 && cellContent.cellRows.length > 5 && "..."}
+                    </>
+                  ))}
                 </tspan>
-             
-                )})}
-          </>
-        )}
-      </Text>
+              )}
+            )}
+            </>
+          )}
+        </Text>
       </Hexagon>
     );
   }

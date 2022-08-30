@@ -59,6 +59,8 @@ class PuzzleStepper extends React.Component {
         return "evenq";
       case 4:
         return "evenr";
+      case 5:
+        return "tri";
     }
   }
 
@@ -128,9 +130,7 @@ class PuzzleStepper extends React.Component {
       case "double_minesweeper.eprime":
         return <DoubleMinesweeperBoard {...boardProps} />;
       case "number_hive.eprime":
-        return <NumberHiveBoard {...boardProps} boardType={this.getBoardType(this.state.params.board_type)}/>;
-      case "tridoku.eprime":
-        return <TriangularBoard {...boardProps} present={this.state.params.present}/>;
+        return <NumberHiveBoard {...boardProps} boardType={this.getBoardType(this.state.params.board_type)} present={this.props.params.blocks}/>;
       // ================================
       // <-- More Cases can be added here
       // ================================
@@ -138,13 +138,15 @@ class PuzzleStepper extends React.Component {
         let boardType = this.getBoardType(this.state.params.board_type);
         switch(boardType){
           case "oddq":
-            return <HexagonalBoard {...boardProps} boardType={boardType} present={this.state.params.blocks}/>;
+            return <HexagonalBoard {...boardProps} boardType={boardType} present={this.state.params.present}/>;
           case "evenq":
-            return <HexagonalBoard {...boardProps} boardType={boardType} present={this.state.params.blocks}/>;
+            return <HexagonalBoard {...boardProps} boardType={boardType} present={this.state.params.present}/>;
           case "evenr":
-            return <HexagonalBoard {...boardProps} boardType={boardType} present={this.state.params.blocks}/>;
+            return <HexagonalBoard {...boardProps} boardType={boardType} present={this.state.params.present}/>;
           case "oddr":
-            return <HexagonalBoard {...boardProps} boardType={boardType} present={this.state.params.blocks}/>;
+            return <HexagonalBoard {...boardProps} boardType={boardType} present={this.state.params.present}/>;
+          case "tri":
+            return <TriangularBoard {...boardProps} boardType={boardType} present={this.state.params.present}/>;
           default:
             return <Board {...boardProps} />;
         }
