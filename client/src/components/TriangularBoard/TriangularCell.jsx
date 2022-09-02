@@ -69,7 +69,7 @@ class TriangularCell extends React.Component {
    * Get the Y offset of a row of possibilities
    */
   getTextYOffset(i, j, textRow) {
-    return (i + j) % 2 == 0 ? (textRow - 1) + 2 : (textRow - 1) + 7;
+    return ((i + j) % 2 == 0 ? (textRow - 1) + 2 : (textRow - 1) + 7).toString() + "px";
   }
 
   // Whether the cell grid is 1x1 i.e. the value is known.
@@ -147,18 +147,18 @@ class TriangularCell extends React.Component {
         {isSingleton ? (
           // Display a single value if it is known and not hidden.
           !this.isHidden(singletonValue) && (
-            <text x="5" y="5" text-anchor="middle">
+            <text x="5px" y="5px" text-anchor="middle">
               <tspan class="singleton">{this.getMeaningfulValue(singletonValue)}</tspan>
             </text>
           )
         ) : (
           // Otherwise display a grid of possibilities
-          <text x="5" y="5" text-anchor="middle">
+          <text x="5px" y="5px" text-anchor="middle">
             <tspan class="possibilities">
               {this.getPossibilities2DArray(cellContent.cellRows).map((row, r) => {
                 //Only display 3 rows due to size of triangle
                 return r < 3 && (
-                  <tspan y={this.getTextYOffset(i, j, r)} x="5">
+                  <tspan y={this.getTextYOffset(i, j, r)} x="5px">
                     {row.map((literal, l) => (
                       //Display ... if there are more possibilities that cannot be shown
                       <>{this.getMeaningfulValue(literal)}, {r == 2 && l == 4 && cellContent.cellRows.length > 3 && "..."}</>

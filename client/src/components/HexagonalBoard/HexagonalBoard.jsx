@@ -158,7 +158,6 @@ class HexagonalBoard extends React.Component {
                       q={this.getQ(i,j,boardType)} 
                       r={this.getR(i,j,boardType)} 
                       s={this.getS(i,j,boardType)}
-                      leftLabels={leftLabels}
                       cellContent={cell}
                       // Whether this cell is currently highlighted
                       highlighted={highlighted}
