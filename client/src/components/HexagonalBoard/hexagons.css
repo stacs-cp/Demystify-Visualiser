@@ -1,0 +1,17 @@
+svg g text {
+    font-size: 0.12em;
+    fill: rgb(161, 11, 11);
+  }
+
+.singleton{
+  fill: rgb(26, 13, 160);  
+  font-size: 2em;
+}
+
+svg g [highlight="false"]{
+  fill:rgb(153, 165, 244)
+}
+
+svg g [highlight="true"]{
+  fill:rgb(250, 237, 6)
+}

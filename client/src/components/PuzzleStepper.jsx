@@ -17,10 +17,13 @@ import SkyscrapersBoard from "./PuzzleBoards/SkyscrapersBoard";
 import GaramBoard from "./PuzzleBoards/GaramBoard";
 import NonogramBoard from "./PuzzleBoards/NonogramBoard";
 import SudokuBoard from "./PuzzleBoards/SudokuBoard";
+import DoubleMinesweeperBoard from "./PuzzleBoards/DoubleMinesweeperBoard";
 import JobWait from "./JobWait";
-
+import TriangularBoard from "./TriangularBoard/TriangularBoard";
 import * as API from "../API";
 import LoopyBoard from "./PuzzleBoards/LoopyBoard";
+import NumberHiveBoard from "./PuzzleBoards/NumberHiveBoard";
+import HexagonalBoard from "./HexagonalBoard/HexagonalBoard";
 
 /**
  * Main puzzle visualiser with a board on the left and explanations on the right.
@@ -42,8 +45,54 @@ class PuzzleStepper extends React.Component {
       isWaiting: false,
       finishedPuzzle: false,
       error: null,
+      optionDict: this.getOptionDict(this.props.type, this.props.params)
     };
   }
+
+  getBoardType(type){
+    switch(type){
+      case 1:
+        return "oddq";
+      case 2:
+        return "oddr";
+      case 3:
+        return "evenq";
+      case 4:
+        return "evenr";
+      case 5:
+        return "tri";
+    }
+  }
+
+  
+
+  // Get dictionary mapping numbers in essence prime puzzle spec to more user readable strings
+  getOptionDict(type, params) {
+    let optionDict = {};
+    switch (type) {
+      case "double_minesweeper.eprime":
+        let mines_per_box = params.mines_per_box;
+
+        //Display number representing empty square as "Empty"
+        optionDict[mines_per_box * 8 + 1] = "Empty";
+
+        //Display -1 as "1 mine", -2 as "2 mines" and so on
+        for (let i = -mines_per_box; i < 0; ++i) {
+          optionDict[i] = (-i).toString() + " mine"
+          if (i != -1) {
+            optionDict[i] += "s";
+          }
+        }
+
+        return optionDict;
+      // ================================
+      // <-- More Cases can be added here
+      // ================================
+      default:
+        return optionDict;
+    }
+  }
+
 
   // Choose a board if we have defined one for this puzzle type.
   chooseBoard(boardProps) {
@@ -78,12 +127,31 @@ class PuzzleStepper extends React.Component {
         return <SudokuBoard {...boardProps} />;
       case "loopy.essence":
         return <LoopyBoard {...boardProps} />;
+      case "double_minesweeper.eprime":
+        return <DoubleMinesweeperBoard {...boardProps} />;
+      case "number_hive.eprime":
+        return <NumberHiveBoard {...boardProps} boardType={this.getBoardType(this.state.params.board_type)} present={this.props.params.blocks}/>;
       // ================================
       // <-- More Cases can be added here
       // ================================
       default:
-        return <Board {...boardProps} />;
-    }
+        let boardType = this.getBoardType(this.state.params.board_type);
+        switch(boardType){
+          case "oddq":
+            return <HexagonalBoard {...boardProps} boardType={boardType} present={this.state.params.present}/>;
+          case "evenq":
+            return <HexagonalBoard {...boardProps} boardType={boardType} present={this.state.params.present}/>;
+          case "evenr":
+            return <HexagonalBoard {...boardProps} boardType={boardType} present={this.state.params.present}/>;
+          case "oddr":
+            return <HexagonalBoard {...boardProps} boardType={boardType} present={this.state.params.present}/>;
+          case "tri":
+            return <TriangularBoard {...boardProps} boardType={boardType} present={this.state.params.present}/>;
+          default:
+            return <Board {...boardProps} />;
+        }
+
+      }
   }
 
   /* Detect whether we are at a step where the user should have a choice 
@@ -295,6 +363,7 @@ class PuzzleStepper extends React.Component {
       highlighted: this.state.highlightedLiterals,
       rows: stepData.puzzleState.matrices[0].rows,
       setSelectedLiteral: this.setSelectedLiteral.bind(this),
+      optionDict: this.state.optionDict
     };
 
     return (
@@ -393,6 +462,7 @@ class PuzzleStepper extends React.Component {
                   setChoice={this.setChoice.bind(this)}
                   currentChoice={this.state.currentChoice}
                   extraChoice={!this.isChoicesStep()}
+                  optionDict={this.state.optionDict}
                 >
                   {/* If this is a MUS choice step, display another NavSwitcher
                       to view the choices, along with a selection button. */

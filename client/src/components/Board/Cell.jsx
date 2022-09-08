@@ -68,6 +68,8 @@ class Cell extends React.Component {
         or taking the indexed cellBackground. */
   chooseBackground() {
     const { cellContent, literalBackgrounds, cellBackground } = this.props;
+
+
     const { highlighted } = this.state;
     let highlightBackground;
 
@@ -121,6 +123,17 @@ class Cell extends React.Component {
     return hiddenLiterals && hiddenLiterals.includes(value);
   }
 
+  /*
+   * Uses the optionDict to convert a numeric value in the Essence Prime model to a more user friendly value to display
+   */
+  getMeaningfulValue(value) {
+    if (!this.props.optionDict){
+      return value;
+    }
+
+    return this.props.optionDict[value] ? this.props.optionDict[value] : value;
+  }
+
   render() {
     const {
       cellContent,
@@ -165,7 +178,7 @@ class Cell extends React.Component {
                     key={i}
                     row={this.props.row}
                     column={this.props.column}
-                    value={literal.value}
+                    value={this.getMeaningfulValue(literal.value)}
                     status={literal.status} // positive / negative
                     highlighted={literal.explanations.includes(
                       highlighted.toString()

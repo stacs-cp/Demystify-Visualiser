@@ -1,8 +1,8 @@
-# Extending the Styling Code for Further Puzzles
+# Extending the Styling Code for Further Square Grid Puzzles
 
 I have aimed to make the puzzle styling for this project extensible, so that it can properly style many similar puzzles to the ones already implemented. 
 
-The core component for puzzle display is the [`Board`](../client/src/components/Board/Board.jsx) component. This provides by default a basic grid/numerical display for puzzles. It will be used as the default whenever an unrecognised `.eprime` file is used as input.
+The core component for puzzle display is the [`Board`](../client/src/components/Board/Board.jsx) component. This provides by default a basic grid/numerical display for puzzles. It will be used as the default whenever an unrecognised `.eprime` file is used as input (and the board_type param in the .prime file does not refer to a hexagonal or triangular grid).
 
  To create a new Puzzle style, take the following steps:
 
@@ -40,7 +40,30 @@ The currently supported `Board` props are as follows:
 - **rowsums:** An array representing an additional column to be displayed at the left of the grid (useful for puzzles with row sums). See [`TentsBoard.jsx`](../client/src/components/PuzzleBoards/TentsBoard.jsx) for an example.  (**endrowsums** is the same but for the end of the grid.)
 - **startrows**: A 2D array of additional rows to be displayed at the top of the grid. See [`NonogramBoard.jsx`](../client/src/components/PuzzleBoards/NonogramBoard.jsx) for an example.
 - **startcols**: A 2D array of additional columns to be displayed at the left of the grid. See [`NonogramBoard.jsx`](../client/src/components/PuzzleBoards/NonogramBoard.jsx) for an example.
+- **optionDict**: An object whose keys are the numbers in the essence prime specification of the puzzle, and the values are user readable strings which can be displayed in the PuzzleStepper view
 
 ____
 
 It can be useful to pass CSS gradients in the **cellBackgrounds** property for drawing simple shapes such as circles, bars and diagonals. 
+
+# Extending the Styling Code for Further Hexagonal Grid Puzzles
+
+Creating a Board for a hexagon based puzzle follows a similar process to above.
+
+The core component for puzzle display is the [`HexagonalBoard`](../client/src/components/HexagonalBoard/HexagonalBoard.jsx) component. This provides by default a basic grid/numerical display for puzzles. It will be used as the default whenever an unrecognised `.eprime` file is used as input and the board_type param in the .param file indicates that a hexagonal grid is required.
+
+To create a new Puzzle style, take the following steps:
+
+1. Create a new `NewPuzzleBoard.jsx` file in the [`../client/src/components/PuzzleBoards`](../client/src/components/PuzzleBoards) directory. 
+2. Copy the code for `NumberHiveBoard.jsx` into this file and change the class/export name accordingly. 
+3. Add a case to the switch statement in the `chooseBoard()` function of the [`PuzzleStepper.jsx`](../client/src/components/PuzzleStepper.jsx) file.
+4. Read desired `param` values into state from the `this.props.params` object.
+5. Write functions to generate desired `Board` props from these `param` values. 
+
+The library used to generate these hexagons create them as an svg, so changing their display is done through CSS.
+
+The "matrixprops" object passed to the HexagonalBoard component should have values of 2d arrays. Each cell then gets an attribute injected which maps that key, to the element in that 2d array which corresponds to that cell. This is a way of injecting attributes which makes it easier to specify cells for CSS rules.
+
+# Extending the Styling Code for Further Triangular Grid Puzzles
+
+Creating a board for a triangular puzzle follows the same process as creating one for a hexagonal puzzle, except the core component for puzzle display is the [`TriangularBoard`](../client/src/components/TriangularBoard/TriangularBoard.jsx) component. It will be used as the default whenever an unrecognised `.eprime` file is used as input and the board_type param in the .param file indicates that a triangular grid is required.

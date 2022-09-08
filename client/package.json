@@ -5,14 +5,19 @@
   "proxy": "http://localhost:21586/demystify",
   "homepage": ".",
   "dependencies": {
+    "@emotion/react": "^11.10.0",
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.5",
     "@testing-library/user-event": "^12.8.3",
     "axios": "^0.21.1",
     "bootstrap": "^4.6.0",
+    "jsx-runtime": "^1.2.0",
     "react": "^17.0.2",
     "react-bootstrap": "^1.5.2",
     "react-dom": "^17.0.2",
+    "react-hexgrid": "^2.0.0",
+    "react-native": "^0.69.4",
+    "react-native-web": "^0.18.7",
     "react-scripts": "4.0.3",
     "serve": "^11.3.2",
     "ttab": "^0.7.1",
@@ -21,7 +26,7 @@
   "scripts": {
     "start": "react-scripts start",
     "worker": "cd ../server && rq worker",
-    "backend": "cd ../server && source venv/bin/activate && export FLASK_ENV=development && flask run -p 21586",
+    "backend": "cd ../server && . venv/bin/activate && export FLASK_ENV=development && flask run -p 21586",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
