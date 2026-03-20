@@ -1,11 +1,7 @@
 Firstly, build the Docker.
-We need to build a custom conjure image (the first line):
-
-docker build -f Dockerfile-Conjure --build-arg BRANCH=master . -t custom-conjure
 
 docker build -f Dockerfile . -t demystify-visualiser
 
-The above two lines should only need running once
 To then execute the visualiser, run:
 
 docker run -p 5000:5000 demystify-visualiser
