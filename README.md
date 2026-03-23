@@ -2,6 +2,16 @@
 
 This is a react-based tool that provides a visualisation of the human understandable solutions to "pen and paper" puzzles produced by the [Demystify](https://github.com/stacs-cp/demystify) solver. Originally written by [Matthew McIlree](https://github.com/mmcilree) as part of an Undergraduate Research Assistant Scheme project 2021. 
 
+## How to run -- easy option: Docker (or podman)
+
+Alternatively, the installation steps above (including install of conjure) can be replaced with installation in a container using Docker. 
+
+1. Navigate to the `deploy` folder.
+2. Run `docker build -f Dockerfile . -t demystify-visualiser` (you can replace 'docker` with `podman` if you have that installed instead)
+3. Run `docker run -p 5000:5000 demystify-visualiser`
+4. Go with your browser to: `http://localhost:5000/demystify/` (note: the trailing slash is important here)
+
+
 ## How to Run (Development)
 
 1. Ensure you have [Node >= 10.16 and npm >= 5.6](https://nodejs.org/en/) installed.
@@ -38,15 +48,6 @@ To make use of the "Run demystify live feature" some extra steps are required:
 2. Install [Redis >= 6.24](https://redis.io/download)
 3. Follow the steps as above
 4. Additionally run `npm run worker` in the client folder.
-
-## Alternative Using Dockerfile
-
-Alternatively, the installation steps above (including install of conjure) can be replaced with installation in a container using Docker. 
-
-1. Navigate to the `deploy` folder.
-2. Run `docker-compose build` (this may take some time to complete)
-3. Then, the application can be started via`docker-compose up`.
-4. The web application will be available at `localhost:5000/demystify/` (note: the trailing slash is important here)
 
 ## Basic Usage
 
